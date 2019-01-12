@@ -1,28 +1,40 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <AppHeader/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './Components/Reusable/Header/AppHeader';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AppHeader
+  },
+  created () {
+    window.addEventListener('resize', this.resizeHandler)
+  },
+  mounted () {
+    this.$store.dispatch('setNewWindowSize')
+  },
+  methods: {
+    resizeHandler () {
+      this.$store.dispatch('setNewWindowSize')
+    }
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.resizeHandler)
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import "./assets/Styles/_globals";
+  .app {
+    font-family: 'Montserrat', 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 </style>
