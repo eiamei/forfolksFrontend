@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="store">
     <cards/>
   </div>
 </template>
@@ -12,6 +12,10 @@
   };
 </script>
 
-<style scoped>
-
+<style lang="scss">
+  .store {
+    background-color: #F6F6F6;
+    padding: 24px 48px;
+    height: 100%;
+  }
 </style>

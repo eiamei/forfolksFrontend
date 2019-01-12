@@ -7,7 +7,7 @@
       <p>Подставки</p>
     </div>
     <div class="store__cards">
-      <card class="store__item" v-for="item in store" :name="item.name" :price="item.price" :type="item.type"/>
+      <card class="store__item" v-for="(item, index) in store" :name="item.name" :price="item.price" :type="item.type" :isBig="index === 1"/>
     </div>
   </div>
 </template>
@@ -51,7 +51,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      /*justify-content: space-between;*/
       background-color: $store-card-bg-color;
     }
     &__item {

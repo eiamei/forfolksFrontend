@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/item?name=${itemSlug}`" class="store-card">
-    <img :src="itemImage" width="470px">
+    <img class="image" :src="itemImage" :width="`${isBig ? '700' : '350'}px`">
     <div class="store-card__data">
       <div class="store-card__name">{{$t(`items.${type}`)}} {{name}}</div>
       <div class="store-card__price">{{price}}</div>
@@ -24,6 +24,9 @@
       price: {
         type: Number,
         required: true
+      },
+      isBig: {
+        type: Boolean
       }
     },
     computed: {
@@ -42,10 +45,24 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+    position: relative;
+    &:hover {
+      .store-card__data {
+        visibility: visible;
+      }
+    }
     &__data {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 350px;
+      background-color: rgba(black, .7);
+      color: white
     }
     &__name {
       font-weight: 700;
