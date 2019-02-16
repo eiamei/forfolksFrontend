@@ -1,32 +1,87 @@
 [
   {
-    "name": "BASIC4 M",
-    "type": "Pot",
+    "name": "BASIC4",
+    "model": "M",
+    "type": "pot",
+    "desc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "material": ["concrete"],
+    "weight": 500,
     "price": 800
   },
   {
-    "name": "BASIC4 M",
-    "type": "Candle",
+    "name": "BUBBLE",
+    "model": "M",
+    "type": "pot",
+    "desc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "material": ["concrete"],
+    "weight": 500,
     "price": 800
   },
   {
-    "name": "BASIC4 M",
-    "type": "Candle",
+    "name": "MODERN8",
+    "model": "M",
+    "type": "pot",
+    "desc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "material": ["concrete"],
+    "weight": 500,
     "price": 800
   },
   {
-    "name": "BASIC4 M",
-    "type": "Candle",
+    "name": "CONE",
+    "model": "S",
+    "type": "stand",
+    "desc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "material": ["concrete"],
+    "weight": 100,
     "price": 800
   },
   {
-    "name": "BASIC4 M",
-    "type": "Candle",
-    "price": 800
-  },
-  {
-    "name": "BASIC4 M",
-    "type": "Candle",
-    "price": 800
+    "name": "Gent6",
+    "model": "",
+    "type": "candlestick",
+    "desc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "brass",
+    "material": ["brass", "concrete"],
+    "weight": 200,
+    "price": 550
   }
 ]

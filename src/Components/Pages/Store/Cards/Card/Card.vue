@@ -1,68 +1,131 @@
 <template>
-  <router-link :to="`/item?name=${itemSlug}`" class="store-card">
-    <img class="image" :src="itemImage" :width="`${isBig ? '700' : '350'}px`">
-    <div class="store-card__data">
-      <div class="store-card__name">{{$t(`items.${type}`)}} {{name}}</div>
-      <div class="store-card__price">{{price}}</div>
+  <div  class="store-card">
+    <div class="store-card__bg"
+         :class="[`store-card__bg--var${getRandomClassNumber()}`, `store-card__bg--color${getRandomClassNumber()}`]"
+         :style="{'width': `${width}px`, 'height': `${width - 8}px`}">
+      <div style="display: flex; justify-content: center;align-items: flex-end; height: 100%; color: black">
+        {{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}, {{item.price}}₽
+      </div>
     </div>
-  </router-link>
+    <img class="store-card__image" :src="itemImage" :style="{'width': `${width}px`}">
+    <router-link :to="link">
+      <div class="store-card__data" :style="{'width': `${width}px`, 'height': `${width}px`}">
+        <div class="store-card__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</div>
+        <div class="store-card__price">{{item.price}}₽</div>
+      </div>
+    </router-link>
+  </div>
 </template>
 
 <script>
-  import slugify from 'slugify';
   export default {
     name: 'StoreCard',
     props: {
-      name: {
-        type: String,
+      item: {
+        type: Object,
         required: true
       },
-      type: {
-        type: String,
-        required: false
-      },
-      price: {
+      width: {
         type: Number,
-        required: true
+        required: false,
+        default: 470
       },
       isBig: {
         type: Boolean
       }
     },
     computed: {
-      itemSlug () {
-        return slugify(this.name).toLowerCase();
-      },
       itemImage () {
-        return require(`@/assets/images/storeIcons/${this.itemSlug}.jpg`);
+        const name = this.item.name.toLowerCase();
+        const model = this.item.model.toLowerCase();
+        const type = this.item.type.toLowerCase();
+        return require(`@/assets/images/storeIcons/${type}-${name}${model ? '-' + model : ''}.jpg`);
+      },
+      link () {
+        const name = this.item.name.toLowerCase();
+        const model = this.item.model.toLowerCase();
+        const type = this.item.type.toLowerCase();
+        return `/item?name=${name}&model=${model}&type=${type}`;
+      }
+    },
+    methods: {
+      getRandomClassNumber () {
+        const min = 1;
+        const max = 3;
+        return Math.floor(Math.random() * max) + min;
       }
     }
   };
 </script>
 
 <style lang='scss'>
+  @import '../../../../../assets/styles/_colors';
   .store-card {
     text-decoration: none;
-    color: black;
     cursor: pointer;
     position: relative;
     &:hover {
       .store-card__data {
-        visibility: visible;
+        opacity: .7;
+      }
+      .store-card__bg {
+        top: 0!important;
+        left: 40px!important;
+        right: 0;
       }
     }
+    &__image {
+      width: 470px;
+      position: relative;
+    }
     &__data {
-      visibility: hidden;
       position: absolute;
-      top: 0;
       display: flex;
+      background-color: black;
+      top: 0;
+      opacity: 0;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 350px;
-      height: 350px;
-      background-color: rgba(black, .7);
-      color: white
+      color: white;
+      z-index: 10;
+      transition: all .3s;
+    }
+    &__bg {
+      position: absolute;
+      top: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($dusty-rose, .7);
+      color: white;
+      z-index: 0;
+      transition: all .3s;
+      border-radius: 4px;
+      padding: 0 0 8px 0;
+      height: calc(100% - 16px);
+      &--var1 {
+        top: 32px;
+        left: 20px;
+      }
+      &--var2 {
+        top: 32px;
+        left: 56px;
+      }
+      &--var3 {
+        top: 32px;
+        left: 40px;
+        border-radius: 100px;
+      }
+      &--color1 {
+        background-color: rgba($dusty-rose, .7);
+      }
+      &--color2 {
+        background-color: rgba($blue-gray, .7);
+      }
+      &--color3 {
+        background-color: rgba($sandy, .7);
+      }
     }
     &__name {
       font-weight: 700;

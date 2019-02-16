@@ -1,6 +1,6 @@
 <template>
-  <div class="store">
-    <cards/>
+  <div class="stores">
+    <cards class="stores__cards"/>
   </div>
 </template>
 
@@ -13,9 +13,10 @@
 </script>
 
 <style lang="scss">
-  .store {
-    background-color: #F6F6F6;
-    padding: 24px 48px;
+  .stores {
+    min-height: calc(100vh);
     height: 100%;
+    /*background-image: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.2)), url("../../../assets/images/concretebg.jpg");*/
+    margin: 48px 0 0 0;
   }
 </style>

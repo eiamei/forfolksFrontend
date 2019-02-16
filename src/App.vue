@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
   @import "./assets/Styles/_globals";
   .app {
-    font-family: 'Montserrat', 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'HK Grotesk', 'Montserrat', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

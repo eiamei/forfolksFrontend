@@ -28,12 +28,16 @@
 <style lang="scss">
   @import '../../../assets/styles/_colors';
   .header {
-    padding: 8px 0;
-    margin: 0;
+    width: calc(100% - 48px);
+    margin: 0 24px;
+    border-bottom: 1px solid black;
+    padding: 12px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $header-color;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
     &__logo {
       background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
       width: 122px;
@@ -48,10 +52,10 @@
       font-size: 18px;
       font-weight: 300;
       &--left {
-        margin-left: 24px;
+        /*margin-left: 24px;*/
       }
       &--right {
-        margin-right: 24px;
+        /*margin-right: 24px;*/
       }
       &:hover {
         color: $dark-gray;
@@ -59,7 +63,8 @@
     }
   }
   .router-link-exact-active {
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
+    color: $dark-gray;
     cursor: default;
   }
 </style>

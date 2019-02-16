@@ -1,0 +1,34 @@
+{
+  "concrete": [
+    {
+      "value": 1,
+      "label": "coated"
+    },
+    {
+      "value": 2,
+      "label": "graphite"
+    },
+    {
+      "value": 3,
+      "label": "dustyRose"
+    },
+    {
+      "value": 4,
+      "label": "seaWave"
+    }
+  ],
+  "brass": [
+    {
+      "value": 1,
+      "label": "natural"
+    },
+    {
+      "value": 2,
+      "label": "black"
+    },
+    {
+      "value": 3,
+      "label": "white"
+    }
+  ]
+}
