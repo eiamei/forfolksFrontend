@@ -38,7 +38,7 @@
             <tr>
               <td>Размер:</td>
               <td>
-                <span v-for="(param, key) in item.size">{{$t(`size.${key}`)}}: {{param}} cм </span>
+                <span v-for="(param, key) in item.size" :key="`${param}.${key}`">{{$t(`size.${key}`)}}: {{param}} cм </span>
               </td>
             </tr>
             <tr>
@@ -48,7 +48,7 @@
             <tr>
               <td>Материал:</td>
               <td>
-                <span v-for="material in item.material">{{$t(`material.${material}`)}} </span>
+                <span v-for="material in item.material" :key="material">{{$t(`material.${material}`)}} </span>
               </td>
             </tr>
             <tr>
@@ -57,7 +57,7 @@
             </tr>
           </table>
           <div>
-            <app-button content="Добавить в корзину" style="margin-top: 16px" class="button--add-to-cart button--add-to-cart-disabled"/>
+            <app-button content="Добавить в корзину" style="margin-top: 16px" class="button--add-to-cart"/>
             <span style="padding-left: 16px">Скоро будет доступно :)</span>
           </div>
         </div>
@@ -71,8 +71,8 @@
 </template>
 
 <script>
-  import AppButton from '../../Reusable/UI/AppButton';
-  import Dropdown from '../../Reusable/UI/Dropdown';
+  import AppButton from '../../../Core/Components/UI/AppButton';
+  import Dropdown from '../../../Core/Components/UI/Dropdown';
   import Store from '../../../Core/Constants/Store';
   import Colors from '../../../Core/Constants/Colors';
   import slugify from 'slugify';
