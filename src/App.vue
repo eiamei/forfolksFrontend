@@ -17,11 +17,11 @@ export default {
     window.addEventListener('resize', this.resizeHandler)
   },
   mounted () {
-    this.$store.dispatch('setNewWindowSize')
+    this.$store.dispatch('global/setNewWindowSize')
   },
   methods: {
     resizeHandler () {
-      this.$store.dispatch('setNewWindowSize')
+      this.$store.dispatch('global/setNewWindowSize')
     }
   },
   beforeDestroy () {
