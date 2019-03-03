@@ -3,13 +3,9 @@
     <div class="item__first-row">
       <div class="item__image">
         <img :src="itemImage" class="image">
-        <div class="item-image-background">s</div>
-        <div>
-          <img :src="itemImage" class="image-preview">
-          <img :src="itemImage" class="image-preview">
-          <img :src="itemImage" class="image-preview">
-          <img :src="itemImage" class="image-preview">
-          <img :src="itemImage" class="image-preview">
+        <div class="item-image-background"></div>
+        <div class="image-not-found" v-if="showHider">
+          К сожалению, у нас нет фотографии в этом цвете :С
         </div>
       </div>
       <div  class="item-info__container">
@@ -32,7 +28,7 @@
             <tr>
               <td>Цвет:</td>
               <td>
-                <dropdown :options="colors[item.colors]" :value="chosenColor.label" @change="value => this.chosenColor = value"/>
+                <dropdown :options="colors[item.colors]" :value="chosenColor.label" @change="selectColor"/>
               </td>
             </tr>
             <tr>
@@ -56,40 +52,43 @@
               <td>{{item.price}} ₽</td>
             </tr>
           </table>
-          <div>
-            <app-button content="Добавить в корзину" style="margin-top: 16px" class="button--add-to-cart"/>
-            <span style="padding-left: 16px">Скоро будет доступно :)</span>
-          </div>
+          <!--<div>-->
+            <!--<app-button content="Добавить в корзину" style="margin-top: 16px" class="button&#45;&#45;add-to-cart"/>-->
+            <!--<span style="padding-left: 16px">Скоро будет доступно :)</span>-->
+          <!--</div>-->
         </div>
       </div>
     </div>
-    <div style="margin: 24px 0 12px 0 ; font-size: 24px; text-align: center; font-weight: 300">Вдохновение</div>
-    <img :src="itemImage" class="insipration-image">
-    <img :src="itemImage" class="insipration-image">
-    <img :src="itemImage" class="insipration-image">
+    <!--<div style="margin: 24px 0 12px 0 ; font-size: 24px; text-align: center; font-weight: 300">Вдохновение</div>-->
+    <!--<img :src="itemImage" class="insipration-image">-->
+    <!--<img :src="itemImage" class="insipration-image">-->
+    <!--<img :src="itemImage" class="insipration-image">-->
   </div>
 </template>
 
 <script>
   import AppButton from '../../../Core/Components/UI/AppButton';
   import Dropdown from '../../../Core/Components/UI/Dropdown';
-  import Store from '../../../Core/Constants/Store';
-  import Colors from '../../../Core/Constants/Colors';
+  import STORE from '../../../Core/Constants/Store';
   import slugify from 'slugify';
+  import COLORS from '../../../Core/Constants/Colors'
   export default {
     name: 'ItemCard',
     components: {AppButton, Dropdown},
     data () {
       return {
-        store: Store,
-        colors: Colors,
-        chosenColor: '',
+        store: STORE,
+        colors: COLORS,
+        chosenColor: {
+          label: this.$route.query.color || COLORS[this.item.colors][0].label
+        },
         item: null,
         name: this.$route.query.name || '',
         type: this.$route.query.type || '',
         size: '',
         material: '',
-        price: ''
+        price: '',
+        showHider: false
       };
     },
     created () {
@@ -101,7 +100,8 @@
           const name = this.item.name.toLowerCase();
           const model = this.item.model.toLowerCase();
           const type = this.item.type.toLowerCase();
-          return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}.jpg`);
+          const color = this.showHider ? COLORS[this.item.colors][0].label : this.chosenColor.label;
+          return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`);
         }
         return '';
       }
@@ -109,7 +109,10 @@
     methods: {
       findItem () {
         this.item = this.store.find(item => slugify(item.name.toLowerCase()) === this.$route.query.name);
-        this.chosenColor = this.colors[this.item.colors][0];
+      },
+      selectColor (value) {
+        this.showHider = !this.item.availableColors.find(function (color) { return color === value.label; });
+        this.chosenColor = value;
       }
     }
   };
@@ -132,11 +135,27 @@
       width: 50%;
       position: relative;
       .image {
+        border-radius: 4px;
         position: relative;
         width: 100%;
         z-index: 10;
       }
+      .image-not-found {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: calc(100% - 4px);
+        z-index: 11;
+        background-color: rgba($dark-gray, 0.8);
+        color: white;
+        border-radius: 4px;
+        font-size: 24px;
+      }
       .item-image-background {
+        border-radius: 4px;
         position: absolute;
         width: 100%;
         left: 24px;

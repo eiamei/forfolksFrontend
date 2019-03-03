@@ -12,6 +12,10 @@
       "innerDiameter": 7
     },
     "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "graphite"
+    ],
     "material": ["concrete"],
     "weight": 500,
     "price": 800

@@ -14,13 +14,14 @@
     <router-link :to="link">
       <div class="store-card__data" :style="{'width': `${width}px`, 'height': `${width}px`}">
         <div class="store-card__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</div>
-        <div class="store-card__price">{{item.price}}₽</div>
+        <div>{{item.price}}₽</div>
       </div>
     </router-link>
   </div>
 </template>
 
 <script>
+  import COLORS from '../../../Core/Constants/Colors'
   export default {
     name: 'StoreCard',
     props: {
@@ -48,7 +49,8 @@
         const name = this.item.name.toLowerCase();
         const model = this.item.model.toLowerCase();
         const type = this.item.type.toLowerCase();
-        return `/item?name=${name}&model=${model}&type=${type}`;
+        const color = COLORS[this.item.colors][0].label;
+        return `/item?name=${name}&model=${model}&type=${type}&color=${color}`;
       }
     },
     methods: {
