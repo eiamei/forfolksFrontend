@@ -143,7 +143,7 @@
       flex-wrap: wrap;
     }
     &__item {
-      padding: 0 40px 80px 40px;
+      padding: 0 40px 40px 40px;
     }
   }
   @media screen and (max-width: 770px) {
@@ -155,7 +155,7 @@
         padding: 16px 0;
       }
       &__item {
-        padding: 0 16px 32px 16px;
+        padding: 0 16px 24px 16px;
       }
     }
   }

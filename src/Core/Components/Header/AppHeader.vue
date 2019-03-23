@@ -40,15 +40,15 @@
     &__link {
       color: $active-link;
       text-decoration: none;
-      font-size: 18px;
-      font-weight: 300;
+      font-size: 14px;
+      font-weight: 400;
       &:hover {
-        color: $dark-gray;
+        color: black;
       }
     }
   }
   .router-link-exact-active {
-    color: $dark-gray;
+    color: $dark-gray2;
     cursor: default;
   }
   @media screen and (max-width: 770px) {
