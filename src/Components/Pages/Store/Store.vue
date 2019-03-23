@@ -1,15 +1,16 @@
 <template>
   <div class="stores">
     <div class="store" ref="container">
-      <div class="store__menu"  ref="menu">
-        <p v-for="type in types"
-           :class="{'menu-item--active': current === type}"
-           @click="setCurrent(type)"
-           :key="type"
+      <ul class="store__menu">
+        <li v-for="type in types"
+            class="menu-item"
+            :class="{'menu-item--active': current === type}"
+            @click="setCurrent(type)"
+            :key="type"
         >
           {{$t(`items.${type}s`)}}
-        </p>
-      </div>
+        </li>
+      </ul>
       <div class="store__cards">
         <card class="store__item" v-for="(item, index) in currentStore" :item="item" :key="index + item.name" :width="width"/>
       </div>
@@ -68,8 +69,8 @@
         this.current = value;
       },
       resizeHandler () {
-        if (this.$refs.container && this.$refs.menu) {
-          const elementWidth = this.$refs.container.clientWidth - this.$refs.menu.clientWidth - 24;
+        if (this.$refs.container) {
+          const elementWidth = this.$refs.container.clientWidth;
           for (let i = 2; i < 6; i++) {
             let cardSize = Math.floor(elementWidth / i);
             if (cardSize > this.stdSizes.minWidth && cardSize < this.stdSizes.maxWidth) {
@@ -78,7 +79,7 @@
               } else if (this.windowWidth > 500) {
                 this.width = cardSize - 36;
               } else {
-                this.width = cardSize - 4;
+                this.width = cardSize - 16;
               }
               break;
             }
@@ -110,19 +111,19 @@
     width: 100%;
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     &__menu {
-      padding: 24px;
-      min-width: 160px;
+      margin: 24px 40px 0 40px;
+      padding: 0;
       background-color: $menu-color;
       font-size: 14px;
+      list-style: none;
+      display: flex;
+
       .menu-item {
+        margin-right: 16px;
         &--active {
-          &:before {
-            content: '•';
-            padding: 0 4px;
-          }
           font-weight: 700;
         }
       }
@@ -135,7 +136,7 @@
       }
     }
     &__cards {
-      padding: 24px 24px 0 0;
+      padding: 24px 0 0 0;
       background-color: $store-card-bg-color;
       display: flex;
       justify-content: flex-start;
@@ -148,18 +149,25 @@
   @media screen and (max-width: 770px) {
     .store {
       &__menu {
-        display: none;
+        margin: 16px 16px 0 16px;
       }
       &__cards {
         padding: 16px 0;
       }
       &__item {
-        padding: 0 24px 32px 24px;
+        padding: 0 16px 32px 16px;
       }
     }
   }
   @media screen and (max-width: 500px) {
     .store {
+      &__menu {
+        margin: 16px 8px 0 8px;
+        font-size: 10px;
+        .menu-item {
+          margin-right: 8px;
+        }
+      }
       &__item {
         padding: 0 8px 16px 8px;
       }
