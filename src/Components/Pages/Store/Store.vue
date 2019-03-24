@@ -1,7 +1,7 @@
 <template>
   <div class="stores">
     <div class="store" ref="container">
-      <ul class="store__menu">
+      <ul class="store__menu" ref="menu">
         <li v-for="type in types"
             class="menu-item"
             :class="{'menu-item--active': current === type}"
@@ -70,7 +70,10 @@
       },
       resizeHandler () {
         if (this.$refs.container) {
-          const elementWidth = this.$refs.container.clientWidth;
+          let elementWidth = this.$refs.container.clientWidth;
+          if (this.windowWidth > 770) {
+            elementWidth -= 160;
+          }
           for (let i = 2; i < 6; i++) {
             let cardSize = Math.floor(elementWidth / i);
             if (cardSize > this.stdSizes.minWidth && cardSize < this.stdSizes.maxWidth) {
@@ -107,22 +110,23 @@
     opacity: 0;
   }
   .store {
-    /*padding: 24px 16px;*/
     width: 100%;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     &__menu {
-      margin: 24px 40px 0 40px;
+      position: fixed;
+      margin: 24px 0 0 40px;
       padding: 0;
       background-color: $menu-color;
       font-size: 14px;
       list-style: none;
       display: flex;
+      flex-direction: column;
 
       .menu-item {
-        margin-right: 16px;
+        margin-bottom: 8px;
         &--active {
           font-weight: 700;
         }
@@ -137,6 +141,7 @@
     }
     &__cards {
       padding: 24px 0 0 0;
+      margin-left: 160px;
       background-color: $store-card-bg-color;
       display: flex;
       justify-content: flex-start;
@@ -148,10 +153,17 @@
   }
   @media screen and (max-width: 770px) {
     .store {
+      flex-direction: column;
       &__menu {
+        position: static;
+        flex-direction: row;
         margin: 16px 16px 0 16px;
+        .menu-item {
+          margin: 0 8px 0 0;
+        }
       }
       &__cards {
+        margin-left: 0;
         padding: 16px 0;
       }
       &__item {
@@ -162,11 +174,15 @@
   @media screen and (max-width: 500px) {
     .store {
       &__menu {
-        margin: 16px 8px 0 8px;
+        margin: 8px 8px 0 8px;
         font-size: 10px;
         .menu-item {
           margin-right: 8px;
         }
+      }
+      &__cards {
+        margin-left: 0;
+        padding: 8px 0;
       }
       &__item {
         padding: 0 8px 16px 8px;
