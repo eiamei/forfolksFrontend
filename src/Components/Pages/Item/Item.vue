@@ -1,9 +1,12 @@
 <template>
   <div class="item">
     <div class="item__first-row">
+      <div class="item__top-bread">
+        <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
+      </div>
       <div class="item__image">
         <img :src="itemImage" class="image">
-        <div class="item-image-background"></div>
+        <!--<div class="item-image-background"></div>-->
         <div class="image-not-found" v-if="showHider">
           К сожалению, у нас нет фотографии в этом цвете :С
         </div>
@@ -11,7 +14,8 @@
       <div  class="item-info__container">
         <div class="item-info">
           <div class="item-info__bread">
-            <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}</div>
+            <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
+          </div>
           <div class="item-info__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</div>
           <div class="item-info__section">
             Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Таким образом реализация намеченных плановых заданий влечет за собой процесс внедрения и
@@ -59,10 +63,6 @@
         </div>
       </div>
     </div>
-    <!--<div style="margin: 24px 0 12px 0 ; font-size: 24px; text-align: center; font-weight: 300">Вдохновение</div>-->
-    <!--<img :src="itemImage" class="insipration-image">-->
-    <!--<img :src="itemImage" class="insipration-image">-->
-    <!--<img :src="itemImage" class="insipration-image">-->
   </div>
 </template>
 
@@ -129,16 +129,20 @@
       flex-direction: row;
       justify-content: space-between;
       margin-top: 48px;
-      padding: 24px;
+      padding: 24px 40px;
+    }
+    &__top-bread {
+      display: none;
     }
     .item__image {
-      width: 50%;
+      min-width: 50%;
       position: relative;
       .image {
         border-radius: 4px;
         position: relative;
         width: 100%;
         z-index: 10;
+        max-width: 4000px;
       }
       .image-not-found {
         position: absolute;
@@ -164,23 +168,15 @@
         background-color: $dusty-rose;
         z-index: 1;
       }
-      .image-preview {
-        width: 80px;
-        height: 80px;
-        margin-right: 16px;
-        z-index: 10;
-        position: relative;
-      }
     }
     .item-info {
       &__container {
-        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-left: 80px;
       }
-      width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -217,6 +213,84 @@
     .insipration-image {
       margin: 12px 24px;
       width: calc(100% - 48px);
+    }
+    @media screen and (max-width: 1400px){
+      .item-info {
+        &__container {
+          margin-left: 24px;
+        }
+        &__name {
+          font-size: 24px;
+        }
+      }
+    }
+    @media screen and (max-width: 1050px) {
+      .item-info {
+        font-size: 12px;
+        &__name {
+          margin-top: 8px;
+          font-size: 24px;
+        }
+        &__section-button {
+          font-size: 10px!important;
+        }
+      }
+      .dropdown {
+
+        &__shevron {
+          width: 8px;
+          height: 5px;
+        }
+        &-selected {
+          font-size: 12px;
+        }
+        &-options {
+          &__item {
+            &-label {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      &__top-bread {
+        display: inline;
+        font-size: 12px;
+        margin-bottom: 8px;
+      }
+      &__first-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 48px;
+        padding: 8px 40px;
+      }
+      .item-info {
+        &__container {
+          margin-left: 0;
+        }
+        &__bread {
+          display: none;
+        }
+      }
+
+    }
+    @media screen and (max-width: 770px) {
+      &__first-row {
+        padding: 8px 16px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      &__first-row {
+        padding: 8px;
+      }
+      .item-info {
+        font-size: 10px;
+        &__name {
+          font-size: 20px;
+        }
+      }
     }
   }
   /*@media screen and (max-width: 1050px) {*/

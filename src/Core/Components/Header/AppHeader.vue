@@ -57,7 +57,7 @@
       width: calc(100% - 32px);
       &__link {
         font-size: .8em;
-        margin: 0 4px;
+        /*margin: 0 4px;*/
       }
     }
   }
