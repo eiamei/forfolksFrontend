@@ -4,7 +4,7 @@
     "model": "M",
     "type": "pot",
     "desc": "",
-    "shortDesc": "",
+    "shortDesc": "Для небольших растений",
     "size": {
       "height": 8,
       "depth": 7,
@@ -25,7 +25,7 @@
     "model": "M",
     "type": "pot",
     "desc": "",
-    "shortDesc": "",
+    "shortDesc": "Для небольших растений",
     "size": {
       "height": 8,
       "depth": 7,
@@ -42,7 +42,7 @@
     "model": "M",
     "type": "pot",
     "desc": "",
-    "shortDesc": "",
+    "shortDesc": "Для небольших растений",
     "size": {
       "height": 8,
       "depth": 7,
@@ -59,7 +59,7 @@
     "model": "S",
     "type": "stand",
     "desc": "",
-    "shortDesc": "",
+    "shortDesc": "Для колец",
     "size": {
       "height": 8,
       "depth": 7,
@@ -72,11 +72,11 @@
     "price": 800
   },
   {
-    "name": "Gent6",
+    "name": "GENT6",
     "model": "",
     "type": "candlestick",
     "desc": "",
-    "shortDesc": "",
+    "shortDesc": "Для свечек - таблеток",
     "size": {
       "height": 8,
       "depth": 7,
