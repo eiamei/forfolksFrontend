@@ -3,7 +3,7 @@
     "name": "BASIC4",
     "model": "M",
     "type": "pot",
-    "desc": "",
+    "desc": "Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание позиций,",
     "shortDesc": "Для небольших растений",
     "size": {
       "height": 8,
@@ -50,6 +50,10 @@
       "innerDiameter": 7
     },
     "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "graphite"
+    ],
     "material": ["concrete"],
     "weight": 500,
     "price": 800
@@ -67,6 +71,10 @@
       "innerDiameter": 7
     },
     "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "graphite"
+    ],
     "material": ["concrete"],
     "weight": 100,
     "price": 800
@@ -84,6 +92,9 @@
       "innerDiameter": 7
     },
     "colors": "brass",
+    "availableColors": [
+      "natural"
+    ],
     "material": ["brass", "concrete"],
     "weight": 200,
     "price": 550

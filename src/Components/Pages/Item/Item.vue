@@ -6,27 +6,25 @@
       </div>
       <div class="item__image">
         <img :src="itemImage" class="image">
-        <!--<div class="item-image-background"></div>-->
         <div class="image-not-found" v-if="showHider">
           К сожалению, у нас нет фотографии в этом цвете :С
         </div>
       </div>
-      <div  class="item-info__container">
+      <div class="item-info__container">
         <div class="item-info">
           <div class="item-info__bread">
             <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
           </div>
           <div class="item-info__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</div>
           <div class="item-info__section">
-            Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Таким образом реализация намеченных плановых заданий влечет за собой процесс внедрения и
+            {{shortenDescription}}
+            <span class="inner-link" v-scroll-to="'.item-description'">подробное описание</span>
           </div>
           <table class="item-info__spec">
             <tr v-if="item.model.length">
               <td>Модель:</td>
               <td>
                 <app-button class="item-info__section-button button--item-selection" :content="item.model"/>
-                <!--<app-button class="item-info__section-button button&#45;&#45;item-selection" content="S"/>-->
-                <!--<app-button class="item-info__section-button button&#45;&#45;item-selection" content="M"/>-->
               </td>
             </tr>
             <tr>
@@ -36,32 +34,45 @@
               </td>
             </tr>
             <tr>
-              <td>Размер:</td>
-              <td>
-                <span v-for="(param, key) in item.size" :key="`${param}.${key}`">{{$t(`size.${key}`)}}: {{param}} cм </span>
-              </td>
-            </tr>
-            <tr>
-              <td>Вес:</td>
-              <td>{{item.weight}} гр</td>
-            </tr>
-            <tr>
-              <td>Материал:</td>
-              <td>
-                <span v-for="material in item.material" :key="material">{{$t(`material.${material}`)}} </span>
-              </td>
-            </tr>
-            <tr>
               <td>Цена:</td>
               <td>{{item.price}} ₽</td>
             </tr>
           </table>
-          <!--<div>-->
-            <!--<app-button content="Добавить в корзину" style="margin-top: 16px" class="button&#45;&#45;add-to-cart"/>-->
-            <!--<span style="padding-left: 16px">Скоро будет доступно :)</span>-->
-          <!--</div>-->
+          <div>
+            <app-button content="Добавить в корзину" style="margin-top: 16px" class="button--add-to-cart"/>
+          </div>
         </div>
       </div>
+    </div>
+    <hr/>
+      <div class="section">Описание</div>
+    <hr/>
+    <div class="item-description">
+      <div class="item-description__main-text">
+         {{item.desc}}
+      </div>
+      <table class="item-description__spec">
+        <tr>
+          <td>Размер:</td>
+          <td>
+            <span v-for="(param, key) in item.size" :key="`${param}.${key}`">{{$t(`size.${key}`)}}: {{param}} cм </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Вес:</td>
+          <td>{{item.weight}} гр</td>
+        </tr>
+        <tr>
+          <td>Материал:</td>
+          <td>
+            <span v-for="material in item.material" :key="material">{{$t(`material.${material}`)}} </span>
+          </td>
+        </tr>
+        <tr>
+          <td>Цена:</td>
+          <td>{{item.price}} ₽</td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -88,7 +99,8 @@
         size: '',
         material: '',
         price: '',
-        showHider: false
+        showHider: false,
+        symbolLimit: 30
       };
     },
     created () {
@@ -104,6 +116,12 @@
           return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`);
         }
         return '';
+      },
+      shortenDescription () {
+        if (this.item.desc.length > this.symbolLimit) {
+          return this.item.desc.slice(0, this.symbolLimit) + '...';
+        }
+        return this.item.desc;
       }
     },
     methods: {
@@ -134,8 +152,17 @@
     &__top-bread {
       display: none;
     }
+    .section {
+      font-size: 30px;
+      font-weight: 300;
+      margin-left: 40px;
+    }
+    .inner-link {
+      color: $active-link;
+      text-decoration: underline;
+    }
     .item__image {
-      min-width: 50%;
+      width: 50%;
       position: relative;
       .image {
         border-radius: 4px;
@@ -175,7 +202,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 80px;
+        width: 50%;
+        /*margin-left: 80px;*/
       }
       display: flex;
       flex-direction: column;
@@ -185,7 +213,7 @@
       &__bread {
       }
       &__name {
-        margin-top: 16px;
+        margin-top: 8px;
         font-size: 30px;
         font-weight: 700;
       }
@@ -210,18 +238,41 @@
         margin-right: 8px;
       }
     }
-    .insipration-image {
-      margin: 12px 24px;
-      width: calc(100% - 48px);
+    .item-description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 24px 40px;
+      padding: 0;
+      &__main-text {
+        width: 50%;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      &__spec {
+        width: 50%;
+        margin: 0 16px;
+        tr td {
+          padding: 4px 0;
+          vertical-align: top;
+          &:first-child {
+            padding-right: 16px;
+            font-weight: 500;
+          }
+        }
+      }
     }
     @media screen and (max-width: 1400px){
       .item-info {
-        &__container {
-          margin-left: 24px;
-        }
         &__name {
           font-size: 24px;
         }
+      }
+      .section {
+        font-size: 24px;
       }
     }
     @media screen and (max-width: 1050px) {
@@ -235,8 +286,12 @@
           font-size: 10px!important;
         }
       }
-      .dropdown {
 
+      .item-description {
+        font-size: 12px;
+        margin: 16px 40px;
+      }
+      .dropdown {
         &__shevron {
           width: 8px;
           height: 5px;
@@ -254,6 +309,9 @@
       }
     }
     @media screen and (max-width: 900px) {
+      .item__image {
+        width: 100%;
+      }
       &__top-bread {
         display: inline;
         font-size: 12px;
@@ -268,6 +326,10 @@
       }
       .item-info {
         &__container {
+          width: 100%;
+          align-items: flex-start;
+        }
+        &__container {
           margin-left: 0;
         }
         &__bread {
@@ -277,11 +339,21 @@
 
     }
     @media screen and (max-width: 770px) {
+      .section {
+        margin-left: 16px;
+      }
       &__first-row {
         padding: 8px 16px;
       }
+      .item-description {
+        margin: 0 16px;
+      }
     }
     @media screen and (max-width: 500px) {
+      .section {
+        font-size: 20px;
+        margin-left: 8px;
+      }
       &__first-row {
         padding: 8px;
       }
@@ -289,6 +361,17 @@
         font-size: 10px;
         &__name {
           font-size: 20px;
+        }
+      }
+      .item-description {
+        flex-direction: column;
+        margin: 8px;
+        &__main-text {
+          width: 100%;
+        }
+        &__spec {
+          width: 100%;
+          margin: 16px 0;
         }
       }
     }
