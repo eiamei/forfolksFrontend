@@ -127,6 +127,7 @@
       width: 10px;
       height: 5px;
       stroke-width: 3px;
+      margin-top: 2px;
       margin-left: 4px;
       transition: .5s all;
       &--open {
@@ -169,6 +170,40 @@
         &-label {
           padding: 8px 8px;
           font-size: 12px;
+        }
+      }
+    }
+    @media screen and (max-width: 770px) {
+
+      &__shevron {
+        width: 8px;
+        height: 5px;
+      }
+      &-selected {
+        font-size: 12px;
+      }
+      &-options {
+        &__item {
+          &-label {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 500px) {
+
+      &__shevron {
+        width: 8px;
+        height: 5px;
+      }
+      &-selected {
+        font-size: 10px;
+      }
+      &-options {
+        &__item {
+          &-label {
+            font-size: 10px;
+          }
         }
       }
     }
