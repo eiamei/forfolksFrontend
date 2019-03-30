@@ -39,7 +39,7 @@
             </tr>
           </table>
           <div>
-            <app-button content="Добавить в корзину" style="margin-top: 16px" class="button--add-to-cart"/>
+            <app-button content="Добавить в корзину" style="margin-top: 16px" class="button--add-to-cart" @click="addToBag"/>
           </div>
         </div>
       </div>
@@ -131,6 +131,15 @@
       selectColor (value) {
         this.showHider = !this.item.availableColors.find(function (color) { return color === value.label; });
         this.chosenColor = value;
+      },
+      addToBag () {
+        this.$store.dispatch('bag/add', {
+          name: this.item.name,
+          model: this.item.model,
+          price: this.item.price,
+          type: this.item.type,
+          color: this.chosenColor.label
+        });
       }
     }
   };

@@ -1,12 +1,13 @@
 <template>
   <header class="header">
-      <div class="header__controls">
-        <router-link class="header__link" to="store">Магазин</router-link>
-      </div>
-      <router-link to="/" class="header__logo"></router-link>
-      <div class="header__controls">
-        <router-link class="header__link" to="about">О нас</router-link>
-      </div>
+    <div class="header__controls">
+      <router-link class="header__link" to="store">Магазин</router-link>
+    </div>
+    <router-link to="/" class="header__logo"></router-link>
+    <div class="header__controls">
+      <router-link class="header__link" to="bag">Корзина</router-link>
+      <router-link class="header__link" to="about">О нас</router-link>
+    </div>
   </header>
 </template>
 
@@ -18,6 +19,7 @@
 
 <style lang="scss">
   @import '../../../assets/styles/_colors';
+
   .header {
     width: calc(100% - 80px);
     margin: 0 40px;
@@ -31,7 +33,7 @@
     top: 0;
     &__logo {
       background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
-      width: 86px;
+      width: 70px;
       height: 24px;
     }
     &__controls {
@@ -47,10 +49,12 @@
       }
     }
   }
+
   .router-link-exact-active {
     color: $dark-gray2;
     cursor: default;
   }
+
   @media screen and (max-width: 770px) {
     .header {
       margin: 0 16px;
@@ -61,6 +65,7 @@
       }
     }
   }
+
   @media screen and (max-width: 500px) {
     .header {
       margin: 0 8px;
