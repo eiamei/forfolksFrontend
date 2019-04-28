@@ -2,7 +2,14 @@
   <div class="payment-page">
     <payment-user-info v-if="isSuccess === null" @confirmed="sendEmail" class="payment-page__user-info"/>
     <payment-cart v-if="isSuccess === null" class="payment-page__cart"/>
-    <div v-if="isSuccess">Заказ успешно отправлен</div>
+    <div v-if="isSuccess" class="payment-page__success">
+      <h1>Заказ успешно отправлен</h1>
+      <span>В ближайшее время мы вышлем вам информацию о заказе и реквизиты для оплаты</span>
+    </div>
+    <div v-else-if="isSuccess === false" class="payment-page__error">
+      <h1>При отправке заказа возникла ошибка :C</h1>
+      <span>Попробуйте обновить страницу или свяжитесь с нами если проблема повторится</span>
+    </div>
   </div>
 </template>
 
@@ -40,6 +47,8 @@
         request.onreadystatechange = () => {
           if (request.responseText) {
             this.isSuccess = JSON.parse(request.responseText).result === 'success';
+            if (this.isSuccess)
+              this.$store.dispatch('bag/empty');
           }
           return;
         };
@@ -61,6 +70,14 @@
     &__cart {
       margin-left: 80px;
       width: 30%;
+    }
+    &__success, &__error {
+      margin-top: 10vh;
+      text-align: center;
+      padding: 8px 16px;
+      h1 {
+        font-weight: 200;
+      }
     }
   }
 </style>

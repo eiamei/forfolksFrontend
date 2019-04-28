@@ -9,7 +9,10 @@ export default {
     state.bag[id].qty--;
   },
   remove (state, id) {
-    console.log(delete state.bag[id]);
+    delete state.bag[id];
     state.bag = Object.assign({}, state.bag);
+  },
+  empty (state) {
+    state.bag = {};
   }
 }

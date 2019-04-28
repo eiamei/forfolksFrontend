@@ -31,6 +31,10 @@ export default {
     commit('remove', id);
     dispatch('save');
   },
+  empty ({commit, dispatch}) {
+    commit('empty');
+    dispatch('save');
+  },
   save ({state}) {
     localStorage.setItem('bag', JSON.stringify(state.bag));
   }
