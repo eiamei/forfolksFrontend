@@ -1,0 +1,105 @@
+<template>
+  <div class="cart-info">
+    <div class="cart-item" v-for="(item, key) in bag" :item="item" :key="key">
+      <img class="cart-item__image" :src="itemImage(item)"/>
+      <div class="cart-item__info">
+        <p class="cart-item__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</p>
+        <p class="cart-item__color">{{$t(`colors.${item.color}`)}}</p>
+      </div>
+      <div  class="cart-item__price">{{+item.price * +item.qty}} ₽</div>
+      <div class="cart-item__qty">{{item.qty}}</div>
+    </div>
+    <span class="cart-info__total">
+      <p>Итого:</p>
+      <p>{{total}} ₽</p>
+    </span>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'PaymentCart',
+    computed: {
+      bag () {
+        return this.$store.state.bag.bag;
+      },
+      total () {
+        let total = 0;
+        Object.keys(this.bag).forEach(id => {
+          total += this.bag[id].qty * this.bag[id].price;
+        });
+        return total;
+      }
+    },
+    methods: {
+      itemImage (item) {
+        if (item) {
+          const name = item.name.toLowerCase();
+          const model = item.model.toLowerCase();
+          const type = item.type.toLowerCase();
+          return require(`@/assets/images/storeIcons/${type}-${name}${model ? '-' + model : ''}.jpg`);
+        }
+        return '';
+      }
+    }
+  };
+</script>
+
+<style lang="scss">
+  @import '../../../assets/styles/colors';
+  .cart-info {
+    padding-top: 64px;
+    &__total {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .cart-item {
+    display: flex;
+    margin-bottom: 16px;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 8px;
+    &__image {
+      width: 64px;
+      height: 64px;
+      border-radius: 4px;
+    }
+    &__info {
+      margin-left: 16px;
+      align-self: center;
+      flex-basis: 30%;
+    }
+    &__name, &__color {
+      margin: 0;
+    }
+    &__name {
+      font-size: 14px;
+    }
+    &__color {
+      font-size: 12px;
+      color: $dark-gray2;
+    }
+    &__qty {
+      width: 24px;
+      height: 19px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: $sandy;
+      text-align: center;
+      padding-top: 5px;
+      font-size: 12px;
+      left: 52px;
+      top: -8px;
+    }
+    &__price {
+      align-self: center;
+      margin-left: 40px;
+      flex-basis: 50%;
+      text-align: right;
+    }
+  }
+</style>
