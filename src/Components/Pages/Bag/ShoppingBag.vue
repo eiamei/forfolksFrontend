@@ -13,14 +13,20 @@
           <td>{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</td>
           <td>{{$t(`colors.${item.color}`)}}</td>
           <td class="bag-item__table-qty">
-            <app-button content="-" @click="decrement"/>
-            <div>
+            <app-button class="button--increment-decrement" @click="decrement">
+              <div slot="content">-</div>
+            </app-button>
+            <div class="qty-cell">
               {{item.qty}}
             </div>
-            <app-button content="+" @click="increment"/>
-            <app-button content="x" @click="remove"/>
+            <app-button class="button--increment-decrement" @click="increment">
+              <div slot="content">+</div>
+            </app-button>
+            <app-button class="button--bag-item-remove" @click="remove">
+              <div slot="content">x</div>
+            </app-button>
           </td>
-          <td>{{+item.price * +item.qty}}</td>
+          <td>{{+item.price * +item.qty}} ₽</td>
         </tr>
       </table>
     </div>
@@ -70,9 +76,10 @@
 <style lang="scss">
   @import '../../../assets/styles/colors';
  .bag-item-container {
-   margin-top: 24px;
    border-top: 1px solid $light-gray;
    border-bottom: 1px solid $light-gray;
+   width: 100%;
+   margin-bottom: 16px;
    .bag-item {
      display: flex;
      &__image {
@@ -82,6 +89,16 @@
        width: 100%;
        margin-top: 16px;
        margin-left: 24px;
+       td {
+         &:first-child {
+           width: 35%;
+         }
+         &:last-child {
+           width: 15%;
+           text-align: right;
+         }
+         width: 25%;
+       }
      }
      &__table-header {
        td {
@@ -91,6 +108,11 @@
      }
      &__table-qty {
        display: flex;
+       align-items: center;
+       .qty-cell {
+         font-size: 16px;
+         margin-right: 8px;
+       }
      }
    }
  }

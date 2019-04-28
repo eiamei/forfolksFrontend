@@ -2,6 +2,7 @@ import Router from 'vue-router';
 import Store from '../../Components/Pages/Store/Store';
 import Item from '../../Components/Pages/Item/Item';
 import Bag from '../../Components/Pages/Bag/Bag';
+import Payment from '../../Components/Pages/Payment/Payment';
 
 let config = {
   mode: 'history',
@@ -20,9 +21,14 @@ let config = {
       component: Item
     },
     {
-      path: '/Bag',
+      path: '/bag',
       name: 'Bag',
       component: Bag
+    },
+    {
+      path: '/payment',
+      name: 'Payment',
+      component: Payment
     },
     {
       path: '*',

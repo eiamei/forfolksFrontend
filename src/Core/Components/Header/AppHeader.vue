@@ -5,7 +5,7 @@
     </div>
     <router-link to="/" class="header__logo"></router-link>
     <div class="header__controls">
-      <router-link class="header__link" to="bag">Корзина</router-link>
+      <router-link class="header__link header__link--bag" to="bag">Корзина</router-link>
       <router-link class="header__link" to="about">О нас</router-link>
     </div>
   </header>
@@ -21,17 +21,22 @@
   @import '../../../assets/styles/_colors';
 
   .header {
+    position: fixed;
     width: calc(100% - 80px);
     margin: 0 40px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $light-gray;
     padding: 12px 0 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
+    z-index: 1000;
+    background-color: white;
     &__logo {
+      position: absolute;
+      left: calc(50% - 35px);
+      top: 8px;
       background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
       width: 70px;
       height: 24px;
@@ -46,6 +51,9 @@
       font-weight: 400;
       &:hover {
         color: black;
+      }
+      &--bag {
+        margin-right: 8px;
       }
     }
   }

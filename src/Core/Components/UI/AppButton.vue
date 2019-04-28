@@ -1,6 +1,7 @@
 <template>
   <button class="button" @click="$emit('click')">
     {{content}}
+    <slot name="content"></slot>
   </button>
 </template>
 
@@ -10,7 +11,7 @@ export default {
   props: {
     content: {
       type: String,
-      required: true
+      required: false
     }
   }
 };
@@ -20,6 +21,7 @@ export default {
   @import '../../../assets/styles/_colors';
   .button {
     cursor: pointer;
+    outline: transparent;
     &--menu {
       padding: 8px 16px;
       border-radius: 4px;
@@ -36,9 +38,9 @@ export default {
         font-size: 12px!important;
       }
     }
-    &--add-to-cart {
-      background: #353535;
-      border: 1px solid #000000;
+    &--add-to-cart, &--end-order {
+      background: $blue1;
+      border: 1px solid $blue1;
       box-sizing: border-box;
       border-radius: 4px;
       padding: 8px 48px;
@@ -46,9 +48,43 @@ export default {
       color: white;
       width: 300px;
       font-weight: 700;
+      &:hover {
+        background: $blue2;
+      }
       @media screen and (max-width: 600px) {
         width: 100%;
         font-size: 12px;
+      }
+    }
+    &--increment-decrement, &--bag-item-remove {
+      border-radius: 40px;
+      border: none;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      font-weight: 700;
+      color: white;
+      margin-right: 8px;
+      transition: .5s all;
+      outline: transparent;
+    }
+    &--increment-decrement {
+      background-color: $light-gray;
+      &:hover {
+        transition: .5s all;
+        background-color: $light-green;
+        color: black;
+      }
+    }
+    &--bag-item-remove {
+      background-color: $lightest-gray;
+      &:hover {
+        transition: .5s all;
+        background-color: $light-red;
+        color: black;
       }
     }
   }
