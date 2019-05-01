@@ -3,6 +3,7 @@ import Store from '../../Components/Pages/Store/Store';
 import Item from '../../Components/Pages/Item/Item';
 import Bag from '../../Components/Pages/Bag/Bag';
 import Payment from '../../Components/Pages/Payment/Payment';
+import About from '../../Components/Pages/About/About';
 
 let config = {
   mode: 'history',
@@ -13,7 +14,8 @@ let config = {
       component: Store
     },
     {
-      path: '/about'
+      path: '/about',
+      component: About
     },
     {
       path: '/item',
