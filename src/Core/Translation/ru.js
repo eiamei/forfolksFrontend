@@ -8,7 +8,9 @@ export default {
     candlestick: 'Подсвечник',
     candlesticks: 'Подсвечники',
     stand: 'Подставка',
-    stands: 'Подставки'
+    stands: 'Подставки',
+    vase: 'Ваза',
+    vases: 'Вазы'
   },
   links: {
     store: 'Магазин'
@@ -16,6 +18,14 @@ export default {
   colors: {
     coated: 'Мелованный',
     graphite: 'Графит',
+    black_marble: 'Черный мрамор',
+    mustard: 'Горчичный',
+    coral: 'Коралл',
+    cacao: 'Какао',
+    cornflower: 'Василек',
+    sakura: 'Сакура',
+    ash: 'Пепел',
+    mint: 'Мята',
     dustyRose: 'Пыльная роза',
     seaWave: 'Морская волна',
     black: 'Черный',

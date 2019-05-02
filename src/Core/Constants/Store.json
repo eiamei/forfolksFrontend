@@ -1,10 +1,10 @@
 [
   {
     "name": "BASIC4",
-    "model": "M",
+    "model": "S",
     "type": "pot",
-    "desc": "Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание позиций,",
-    "shortDesc": "Для небольших растений",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
     "size": {
       "height": 8,
       "depth": 7,
@@ -14,35 +14,41 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
-      "graphite"
+      "graphite",
+      "black_marble"
     ],
     "material": ["concrete"],
-    "weight": 500,
-    "price": 800
+    "weight": 300,
+    "price": 300
+  },
+  {
+    "name": "BASIC6",
+    "model": "S",
+    "type": "stand",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "graphite",
+      "black_marble"
+    ],
+    "material": ["concrete"],
+    "weight": 300,
+    "price": 350
   },
   {
     "name": "BUBBLE",
     "model": "M",
     "type": "pot",
-    "desc": "",
-    "shortDesc": "Для небольших растений",
-    "size": {
-      "height": 8,
-      "depth": 7,
-      "externalDiameter": 8,
-      "innerDiameter": 7
-    },
-    "colors": "concrete",
-    "material": ["concrete"],
-    "weight": 500,
-    "price": 800
-  },
-  {
-    "name": "MODERN8",
-    "model": "M",
-    "type": "pot",
-    "desc": "",
-    "shortDesc": "Для небольших растений",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
     "size": {
       "height": 8,
       "depth": 7,
@@ -52,39 +58,21 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
-      "graphite"
+      "graphite",
+      "black_marble",
+      "sakura",
+      "coral"
     ],
     "material": ["concrete"],
-    "weight": 500,
-    "price": 800
+    "weight": 300,
+    "price": 630
   },
   {
-    "name": "CONE",
-    "model": "S",
-    "type": "stand",
-    "desc": "",
-    "shortDesc": "Для колец",
-    "size": {
-      "height": 8,
-      "depth": 7,
-      "externalDiameter": 8,
-      "innerDiameter": 7
-    },
-    "colors": "concrete",
-    "availableColors": [
-      "coated",
-      "graphite"
-    ],
-    "material": ["concrete"],
-    "weight": 100,
-    "price": 800
-  },
-  {
-    "name": "GENT6",
+    "name": "MODERN6",
     "model": "",
     "type": "candlestick",
-    "desc": "",
-    "shortDesc": "Для свечек - таблеток",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
     "size": {
       "height": 8,
       "depth": 7,
@@ -93,10 +81,161 @@
     },
     "colors": "brass",
     "availableColors": [
+      "black",
       "natural"
     ],
     "material": ["brass", "concrete"],
-    "weight": 200,
-    "price": 550
+    "weight": 300,
+    "price": 630
+  },
+  {
+    "name": "CONE",
+    "model": "S",
+    "type": "stand",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "graphite",
+      "black_marble"
+    ],
+    "material": ["concrete"],
+    "weight": 300,
+    "price": 350
+  },
+  {
+    "name": "GENT6",
+    "model": "",
+    "type": "candlestick",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "brass",
+    "availableColors": [
+      "black",
+      "natural"
+    ],
+    "material": ["brass", "concrete"],
+    "weight": 300,
+    "price": 630
+  },
+  {
+    "name": "HILL",
+    "model": "",
+    "type": "pot",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "availableColors": [
+      "black_marble"
+    ],
+    "material": ["concrete"],
+    "weight": 300,
+    "price": 630
+  },
+  {
+    "name": "MODERN6",
+    "model": "L",
+    "type": "vase",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "availableColors": [
+      "black_marble"
+    ],
+    "material": ["concrete"],
+    "weight": 300,
+    "price": 630
+  },
+  {
+    "name": "MODERN8",
+    "model": "M",
+    "type": "pot",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "graphite",
+      "black_marble"
+    ],
+    "material": ["concrete"],
+    "weight": 300,
+    "price": 630
+  },
+  {
+    "name": "TALLRIK",
+    "model": "M",
+    "type": "stand",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "ash",
+      "black_marble"
+    ],
+    "material": ["concrete"],
+    "weight": 300,
+    "price": 630
+  },
+  {
+    "name": "TRAY",
+    "model": "M",
+    "type": "stand",
+    "desc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "shortDesc": "TODO: ДОБАВИТЬ ОПИСАНИЕ",
+    "size": {
+      "height": 8,
+      "depth": 7,
+      "externalDiameter": 8,
+      "innerDiameter": 7
+    },
+    "colors": "concrete",
+    "availableColors": [
+      "coated",
+      "ash",
+      "graphite",
+      "black_marble"
+    ],
+    "material": ["concrete"],
+    "weight": 300,
+    "price": 630
   }
 ]

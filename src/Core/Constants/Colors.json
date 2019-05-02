@@ -10,11 +10,35 @@
     },
     {
       "value": 3,
-      "label": "dustyRose"
+      "label": "black_marble"
     },
     {
       "value": 4,
-      "label": "seaWave"
+      "label": "ash"
+    },
+    {
+      "value": 5,
+      "label": "mint"
+    },
+    {
+      "value": 6,
+      "label": "mustard"
+    },
+    {
+      "value": 7,
+      "label": "coral"
+    },
+    {
+      "value": 8,
+      "label": "cacao"
+    },
+    {
+      "value": 9,
+      "label": "cornflower"
+    },
+    {
+      "value": 10,
+      "label": "sakura"
     }
   ],
   "brass": [
@@ -25,10 +49,6 @@
     {
       "value": 2,
       "label": "black"
-    },
-    {
-      "value": 3,
-      "label": "white"
     }
   ]
 }
