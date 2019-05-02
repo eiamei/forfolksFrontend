@@ -5,13 +5,16 @@
       <table class="bag-item__table">
         <tr class="bag-item__table-header">
           <td>Название</td>
-          <td>Цвет</td>
-          <td>Количество</td>
-          <td>Стоимость</td>
+          <td class="bag-item__table-color-cell">Цвет</td>
+          <td class="bag-item__table-qty-cell">Количество</td>
+          <td class="bag-item__table-price-cell">Стоимость</td>
         </tr>
         <tr>
-          <td>{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</td>
-          <td>{{$t(`colors.${item.color}`)}}</td>
+          <td>
+            {{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}
+            <span class="bag-item__table-color-in-name">{{$t(`colors.${item.color}`)}}</span>
+          </td>
+          <td class="bag-item__table-color">{{$t(`colors.${item.color}`)}}</td>
           <td class="bag-item__table-qty">
             <app-button class="button--increment-decrement" @click="decrement">
               <div slot="content">-</div>
@@ -26,10 +29,33 @@
               <div slot="content">x</div>
             </app-button>
           </td>
-          <td>{{+item.price * +item.qty}} ₽</td>
+          <td class="bag-item__table-price">{{+item.price * +item.qty}} ₽</td>
         </tr>
       </table>
     </div>
+    <table class="bag-item__table bag-item__table--mobile">
+      <tr class="bag-item__table-header bag-item__table-header--mobile">
+        <td>Количество</td>
+        <td>Стоимость</td>
+      </tr>
+      <tr>
+        <td class="bag-item__table-qty bag-item__table-qty--mobile">
+          <app-button class="button--increment-decrement" @click="decrement">
+            <div slot="content">-</div>
+          </app-button>
+          <div class="qty-cell">
+            {{item.qty}}
+          </div>
+          <app-button class="button--increment-decrement" @click="increment">
+            <div slot="content">+</div>
+          </app-button>
+          <app-button class="button--bag-item-remove" @click="remove">
+            <div slot="content">x</div>
+          </app-button>
+        </td>
+        <td>{{+item.price * +item.qty}} ₽</td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -99,19 +125,68 @@
          }
          width: 25%;
        }
+       &--mobile {
+         margin: 16px 0 8px 0;
+         display: none;
+         @media screen and (max-width: 700px) {
+           display: table;
+         }
+       }
+     }
+     &__table-color-in-name {
+       display: none;
+       @media screen and (max-width: 450px) {
+         color: $dark-gray;
+         display: block;
+       }
      }
      &__table-header {
        td {
          font-weight: 700;
          color: $dark-gray;
        }
+       &--mobile {
+         td {
+           &:first-child {
+             text-align: left;
+           }
+         }
+       }
      }
      &__table-qty {
        display: flex;
        align-items: center;
+       @media screen and (max-width: 700px) {
+         display: none;
+       }
        .qty-cell {
          font-size: 16px;
          margin-right: 8px;
+       }
+       &--mobile {
+         display: flex;
+       }
+     }
+     &__table-color-cell {
+       @media screen and (max-width: 700px) {
+         text-align: right;
+       }
+       @media screen and (max-width: 450px) {
+         display: none;
+       }
+     }
+     &__table-color {
+       @media screen and (max-width: 700px) {
+         text-align: right;
+       }
+       @media screen and (max-width: 450px) {
+         display: none;
+       }
+     }
+     &__table-qty-cell, &__table-price-cell, &__table-price {
+       display: table-cell;
+       @media screen and (max-width: 700px) {
+         display: none;
        }
      }
    }
