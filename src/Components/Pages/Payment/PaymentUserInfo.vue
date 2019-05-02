@@ -72,6 +72,7 @@ export default {
   @import '../../../assets/styles/colors';
   .user-info {
     /*margin-top: 60px;*/
+    width: 100%;
     max-width: 600px;
     &__form {
       display: flex;
@@ -83,7 +84,8 @@ export default {
       margin: 24px 0 10px 0;
     }
     &__input {
-      width: calc(600px - 18px);
+      width: calc(100% - 18px);
+      max-width: calc(600px - 18px);
       height: 40px;
       border-radius: 4px;
       border: 1px solid $dark-gray;
@@ -91,6 +93,7 @@ export default {
       padding: 0 8px;
       &--postal {
         width: 10%;
+        min-width: 40px;
         margin-right: 8px;
       }
       &--address {
@@ -110,7 +113,7 @@ export default {
       color: $dark-gray2
     }
     &__end-order {
-      margin-top: 24px;
+      margin: 24px 0;
       align-self: flex-end;
     }
   }

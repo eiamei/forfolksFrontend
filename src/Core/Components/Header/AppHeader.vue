@@ -5,7 +5,10 @@
     </div>
     <router-link to="/" class="header__logo"></router-link>
     <div class="header__controls">
-      <router-link class="header__link header__link--bag" to="bag">Корзина</router-link>
+      <router-link class="header__link header__link--bag" to="bag">
+        <div class="header-bag" :class="bagStyle"></div>
+        <div v-if="this.bagQty">{{this.bagQty}}</div>
+      </router-link>
       <router-link class="header__link" to="about">О нас</router-link>
     </div>
   </header>
@@ -13,7 +16,21 @@
 
 <script>
   export default {
-    name: 'app-header'
+    name: 'app-header',
+    computed: {
+      bagQty () {
+        let total = 0;
+        if (this.$store.state.bag.bag) {
+          Object.keys(this.$store.state.bag.bag).map(bag => {
+            total += this.$store.state.bag.bag[bag].qty;
+          });
+        }
+        return total;
+      },
+      bagStyle () {
+        return this.bagQty ? 'header-bag--filled' : 'header-bag--empty';
+      }
+    }
   };
 </script>
 
@@ -43,6 +60,8 @@
     }
     &__controls {
       font-weight: 300;
+      display: flex;
+      align-items: center;
     }
     &__link {
       color: $active-link;
@@ -54,6 +73,7 @@
       }
       &--bag {
         margin-right: 8px;
+        display: flex;
       }
     }
   }
@@ -78,6 +98,16 @@
     .header {
       margin: 0 8px;
       width: calc(100% - 16px);
+    }
+  }
+  .header-bag {
+    width: 16px;
+    height: 16px;
+    &--empty {
+      background: url("../../../assets/svg/bag-empty.svg") no-repeat;
+    }
+    &--filled {
+      background: url("../../../assets/svg/bag-filled.svg") no-repeat;
     }
   }
 </style>
