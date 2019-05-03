@@ -5,12 +5,14 @@
       Узнать больше
     </router-link>
     <div class="store-card-description">
-      <p class="store-card-description__name">
-        <b>{{item.name}} {{item.model}} </b> | {{$t(`items.${item.type}`)}}
-      </p>
-      <p class="store-card-description__short-description">{{item.shortDesc}}</p>
+      <div class="store-card-description__name">
+        <p class=""><b>{{item.name}} {{item.model}} </b> | {{$t(`items.${item.type}`)}}</p>
+      </div>
+      <div class="store-card-description__short-description">
+        <p class="">{{item.shortDesc}}</p>
+      </div>
       <div class="store-card-description__link-and-price">
-        <router-link class="store-card-description__link" :to="link">Узнать больше</router-link>
+        <router-link :to="link">Узнать больше</router-link>
         <p class="store-card-description__price">{{item.price}}₽</p>
       </div>
     </div>
@@ -18,7 +20,6 @@
 </template>
 
 <script>
-  import COLORS from '../../../Core/Constants/Colors'
   export default {
     name: 'StoreCard',
     props: {
@@ -46,14 +47,14 @@
         const name = this.item.name.toLowerCase();
         const model = this.item.model.toLowerCase();
         const type = this.item.type.toLowerCase();
-        const color = COLORS[this.item.colors][0].label;
+        const color = this.item.availableColors[0];
         return `/item?name=${name}&model=${model}&type=${type}&color=${color}`;
       }
     }
   };
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
   @import '../../../assets/styles/colors';
 
   .store-card {
@@ -85,46 +86,49 @@
     &__name {
       font-weight: 700;
     }
-    @media screen and (max-width: 770px) {
-    }
-    @media screen and (max-width: 500px) {
-    }
   }
   .store-card-description {
     &__name {
       font-size: 16px;
       margin: 8px 0;
+      display: flex;
+      p {
+        margin: 0;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 10px!important;
+      }
     }
     &__short-description {
       font-size: 12px;
       margin: 8px 0;
+      display: flex;
+      p {
+        margin: 0;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 8px!important;
+      }
     }
     &__link-and-price {
       margin: 8px 0;
       font-size: 12px;
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 700px) {
+        font-size: 8px!important;
+      }
     }
-    &__link {}
     &__price {
       font-size: 16px;
       margin: 0;
+      @media screen and (max-width: 700px) {
+        font-size: 8px!important;
+      }
     }
     @media screen and (max-width: 500px) {
-      &__name {
-        font-size: 10px;
+      &__name, &__short-description, &__link-and-price {
         margin: 4px 0;
-      }
-      &__short-description {
-        font-size: 8px;
-        margin: 4px 0;
-      }
-      &__link-and-price {
-        margin: 4px 0;
-        font-size: 8px;
-      }
-      &__price {
-        font-size: 10px;
       }
     }
   }

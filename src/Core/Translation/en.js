@@ -2,6 +2,8 @@ export default {
   items: {
     pot: 'Pot',
     pots: 'Pots',
+    'cachePot': 'Cache-pot',
+    'cachePots': 'Cache-pots',
     candle: 'Candle',
     candles: 'Candles',
     alls: 'All',
@@ -16,6 +18,14 @@ export default {
   colors: {
     coated: 'Coated',
     graphite: 'Graphite',
+    ash: 'Ash',
+    mint: 'Mint',
+    black_marble: 'Black marble',
+    mustard: 'Mustard',
+    coral: 'Coral',
+    cacao: 'Cacao',
+    cornflower: 'Cornflower',
+    sakura: 'Sakura',
     dustyRose: 'Dusty rose',
     seaWave: 'Sea wave',
     black: 'Black',
@@ -29,6 +39,10 @@ export default {
   size: {
     height: 'Height',
     depth: 'Depth',
+    width: 'Width',
+    length: 'Length',
+    externalWidth: 'External width',
+    innerWidth: 'Inner width',
     externalDiameter: 'External diameter',
     innerDiameter: "Inner diameter"
   }
