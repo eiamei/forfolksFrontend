@@ -70,14 +70,15 @@
     &__data {
       position: absolute;
       display: flex;
-      background-color: white;
+      background-color: black;
+      color: white;
       top: 0;
       opacity: 0;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       z-index: 10;
-      transition: all .3s;
+      transition: opacity .3s;
       font-size: 16px;
       &:hover {
         opacity: .7;

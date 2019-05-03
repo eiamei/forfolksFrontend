@@ -127,14 +127,8 @@
 
       .menu-item {
         margin-bottom: 8px;
-        &--active {
-          font-weight: 700;
-        }
-      }
-      p {
-        margin: 0 0 16px 0;
         cursor: pointer;
-        &:hover {
+        &--active {
           font-weight: 700;
         }
       }
