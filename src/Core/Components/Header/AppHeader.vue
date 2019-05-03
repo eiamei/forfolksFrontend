@@ -105,6 +105,7 @@
     height: 16px;
     position: relative;
     transition: all .3s;
+    margin-right: 2px;
     &--empty {
       background: url("../../../assets/svg/bag-empty.svg") no-repeat;
     }

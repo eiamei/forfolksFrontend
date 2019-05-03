@@ -15,7 +15,7 @@
           <div class="about__facebook"></div>
         </a>
       </span>
-      <h5>Интернет магазин</h5>
+      <h5>Интернет магазин (самовывоз)</h5>
       <p class="about__address"> Санкт-Петербург, Средний проспект В.О. 56</p>
       <h5>Партнеры</h5>
       <span>
@@ -43,6 +43,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-bottom: 40px;
     &__header {
       font-weight: 300;
     }

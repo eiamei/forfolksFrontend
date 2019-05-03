@@ -48,14 +48,12 @@
       <div class="section">Описание</div>
     <hr/>
     <div class="item-description">
-      <div class="item-description__main-text">
-         {{item.desc}}
-      </div>
+      <div class="item-description__main-text" v-html="item.desc"></div>
       <table class="item-description__spec">
         <tr>
           <td>Размер:</td>
           <td>
-            <span v-for="(param, key) in item.size" :key="`${param}.${key}`">{{$t(`size.${key}`)}}: {{param}} cм </span>
+            <span v-for="(param, key, index) in item.size" :key="`${param}.${key}`">{{$t(`size.${key}`)}}: {{param}} cм{{getSymbol(item.size, index)}} </span>
           </td>
         </tr>
         <tr>
@@ -65,8 +63,12 @@
         <tr>
           <td>Материал:</td>
           <td>
-            <span v-for="material in item.material" :key="material">{{$t(`material.${material}`)}} </span>
+            <span v-for="(material, index) in item.material" :key="material">{{$t(`material.${material}`)}}{{getSymbol(item.material, index)}} </span>
           </td>
+        </tr>
+        <tr>
+          <td>Уход:</td>
+          <td>Протирать влажной тряпочкой</td>
         </tr>
         <tr>
           <td>Цена:</td>
@@ -112,7 +114,7 @@
           const name = this.item.name.toLowerCase();
           const model = this.item.model.toLowerCase();
           const type = this.item.type.toLowerCase();
-          const color = this.showHider ? COLORS[this.item.colors][0].label : this.chosenColor.label;
+          const color = this.showHider ? this.item.availableColors[0] : this.chosenColor.label;
           return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`);
         }
         return '';
@@ -126,11 +128,14 @@
     },
     methods: {
       findItem () {
-        this.item = this.store.find(item => slugify(item.name.toLowerCase()) === this.$route.query.name);
+        this.item = this.store.find(item => slugify(item.name.toLowerCase()) === this.$route.query.name && slugify(item.type.toLowerCase()) === this.$route.query.type);
       },
       selectColor (value) {
         this.showHider = !this.item.availableColors.find(function (color) { return color === value.label; });
         this.chosenColor = value;
+      },
+      getSymbol (source, index) {
+        return index < (Object.keys(source).length - 1) ? ', ' : ''
       },
       addToBag () {
         this.$store.dispatch('bag/add', {

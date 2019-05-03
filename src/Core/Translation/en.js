@@ -2,6 +2,8 @@ export default {
   items: {
     pot: 'Pot',
     pots: 'Pots',
+    'cachePot': 'Cache-pot',
+    'cachePots': 'Cache-pots',
     candle: 'Candle',
     candles: 'Candles',
     alls: 'All',
@@ -37,6 +39,10 @@ export default {
   size: {
     height: 'Height',
     depth: 'Depth',
+    width: 'Width',
+    length: 'Length',
+    externalWidth: 'External width',
+    innerWidth: 'Inner width',
     externalDiameter: 'External diameter',
     innerDiameter: "Inner diameter"
   }

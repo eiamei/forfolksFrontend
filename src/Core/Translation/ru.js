@@ -2,6 +2,8 @@ export default {
   items: {
     pot: 'Горшок',
     pots: 'Горшки',
+    'cachePot': 'Кашпо',
+    'cachePots': 'Кашпо',
     candle: 'Свеча',
     candles: 'Свечи',
     alls: 'Все',
@@ -38,7 +40,11 @@ export default {
   },
   size: {
     height: 'Высота',
-    depth: 'Ширина',
+    depth: 'Глубина',
+    width: 'Ширина',
+    length: 'Длина',
+    externalWidth: 'Внешняя ширина',
+    innerWidth: 'Ширина отверстия',
     externalDiameter: 'Внешний диаметр',
     innerDiameter: "Внутренний диаметр"
   }
