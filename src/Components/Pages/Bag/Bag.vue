@@ -52,14 +52,34 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media screen and (max-width: 900px) {
+        margin: 32px 0 0 0;
+      }
       &__header {
-        width: 75%;
+        @media screen and (max-width: 900px) {
+          width: calc(100% - 80px);
+        }
+        @media screen and (max-width: 770px) {
+          width: calc(100% - 32px);
+        }
+        @media screen and (max-width: 500px) {
+          width: calc(100% - 16px);
+        }
         text-align: left;
         font-size: 24px;
         font-weight: 700;
       }
       &__items {
         width: 75%;
+        @media screen and (max-width: 900px) {
+          width: calc(100% - 80px);
+        }
+        @media screen and (max-width: 770px) {
+          width: calc(100% - 32px);
+        }
+        @media screen and (max-width: 500px) {
+          width: calc(100% - 16px);
+        }
       }
       &__total {
         font-size: 24px;
@@ -68,6 +88,15 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @media screen and (max-width: 900px) {
+          width: calc(100% - 80px);
+        }
+        @media screen and (max-width: 770px) {
+          width: calc(100% - 32px);
+        }
+        @media screen and (max-width: 500px) {
+          width: calc(100% - 16px);
+        }
         &-text {
           display: flex;
           justify-content: space-between;
@@ -75,6 +104,9 @@
           width: 300px;
           font-weight: 500;
           color: $dark-gray;
+          @media screen and (max-width: 600px) {
+            width: 100%
+          }
         }
       }
       &__buy-button {
@@ -95,6 +127,7 @@
         @media screen and (max-width: 600px) {
           width: 100%;
           font-size: 12px;
+          margin-bottom: 16px;
         }
       }
     }

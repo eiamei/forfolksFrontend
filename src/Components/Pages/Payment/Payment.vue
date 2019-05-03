@@ -62,14 +62,21 @@
   .payment-page {
     margin-top: 48px;
     display: flex;
-    justify-content: center;
-    &__user-info {
-      margin-left: 40px;
-      /*width: 50%;*/
+    justify-content: space-between;
+    padding: 0 40px;
+    @media screen and (max-width: 770px) {
+      padding: 0 16px;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 0 8px;
     }
     &__cart {
-      margin-left: 80px;
       width: 30%;
+      min-width: 300px;
+      margin-left: 16px;
+      @media screen and (max-width: 740px) {
+        display: none;
+      }
     }
     &__success, &__error {
       margin-top: 10vh;
