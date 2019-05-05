@@ -30,14 +30,14 @@
 
 <script>
   export default {
-    name: ''
+    name: 'aboutPage'
   };
 </script>
 
 <style lang="scss">
   .about {
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

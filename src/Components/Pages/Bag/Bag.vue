@@ -4,9 +4,16 @@
       <p class="bag__header">Ваша корзина</p>
       <bag-item class="bag__items" v-for="(item, key) in bag" :item="item" :key="key"/>
       <div class="bag__total">
+        <span v-if="!isPromo">
+          <input class="bag__promo-input" placeholder="Промокод" v-model="promo" @keyup.enter="checkPromo"/>
+          <app-button class="bag__promo-button" content="Применить" @click="checkPromo" @keyup.enter="checkPromo"/>
+        </span>
+        <p v-else class="bag__promo-success">Промокод успешно применен</p>
+        <p v-if="isCorrect === false" class="bag__promo-error">Неверный промокод</p>
         <span class="bag__total-text">
           <p>Итого:</p>
-          <p>{{total}} ₽</p>
+          <p v-if="!isPromo">{{total}} ₽</p>
+          <p v-else><span style="text-decoration: line-through; font-size: 20px; margin-right: 8px">{{total * 1 / 0.9}}</span> {{total}} ₽</p>
         </span>
         <router-link class="bag__buy-button" to="payment">Оплатить</router-link>
       </div>
@@ -17,10 +24,19 @@
 
 <script>
   import BagItem from './ShoppingBag';
+  import AppButton from '../../../Core/Components/UI/AppButton';
   export default {
     name: 'bag',
     components: {
+      AppButton,
       BagItem
+    },
+    data () {
+      return {
+        isPromo: localStorage.getItem('ip'),
+        isCorrect: null,
+        promo: ''
+      }
     },
     computed: {
       bag () {
@@ -31,7 +47,20 @@
         Object.keys(this.bag).forEach(id => {
           total += this.bag[id].qty * this.bag[id].price;
         });
+        if (this.isPromo)
+          total *= 0.9;
         return total;
+      }
+    },
+    methods: {
+      checkPromo () {
+        if (this.promo === 'forfolks' || this.promo === 'Forfolks') {
+          localStorage.setItem('ip', JSON.stringify(true));
+          this.isPromo = true;
+          this.isCorrect = true;
+        } else {
+          this.isCorrect = false;
+        }
       }
     }
   };
@@ -108,6 +137,33 @@
             width: 100%
           }
         }
+      }
+      &__promo-input {
+        width: 190px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid $dark-gray;
+        /*margin-top: 8px;*/
+        padding: 0 8px;
+        outline: transparent;
+      }
+      &__promo-button {
+        width: 80px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid $dark-gray;
+        margin-left: 8px;
+        padding: 0 8px;
+        background: $blue-gray;
+        &:hover {
+          background: $light-gray;
+        }
+      }
+      &__promo-success, &__promo-error {
+        font-size: 12px;
+      }
+      &__promo-error {
+        color: $regular-red;
       }
       &__buy-button {
         width: 300px;

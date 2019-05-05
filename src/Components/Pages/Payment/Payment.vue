@@ -22,26 +22,43 @@
     components: {PaymentCart, PaymentUserInfo},
     data () {
       return {
-        isSuccess: null
+        isSuccess: null,
+        isPromo: localStorage.getItem('ip')
       }
+    },
+    created () {
+      if (!Object.keys(this.$store.state.bag.bag).length)
+        this.$router.push('/store');
     },
     computed: {
       bag () {
-        return Object.keys(this.$store.state.bag.bag).map((key, index) =>
-          encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
-          name: ${this.$store.state.bag.bag[key].name}
-          model: ${this.$store.state.bag.bag[key].model}
-          color: ${this.$store.state.bag.bag[key].color}
-          qty: ${this.$store.state.bag.bag[key].qty}
-          `)
+        return Object.keys(this.$store.state.bag.bag).map((key, index) => {
+            return encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
+              name: ${this.$store.state.bag.bag[key].name}
+              model: ${this.$store.state.bag.bag[key].model}
+              color: ${this.$store.state.bag.bag[key].color}
+              qty: ${this.$store.state.bag.bag[key].qty}
+              price: ${this.$store.state.bag.bag[key].qty * this.$store.state.bag.bag[key].price * (this.isPromo ? 0.9 : 1)}
+            `)
+        }
         ).join('&');
       },
+      total () {
+        let total = 0;
+        let bag = this.$store.state.bag.bag;
+        Object.keys(bag).forEach(id => {
+          total += bag[id].qty * bag[id].price;
+        });
+        if (this.isPromo)
+          total *= 0.9;
+        return `total=${total}`;
+      }
     },
     methods: {
       sendEmail (form) {
         const url = 'https://script.google.com/macros/s/AKfycbyCFXoKNRwDAFxoWjnTOgLnRd_5WTc9nLptKzzHJZ7l3oDJPdM_/exec';
         let request = new XMLHttpRequest();
-        let encoded = form.concat('&', this.bag);
+        let encoded = form.concat('&', this.bag, '&', this.total);
         request.open('POST', url);
         request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         request.onreadystatechange = () => {
@@ -79,6 +96,7 @@
       }
     }
     &__success, &__error {
+      width: 100%;
       margin-top: 10vh;
       text-align: center;
       padding: 8px 16px;
