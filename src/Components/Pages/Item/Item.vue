@@ -174,6 +174,7 @@
     .inner-link {
       color: $active-link;
       text-decoration: underline;
+      cursor: pointer;
     }
     .item__image {
       width: 50%;

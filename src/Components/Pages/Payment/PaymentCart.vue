@@ -11,7 +11,8 @@
     </div>
     <span class="cart-info__total">
       <p>Итого:</p>
-      <p>{{total}} ₽</p>
+      <p v-if="!isPromo">{{total}} ₽</p>
+      <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total * 1 / 0.9}}</span> {{total}} ₽</p>
     </span>
   </div>
 </template>
@@ -19,6 +20,11 @@
 <script>
   export default {
     name: 'PaymentCart',
+    data () {
+      return {
+        isPromo: localStorage.getItem('ip')
+      }
+    },
     computed: {
       bag () {
         return this.$store.state.bag.bag;
@@ -28,6 +34,8 @@
         Object.keys(this.bag).forEach(id => {
           total += this.bag[id].qty * this.bag[id].price;
         });
+        if (this.isPromo)
+          total *= 0.9;
         return total;
       }
     },
