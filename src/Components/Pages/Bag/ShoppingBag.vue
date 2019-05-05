@@ -107,12 +107,13 @@
    width: 100%;
    margin-bottom: 16px;
    .bag-item {
+     width: 100%;
      display: flex;
      &__image {
        height: 100px
      }
      &__table {
-       width: 100%;
+       width: calc(100% - 124px);
        margin-top: 16px;
        margin-left: 24px;
        td {
@@ -129,6 +130,7 @@
          margin: 16px 0 8px 0;
          display: none;
          @media screen and (max-width: 700px) {
+           width: 100%;
            display: table;
          }
        }
@@ -184,7 +186,7 @@
        }
      }
      &__table-qty-cell, &__table-price-cell, &__table-price {
-       display: table-cell;
+       /*display: table-cell;*/
        @media screen and (max-width: 700px) {
          display: none;
        }
