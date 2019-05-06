@@ -5,7 +5,7 @@
         <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
       </div>
       <div class="item__image">
-        <img :src="itemImage" class="image">
+        <img :src="itemImage" class="image" :alt="alt">
         <div class="image-not-found" v-if="showHider">
           К сожалению, у нас нет фотографии в этом цвете :С
         </div>
@@ -118,6 +118,12 @@
           return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`);
         }
         return '';
+      },
+      alt () {
+        const name = this.item.name.toLowerCase();
+        const model = this.item.model.toLowerCase();
+        const type = this.item.type.toLowerCase();
+        return `${this.$t(`items.${type}`)} ${name} ${model}`
       },
       shortenDescription () {
         if (this.item.desc.length > this.symbolLimit) {

@@ -1,6 +1,6 @@
 <template>
   <div  class="store-card">
-    <img class="store-card__image" :src="itemImage" :style="{'width': `${width}px`}" :alt="`{{item.name}} {{item.model}}`">
+    <img class="store-card__image" :src="itemImage" :style="{'width': `${width}px`}" :alt="alt">
     <router-link class="store-card__data" :style="{'width': `${width}px`, 'height': `${width}px`}" :to="link">
       Узнать больше
     </router-link>
@@ -42,6 +42,12 @@
         const model = this.item.model.toLowerCase();
         const type = this.item.type.toLowerCase();
         return require(`@/assets/images/storeIcons/${type}-${name}${model ? '-' + model : ''}.jpg`);
+      },
+      alt () {
+        const name = this.item.name.toLowerCase();
+        const model = this.item.model.toLowerCase();
+        const type = this.item.type.toLowerCase();
+        return `${this.$t(`items.${type}`)} ${name} ${model}`
       },
       link () {
         const name = this.item.name.toLowerCase();

@@ -86,7 +86,7 @@ router.beforeEach((to, from, next) => {
     if (to.meta && to.meta.title) {
       document.title = `${to.meta.title} - Forfolks`;
     } else {
-      document.title = 'Forfolks';
+      document.title = 'Forfolks - Дизайн для современной жизни';
     }
     if (to.meta && to.meta.tags) {
       Array.from(document.querySelectorAll('[programmatic-meta]')).map(el => el.parentNode.removeChild(el));
