@@ -13,6 +13,10 @@
       "label": "black_marble"
     },
     {
+      "value": 11,
+      "label": "gray_fog"
+    },
+    {
       "value": 4,
       "label": "ash"
     },
@@ -21,24 +25,28 @@
       "label": "mint"
     },
     {
-      "value": 6,
-      "label": "mustard"
+      "value": 9,
+      "label": "cornflower"
     },
     {
-      "value": 7,
-      "label": "coral"
+      "value": 6,
+      "label": "mustard"
     },
     {
       "value": 8,
       "label": "cacao"
     },
     {
-      "value": 9,
-      "label": "cornflower"
+      "value": 7,
+      "label": "coral"
     },
     {
       "value": 10,
       "label": "sakura"
+    },
+    {
+      "value": 10,
+      "label": "thunderstorm"
     }
   ],
   "brass": [

@@ -30,6 +30,8 @@ export default {
     mint: 'Мята',
     dustyRose: 'Пыльная роза',
     seaWave: 'Морская волна',
+    gray_fog: 'Серый туман',
+    thunderstorm: 'Гроза',
     black: 'Черный',
     white: 'Белый',
     natural: 'Натуральный'

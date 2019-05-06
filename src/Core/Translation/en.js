@@ -28,6 +28,8 @@ export default {
     sakura: 'Sakura',
     dustyRose: 'Dusty rose',
     seaWave: 'Sea wave',
+    gray_fog: 'Gray fog',
+    thunderstorm: 'Thunderstorm',
     black: 'Black',
     white: 'White',
     natural: 'Natural'
