@@ -12,7 +12,11 @@ export default {
     stand: 'Подставка',
     stands: 'Подставки',
     vase: 'Ваза',
-    vases: 'Вазы'
+    vases: 'Вазы',
+    tray: 'Поднос',
+    trays: 'Подносы',
+    plate: 'Тарелка',
+    plates: 'Тарелки'
   },
   links: {
     store: 'Магазин'

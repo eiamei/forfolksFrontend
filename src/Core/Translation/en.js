@@ -10,7 +10,11 @@ export default {
     candlestick: 'Candlestick',
     candlesticks: 'Candlesticks',
     stand: 'Stand',
-    stands: 'Stands'
+    stands: 'Stands',
+    tray: 'Tray',
+    trays: 'Trays',
+    plate: 'Plate',
+    plates: 'Plates'
   },
   links: {
     store: 'Store'
