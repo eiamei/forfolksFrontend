@@ -16,11 +16,13 @@
         </a>
       </span>
       <h5>Интернет магазин (самовывоз)</h5>
-      <p class="about__address"> Санкт-Петербург, Средний проспект В.О. 56</p>
+      <p class="about__address"> Санкт-Петербург, ул. Кораблестроителей 46к1В</p>
       <h5>Партнеры</h5>
       <span>
-        <p class="about__store">Малина</p>
-        <p class="about__address"> Санкт-Петербург, Лиговский проспект 54, Лофт проект этажи, этаж 1.2</p>
+        <p class="about__store">KupiDari</p>
+        <p class="about__address"> Санкт-Петербург, Лиговский проспект 74, Лофт проект этажи, этаж 2.0</p>
+        <p class="about__store">Joy flower place</p>
+        <p class="about__address"> Санкт-Петербург, ул. Марата 47</p>
         <p class="about__store">More flowers</p>
         <p class="about__address"> Санкт-Петербург, Большая Разночинная 16, 1 этаж, секция 119</p>
       </span>
