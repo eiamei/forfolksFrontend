@@ -1,12 +1,13 @@
 import Router from 'vue-router';
-import Store from '../../Components/Pages/Store/Store';
-import Item from '../../Components/Pages/Item/Item';
-import Bag from '../../Components/Pages/Bag/Bag';
-import Payment from '../../Components/Pages/Payment/Payment';
-import About from '../../Components/Pages/About/About';
 import STORE from '../../Core/Constants/Store';
 import slugify from 'slugify';
 import ruTranslate from '../../Core/Translation/ru';
+
+const Store = () => import('../../Components/Pages/Store/Store');
+const Item = () => import('../../Components/Pages/Item/Item');
+const Bag = () => import('../../Components/Pages/Bag/Bag');
+const Payment = () => import('../../Components/Pages/Payment/Payment');
+const About = () => import('../../Components/Pages/About/About');
 
 let config = {
   mode: 'history',
