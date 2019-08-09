@@ -19,7 +19,8 @@
       "graphite",
       "black_marble",
       "mint",
-      "sakura"
+      "sakura",
+      "ash"
     ],
     "material": ["concrete"],
     "weight": 500,
@@ -53,6 +54,28 @@
     "price": 300
   },
   {
+    "name": "MAK",
+    "model": "1",
+    "type": "hanging",
+    "category": ["hanging"],
+    "desc": "длинное описание",
+    "metaDesc": "мета описание",
+    "shortDesc": "короткое описание",
+    "size": {
+      "length": 11.5,
+      "width": 10,
+      "height": 1.5
+    },
+    "colors": "fabric",
+    "availableColors": [
+      "cotton",
+      "jute"
+    ],
+    "material": ["cotton", "jute"],
+    "weight": 10,
+    "price": 400
+  },
+  {
     "name": "BASIC6",
     "model": "S",
     "type": "stand",
@@ -69,9 +92,10 @@
     "availableColors": [
       "coated",
       "graphite",
-      "black_marble",
-      "cacao",
-      "mustard"
+      "cornflower",
+      "mint",
+      "sakura",
+      "ash"
     ],
     "material": ["concrete"],
     "weight": 150,
@@ -115,8 +139,7 @@
     },
     "colors": "brass",
     "availableColors": [
-      "natural",
-      "black"
+      "natural"
     ],
     "material": ["brass", "concrete"],
     "weight": 200,
@@ -159,7 +182,6 @@
     },
     "colors": "brass",
     "availableColors": [
-      "natural",
       "black"
     ],
     "material": ["brass", "concrete"],
@@ -182,8 +204,7 @@
     },
     "colors": "concrete",
     "availableColors": [
-      "black_marble",
-      "gray_fog"
+      "coated"
     ],
     "material": ["concrete"],
     "weight": 300,

@@ -58,5 +58,15 @@
       "value": 2,
       "label": "black"
     }
+  ],
+  "fabric": [
+    {
+      "value": 1,
+      "label": "cotton"
+    },
+    {
+      "value": 2,
+      "label": "jute"
+    }
   ]
 }

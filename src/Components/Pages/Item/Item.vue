@@ -108,6 +108,9 @@
     created () {
       this.findItem();
     },
+    mounted () {
+      window.scrollTo(0, 0)
+    },
     computed: {
       itemImage () {
         if (this.item) {
