@@ -58,13 +58,31 @@
     "model": "1",
     "type": "hanging",
     "category": ["hanging"],
-    "desc": "длинное описание",
-    "metaDesc": "мета описание",
-    "shortDesc": "короткое описание",
+    "desc": "Подвес из хлопка или джута выполненный в технике макраме для небольших горшочков. Модель 1 дополнена удобным деревянным кольцом, которое в комбинации с металлическим крючком позволяет подвесить горшочек практически куда угодно. <br><br> <span>Отлично сочетается с нашими горшочками <a href='/item?name=modern8&model=m&type=pot&color=coated'>MODERN8 M</a> и <a href='/item?name=bubble&model=m&type=pot&color=coated'>BUBBLE M</a></span> <br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов. <br><br> Все изделия абсолютно уникальны. Всегда есть место неоднородностям, но именно это создает особую магию ручной работы. <br><br> Цена указана без горшочка. Крючок приобретается отдельно.",
+    "metaDesc": "Подвес в технике макраме для небольших бетонных, пластиковых и терракотовых горшков",
+    "shortDesc": "Когда закончилось место на столе ",
     "size": {
-      "length": 11.5,
-      "width": 10,
-      "height": 1.5
+      "height": 20
+    },
+    "colors": "fabric",
+    "availableColors": [
+      "cotton",
+      "jute"
+    ],
+    "material": ["cotton", "jute"],
+    "weight": 10,
+    "price": 400
+  },
+  {
+    "name": "MAK",
+    "model": "2",
+    "type": "hanging",
+    "category": ["hanging"],
+    "desc": "Подвес из хлопка или джута выполненный в технике макраме для небольших горшочков. Модель 2 дополнена широкой петлей, которая в комбинации с металлическим крючком позволяет подвесить горшочек практически куда угодно. <br><br> <span>Отлично сочетается с нашими горшочками <a href='/item?name=modern8&model=m&type=pot&color=coated'>MODERN8 M</a> и <a href='/item?name=bubble&model=m&type=pot&color=coated'>BUBBLE M</a></span> <br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов. <br><br> Все изделия абсолютно уникальны. Всегда есть место неоднородностям, но именно это создает особую магию ручной работы. <br><br> Цена указана без горшочка. Крючок приобретается отдельно.",
+    "metaDesc": "Подвес в технике макраме для небольших бетонных, пластиковых и терракотовых горшков",
+    "shortDesc": "Когда закончилось место на столе ",
+    "size": {
+      "height": 30
     },
     "colors": "fabric",
     "availableColors": [
@@ -91,11 +109,13 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
+      "black_marble",
       "graphite",
       "cornflower",
       "mint",
       "sakura",
-      "ash"
+      "ash",
+      "cacao"
     ],
     "material": ["concrete"],
     "weight": 150,
@@ -204,7 +224,8 @@
     },
     "colors": "concrete",
     "availableColors": [
-      "coated"
+      "coated",
+      "black_marble"
     ],
     "material": ["concrete"],
     "weight": 300,
@@ -247,6 +268,7 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
+      "black_marble",
       "ash",
       "black_marble",
       "cacao",
@@ -273,9 +295,6 @@
     },
     "colors": "concrete",
     "availableColors": [
-      "coated",
-      "ash",
-      "graphite",
       "black_marble"
     ],
     "material": ["concrete"],

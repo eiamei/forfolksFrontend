@@ -14,7 +14,9 @@ export default {
     tray: 'Tray',
     trays: 'Trays',
     plate: 'Plate',
-    plates: 'Plates'
+    plates: 'Plates',
+    hanging: 'Handing',
+    hangings: 'Handings'
   },
   links: {
     store: 'Store'
@@ -36,11 +38,15 @@ export default {
     thunderstorm: 'Thunderstorm',
     black: 'Black',
     white: 'White',
-    natural: 'Natural'
+    natural: 'Natural',
+    cotton: 'Cotton',
+    jute: 'Jute'
   },
   material: {
     concrete: "Concrete",
-    brass: "Brass"
+    brass: "Brass",
+    cotton: 'Cotton',
+    jute: 'Jute'
   },
   size: {
     height: 'Height',

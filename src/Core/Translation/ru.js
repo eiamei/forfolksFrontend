@@ -16,7 +16,9 @@ export default {
     tray: 'Поднос',
     trays: 'Подносы',
     plate: 'Тарелка',
-    plates: 'Тарелки'
+    plates: 'Тарелки',
+    hanging: 'Подвес',
+    hangings: 'Подвесы'
   },
   links: {
     store: 'Магазин'
@@ -38,11 +40,15 @@ export default {
     thunderstorm: 'Гроза',
     black: 'Черный',
     white: 'Белый',
-    natural: 'Натуральный'
+    natural: 'Натуральный',
+    cotton: 'Хлопок',
+    jute: 'Джут'
   },
   material: {
     concrete: "Бетон",
-    brass: "Латунь"
+    brass: "Латунь",
+    cotton: 'Хлопок',
+    jute: 'Джут'
   },
   size: {
     height: 'Высота',

@@ -66,7 +66,7 @@
             <span v-for="(material, index) in item.material" :key="material">{{$t(`material.${material}`)}}{{getSymbol(item.material, index)}} </span>
           </td>
         </tr>
-        <tr>
+        <tr v-if="item.type !== 'hanging'">
           <td>Уход:</td>
           <td>Протирать влажной тряпочкой</td>
         </tr>
@@ -117,6 +117,7 @@
           const name = this.item.name.toLowerCase();
           const model = this.item.model.toLowerCase();
           const type = this.item.type.toLowerCase();
+          console.log(model);
           const color = this.showHider ? this.item.availableColors[0] : this.chosenColor.label;
           return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`);
         }
@@ -137,7 +138,14 @@
     },
     methods: {
       findItem () {
-        this.item = this.store.find(item => slugify(item.name.toLowerCase()) === this.$route.query.name && slugify(item.type.toLowerCase()) === this.$route.query.type);
+        this.item = this.store.find(item => {
+          let res = slugify(item.name.toLowerCase()) === this.$route.query.name &&
+            slugify(item.type.toLowerCase()) === this.$route.query.type;
+          if (res && item.model)
+            res = slugify(item.model.toLowerCase()) === this.$route.query.model;
+          return res
+          }
+        );
       },
       selectColor (value) {
         this.showHider = !this.item.availableColors.find(function (color) { return color === value.label; });
