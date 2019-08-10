@@ -10,7 +10,13 @@ export default {
     candlestick: 'Candlestick',
     candlesticks: 'Candlesticks',
     stand: 'Stand',
-    stands: 'Stands'
+    stands: 'Stands',
+    tray: 'Tray',
+    trays: 'Trays',
+    plate: 'Plate',
+    plates: 'Plates',
+    hanging: 'Handing',
+    hangings: 'Handings'
   },
   links: {
     store: 'Store'
@@ -28,13 +34,19 @@ export default {
     sakura: 'Sakura',
     dustyRose: 'Dusty rose',
     seaWave: 'Sea wave',
+    gray_fog: 'Gray fog',
+    thunderstorm: 'Thunderstorm',
     black: 'Black',
     white: 'White',
-    natural: 'Natural'
+    natural: 'Natural',
+    cotton: 'Cotton',
+    jute: 'Jute'
   },
   material: {
     concrete: "Concrete",
-    brass: "Brass"
+    brass: "Brass",
+    cotton: 'Cotton',
+    jute: 'Jute'
   },
   size: {
     height: 'Height',

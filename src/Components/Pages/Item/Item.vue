@@ -5,7 +5,7 @@
         <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
       </div>
       <div class="item__image">
-        <img :src="itemImage" class="image">
+        <img :src="itemImage" class="image" :alt="alt">
         <div class="image-not-found" v-if="showHider">
           К сожалению, у нас нет фотографии в этом цвете :С
         </div>
@@ -66,7 +66,7 @@
             <span v-for="(material, index) in item.material" :key="material">{{$t(`material.${material}`)}}{{getSymbol(item.material, index)}} </span>
           </td>
         </tr>
-        <tr>
+        <tr v-if="item.type !== 'hanging'">
           <td>Уход:</td>
           <td>Протирать влажной тряпочкой</td>
         </tr>
@@ -108,16 +108,26 @@
     created () {
       this.findItem();
     },
+    mounted () {
+      window.scrollTo(0, 0)
+    },
     computed: {
       itemImage () {
         if (this.item) {
           const name = this.item.name.toLowerCase();
           const model = this.item.model.toLowerCase();
           const type = this.item.type.toLowerCase();
+          console.log(model);
           const color = this.showHider ? this.item.availableColors[0] : this.chosenColor.label;
           return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`);
         }
         return '';
+      },
+      alt () {
+        const name = this.item.name.toLowerCase();
+        const model = this.item.model.toLowerCase();
+        const type = this.item.type.toLowerCase();
+        return `${this.$t(`items.${type}`)} ${name} ${model}`
       },
       shortenDescription () {
         if (this.item.desc.length > this.symbolLimit) {
@@ -128,7 +138,14 @@
     },
     methods: {
       findItem () {
-        this.item = this.store.find(item => slugify(item.name.toLowerCase()) === this.$route.query.name && slugify(item.type.toLowerCase()) === this.$route.query.type);
+        this.item = this.store.find(item => {
+          let res = slugify(item.name.toLowerCase()) === this.$route.query.name &&
+            slugify(item.type.toLowerCase()) === this.$route.query.type;
+          if (res && item.model)
+            res = slugify(item.model.toLowerCase()) === this.$route.query.model;
+          return res
+          }
+        );
       },
       selectColor (value) {
         this.showHider = !this.item.availableColors.find(function (color) { return color === value.label; });
@@ -178,13 +195,17 @@
     }
     .item__image {
       width: 50%;
+      height: 80vh;
       position: relative;
+      //background-color: $dusty-rose;
+      display: flex;
+      justify-content: center;
       .image {
-        border-radius: 4px;
         position: relative;
-        width: 100%;
         z-index: 10;
-        max-width: 4000px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
       .image-not-found {
         position: absolute;
@@ -193,7 +214,7 @@
         align-items: center;
         top: 0;
         width: 100%;
-        height: calc(100% - 4px);
+        height: 100%;
         z-index: 11;
         background-color: rgba($dark-gray, 0.8);
         color: white;
@@ -206,7 +227,7 @@
         width: 100%;
         left: 24px;
         top: 24px;
-        height: calc(100% - 8px);
+        height: 100%;
         background-color: $dusty-rose;
         z-index: 1;
       }
@@ -326,6 +347,7 @@
     @media screen and (max-width: 900px) {
       .item__image {
         width: 100%;
+        height: 60vh;
       }
       &__top-bread {
         display: inline;
@@ -365,6 +387,12 @@
       }
     }
     @media screen and (max-width: 500px) {
+
+      .item__image {
+        .image {
+          object-fit: cover;
+        }
+      }
       .section {
         font-size: 20px;
         margin-left: 8px;

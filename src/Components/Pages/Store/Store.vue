@@ -27,7 +27,7 @@
     data () {
       return {
         store: Store,
-        types: ['all', 'pot', 'cachePot', 'candlestick', 'stand', 'vase'],
+        types: ['all', 'pot', 'candlestick', 'stand', 'vase', 'hanging'],
         current: 'all',
         stdSizes: {
           minWidth: 140,
@@ -43,7 +43,11 @@
           return this.store;
         } else {
           return this.store.filter((item) => {
-            if (item.type === this.current) return item;
+            try {
+              if (item.category.find(category => category === this.current))
+                return item;
+            }
+            catch (e) {console.warn(e)}
           });
         }
       },

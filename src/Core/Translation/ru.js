@@ -12,7 +12,13 @@ export default {
     stand: 'Подставка',
     stands: 'Подставки',
     vase: 'Ваза',
-    vases: 'Вазы'
+    vases: 'Вазы',
+    tray: 'Поднос',
+    trays: 'Подносы',
+    plate: 'Тарелка',
+    plates: 'Тарелки',
+    hanging: 'Подвес',
+    hangings: 'Подвесы'
   },
   links: {
     store: 'Магазин'
@@ -30,13 +36,19 @@ export default {
     mint: 'Мята',
     dustyRose: 'Пыльная роза',
     seaWave: 'Морская волна',
+    gray_fog: 'Серый туман',
+    thunderstorm: 'Гроза',
     black: 'Черный',
     white: 'Белый',
-    natural: 'Натуральный'
+    natural: 'Натуральный',
+    cotton: 'Хлопок',
+    jute: 'Джут'
   },
   material: {
     concrete: "Бетон",
-    brass: "Латунь"
+    brass: "Латунь",
+    cotton: 'Хлопок',
+    jute: 'Джут'
   },
   size: {
     height: 'Высота',

@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <nav class="header">
     <div class="header__controls">
       <router-link class="header__link" to="store">Магазин</router-link>
     </div>
@@ -11,7 +11,7 @@
       </router-link>
       <router-link class="header__link" to="about">О нас</router-link>
     </div>
-  </header>
+  </nav>
 </template>
 
 <script>
@@ -40,13 +40,12 @@
   .header {
     position: fixed;
     width: calc(100% - 80px);
-    margin: 0 40px;
+    /*margin: 0 40px;*/
     border-bottom: 1px solid $light-gray;
-    padding: 12px 0 10px 0;
+    padding: 12px 40px 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*position: absolute;*/
     top: 0;
     z-index: 1000;
     background-color: white;
@@ -85,7 +84,8 @@
 
   @media screen and (max-width: 770px) {
     .header {
-      margin: 0 16px;
+      /*margin: 0 16px;*/
+      padding: 12px 16px 10px 16px;
       width: calc(100% - 32px);
       &__link {
         font-size: .8em;
@@ -96,7 +96,8 @@
 
   @media screen and (max-width: 500px) {
     .header {
-      margin: 0 8px;
+      /*margin: 0 8px;*/
+      padding: 12px 8px 10px 8px;
       width: calc(100% - 16px);
     }
   }
