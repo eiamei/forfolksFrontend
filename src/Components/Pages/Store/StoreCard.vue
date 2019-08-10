@@ -54,7 +54,7 @@
         const model = this.item.model.toLowerCase();
         const type = this.item.type.toLowerCase();
         const color = this.item.availableColors[0];
-        return `/item?name=${name}&model=${model}&type=${type}&color=${color}`;
+        return `/${type}-${name}${model ? ('-' + model) : ''}${color ? ('-' + color) : ''}`;
       }
     }
   };
