@@ -1,10 +1,12 @@
 <template>
   <div  class="store-card">
-    <img class="store-card__image" :src="itemImage" :style="{'width': `${width}px`}" :alt="alt">
-    <router-link class="store-card__data" :style="{'width': `${width}px`, 'height': `${width}px`}" :to="link">
-      Узнать больше
-    </router-link>
-    <div class="store-card-description">
+    <span style="position: relative">
+      <img class="store-card__image" :src="itemImage" :style="{'width': `${item.storeTemplate === 'wide' ? (width * 2 + 16) : width}px`}" :alt="alt">
+      <router-link class="store-card__data" :style="{'width': `${item.storeTemplate === 'wide' ? (width * 2 + 16) : width}px`}" :to="link">
+        Узнать больше
+      </router-link>
+    </span>
+    <div class="store-card-description" :style="{'width': `${item.storeTemplate === 'wide' ? (width * 2 + 16) : width}px`}">
       <div class="store-card-description__name">
         <p class=""><b>{{item.name}} {{item.model}} </b> | {{$t(`items.${item.type}`)}}</p>
       </div>
@@ -86,6 +88,7 @@
       z-index: 10;
       transition: opacity .3s;
       font-size: 16px;
+      height: calc(100% - 4px);
       &:hover {
         opacity: .7;
       }

@@ -32,9 +32,9 @@
         stdSizes: {
           minWidth: 140,
           defaultWidth: 400,
-          maxWidth: 500
+          maxWidth: 450
         },
-        width: 470
+        width: 400
       }
     },
     computed: {
@@ -76,18 +76,12 @@
         if (this.$refs.container) {
           let elementWidth = this.$refs.container.clientWidth;
           if (this.windowWidth > 770) {
-            elementWidth -= 160;
+            elementWidth -= 156 + 40;
           }
-          for (let i = 2; i < 6; i++) {
+          for (let i = 2; i < 7; i += 2) {
             let cardSize = Math.floor(elementWidth / i);
             if (cardSize > this.stdSizes.minWidth && cardSize < this.stdSizes.maxWidth) {
-              if (this.windowWidth > 770) {
-                this.width = cardSize - 80;
-              } else if (this.windowWidth > 500) {
-                this.width = cardSize - 36;
-              } else {
-                this.width = cardSize - 16;
-              }
+              this.width = cardSize - 16;
               break;
             }
           }
@@ -146,7 +140,7 @@
       flex-wrap: wrap;
     }
     &__item {
-      padding: 0 40px 40px 40px;
+      padding: 0 8px 16px 8px;
     }
   }
   @media screen and (max-width: 770px) {
@@ -163,9 +157,6 @@
       &__cards {
         margin-left: 0;
         padding: 16px 0;
-      }
-      &__item {
-        padding: 0 16px 24px 16px;
       }
     }
   }
