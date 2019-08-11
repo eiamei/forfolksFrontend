@@ -4,12 +4,11 @@
       <div class="item__top-bread">
         <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
       </div>
-      <div class="item__image">
-        <img :src="itemImage" class="image" :alt="alt">
-        <div class="image-not-found" v-if="showHider">
-          К сожалению, у нас нет фотографии в этом цвете :С
-        </div>
-      </div>
+      <carousel :per-page="1" class="carousel" :navigate-to="navigateTo" @page-change="changeColorByCarousel">
+        <slide v-for="image in images" class="item__image" :key="image.color">
+          <img :src="image.img" class="image" :alt="alt">
+        </slide>
+      </carousel>
       <div class="item-info__container">
         <div class="item-info">
           <div class="item-info__bread">
@@ -30,7 +29,7 @@
             <tr>
               <td>Цвет:</td>
               <td>
-                <dropdown :options="colors[item.colors]" :value="chosenColor.label" @change="selectColor"/>
+                <dropdown :options="colors" :value="chosenColor.label" @change="selectColor"/>
               </td>
             </tr>
             <tr>
@@ -84,14 +83,15 @@
   import Dropdown from '../../../Core/Components/UI/Dropdown';
   import STORE from '../../../Core/Constants/Store';
   import slugify from 'slugify';
-  import COLORS from '../../../Core/Constants/Colors'
+  import COLORS from '../../../Core/Constants/Colors';
+  import { Carousel, Slide } from 'vue-carousel';
+
   export default {
     name: 'ItemCard',
-    components: {AppButton, Dropdown},
+    components: {AppButton, Dropdown, Carousel, Slide},
     data () {
       return {
         store: STORE,
-        colors: COLORS,
         chosenColor: {
           label: this.$route.query.color || COLORS[this.item.colors][0].label
         },
@@ -101,8 +101,8 @@
         size: '',
         material: '',
         price: '',
-        showHider: false,
-        symbolLimit: 30
+        symbolLimit: 30,
+        navigateTo: 0
       };
     },
     created () {
@@ -112,16 +112,21 @@
       window.scrollTo(0, 0)
     },
     computed: {
-      itemImage () {
-        if (this.item) {
-          const name = this.item.name.toLowerCase();
-          const model = this.item.model.toLowerCase();
-          const type = this.item.type.toLowerCase();
-          console.log(model);
-          const color = this.showHider ? this.item.availableColors[0] : this.chosenColor.label;
-          return require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`);
-        }
-        return '';
+      colors () {
+        return this.item && this.item.availableColors && this.item.availableColors.map((color, index) => {
+          return {value: index, label: color}
+        }) || [];
+      },
+      images () {
+        const name = this.item.name.toLowerCase();
+        const model = this.item.model.toLowerCase();
+        const type = this.item.type.toLowerCase();
+        return this.item.availableColors.map(color => {
+          return {
+            color,
+            img: require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`)
+          };
+        })
       },
       alt () {
         const name = this.item.name.toLowerCase();
@@ -148,8 +153,12 @@
         );
       },
       selectColor (value) {
-        this.showHider = !this.item.availableColors.find(function (color) { return color === value.label; });
         this.chosenColor = value;
+        let index = this.images.findIndex(image => {
+          return image.color === value.label;
+        });
+        if (index > -1)
+          this.navigateTo = index;
       },
       getSymbol (source, index) {
         return index < (Object.keys(source).length - 1) ? ', ' : ''
@@ -162,6 +171,9 @@
           type: this.item.type,
           color: this.chosenColor.label
         });
+      },
+      changeColorByCarousel (page) {
+        this.chosenColor = this.colors[page];
       }
     }
   };
@@ -193,8 +205,11 @@
       text-decoration: underline;
       cursor: pointer;
     }
-    .item__image {
+    .carousel {
       width: 50%;
+    }
+    .item__image {
+      width: 100%;
       height: 80vh;
       position: relative;
       //background-color: $dusty-rose;
@@ -345,8 +360,11 @@
       }
     }
     @media screen and (max-width: 900px) {
-      .item__image {
+      .carousel {
         width: 100%;
+      }
+      .item-image {
+
         height: 60vh;
       }
       &__top-bread {
@@ -419,94 +437,4 @@
       }
     }
   }
-  /*@media screen and (max-width: 1050px) {*/
-    /*.item {*/
-      /*&__first-row {*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*padding: 88px 24px;*/
-      /*}*/
-      /*.item__image {*/
-        /*width: 100%;*/
-        /*display: flex;*/
-        /*flex-direction: row;*/
-        /*justify-content: flex-start;*/
-      /*}*/
-      /*.image {*/
-        /*height: 50vw;*/
-        /*&--preview {*/
-          /*height: 40px;*/
-          /*margin: 8px;*/
-        /*}*/
-      /*}*/
-      /*.item-info {*/
-        /*width: 100%;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*margin-top: 16px;*/
-      /*}*/
-    /*}*/
-  /*}*/
-  /*@media screen and (max-width: 600px) {*/
-    /*.item {*/
-      /*&__first-row {*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*padding: 80px 16px;*/
-      /*}*/
-      /*.item__image {*/
-        /*width: 100%;*/
-        /*display: flex;*/
-        /*flex-direction: row;*/
-        /*justify-content: center;*/
-      /*}*/
-      /*.image {*/
-        /*height: 50vw;*/
-        /*padding: 0;*/
-        /*&--preview {*/
-          /*display: none;*/
-          /*height: 20px;*/
-          /*margin: 8px;*/
-        /*}*/
-      /*}*/
-      /*.item-info {*/
-        /*width: 100%;*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*margin-top: 16px;*/
-        /*&__bread {*/
-          /*font-size: 10px;*/
-        /*}*/
-        /*&__name {*/
-          /*font-size: 24px;*/
-          /*font-weight: 700;*/
-        /*}*/
-        /*&__spec {*/
-          /*margin: 16px 0;*/
-          /*font-size: 12px;*/
-          /*tr td {*/
-            /*padding: 8px 0;*/
-            /*vertical-align: top;*/
-            /*&:first-child {*/
-              /*padding-right: 16px;*/
-              /*font-weight: 500;*/
-            /*}*/
-          /*}*/
-        /*}*/
-        /*&__section {*/
-          /*font-size: 12px;*/
-        /*}*/
-        /*&__section-button {*/
-          /*margin: 0 4px 4px 4px;*/
-        /*}*/
-      /*}*/
-    /*}*/
-  /*}*/
-
-  /*.devider {*/
-    /*margin: 8px 0;*/
-    /*width: 100%;*/
-    /*height: 1px;*/
-    /*//border-bottom: 1px solid $dark-gray*/
-  /*}*/
 </style>
