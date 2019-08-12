@@ -42,8 +42,8 @@ let config = {
       }
     },
     {
-      path: '/item',
-      name: 'item',
+      path: '/product/:id',
+      name: 'product',
       component: Item,
       meta: {
         title: 'Forfolks',

@@ -15,7 +15,7 @@
     },
     "colors": "concrete",
     "availableColors": [
-      "black_marble",
+      "black-marble",
       "ash",
       "mint",
       "thunderstorm",
@@ -45,7 +45,7 @@
     "availableColors": [
       "coated",
       "graphite",
-      "black_marble",
+      "black-marble",
       "mint",
       "sakura",
       "ash"
@@ -113,7 +113,7 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
-      "black_marble",
+      "black-marble",
       "graphite",
       "cornflower",
       "mint",
@@ -164,7 +164,7 @@
     "availableColors": [
       "coated",
       "graphite",
-      "black_marble",
+      "black-marble",
       "mustard"
     ],
     "material": ["concrete"],
@@ -213,7 +213,7 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
-      "black_marble"
+      "black-marble"
     ],
     "material": ["concrete"],
     "weight": 300,
@@ -253,8 +253,8 @@
     },
     "colors": "concrete",
     "availableColors": [
-      "black_marble",
-      "gray_fog",
+      "black-marble",
+      "gray-fog",
       "sakura"
     ],
     "material": ["concrete"],
@@ -278,9 +278,9 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
-      "black_marble",
+      "black-marble",
       "ash",
-      "black_marble",
+      "black-marble",
       "cacao",
       "cornflower",
       "mint"
@@ -306,7 +306,7 @@
     },
     "colors": "concrete",
     "availableColors": [
-      "black_marble"
+      "black-marble"
     ],
     "material": ["concrete"],
     "weight": 1400,

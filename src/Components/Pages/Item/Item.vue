@@ -92,12 +92,8 @@
     data () {
       return {
         store: STORE,
-        chosenColor: {
-          label: this.$route.query.color || COLORS[this.item.colors][0].label
-        },
+        chosenColor: '',
         item: null,
-        name: this.$route.query.name || '',
-        type: this.$route.query.type || '',
         size: '',
         material: '',
         price: '',
@@ -143,12 +139,16 @@
     },
     methods: {
       findItem () {
+        let params = this.$route.params.id.split('_');
         this.item = this.store.find(item => {
-          let res = slugify(item.name.toLowerCase()) === this.$route.query.name &&
-            slugify(item.type.toLowerCase()) === this.$route.query.type;
-          if (res && item.model)
-            res = slugify(item.model.toLowerCase()) === this.$route.query.model;
-          return res
+          console.log(item.type.toLowerCase() === params[0] && `${item.name.toLowerCase()}-${item.model.toLowerCase()}` === params[1]);
+          if (item.type.toLowerCase() === params[0] && `${item.name.toLowerCase()}-${item.model.toLowerCase()}` === params[1])
+            return true
+          // let res = slugify(item.name.toLowerCase()) === params[1] &&
+          //   slugify(item.type.toLowerCase()) === params[0];
+          // if (res && item.model)
+          //   res = slugify(item.model.toLowerCase()) === this.$route.query.model;
+          // return res
           }
         );
       },

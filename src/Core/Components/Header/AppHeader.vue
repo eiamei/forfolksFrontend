@@ -1,15 +1,15 @@
 <template>
   <nav class="header">
     <div class="header__controls">
-      <router-link class="header__link" to="store">Магазин</router-link>
+      <router-link class="header__link" to="/store">Магазин</router-link>
     </div>
     <router-link to="/" class="header__logo"></router-link>
     <div class="header__controls">
-      <router-link class="header__link header__link--bag" to="bag">
+      <router-link class="header__link header__link--bag" to="/bag">
         <div class="header-bag" :class="bagStyle"></div>
         <div v-if="this.bagQty">{{this.bagQty}}</div>
       </router-link>
-      <router-link class="header__link" to="about">О нас</router-link>
+      <router-link class="header__link" to="/about">О нас</router-link>
     </div>
   </nav>
 </template>
