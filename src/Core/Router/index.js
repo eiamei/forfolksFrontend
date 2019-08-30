@@ -8,6 +8,7 @@ const Item = () => import('../../Components/Pages/Item/Item');
 const Bag = () => import('../../Components/Pages/Bag/Bag');
 const Payment = () => import('../../Components/Pages/Payment/Payment');
 const About = () => import('../../Components/Pages/About/About');
+const Delivery = () => import('../../Components/Pages/Delivery/Delivery');
 
 let config = {
   mode: 'history',
@@ -38,6 +39,20 @@ let config = {
         }, {
           name: 'og:Description',
           content: 'Forfolks. Мы производим бетонные горшки и кашпо, бетонные вазы, бетонные подсвечники, латунные подсвечники, бетонные подставки и подносы ручной работы'
+        }]
+      }
+    },
+    {
+      path: '/delivery',
+      component: Delivery,
+      meta: {
+        title: 'Доставка',
+        tags: [{
+          name: 'Description',
+          content: ''
+        }, {
+          name: 'og:Description',
+          content: ''
         }]
       }
     },
