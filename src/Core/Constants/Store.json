@@ -309,7 +309,8 @@
     },
     "colors": "concrete",
     "availableColors": [
-      "black_marble"
+      "black_marble",
+      "graphite"
     ],
     "material": ["concrete"],
     "weight": 1400,
