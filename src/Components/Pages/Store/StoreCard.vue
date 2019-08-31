@@ -1,24 +1,24 @@
 <template>
-  <div  class="store-card">
-    <span style="position: relative">
-      <img class="store-card__image" :src="itemImage" :style="{'width': `${item.storeTemplate === 'wide' ? (width * 2 + 16) : width}px`}" :alt="alt">
-      <router-link class="store-card__data" :style="{'width': `${item.storeTemplate === 'wide' ? (width * 2 + 16) : width}px`}" :to="link">
-        Узнать больше
-      </router-link>
-    </span>
-    <div class="store-card-description" :style="{'width': `${item.storeTemplate === 'wide' ? (width * 2 + 16) : width}px`}">
-      <div class="store-card-description__name">
-        <p class=""><b>{{item.name}} {{item.model}} </b> | {{$t(`items.${item.type}`)}}</p>
-      </div>
-      <div class="store-card-description__short-description">
-        <p class="">{{item.shortDesc}}</p>
-      </div>
-      <div class="store-card-description__link-and-price">
-        <router-link :to="link">Узнать больше</router-link>
-        <p class="store-card-description__price">{{item.price}}₽</p>
-      </div>
-    </div>
-  </div>
+  <article class="store-card">
+    <img class="store-card__image" :src="itemImage" :alt="alt" :style="{'width': width + 'px', 'height': height + 'px'}">
+    <section class="store-card-description">
+      <section>
+        <p class="store-card-description__title">{{item.name}}{{item.model ? `&nbsp;${item.model}` : ''}}</p>
+        <span class="store-card-description__type-container">
+          <p class="store-card-description__type">{{$t(`items.${item.type}`)}}</p>
+          <p class="store-card-description__price">{{item.price}}&thinsp;р</p>
+        </span>
+        <section class="store-card-description-colors">
+          <div class="store-card-description-colors__circle"
+               v-for="color in colors"
+               :title="color"
+               :class="getColor(color)"
+               :key="color"
+          ></div>
+        </section>
+      </section>
+    </section>
+  </article>
 </template>
 
 <script>
@@ -34,11 +34,19 @@
         required: false,
         default: 470
       },
+      height: {
+        type: Number,
+        required: false,
+        default: 470
+      },
       isBig: {
         type: Boolean
       }
     },
     computed: {
+      colors () {
+        return this.item.availableColors;
+      },
       itemImage () {
         const name = this.item.name.toLowerCase();
         const model = this.item.model.toLowerCase();
@@ -58,88 +66,116 @@
         const color = this.item.availableColors[0];
         return `/item?name=${name}&model=${model}&type=${type}&color=${color}`;
       }
+    },
+    methods: {
+      getColor (color) {
+        return `store-card-description-colors__circle--${color}`
+      }
     }
   };
 </script>
 
 <style lang='scss' scoped>
   @import '../../../assets/styles/colors';
-
   .store-card {
-    text-decoration: none;
-    position: relative;
-    font-size: .8em;
     display: flex;
-    flex-direction: column;
-    &__image {
-      width: 470px;
-      position: relative;
-    }
-    &__data {
-      position: absolute;
-      display: flex;
-      background-color: black;
-      color: white;
-      top: 0;
-      opacity: 0;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 10;
-      transition: opacity .3s;
-      font-size: 16px;
-      height: calc(100% - 4px);
-      &:hover {
-        opacity: .7;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .store-card-description-colors {
+        opacity: 1;
       }
     }
-    &__name {
-      font-weight: 700;
+    &__image {
+      /*object-fit: contain;*/
+    }
+  }
+
+  .store-card-description-colors {
+    position: absolute;
+    opacity: 0;
+    transition: .3s all;
+    display: flex;
+    bottom: -28px;
+    @media (hover: none) and (pointer: coarse) {
+      opacity: 1;
+    }
+    &__circle {
+      width: 16px;
+      height: 16px;
+      background-color: white;
+      border-radius: 16px;
+      margin-right: 8px;
+      &--coated {
+        background-color: $coated;
+      }
+      &--black_marble {
+        background: $black_marble;
+      }
+      &--sakura {
+        background-color: $sakura;
+      }
+      &--thunderstorm {
+        background-color: $thunderstorm;
+      }
+      &--ash {
+        background-color: $ash;
+      }
+      &--mint {
+        background-color: $mint;
+      }
+      &--mustard {
+        background-color: $mustard;
+      }
+      &--graphite {
+        background-color: $graphite;
+      }
+      &--jute {
+        background-color: $jute;
+      }
+      &--cornflower {
+        background-color: $cornflower;
+      }
+      &--cacao {
+        background-color: $cacao;
+      }
+      &--natural {
+        background: $natural;
+      }
+      &--gray_fog {
+        background: $gray_fog;
+      }
+      &--black {
+        background: $black;
+      }
     }
   }
   .store-card-description {
-    &__name {
-      font-size: 16px;
-      margin: 8px 0;
-      display: flex;
-      p {
-        margin: 0;
-      }
-      @media screen and (max-width: 700px) {
-        font-size: 10px!important;
-      }
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 48px;
+    &__title {
+      font-weight: 700;
+      font-size: 3em;
+      margin: 0;
     }
-    &__short-description {
-      font-size: 12px;
-      margin: 8px 0;
-      display: flex;
-      p {
-        margin: 0;
-      }
-      @media screen and (max-width: 700px) {
-        font-size: 8px!important;
-      }
-    }
-    &__link-and-price {
-      margin: 8px 0;
-      font-size: 12px;
+    &__type-container {
       display: flex;
       justify-content: space-between;
-      @media screen and (max-width: 700px) {
-        font-size: 8px!important;
-      }
     }
-    &__price {
-      font-size: 16px;
+    &__type, &__price {
+      font-size: 1.5em;
       margin: 0;
-      @media screen and (max-width: 700px) {
-        font-size: 8px!important;
-      }
     }
-    @media screen and (max-width: 500px) {
-      &__name, &__short-description, &__link-and-price {
-        margin: 4px 0;
-      }
+    &__type {
+      text-transform: capitalize;
+      margin-right: 16px;
     }
   }
 </style>

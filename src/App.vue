@@ -36,5 +36,28 @@ export default {
     font-family: 'HK Grotesk', 'Montserrat', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+  }
+  html {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 </style>
