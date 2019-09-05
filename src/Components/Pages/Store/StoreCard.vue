@@ -1,6 +1,8 @@
 <template>
   <article class="store-card">
-    <img class="store-card__image" :src="itemImage" :alt="alt" :style="{'width': width + 'px', 'height': height + 'px'}">
+    <router-link :to="getLink()" class="store-card__link">
+      <img :src="itemImage" :alt="alt" :style="{'width': width + 'px', 'height': height + 'px'}">
+    </router-link>
     <section class="store-card-description">
       <section>
         <p class="store-card-description__title">{{item.name}}{{item.model ? `&nbsp;${item.model}` : ''}}</p>
@@ -9,12 +11,15 @@
           <p class="store-card-description__price">{{item.price}}&thinsp;р</p>
         </span>
         <section class="store-card-description-colors">
-          <div class="store-card-description-colors__circle"
-               v-for="color in colors"
-               :title="color"
-               :class="getColor(color)"
-               :key="color"
-          ></div>
+          <router-link
+                  class="store-card-description-colors__circle"
+                  v-for="color in colors"
+                  :title="color"
+                  :class="getColor(color)"
+                  :key="color"
+                  :to="getLink(color)"
+          >
+          </router-link>
         </section>
       </section>
     </section>
@@ -58,18 +63,17 @@
         const model = this.item.model.toLowerCase();
         const type = this.item.type.toLowerCase();
         return `${this.$t(`items.${type}`)} ${name} ${model}`
-      },
-      link () {
-        const name = this.item.name.toLowerCase();
-        const model = this.item.model.toLowerCase();
-        const type = this.item.type.toLowerCase();
-        const color = this.item.availableColors[0];
-        return `/item?name=${name}&model=${model}&type=${type}&color=${color}`;
       }
     },
     methods: {
       getColor (color) {
         return `store-card-description-colors__circle--${color}`
+      },
+      getLink (color = this.colors[0]) {
+        const name = this.item.name.toLowerCase();
+        const model = this.item.model.toLowerCase();
+        const type = this.item.type.toLowerCase();
+        return `/product/${type}/${name}${model ? ('-' + model) : ''}/${color}`;
       }
     }
   };
@@ -86,17 +90,19 @@
         opacity: 1;
       }
     }
-    &__image {
-      /*object-fit: contain;*/
+    &__link {
+      margin-bottom: -5px;
     }
   }
 
   .store-card-description-colors {
+    height: 20px;
     position: absolute;
     opacity: 0;
     transition: .3s all;
     display: flex;
-    bottom: -28px;
+    bottom: -32px;
+    padding-left: 2px;
     @media (hover: none) and (pointer: coarse) {
       opacity: 1;
     }
@@ -106,6 +112,14 @@
       background-color: white;
       border-radius: 16px;
       margin-right: 8px;
+      transition: 0.1s all;
+
+      &:hover {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+      }
+
       &--coated {
         background-color: $coated;
       }

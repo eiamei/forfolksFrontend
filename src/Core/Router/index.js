@@ -57,8 +57,8 @@ let config = {
       }
     },
     {
-      path: '/item',
-      name: 'item',
+      path: '/product/:type/:model/:color',
+      name: 'product',
       component: Item,
       meta: {
         title: 'Forfolks',
