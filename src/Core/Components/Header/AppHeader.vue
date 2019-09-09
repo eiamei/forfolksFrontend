@@ -1,21 +1,28 @@
 <template>
   <nav class="header">
+    <span class="header-menu">
+      <app-button class="header-menu__button">
+        <template slot="content">
+          <div class="header-menu__circle"></div>
+          <div class="header-menu__circle"></div>
+          <div class="header-menu__circle"></div>
+        </template>
+      </app-button>
+      <p class="header-menu__text">Горшки</p>
+    </span>
     <router-link to="/" class="header__logo"></router-link>
-    <div class="header__controls">
-      <router-link class="header__link header__link--bag" to="bag">
-        <div class="header-bag" :class="bagStyle"></div>
-        <div v-if="this.bagQty">{{this.bagQty}}</div>
-      </router-link>
-      <router-link class="header__link header__link--bag" to="store">Магазин</router-link>
-      <router-link class="header__link header__link--bag" to="delivery">Доставка</router-link>
-      <router-link class="header__link" to="about">О нас</router-link>
-    </div>
+    <router-link class="header__link header__link--bag" to="bag">
+      <div class="header-bag" :class="bagStyle"></div>
+      <div v-if="this.bagQty">{{this.bagQty}}</div>
+    </router-link>
   </nav>
 </template>
 
 <script>
+  import AppButton from '../UI/AppButton';
   export default {
     name: 'app-header',
+    components: {AppButton},
     computed: {
       bagQty () {
         let total = 0;
@@ -38,20 +45,17 @@
 
   .header {
     position: fixed;
-    width: calc(100% - 80px);
-    /*margin: 0 40px;*/
-    border-bottom: 1px solid $light-gray;
-    padding: 12px 40px 10px 40px;
+    /*width: 100%;*/
+    width: calc(100% - 32px);
+    /*padding: 12px 40px 10px 40px;*/
+    margin: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     top: 0;
     z-index: 1000;
-    background-color: white;
+    background-color: transparent;
     &__logo {
-      /*position: absolute;*/
-      left: calc(50% - 35px);
-      top: 8px;
       background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
       width: 70px;
       height: 24px;
@@ -72,7 +76,28 @@
       &--bag {
         margin-right: 8px;
         display: flex;
+        color: white;
       }
+    }
+  }
+
+  .header-menu {
+    display: flex;
+
+    &__button {
+      display: flex;
+      background-color: transparent;
+      border: none;
+    }
+    &__circle {
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      border-radius: 8px;
+      margin-right: 4px;
+    }
+    &__text {
+      color: white;
     }
   }
 
@@ -83,12 +108,10 @@
 
   @media screen and (max-width: 770px) {
     .header {
-      /*margin: 0 16px;*/
       padding: 12px 16px 10px 16px;
       width: calc(100% - 32px);
       &__link {
         font-size: .8em;
-        /*margin: 0 4px;*/
       }
     }
   }

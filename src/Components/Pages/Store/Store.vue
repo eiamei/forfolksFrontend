@@ -1,31 +1,31 @@
 <template>
   <div class="store">
     <span class="store-row">
-      <card :item="store[0]" :key="store[0].name" :width="windowWidth * 0.6924" :height="windowWidth * 2/5"/>
-      <card :item="store[1]" :key="store[1].name" :width="windowWidth * 0.3076" :height="windowWidth * 2/5"/>
+      <card :item="store[0]" :key="store[0].name" :width="windowWidth * 2 / 3" :height="windowWidth * 0.4613"/>
+      <card :item="store[1]" :key="store[1].name" :width="windowWidth * 1 / 3" :height="windowWidth * 0.4613"/>
     </span>
     <span class="store-row">
       <span>
-        <card :item="store[2]" :width="windowWidth * 0.3333" :height="windowWidth * 2/5"/>
-        <card :item="store[3]" :width="windowWidth * 0.3333" :height="windowWidth * 2/5"/>
+        <card :item="store[2]" :width="windowWidth * 1 / 3" :height="windowWidth / 2"/>
+        <card :item="store[3]" :width="windowWidth * 1 / 3" :height="windowWidth / 2"/>
       </span>
-      <card :item="store[4]" :width="windowWidth * 0.6666" :height="windowWidth * 4/5"/>
+      <card :item="store[4]" :width="windowWidth * 2 / 3" :height="windowWidth"/>
     </span>
     <span class="store-row">
-      <card :item="store[5]" :key="store[0].name" :width="windowWidth * 0.6924" :height="windowWidth * 2/5"/>
-      <card :item="store[6]" :key="store[1].name" :width="windowWidth * 0.3076" :height="windowWidth * 2/5"/>
+      <card :item="store[5]" :key="store[0].name" :width="windowWidth * 2 / 3" :height="windowWidth * 0.4613"/>
+      <card :item="store[6]" :key="store[1].name" :width="windowWidth * 1 / 3" :height="windowWidth * 0.4613"/>
     </span>
     <span class="store-row">
-      <card :item="store[7]" :key="store[1].name" :width="windowWidth * 0.3076" :height="windowWidth * 2/5"/>
-      <card :item="store[8]" :key="store[0].name" :width="windowWidth * 0.6924" :height="windowWidth * 2/5"/>
+      <card :item="store[7]" :key="store[1].name" :width="windowWidth * 1 / 3" :height="windowWidth * 0.4613"/>
+      <card :item="store[8]" :key="store[0].name" :width="windowWidth * 2 / 3" :height="windowWidth * 0.4613"/>
     </span>
     <span class="store-row">
-      <card :item="store[9]" :key="store[0].name" :width="windowWidth * 0.6924" :height="windowWidth * 2/5"/>
-      <card :item="store[10]" :key="store[1].name" :width="windowWidth * 0.3076" :height="windowWidth * 2/5"/>
+      <card :item="store[9]" :key="store[0].name" :width="windowWidth * 2 / 3" :height="windowWidth * 0.4613"/>
+      <card :item="store[10]" :key="store[1].name" :width="windowWidth * 1 / 3" :height="windowWidth * 0.4613"/>
     </span>
     <span class="store-row">
-      <card :item="store[11]" :key="store[1].name" :width="windowWidth * 0.3076" :height="windowWidth * 2/5"/>
-      <card :item="store[12]" :key="store[0].name" :width="windowWidth * 0.6924" :height="windowWidth * 2/5"/>
+      <card :item="store[11]" :key="store[1].name" :width="windowWidth * 1 / 3" :height="windowWidth * 0.4613"/>
+      <card :item="store[12]" :key="store[0].name" :width="windowWidth * 2 / 3" :height="windowWidth * 0.4613"/>
     </span>
   </div>
 </template>

@@ -1,81 +1,81 @@
 <template>
-  <div class="item">
-    <div class="item__first-row">
-      <div class="item__top-bread">
-        <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
-      </div>
-      <carousel :per-page="1" class="carousel" :navigate-to="navigateTo" @page-change="changeColorByCarousel">
-        <slide v-for="image in images" class="item__image" :key="image.color">
-          <img :src="image.img" class="image" :alt="alt">
-        </slide>
-      </carousel>
-      <div class="item-info__container">
-        <div class="item-info">
-          <div class="item-info__bread">
-            <router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}
-          </div>
-          <div class="item-info__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</div>
-          <div class="item-info__section">
-            {{shortenDescription}}
-            <span class="inner-link" v-scroll-to="'.item-description'">подробное описание</span>
-          </div>
-          <table class="item-info__spec">
-            <tr v-if="item.model.length">
-              <td>Модель:</td>
-              <td>
-                <app-button class="item-info__section-button button--item-selection" :content="item.model"/>
-              </td>
-            </tr>
-            <tr>
-              <td>Цвет:</td>
-              <td>
-                <dropdown :options="colors" :value="chosenColor.label" @change="selectColor"/>
-              </td>
-            </tr>
-            <tr>
-              <td>Цена:</td>
-              <td>{{item.price}} ₽</td>
-            </tr>
-          </table>
-          <div>
-            <app-button content="Добавить в корзину" style="margin-top: 16px" class="button--add-to-cart" @click="addToBag"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr/>
-      <div class="section">Описание</div>
-    <hr/>
-    <div class="item-description">
-      <div class="item-description__main-text" v-html="item.desc"></div>
-      <table class="item-description__spec">
-        <tr>
-          <td>Размер:</td>
-          <td>
-            <span v-for="(param, key, index) in item.size" :key="`${param}.${key}`">{{$t(`size.${key}`)}}: {{param}} cм{{getSymbol(item.size, index)}} </span>
-          </td>
-        </tr>
-        <tr>
-          <td>Вес:</td>
-          <td>{{item.weight}} гр</td>
-        </tr>
-        <tr>
-          <td>Материал:</td>
-          <td>
-            <span v-for="(material, index) in item.material" :key="material">{{$t(`material.${material}`)}}{{getSymbol(item.material, index)}} </span>
-          </td>
-        </tr>
-        <tr v-if="item.type !== 'hanging'">
-          <td>Уход:</td>
-          <td>Протирать влажной тряпочкой</td>
-        </tr>
-        <tr>
-          <td>Цена:</td>
-          <td>{{item.price}} ₽</td>
-        </tr>
-      </table>
-    </div>
-  </div>
+  <!--<div class="item">-->
+    <!--<div class="item__first-row">-->
+      <!--<div class="item__top-bread">-->
+        <!--<router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}-->
+      <!--</div>-->
+      <!--<carousel :per-page="1" class="carousel" :navigate-to="navigateTo" @page-change="changeColorByCarousel">-->
+        <!--<slide v-for="image in images" class="item__image" :key="image.color">-->
+          <!--<img :src="image.img" class="image" :alt="alt">-->
+        <!--</slide>-->
+      <!--</carousel>-->
+      <!--<div class="item-info__container">-->
+        <!--<div class="item-info">-->
+          <!--<div class="item-info__bread">-->
+            <!--<router-link to="/store">{{$t(`links.store`)}}</router-link> / {{$t(`items.${item.type}s`)}}-->
+          <!--</div>-->
+          <!--<div class="item-info__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</div>-->
+          <!--<div class="item-info__section">-->
+            <!--{{shortenDescription}}-->
+            <!--<span class="inner-link" v-scroll-to="'.item-description'">подробное описание</span>-->
+          <!--</div>-->
+          <!--<table class="item-info__spec">-->
+            <!--<tr v-if="item.model.length">-->
+              <!--<td>Модель:</td>-->
+              <!--<td>-->
+                <!--<app-button class="item-info__section-button button&#45;&#45;item-selection" :content="item.model"/>-->
+              <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+              <!--<td>Цвет:</td>-->
+              <!--<td>-->
+                <!--<dropdown :options="colors" :value="chosenColor.label" @change="selectColor"/>-->
+              <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+              <!--<td>Цена:</td>-->
+              <!--<td>{{item.price}} ₽</td>-->
+            <!--</tr>-->
+          <!--</table>-->
+          <!--<div>-->
+            <!--<app-button content="Добавить в корзину" style="margin-top: 16px" class="button&#45;&#45;add-to-cart" @click="addToBag"/>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<hr/>-->
+      <!--<div class="section">Описание</div>-->
+    <!--<hr/>-->
+    <!--<div class="item-description">-->
+      <!--<div class="item-description__main-text" v-html="item.desc"></div>-->
+      <!--<table class="item-description__spec">-->
+        <!--<tr>-->
+          <!--<td>Размер:</td>-->
+          <!--<td>-->
+            <!--<span v-for="(param, key, index) in item.size" :key="`${param}.${key}`">{{$t(`size.${key}`)}}: {{param}} cм{{getSymbol(item.size, index)}} </span>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td>Вес:</td>-->
+          <!--<td>{{item.weight}} гр</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td>Материал:</td>-->
+          <!--<td>-->
+            <!--<span v-for="(material, index) in item.material" :key="material">{{$t(`material.${material}`)}}{{getSymbol(item.material, index)}} </span>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--<tr v-if="item.type !== 'hanging'">-->
+          <!--<td>Уход:</td>-->
+          <!--<td>Протирать влажной тряпочкой</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td>Цена:</td>-->
+          <!--<td>{{item.price}} ₽</td>-->
+        <!--</tr>-->
+      <!--</table>-->
+    <!--</div>-->
+  <!--</div>-->
 </template>
 
 <script>
@@ -88,93 +88,93 @@
 
   export default {
     name: 'ItemCard',
-    components: {AppButton, Dropdown, Carousel, Slide},
+    // components: {AppButton, Dropdown, Carousel, Slide},
     data () {
       return {
-        store: STORE,
-        chosenColor: {
-          label: this.$route.query.color || COLORS[this.item.colors][0].label
-        },
-        item: null,
-        name: this.$route.query.name || '',
-        type: this.$route.query.type || '',
-        size: '',
-        material: '',
-        price: '',
-        symbolLimit: 30,
-        navigateTo: 0
+        // store: STORE,
+        // chosenColor: {
+        //   label: this.$route.query.color || COLORS[this.item.colors][0].label
+        // },
+        // item: null,
+        // name: this.$route.query.name || '',
+        // type: this.$route.query.type || '',
+        // size: '',
+        // material: '',
+        // price: '',
+        // symbolLimit: 30,
+        // navigateTo: 0
       };
     },
     created () {
-      this.findItem();
+      // this.findItem();
     },
     mounted () {
-      window.scrollTo(0, 0)
+      // window.scrollTo(0, 0)
     },
     computed: {
-      colors () {
-        return this.item && this.item.availableColors && this.item.availableColors.map((color, index) => {
-          return {value: index, label: color}
-        }) || [];
-      },
-      images () {
-        const name = this.item.name.toLowerCase();
-        const model = this.item.model.toLowerCase();
-        const type = this.item.type.toLowerCase();
-        return this.item.availableColors.map(color => {
-          return {
-            color,
-            img: require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`)
-          };
-        })
-      },
-      alt () {
-        const name = this.item.name.toLowerCase();
-        const model = this.item.model.toLowerCase();
-        const type = this.item.type.toLowerCase();
-        return `${this.$t(`items.${type}`)} ${name} ${model}`
-      },
-      shortenDescription () {
-        if (this.item.desc.length > this.symbolLimit) {
-          return this.item.desc.slice(0, this.symbolLimit) + '...';
-        }
-        return this.item.desc;
-      }
+      // colors () {
+      //   return this.item && this.item.availableColors && this.item.availableColors.map((color, index) => {
+      //     return {value: index, label: color}
+      //   }) || [];
+      // },
+      // images () {
+      //   const name = this.item.name.toLowerCase();
+      //   const model = this.item.model.toLowerCase();
+      //   const type = this.item.type.toLowerCase();
+      //   return this.item.availableColors.map(color => {
+      //     return {
+      //       color,
+      //       img: require(`@/assets/images/store/${type}-${name}${model ? '-' + model : ''}-${color}.jpg`)
+      //     };
+      //   })
+      // },
+      // alt () {
+      //   const name = this.item.name.toLowerCase();
+      //   const model = this.item.model.toLowerCase();
+      //   const type = this.item.type.toLowerCase();
+      //   return `${this.$t(`items.${type}`)} ${name} ${model}`
+      // },
+      // shortenDescription () {
+      //   if (this.item.desc.length > this.symbolLimit) {
+      //     return this.item.desc.slice(0, this.symbolLimit) + '...';
+      //   }
+      //   return this.item.desc;
+      // }
     },
     methods: {
-      findItem () {
-        this.item = this.store.find(item => {
-          let res = slugify(item.name.toLowerCase()) === this.$route.query.name &&
-            slugify(item.type.toLowerCase()) === this.$route.query.type;
-          if (res && item.model)
-            res = slugify(item.model.toLowerCase()) === this.$route.query.model;
-          return res
-          }
-        );
-      },
-      selectColor (value) {
-        this.chosenColor = value;
-        let index = this.images.findIndex(image => {
-          return image.color === value.label;
-        });
-        if (index > -1)
-          this.navigateTo = index;
-      },
-      getSymbol (source, index) {
-        return index < (Object.keys(source).length - 1) ? ', ' : ''
-      },
-      addToBag () {
-        this.$store.dispatch('bag/add', {
-          name: this.item.name,
-          model: this.item.model,
-          price: this.item.price,
-          type: this.item.type,
-          color: this.chosenColor.label
-        });
-      },
-      changeColorByCarousel (page) {
-        this.chosenColor = this.colors[page];
-      }
+      // findItem () {
+      //   this.item = this.store.find(item => {
+      //     let res = slugify(item.name.toLowerCase()) === this.$route.query.name &&
+      //       slugify(item.type.toLowerCase()) === this.$route.query.type;
+      //     if (res && item.model)
+      //       res = slugify(item.model.toLowerCase()) === this.$route.query.model;
+      //     return res
+      //     }
+      //   );
+      // },
+      // selectColor (value) {
+      //   this.chosenColor = value;
+      //   let index = this.images.findIndex(image => {
+      //     return image.color === value.label;
+      //   });
+      //   if (index > -1)
+      //     this.navigateTo = index;
+      // },
+      // getSymbol (source, index) {
+      //   return index < (Object.keys(source).length - 1) ? ', ' : ''
+      // },
+      // addToBag () {
+      //   this.$store.dispatch('bag/add', {
+      //     name: this.item.name,
+      //     model: this.item.model,
+      //     price: this.item.price,
+      //     type: this.item.type,
+      //     color: this.chosenColor.label
+      //   });
+      // },
+      // changeColorByCarousel (page) {
+      //   this.chosenColor = this.colors[page];
+      // }
     }
   };
 </script>
