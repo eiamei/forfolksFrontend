@@ -140,7 +140,8 @@
     },
     "colors": "brass",
     "availableColors": [
-      "natural"
+      "natural",
+      "black"
     ],
     "material": ["brass", "concrete"],
     "weight": 200,
@@ -191,6 +192,8 @@
     "availableColors": [
       "coated",
       "black_marble",
+      "graphite",
+      "gray_fog",
       "sakura",
       "cacao",
       "cornflower",
@@ -260,6 +263,8 @@
     },
     "colors": "concrete",
     "availableColors": [
+      "coated",
+      "graphite",
       "sakura",
       "black_marble",
       "gray_fog"
@@ -286,7 +291,8 @@
     "availableColors": [
       "coated",
       "black_marble",
-      "sakura"
+      "sakura",
+      "graphite"
     ],
     "material": ["concrete"],
     "weight": 300,
