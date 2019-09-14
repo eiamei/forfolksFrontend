@@ -1,15 +1,6 @@
 <template>
   <nav class="header">
-    <span class="header-menu">
-      <app-button class="header-menu__button">
-        <template slot="content">
-          <div class="header-menu__circle"></div>
-          <div class="header-menu__circle"></div>
-          <div class="header-menu__circle"></div>
-        </template>
-      </app-button>
-      <p class="header-menu__text">Горшки</p>
-    </span>
+    <app-header-menu/>
     <router-link to="/" class="header__logo"></router-link>
     <router-link class="header__link header__link--bag" to="bag">
       <div class="header-bag" :class="bagStyle"></div>
@@ -20,9 +11,10 @@
 
 <script>
   import AppButton from '../UI/AppButton';
+  import AppHeaderMenu from './AppHeader.menu';
   export default {
     name: 'app-header',
-    components: {AppButton},
+    components: {AppHeaderMenu, AppButton},
     computed: {
       bagQty () {
         let total = 0;
@@ -78,26 +70,6 @@
         display: flex;
         color: white;
       }
-    }
-  }
-
-  .header-menu {
-    display: flex;
-
-    &__button {
-      display: flex;
-      background-color: transparent;
-      border: none;
-    }
-    &__circle {
-      width: 12px;
-      height: 12px;
-      background-color: white;
-      border-radius: 8px;
-      margin-right: 4px;
-    }
-    &__text {
-      color: white;
     }
   }
 
