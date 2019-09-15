@@ -27,7 +27,7 @@
     data () {
       return {
         store: Store,
-        types: ['all', 'pot', 'candlestick', 'stand', 'vase', 'hanging'],
+        types: ['all', 'pot', 'candlestick', 'stand', 'vase', 'bouquet', 'hanging'],
         current: 'all',
         stdSizes: {
           minWidth: 140,

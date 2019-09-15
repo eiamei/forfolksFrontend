@@ -59,13 +59,13 @@
           <td>Вес:</td>
           <td>{{item.weight}} гр</td>
         </tr>
-        <tr>
+        <tr v-if="item.material.length">
           <td>Материал:</td>
           <td>
             <span v-for="(material, index) in item.material" :key="material">{{$t(`material.${material}`)}}{{getSymbol(item.material, index)}} </span>
           </td>
         </tr>
-        <tr v-if="item.type !== 'hanging'">
+        <tr v-if="item.type !== 'hanging' && item.type !== 'bouquet'">
           <td>Уход:</td>
           <td>Протирать влажной тряпочкой</td>
         </tr>

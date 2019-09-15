@@ -78,19 +78,18 @@
     &__data {
       position: absolute;
       display: flex;
+      flex-direction: row;
       background-color: black;
       color: white;
       top: 0;
       opacity: 0;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      /*z-index: 10;*/
+      z-index: 10;
       transition: opacity .3s;
       font-size: 16px;
       height: calc(100% - 4px);
       &:hover {
-        opacity: .7;
+        opacity: 0;
       }
     }
     &__name {
