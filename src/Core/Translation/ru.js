@@ -18,7 +18,9 @@ export default {
     plate: 'Тарелка',
     plates: 'Тарелки',
     hanging: 'Подвес',
-    hangings: 'Подвесы'
+    hangings: 'Подвесы',
+    bouquet: 'Букет',
+    bouquets: 'Букеты'
   },
   links: {
     store: 'Магазин'
@@ -42,7 +44,8 @@ export default {
     white: 'Белый',
     natural: 'Натуральный',
     cotton: 'Хлопок',
-    jute: 'Джут'
+    jute: 'Джут',
+    one_color: 'Один цвет'
   },
   material: {
     concrete: "Бетон",

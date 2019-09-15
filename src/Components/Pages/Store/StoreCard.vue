@@ -73,7 +73,7 @@
     flex-direction: column;
     &__image {
       width: 470px;
-      position: relative;
+      /*position: relative;*/
     }
     &__data {
       position: absolute;
@@ -85,7 +85,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      z-index: 10;
+      /*z-index: 10;*/
       transition: opacity .3s;
       font-size: 16px;
       height: calc(100% - 4px);

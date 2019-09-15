@@ -16,7 +16,9 @@ export default {
     plate: 'Plate',
     plates: 'Plates',
     hanging: 'Handing',
-    hangings: 'Handings'
+    hangings: 'Handings',
+    bouquets: 'Bouquets',
+    bouquet: 'Bouquet'
   },
   links: {
     store: 'Store'
@@ -40,7 +42,8 @@ export default {
     white: 'White',
     natural: 'Natural',
     cotton: 'Cotton',
-    jute: 'Jute'
+    jute: 'Jute',
+    one_color: 'One color'
   },
   material: {
     concrete: "Concrete",

@@ -78,6 +78,86 @@
     "storeTemplate": "normal"
   },
   {
+    "name": "Blum",
+    "model": "Matin",
+    "type": "bouquet",
+    "category": ["bouquet"],
+    "desc": "",
+    "metaDesc": "Нежный букет из сухоцветов. Лагурос, Гликсия, Фаларис",
+    "shortDesc": "",
+    "size": {
+      "height": 25
+    },
+    "colors": "fabric",
+    "availableColors": [
+      "one_color"
+    ],
+    "material": [],
+    "weight": 10,
+    "price": 400,
+    "storeTemplate": "normal"
+  },
+  {
+    "name": "Blum",
+    "model": "Jour",
+    "type": "bouquet",
+    "category": ["bouquet"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 30
+    },
+    "colors": "fabric",
+    "availableColors": [
+      "one_color"
+    ],
+    "material": ["cotton", "jute"],
+    "weight": 10,
+    "price": 400,
+    "storeTemplate": "normal"
+  },
+  {
+    "name": "Blum",
+    "model": "Soir",
+    "type": "bouquet",
+    "category": ["bouquet"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 30
+    },
+    "colors": "fabric",
+    "availableColors": [
+      "one_color"
+    ],
+    "material": ["cotton", "jute"],
+    "weight": 10,
+    "price": 400,
+    "storeTemplate": "normal"
+  },
+  {
+    "name": "Blum",
+    "model": "Nuit",
+    "type": "bouquet",
+    "category": ["bouquet"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "size": {
+      "height": 30
+    },
+    "colors": "fabric",
+    "availableColors": [
+      "one_color"
+    ],
+    "material": ["cotton", "jute"],
+    "weight": 10,
+    "price": 400,
+    "storeTemplate": "normal"
+  },
+  {
     "name": "MAK",
     "model": "2",
     "type": "hanging",
