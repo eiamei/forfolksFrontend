@@ -20,7 +20,11 @@ export default {
     hanging: 'Подвес',
     hangings: 'Подвесы',
     bouquet: 'Букет',
-    bouquets: 'Букеты'
+    bouquets: 'Букеты',
+    miniBouquets: 'Мини букеты',
+    miniBouquet: 'Мини букет',
+    season: 'Сезонный',
+    seasons: 'Сезонный'
   },
   links: {
     store: 'Магазин'
@@ -45,6 +49,7 @@ export default {
     natural: 'Натуральный',
     cotton: 'Хлопок',
     jute: 'Джут',
+    pumpkin: 'Тыквенный',
     one_color: 'Один цвет'
   },
   material: {

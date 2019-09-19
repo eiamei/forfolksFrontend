@@ -18,7 +18,11 @@ export default {
     hanging: 'Handing',
     hangings: 'Handings',
     bouquets: 'Bouquets',
-    bouquet: 'Bouquet'
+    bouquet: 'Bouquet',
+    miniBouquets: 'Mini bouquets',
+    miniBouquet: 'Mini bouquet',
+    season: 'Season',
+    seasons: 'Seasons'
   },
   links: {
     store: 'Store'
@@ -43,6 +47,7 @@ export default {
     natural: 'Natural',
     cotton: 'Cotton',
     jute: 'Jute',
+    pumpkin: 'Pumpkin',
     one_color: 'One color'
   },
   material: {
