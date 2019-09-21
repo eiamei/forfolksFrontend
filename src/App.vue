@@ -36,6 +36,7 @@ export default {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #494b4c;
 
   }
   html {

@@ -14,7 +14,7 @@ let config = {
   mode: 'history',
   routes: [
     {
-      path: '/store',
+      path: '/store/:type',
       name: 'store',
       component: Store,
       meta: {
@@ -91,7 +91,7 @@ let config = {
     },
     {
       path: '*',
-      redirect: '/store'
+      redirect: 'store/all'
     }
   ]
 };

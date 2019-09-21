@@ -6,7 +6,7 @@ export default {
     'cachePots': 'Кашпо',
     candle: 'Свеча',
     candles: 'Свечи',
-    alls: 'Все',
+    alls: 'Все модели',
     candlestick: 'Подсвечник',
     candlesticks: 'Подсвечники',
     stand: 'Подставка',
@@ -18,10 +18,15 @@ export default {
     plate: 'Тарелка',
     plates: 'Тарелки',
     hanging: 'Подвес',
-    hangings: 'Подвесы'
+    hangings: 'Подвесы',
+    bouquet: 'Букет',
+    bouquets: 'Букеты',
+    seasons: 'Сезонные'
   },
   links: {
-    store: 'Магазин'
+    store: 'Магазин',
+    delivery: 'Доставка и оплата',
+    about: 'О студии'
   },
   colors: {
     coated: 'Мелованный',

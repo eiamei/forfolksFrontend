@@ -2,7 +2,7 @@
   <nav class="header">
     <app-header-menu/>
     <router-link to="/" class="header__logo"></router-link>
-    <router-link class="header__link header__link--bag" to="bag">
+    <router-link class="header__link header__link--bag" to="/bag">
       <div class="header-bag" :class="bagStyle"></div>
       <div v-if="this.bagQty">{{this.bagQty}}</div>
     </router-link>
@@ -37,20 +37,18 @@
 
   .header {
     position: fixed;
-    /*width: 100%;*/
     width: calc(100% - 32px);
-    /*padding: 12px 40px 10px 40px;*/
     margin: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
+    top: 8px;
     z-index: 1000;
     background-color: transparent;
     &__logo {
       background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
-      width: 70px;
-      height: 24px;
+      width: 102px;
+      height: 32px;
     }
     &__controls {
       font-weight: 300;
@@ -96,8 +94,8 @@
     }
   }
   .header-bag {
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     position: relative;
     transition: all .3s;
     margin-right: 2px;

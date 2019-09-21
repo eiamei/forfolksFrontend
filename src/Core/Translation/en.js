@@ -6,7 +6,7 @@ export default {
     'cachePots': 'Cache-pots',
     candle: 'Candle',
     candles: 'Candles',
-    alls: 'All',
+    alls: 'All models',
     candlestick: 'Candlestick',
     candlesticks: 'Candlesticks',
     stand: 'Stand',
@@ -19,7 +19,9 @@ export default {
     hangings: 'Handings'
   },
   links: {
-    store: 'Store'
+    store: 'Store',
+    delivery: 'Delivery',
+    about: 'About studio'
   },
   colors: {
     coated: 'Coated',

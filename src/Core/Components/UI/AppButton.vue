@@ -1,7 +1,7 @@
 <template>
   <button class="button" @click="$emit('click')">
     {{content}}
-    <slot name="content"></slot>
+    <slot name="default"></slot>
   </button>
 </template>
 

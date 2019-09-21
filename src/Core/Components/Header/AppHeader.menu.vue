@@ -1,29 +1,28 @@
 <template>
-  <section style="width: 50px;">
-    <span class="header-menu">
+  <section style="width: 50px; margin-top: -16px">
+    <span class="header-menu" @click="toggleState">
       <section style="display: flex">
         <template v-if="!isOpen">
-          <app-button class="header-menu__button" @click="open">
-            <template slot="content">
-              <div class="header-menu__circle"></div>
-              <div class="header-menu__circle"></div>
-              <div class="header-menu__circle"></div>
-            </template>
+          <app-button class="header-menu__button">
+            <div class="header-menu__circle"></div>
+            <div class="header-menu__circle"></div>
+            <div class="header-menu__circle"></div>
           </app-button>
-          <p class="header-menu__text">Горшки</p>
+          <p class="header-menu__text">{{$t(menuText)}}</p>
         </template>
-        <template  v-if="isOpen">
-          <app-button class="header-menu__button" v-if="isOpen" @click="close">
-            <template slot="content">
-              <p>X</p>
-            </template>
-          </app-button>
-        </template>
+        <app-button class="header-menu__button" v-if="isOpen">
+          <img src="../../../assets/svg/closeIcon.svg"/>
+        </app-button>
       </section>
-      <nav class="menu-container" style="position: absolute" v-if="isOpen">
+      <nav class="menu-container" v-if="isOpen">
         <ul class="menu-catalogue">
           <li class="menu-catalogue__item" v-for="link in catalogue" :key="link.to">
             <router-link class="menu-catalogue__text" :to="link.to">{{$t(link.text)}}</router-link>
+          </li>
+        </ul>
+        <ul class="menu-links">
+          <li class="menu-links__item" v-for="link in links" :key="link.to">
+            <router-link class="menu-links__text" :to="link.to">{{$t(link.text)}}</router-link>
           </li>
         </ul>
       </nav>
@@ -33,6 +32,7 @@
 
 <script>
   import AppButton from '../UI/AppButton';
+
   export default {
     name: 'appHeaderMenu',
     components: {AppButton},
@@ -40,38 +40,49 @@
       return {
         isOpen: false,
         catalogue: [{
-          to: 'store/all',
+          to: '/store/all',
           text: 'items.alls'
         }, {
-          to: 'store/pot',
+          to: '/store/pot',
           text: 'items.pots'
         }, {
-          to: 'store/candlestick',
+          to: '/store/candlestick',
           text: 'items.candlesticks'
         }, {
-          to: 'store/plate',
+          to: '/store/plate',
           text: 'items.plates'
         }, {
-          to: 'store/vase',
+          to: '/store/vase',
           text: 'items.vases'
         }, {
-          to: 'store/bouquet',
+          to: '/store/bouquet',
           text: 'items.bouquets'
         }, {
-          to: 'store/hanging',
+          to: '/store/hanging',
           text: 'items.hangings'
         }, {
-          to: 'store/season',
+          to: '/store/season',
           text: 'items.seasons'
+        }],
+        links: [{
+          to: '/delivery',
+          text: 'links.delivery'
+        }, {
+          to: '/about',
+          text: 'links.about'
         }]
+      };
+    },
+    computed: {
+      menuText () {
+        if (this.$route.path.includes('store'))
+          return `items.${this.$route.params.type}s`;
+        return '';
       }
     },
     methods: {
-      open () {
-        this.isOpen = true;
-      },
-      close () {
-        this.isOpen = false;
+      toggleState () {
+        this.isOpen = !this.isOpen;
       }
     }
   };
@@ -81,6 +92,8 @@
 
   .header-menu {
     position: absolute;
+    display: flex;
+    align-items: flex-start;
 
     &__button {
       display: flex;
@@ -95,22 +108,41 @@
       margin-right: 4px;
     }
     &__text {
+      margin: 0;
       color: white;
     }
   }
 
   .menu-container {
-    .menu-catalogue {
+    display: flex;
+    .menu-catalogue, .menu-links {
+      width: 220px;
+      padding: 0;
+      margin: 0;
+      margin-top: -6px;
       &__item {
         list-style: none;
       }
       &__text {
         font-weight: 300;
         font-size: 24px;
-        color: black;
+        color: white;
         text-decoration: none;
         &:hover {
           font-weight: 400;
+        }
+      }
+    }
+    .menu-catalogue {
+      margin-left: 12px;
+    }
+    .menu-links {
+      width: 300px;
+      &__text {
+        font-weight: 700;
+        &:hover {
+          font-weight: 700;
+          font-size: 25px;
         }
       }
     }
