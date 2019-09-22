@@ -64,5 +64,8 @@ export default {
     innerWidth: 'Ширина отверстия',
     externalDiameter: 'Внешний диаметр',
     innerDiameter: "Внутренний диаметр"
+  },
+  common: {
+    color: 'Цвет'
   }
 }

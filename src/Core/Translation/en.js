@@ -59,5 +59,8 @@ export default {
     innerWidth: 'Inner width',
     externalDiameter: 'External diameter',
     innerDiameter: "Inner diameter"
+  },
+  common: {
+    color: 'Color'
   }
 }
