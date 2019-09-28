@@ -1,5 +1,4 @@
 <template>
-  <section style="width: 50px; margin-top: -16px">
     <span class="header-menu" @click="toggleState">
       <section style="display: flex">
         <template v-if="!isOpen">
@@ -27,7 +26,6 @@
         </ul>
       </nav>
     </span>
-  </section>
 </template>
 
 <script>

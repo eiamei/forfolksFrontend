@@ -14,7 +14,7 @@
       </div>
       <div class="bottom-menu__container bottom-menu__buy">
         <p class="bottom-menu__price">{{item.price}}₽</p>
-        <app-button class="bottom-menu__add-button">В корзину</app-button>
+        <app-button class="bottom-menu__add-button" @click="addToBag">В корзину</app-button>
       </div>
     </section>
   </section>
@@ -189,6 +189,15 @@
       // }
     },
     methods: {
+      addToBag () {
+        this.$store.dispatch('bag/add', {
+          name: this.item.name,
+          model: this.item.model,
+          price: this.item.price,
+          type: this.item.type,
+          color: this.chosenColor.label
+        });
+      },
       selectColor () {}
       // findItem () {
       //   this.item = this.store.find(item => {
@@ -210,15 +219,6 @@
       // },
       // getSymbol (source, index) {
       //   return index < (Object.keys(source).length - 1) ? ', ' : ''
-      // },
-      // addToBag () {
-      //   this.$store.dispatch('bag/add', {
-      //     name: this.item.name,
-      //     model: this.item.model,
-      //     price: this.item.price,
-      //     type: this.item.type,
-      //     color: this.chosenColor.label
-      //   });
       // },
       // changeColorByCarousel (page) {
       //   this.chosenColor = this.colors[page];

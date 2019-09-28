@@ -40,8 +40,6 @@
     width: calc(100% - 32px);
     margin: 0 16px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     top: 8px;
     z-index: 1000;
     background-color: transparent;
@@ -49,6 +47,7 @@
       background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
       width: 102px;
       height: 32px;
+      align-self: center;
     }
     &__controls {
       font-weight: 300;
@@ -64,6 +63,7 @@
         color: black;
       }
       &--bag {
+        position: absolute;
         margin-right: 8px;
         display: flex;
         color: white;
