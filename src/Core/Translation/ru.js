@@ -66,6 +66,9 @@ export default {
     innerDiameter: "Внутренний диаметр"
   },
   common: {
-    color: 'Цвет'
+    color: 'Цвет',
+    size: 'Размеры',
+    material: 'Материал',
+    weight: 'Вес'
   }
 }

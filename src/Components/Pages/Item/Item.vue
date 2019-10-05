@@ -1,10 +1,13 @@
 <template>
-  <section>
+  <section class="item">
+    <section v-show="isInfo" class="item-info-popup">
+      <item-info class="item-info-popup__list" :desc="item.desc" :params="item.params"/>
+    </section>
     <img v-for="image in images" :src="image.img" :key="image.color" width="100%">
     <section class="bottom-menu">
       <div class="bottom-menu__container">
         <h2 class="bottom-menu__model">{{item.name}} {{item.model}}</h2>
-        <app-button class="bottom-menu__info-button">
+        <app-button class="bottom-menu__info-button" @click="toggleInfo">
           <img src="../../../assets/svg/info.svg" class="bottom-menu__info-icon">
         </app-button>
         <section class="bottom-menu__color">
@@ -104,10 +107,11 @@
   import slugify from 'slugify';
   import COLORS from '../../../Core/Constants/Colors';
   import {Carousel, Slide} from 'vue-carousel';
+  import ItemInfo from './item.info';
 
   export default {
     name: 'ItemCard',
-    components: {AppButton, Dropdown},
+    components: {ItemInfo, AppButton, Dropdown},
     // components: {AppButton, Dropdown, Carousel, Slide},
     data () {
       return {
@@ -115,6 +119,7 @@
         chosenColor: {
           label: this.$route.params.color || COLORS[this.item.colors][0].label
         },
+        isInfo: false
         // item: null,
         // name: this.$route.query.name || '',
         // type: this.$route.query.type || '',
@@ -198,7 +203,10 @@
           color: this.chosenColor.label
         });
       },
-      selectColor () {}
+      selectColor () {},
+      toggleInfo () {
+        this.isInfo = !this.isInfo;
+      }
       // findItem () {
       //   this.item = this.store.find(item => {
       //     let res = slugify(item.name.toLowerCase()) === this.$route.query.name &&
@@ -229,7 +237,10 @@
 
 <style lang="scss">
   @import '../../../assets/styles/_colors';
-
+  .item {
+    position: relative;
+    background-color: rgba(0, 0, 0, .8);
+  }
   .bottom-menu {
     position: fixed;
     bottom: 0;
@@ -302,6 +313,20 @@
       background: white;
       border: white;
       outline: transparent;
+    }
+  }
+  .item-info-popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    transition: .6s all;
+    &__list {
+      width: calc(100% - 32px);
+      height: calc(100vh - 180px);
+      margin: 80px 16px 100px 16px;
+      overflow: scroll;
     }
   }
 </style>
