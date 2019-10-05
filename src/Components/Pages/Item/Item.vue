@@ -6,10 +6,12 @@
     <img v-for="image in images" :src="image.img" :key="image.color" width="100%">
     <section class="bottom-menu">
       <div class="bottom-menu__container">
-        <h2 class="bottom-menu__model">{{item.name}} {{item.model}}</h2>
-        <app-button class="bottom-menu__info-button" @click="toggleInfo">
-          <img src="../../../assets/svg/info.svg" class="bottom-menu__info-icon">
-        </app-button>
+        <section style="display: flex">
+          <h2 class="bottom-menu__model">{{item.name}} {{item.model}}</h2>
+          <app-button class="bottom-menu__info-button" @click="toggleInfo">
+            <img src="../../../assets/svg/info.svg" class="bottom-menu__info-icon">
+          </app-button>
+        </section>
         <section class="bottom-menu__color">
           <p class="bottom-menu__color-text">{{$t('common.color')}}:</p>
           <dropdown class="bottom-menu__color-dropdown" :options="colors" :value="chosenColor.label" @change="selectColor"/>
@@ -327,6 +329,88 @@
       height: calc(100vh - 180px);
       margin: 80px 16px 100px 16px;
       overflow: scroll;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .bottom-menu {
+      &__model {
+        font-size: 28px;
+      }
+      &__info-button {
+        margin: 8px 0 0 8px;
+      }
+      &__info-icon {
+        width: 24px;
+        height: 24px;
+      }
+      &__color {
+        margin: 8px 0 0 8px;
+        display: flex;
+      }
+      &__color-text {
+        font-size: 18px;
+      }
+      &__color-dropdown {
+        .dropdown-selected {
+          font-size: 18px;
+          margin: 4px 0 0 8px;
+          .dropdown__shevron {
+            margin-top: 2px;
+          }
+        }
+      }
+      &__price {
+        font-size: 18px;
+        margin-right: 16px;
+      }
+      &__add-button {
+        font-size: 18px;
+        padding: 8px 16px;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .bottom-menu {
+      bottom: 16px;
+      &__container {
+        flex-direction: column;
+        align-items: start;
+      }
+      &__color {
+        margin: 8px 0 0 0;
+      }
+      &__price {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+        align-self: flex-end;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .bottom-menu {
+      &__model {
+        font-size: 24px;
+      }
+      &__info-icon {
+        width: 20px;
+        height: 20px;
+      }
+      &__color-text {
+        font-size: 16px;
+      }
+      &__color-dropdown {
+        .dropdown-selected {
+          font-size: 16px;
+        }
+      }
+      &__price {
+        font-size: 16px;
+        margin-right: 0;
+      }
+      &__add-button {
+        font-size: 12px;
+        padding: 8px 16px;
+      }
     }
   }
 </style>
