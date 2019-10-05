@@ -2,8 +2,10 @@ export default {
   items: {
     pot: 'Горшок',
     pots: 'Горшки',
-    'cachePot': 'Кашпо',
-    'cachePots': 'Кашпо',
+    cachepot: 'Кашпо',
+    cachepots: 'Кашпо',
+    bowl: 'Чаша',
+    bowls: 'Чаши',
     candle: 'Свеча',
     candles: 'Свечи',
     alls: 'Все',
