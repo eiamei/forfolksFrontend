@@ -153,11 +153,11 @@
       position: absolute;
       z-index: 1000;
       height: auto;
-      top: calc(100% + 8px);
-      left: 0px;
+      bottom: 0;
+      left: 8px;
       background-size: 100% 100%;
       box-shadow: 5px 5px 10px rgba(20, 20, 27, 0.44);
-      border-radius: 4px;
+      /*border-radius: 4px;*/
       background-color: rgb(255, 255, 255);
       &__item {
         color: black;

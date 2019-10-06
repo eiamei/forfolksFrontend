@@ -3,7 +3,7 @@
     <section v-show="isInfo" class="item-info-popup">
       <item-info class="item-info-popup__list" :desc="item.desc" :params="item.params"/>
     </section>
-    <img v-for="image in images" :src="image.img" :key="image.color" width="100%">
+    <img v-for="image in images" :src="image.img" :key="image.color" :ref="image.color" width="100%">
     <section class="bottom-menu">
       <div class="bottom-menu__container">
         <section style="display: flex">
@@ -205,7 +205,12 @@
           color: this.chosenColor.label
         });
       },
-      selectColor () {},
+      selectColor (value) {
+        this.chosenColor = value;
+        if (this.$refs[value.label]) {
+          scrollTo(0, this.$refs[value.label][0].offsetTop + this.$refs[value.label][0].clientHeight / 4)
+        }
+      },
       toggleInfo () {
         this.isInfo = !this.isInfo;
       }
@@ -396,7 +401,7 @@
         height: 20px;
       }
       &__color-text {
-        font-size: 16px;
+        font-size: 16xpx;
       }
       &__color-dropdown {
         .dropdown-selected {
