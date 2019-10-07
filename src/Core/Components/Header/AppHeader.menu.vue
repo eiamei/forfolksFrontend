@@ -1,5 +1,5 @@
 <template>
-    <span class="header-menu" @click="toggleState">
+    <span :class="containerClass" @click="toggleState">
       <section style="display: flex">
         <template v-if="!isOpen">
           <app-button class="header-menu__button">
@@ -76,6 +76,12 @@
         if (this.$route.path.includes('store'))
           return `items.${this.$route.params.type}s`;
         return '';
+      },
+      containerClass () {
+        return {
+          'header-menu': true,
+          'header-menu--open': this.isOpen
+        }
       }
     },
     methods: {
@@ -89,9 +95,16 @@
 <style lang="scss">
 
   .header-menu {
-    position: absolute;
+    position: fixed;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding: 16px;
+    &--open {
+      background-color: rgba(0, 0, 0, .8);
+    }
 
     &__button {
       display: flex;
@@ -116,10 +129,10 @@
     .menu-catalogue, .menu-links {
       width: 220px;
       padding: 0;
-      margin: 0;
-      margin-top: -6px;
+      margin: 4px 0 0 0;
       &__item {
         list-style: none;
+        margin-top: 4px;
       }
       &__text {
         font-weight: 300;
@@ -132,7 +145,7 @@
       }
     }
     .menu-catalogue {
-      margin-left: 12px;
+      margin-left: 8px;
     }
     .menu-links {
       width: 300px;
@@ -142,6 +155,50 @@
           font-weight: 700;
           font-size: 25px;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .header-menu {
+      padding: 14px 16px;
+      &__circle {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    .menu-container {
+      .menu-catalogue, .menu-links {
+        width: 180px;
+        &__text {
+          font-size: 16px;
+        }
+      }
+      .menu-links {
+        &__text {
+          &:hover {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .header-menu {
+      padding: 14px 8px;
+      &__text {
+        display: none;
+      }
+    }
+
+    .menu-container {
+      flex-direction: column;
+      .menu-catalogue {
+      }
+      .menu-links {
+        margin-left: 8px;
       }
     }
   }

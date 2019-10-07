@@ -7,14 +7,15 @@
       <shevron class="dropdown__shevron" :class="{'dropdown__shevron--open': data.opening}"></shevron>
     </button>
     <div class="dropdown-options" v-if="data.opening">
-      <div class="dropdown-options__item" v-if="option.value !== selected.value" v-for="option in options"
-           @click="select(option)">
-        <slot :name="option.value !== selected.value? option.value : data.selected" v-bind="option"/>
-        <slot name="option" v-bind="option"/>
-        <div class="dropdown-options__item-label"
-             v-if="!$slots.option && !$slots[option.value] && option !== data.selected ">{{$t(`colors.${option.label}`)}}
+      <template v-for="option in options">
+        <div class="dropdown-options__item" v-if="option.value !== selected.value" @click="select(option)" :key="option.value">
+          <slot :name="option.value !== selected.value? option.value : data.selected" v-bind="option"/>
+          <slot name="option" v-bind="option"/>
+          <div class="dropdown-options__item-label"
+               v-if="!$slots.option && !$slots[option.value] && option !== data.selected ">{{$t(`colors.${option.label}`)}}
+          </div>
         </div>
-      </div>
+      </template>
     </div>
   </div>
 </template>
@@ -44,7 +45,7 @@
       }
     },
     data () {
-      const { opening, options } = this;
+      const { opening } = this;
       return {
         data: {
           opening

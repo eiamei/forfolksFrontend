@@ -106,9 +106,7 @@
   import AppButton from '../../../Core/Components/UI/AppButton';
   import Dropdown from '../../../Core/Components/UI/Dropdown';
   import STORE from '../../../Core/Constants/Store';
-  import slugify from 'slugify';
   import COLORS from '../../../Core/Constants/Colors';
-  import {Carousel, Slide} from 'vue-carousel';
   import ItemInfo from './item.info';
 
   export default {

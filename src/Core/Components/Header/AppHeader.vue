@@ -10,11 +10,10 @@
 </template>
 
 <script>
-  import AppButton from '../UI/AppButton';
   import AppHeaderMenu from './AppHeader.menu';
   export default {
     name: 'app-header',
-    components: {AppHeaderMenu, AppButton},
+    components: {AppHeaderMenu},
     computed: {
       bagQty () {
         let total = 0;
@@ -40,8 +39,8 @@
   .header-menu-container {
     @extend .a-position__fixed;
     @extend .z-index__top--header;
-    top: 16px;
-    left: 16px;
+    top: 0;
+    left: 0;
   }
   .header-logo {
     @extend .a-position__fixed;
@@ -75,6 +74,43 @@
     &__qty {
       margin: 4px 0 0 0;
       color: white;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .header-logo {
+      top: 8px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 25px;
+    }
+    .header-bag {
+      top: 12px;
+      right: 16px;
+      &__icon {
+        width: 20px;
+        height: 20px;
+      }
+      &__qty {
+        margin: 2px 0 0 0;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .header-logo {
+      top: 8px;
+      left: calc(50% - 30px);
+      width: 60px;
+      height: 19px;
+    }
+    .header-bag {
+      right: 8px;
+      &__icon {
+        width: 16px;
+        height: 16px;
+      }
+      &__qty {
+        margin: 0;
+      }
     }
   }
 </style>
