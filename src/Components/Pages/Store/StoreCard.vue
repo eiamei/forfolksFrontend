@@ -106,6 +106,12 @@
     @media (hover: none) and (pointer: coarse) {
       opacity: 1;
     }
+    @media screen and (max-width: 800px) {
+      bottom: -28px;
+    }
+    @media screen and (max-width: 500px) {
+      bottom: -26px;
+    }
     &__circle {
       width: 16px;
       height: 16px;
@@ -113,11 +119,28 @@
       border-radius: 16px;
       margin-right: 8px;
       transition: 0.1s all;
-
       &:hover {
         width: 18px;
         height: 18px;
         margin-right: 6px;
+      }
+      @media screen and (max-width: 800px) {
+        width: 12px;
+        height: 12px;
+        &:hover {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        width: 8px;
+        height: 8px;
+        margin-right: 6px;
+        &:hover {
+          width: 10px;
+          height: 10px;
+          margin-right: 4px;
+        }
       }
 
       &--coated {
@@ -174,22 +197,47 @@
     justify-content: center;
     align-items: center;
     bottom: 48px;
+    @media screen and (max-width: 800px) {
+      bottom: 30px;
+    }
+    @media screen and (max-width: 500px) {
+      bottom: 22px;
+    }
+
     &__title {
       font-weight: 700;
-      font-size: 3em;
+      font-size: 3vw;
       margin: 0;
+      @media screen and (max-width: 800px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 12px;
+      }
     }
     &__type-container {
       display: flex;
       justify-content: space-between;
     }
     &__type, &__price {
-      font-size: 1.5em;
+      font-size: 1.5vw;
       margin: 0;
+      @media screen and (max-width: 800px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 10px;
+      }
     }
     &__type {
       text-transform: capitalize;
       margin-right: 16px;
+      @media screen and (max-width: 800px) {
+        margin-right: 8px;
+      }
     }
   }
 </style>

@@ -99,11 +99,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    height: 100vh;
     padding: 16px;
     &--open {
       background-color: rgba(0, 0, 0, .8);
+      width: 100%;
+      height: 100vh;
     }
 
     &__button {
