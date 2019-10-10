@@ -1,5 +1,5 @@
 <template>
-  <nav class="header">
+  <nav class="header header--white">
     <app-header-menu class="header-menu-container"/>
     <router-link to="/" class="header-logo"></router-link>
     <router-link class="header-bag" to="/bag">
@@ -35,6 +35,9 @@
   @import '../../../assets/styles/_colors';
   @import '../../../assets/styles/atomic-common';
   @import '../../../assets/styles/z-index';
+  .header {
+
+  }
 
   .header-menu-container {
     @extend .a-position__fixed;

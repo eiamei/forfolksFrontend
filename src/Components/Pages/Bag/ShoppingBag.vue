@@ -17,16 +17,16 @@
           <td class="bag-item__table-color">{{$t(`colors.${item.color}`)}}</td>
           <td class="bag-item__table-qty">
             <app-button class="button--increment-decrement" @click="decrement">
-              <div slot="content">-</div>
+              <div>-</div>
             </app-button>
             <div class="qty-cell">
               {{item.qty}}
             </div>
             <app-button class="button--increment-decrement" @click="increment">
-              <div slot="content">+</div>
+              <div>+</div>
             </app-button>
             <app-button class="button--bag-item-remove" @click="remove">
-              <div slot="content">x</div>
+              <div>x</div>
             </app-button>
           </td>
           <td class="bag-item__table-price">{{+item.price * +item.qty}} ₽</td>
@@ -102,8 +102,8 @@
 <style lang="scss">
   @import '../../../assets/styles/colors';
  .bag-item-container {
-   border-top: 1px solid $light-gray;
-   border-bottom: 1px solid $light-gray;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
    width: 100%;
    margin-bottom: 16px;
    .bag-item {

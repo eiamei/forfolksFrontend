@@ -40,28 +40,30 @@
         catalogue: [{
           to: '/store/all',
           text: 'items.alls'
-        }, {
-          to: '/store/pot',
-          text: 'items.pots'
-        }, {
-          to: '/store/candlestick',
-          text: 'items.candlesticks'
-        }, {
-          to: '/store/plate',
-          text: 'items.plates'
-        }, {
-          to: '/store/vase',
-          text: 'items.vases'
-        }, {
-          to: '/store/bouquet',
-          text: 'items.bouquets'
-        }, {
-          to: '/store/hanging',
-          text: 'items.hangings'
-        }, {
-          to: '/store/season',
-          text: 'items.seasons'
-        }],
+        }
+        // , {
+        //   to: '/store/pot',
+        //   text: 'items.pots'
+        // }, {
+        //   to: '/store/candlestick',
+        //   text: 'items.candlesticks'
+        // }, {
+        //   to: '/store/plate',
+        //   text: 'items.plates'
+        // }, {
+        //   to: '/store/vase',
+        //   text: 'items.vases'
+        // }, {
+        //   to: '/store/bouquet',
+        //   text: 'items.bouquets'
+        // }, {
+        //   to: '/store/hanging',
+        //   text: 'items.hangings'
+        // }, {
+        //   to: '/store/season',
+        //   text: 'items.seasons'
+        // }
+        ],
         links: [{
           to: '/delivery',
           text: 'links.delivery'

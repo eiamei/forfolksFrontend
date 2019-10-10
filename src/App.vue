@@ -32,6 +32,7 @@ export default {
 
 <style lang="scss">
   @import "./assets/Styles/_globals";
+  @import "./assets/styles/_colors";
   .app {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -41,6 +42,7 @@ export default {
   }
   html {
     font-size: 16px;
+    background-color: $gray;
   }
   p {
     font-size: 16px;

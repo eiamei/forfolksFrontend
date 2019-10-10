@@ -66,7 +66,7 @@ export default {
       align-content: center;
       align-items: center;
       font-weight: 700;
-      color: white;
+      color: black;
       margin-right: 8px;
       transition: .5s all;
       outline: transparent;
