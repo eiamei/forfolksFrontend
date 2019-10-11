@@ -21,7 +21,9 @@ export default {
     hangings: 'Подвесы',
     bouquet: 'Букет',
     bouquets: 'Букеты',
-    seasons: 'Сезонные'
+    seasons: 'Сезонные',
+    minibouquet: 'Мини букет',
+    bowl: 'Чаша'
   },
   links: {
     store: 'Магазин',

@@ -16,7 +16,10 @@ export default {
     plate: 'Plate',
     plates: 'Plates',
     hanging: 'Handing',
-    hangings: 'Handings'
+    hangings: 'Handings',
+    minibouquet: 'Mini bouquet',
+    bouquet: 'Bouquet',
+    bowl: 'Bowl'
   },
   links: {
     store: 'Store',
@@ -42,7 +45,9 @@ export default {
     white: 'White',
     natural: 'Natural',
     cotton: 'Cotton',
-    jute: 'Jute'
+    jute: 'Jute',
+    one_color: 'Один цвет',
+    pumpkin: 'тыквенный'
   },
   material: {
     concrete: "Concrete",

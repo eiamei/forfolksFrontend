@@ -142,6 +142,7 @@
         let type = this.$route.params.type;
         return this.store.find(function (item) {
           let fullName = `${item.name}${item.model ? '-' + item.model : ''}`.toLowerCase();
+          console.log(fullName, model, item.type, type)
           return fullName === model && item.type === type;
         });
       },
