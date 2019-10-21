@@ -1,9 +1,11 @@
 <template>
-  <nav class="header header--white">
+  <nav :class="headerClass">
     <app-header-menu class="header-menu-container"/>
-    <router-link to="/" class="header-logo"></router-link>
+    <router-link to="/" class="header-logo">
+      <forfolks-logo/>
+    </router-link>
     <router-link class="header-bag" to="/bag">
-      <div class="header-bag__icon" :class="bagStyle"></div>
+      <component class="header-bag__icon" :is="bagType" />
       <p class="header-bag__qty" v-if="this.bagQty">{{this.bagQty}}</p>
     </router-link>
   </nav>
@@ -11,9 +13,12 @@
 
 <script>
   import AppHeaderMenu from './AppHeader.menu';
+  import ForfolksLogo from '../UI/Icons/Logo';
+  import Bag from '../UI/Icons/Bag';
+  import BagFull from '../UI/Icons/BagFull';
   export default {
     name: 'app-header',
-    components: {AppHeaderMenu},
+    components: {BagFull, Bag, ForfolksLogo, AppHeaderMenu},
     computed: {
       bagQty () {
         let total = 0;
@@ -24,8 +29,14 @@
         }
         return total;
       },
-      bagStyle () {
-        return this.bagQty ? 'header-bag__icon--filled' : 'header-bag__icon--empty';
+      bagType () {
+        return this.bagQty ? 'bag-full' : 'bag';
+      },
+      headerClass () {
+        return {
+          'header': true,
+          'header--white': this.$route.name === 'store' || this.$route.name === 'product'
+        }
       }
     }
   };
@@ -36,7 +47,29 @@
   @import '../../../assets/styles/atomic-common';
   @import '../../../assets/styles/z-index';
   .header {
-
+    &--white {
+      .header-menu__circle {
+        background-color: white;
+      }
+      .header-logo {
+        .forfolks-logo {
+          fill: white
+        }
+      }
+      .header-bag {
+        .bag-icon {
+          fill: white!important;
+        }
+        &__icon {
+          .bag-full__bag {
+            fill: white
+          }
+        }
+        &__qty {
+          color: white;
+        }
+      }
+    }
   }
 
   .header-menu-container {
@@ -50,9 +83,10 @@
     @extend .z-index__top--header;
     top: 8px;
     left: calc(50% - 51px);
-    background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
-    width: 102px;
-    height: 32px;
+    .forfolks-logo {
+      width: 102px;
+      height: 32px;
+    }
   }
   .header-bag {
     @extend .a-position__fixed;
@@ -76,15 +110,17 @@
     }
     &__qty {
       margin: 4px 0 0 0;
-      color: white;
+      color: black;
     }
   }
   @media screen and (max-width: 800px) {
     .header-logo {
       top: 8px;
       left: calc(50% - 40px);
-      width: 80px;
-      height: 25px;
+      .forfolks-logo {
+        width: 80px;
+        height: 25px;
+      }
     }
     .header-bag {
       top: 12px;
@@ -102,8 +138,10 @@
     .header-logo {
       top: 8px;
       left: calc(50% - 30px);
-      width: 60px;
-      height: 19px;
+      .forfolks-logo {
+        width: 60px;
+        height: 19px;
+      }
     }
     .header-bag {
       right: 8px;

@@ -46,8 +46,9 @@ export default {
     natural: 'Natural',
     cotton: 'Cotton',
     jute: 'Jute',
-    one_color: 'Один цвет',
-    pumpkin: 'тыквенный'
+    one_color: 'One color',
+    pumpkin: 'Pumpkin',
+    powder: 'Powder'
   },
   material: {
     concrete: "Concrete",

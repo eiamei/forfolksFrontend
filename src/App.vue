@@ -42,7 +42,7 @@ export default {
   }
   html {
     font-size: 16px;
-    background-color: $gray;
+    background-color: white;
   }
   p {
     font-size: 16px;

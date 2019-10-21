@@ -184,10 +184,7 @@
     "availableColors": [
       "coated",
       "graphite",
-      "black_marble",
-      "mint",
-      "sakura",
-      "ash"
+      "black_marble"
     ],
     "price": 530,
     "storeTemplate": "normal"
@@ -284,9 +281,7 @@
       "coated",
       "black_marble",
       "gray_fog",
-      "graphite",
-      "sakura",
-      "mustard"
+      "graphite"
     ],
     "price": 630,
     "storeTemplate": "normal"
@@ -313,11 +308,7 @@
       "coated",
       "black_marble",
       "graphite",
-      "sakura",
-      "ash",
-      "cornflower",
-      "mint",
-      "cacao"
+      "cornflower"
     ],
     "price": 350,
     "storeTemplate": "normal"
@@ -343,7 +334,6 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
-      "sakura",
       "black_marble",
       "graphite"
     ],
@@ -371,7 +361,6 @@
     "availableColors": [
       "coated",
       "black_marble",
-      "sakura",
       "graphite"
     ],
     "price": 590,
@@ -418,7 +407,7 @@
     "availableColors": [
       "coated",
       "graphite",
-      "sakura",
+      "powder",
       "black_marble",
       "gray_fog"
     ],
@@ -446,12 +435,7 @@
       "coated",
       "black_marble",
       "graphite",
-      "gray_fog",
-      "sakura",
-      "cacao",
-      "cornflower",
-      "mint",
-      "mustard"
+      "gray_fog"
     ],
     "price": 230,
     "storeTemplate": "normal"

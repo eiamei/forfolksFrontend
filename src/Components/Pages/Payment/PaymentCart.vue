@@ -6,7 +6,7 @@
         <p class="cart-item__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</p>
         <p class="cart-item__color">{{$t(`colors.${item.color}`)}}</p>
       </div>
-      <div  class="cart-item__price">{{+item.price * +item.qty}} ₽</div>
+      <div  class="cart-item__price">{{+item.price * +item.qty}}&thinsp;P</div>
       <div class="cart-item__qty">{{item.qty}}</div>
     </div>
     <span class="cart-info__total">

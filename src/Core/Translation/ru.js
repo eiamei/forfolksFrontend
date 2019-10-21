@@ -49,7 +49,10 @@ export default {
     white: 'Белый',
     natural: 'Натуральный',
     cotton: 'Хлопок',
-    jute: 'Джут'
+    jute: 'Джут',
+    one_color: 'Один цвет',
+    pumpkin: 'Тыквенный',
+    powder: 'Пудра'
   },
   material: {
     concrete: "Бетон",

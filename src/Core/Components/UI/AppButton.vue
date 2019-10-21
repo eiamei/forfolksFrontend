@@ -59,20 +59,21 @@ export default {
     &--increment-decrement, &--bag-item-remove {
       border-radius: 40px;
       border: none;
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       display: flex;
       justify-content: center;
       align-content: center;
       align-items: center;
       font-weight: 700;
       color: black;
+      font-size: 16px;
       margin-right: 8px;
       transition: .5s all;
       outline: transparent;
     }
     &--increment-decrement {
-      background-color: $light-gray;
+      background-color: transparent;
       &:hover {
         transition: .5s all;
         background-color: $light-green;

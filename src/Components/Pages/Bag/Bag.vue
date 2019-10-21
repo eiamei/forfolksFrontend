@@ -12,7 +12,7 @@
         <p v-if="isCorrect === false" class="bag__promo-error">Неверный промокод</p>
         <span class="bag__total-text">
           <p>Итого:</p>
-          <p v-if="!isPromo">{{total}} ₽</p>
+          <p v-if="!isPromo">{{total}}&thinsp;P</p>
           <p v-else><span style="text-decoration: line-through; font-size: 20px; margin-right: 8px">{{total * 1 / 0.9}}</span> {{total}} ₽</p>
         </span>
         <router-link class="bag__buy-button" to="payment">Оплатить</router-link>

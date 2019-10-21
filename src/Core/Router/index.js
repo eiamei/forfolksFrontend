@@ -30,6 +30,7 @@ let config = {
     },
     {
       path: '/about',
+      name: 'about',
       component: About,
       meta: {
         title: 'О нас',
@@ -44,6 +45,7 @@ let config = {
     },
     {
       path: '/delivery',
+      name: 'delivery',
       component: Delivery,
       meta: {
         title: 'Доставка',
@@ -67,7 +69,7 @@ let config = {
     },
     {
       path: '/bag',
-      name: 'Bag',
+      name: 'bag',
       component: Bag,
       meta: {
         title: 'Корзина',
@@ -79,7 +81,7 @@ let config = {
     },
     {
       path: '/payment',
-      name: 'Payment',
+      name: 'payment',
       component: Payment,
       meta: {
         title: 'Оплата',

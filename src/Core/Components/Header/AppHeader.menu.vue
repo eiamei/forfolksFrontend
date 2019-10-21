@@ -116,7 +116,7 @@
     &__circle {
       width: 12px;
       height: 12px;
-      background-color: white;
+      background-color: black;
       border-radius: 8px;
       margin-right: 4px;
     }

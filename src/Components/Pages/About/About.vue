@@ -21,8 +21,8 @@
       <span>
         <p class="about__store">KupiDari</p>
         <p class="about__address"> Санкт-Петербург, Лиговский проспект 74, Лофт проект этажи, этаж 2.0</p>
-        <p class="about__store">Joy flower place</p>
-        <p class="about__address"> Санкт-Петербург, ул. Марата 47</p>
+        <p class="about__store">Энди</p>
+        <p class="about__address"> Санкт-Петербург, ул. Гражданская 13-15, Бертгольд центр</p>
         <p class="about__store">More flowers</p>
         <p class="about__address"> Санкт-Петербург, Большая Разночинная 16, 1 этаж, секция 119</p>
       </span>
