@@ -48,7 +48,8 @@ export default {
     jute: 'Jute',
     one_color: 'One color',
     pumpkin: 'Pumpkin',
-    powder: 'Powder'
+    powder: 'Powder',
+    moonstone: 'Moon stone'
   },
   material: {
     concrete: "Concrete",
@@ -67,6 +68,7 @@ export default {
     innerDiameter: "Inner diameter"
   },
   common: {
-    color: 'Color'
+    color: 'Color',
+    model: 'Model'
   }
 }

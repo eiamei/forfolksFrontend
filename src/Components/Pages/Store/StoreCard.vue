@@ -185,6 +185,12 @@
       &--black {
         background: $black;
       }
+      &--powder {
+        background: $powder;
+      }
+      &--moonstone {
+        background: $moonstone;
+      }
     }
   }
   .store-card-description {

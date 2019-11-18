@@ -10,6 +10,7 @@
         </span>
         <p v-else class="bag__promo-success">Промокод успешно применен</p>
         <p v-if="isCorrect === false" class="bag__promo-error">Неверный промокод</p>
+        <p v-else-if="isTooLate === true" class="bag__promo-error">Промокод истек</p>
         <span class="bag__total-text">
           <p>Итого:</p>
           <p v-if="!isPromo">{{total}}&thinsp;P</p>
@@ -33,7 +34,8 @@
     },
     data () {
       return {
-        isPromo: localStorage.getItem('ip'),
+        isPromo: (new Date()) < 1572814799000 && localStorage.getItem('ip'),
+        isTooLate: null,
         isCorrect: null,
         promo: ''
       }
@@ -54,10 +56,15 @@
     },
     methods: {
       checkPromo () {
-        if (this.promo === 'forfolks' || this.promo === 'Forfolks') {
-          localStorage.setItem('ip', JSON.stringify(true));
-          this.isPromo = true;
-          this.isCorrect = true;
+        if ( this.promo === 'halloween' || this.promo === 'Halloween') {
+          if ((new Date()) > 1572814799000) {
+            this.isTooLate = true;
+          } else {
+            localStorage.setItem('ip', JSON.stringify(true));
+            this.isPromo = true;
+            this.isCorrect = true;
+            this.isTooLate = false;
+          }
         } else {
           this.isCorrect = false;
         }

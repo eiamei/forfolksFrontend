@@ -19,7 +19,9 @@
     "availableColors": [
       "coated",
       "black_marble",
-      "graphite"
+      "graphite",
+      "powder",
+      "moonstone"
     ],
     "price": 350,
     "storeTemplate": "wide"
@@ -183,6 +185,8 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
+      "moonstone",
+      "powder",
       "graphite",
       "black_marble"
     ],
@@ -190,26 +194,25 @@
     "storeTemplate": "normal"
   },
   {
-    "name": "MAK",
-    "model": "1",
+    "name": "Hang",
+    "model": "Spole",
     "type": "hanging",
     "category": ["hanging"],
-    "desc": "Подвес из хлопка или джута выполненный в технике макраме для небольших горшочков. Модель 1 дополнена удобным деревянным кольцом, которое в комбинации с металлическим крючком позволяет подвесить горшочек практически куда угодно. <br><br> <span>Отлично сочетается с нашими горшочками <a href='/item?name=modern8&model=m&type=pot&color=coated'>MODERN8 M</a> и <a href='/item?name=bubble&model=m&type=pot&color=coated'>BUBBLE M</a></span> <br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов. <br><br> Все изделия абсолютно уникальны. Всегда есть место неоднородностям, но именно это создает особую магию ручной работы. <br><br> Цена указана без горшочка. Крючок приобретается отдельно.",
+    "desc": "Подвес из хлопка в технике макраме для небольших горшочков. Hang дополнен удобным деревянным кольцом, которое в комбинации с металлическим крючком позволяет подвесить горшочек практически куда угодно. <br><br> <span>Отлично сочетается с нашими горшочками <a href='/product/pot/modern8-m/coated'>MODERN8 M</a> и <a href='/product/pot/bubble-m/coated'>BUBBLE M</a></span> <br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов. <br><br> Все изделия абсолютно уникальны. Всегда есть место неоднородностям, но именно это создает особую магию ручной работы. <br><br> Цена указана без горшочка. Крючок приобретается отдельно.",
     "metaDesc": "Подвес в технике макраме для небольших бетонных, пластиковых и терракотовых горшков",
     "shortDesc": "Когда закончилось место на столе ",
     "params": {
       "size": {
         "height": 20
       },
-      "material": ["cotton", "jute"],
+      "material": ["cotton"],
       "weight": 10
     },
     "colors": "fabric",
     "availableColors": [
-      "cotton",
-      "jute"
+      "cotton"
     ],
-    "price": 400,
+    "price": 450,
     "storeTemplate": "normal"
   },
   {
@@ -279,6 +282,8 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
+      "moonstone",
+      "powder",
       "black_marble",
       "gray_fog",
       "graphite"
@@ -306,9 +311,10 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
+      "powder",
+      "moonstone",
       "black_marble",
-      "graphite",
-      "cornflower"
+      "graphite"
     ],
     "price": 350,
     "storeTemplate": "normal"
@@ -334,6 +340,8 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
+      "moonstone",
+      "powder",
       "black_marble",
       "graphite"
     ],
@@ -360,6 +368,8 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
+      "moonstone",
+      "powder",
       "black_marble",
       "graphite"
     ],
@@ -406,9 +416,10 @@
     "colors": "concrete",
     "availableColors": [
       "coated",
-      "graphite",
       "powder",
+      "moonstone",
       "black_marble",
+      "graphite",
       "gray_fog"
     ],
     "price": 990,

@@ -52,7 +52,8 @@ export default {
     jute: 'Джут',
     one_color: 'Один цвет',
     pumpkin: 'Тыквенный',
-    powder: 'Пудра'
+    powder: 'Пудра',
+    moonstone: 'Лунный камень'
   },
   material: {
     concrete: "Бетон",
@@ -74,6 +75,7 @@ export default {
     color: 'Цвет',
     size: 'Размеры',
     material: 'Материал',
-    weight: 'Вес'
+    weight: 'Вес',
+    model: 'Модель'
   }
 }

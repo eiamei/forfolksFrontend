@@ -59,6 +59,15 @@ let config = {
       }
     },
     {
+      path: '/product/:type/:model',
+      name: 'product',
+      component: Item,
+      meta: {
+        title: 'Forfolks',
+        tags: []
+      }
+    },
+    {
       path: '/product/:type/:model/:color',
       name: 'product',
       component: Item,

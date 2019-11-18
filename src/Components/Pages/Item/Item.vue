@@ -104,6 +104,8 @@
 <style lang="scss">
   @import '../../../assets/styles/_colors';
   .item {
+    height: 100%;
+    min-height: 100vh;
     position: relative;
     background-color: rgba(0, 0, 0, .8);
   }
