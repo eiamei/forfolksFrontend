@@ -1,0 +1,13 @@
+.z-index {
+  &__low {
+
+  }
+  &__mid {
+
+  }
+  &__top {
+    &--header {
+      z-index: 1000;
+    }
+  }
+}

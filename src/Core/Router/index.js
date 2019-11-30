@@ -14,7 +14,7 @@ let config = {
   mode: 'history',
   routes: [
     {
-      path: '/store',
+      path: '/store/:type',
       name: 'store',
       component: Store,
       meta: {
@@ -30,6 +30,7 @@ let config = {
     },
     {
       path: '/about',
+      name: 'about',
       component: About,
       meta: {
         title: 'О нас',
@@ -44,6 +45,7 @@ let config = {
     },
     {
       path: '/delivery',
+      name: 'delivery',
       component: Delivery,
       meta: {
         title: 'Доставка',
@@ -57,8 +59,17 @@ let config = {
       }
     },
     {
-      path: '/item',
-      name: 'item',
+      path: '/product/:type/:model',
+      name: 'product',
+      component: Item,
+      meta: {
+        title: 'Forfolks',
+        tags: []
+      }
+    },
+    {
+      path: '/product/:type/:model/:color/:prop2?/:prop3?',
+      name: 'product',
       component: Item,
       meta: {
         title: 'Forfolks',
@@ -67,7 +78,7 @@ let config = {
     },
     {
       path: '/bag',
-      name: 'Bag',
+      name: 'bag',
       component: Bag,
       meta: {
         title: 'Корзина',
@@ -79,7 +90,7 @@ let config = {
     },
     {
       path: '/payment',
-      name: 'Payment',
+      name: 'payment',
       component: Payment,
       meta: {
         title: 'Оплата',
@@ -91,7 +102,7 @@ let config = {
     },
     {
       path: '*',
-      redirect: '/store'
+      redirect: 'store/all'
     }
   ]
 };

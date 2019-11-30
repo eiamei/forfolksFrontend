@@ -2,13 +2,11 @@ export default {
   items: {
     pot: 'Горшок',
     pots: 'Горшки',
-    cachepot: 'Кашпо',
-    cachepots: 'Кашпо',
-    bowl: 'Чаша',
-    bowls: 'Чаши',
+    'cachePot': 'Кашпо',
+    'cachePots': 'Кашпо',
     candle: 'Свеча',
     candles: 'Свечи',
-    alls: 'Все',
+    alls: 'Все модели',
     candlestick: 'Подсвечник',
     candlesticks: 'Подсвечники',
     stand: 'Подставка',
@@ -23,13 +21,20 @@ export default {
     hangings: 'Подвесы',
     bouquet: 'Букет',
     bouquets: 'Букеты',
-    miniBouquets: 'Мини букеты',
-    miniBouquet: 'Мини букет',
-    season: 'Сезонный',
-    seasons: 'Сезонный'
+    seasons: 'Сезонные',
+    minibouquet: 'Мини букет',
+    bowl: 'Чаша',
+    toy: 'Игрушка',
+    toys: 'Игрушки',
+    cup: 'Стакан',
+    cups: 'Стаканы',
+    postcard: 'Открытка',
+    postcards: 'Открытки'
   },
   links: {
-    store: 'Магазин'
+    store: 'Магазин',
+    delivery: 'Доставка и оплата',
+    about: 'О студии'
   },
   colors: {
     coated: 'Мелованный',
@@ -51,14 +56,18 @@ export default {
     natural: 'Натуральный',
     cotton: 'Хлопок',
     jute: 'Джут',
+    one_color: 'Один цвет',
     pumpkin: 'Тыквенный',
-    one_color: 'Один цвет'
+    powder: 'Пудра',
+    moonstone: 'Лунный камень'
   },
   material: {
     concrete: "Бетон",
     brass: "Латунь",
     cotton: 'Хлопок',
-    jute: 'Джут'
+    jute: 'Джут',
+    carton: 'Картон',
+    ceylon: 'Тинторетто цейлон'
   },
   size: {
     height: 'Высота',
@@ -69,5 +78,18 @@ export default {
     innerWidth: 'Ширина отверстия',
     externalDiameter: 'Внешний диаметр',
     innerDiameter: "Внутренний диаметр"
+  },
+  variants: {
+    tall: 'Узкий',
+    tiny: 'Маленький',
+    wide: 'Широкий'
+  },
+  common: {
+    color: 'Цвет',
+    size: 'Размеры',
+    material: 'Материал',
+    weight: 'Вес',
+    model: 'Модель',
+    variant: 'Модель'
   }
 }

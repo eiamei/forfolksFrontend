@@ -6,6 +6,7 @@
         <tr class="bag-item__table-header">
           <td>Название</td>
           <td class="bag-item__table-color-cell">Цвет</td>
+          <td v-if="item.variant" class="bag-item__table-color-cell">Модель</td>
           <td class="bag-item__table-qty-cell">Количество</td>
           <td class="bag-item__table-price-cell">Стоимость</td>
         </tr>
@@ -15,21 +16,22 @@
             <span class="bag-item__table-color-in-name">{{$t(`colors.${item.color}`)}}</span>
           </td>
           <td class="bag-item__table-color">{{$t(`colors.${item.color}`)}}</td>
+          <td v-if="item.variant" class="bag-item__table-color">{{$t(`variants.${item.variant}`)}}</td>
           <td class="bag-item__table-qty">
             <app-button class="button--increment-decrement" @click="decrement">
-              <div slot="content">-</div>
+              <div>-</div>
             </app-button>
             <div class="qty-cell">
               {{item.qty}}
             </div>
             <app-button class="button--increment-decrement" @click="increment">
-              <div slot="content">+</div>
+              <div>+</div>
             </app-button>
-            <app-button class="button--bag-item-remove" @click="remove">
-              <div slot="content">x</div>
-            </app-button>
+            <!--<app-button class="button&#45;&#45;bag-item-remove" @click="remove">-->
+              <!--<div>x</div>-->
+            <!--</app-button>-->
           </td>
-          <td class="bag-item__table-price">{{+item.price * +item.qty}} ₽</td>
+          <td class="bag-item__table-price">{{+item.price * +item.qty}}&thinsp;P</td>
         </tr>
       </table>
     </div>
@@ -41,19 +43,19 @@
       <tr>
         <td class="bag-item__table-qty bag-item__table-qty--mobile">
           <app-button class="button--increment-decrement" @click="decrement">
-            <div slot="content">-</div>
+            <div>-</div>
           </app-button>
           <div class="qty-cell">
             {{item.qty}}
           </div>
           <app-button class="button--increment-decrement" @click="increment">
-            <div slot="content">+</div>
+            <div>+</div>
           </app-button>
-          <app-button class="button--bag-item-remove" @click="remove">
-            <div slot="content">x</div>
-          </app-button>
+          <!--<app-button class="button&#45;&#45;bag-item-remove" @click="remove">-->
+            <!--<div slot="content">x</div>-->
+          <!--</app-button>-->
         </td>
-        <td>{{+item.price * +item.qty}} ₽</td>
+        <td>{{+item.price * +item.qty}}&thinsp;P</td>
       </tr>
     </table>
   </div>
@@ -102,8 +104,8 @@
 <style lang="scss">
   @import '../../../assets/styles/colors';
  .bag-item-container {
-   border-top: 1px solid $light-gray;
-   border-bottom: 1px solid $light-gray;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
    width: 100%;
    margin-bottom: 16px;
    .bag-item {

@@ -12,7 +12,7 @@
       <div class="user-info__additional-info"> На случай, если возникнет необходимость связаться с вами и уточнить детали заказа или доставки</div>
       <textarea class="user-info__input user-info__input--text-area" v-model="form.comment" name="comment" placeholder="Комментарий"></textarea>
       <div class="user-info__header">Информация о доставке</div>
-      <div class="user-info__additional-info">В Санкт-Петербурге возможен самовывоз от станции метро Василеостровская. Если вы хотите оформить доставку, пожалуйста, заполните поля ниже</div>
+      <div class="user-info__additional-info">В Санкт-Петербурге возможен самовывоз от станции метро Приморская. <br>Если вы хотите оформить доставку, пожалуйста, заполните поля ниже</div>
       <input class="user-info__input" v-model="form.country" name="country" placeholder="Страна"/>
       <input class="user-info__input" v-model="form.city" name="city" placeholder="Город"/>
       <span style="display: flex; justify-content: space-between; width: 100%">

@@ -1,6 +1,8 @@
 export default {
   add ({state, commit, dispatch}, item) {
     let id = `${item.type}${item.name}${item.model}${item.color}`;
+    if (item.variant)
+      id += item.variant;
     if (state.bag.hasOwnProperty(id))
       commit('increment', id);
     else

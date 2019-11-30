@@ -32,9 +32,35 @@ export default {
 
 <style lang="scss">
   @import "./assets/Styles/_globals";
+  @import "./assets/styles/_colors";
   .app {
-    font-family: 'HK Grotesk', 'Montserrat', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /*background-color: #494b4c;*/
+
+  }
+  html {
+    font-size: 16px;
+    background-color: white;
+  }
+  p {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 </style>

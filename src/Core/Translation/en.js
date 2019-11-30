@@ -24,10 +24,19 @@ export default {
     miniBouquets: 'Mini bouquets',
     miniBouquet: 'Mini bouquet',
     season: 'Season',
-    seasons: 'Seasons'
+    seasons: 'Seasons',
+    minibouquet: 'Mini bouquet',
+    toy: 'Toy',
+    toys: 'Toys',
+    cup: 'Cup',
+    cups: 'Cups',
+    postcard: 'Postcard',
+    postcards: 'Postcards'
   },
   links: {
-    store: 'Store'
+    store: 'Store',
+    delivery: 'Delivery',
+    about: 'About studio'
   },
   colors: {
     coated: 'Coated',
@@ -51,12 +60,16 @@ export default {
     jute: 'Jute',
     pumpkin: 'Pumpkin',
     one_color: 'One color'
+    powder: 'Powder',
+    moonstone: 'Moon stone'
   },
   material: {
     concrete: "Concrete",
     brass: "Brass",
     cotton: 'Cotton',
-    jute: 'Jute'
+    jute: 'Jute',
+    carton: 'Carton',
+    ceylon: 'Tintoretto Ceylon'
   },
   size: {
     height: 'Height',
@@ -67,5 +80,19 @@ export default {
     innerWidth: 'Inner width',
     externalDiameter: 'External diameter',
     innerDiameter: "Inner diameter"
+  },
+  variants: {
+    tall: 'Tall',
+    tiny: 'Tiny',
+    wide: 'Wide',
+    matin: "matin",
+    jour: "jour",
+    soir: "soir",
+    nuit: "nuit"
+  },
+  common: {
+    color: 'Color',
+    model: 'Model',
+    variant: 'Model'
   }
 }

@@ -1,21 +1,24 @@
 <template>
-  <nav class="header">
-    <router-link to="/" class="header__logo"></router-link>
-    <div class="header__controls">
-      <router-link class="header__link header__link--bag" to="bag">
-        <div class="header-bag" :class="bagStyle"></div>
-        <div v-if="this.bagQty">{{this.bagQty}}</div>
-      </router-link>
-      <router-link class="header__link header__link--bag" to="store">Магазин</router-link>
-      <router-link class="header__link header__link--bag" to="delivery">Доставка</router-link>
-      <router-link class="header__link" to="about">О нас</router-link>
-    </div>
+  <nav :class="headerClass">
+    <app-header-menu class="header-menu-container"/>
+    <router-link to="/" class="header-logo">
+      <forfolks-logo/>
+    </router-link>
+    <router-link class="header-bag" to="/bag">
+      <component class="header-bag__icon" :is="bagType" />
+      <p class="header-bag__qty" v-if="this.bagQty">{{this.bagQty}}</p>
+    </router-link>
   </nav>
 </template>
 
 <script>
+  import AppHeaderMenu from './AppHeader.menu';
+  import ForfolksLogo from '../UI/Icons/Logo';
+  import Bag from '../UI/Icons/Bag';
+  import BagFull from '../UI/Icons/BagFull';
   export default {
     name: 'app-header',
+    components: {BagFull, Bag, ForfolksLogo, AppHeaderMenu},
     computed: {
       bagQty () {
         let total = 0;
@@ -26,8 +29,14 @@
         }
         return total;
       },
-      bagStyle () {
-        return this.bagQty ? 'header-bag--filled' : 'header-bag--empty';
+      bagType () {
+        return this.bagQty ? 'bag-full' : 'bag';
+      },
+      headerClass () {
+        return {
+          'header': true,
+          'header--white': this.$route.name === 'store' || this.$route.name === 'product'
+        }
       }
     }
   };
@@ -35,82 +44,114 @@
 
 <style lang="scss">
   @import '../../../assets/styles/_colors';
-
+  @import '../../../assets/styles/atomic-common';
+  @import '../../../assets/styles/z-index';
   .header {
-    position: fixed;
-    width: calc(100% - 80px);
-    /*margin: 0 40px;*/
-    border-bottom: 1px solid $light-gray;
-    padding: 12px 40px 10px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &--white {
+      .header-menu__circle {
+        background-color: white;
+      }
+      .header-logo {
+        .forfolks-logo {
+          fill: white
+        }
+      }
+      .header-bag {
+        .bag-icon {
+          fill: white!important;
+        }
+        &__icon {
+          .bag-full__bag {
+            fill: white
+          }
+        }
+        &__qty {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .header-menu-container {
+    @extend .a-position__fixed;
+    @extend .z-index__top--header;
     top: 0;
-    z-index: 1000;
-    background-color: white;
-    &__logo {
-      /*position: absolute;*/
-      left: calc(50% - 35px);
-      top: 8px;
-      background: url('../../../assets/svg/ForfolksLogo.svg') no-repeat;
-      width: 70px;
-      height: 24px;
-    }
-    &__controls {
-      font-weight: 300;
-      display: flex;
-      align-items: center;
-    }
-    &__link {
-      color: $active-link;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 400;
-      &:hover {
-        color: black;
-      }
-      &--bag {
-        margin-right: 8px;
-        display: flex;
-      }
-    }
+    left: 0;
   }
-
-  .router-link-exact-active {
-    color: $dark-gray2;
-    cursor: default;
-  }
-
-  @media screen and (max-width: 770px) {
-    .header {
-      /*margin: 0 16px;*/
-      padding: 12px 16px 10px 16px;
-      width: calc(100% - 32px);
-      &__link {
-        font-size: .8em;
-        /*margin: 0 4px;*/
-      }
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .header {
-      /*margin: 0 8px;*/
-      padding: 12px 8px 10px 8px;
-      width: calc(100% - 16px);
+  .header-logo {
+    @extend .a-position__fixed;
+    @extend .z-index__top--header;
+    top: 8px;
+    left: calc(50% - 51px);
+    .forfolks-logo {
+      width: 102px;
+      height: 32px;
     }
   }
   .header-bag {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    transition: all .3s;
-    margin-right: 2px;
-    &--empty {
-      background: url("../../../assets/svg/bag-empty.svg") no-repeat;
+    @extend .a-position__fixed;
+    @extend .a-flex;
+    @extend .z-index__top--header;
+    top: 12px;
+    right: 16px;
+    text-decoration: none;
+    &__icon {
+      @extend .a-position__relative;
+      width: 28px;
+      height: 28px;
+      transition: all .3s;
+      margin-right: 2px;
+      &--empty {
+        background: url("../../../assets/svg/bag-empty.svg") no-repeat;
+      }
+      &--filled {
+        background: url("../../../assets/svg/bag-filled.svg") no-repeat;
+      }
     }
-    &--filled {
-      background: url("../../../assets/svg/bag-filled.svg") no-repeat;
+    &__qty {
+      margin: 4px 0 0 0;
+      color: black;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .header-logo {
+      top: 8px;
+      left: calc(50% - 40px);
+      .forfolks-logo {
+        width: 80px;
+        height: 25px;
+      }
+    }
+    .header-bag {
+      top: 12px;
+      right: 16px;
+      &__icon {
+        width: 20px;
+        height: 20px;
+      }
+      &__qty {
+        margin: 2px 0 0 0;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .header-logo {
+      top: 8px;
+      left: calc(50% - 30px);
+      .forfolks-logo {
+        width: 60px;
+        height: 19px;
+      }
+    }
+    .header-bag {
+      right: 8px;
+      &__icon {
+        width: 16px;
+        height: 16px;
+      }
+      &__qty {
+        margin: 0;
+      }
     }
   }
 </style>

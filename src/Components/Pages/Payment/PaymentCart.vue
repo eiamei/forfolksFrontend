@@ -4,20 +4,27 @@
       <img class="cart-item__image" :src="itemImage(item)"/>
       <div class="cart-item__info">
         <p class="cart-item__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</p>
-        <p class="cart-item__color">{{$t(`colors.${item.color}`)}}</p>
+        <p class="cart-item__color">
+          {{$t(`colors.${item.color}`)}}
+          <template v-if="item.variant">
+            , {{$t(`variants.${item.variant}`)}}
+          </template>
+        </p>
       </div>
-      <div  class="cart-item__price">{{+item.price * +item.qty}} ₽</div>
+      <div  class="cart-item__price">{{+item.price * +item.qty}}&thinsp;P</div>
       <div class="cart-item__qty">{{item.qty}}</div>
     </div>
     <span class="cart-info__total">
       <p>Итого:</p>
       <p v-if="!isPromo">{{total}} ₽</p>
-      <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total * 1 / 0.9}}</span> {{total}} ₽</p>
+      <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total}}</span> {{promoPrice}} ₽</p>
     </span>
   </div>
 </template>
 
 <script>
+  import {PROMO} from '../../../Core/Constants/Globals';
+
   export default {
     name: 'PaymentCart',
     data () {
@@ -34,9 +41,10 @@
         Object.keys(this.bag).forEach(id => {
           total += this.bag[id].qty * this.bag[id].price;
         });
-        if (this.isPromo)
-          total *= 0.9;
         return total;
+      },
+      promoPrice () {
+        return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
       }
     },
     methods: {
