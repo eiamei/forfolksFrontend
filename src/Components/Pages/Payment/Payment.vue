@@ -16,6 +16,7 @@
 <script>
   import PaymentUserInfo from './PaymentUserInfo';
   import PaymentCart from './PaymentCart';
+  import {PROMO} from '../../../Core/Constants/Globals';
 
   export default {
     name: 'PaymentPage',
@@ -37,6 +38,7 @@
               name: ${this.$store.state.bag.bag[key].name}
               model: ${this.$store.state.bag.bag[key].model}
               color: ${this.$store.state.bag.bag[key].color}
+              variant: ${this.$store.state.bag.bag[key].variant}
               qty: ${this.$store.state.bag.bag[key].qty}
               price: ${this.$store.state.bag.bag[key].qty * this.$store.state.bag.bag[key].price * (this.isPromo ? 0.9 : 1)}
             `)
@@ -50,7 +52,7 @@
           total += bag[id].qty * bag[id].price;
         });
         if (this.isPromo)
-          total *= 0.9;
+          total = Math.round(total * PROMO.DISCOUNT_PERCENT);
         return `total=${total}`;
       }
     },

@@ -13,8 +13,8 @@
         <p v-else-if="isTooLate === true" class="bag__promo-error">Промокод истек</p>
         <span class="bag__total-text">
           <p>Итого:</p>
-          <p v-if="!isPromo">{{total}}&thinsp;P</p>
-          <p v-else><span style="text-decoration: line-through; font-size: 20px; margin-right: 8px">{{total * 1 / 0.9}}</span> {{total}} ₽</p>
+          <p v-if="!isPromo">{{total}} ₽</p>
+          <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total}}</span> {{promoPrice}} ₽</p>
         </span>
         <router-link class="bag__buy-button" to="payment">Оплатить</router-link>
       </div>
@@ -26,6 +26,8 @@
 <script>
   import BagItem from './ShoppingBag';
   import AppButton from '../../../Core/Components/UI/AppButton';
+  import {PROMO} from '../../../Core/Constants/Globals';
+
   export default {
     name: 'bag',
     components: {
@@ -34,7 +36,7 @@
     },
     data () {
       return {
-        isPromo: (new Date()) < 1572814799000 && localStorage.getItem('ip'),
+        isPromo: (new Date()) < 1575190799000 && localStorage.getItem('ip'),
         isTooLate: null,
         isCorrect: null,
         promo: ''
@@ -49,15 +51,16 @@
         Object.keys(this.bag).forEach(id => {
           total += this.bag[id].qty * this.bag[id].price;
         });
-        if (this.isPromo)
-          total *= 0.9;
         return total;
+      },
+      promoPrice () {
+        return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
       }
     },
     methods: {
       checkPromo () {
-        if ( this.promo === 'halloween' || this.promo === 'Halloween') {
-          if ((new Date()) > 1572814799000) {
+        if (this.promo === 'BLACKFRIDAY') {
+          if ((new Date()) > 1575190799000) {
             this.isTooLate = true;
           } else {
             localStorage.setItem('ip', JSON.stringify(true));

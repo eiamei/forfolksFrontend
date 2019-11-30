@@ -68,7 +68,7 @@ let config = {
       }
     },
     {
-      path: '/product/:type/:model/:color',
+      path: '/product/:type/:model/:color/:prop2?/:prop3?',
       name: 'product',
       component: Item,
       meta: {

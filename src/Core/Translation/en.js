@@ -19,7 +19,13 @@ export default {
     hangings: 'Handings',
     minibouquet: 'Mini bouquet',
     bouquet: 'Bouquet',
-    bowl: 'Bowl'
+    bowl: 'Bowl',
+    toy: 'Toy',
+    toys: 'Toys',
+    cup: 'Cup',
+    cups: 'Cups',
+    postcard: 'Postcard',
+    postcards: 'Postcards'
   },
   links: {
     store: 'Store',
@@ -55,7 +61,9 @@ export default {
     concrete: "Concrete",
     brass: "Brass",
     cotton: 'Cotton',
-    jute: 'Jute'
+    jute: 'Jute',
+    carton: 'Carton',
+    ceylon: 'Tintoretto Ceylon'
   },
   size: {
     height: 'Height',
@@ -67,8 +75,18 @@ export default {
     externalDiameter: 'External diameter',
     innerDiameter: "Inner diameter"
   },
+  variants: {
+    tall: 'Tall',
+    tiny: 'Tiny',
+    wide: 'Wide',
+    matin: "matin",
+    jour: "jour",
+    soir: "soir",
+    nuit: "nuit"
+  },
   common: {
     color: 'Color',
-    model: 'Model'
+    model: 'Model',
+    variant: 'Model'
   }
 }

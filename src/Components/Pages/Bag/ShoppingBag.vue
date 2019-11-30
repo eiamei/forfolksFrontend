@@ -6,6 +6,7 @@
         <tr class="bag-item__table-header">
           <td>Название</td>
           <td class="bag-item__table-color-cell">Цвет</td>
+          <td v-if="item.variant" class="bag-item__table-color-cell">Модель</td>
           <td class="bag-item__table-qty-cell">Количество</td>
           <td class="bag-item__table-price-cell">Стоимость</td>
         </tr>
@@ -15,6 +16,7 @@
             <span class="bag-item__table-color-in-name">{{$t(`colors.${item.color}`)}}</span>
           </td>
           <td class="bag-item__table-color">{{$t(`colors.${item.color}`)}}</td>
+          <td v-if="item.variant" class="bag-item__table-color">{{$t(`variants.${item.variant}`)}}</td>
           <td class="bag-item__table-qty">
             <app-button class="button--increment-decrement" @click="decrement">
               <div>-</div>

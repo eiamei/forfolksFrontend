@@ -23,7 +23,13 @@ export default {
     bouquets: 'Букеты',
     seasons: 'Сезонные',
     minibouquet: 'Мини букет',
-    bowl: 'Чаша'
+    bowl: 'Чаша',
+    toy: 'Игрушка',
+    toys: 'Игрушки',
+    cup: 'Стакан',
+    cups: 'Стаканы',
+    postcard: 'Открытка',
+    postcards: 'Открытки'
   },
   links: {
     store: 'Магазин',
@@ -59,7 +65,9 @@ export default {
     concrete: "Бетон",
     brass: "Латунь",
     cotton: 'Хлопок',
-    jute: 'Джут'
+    jute: 'Джут',
+    carton: 'Картон',
+    ceylon: 'Тинторетто цейлон'
   },
   size: {
     height: 'Высота',
@@ -71,11 +79,17 @@ export default {
     externalDiameter: 'Внешний диаметр',
     innerDiameter: "Внутренний диаметр"
   },
+  variants: {
+    tall: 'Узкий',
+    tiny: 'Маленький',
+    wide: 'Широкий'
+  },
   common: {
     color: 'Цвет',
     size: 'Размеры',
     material: 'Материал',
     weight: 'Вес',
-    model: 'Модель'
+    model: 'Модель',
+    variant: 'Модель'
   }
 }

@@ -12,7 +12,13 @@
             <img src="../../../assets/svg/info.svg" class="bottom-menu__info-icon">
           </app-button>
         </section>
-        <section class="bottom-menu__color">
+        <template v-if="item.properties">
+          <section v-for="prop in properties" :key="prop.name + prop.selected" class="bottom-menu__color">
+            <p class="bottom-menu__color-text">{{$t(`common.${prop.name}`)}}:</p>
+            <dropdown2 :options="prop.value" v-model="prop.selected" :translate-namespace="prop.name"/>
+          </section>
+        </template>
+        <section v-else class="bottom-menu__color">
           <p class="bottom-menu__color-text">{{$t('common.color')}}:</p>
           <dropdown class="bottom-menu__color-dropdown" :options="colors" :value="chosenColor.label" @change="selectColor"/>
         </section>
@@ -31,16 +37,18 @@
   import STORE from '../../../Core/Constants/Store';
   import COLORS from '../../../Core/Constants/Colors';
   import ItemInfo from './item.info';
+  import Dropdown2 from '../../../Core/Components/UI/Dropdown2';
 
   export default {
     name: 'ItemCard',
-    components: {ItemInfo, AppButton, Dropdown},
+    components: {Dropdown2, ItemInfo, AppButton, Dropdown},
     data () {
       return {
         store: STORE,
         chosenColor: {
           label: this.$route.params.color || COLORS[this.item.colors][0].label
         },
+        properties: [],
         isInfo: false
       };
     },
@@ -53,6 +61,9 @@
           return fullName === model && item.type === type;
         });
       },
+      prop2 () {
+        return this.$route.params.prop2;
+      },
       fullName () {
         if (!this.item) return '';
         const name = this.item.name.toLowerCase();
@@ -64,13 +75,34 @@
         return this.item.type.toLowerCase();
       },
       images () {
-        if (!this.item) return [];
-        return this.item.availableColors.map(color => {
-          return {
-            color,
-            img: require(`@/assets/images/store/${this.type}-${this.fullName}-${color}.jpg`)
-          };
-        });
+        let images = [];
+        if (!this.item) return images;
+        if (this.item.properties) {
+          this.item.properties[0].value.forEach(prop1 => {
+            if (this.item.properties[1]) {
+              this.item.properties[1].value.forEach(prop2 => {
+                images.push({
+                  prop1,
+                  prop2,
+                  img: require(`@/assets/images/store/${this.type}-${this.fullName}-${prop1}-${prop2}.jpg`)
+                })
+              });
+            } else {
+              images.push({
+                prop1,
+                img: require(`@/assets/images/store/${this.type}-${this.fullName}-${prop1}.jpg`)
+              })
+            }
+          });
+        } else {
+          images = this.item.availableColors.map(color => {
+            return {
+              color,
+              img: require(`@/assets/images/store/${this.type}-${this.fullName}-${color}.jpg`)
+            };
+          });
+        }
+        return images;
       },
       colors () {
         return this.item && this.item.availableColors && this.item.availableColors.map((color, index) => {
@@ -78,15 +110,34 @@
         }) || [];
       }
     },
+    beforeMount () {
+      if (this.item && this.item.properties) {
+        this.properties.push(...this.item.properties.map(prop => {
+          return Object.assign({}, prop, { selected: 0 })
+        }))
+      }
+    },
     methods: {
       addToBag () {
-        this.$store.dispatch('bag/add', {
-          name: this.item.name,
-          model: this.item.model,
-          price: this.item.price,
-          type: this.item.type,
-          color: this.chosenColor.label
-        });
+        if (!this.properties.length)
+          this.$store.dispatch('bag/add', {
+            name: this.item.name,
+            model: this.item.model,
+            price: this.item.price,
+            type: this.item.type,
+            color: this.chosenColor.label
+          });
+        else {
+          console.log(this.properties[1].name, this.properties[1].value[this.properties[1].selected], this.properties[1].selected,  this.properties[1].value);
+          this.$store.dispatch('bag/add', {
+            name: this.item.name,
+            model: this.item.model,
+            price: this.item.price,
+            type: this.item.type,
+            [this.properties[0].name]: this.properties[0].value[this.properties[0].selected],
+            [this.properties[1].name]: this.properties[1].value[this.properties[1].selected]
+          });
+        }
       },
       selectColor (value) {
         this.chosenColor = value;
