@@ -25,7 +25,9 @@ export default {
     cup: 'Cup',
     cups: 'Cups',
     postcard: 'Postcard',
-    postcards: 'Postcards'
+    postcards: 'Postcards',
+    giftbox: 'Gift box',
+    giftboxs: 'Gift boxes'
   },
   links: {
     store: 'Store',
@@ -82,7 +84,10 @@ export default {
     matin: "matin",
     jour: "jour",
     soir: "soir",
-    nuit: "nuit"
+    nuit: "nuit",
+    swiss: "swiss",
+    denmark: "denmark",
+    toys: "toys"
   },
   common: {
     color: 'Color',

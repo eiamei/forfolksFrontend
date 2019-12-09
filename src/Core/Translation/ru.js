@@ -29,7 +29,9 @@ export default {
     cup: 'Стакан',
     cups: 'Стаканы',
     postcard: 'Открытка',
-    postcards: 'Открытки'
+    postcards: 'Открытки',
+    giftbox: 'Набор',
+    giftboxs: 'Наборы'
   },
   links: {
     store: 'Магазин',
@@ -80,9 +82,6 @@ export default {
     innerDiameter: "Внутренний диаметр"
   },
   variants: {
-    tall: 'Узкий',
-    tiny: 'Маленький',
-    wide: 'Широкий'
   },
   common: {
     color: 'Цвет',

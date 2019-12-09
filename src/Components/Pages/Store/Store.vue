@@ -5,6 +5,11 @@
       <card :item="store[1]" :key="store[1].name + store[1].model" :width="windowWidth * 1 / 3" :height="windowWidth * 0.4613"/>
     </span>
     <span class="store-row">
+      <card :item="store[19]" :key="store[19].name + store[19].model" :width="windowWidth * 1 / 3" :height="windowWidth *  0.4613"/>
+      <card :item="store[17]" :key="store[17].name + store[17].model" :width="windowWidth * 1 / 3" :height="windowWidth *  0.4613"/>
+      <card :item="store[18]" :key="store[18].name + store[18].model" :width="windowWidth * 1 / 3" :height="windowWidth *  0.4613"/>
+    </span>
+    <span class="store-row">
       <span>
         <card :item="store[2]" :key="store[2].name + store[2].model" :width="windowWidth * 1 / 3" :height="windowWidth / 2"/>
         <card :item="store[3]" :key="store[3].name + store[3].model" :width="windowWidth * 1 / 3" :height="windowWidth / 2"/>

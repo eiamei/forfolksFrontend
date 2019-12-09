@@ -3,12 +3,12 @@ import STORE from '../../Core/Constants/Store';
 import slugify from 'slugify';
 import ruTranslate from '../../Core/Translation/ru';
 
-const Store = () => import('../../Components/Pages/Store/Store');
-const Item = () => import('../../Components/Pages/Item/Item');
-const Bag = () => import('../../Components/Pages/Bag/Bag');
-const Payment = () => import('../../Components/Pages/Payment/Payment');
-const About = () => import('../../Components/Pages/About/About');
-const Delivery = () => import('../../Components/Pages/Delivery/Delivery');
+const Store = () => import('../../components/Pages/Store/Store');
+const Item = () => import('../../components/Pages/Item/Item');
+const Bag = () => import('../../components/Pages/Bag/Bag');
+const Payment = () => import('../../components/Pages/Payment/Payment');
+const About = () => import('../../components/Pages/About/About');
+const Delivery = () => import('../../components/Pages/Delivery/Delivery');
 
 let config = {
   mode: 'history',

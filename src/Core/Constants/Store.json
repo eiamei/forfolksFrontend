@@ -39,7 +39,10 @@
     },
     "availableColors": [
       "coated",
+      "powder",
+      "moonstone",
       "black_marble",
+      "gray_fog",
       "graphite"
     ],
     "price": 850,
@@ -66,7 +69,8 @@
     "properties": [{
       "name": "color",
       "value": [
-        "coated"
+        "coated",
+        "powder"
       ]
     }, {
       "name": "variant",
@@ -445,6 +449,85 @@
       "graphite"
     ],
     "price": 500,
+    "storeTemplate": "normal"
+  },
+  {
+    "name": "House",
+    "model": "Swiss",
+    "type": "candlestick",
+    "category": ["candlestick"],
+    "desc": "Маленький уйютный подсвечник, вдохновленный милыми альпийскими домами. Подходит для свечек таблеток. <br><br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов.",
+    "metaDesc": "Бетонный подсвечник в форме домика для свечек-таблеток (чайныз свечей).",
+    "shortDesc": "Страшно красивый подсвечник",
+    "params": {
+      "size": {
+        "height": 6.5
+      },
+      "material": ["concrete"],
+      "weight": 350
+    },
+    "availableColors": [
+      "coated",
+      "powder",
+      "moonstone"
+    ],
+    "price": 350,
+    "storeTemplate": "normal"
+  },
+  {
+    "name": "House",
+    "model": "Denmark",
+    "type": "candlestick",
+    "category": ["candlestick"],
+    "desc": "Маленький уютный подсвечник, вдохновленный потрясающими Датскими домиками. Подходит для столовых свечей диаметром 22см. <br><br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов.",
+    "metaDesc": "Бетонный подсвечник в форме домика для столовых свечей.",
+    "shortDesc": "Страшно красивый подсвечник",
+    "params": {
+      "size": {
+        "height": 7.5
+      },
+      "material": ["concrete"],
+      "weight": 250
+    },
+    "availableColors": [
+      "coated",
+      "powder",
+      "moonstone"
+    ],
+    "price": 350,
+    "storeTemplate": "normal"
+  },
+  {
+    "name": "Giftbox",
+    "model": "",
+    "type": "giftbox",
+    "category": ["giftbox"],
+    "desc": "Небольшой подарочный набор из четырех елочных игрушек из бетона и крафтовой открытки. В комплект входят две игрушки в форме имибрных человечков и две игрушки в форме домика, а так же ароматная палочка корицы и мини открытка purrкfect, напечатанная на бумаге цейлон. <br><br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов.",
+    "metaDesc": "Маленький подарочный набор из бетонных елочных игрушек",
+    "shortDesc": "",
+    "params": {
+      "size": {
+        "length": 14,
+        "width": 20
+      },
+      "material": ["concrete"],
+      "weight": 300
+    },
+    "availableColors": [
+      "oneColor"
+    ],
+    "properties": [{
+      "name": "color",
+      "value": [
+        "one_color"
+      ]
+    }, {
+      "name": "variant",
+      "value": [
+        "toys"
+      ]
+    }],
+    "price": 550,
     "storeTemplate": "normal"
   }
 ]
