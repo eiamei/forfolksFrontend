@@ -29,7 +29,7 @@
     name: 'PaymentCart',
     data () {
       return {
-        isPromo: localStorage.getItem('ip')
+        isPromo: (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL || localStorage.getItem('ip')
       }
     },
     computed: {
@@ -44,7 +44,11 @@
         return total;
       },
       promoPrice () {
-        return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
+        if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
+          return Math.round(this.total * PROMO.CONSTANT_DISCOUNT);
+        } else {
+          return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
+        }
       }
     },
     methods: {

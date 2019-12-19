@@ -24,7 +24,7 @@
     data () {
       return {
         isSuccess: null,
-        isPromo: localStorage.getItem('ip')
+        isPromo: (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL || localStorage.getItem('ip')
       }
     },
     created () {
@@ -34,13 +34,21 @@
     computed: {
       bag () {
         return Object.keys(this.$store.state.bag.bag).map((key, index) => {
+            let price = this.$store.state.bag.bag[key].qty * this.$store.state.bag.bag[key].price
+            if (this.isPromo) {
+              if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
+                price = Math.round(price * PROMO.CONSTANT_DISCOUNT);
+              } else {
+                price = Math.round(price * PROMO.DISCOUNT_PERCENT);
+              }
+            }
             return encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
               name: ${this.$store.state.bag.bag[key].name}
               model: ${this.$store.state.bag.bag[key].model}
               color: ${this.$store.state.bag.bag[key].color}
               variant: ${this.$store.state.bag.bag[key].variant}
               qty: ${this.$store.state.bag.bag[key].qty}
-              price: ${this.$store.state.bag.bag[key].qty * this.$store.state.bag.bag[key].price * (this.isPromo ? 0.9 : 1)}
+              price: ${price}
             `)
         }
         ).join('&');
@@ -51,8 +59,13 @@
         Object.keys(bag).forEach(id => {
           total += bag[id].qty * bag[id].price;
         });
-        if (this.isPromo)
-          total = Math.round(total * PROMO.DISCOUNT_PERCENT);
+        if (this.isPromo) {
+          if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
+            total = Math.round(total * PROMO.CONSTANT_DISCOUNT);
+          } else {
+            total = Math.round(total * PROMO.DISCOUNT_PERCENT);
+          }
+        }
         return `total=${total}`;
       }
     },

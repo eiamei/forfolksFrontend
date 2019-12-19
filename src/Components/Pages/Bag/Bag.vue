@@ -4,16 +4,16 @@
       <p class="bag__header">Ваша корзина</p>
       <bag-item class="bag__items" v-for="(item, key) in bag" :item="item" :key="key"/>
       <div class="bag__total">
-        <span v-if="!isPromo">
+        <span v-if="!isPromo && !isConstantDiscount">
           <input class="bag__promo-input" placeholder="Промокод" v-model="promo" @keyup.enter="checkPromo"/>
           <app-button class="bag__promo-button" content="Применить" @click="checkPromo" @keyup.enter="checkPromo"/>
         </span>
-        <p v-else class="bag__promo-success">Промокод успешно применен</p>
+        <p v-else-if="isPromo && !isConstantDiscount" class="bag__promo-success">Промокод успешно применен</p>
         <p v-if="isCorrect === false" class="bag__promo-error">Неверный промокод</p>
         <p v-else-if="isTooLate === true" class="bag__promo-error">Промокод истек</p>
         <span class="bag__total-text">
           <p>Итого:</p>
-          <p v-if="!isPromo">{{total}} ₽</p>
+          <p v-if="!isPromo && !isConstantDiscount">{{total}} ₽</p>
           <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total}}</span> {{promoPrice}} ₽</p>
         </span>
         <router-link class="bag__buy-button" to="payment">Оплатить</router-link>
@@ -36,7 +36,8 @@
     },
     data () {
       return {
-        isPromo: (new Date()) < 1575190799000 && localStorage.getItem('ip'),
+        isPromo: ((new Date()) < 1575190799000 && localStorage.getItem('ip')),
+        isConstantDiscount: (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL,
         isTooLate: null,
         isCorrect: null,
         promo: ''
@@ -54,7 +55,11 @@
         return total;
       },
       promoPrice () {
-        return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
+        if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
+          return Math.round(this.total * PROMO.CONSTANT_DISCOUNT);
+        } else {
+          return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
+        }
       }
     },
     methods: {
