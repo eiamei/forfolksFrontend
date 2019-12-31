@@ -16,7 +16,7 @@
     </div>
     <span class="cart-info__total">
       <p>Итого:</p>
-      <p v-if="!isPromo">{{total}} ₽</p>
+      <p v-if="!isPromo && !isConstantDiscount">{{total}} ₽</p>
       <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total}}</span> {{promoPrice}} ₽</p>
     </span>
   </div>
@@ -27,12 +27,13 @@
 
   export default {
     name: 'PaymentCart',
-    data () {
-      return {
-        isPromo: (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL || localStorage.getItem('ip')
-      }
-    },
     computed: {
+      isPromo () {
+        return ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) && localStorage.getItem('ip');
+      },
+      isConstantDiscount () {
+        return (this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL);
+      },
       bag () {
         return this.$store.state.bag.bag;
       },
@@ -44,11 +45,11 @@
         return total;
       },
       promoPrice () {
-        if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
+        if (this.isConstantDiscount)
           return Math.round(this.total * PROMO.CONSTANT_DISCOUNT);
-        } else {
+        else if (this.isPromo)
           return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
-        }
+        return this.total;
       }
     },
     methods: {

@@ -24,7 +24,7 @@
     data () {
       return {
         isSuccess: null,
-        isPromo: (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL || localStorage.getItem('ip')
+        isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) || localStorage.getItem('ip')
       }
     },
     created () {
@@ -34,14 +34,11 @@
     computed: {
       bag () {
         return Object.keys(this.$store.state.bag.bag).map((key, index) => {
-            let price = this.$store.state.bag.bag[key].qty * this.$store.state.bag.bag[key].price
-            if (this.isPromo) {
-              if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
-                price = Math.round(price * PROMO.CONSTANT_DISCOUNT);
-              } else {
-                price = Math.round(price * PROMO.DISCOUNT_PERCENT);
-              }
-            }
+            let price = this.$store.state.bag.bag[key].qty * this.$store.state.bag.bag[key].price;
+            if ((this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL))
+              price = Math.round(price * PROMO.CONSTANT_DISCOUNT);
+            else if (this.isPromo)
+              price = Math.round(price * PROMO.DISCOUNT_PERCENT);
             return encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
               name: ${this.$store.state.bag.bag[key].name}
               model: ${this.$store.state.bag.bag[key].model}
@@ -59,21 +56,18 @@
         Object.keys(bag).forEach(id => {
           total += bag[id].qty * bag[id].price;
         });
-        if (this.isPromo) {
-          if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
-            total = Math.round(total * PROMO.CONSTANT_DISCOUNT);
-          } else {
-            total = Math.round(total * PROMO.DISCOUNT_PERCENT);
-          }
-        }
-        return `total=${total}`;
+        if ((total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL))
+          total = Math.round(total * PROMO.CONSTANT_DISCOUNT);
+        else if (this.isPromo)
+          total = Math.round(total * PROMO.DISCOUNT_PERCENT);
+        return total;
       }
     },
     methods: {
       sendEmail (form) {
         const url = 'https://script.google.com/macros/s/AKfycbyCFXoKNRwDAFxoWjnTOgLnRd_5WTc9nLptKzzHJZ7l3oDJPdM_/exec';
         let request = new XMLHttpRequest();
-        let encoded = form.concat('&', this.bag, '&', this.total);
+        let encoded = form.concat('&', this.bag, '&', `total=${this.total}`);
         request.open('POST', url);
         request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         request.onreadystatechange = () => {

@@ -36,14 +36,16 @@
     },
     data () {
       return {
-        isPromo: ((new Date()) < 1575190799000 && localStorage.getItem('ip')),
-        isConstantDiscount: (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL,
+        isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL && localStorage.getItem('ip')),
         isTooLate: null,
         isCorrect: null,
         promo: ''
       }
     },
     computed: {
+      isConstantDiscount () {
+        return (this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL);
+      },
       bag () {
         return this.$store.state.bag.bag;
       },
