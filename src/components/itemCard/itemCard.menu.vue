@@ -65,7 +65,16 @@ export default {
       this.$emit('toggleInfo')
     },
     addToBag () {
-
+      let properties = {};
+      this.item.selectableProperty.forEach(function (property) {
+        properties[property.name] = property.value;
+      });
+      this.$store.dispatch('bag/add', {
+        name: this.item.name,
+        price: this.item.itemProperty.price,
+        type: this.item.type,
+        ...properties
+      });
     },
     changeProduct (name, propertyIndex, index) {
       let value = this.properties[name].values[index];

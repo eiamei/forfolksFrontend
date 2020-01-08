@@ -41,7 +41,7 @@ export default {
   colors: {
     coated: 'Мелованный',
     graphite: 'Графит',
-    black_marble: 'Черный мрамор',
+    "black-marble": 'Черный мрамор',
     mustard: 'Горчичный',
     coral: 'Коралл',
     cacao: 'Какао',
@@ -51,7 +51,7 @@ export default {
     mint: 'Мята',
     dustyRose: 'Пыльная роза',
     seaWave: 'Морская волна',
-    gray_fog: 'Серый туман',
+    "gray-fog": 'Серый туман',
     thunderstorm: 'Гроза',
     black: 'Черный',
     white: 'Белый',
