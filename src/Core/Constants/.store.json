@@ -264,30 +264,6 @@
       "storeTemplate": "normal"
     },
     {
-      "name": "Ursa Major",
-      "model": "",
-      "type": "hanging",
-      "category": ["Hanging"],
-      "desc": "",
-      "metaDesc": "",
-      "shortDesc": "",
-      "params": {
-        "size": {
-          "height": 5.5,
-          "externalDiameter": 2.5
-        },
-        "material": ["concrete"],
-        "weight": 100
-      },
-      "colors": "concrete",
-      "availableColors": [
-        "one_color"
-      ],
-      "properties": [],
-      "price": 230,
-      "storeTemplate": "normal"
-    },
-    {
       "name": "Wax drops",
       "model": "",
       "type": "candles",

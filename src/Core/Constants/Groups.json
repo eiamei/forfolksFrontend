@@ -1,5 +1,6 @@
 {
   "pot_modern_m": {
+    "rootPath": "pot-modern-m",
     "name": "Modern M",
     "type": "pot",
     "category": ["pot"],
@@ -16,6 +17,24 @@
       "material": ["concrete"],
       "weight": 500,
       "price": 530
+    }
+  },
+  "hanging-constellation": {
+    "rootPath": "hanging-constellation",
+    "name": "Constellation",
+    "type": "Hanging",
+    "category": ["Hanging"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "",
+        "externalDiameter": ""
+      },
+      "material": ["cotton", "brass"],
+      "weight": 100,
+      "price": 500
     }
   }
 }

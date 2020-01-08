@@ -28,5 +28,12 @@
     "selectableProperty": {
       "color": "powder"
     }
+  },
+  {
+    "group": "hanging-constellation",
+    "name": "Ursa Major",
+    "selectableProperty": {
+      "model": "Ursa Major"
+    }
   }
 ]

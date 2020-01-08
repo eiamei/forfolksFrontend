@@ -10,7 +10,10 @@ const storeActions = {
   createStoreItems ({state, commit}) {
     let prepearedItems = state.products.map(function (item) {
       try {
-        return Object.assign({}, state.groups[item.group], item)
+        if (state.groups[item.group])
+          return Object.assign({}, state.groups[item.group], item)
+        else
+          return Object.assign({}, item)
       } catch (e) {
         console.warn(e);
         return undefined;

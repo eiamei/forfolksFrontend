@@ -1,15 +1,15 @@
 <template>
   <article class="store-card">
-    <section :to="getLink()" class="store-card__link">
+    <router-link :to="getLink()" class="store-card__link">
       <img ref='image' :src="itemImage" :alt="alt" :width="width" :height="height" @load="load">
-    </section>
-<!--    <section class="store-card-description">-->
-<!--      <section>-->
-<!--        <p class="store-card-description__title">{{item.name}}{{item.model ? `&nbsp;${item.model}` : ''}}</p>-->
-<!--        <span class="store-card-description__type-container">-->
-<!--          <p class="store-card-description__type">{{$t(`items.${item.type}`)}}</p>-->
-<!--          <p class="store-card-description__price">{{item.price}}&thinsp;р</p>-->
-<!--        </span>-->
+    </router-link>
+    <section class="store-card-description">
+      <section>
+        <p class="store-card-description__title">{{item.name}}</p>
+        <span class="store-card-description__type-container">
+          <p class="store-card-description__type">{{$t(`items.${item.type.toLowerCase()}`)}}</p>
+          <p class="store-card-description__price">{{item.itemProperty.price}}&thinsp;р</p>
+        </span>
 <!--        <section class="store-card-description-colors">-->
 <!--          <router-link-->
 <!--                  class="store-card-description-colors__circle"-->
@@ -21,8 +21,8 @@
 <!--          >-->
 <!--          </router-link>-->
 <!--        </section>-->
-<!--      </section>-->
-<!--    </section>-->
+      </section>
+    </section>
   </article>
 </template>
 
@@ -54,13 +54,11 @@
       //   return this.item.availableColors;
       // },
       itemImage () {
-        const name = slugify(this.item.name.toLowerCase());
-        const type = slugify(this.item.type.toLowerCase());
-        let path = `${type}-${name}`;
+        let path = this.item.rootPath;
         let additionalProperties = Object.keys(this.item.selectableProperty);
         if (additionalProperties.length)
           additionalProperties.forEach(key => {
-            path += `-${this.item.selectableProperty[key]}`
+            path += `-${slugify(this.item.selectableProperty[key].toLowerCase())}`
           });
         return require(`@/assets/images/store/${path}-small.jpg`);
       },
@@ -76,10 +74,13 @@
         // return `store-card-description-colors__circle--${color}`
       },
       getLink (color) {
-        // const name = this.item.name.toLowerCase();
-        // const model = this.item.model.toLowerCase();
-        // const type = this.item.type.toLowerCase();
-        // return `/product/${type}/${name}${model ? ('-' + model) : ''}/${color}`;
+        let path = this.item.rootPath;
+        let additionalProperties = Object.keys(this.item.selectableProperty);
+        if (additionalProperties.length)
+          additionalProperties.forEach(key => {
+            path += `/${slugify(this.item.selectableProperty[key].toLowerCase())}`
+          });
+        return `/product/${path}`;
       },
       load () {
         this.$emit('isWide', this.$refs.image.naturalWidth > this.$refs.image.naturalHeight);
