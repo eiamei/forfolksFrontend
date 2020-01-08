@@ -7,7 +7,8 @@ const storeMutations = {
     state.products = products;
   },
   items (state, items) {
-    state.items = Object.assign({}, items)
+    state.items.splice(0);
+    state.items = items;
   }
 };
 

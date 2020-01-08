@@ -14,25 +14,19 @@
   {
     "group": "pot_modern_m",
     "selectableProperty": {
-      "color": "black_marble"
-    }
-  },
-  {
-    "group": "pot_modern_m",
-    "selectableProperty": {
       "color": "moonstone"
     }
   },
   {
     "group": "pot_modern_m",
     "selectableProperty": {
-      "color": "powder"
+      "color": "black-marble"
     }
   },
   {
     "group": "pot_modern_m",
     "selectableProperty": {
-      "color": "gray_fog"
+      "color": "powder"
     }
   }
 ]

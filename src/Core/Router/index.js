@@ -3,7 +3,7 @@ import STORE from '../../Core/Constants/Store';
 import slugify from 'slugify';
 import ruTranslate from '../../Core/Translation/ru';
 
-const Store = () => import('../../components/Pages/Store/Store');
+const Store = () => import('../../views/Store');
 const Item = () => import('../../components/Pages/Item/Item');
 const Bag = () => import('../../components/Pages/Bag/Bag');
 const Payment = () => import('../../components/Pages/Payment/Payment');

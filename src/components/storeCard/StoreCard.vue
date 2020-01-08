@@ -1,32 +1,33 @@
 <template>
   <article class="store-card">
-    <router-link :to="getLink()" class="store-card__link">
-      <img :src="itemImage" :alt="alt" :style="{'width': width + 'px', 'height': height + 'px'}">
-    </router-link>
-    <section class="store-card-description">
-      <section>
-        <p class="store-card-description__title">{{item.name}}{{item.model ? `&nbsp;${item.model}` : ''}}</p>
-        <span class="store-card-description__type-container">
-          <p class="store-card-description__type">{{$t(`items.${item.type}`)}}</p>
-          <p class="store-card-description__price">{{item.price}}&thinsp;р</p>
-        </span>
-        <section class="store-card-description-colors">
-          <router-link
-                  class="store-card-description-colors__circle"
-                  v-for="color in colors"
-                  :title="color"
-                  :class="getColor(color)"
-                  :key="color"
-                  :to="getLink(color)"
-          >
-          </router-link>
-        </section>
-      </section>
+    <section :to="getLink()" class="store-card__link">
+      <img ref='image' :src="itemImage" :alt="alt" :width="width" :height="height" @load="load">
     </section>
+<!--    <section class="store-card-description">-->
+<!--      <section>-->
+<!--        <p class="store-card-description__title">{{item.name}}{{item.model ? `&nbsp;${item.model}` : ''}}</p>-->
+<!--        <span class="store-card-description__type-container">-->
+<!--          <p class="store-card-description__type">{{$t(`items.${item.type}`)}}</p>-->
+<!--          <p class="store-card-description__price">{{item.price}}&thinsp;р</p>-->
+<!--        </span>-->
+<!--        <section class="store-card-description-colors">-->
+<!--          <router-link-->
+<!--                  class="store-card-description-colors__circle"-->
+<!--                  v-for="color in colors"-->
+<!--                  :title="color"-->
+<!--                  :class="getColor(color)"-->
+<!--                  :key="color"-->
+<!--                  :to="getLink(color)"-->
+<!--          >-->
+<!--          </router-link>-->
+<!--        </section>-->
+<!--      </section>-->
+<!--    </section>-->
   </article>
 </template>
 
 <script>
+  import slugify from 'slugify';
   export default {
     name: 'StoreCard',
     props: {
@@ -37,54 +38,63 @@
       width: {
         type: Number,
         required: false,
-        default: 470
+        default: 0
       },
       height: {
         type: Number,
         required: false,
-        default: 470
+        default: 0
       },
       isBig: {
         type: Boolean
       }
     },
     computed: {
-      colors () {
-        return this.item.availableColors;
-      },
+      // colors () {
+      //   return this.item.availableColors;
+      // },
       itemImage () {
-        const name = this.item.name.toLowerCase();
-        const model = this.item.model.toLowerCase();
-        const type = this.item.type.toLowerCase();
-        return require(`@/assets/images/storeIcons/${type}-${name}${model ? '-' + model : ''}.jpg`);
+        const name = slugify(this.item.name.toLowerCase());
+        const type = slugify(this.item.type.toLowerCase());
+        let path = `${type}-${name}`;
+        let additionalProperties = Object.keys(this.item.selectableProperty);
+        if (additionalProperties.length)
+          additionalProperties.forEach(key => {
+            path += `-${this.item.selectableProperty[key]}`
+          });
+        return require(`@/assets/images/store/${path}-small.jpg`);
       },
       alt () {
-        const name = this.item.name.toLowerCase();
-        const model = this.item.model.toLowerCase();
-        const type = this.item.type.toLowerCase();
-        return `${this.$t(`items.${type}`)} ${name} ${model}`
+      //   const name = this.item.name.toLowerCase();
+      //   const model = this.item.model.toLowerCase();
+      //   const type = this.item.type.toLowerCase();
+      //   return `${this.$t(`items.${type}`)} ${name} ${model}`
       }
     },
     methods: {
       getColor (color) {
-        return `store-card-description-colors__circle--${color}`
+        // return `store-card-description-colors__circle--${color}`
       },
-      getLink (color = this.colors[0]) {
-        const name = this.item.name.toLowerCase();
-        const model = this.item.model.toLowerCase();
-        const type = this.item.type.toLowerCase();
-        return `/product/${type}/${name}${model ? ('-' + model) : ''}/${color}`;
+      getLink (color) {
+        // const name = this.item.name.toLowerCase();
+        // const model = this.item.model.toLowerCase();
+        // const type = this.item.type.toLowerCase();
+        // return `/product/${type}/${name}${model ? ('-' + model) : ''}/${color}`;
+      },
+      load () {
+        this.$emit('isWide', this.$refs.image.naturalWidth > this.$refs.image.naturalHeight);
       }
     }
   };
 </script>
 
 <style lang='scss' scoped>
-  @import '../../../assets/styles/colors';
+  @import '../../assets/styles/colors';
   .store-card {
     display: flex;
     position: relative;
     cursor: pointer;
+    padding: 2px;
     &:hover {
       .store-card-description-colors {
         opacity: 1;
