@@ -1,39 +1,45 @@
 [
   {
     "group": "pot_modern_m",
-    "selectableProperty": {
-      "color": "white"
-    }
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
   },
   {
     "group": "pot_modern_m",
-    "selectableProperty": {
-      "color": "graphite"
-    }
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
   },
   {
     "group": "pot_modern_m",
-    "selectableProperty": {
-      "color": "moonstone"
-    }
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
   },
   {
     "group": "pot_modern_m",
-    "selectableProperty": {
-      "color": "black-marble"
-    }
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
   },
   {
     "group": "pot_modern_m",
-    "selectableProperty": {
-      "color": "powder"
-    }
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
   },
   {
     "group": "hanging-constellation",
     "name": "Ursa Major",
-    "selectableProperty": {
-      "model": "Ursa Major"
-    }
+    "selectableProperty": [{
+      "value": "Ursa Major",
+      "name": "model"
+    }]
   }
 ]

@@ -55,10 +55,9 @@
       // },
       itemImage () {
         let path = this.item.rootPath;
-        let additionalProperties = Object.keys(this.item.selectableProperty);
-        if (additionalProperties.length)
-          additionalProperties.forEach(key => {
-            path += `-${slugify(this.item.selectableProperty[key].toLowerCase())}`
+        if (this.item.selectableProperty.length)
+          this.item.selectableProperty.forEach(property => {
+            path += `-${slugify(property.value.toLowerCase())}`
           });
         return require(`@/assets/images/store/${path}-small.jpg`);
       },
@@ -75,10 +74,9 @@
       },
       getLink (color) {
         let path = this.item.rootPath;
-        let additionalProperties = Object.keys(this.item.selectableProperty);
-        if (additionalProperties.length)
-          additionalProperties.forEach(key => {
-            path += `/${slugify(this.item.selectableProperty[key].toLowerCase())}`
+        if (this.item.selectableProperty.length)
+          this.item.selectableProperty.forEach(property => {
+            path += `/${slugify(property.value.toLowerCase())}`
           });
         return `/product/${path}`;
       },

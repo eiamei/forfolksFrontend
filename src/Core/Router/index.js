@@ -4,7 +4,7 @@ import slugify from 'slugify';
 import ruTranslate from '../../Core/Translation/ru';
 
 const Store = () => import('../../views/Store');
-const Item = () => import('../../components/Pages/Item/Item');
+const Item = () => import('../../components/itemCard/ItemCard');
 const Bag = () => import('../../components/Pages/Bag/Bag');
 const Payment = () => import('../../components/Pages/Payment/Payment');
 const About = () => import('../../components/Pages/About/About');
@@ -59,16 +59,7 @@ let config = {
       }
     },
     {
-      path: '/product/:type/:model',
-      name: 'product',
-      component: Item,
-      meta: {
-        title: 'Forfolks',
-        tags: []
-      }
-    },
-    {
-      path: '/product/:type/:model/:color/:prop2?/:prop3?',
+      path: '/product/:root/:prop1?/:prop2?/:prop3?',
       name: 'product',
       component: Item,
       meta: {
