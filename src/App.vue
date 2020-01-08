@@ -14,7 +14,8 @@ export default {
     AppHeader
   },
   created () {
-    window.addEventListener('resize', this.resizeHandler)
+    window.addEventListener('resize', this.resizeHandler);
+    this.$store.dispatch('store/loadStoreData');
   },
   mounted () {
     this.$store.dispatch('global/setNewWindowSize')

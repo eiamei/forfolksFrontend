@@ -1,0 +1,38 @@
+[
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": {
+      "color": "white"
+    }
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": {
+      "color": "graphite"
+    }
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": {
+      "color": "black_marble"
+    }
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": {
+      "color": "moonstone"
+    }
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": {
+      "color": "powder"
+    }
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": {
+      "color": "gray_fog"
+    }
+  }
+]
