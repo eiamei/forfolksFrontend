@@ -1,5 +1,5 @@
 <template>
-    <span :class="containerClass" @click="toggleState">
+    <section :class="containerClass" @click="toggleState">
       <section style="display: flex">
         <template v-if="!isOpen">
           <app-button class="header-menu__button">
@@ -16,7 +16,7 @@
       <nav class="menu-container" v-if="isOpen">
         <ul class="menu-catalogue">
           <li class="menu-catalogue__item" v-for="link in catalogue" :key="link.to">
-            <router-link class="menu-catalogue__text" :to="link.to">{{$t(link.text)}}</router-link>
+            <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
           </li>
         </ul>
         <ul class="menu-links">
@@ -25,7 +25,7 @@
           </li>
         </ul>
       </nav>
-    </span>
+    </section>
 </template>
 
 <script>
@@ -40,30 +40,28 @@
         catalogue: [{
           to: '/store/all',
           text: 'items.alls'
-        }
-        // , {
-        //   to: '/store/pot',
-        //   text: 'items.pots'
-        // }, {
-        //   to: '/store/candlestick',
-        //   text: 'items.candlesticks'
-        // }, {
-        //   to: '/store/plate',
-        //   text: 'items.plates'
-        // }, {
-        //   to: '/store/vase',
-        //   text: 'items.vases'
-        // }, {
-        //   to: '/store/bouquet',
-        //   text: 'items.bouquets'
-        // }, {
-        //   to: '/store/hanging',
-        //   text: 'items.hangings'
-        // }, {
-        //   to: '/store/season',
-        //   text: 'items.seasons'
-        // }
-        ],
+        }, {
+          to: '/store/pot',
+          text: 'items.pots'
+        }, {
+          to: '/store/candlestick',
+          text: 'items.candlesticks'
+        }, {
+          to: '/store/plate',
+          text: 'items.plates'
+        }, {
+          to: '/store/vase',
+          text: 'items.vases'
+        }, {
+          to: '/store/bouquet',
+          text: 'items.bouquets'
+        }, {
+          to: '/store/hanging',
+          text: 'items.hangings'
+        }, {
+          to: '/store/season',
+          text: 'items.seasons'
+        }],
         links: [{
           to: '/delivery',
           text: 'links.delivery'

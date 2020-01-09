@@ -22,8 +22,8 @@
   "hanging-constellation": {
     "rootPath": "hanging-constellation",
     "name": "Constellation",
-    "type": "Hanging",
-    "category": ["Hanging"],
+    "type": "hanging",
+    "category": ["hanging"],
     "desc": "",
     "metaDesc": "",
     "shortDesc": "",
