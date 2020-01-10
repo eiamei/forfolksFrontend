@@ -10,7 +10,7 @@
           <p class="header-menu__text">{{$t(menuText)}}</p>
         </template>
         <app-button class="header-menu__button" v-if="isOpen">
-          <img src="../../../assets/svg/closeIcon.svg"/>
+          <img src="../../../assets/svg/closeIcon.svg" alt="close icon"/>
         </app-button>
       </section>
       <nav class="menu-container" v-if="isOpen">
@@ -134,7 +134,7 @@
     }
     &__text {
       margin: 0;
-      color: white;
+      color: black;
     }
   }
 

@@ -49,24 +49,19 @@
   .header {
     &--white {
       .header-menu__circle {
-        background-color: white;
-      }
-      .header-logo {
-        .forfolks-logo {
-          fill: white
-        }
+        background-color: black;
       }
       .header-bag {
         .bag-icon {
-          fill: white!important;
+          fill: black!important;
         }
         &__icon {
           .bag-full__bag {
-            fill: white
+            fill: black
           }
         }
         &__qty {
-          color: white;
+          color: black;
         }
       }
     }
