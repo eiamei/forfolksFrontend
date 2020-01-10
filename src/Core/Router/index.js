@@ -1,6 +1,5 @@
 import Router from 'vue-router';
-import STORE from '../../Core/Constants/Store';
-import slugify from 'slugify';
+// import slugify from 'slugify';
 import ruTranslate from '../../Core/Translation/ru';
 
 const Store = () => import('../../views/Store');
@@ -118,7 +117,8 @@ router.beforeEach((to, from, next) => {
       });
     }
     if (to.path === '/item') {
-      let item = STORE.find(item => slugify(item.name.toLowerCase()) === to.query.name && slugify(item.type.toLowerCase()) === to.query.type);
+      let item;
+      // let item = STORE.find(item => slugify(item.name.toLowerCase()) === to.query.name && slugify(item.type.toLowerCase()) === to.query.type);
       if (item) {
         document.title = `${ruTranslate.items[item.type]} ${item.name} ${item.model} - Forfolks`;
         Array.from(document.querySelectorAll('[programmatic-meta]')).map(el => el.parentNode.removeChild(el));

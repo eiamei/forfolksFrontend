@@ -44,11 +44,17 @@
           to: '/store/pot',
           text: 'items.pots'
         }, {
+          to: '/store/cachepot',
+          text: 'items.cachepots'
+        }, {
           to: '/store/candlestick',
           text: 'items.candlesticks'
         }, {
           to: '/store/plate',
           text: 'items.plates'
+        }, {
+          to: '/store/stand',
+          text: 'items.stands'
         }, {
           to: '/store/vase',
           text: 'items.vases'
@@ -59,9 +65,17 @@
           to: '/store/hanging',
           text: 'items.hangings'
         }, {
-          to: '/store/season',
-          text: 'items.seasons'
-        }],
+          to: '/store/panno',
+          text: 'items.panno'
+        }, {
+          to: '/store/candle',
+          text: 'items.candles'
+        }
+        // , {
+        //   to: '/store/season',
+        //   text: 'items.seasons'
+        // }
+        ],
         links: [{
           to: '/delivery',
           text: 'links.delivery'

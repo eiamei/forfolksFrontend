@@ -37,20 +37,38 @@ export default {
       return this.$store.state.store.items || [];
     },
     items () {
-      return this.storeItems.map(item => {
-        if (this.type === 'all' || this.type === item.type)
+      return this.shuffle(this.storeItems.map(item => {
+        if (this.type === 'all' || item.category.includes(this.type))
           return {
             ...item,
             width: 0,
             height: 0
           };
-      }).filter(function (item) { return item });
+      }).filter(function (item) { return item }));
     },
     windowWidth () {
       return this.$store.state.global.windowSize.width;
     }
   },
   methods: {
+    shuffle (array) {
+      let currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    },
     safeRatio (index, value) {
       this.widesMap[index] = value;
       this.loadCounter++;
@@ -68,8 +86,8 @@ export default {
     createMap () {
       for (let i = 0, len = this.items.length; i < len;) {
         if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && !this.widesMap[i + 2]) {
-          this.items[i].width = this.items[i + 1].width = this.items[i + 1].width = this.windowWidth / 3 - 4;
-          this.items[i].height = this.items[i + 1].height = this.items[i + 1].height = this.windowWidth / 2 - 4;
+          this.items[i].width = this.items[i + 1].width = this.items[i + 2].width = this.windowWidth / 3 - 4;
+          this.items[i].height = this.items[i + 1].height = this.items[i + 2].height = this.windowWidth / 2 - 4;
           i += 3;
           continue;
         }
