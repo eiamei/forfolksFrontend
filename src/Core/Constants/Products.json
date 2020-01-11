@@ -186,67 +186,49 @@
     "selectableProperty": []
   },
   {
-    "group": "candlestick-house",
-    "name": "Denmark",
+    "group": "candlestick-house-swiss",
+    "name": "Swiss",
     "selectableProperty": [{
-      "value": "denmark",
-      "name": "model"
-    }, {
       "value": "white",
       "name": "color"
     }]
   },
   {
-    "group": "candlestick-house",
-    "name": "Denmark",
+    "group": "candlestick-house-swiss",
+    "name":  "Swiss",
     "selectableProperty": [{
-      "value": "denmark",
-      "name": "model"
-    }, {
       "value": "powder",
       "name": "color"
     }]
   },
   {
-    "group": "candlestick-house",
-    "name": "Denmark",
+    "group": "candlestick-house-swiss",
+    "name":  "Swiss",
     "selectableProperty": [{
-      "value": "denmark",
-      "name": "model"
-    }, {
       "value": "moonstone",
       "name": "color"
     }]
   },
   {
-    "group": "candlestick-house",
-    "name": "Swiss",
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
     "selectableProperty": [{
-      "value": "swiss",
-      "name": "model"
-    }, {
       "value": "white",
       "name": "color"
     }]
   },
   {
-    "group": "candlestick-house",
-    "name":  "Swiss",
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
     "selectableProperty": [{
-      "value": "swiss",
-      "name": "model"
-    }, {
       "value": "powder",
       "name": "color"
     }]
   },
   {
-    "group": "candlestick-house",
-    "name":  "Swiss",
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
     "selectableProperty": [{
-      "value": "swiss",
-      "name": "model"
-    }, {
       "value": "moonstone",
       "name": "color"
     }]

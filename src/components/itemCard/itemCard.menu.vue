@@ -9,7 +9,7 @@
       </section>
       <section v-for="prop in properties" :key="prop.name + prop.selected" class="item-bottom-menu__color">
         <p class="item-bottom-menu__color-text">{{$t(`common.${prop.name}`)}}:</p>
-        <dropdown2 :options="prop.values" :value="prop.selected" @input="index => changeProduct(prop.name, prop.propertyIndex, index)" :translate-namespace="prop.name"/>
+        <dropdown2 :options="prop.values" :value="prop.selected" @input="index => changeProduct(prop.name, prop.propertyIndex, index)" :translate-namespace="prop.translateNamespace"/>
       </section>
     </section>
     <section class="item-bottom-menu__container item-bottom-menu__buy">
@@ -48,11 +48,14 @@ export default {
               name: property.name,
               values: [],
               selected: 0,
-              propertyIndex: propertyIndex
+              propertyIndex: propertyIndex,
+              translateNamespace: property.name === 'model' ? '' : property.name
             };
+            if (properties[property.name].values.includes(property.value))
+              return;
+            properties[property.name].values.push(property.value);
             if (this.item.selectableProperty[propertyIndex].value === property.value)
               properties[property.name].selected = itemIndex;
-            properties[property.name].values.push(property.value);
           })
         });
         return properties;
@@ -66,6 +69,7 @@ export default {
     },
     addToBag () {
       this.$store.dispatch('bag/add', {
+        rootPath: this.item.rootPath,
         name: this.item.name,
         price: this.item.itemProperty.price,
         type: this.item.type,

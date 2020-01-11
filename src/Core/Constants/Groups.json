@@ -92,8 +92,25 @@
       "price": "350"
     }
   },
-  "candlestick-house": {
-    "rootPath": "candlestick-house",
+  "candlestick-house-swiss": {
+    "rootPath": "candlestick-house-swiss",
+    "name": "House",
+    "type": "candlestick",
+    "category": ["candlestick"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "Страшно красивый подсвечник",
+    "itemProperty": {
+      "size": {
+        "height": 6.5
+      },
+      "material": ["concrete"],
+      "weight": 350,
+      "price": "350"
+    }
+  },
+  "candlestick-house-denmark": {
+    "rootPath": "candlestick-house-denmark",
     "name": "House",
     "type": "candlestick",
     "category": ["candlestick"],

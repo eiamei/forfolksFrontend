@@ -1,5 +1,5 @@
 <template>
-  <div class="item-card" v-scroll="onScroll">
+  <div class="item-card">
     <section ref="images" v-if="images">
       <img v-for="image in images" :src="image" width="100%">
     </section>
@@ -36,7 +36,7 @@ export default {
           let item = this.storeItems.find(function (item) {
             if (item.rootPath === params.root && item.selectableProperty.length === params.properties.length) {
               for (let i = 0, len = params.properties.length; i < len; i++) {
-                if (!item.selectableProperty.find(property => property.value === params.properties[i])) return false;
+                if (!item.selectableProperty.find(property => slugify(property.value.toLowerCase()) === slugify(params.properties[i].toLowerCase()))) return false;
               }
               return item;
             }

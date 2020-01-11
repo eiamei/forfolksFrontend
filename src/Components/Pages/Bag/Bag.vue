@@ -160,7 +160,6 @@
         height: 40px;
         border-radius: 4px;
         border: 1px solid $dark-gray;
-        /*margin-top: 8px;*/
         padding: 0 8px;
         outline: transparent;
       }

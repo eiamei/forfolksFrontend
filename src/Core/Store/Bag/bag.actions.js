@@ -2,7 +2,7 @@ import slugify from 'slugify';
 
 export default {
   add ({state, commit, dispatch}, item) {
-    let id = `${item.type}-${slugify(item.name.toLowerCase())}`;
+    let id = item.rootPath;
     if (item.props.length)
       item.props.forEach(property => {
         id += `-${slugify(property.value.toLowerCase())}`

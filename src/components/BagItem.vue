@@ -4,7 +4,9 @@
     <div class="bag-item">
       <h3>{{item.name}}</h3>
       <section class="bag-item__row">
-        <p style="width: 50%; margin: 0"> <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{$t(`${prop.name}s.${prop.value}`)}}</template> </p>
+        <p style="width: 50%; margin: 0">
+          <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name !== 'model' ? $t(`${prop.name}s.${prop.value}`) : prop.value}}</template>
+        </p>
         <section style="display: flex; justify-content: center; align-items: center">
           <p class="bag-item__field">{{item.price}}</p>
           <button class="bag-item__button" @click="increment">+</button>
@@ -35,7 +37,7 @@ export default {
       return '';
     },
     id () {
-      let id = `${this.item.type}-${slugify(this.item.name.toLowerCase())}`;
+      let id = this.item.rootPath;
       if (this.item.props.length)
         this.item.props.forEach(property => {
           id += `-${slugify(property.value.toLowerCase())}`
