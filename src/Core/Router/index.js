@@ -5,7 +5,7 @@ import ruTranslate from '../../Core/Translation/ru';
 const Store = () => import('../../views/Store');
 const Item = () => import('../../components/itemCard/ItemCard');
 const Bag = () => import('../../views/Bag');
-// const Payment = () => import('../../components/Pages/Payment/Payment');
+const Payment = () => import('../../components/Pages/Payment/Payment');
 const About = () => import('../../components/Pages/About/About');
 const Delivery = () => import('../../components/Pages/Delivery/Delivery');
 
@@ -78,18 +78,18 @@ let config = {
         }]
       }
     },
-    // {
-    //   path: '/payment',
-    //   name: 'payment',
-    //   component: Payment,
-    //   meta: {
-    //     title: 'Оплата',
-    //     tags: [{
-    //       name: 'robots',
-    //       content: 'noindex'
-    //     }]
-    //   }
-    // },
+    {
+      path: '/payment',
+      name: 'payment',
+      component: Payment,
+      meta: {
+        title: 'Оплата',
+        tags: [{
+          name: 'robots',
+          content: 'noindex'
+        }]
+      }
+    },
     {
       path: '*',
       redirect: 'store/all'

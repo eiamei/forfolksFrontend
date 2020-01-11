@@ -1,7 +1,7 @@
 <template>
   <div class="payment-page">
     <payment-user-info v-if="isSuccess === null" @confirmed="sendEmail" class="payment-page__user-info"/>
-    <payment-cart v-if="isSuccess === null" class="payment-page__cart"/>
+<!--    <payment-cart v-if="isSuccess === null" class="payment-page__cart"/>-->
     <div v-if="isSuccess" class="payment-page__success">
       <h1>Заказ успешно отправлен</h1>
       <span>В ближайшее время мы вышлем вам информацию о заказе и реквизиты для оплаты</span>
@@ -15,12 +15,12 @@
 
 <script>
   import PaymentUserInfo from './PaymentUserInfo';
-  import PaymentCart from './PaymentCart';
+  // import PaymentCart from './PaymentCart';
   import {PROMO} from '../../../Core/Constants/Globals';
 
   export default {
     name: 'PaymentPage',
-    components: {PaymentCart, PaymentUserInfo},
+    components: {PaymentUserInfo},
     data () {
       return {
         isSuccess: null,
