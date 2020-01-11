@@ -1,19 +1,21 @@
 <template>
-  <article class="item-card">
-    <template v-if="images">
+  <div class="item-card" v-scroll="onScroll">
+    <section ref="images" v-if="images">
       <img v-for="image in images" :src="image" width="100%">
-    </template>
+    </section>
     <item-card-menu v-if="item" :item="item" :storeItems="storeItems"/>
-  </article>
+<!--    <item-card-info v-if="item" :desc="item.desc" :params="item.itemProperty"/>-->
+  </div>
 </template>
 
 <script>
 import slugify from 'slugify';
 import ItemCardMenu from './itemCard.menu';
+import ItemCardInfo from './itemCard.info';
 
 export default {
   name: 'itemCard',
-  components: {ItemCardMenu},
+  components: {ItemCardInfo, ItemCardMenu},
   computed: {
     storeItems () {
       return this.$store.state.store.items;
@@ -65,15 +67,20 @@ export default {
         }
         return images;
       }
+      return [];
     },
   }
 };
 </script>
 
 <style lang="scss">
+  body {
+    overflow: scroll;
+  }
   .item-card {
-    height: 100%;
-    min-height: 100vh;
+    /*height: 100%;*/
+    /*min-height: 100vh;*/
     position: relative;
+    overflow-y: scroll
   }
 </style>

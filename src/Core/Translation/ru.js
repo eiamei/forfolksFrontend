@@ -2,8 +2,8 @@ export default {
   items: {
     pot: 'Горшок',
     pots: 'Горшки',
-    'cachePot': 'Кашпо',
-    'cachePots': 'Кашпо',
+    'cachepot': 'Кашпо',
+    'cachepots': 'Кашпо',
     candle: 'Свеча',
     candles: 'Свечи',
     alls: 'Все модели',
@@ -17,6 +17,7 @@ export default {
     trays: 'Подносы',
     plate: 'Тарелка',
     plates: 'Тарелки',
+    panno: 'Панно',
     hanging: 'Подвес',
     hangings: 'Подвесы',
     bouquet: 'Букет',

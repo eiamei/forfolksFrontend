@@ -1,6 +1,12 @@
+import slugify from 'slugify';
+
 export default {
   add ({state, commit, dispatch}, item) {
-    let id = `${item.type}${item.name}`;
+    let id = `${item.type}-${slugify(item.name.toLowerCase())}`;
+    if (item.props.length)
+      item.props.forEach(property => {
+        id += `-${slugify(property.value.toLowerCase())}`
+      });
     if (item.variant)
       id += item.variant;
     if (state.bag.hasOwnProperty(id))

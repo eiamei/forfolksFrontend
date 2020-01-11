@@ -7,7 +7,9 @@ import VeeValidate from 'vee-validate';
 import router from './Core/Router';
 import store from './Core/Store';
 import i18n from './Core/Translation/i18n';
+import vuescroll from 'vue-scroll'
 
+Vue.use(vuescroll)
 Vue.use(Router);
 Vue.use(VueScrollTo);
 Vue.use(VeeValidate);

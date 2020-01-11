@@ -135,6 +135,7 @@
     &__text {
       margin: 0;
       color: black;
+      cursor: pointer;
     }
   }
 

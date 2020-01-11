@@ -35,7 +35,7 @@
       headerClass () {
         return {
           'header': true,
-          'header--white': this.$route.name === 'store' || this.$route.name === 'product'
+          'header--white': this.$route.name === 'bag' || this.$route.name === 'payments'
         }
       }
     }
@@ -48,22 +48,12 @@
   @import '../../../assets/styles/z-index';
   .header {
     &--white {
-      .header-menu__circle {
-        background-color: black;
-      }
-      .header-bag {
-        .bag-icon {
-          fill: black!important;
-        }
-        &__icon {
-          .bag-full__bag {
-            fill: black
-          }
-        }
-        &__qty {
-          color: black;
-        }
-      }
+      position: fixed;
+      width: 100vw;
+      height: 40px;
+      top: 0;
+      left: 0;
+      background: white;
     }
   }
 

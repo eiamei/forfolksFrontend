@@ -65,15 +65,11 @@ export default {
       this.$emit('toggleInfo')
     },
     addToBag () {
-      let properties = {};
-      this.item.selectableProperty.forEach(function (property) {
-        properties[property.name] = property.value;
-      });
       this.$store.dispatch('bag/add', {
         name: this.item.name,
         price: this.item.itemProperty.price,
         type: this.item.type,
-        ...properties
+        props: this.item.selectableProperty
       });
     },
     changeProduct (name, propertyIndex, index) {
@@ -169,6 +165,7 @@ export default {
       background: white;
       border: white;
       outline: transparent;
+      cursor: pointer;
     }
   }
 </style>
