@@ -11,7 +11,7 @@
           <p class="item-info-params__item">{{$t(`common.${key}`)}}:</p>
           <p v-for="prop in param" class="item-info-params__item" :key="prop">{{$t(`material.${prop}`)}}</p>
         </div>
-        <template v-else>
+        <template v-else-if="key !== 'price'">
           {{$t(`common.${key}`)}}: {{param}}
         </template>
       </li>
@@ -37,7 +37,7 @@
 
 <style lang="scss">
   .item-info {
-    padding: 32px 16px;
+    padding: 32px 16px 90px 16px;
     &-description {
       margin: 0 0 32px 0;
     }

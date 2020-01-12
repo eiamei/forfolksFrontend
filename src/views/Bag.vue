@@ -13,9 +13,9 @@
         <p v-if="isCorrect === false" class="bag-total__promo-error">Неверный промокод</p>
         <p v-else-if="isTooLate === true" class="bag-total__promo-error">Промокод истек</p>
         <span class="bag-total__total-text">
-          <p>Итого:</p>
+          <p style="margin-right: 8px">Итого:</p>
           <p v-if="!isPromo && !isConstantDiscount">{{total}} ₽</p>
-          <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total}}</span> {{promoPrice}} ₽</p>
+          <p v-else><span style="text-decoration: line-through; font-size: 14px; margin: 0 8px">{{total}}</span> {{promoPrice}} ₽</p>
         </span>
         <router-link class="bag-total__buy-button" to="payment">Оплатить</router-link>
       </section>
@@ -81,41 +81,63 @@ export default {
 <style lang="scss">
   @import '../assets/styles/colors';
   .bag-container {
-    margin: 64px 0 0 0;
-    width: 100%;
-  }
-  .bag {
+    margin: 40px 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+  .bag {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    @media screen and (max-width: 1264px) {
+      width: calc(100% - 64px);
+      padding: 0 32px;
+    }
+    @media screen and (max-width: 600px) {
+      width: calc(100% - 32px);
+      padding: 0 16px;
+      margin-bottom: 8px;
+    }
+    @media screen and (max-width: 400px) {
+      width: calc(100% - 16px);
+      padding: 0 8px;
+      margin-bottom: 0;
+    }
   }
   .bag-total {
     font-size: 24px;
     margin: 16px 0 0 0;
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    &__total-text {
+      display: flex;
+    }
     &__promo-input {
       width: 190px;
       height: 40px;
-      border-radius: 4px;
-      border: 1px solid $dark-gray;
+      border: 1px solid black;
       padding: 0 8px;
       outline: transparent;
     }
     &__promo-button {
       width: 80px;
       height: 40px;
-      border-radius: 4px;
-      border: 1px solid $dark-gray;
+      border: 1px solid black;
       margin-left: 8px;
       padding: 0 8px;
-      background: $blue-gray;
+      background: black;
+      color: white;
+      cursor: pointer;
       &:hover {
-        background: $light-gray;
+        background: rgb(50, 50, 50);
       }
     }
     &__promo-success, &__promo-error {
@@ -125,11 +147,10 @@ export default {
       color: $regular-red;
     }
     &__buy-button {
-      width: 300px;
-      background: $blue1;
-      border: 1px solid $blue1;
+      width: 296px;
+      background: black;
+      border: 1px solid black;
       box-sizing: border-box;
-      border-radius: 4px;
       padding: 10px 0;
       font-size: 16px;
       text-decoration: none;
@@ -137,7 +158,7 @@ export default {
       color: white;
       font-weight: 700;
       &:hover {
-        background: $blue2;
+        background: rgb(50, 50, 50);
       }
       @media screen and (max-width: 600px) {
         width: 100%;

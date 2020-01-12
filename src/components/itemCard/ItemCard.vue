@@ -1,10 +1,10 @@
 <template>
   <div class="item-card">
     <section ref="images" v-if="images">
-      <img v-for="image in images" :src="image" width="100%">
+      <img v-for="image in images" :src="image" class="item-card__image" width="100%">
     </section>
     <item-card-menu v-if="item" :item="item" :storeItems="storeItems"/>
-<!--    <item-card-info v-if="item" :desc="item.desc" :params="item.itemProperty"/>-->
+    <item-card-info v-if="item" :desc="item.desc" :params="item.itemProperty"/>
   </div>
 </template>
 
@@ -78,9 +78,11 @@ export default {
     overflow: scroll;
   }
   .item-card {
-    /*height: 100%;*/
-    /*min-height: 100vh;*/
     position: relative;
-    overflow-y: scroll
+    overflow-y: scroll;
+    &__image {
+      position: relative;
+      z-index: 5;
+    }
   }
 </style>

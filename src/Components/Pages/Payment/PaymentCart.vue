@@ -3,12 +3,9 @@
     <div class="cart-item" v-for="(item, key) in bag" :item="item" :key="key">
       <img class="cart-item__image" :src="itemImage(item)"/>
       <div class="cart-item__info">
-        <p class="cart-item__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</p>
+        <p class="cart-item__name">{{item.name}}</p>
         <p class="cart-item__color">
-          {{$t(`colors.${item.color}`)}}
-          <template v-if="item.variant">
-            , {{$t(`variants.${item.variant}`)}}
-          </template>
+          <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name !== 'model' ? $t(`${prop.name}s.${prop.value}`) : prop.value}}</template>
         </p>
       </div>
       <div  class="cart-item__price">{{+item.price * +item.qty}}&thinsp;P</div>
@@ -24,6 +21,7 @@
 
 <script>
   import {PROMO} from '../../../Core/Constants/Globals';
+  import slugify from 'slugify';
 
   export default {
     name: 'PaymentCart',
@@ -55,10 +53,12 @@
     methods: {
       itemImage (item) {
         if (item) {
-          const name = item.name.toLowerCase();
-          const model = item.model.toLowerCase();
-          const type = item.type.toLowerCase();
-          return require(`@/assets/images/storeIcons/${type}-${name}${model ? '-' + model : ''}.jpg`);
+          let id = item.rootPath;
+          if (item.props.length)
+            item.props.forEach(property => {
+              id += `-${slugify(property.value.toLowerCase())}`
+            });
+          return require(`@/assets/images/store/${id}-small.jpg`);
         }
         return '';
       }

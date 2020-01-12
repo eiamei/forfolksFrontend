@@ -90,6 +90,7 @@ export default {
     material: 'Материал',
     weight: 'Вес',
     model: 'Модель',
-    variant: 'Модель'
+    variant: 'Модель',
+    price: 'Цена'
   }
 }

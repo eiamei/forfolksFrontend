@@ -2,9 +2,9 @@
   <section class="bag-item-container">
     <img class="bag-item-image" :src="itemImage"/>
     <div class="bag-item">
-      <h3>{{item.name}}</h3>
+      <h3 class="bag-item__header">{{item.name}}</h3>
       <section class="bag-item__row">
-        <p style="width: 50%; margin: 0">
+        <p class="bag-item__field" style="width: 50%; margin: 0; padding: 0">
           <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name !== 'model' ? $t(`${prop.name}s.${prop.value}`) : prop.value}}</template>
         </p>
         <section style="display: flex; justify-content: center; align-items: center">
@@ -63,7 +63,6 @@ export default {
   .bag-item-container {
     display: flex;
     text-align: left;
-    max-width: 1200px;
     width: 100%;
     border-bottom: 1px solid black;
     margin: 0 0 8px 0;
@@ -74,12 +73,40 @@ export default {
     width: 180px;
     object-fit: cover;
     object-position: 50% 100%;
+    @media screen and (max-width: 1100px) {
+      height: 140px;
+      width: 140px;
+    }
+    @media screen and (max-width: 800px) {
+      height: 120px;
+      width: 120px;
+    }
+    @media screen and (max-width: 600px) {
+      height: 80px;
+      width: 80px;
+    }
+    @media screen and (max-width: 500px) {
+      height: 70px;
+      width: 70px;
+    }
+    @media screen and (max-width: 400px) {
+      height: 60px;
+      width: 60px;
+    }
   }
   .bag-item {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0 0 0 16px;
+    &__header {
+      @media screen and (max-width: 900px) {
+        margin: 8px 0;
+      }
+      @media screen and (max-width: 600px) {
+        margin: 0 0 4px 0;
+      }
+    }
     &__row {
       display: flex;
       justify-content: space-between;
@@ -88,6 +115,17 @@ export default {
       padding: 0 16px;
       margin: 0;
       cursor: default;
+      @media screen and (max-width: 900px) {
+        padding: 0 8px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 400px) {
+        padding: 0 4px;
+        font-size: 10px;
+      }
     }
     &__button {
       color: black;
@@ -95,6 +133,15 @@ export default {
       border: 1px solid black;
       padding: 1px 8px 4px 8px;
       cursor: pointer;
+      @media screen and (max-width: 900px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 10px;
+      }
     }
   }
 </style>

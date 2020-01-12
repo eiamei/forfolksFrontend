@@ -211,12 +211,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: 48px;
+    bottom: 24px;
     @media screen and (max-width: 800px) {
-      bottom: 30px;
+      bottom: 16px;
     }
     @media screen and (max-width: 500px) {
-      bottom: 22px;
+      bottom: 8px;
     }
 
     &__title {
@@ -224,13 +224,13 @@
       font-size: 3vw;
       margin: 0;
       @media screen and (max-width: 800px) {
-        font-size: 24px;
+        font-size: 20px;
       }
       @media screen and (max-width: 500px) {
-        font-size: 16px;
+        font-size: 14px;
       }
       @media screen and (max-width: 400px) {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
     &__type-container {
@@ -241,10 +241,13 @@
       font-size: 1.5vw;
       margin: 0;
       @media screen and (max-width: 800px) {
-        font-size: 12px;
+        font-size: 16px;
       }
       @media screen and (max-width: 500px) {
-        font-size: 10px;
+        font-size: 12px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 8px;
       }
     }
     &__type {

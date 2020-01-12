@@ -35,7 +35,7 @@
       headerClass () {
         return {
           'header': true,
-          'header--white': this.$route.name === 'bag' || this.$route.name === 'payments' ||
+          'header--white': this.$route.name === 'bag' || this.$route.name === 'payment' ||
             this.$route.name === 'about' || this.$route.name === 'delivery'
         }
       }

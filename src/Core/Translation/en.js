@@ -97,6 +97,7 @@ export default {
   common: {
     color: 'Color',
     model: 'Model',
-    variant: 'Model'
+    variant: 'Model',
+    price: 'Price'
   }
 }
