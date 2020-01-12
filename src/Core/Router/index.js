@@ -2,12 +2,12 @@ import Router from 'vue-router';
 // import slugify from 'slugify';
 import ruTranslate from '../../Core/Translation/ru';
 
-const Store = () => import('../../views/Store');
-const Item = () => import('../../components/itemCard/ItemCard');
-const Bag = () => import('../../views/Bag');
-const Payment = () => import('../../components/Pages/Payment/Payment');
-const About = () => import('../../components/Pages/About/About');
-const Delivery = () => import('../../components/Pages/Delivery/Delivery');
+const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store');
+const Item = () => import(/* webpackChunkName: "item-page" */'../../components/itemCard/ItemCard');
+const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag');
+const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment');
+const About = () => import(/* webpackChunkName: "about-page" */'../../components/Pages/About/About');
+const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../components/Pages/Delivery/Delivery');
 
 let config = {
   mode: 'history',
