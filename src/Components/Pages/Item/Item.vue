@@ -209,10 +209,6 @@
   @media screen and (max-width: 600px) {
     .bottom-menu {
       bottom: 16px;
-      &__container {
-        flex-direction: column;
-        align-items: start;
-      }
       &__color {
         margin: 8px 0 0 0;
       }
@@ -233,7 +229,7 @@
         height: 20px;
       }
       &__color-text {
-        font-size: 16xpx;
+        font-size: 16px;
       }
       &__color-dropdown {
         .dropdown-selected {

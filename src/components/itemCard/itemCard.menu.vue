@@ -3,9 +3,9 @@
     <section class="item-bottom-menu__container">
       <section style="display: flex">
         <h2 class="item-bottom-menu__model">{{item.name}}</h2>
-<!--        <button class="item-bottom-menu__info-button" @click="toggleInfo">-->
-<!--          <img src="../../assets/svg/info.svg" class="bottom-menu__info-icon">-->
-<!--        </button>-->
+        <button class="item-bottom-menu__info-button" @click="toggleInfo" title="О товаре">
+          <img src="../../assets/svg/info.svg" class="item-bottom-menu__info-icon">
+        </button>
       </section>
       <section v-for="prop in properties" :key="prop.name + prop.selected" class="item-bottom-menu__property">
         <p class="item-bottom-menu__property-text">{{$t(`common.${prop.name}`)}}:</p>
@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     toggleInfo () {
-      this.$emit('toggleInfo')
+      window.scrollTo(0, 10000);
     },
     addToBag () {
       this.$store.dispatch('bag/add', {
@@ -136,9 +136,8 @@ export default {
       background: transparent;
       border: none;
       transition: .3s all;
-      &:hover {
-        transform: scale(1.1);
-      }
+      outline: transparent;
+      cursor: pointer;
       @media screen and (max-width: 900px) {
         margin: 8px 0 0 8px;
       }
@@ -146,6 +145,18 @@ export default {
     &__info-icon {
       width: 36px;
       height: 36px;
+      @media screen and (max-width: 900px) {
+        width: 24px;
+        height: 24px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 22px;
+        height: 22px;
+      }
+      @media screen and (max-width: 400px) {
+        width: 20px;
+        height: 20px;
+      }
     }
     &__property {
       margin: 8px 0 0 16px;

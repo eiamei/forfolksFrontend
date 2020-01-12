@@ -50,9 +50,6 @@
           to: '/store/candlestick',
           text: 'items.candlesticks'
         }, {
-          to: '/store/plate',
-          text: 'items.plates'
-        }, {
           to: '/store/stand',
           text: 'items.stands'
         }, {

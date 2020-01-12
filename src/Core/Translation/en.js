@@ -18,6 +18,7 @@ export default {
     plate: 'Plate',
     plates: 'Plates',
     panno: 'Panno',
+    pannos: 'Panno',
     hanging: 'Handing',
     hangings: 'Handings',
     bouquet: 'Bouquet',
@@ -70,7 +71,8 @@ export default {
     cotton: 'Cotton',
     jute: 'Jute',
     carton: 'Carton',
-    ceylon: 'Tintoretto Ceylon'
+    ceylon: 'Tintoretto Ceylon',
+    coconutWax: 'Coconut wax'
   },
   size: {
     height: 'Height',

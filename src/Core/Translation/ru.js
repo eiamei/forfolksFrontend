@@ -18,6 +18,7 @@ export default {
     plate: 'Тарелка',
     plates: 'Тарелки',
     panno: 'Панно',
+    pannos: 'Панно',
     hanging: 'Подвес',
     hangings: 'Подвесы',
     bouquet: 'Букет',
@@ -70,7 +71,8 @@ export default {
     cotton: 'Хлопок',
     jute: 'Джут',
     carton: 'Картон',
-    ceylon: 'Тинторетто цейлон'
+    ceylon: 'Тинторетто цейлон',
+    coconutWax: 'Кокосовый воск'
   },
   size: {
     height: 'Высота',
