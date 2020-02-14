@@ -33,35 +33,33 @@ export default {
 
 <style lang="scss">
   @import "./assets/Styles/_globals";
-  @import "./assets/styles/_colors";
+  @import "assets/styles/colors";
   .app {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /*background-color: #494b4c;*/
 
   }
   html {
     font-size: 16px;
     background-color: white;
-  }
-  p {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 800px) {
-    html {
+    @media screen and (max-width: 1400px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 1200px) {
       font-size: 14px;
     }
-    p {
-      font-size: 14px;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    html {
+    @media screen and (max-width: 1000px) {
       font-size: 12px;
     }
-    p {
-      font-size: 12px;
+    @media screen and (max-width: 800px) {
+      font-size: 11px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 10px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 9px;
     }
   }
 </style>
