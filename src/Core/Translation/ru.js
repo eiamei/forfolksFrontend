@@ -63,7 +63,8 @@ export default {
     one_color: 'Один цвет',
     pumpkin: 'Тыквенный',
     powder: 'Пудра',
-    moonstone: 'Лунный камень'
+    moonstone: 'Лунный камень',
+    khaki: 'Хаки'
   },
   material: {
     concrete: "Бетон",
@@ -93,6 +94,7 @@ export default {
     weight: 'Вес',
     model: 'Модель',
     variant: 'Модель',
-    price: 'Цена'
+    price: 'Цена',
+    care: 'Уход'
   }
 }

@@ -8,10 +8,26 @@ const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag');
 const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment');
 const About = () => import(/* webpackChunkName: "about-page" */'../../components/Pages/About/About');
 const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../components/Pages/Delivery/Delivery');
+const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/Landing');
 
 let config = {
   mode: 'history',
   routes: [
+    {
+      path: '/',
+      name: 'landing',
+      component: Landing,
+      meta: {
+        title: 'Магазин',
+        tags: [{
+          name: 'Description',
+          content: 'Магазин Forfolks. Мы производим бетонные горшки и кашпо, бетонные вазы, бетонные подсвечники, латунные подсвечники, бетонные подставки и подносы ручной работы'
+        }, {
+          name: 'og:Description',
+          content: 'Магазин Forfolks. Мы производим бетонные горшки и кашпо, бетонные вазы, бетонные подсвечники, латунные подсвечники, бетонные подставки и подносы ручной работы'
+        }]
+      }
+    },
     {
       path: '/store/:type',
       name: 'store',
