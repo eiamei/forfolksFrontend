@@ -182,7 +182,14 @@
   {
     "group": "stand-cone-s",
     "selectableProperty": [{
-      "value": "black-marble",
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-cone-s",
+    "selectableProperty": [{
+      "value": "moonstone",
       "name": "color"
     }]
   },
@@ -253,11 +260,27 @@
     }]
   },
   {
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
+    "selectableProperty": [{
+      "value": "khaki",
+      "name": "color"
+    }]
+  },
+  {
     "name": "Leaf",
     "rootPath": "panno-leaf",
     "type": "panno",
     "category": ["panno"],
-    "desc": "Милейшее панно с узором в виде листьев, висящих на ветке орешника.",
+    "desc": "Милейшее панно с узором в виде листьев, висящих на ветке орешника. <br><br> В каждом панно листья и их длинна могут немного отличаться. Точное воспроизведение невозможно.",
     "metaDesc": "",
     "shortDesc": "",
     "itemProperty": {
@@ -291,13 +314,6 @@
     "group": "tray-tray",
     "selectableProperty": [{
       "value": "moonstone",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "tray-tray",
-    "selectableProperty": [{
-      "value": "powder",
       "name": "color"
     }]
   },
@@ -354,6 +370,27 @@
     "group": "vase-modern",
     "selectableProperty": [{
       "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "selectableProperty": [{
+      "value": "khaki",
       "name": "color"
     }]
   },
