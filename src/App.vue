@@ -32,34 +32,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "./assets/Styles/_globals";
-  @import "assets/styles/colors";
-  .app {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-  }
-  html {
-    font-size: 16px;
-    background-color: white;
-    @media screen and (max-width: 1400px) {
-      font-size: 15px;
-    }
-    @media screen and (max-width: 1200px) {
-      font-size: 14px;
-    }
-    @media screen and (max-width: 1000px) {
-      font-size: 12px;
-    }
-    @media screen and (max-width: 800px) {
-      font-size: 11px;
-    }
-    @media screen and (max-width: 600px) {
-      font-size: 10px;
-    }
-    @media screen and (max-width: 400px) {
-      font-size: 9px;
-    }
-  }
+  @import "assets/styles/globals";
 </style>
