@@ -25,7 +25,7 @@
 
 <script>
 import BagItem from '../components/BagItem';
-import {PROMO} from '../Core/Constants/Globals';
+import {PROMO} from '../constants/Globals';
 export default {
   name: 'Bag',
   components: {BagItem},

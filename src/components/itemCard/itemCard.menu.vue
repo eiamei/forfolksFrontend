@@ -4,7 +4,7 @@
       <section style="display: flex">
         <h2 class="item-bottom-menu__model">{{item.name}}</h2>
         <button class="item-bottom-menu__info-button" @click="toggleInfo" title="О товаре">
-          <img src="../../assets/svg/info.svg" class="item-bottom-menu__info-icon">
+          <img src="../../assets/svg/info.svg" class="item-bottom-menu__info-icon" alt="bottom menu">
         </button>
       </section>
       <section v-for="prop in properties" :key="prop.name + prop.selected" class="item-bottom-menu__property">
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Dropdown2 from '../../Core/Components/UI/Dropdown2';
+import Dropdown2 from '../Dropdown2';
 import slugify from 'slugify';
 export default {
   name: 'ItemCardMenu',
@@ -41,7 +41,7 @@ export default {
         return this.item.rootPath === item.rootPath;
       });
       if (sameGroupItems) {
-        let properties = {}
+        let properties = {};
         sameGroupItems.forEach((item, itemIndex) => {
           item.selectableProperty.forEach((property, propertyIndex) => {
             if (!properties[property.name]) properties[property.name] = {

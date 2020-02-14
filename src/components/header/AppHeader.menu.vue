@@ -10,7 +10,7 @@
           <p class="header-menu__text">{{$t(menuText)}}</p>
         </template>
         <app-button class="header-menu__button" v-if="isOpen">
-          <img src="../../../assets/svg/closeIcon.svg" alt="close icon"/>
+          <img src="../../assets/svg/closeIcon.svg" alt="close icon"/>
         </app-button>
       </section>
       <nav class="menu-container" v-if="isOpen">
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-  import AppButton from '../UI/AppButton';
+  import AppButton from '../AppButton';
 
   export default {
     name: 'appHeaderMenu',

@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import AppButton from '../../../Core/Components/UI/AppButton';
+import AppButton from '../../AppButton';
 export default {
   name: 'PaymentUserInfo',
   components: {AppButton},

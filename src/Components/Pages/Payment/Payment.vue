@@ -16,7 +16,7 @@
 <script>
   import PaymentUserInfo from './PaymentUserInfo';
   import PaymentCart from './PaymentCart';
-  import {PROMO} from '../../../Core/Constants/Globals';
+  import {PROMO} from '../../../constants/Globals';
 
   export default {
     name: 'PaymentPage',

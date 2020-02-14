@@ -1,5 +1,5 @@
-import groups from '../../Constants/Groups';
-import products from '../../Constants/Products';
+import groups from '../../../constants/Groups';
+import products from '../../../constants/Products';
 
 const storeActions = {
   loadStoreData ({commit, dispatch}) {
@@ -11,11 +11,10 @@ const storeActions = {
     let prepearedItems = state.products.map(function (item) {
       try {
         if (state.groups[item.group])
-          return Object.assign({}, state.groups[item.group], item)
+          return Object.assign({}, state.groups[item.group], item);
         else
           return Object.assign({}, item)
       } catch (e) {
-        console.warn(e);
         return undefined;
       }
     }).filter(function (item) { return item !== undefined});

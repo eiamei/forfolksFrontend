@@ -4,9 +4,9 @@ import Router from 'vue-router';
 import VueScrollTo from 'vue-scrollto';
 import VeeValidate from 'vee-validate';
 
-import router from './Core/Router';
-import store from './Core/Store';
-import i18n from './Core/Translation/i18n';
+import router from './services/Router';
+import store from './services/Store';
+import i18n from './services/Translation/i18n';
 import vuescroll from 'vue-scroll'
 
 Vue.use(vuescroll)

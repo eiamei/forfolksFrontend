@@ -1,7 +1,7 @@
 <template>
   <section class="drop-down-container">
     <button class="drop-down-button" @blur="close" @click="toggleOpenState">
-      <p class="drop-down-button__text">{{$t(`${translateNamespace ? translateNamespace + 's.' : ''}${options[value]}`)}}</p>
+      <span class="drop-down-button__text">{{$t(`${translateNamespace ? translateNamespace + 's.' : ''}${options[value]}`)}}</span>
     </button>
     <ul :class="dropDownClass" aria-label="submenu" @click="select">
       <li v-for="(option, index) in options" :key="option" :data-index="index">
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "../../../assets/styles/colors";
+  @import "../assets/styles/colors";
   .drop-down-container {
     position: relative;
     display: flex;

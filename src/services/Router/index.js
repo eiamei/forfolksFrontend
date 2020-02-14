@@ -1,6 +1,6 @@
 import Router from 'vue-router';
 // import slugify from 'slugify';
-import ruTranslate from '../../Core/Translation/ru';
+import ruTranslate from '../Translation/ru';
 
 const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store');
 const Item = () => import(/* webpackChunkName: "item-page" */'../../components/itemCard/ItemCard');

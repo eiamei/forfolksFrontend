@@ -13,9 +13,9 @@
 
 <script>
   import AppHeaderMenu from './AppHeader.menu';
-  import ForfolksLogo from '../UI/Icons/Logo';
-  import Bag from '../UI/Icons/Bag';
-  import BagFull from '../UI/Icons/BagFull';
+  import ForfolksLogo from '../Icons/Logo';
+  import Bag from '../Icons/Bag';
+  import BagFull from '../Icons/BagFull';
   export default {
     name: 'app-header',
     components: {BagFull, Bag, ForfolksLogo, AppHeaderMenu},
@@ -35,6 +35,7 @@
       headerClass () {
         return {
           'header': true,
+          'z-index__top--header': true,
           'header--white': this.$route.name === 'bag' || this.$route.name === 'payment' ||
             this.$route.name === 'about' || this.$route.name === 'delivery' || this.$route.name === 'landing'
         }
@@ -44,7 +45,8 @@
 </script>
 
 <style lang="scss">
-  @import '../../../assets/styles/colors';
+  @import '../../assets/styles/colors';
+  @import 'src/assets/styles/z-index';
   .header {
     position: fixed;
     display: flex;
@@ -53,7 +55,6 @@
     width: calc(100% - 2rem);
     top: 0;
     padding: 0.5rem 1rem;
-    z-index: 9999;
     &--white {
       background: white;
     }
@@ -82,10 +83,10 @@
       height: 1.75rem;
       transition: all .3s;
       &--empty {
-        background: url("../../../assets/svg/bag-empty.svg") no-repeat;
+        background: url("../../assets/svg/bag-empty.svg") no-repeat;
       }
       &--filled {
-        background: url("../../../assets/svg/bag-filled.svg") no-repeat;
+        background: url("../../assets/svg/bag-filled.svg") no-repeat;
       }
     }
     &__qty {

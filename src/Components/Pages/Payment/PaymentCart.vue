@@ -20,7 +20,7 @@
 </template>
 
 <script>
-  import {PROMO} from '../../../Core/Constants/Globals';
+  import {PROMO} from '../../../constants/Globals';
   import slugify from 'slugify';
 
   export default {
