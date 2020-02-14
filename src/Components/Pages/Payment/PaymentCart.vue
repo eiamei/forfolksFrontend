@@ -3,12 +3,9 @@
     <div class="cart-item" v-for="(item, key) in bag" :item="item" :key="key">
       <img class="cart-item__image" :src="itemImage(item)"/>
       <div class="cart-item__info">
-        <p class="cart-item__name">{{$t(`items.${item.type}`)}} {{item.name}} {{item.model}}</p>
+        <p class="cart-item__name">{{item.name}}</p>
         <p class="cart-item__color">
-          {{$t(`colors.${item.color}`)}}
-          <template v-if="item.variant">
-            , {{$t(`variants.${item.variant}`)}}
-          </template>
+          <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name !== 'model' ? $t(`${prop.name}s.${prop.value}`) : prop.value}}</template>
         </p>
       </div>
       <div  class="cart-item__price">{{+item.price * +item.qty}}&thinsp;P</div>
@@ -16,23 +13,25 @@
     </div>
     <span class="cart-info__total">
       <p>Итого:</p>
-      <p v-if="!isPromo">{{total}} ₽</p>
+      <p v-if="!isPromo && !isConstantDiscount">{{total}} ₽</p>
       <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total}}</span> {{promoPrice}} ₽</p>
     </span>
   </div>
 </template>
 
 <script>
-  import {PROMO} from '../../../Core/Constants/Globals';
+  import {PROMO} from '../../../constants/Globals';
+  import slugify from 'slugify';
 
   export default {
     name: 'PaymentCart',
-    data () {
-      return {
-        isPromo: localStorage.getItem('ip')
-      }
-    },
     computed: {
+      isPromo () {
+        return ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) && localStorage.getItem('ip');
+      },
+      isConstantDiscount () {
+        return (this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL);
+      },
       bag () {
         return this.$store.state.bag.bag;
       },
@@ -44,16 +43,22 @@
         return total;
       },
       promoPrice () {
-        return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
+        if (this.isConstantDiscount)
+          return Math.round(this.total * PROMO.CONSTANT_DISCOUNT);
+        else if (this.isPromo)
+          return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
+        return this.total;
       }
     },
     methods: {
       itemImage (item) {
         if (item) {
-          const name = item.name.toLowerCase();
-          const model = item.model.toLowerCase();
-          const type = item.type.toLowerCase();
-          return require(`@/assets/images/storeIcons/${type}-${name}${model ? '-' + model : ''}.jpg`);
+          let id = item.rootPath;
+          if (item.props.length)
+            item.props.forEach(property => {
+              id += `-${slugify(property.value.toLowerCase())}`
+            });
+          return require(`@/assets/images/store/${id}-small.jpg`);
         }
         return '';
       }

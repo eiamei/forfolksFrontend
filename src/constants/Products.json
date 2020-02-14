@@ -1,0 +1,474 @@
+[
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "pot_modern_m",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-basic-s",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-basic-s",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-basic-s",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-basic-s",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-basic-s",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "hanging-constellation",
+    "name": "Ursa Major",
+    "desc": "С этим подвесом в дом проникает неиного звездного волшебства. Латунные звезды на хлопковых нитях образуют созвездие \"Большая медведица\"",
+    "metaDesc": "Подвес в форме созвездия большая медведица. Хлопок, латунь, орешник.",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "value": "Ursa Major",
+      "name": "model"
+    }],
+    "itemProperty": {
+      "size": {
+        "height": 60,
+        "width": 30
+      },
+      "material": ["cotton", "brass"],
+      "price": "700"
+    }
+  },
+  {
+    "group": "hanging-constellation",
+    "name": "Cassiopeia",
+    "desc": "С этим подвесом в дом проникает неиного звездного волшебства. Латунные звезды на хлопковых нитях образуют созвездие \"Кассиопея\"",
+    "metaDesc": "Подвес в форме созвездия кассиопея. Хлопок, латунь, орешник.",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "value": "Cassiopeia",
+      "name": "model"
+    }],
+    "itemProperty": {
+      "size": {
+        "height": 40,
+        "width": 30
+      },
+      "material": ["cotton", "brass"],
+      "price": "500"
+    }
+  },
+  {
+    "group": "minibouquet-blum",
+    "name": "Blum Matin",
+    "selectableProperty": [{
+      "value": "Matin",
+      "name": "model"
+    }]
+  },
+  {
+    "group": "minibouquet-blum",
+    "name": "Blum nuit",
+    "selectableProperty": [{
+      "value": "Nuit",
+      "name": "model"
+    }]
+  },
+  {
+    "group": "minibouquet-blum",
+    "name": "Blum jour",
+    "selectableProperty": [{
+      "value": "Jour",
+      "name": "model"
+    }]
+  },
+  {
+    "group": "minibouquet-blum",
+    "name": "Blum soir",
+    "selectableProperty": [{
+      "value": "Soir",
+      "name": "model"
+    }]
+  },
+  {
+    "name": "Blum midi",
+    "rootPath": "bouquet-blum-midi",
+    "type": "bouquet",
+    "category": ["bouquet"],
+    "desc": "Хотите сделать подарок? Небольшой букет из сухоцветов прекрасно подойдет: он долговечен и не требует специального ухода. Его запах будет долго радовать, а цветы будут напоминать о лете, даже в самый холодный и пасмурный день. <br><br> В составе букета : фаларис, лагурус, пшеница, гликсия. <br><br> Цвет может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов.",
+    "metaDesc": "Нежный букет из сухоцветов. Лагурос, Гликсия, Фаларис, Пшеница. Не требует специального ухода.",
+    "shortDesc": "Легок, как полдень",
+    "itemProperty": {
+      "size": {
+        "height": 25,
+        "width": 11
+      },
+      "material": [],
+      "weight": 10,
+      "price": "630"
+    },
+    "selectableProperty": []
+  },
+  {
+    "group": "stand-cone-s",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-cone-s",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-cone-s",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-cone-s",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "stand-cone-s",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "name": "Spole",
+    "rootPath": "hanging-spole",
+    "type": "hanging",
+    "category": ["hanging"],
+    "desc": "Подвес из хлопка в технике макраме для небольших горшочков. Hang дополнен удобным деревянным кольцом, которое в комбинации с металлическим крючком позволяет подвесить горшочек практически куда угодно. <br><br> <span>Отлично сочетается с нашим горшочком <a href='/product/pot-modern-m/white' target=\"_blank\">MODERN</a> и кашпо <a href='/product/cup-mild/white' target=\"_blank\">Mild</a>.</span> <br><br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов. <br><br> Цена указана без горшочка. Крючок приобретается отдельно.",
+    "metaDesc": "Подвес в технике макраме для небольших бетонных, пластиковых и терракотовых горшков",
+    "shortDesc": "Когда закончилось место на столе ",
+    "itemProperty": {
+      "size": {
+        "height": 20
+      },
+      "material": ["cotton"],
+      "weight": 10,
+      "price": "450"
+    },
+    "selectableProperty": []
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "name": "Swiss",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "name":  "Swiss",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "name":  "Swiss",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "name": "Denmark",
+    "selectableProperty": [{
+      "value": "khaki",
+      "name": "color"
+    }]
+  },
+  {
+    "name": "Leaf",
+    "rootPath": "panno-leaf",
+    "type": "panno",
+    "category": ["panno"],
+    "desc": "Милейшее панно с узором в виде листьев, висящих на ветке орешника. <br><br> В каждом панно листья и их длинна могут немного отличаться. Точное воспроизведение невозможно.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": 70,
+        "width": 30
+      },
+      "material": ["cotton"],
+      "price": "1100"
+    },
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "tray-tray",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "tray-tray",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "tray-tray",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "tray-tray",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candle-wax-drops",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "selectableProperty": [{
+      "value": "khaki",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  }
+]
