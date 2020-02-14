@@ -122,7 +122,9 @@
       margin-right: 0.25rem;
     }
     &__text {
-      margin: 0;
+      position: fixed;
+      left: 4.5rem;
+      top: 0;
       color: black;
       cursor: pointer;
     }

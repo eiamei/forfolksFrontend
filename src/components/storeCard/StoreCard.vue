@@ -6,21 +6,10 @@
     <section class="store-card-description">
       <section>
         <p class="store-card-description__title">{{item.name}}</p>
-        <span class="store-card-description__type-container">
+        <div class="store-card-description__type-container">
           <p class="store-card-description__type">{{$t(`items.${item.type.toLowerCase()}`)}}</p>
           <p class="store-card-description__price">{{item.itemProperty.price}}&thinsp;р</p>
-        </span>
-<!--        <section class="store-card-description-colors">-->
-<!--          <router-link-->
-<!--                  class="store-card-description-colors__circle"-->
-<!--                  v-for="color in colors"-->
-<!--                  :title="color"-->
-<!--                  :class="getColor(color)"-->
-<!--                  :key="color"-->
-<!--                  :to="getLink(color)"-->
-<!--          >-->
-<!--          </router-link>-->
-<!--        </section>-->
+        </div>
       </section>
     </section>
   </article>
@@ -60,6 +49,13 @@
             path += `-${slugify(property.value.toLowerCase())}`
           });
         return require(`@/assets/images/store/${path}-small.jpg`);
+      },
+      alt () {
+      //   const name = this.item.name.toLowerCase();
+      //   const model = this.item.model.toLowerCase();
+      //   const type = this.item.type.toLowerCase();
+      //   return `${this.$t(`items.${type}`)} ${name} ${model}`
+        return '';
       }
     },
     methods: {
