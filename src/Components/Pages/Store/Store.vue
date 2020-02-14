@@ -101,7 +101,7 @@
 </script>
 
 <style lang="scss">
-  @import '../../../assets/styles/_colors';
+  @import '../../../assets/styles/colors';
   .store {
     width: 100%;
   }

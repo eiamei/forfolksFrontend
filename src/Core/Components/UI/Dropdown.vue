@@ -120,7 +120,7 @@
 </script>
 
 <style lang="scss">
-  @import "../../../assets/styles/_colors";
+  @import "../../../assets/styles/colors";
   .dropdown {
     position: relative;
     background: inherit;

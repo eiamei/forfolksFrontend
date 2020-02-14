@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "../../../assets/styles/_colors";
+  @import "../../../assets/styles/colors";
   .drop-down-container {
     position: relative;
     display: flex;

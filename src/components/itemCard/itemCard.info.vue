@@ -12,7 +12,7 @@
           <p v-for="prop in param" class="item-info-params__item" :key="prop">{{$t(`material.${prop}`)}}</p>
         </div>
         <template v-else-if="key !== 'price'">
-          {{$t(`common.${key}`)}}: {{param}}
+          {{$t(`common.${key}`)}}: <span v-html="param"></span>
         </template>
       </li>
     </ul>

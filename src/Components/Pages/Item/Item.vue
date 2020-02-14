@@ -153,7 +153,7 @@
 </script>
 
 <style lang="scss">
-  @import '../../../assets/styles/_colors';
+  @import '../../../assets/styles/colors';
   .item-info-popup {
     position: fixed;
     width: 100%;

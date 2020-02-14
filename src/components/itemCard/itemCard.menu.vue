@@ -99,6 +99,7 @@ export default {
 
   .item-bottom-menu {
     background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
     position: fixed;
     bottom: 0;
     left: 0;

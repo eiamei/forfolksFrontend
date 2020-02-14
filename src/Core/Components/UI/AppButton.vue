@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../../../assets/styles/_colors';
+  @import '../../../assets/styles/colors';
   .button {
     cursor: pointer;
     outline: transparent;
