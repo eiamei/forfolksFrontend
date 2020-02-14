@@ -39,14 +39,16 @@
               price = Math.round(price * PROMO.CONSTANT_DISCOUNT);
             else if (this.isPromo)
               price = Math.round(price * PROMO.DISCOUNT_PERCENT);
-            return encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
+            let encoded = encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
               name: ${this.$store.state.bag.bag[key].name}
-              model: ${this.$store.state.bag.bag[key].model}
-              color: ${this.$store.state.bag.bag[key].color}
-              variant: ${this.$store.state.bag.bag[key].variant}
               qty: ${this.$store.state.bag.bag[key].qty}
               price: ${price}
-            `)
+            `);
+            if (this.$store.state.bag.bag[key].props.length)
+              this.$store.state.bag.bag[key].props.forEach(function (prop) {
+                encoded += encodeURIComponent(`${prop.name}: ${prop.value}`)
+              });
+          return encoded;
         }
         ).join('&');
       },

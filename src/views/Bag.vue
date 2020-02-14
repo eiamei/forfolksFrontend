@@ -61,8 +61,8 @@ export default {
   },
   methods: {
     checkPromo () {
-      if (this.promo === 'BLACKFRIDAY') {
-        if ((new Date()) > 1575190799000) {
+      if (this.promo === PROMO.CODE) {
+        if ((new Date()) > PROMO.PROMO_DISCOUNT_TILL) {
           this.isTooLate = true;
         } else {
           localStorage.setItem('ip', JSON.stringify(true));
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../assets/styles/colors';
+  @import 'src/assets/styles/colors';
   .bag-container {
     margin: 40px 0 0 0;
     width: 100%;
