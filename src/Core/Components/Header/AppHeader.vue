@@ -36,7 +36,7 @@
         return {
           'header': true,
           'header--white': this.$route.name === 'bag' || this.$route.name === 'payment' ||
-            this.$route.name === 'about' || this.$route.name === 'delivery'
+            this.$route.name === 'about' || this.$route.name === 'delivery' || this.$route.name === 'landing'
         }
       }
     }
@@ -44,49 +44,43 @@
 </script>
 
 <style lang="scss">
-  @import '../../../assets/styles/_colors';
-  @import '../../../assets/styles/atomic-common';
-  @import '../../../assets/styles/z-index';
+  @import '../../../assets/styles/colors';
   .header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 2rem);
+    top: 0;
+    padding: 0.5rem 1rem;
+    z-index: 9999;
     &--white {
-      position: fixed;
-      width: 100vw;
-      height: 40px;
-      top: 0;
-      left: 0;
       background: white;
     }
   }
 
   .header-menu-container {
-    @extend .a-position__fixed;
-    @extend .z-index__top--header;
     top: 0;
     left: 0;
   }
   .header-logo {
-    @extend .a-position__fixed;
-    @extend .z-index__top--header;
-    top: 8px;
+    top: 0.5rem;
     left: calc(50% - 51px);
     .forfolks-logo {
-      width: 102px;
-      height: 32px;
+      width: 6rem;
+      height: 2rem;
     }
   }
   .header-bag {
-    @extend .a-position__fixed;
-    @extend .a-flex;
-    @extend .z-index__top--header;
-    top: 12px;
-    right: 16px;
+    display: flex;
+    top: 0.75rem;
+    right: 1rem;
     text-decoration: none;
     &__icon {
-      @extend .a-position__relative;
-      width: 28px;
-      height: 28px;
+      position: relative;
+      width: 1.75rem;
+      height: 1.75rem;
       transition: all .3s;
-      margin-right: 2px;
       &--empty {
         background: url("../../../assets/svg/bag-empty.svg") no-repeat;
       }
@@ -95,49 +89,8 @@
       }
     }
     &__qty {
-      margin: 4px 0 0 0;
+      margin: 0.25rem 0 0 0;
       color: black;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    .header-logo {
-      top: 8px;
-      left: calc(50% - 40px);
-      .forfolks-logo {
-        width: 80px;
-        height: 25px;
-      }
-    }
-    .header-bag {
-      top: 12px;
-      right: 16px;
-      &__icon {
-        width: 20px;
-        height: 20px;
-      }
-      &__qty {
-        margin: 2px 0 0 0;
-      }
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .header-logo {
-      top: 8px;
-      left: calc(50% - 30px);
-      .forfolks-logo {
-        width: 60px;
-        height: 19px;
-      }
-    }
-    .header-bag {
-      right: 8px;
-      &__icon {
-        width: 16px;
-        height: 16px;
-      }
-      &__qty {
-        margin: 0;
-      }
     }
   }
 </style>

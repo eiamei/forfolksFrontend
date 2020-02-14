@@ -41,9 +41,6 @@
           to: '/store/all',
           text: 'items.alls'
         }, {
-          to: '/store/pot',
-          text: 'items.pots'
-        }, {
           to: '/store/cachepot',
           text: 'items.cachepots'
         }, {
@@ -67,12 +64,7 @@
         }, {
           to: '/store/candle',
           text: 'items.candles'
-        }
-        // , {
-        //   to: '/store/season',
-        //   text: 'items.seasons'
-        // }
-        ],
+        }],
         links: [{
           to: '/delivery',
           text: 'links.delivery'
@@ -106,13 +98,12 @@
 <style lang="scss">
 
   .header-menu {
-    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px;
     &--open {
       background-color: rgba(0, 0, 0, .8);
+      backdrop-filter: blur(4px);
       width: 100%;
       height: 100vh;
     }
@@ -121,13 +112,14 @@
       display: flex;
       background-color: transparent;
       border: none;
+      padding: 0;
     }
     &__circle {
-      width: 12px;
-      height: 12px;
+      width: 0.75rem;
+      height: 0.75rem;
       background-color: black;
-      border-radius: 8px;
-      margin-right: 4px;
+      border-radius: 0.5rem;
+      margin-right: 0.25rem;
     }
     &__text {
       margin: 0;
@@ -141,14 +133,14 @@
     .menu-catalogue, .menu-links {
       width: 220px;
       padding: 0;
-      margin: 4px 0 0 0;
+      margin: 0.25rem 0 0 0;
       &__item {
         list-style: none;
-        margin-top: 4px;
+        margin-top: 0.25rem;
       }
       &__text {
         font-weight: 300;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: white;
         text-decoration: none;
         &:hover {
@@ -157,7 +149,7 @@
       }
     }
     .menu-catalogue {
-      margin-left: 8px;
+      margin-left: 0.5rem;
     }
     .menu-links {
       width: 300px;
@@ -165,52 +157,8 @@
         font-weight: 700;
         &:hover {
           font-weight: 700;
-          font-size: 25px;
+          font-size: 1.5rem;
         }
-      }
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    .header-menu {
-      padding: 14px 16px;
-      &__circle {
-        width: 8px;
-        height: 8px;
-      }
-    }
-
-    .menu-container {
-      .menu-catalogue, .menu-links {
-        width: 180px;
-        &__text {
-          font-size: 16px;
-        }
-      }
-      .menu-links {
-        &__text {
-          &:hover {
-            font-size: 17px;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .header-menu {
-      padding: 14px 8px;
-      &__text {
-        display: none;
-      }
-    }
-
-    .menu-container {
-      flex-direction: column;
-      .menu-catalogue {
-      }
-      .menu-links {
-        margin-left: 8px;
       }
     }
   }
