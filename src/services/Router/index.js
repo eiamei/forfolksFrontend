@@ -1,5 +1,6 @@
 import Router from 'vue-router';
-// import slugify from 'slugify';
+import Vue from 'vue';
+
 import ruTranslate from '../Translation/ru';
 
 const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store');
@@ -9,6 +10,8 @@ const Payment = () => import(/* webpackChunkName: "payment-page" */'../../compon
 const About = () => import(/* webpackChunkName: "about-page" */'../../components/Pages/About/About');
 const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../components/Pages/Delivery/Delivery');
 const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/Landing');
+
+Vue.use(Router);
 
 let config = {
   mode: 'history',
