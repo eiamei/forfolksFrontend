@@ -60,19 +60,13 @@
             path += `-${slugify(property.value.toLowerCase())}`
           });
         return require(`@/assets/images/store/${path}-small.jpg`);
-      },
-      alt () {
-      //   const name = this.item.name.toLowerCase();
-      //   const model = this.item.model.toLowerCase();
-      //   const type = this.item.type.toLowerCase();
-      //   return `${this.$t(`items.${type}`)} ${name} ${model}`
       }
     },
     methods: {
-      getColor (color) {
+      getColor () {
         // return `store-card-description-colors__circle--${color}`
       },
-      getLink (color) {
+      getLink () {
         let path = this.item.rootPath;
         if (this.item.selectableProperty.length)
           this.item.selectableProperty.forEach(property => {
