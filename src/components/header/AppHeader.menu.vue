@@ -101,12 +101,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    &--open {
-      background-color: rgba(0, 0, 0, .8);
-      backdrop-filter: blur(4px);
-      width: 100%;
-      height: 100vh;
-    }
+    /*&--open {*/
+    /*  background-color: rgba(0, 0, 0, .8);*/
+    /*  backdrop-filter: blur(4px);*/
+    /*  width: 100%;*/
+    /*  height: 100vh;*/
+    /*}*/
 
     &__button {
       display: flex;
@@ -131,7 +131,14 @@
   }
 
   .menu-container {
+    position: fixed;
     display: flex;
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(4px);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
     .menu-catalogue, .menu-links {
       width: 220px;
       padding: 0;
