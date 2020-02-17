@@ -2,16 +2,14 @@
   <article class="store-card">
     <router-link :to="getLink()" class="store-card__link">
       <img ref='image' :src="itemImage" :alt="alt" :width="width" :height="height" @load="load">
-    </router-link>
-    <section class="store-card-description">
-      <section>
+      <section class="store-card-description">
         <p class="store-card-description__title">{{item.name}}</p>
         <div class="store-card-description__type-container">
           <p class="store-card-description__type">{{$t(`items.${item.type.toLowerCase()}`)}}</p>
           <p class="store-card-description__price">{{item.itemProperty.price}}&thinsp;р</p>
         </div>
       </section>
-    </section>
+    </router-link>
   </article>
 </template>
 
