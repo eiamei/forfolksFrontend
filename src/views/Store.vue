@@ -85,6 +85,12 @@ export default {
     },
     createMap () {
       for (let i = 0, len = this.items.length; i < len;) {
+        if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && this.widesMap[i + 2]) {
+          this.items[i].width = this.items[i + 1].width = this.windowWidth / 2 - 4;
+          this.items[i].height = this.items[i + 1].height = this.windowWidth / 4  * 3 - 4;
+          i += 2;
+          continue;
+        }
         if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && !this.widesMap[i + 2]) {
           this.items[i].width = this.items[i + 1].width = this.items[i + 2].width = this.windowWidth / 3 - 4;
           this.items[i].height = this.items[i + 1].height = this.items[i + 2].height = this.windowWidth / 2 - 4;
