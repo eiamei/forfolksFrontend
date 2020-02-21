@@ -64,7 +64,7 @@ export default {
     cotton: 'Cotton',
     jute: 'Jute',
     pumpkin: 'Pumpkin',
-    one_color: 'One color'
+    one_color: 'One color',
     powder: 'Powder',
     moonstone: 'Moon stone'
   },

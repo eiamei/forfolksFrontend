@@ -9,8 +9,8 @@
           </app-button>
           <p class="header-menu__text">{{$t(menuText)}}</p>
         </template>
-        <app-button class="header-menu__button" v-if="isOpen">
-          <img src="../../assets/svg/closeIcon.svg" alt="close icon"/>
+        <app-button class="header-menu__close-button" v-if="isOpen">
+          <img src="../../assets/svg/closeIcon.svg" alt="close icon" width="100%" height="100%"/>
         </app-button>
       </section>
       <nav class="menu-container" v-if="isOpen">
@@ -101,12 +101,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    &--open {
-      background-color: rgba(0, 0, 0, .8);
-      backdrop-filter: blur(4px);
-      width: 100%;
-      height: 100vh;
-    }
 
     &__button {
       display: flex;
@@ -114,24 +108,42 @@
       border: none;
       padding: 0;
     }
+    &__close-button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      z-index: 9999;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
     &__circle {
       width: 0.75rem;
       height: 0.75rem;
       background-color: black;
-      border-radius: 0.5rem;
+      border-radius: 4rem;
       margin-right: 0.25rem;
     }
     &__text {
-      margin: 0;
+      position: fixed;
+      left: 4.5rem;
+      top: 0;
       color: black;
       cursor: pointer;
     }
   }
 
   .menu-container {
+    position: fixed;
     display: flex;
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(4px);
+    left: 0;
+    top: 0;
+    width: 200vw;
+    height: 200vh;
+    padding: 2.5rem 0.5rem;
     .menu-catalogue, .menu-links {
-      width: 220px;
+      width: 14rem;
       padding: 0;
       margin: 0.25rem 0 0 0;
       &__item {

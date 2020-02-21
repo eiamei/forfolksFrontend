@@ -85,41 +85,47 @@ export default {
     },
     createMap () {
       for (let i = 0, len = this.items.length; i < len;) {
+        if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && this.widesMap[i + 2]) {
+          this.items[i].width = this.items[i + 1].width = this.windowWidth / 2 - 5;
+          this.items[i].height = this.items[i + 1].height = this.windowWidth / 4  * 3 - 5;
+          i += 2;
+          continue;
+        }
         if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && !this.widesMap[i + 2]) {
-          this.items[i].width = this.items[i + 1].width = this.items[i + 2].width = this.windowWidth / 3 - 4;
-          this.items[i].height = this.items[i + 1].height = this.items[i + 2].height = this.windowWidth / 2 - 4;
+          this.items[i].width = this.items[i + 1].width = this.items[i + 2].width = this.windowWidth / 3 - 5;
+          this.items[i].height = this.items[i + 1].height = this.items[i + 2].height = this.windowWidth / 2 - 5;
           i += 3;
           continue;
         }
         if (this.widesMap[i] && (i + 1) < len && this.widesMap[i + 1]) {
-          this.items[i].width = this.items[i + 1].width = this.windowWidth / 2 - 4;
-          this.items[i].height = this.items[i + 1].height = this.windowWidth / 3 - 4;
+          this.items[i].width = this.items[i + 1].width = this.windowWidth / 2 - 5;
+          this.items[i].height = this.items[i + 1].height = this.windowWidth / 3 - 5;
           i += 2;
           continue;
         }
         if (this.widesMap[i] && (i + 1) < len && !this.widesMap[i + 1]) {
-          this.items[i].width = this.windowWidth / 3 * 2 - 4;
-          this.items[i].height = this.windowWidth / 2 - 4;
-          this.items[i + 1].width = this.windowWidth / 3 - 4;
-          this.items[i + 1].height = this.windowWidth / 2 - 4;
+          this.items[i].width = this.windowWidth / 3 * 2 - 6;
+          this.items[i].height = this.windowWidth / 2 - 5;
+          this.items[i + 1].width = this.windowWidth / 3 - 5;
+          this.items[i + 1].height = this.windowWidth / 2 - 5;
           i += 2;
           continue;
         }
         if (!this.widesMap[i] && (i + 1) < len && this.widesMap[i + 1]) {
-          this.items[i].width = this.windowWidth / 3 - 4;
-          this.items[i].height = this.windowWidth / 2 - 4;
-          this.items[i + 1].width = this.windowWidth / 3 * 2 - 4;
-          this.items[i + 1].height = this.windowWidth / 2 - 4;
+          this.items[i].width = this.windowWidth / 3 - 5;
+          this.items[i].height = this.windowWidth / 2 - 5;
+          this.items[i + 1].width = this.windowWidth / 3 * 2 - 6;
+          this.items[i + 1].height = this.windowWidth / 2 - 5;
           i += 2;
           continue;
         }
         if (this.widesMap[i]) {
-          this.items[i].width = this.windowWidth - 4;
-          this.items[i].height = this.windowWidth / 3 * 2 - 4;
+          this.items[i].width = this.windowWidth - 5;
+          this.items[i].height = this.windowWidth / 3 * 2 - 5;
         }
         if (!this.widesMap[i]) {
-          this.items[i].width = this.windowWidth / 3 - 4;
-          this.items[i].height = this.windowWidth / 2 - 4;
+          this.items[i].width = this.windowWidth / 3 - 5;
+          this.items[i].height = this.windowWidth / 2 - 5;
         }
         i++
       }

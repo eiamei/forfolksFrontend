@@ -17,7 +17,7 @@
           <p v-if="!isPromo && !isConstantDiscount">{{total}} ₽</p>
           <p v-else><span style="text-decoration: line-through; font-size: 14px; margin: 0 8px">{{total}}</span> {{promoPrice}} ₽</p>
         </span>
-        <router-link class="bag-total__buy-button" to="payment">Оплатить</router-link>
+        <router-link class="bag-total__buy-button" to="payment">Оформить заказ</router-link>
       </section>
     </section>
   </article>
@@ -94,7 +94,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     @media screen and (max-width: 1264px) {
       width: calc(100% - 64px);
       padding: 0 32px;
@@ -111,8 +111,8 @@ export default {
     }
   }
   .bag-total {
-    font-size: 24px;
-    margin: 16px 0 0 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -122,17 +122,15 @@ export default {
     }
     &__promo-input {
       width: 190px;
-      height: 40px;
       border: 1px solid black;
-      padding: 0 8px;
+      padding: 1rem 0.5rem;
       outline: transparent;
     }
     &__promo-button {
       width: 80px;
-      height: 40px;
       border: 1px solid black;
-      margin-left: 8px;
-      padding: 0 8px;
+      margin-left: 0.5rem;
+      padding: 1rem 0.5rem;
       background: black;
       color: white;
       cursor: pointer;
@@ -141,7 +139,7 @@ export default {
       }
     }
     &__promo-success, &__promo-error {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
     &__promo-error {
       color: $regular-red;
@@ -151,8 +149,8 @@ export default {
       background: black;
       border: 1px solid black;
       box-sizing: border-box;
-      padding: 10px 0;
-      font-size: 16px;
+      padding: 1rem 0;
+      font-size: 1.25rem;
       text-decoration: none;
       text-align: center;
       color: white;
@@ -162,8 +160,7 @@ export default {
       }
       @media screen and (max-width: 600px) {
         width: 100%;
-        font-size: 12px;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
       }
     }
   }
