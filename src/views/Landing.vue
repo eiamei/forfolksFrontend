@@ -15,15 +15,17 @@
         </div>
       </section>
     </article>
+    <carousel v-if="newItems" heading="Новинки" :items="newItems"/>
     <section></section>
   </main>
 </template>
 
 <script>
 import LandingSlideshow from '../components/LandingSlideshow';
+import Carousel from '../components/Carousel';
 export default {
   name: 'Landing',
-  components: {LandingSlideshow},
+  components: {Carousel, LandingSlideshow},
   data () {
     return {
       heroText: 'Forfolks - семейная студия, создающая товары для придания особой атмосферы в вашем доме или офисе.\n' +
@@ -47,6 +49,16 @@ export default {
         text: 'Нежный и натуральный. Удивительную легкость в интерьер могут привнести изделия из хлопка, наполняя его ' +
           'уютом и теплом. В своих изделях мы используем 100% хлопок.'
       }]
+    }
+  },
+  computed: {
+    storeItems () {
+      return this.$store.state.store.items;
+    },
+    newItems () {
+      return this.storeItems.filter(function (item) {
+        return item.added && (item.added - Date.now() < 24 * 86400000);
+      })
     }
   },
   methods: {

@@ -17,7 +17,8 @@
       "material": ["concrete"],
       "weight": 500,
       "price": 530
-    }
+    },
+    "added": 0
   },
   "stand-basic-s": {
     "rootPath": "stand-basic-s",
@@ -36,7 +37,8 @@
       "material": ["concrete"],
       "weight": 150,
       "price": 350
-    }
+    },
+    "added": 0
   },
   "hanging-constellation": {
     "rootPath": "hanging-constellation",
@@ -54,7 +56,8 @@
       "material": ["cotton", "brass"],
       "weight": "",
       "price": "700"
-    }
+    },
+    "added": 1582488927000
   },
   "minibouquet-blum": {
     "rootPath": "minibouquet-blum",
@@ -72,7 +75,8 @@
       "material": [],
       "weight": 10,
       "price": "400"
-    }
+    },
+    "added": 0
   },
   "stand-cone-s": {
     "rootPath": "stand-cone-s",
@@ -90,7 +94,8 @@
       "material": ["concrete"],
       "weight": 100,
       "price": "230"
-    }
+    },
+    "added": 0
   },
   "candlestick-house-swiss": {
     "rootPath": "candlestick-house-swiss",
@@ -107,7 +112,8 @@
       "material": ["concrete"],
       "weight": 250,
       "price": "350"
-    }
+    },
+    "added": 0
   },
   "candlestick-house-denmark": {
     "rootPath": "candlestick-house-denmark",
@@ -124,7 +130,8 @@
       "material": ["concrete"],
       "weight": 150,
       "price": "350"
-    }
+    },
+    "added": 0
   },
   "tray-tray": {
     "rootPath": "tray-tray",
@@ -144,7 +151,8 @@
       "material": ["concrete"],
       "weight": 1400,
       "price": "1000"
-    }
+    },
+    "added": 0
   },
   "candle-wax-drops": {
     "rootPath": "candle-wax-drops",
@@ -158,7 +166,8 @@
       "material": ["coconutWax"],
       "weight": 200,
       "price": "100"
-    }
+    },
+    "added": 1582488927000
   },
   "vase-modern": {
     "rootPath": "vase-modern",
@@ -175,7 +184,8 @@
       "material": ["concrete"],
       "weight": 1200,
       "price": "990"
-    }
+    },
+    "added": 0
   },
   "vase-mild": {
     "rootPath": "vase-mild",
@@ -192,7 +202,8 @@
       "material": ["concrete"],
       "weight": 170,
       "price": "350"
-    }
+    },
+    "added": 1582488927000
   },
   "cup-mild": {
     "rootPath": "cup-mild",
@@ -211,7 +222,8 @@
       "material": ["concrete"],
       "weight": 650,
       "price": "850"
-    }
+    },
+    "added": 0
   },
   "bowl-mild": {
     "rootPath": "bowl-mild",
@@ -230,6 +242,7 @@
       "material": ["concrete"],
       "weight": 130,
       "price": "350"
-    }
+    },
+    "added": 0
   }
 }
