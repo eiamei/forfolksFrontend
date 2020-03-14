@@ -1,6 +1,8 @@
 <template>
-  <section class="store" :key="counter">
-    <store-card v-for="(item, index) in items" :width="item.width" :height="item.height"  :item="item" @isWide="isWide => safeRatio(index, isWide)" :key="createKey(item)"/>
+  <section style="min-height: 101vh">
+    <section class="store" :key="counter">
+      <store-card v-for="(item, index) in items" :width="item.width" :height="item.height"  :item="item" @isWide="isWide => safeRatio(index, isWide)" :key="createKey(item)"/>
+    </section>
   </section>
 </template>
 
@@ -24,9 +26,9 @@ export default {
   },
   watch: {
     windowWidth () {
+      this.containerWidth = this.$el.offsetWidth;
       if (this.loadCounter === this.items.length)
         this.createMap();
-      this.containerWidth = this.$el.offsetWidth;
     },
     '$route.params.type' (value) {
       this.loadCounter = 0;
@@ -93,48 +95,49 @@ export default {
       return key;
     },
     createMap () {
+      let dif = 5;
       for (let i = 0, len = this.items.length; i < len;) {
         if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && this.widesMap[i + 2]) {
-          this.items[i].width = this.items[i + 1].width = this.containerWidth / 2 - 5;
-          this.items[i].height = this.items[i + 1].height = this.containerWidth / 4  * 3 - 5;
+          this.items[i].width = this.items[i + 1].width = this.containerWidth / 2 - dif;
+          this.items[i].height = this.items[i + 1].height = this.containerWidth / 4  * 3 - dif;
           i += 2;
           continue;
         }
         if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && !this.widesMap[i + 2]) {
-          this.items[i].width = this.items[i + 1].width = this.items[i + 2].width = this.containerWidth / 3 - 5;
-          this.items[i].height = this.items[i + 1].height = this.items[i + 2].height = this.containerWidth / 2 - 5;
+          this.items[i].width = this.items[i + 1].width = this.items[i + 2].width = this.containerWidth / 3 - dif;
+          this.items[i].height = this.items[i + 1].height = this.items[i + 2].height = this.containerWidth / 2 - dif;
           i += 3;
           continue;
         }
         if (this.widesMap[i] && (i + 1) < len && this.widesMap[i + 1]) {
-          this.items[i].width = this.items[i + 1].width = this.containerWidth / 2 - 5;
-          this.items[i].height = this.items[i + 1].height = this.containerWidth / 3 - 5;
+          this.items[i].width = this.items[i + 1].width = this.containerWidth / 2 - dif;
+          this.items[i].height = this.items[i + 1].height = this.containerWidth / 3 - dif;
           i += 2;
           continue;
         }
         if (this.widesMap[i] && (i + 1) < len && !this.widesMap[i + 1]) {
-          this.items[i].width = this.containerWidth / 3 * 2 - 6;
-          this.items[i].height = this.containerWidth / 2 - 5;
-          this.items[i + 1].width = this.containerWidth / 3 - 5;
-          this.items[i + 1].height = this.containerWidth / 2 - 5;
+          this.items[i].width = this.containerWidth / 3 * 2 - dif;
+          this.items[i].height = this.containerWidth / 2 - dif;
+          this.items[i + 1].width = this.containerWidth / 3 - dif;
+          this.items[i + 1].height = this.containerWidth / 2 - dif;
           i += 2;
           continue;
         }
         if (!this.widesMap[i] && (i + 1) < len && this.widesMap[i + 1]) {
-          this.items[i].width = this.containerWidth / 3 - 5;
-          this.items[i].height = this.containerWidth / 2 - 5;
-          this.items[i + 1].width = this.containerWidth / 3 * 2 - 6;
-          this.items[i + 1].height = this.containerWidth / 2 - 5;
+          this.items[i].width = this.containerWidth / 3 - dif;
+          this.items[i].height = this.containerWidth / 2 - dif;
+          this.items[i + 1].width = this.containerWidth / 3 * 2 - dif;
+          this.items[i + 1].height = this.containerWidth / 2 - dif;
           i += 2;
           continue;
         }
         if (this.widesMap[i]) {
-          this.items[i].width = this.containerWidth - 5;
-          this.items[i].height = this.containerWidth / 3 * 2 - 5;
+          this.items[i].width = this.containerWidth - dif;
+          this.items[i].height = this.containerWidth / 3 * 2 - dif;
         }
         if (!this.widesMap[i]) {
-          this.items[i].width = this.containerWidth / 3 - 5;
-          this.items[i].height = this.containerWidth / 2 - 5;
+          this.items[i].width = this.containerWidth / 3 - dif;
+          this.items[i].height = this.containerWidth / 2 - dif;
         }
         i++
       }
@@ -147,7 +150,7 @@ export default {
 <style lang="scss">
   .store {
     width: 100%;
-    min-height: 101vh;
+    /*min-height: 101vh;*/
     display: flex;
     flex-wrap: wrap;
   }

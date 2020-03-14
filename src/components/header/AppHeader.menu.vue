@@ -62,8 +62,8 @@
           to: '/store/panno',
           text: 'items.panno'
         }, {
-          to: '/store/candle',
-          text: 'items.candles'
+          to: '/store/wax',
+          text: 'items.wax'
         }],
         links: [{
           to: '/delivery',

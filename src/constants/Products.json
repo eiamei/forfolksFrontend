@@ -109,54 +109,67 @@
   },
   {
     "group": "minibouquet-blum",
-    "name": "Blum Matin",
+    "name": "Blum 1",
     "selectableProperty": [{
-      "value": "Matin",
+      "value": "1",
       "name": "model"
     }]
   },
   {
     "group": "minibouquet-blum",
-    "name": "Blum nuit",
+    "name": "Blum 2",
     "selectableProperty": [{
-      "value": "Nuit",
+      "value": "2",
       "name": "model"
     }]
   },
   {
     "group": "minibouquet-blum",
-    "name": "Blum jour",
+    "name": "Blum 3",
     "selectableProperty": [{
-      "value": "Jour",
+      "value": "3",
       "name": "model"
     }]
   },
   {
     "group": "minibouquet-blum",
-    "name": "Blum soir",
+    "name": "Blum 4",
     "selectableProperty": [{
-      "value": "Soir",
+      "value": "4",
       "name": "model"
     }]
   },
   {
-    "name": "Blum midi",
-    "rootPath": "bouquet-blum-midi",
-    "type": "bouquet",
-    "category": ["bouquet"],
-    "desc": "Хотите сделать подарок? Небольшой букет из сухоцветов прекрасно подойдет: он долговечен и не требует специального ухода. Его запах будет долго радовать, а цветы будут напоминать о лете, даже в самый холодный и пасмурный день. <br><br> В составе букета : фаларис, лагурус, пшеница, гликсия. <br><br> Цвет может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов.",
-    "metaDesc": "Нежный букет из сухоцветов. Лагурос, Гликсия, Фаларис, Пшеница. Не требует специального ухода.",
-    "shortDesc": "Легок, как полдень",
-    "itemProperty": {
-      "size": {
-        "height": 25,
-        "width": 11
-      },
-      "material": [],
-      "weight": 10,
-      "price": "630"
-    },
-    "selectableProperty": []
+    "group": "minibouquet-blum",
+    "name": "Blum 5",
+    "selectableProperty": [{
+      "value": "5",
+      "name": "model"
+    }]
+  },
+  {
+    "group": "minibouquet-blum",
+    "name": "Blum 6",
+    "selectableProperty": [{
+      "value": "6",
+      "name": "model"
+    }]
+  },
+  {
+    "group": "minibouquet-blum",
+    "name": "Blum 7",
+    "selectableProperty": [{
+      "value": "7",
+      "name": "model"
+    }]
+  },
+  {
+    "group": "minibouquet-blum",
+    "name": "Blum 8",
+    "selectableProperty": [{
+      "value": "8",
+      "name": "model"
+    }]
   },
   {
     "group": "stand-cone-s",
@@ -279,7 +292,9 @@
     "name": "Leaf",
     "rootPath": "panno-leaf",
     "type": "panno",
-    "category": ["panno"],
+    "category": [
+      "panno"
+    ],
     "desc": "Милейшее панно с узором в виде листьев, висящих на ветке орешника. <br><br> В каждом панно листья и их длинна могут немного отличаться. Точное воспроизведение невозможно.",
     "metaDesc": "",
     "shortDesc": "",
@@ -288,8 +303,30 @@
         "height": 70,
         "width": 30
       },
-      "material": ["cotton"],
+      "material": [
+        "cotton"
+      ],
       "price": "1100"
+    },
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  }, {
+    "name": "Wind",
+    "rootPath": "panno-wind",
+    "type": "panno",
+    "category": ["panno"],
+    "desc": "Оно легкое, но в тоже время наполненное деталями и как будто рассказывает о себе небольшую историю. <br><br>  После очередного урагана мы отправились в поисках сбитых с деревьев веток для будущих панно. Ветер еще не утих и упорно пытался прогнать нас с берега финского залива. И вот эта стихия, покоренная и успокоенная, была воплощена в этой работе. <br><br> Обратите внимание, что веточки могут отличаться.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": 70,
+        "width": 30
+      },
+      "material": ["cotton"],
+      "price": "2100"
     },
     "selectableProperty": [{
       "value": "white",

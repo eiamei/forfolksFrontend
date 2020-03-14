@@ -33,7 +33,9 @@ export default {
     postcard: 'Открытка',
     postcards: 'Открытки',
     giftbox: 'Набор',
-    giftboxs: 'Наборы'
+    giftboxs: 'Наборы',
+    wax: 'Насыпной воск',
+    waxs: 'Насыпной воск'
   },
   links: {
     store: 'Магазин',
