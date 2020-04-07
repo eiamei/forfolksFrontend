@@ -9,127 +9,130 @@ const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag.vue'
 const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment.vue');
 const About = () => import(/* webpackChunkName: "about-page" */'../../views/About.vue');
 const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../views/Delivery.vue');
-const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/Landing.vue');
+const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/landing/Landing.vue');
 
 Vue.use(Router);
 
-let config = {
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'landing',
-      component: Landing,
-      meta: {
-        title: 'Главная',
-        tags: [{
-          name: 'Description',
-          content: 'Дизайн студия Forfolks. Мы производим бетонные горшки, бетонные вазы, бетонные подсвечники, бетонные подставки и подносы, панно и подвесы в технике макраме ручной работы'
-        }, {
-          name: 'og:Description',
-          content: 'Дизайн студия Forfolks. Мы производим бетонные горшки, бетонные вазы, бетонные подсвечники, бетонные подставки и подносы, панно и подвесы в технике макраме ручной работы'
-        }]
-      }
-    },
-    {
-      path: '/store/category/:type',
-      name: 'store',
-      component: Store,
-      meta: {
-        title: 'Магазин',
-        tags: [{
-          name: 'Description',
-          content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
-        }, {
-          name: 'og:Description',
-          content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
-        }]
-      }
-    },
-    {
-      path: '/store/material/:material',
-      name: 'store',
-      component: Store,
-      meta: {
-        title: 'Магазин',
-        tags: [{
-          name: 'Description',
-          content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
-        }, {
-          name: 'og:Description',
-          content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
-        }]
-      }
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: About,
-      meta: {
-        title: 'О нас',
-        tags: [{
-          name: 'Description',
-          content: 'Семейная дизайн студия Forfolks. Мы производим бетонные горшки и кашпо, бетонные вазы, бетонные подсвечники, латунные подсвечники, бетонные подставки и подносы ручной работы'
-        }, {
-          name: 'og:Description',
-          content: 'Семейная дизайн студия Forfolks. Мы производим бетонные горшки и кашпо, бетонные вазы, бетонные подсвечники, латунные подсвечники, бетонные подставки и подносы ручной работы'
-        }]
-      }
-    },
-    {
-      path: '/delivery',
-      name: 'delivery',
-      component: Delivery,
-      meta: {
-        title: 'Доставка',
-        tags: [{
-          name: 'Description',
-          content: ''
-        }, {
-          name: 'og:Description',
-          content: ''
-        }]
-      }
-    },
-    {
-      path: '/product/:root/:prop1?/:prop2?/:prop3?',
-      name: 'product',
-      component: Item,
-      meta: {
-        title: 'Forfolks',
-        tags: []
-      }
-    },
-    {
-      path: '/bag',
-      name: 'bag',
-      component: Bag,
-      meta: {
-        title: 'Корзина',
-        tags: [{
-          name: 'robots',
-          content: 'noindex'
-        }]
-      }
-    },
-    {
-      path: '/payment',
-      name: 'payment',
-      component: Payment,
-      meta: {
-        title: 'Оплата',
-        tags: [{
-          name: 'robots',
-          content: 'noindex'
-        }]
-      }
-    },
-    {
-      path: '*',
-      redirect: '/'
+let routes: object[] = [
+  {
+    path: '/',
+    name: 'landing',
+    component: Landing,
+    meta: {
+      title: 'Главная',
+      tags: [{
+        name: 'Description',
+        content: 'Дизайн студия Forfolks. Мы производим бетонные горшки, бетонные вазы, бетонные подсвечники, бетонные подставки и подносы, панно и подвесы в технике макраме ручной работы'
+      }, {
+        name: 'og:Description',
+        content: 'Дизайн студия Forfolks. Мы производим бетонные горшки, бетонные вазы, бетонные подсвечники, бетонные подставки и подносы, панно и подвесы в технике макраме ручной работы'
+      }]
     }
-  ]
+  },
+  {
+    path: '/store/category/:type',
+    name: 'store',
+    component: Store,
+    meta: {
+      title: 'Магазин',
+      tags: [{
+        name: 'Description',
+        content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
+      }, {
+        name: 'og:Description',
+        content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
+      }]
+    }
+  },
+  {
+    path: '/store/material/:material',
+    name: 'store',
+    component: Store,
+    meta: {
+      title: 'Магазин',
+      tags: [{
+        name: 'Description',
+        content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
+      }, {
+        name: 'og:Description',
+        content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
+      }]
+    }
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: About,
+    meta: {
+      title: 'О нас',
+      tags: [{
+        name: 'Description',
+        content: 'Семейная дизайн студия Forfolks. Мы производим бетонные горшки и кашпо, бетонные вазы, бетонные подсвечники, латунные подсвечники, бетонные подставки и подносы ручной работы'
+      }, {
+        name: 'og:Description',
+        content: 'Семейная дизайн студия Forfolks. Мы производим бетонные горшки и кашпо, бетонные вазы, бетонные подсвечники, латунные подсвечники, бетонные подставки и подносы ручной работы'
+      }]
+    }
+  },
+  {
+    path: '/delivery',
+    name: 'delivery',
+    component: Delivery,
+    meta: {
+      title: 'Доставка',
+      tags: [{
+        name: 'Description',
+        content: ''
+      }, {
+        name: 'og:Description',
+        content: ''
+      }]
+    }
+  },
+  {
+    path: '/product/:root/:prop1?/:prop2?/:prop3?',
+    name: 'product',
+    component: Item,
+    meta: {
+      title: 'Forfolks',
+      tags: []
+    }
+  },
+  {
+    path: '/bag',
+    name: 'bag',
+    component: Bag,
+    meta: {
+      title: 'Корзина',
+      tags: [{
+        name: 'robots',
+        content: 'noindex'
+      }]
+    }
+  },
+  {
+    path: '/payment',
+    name: 'payment',
+    component: Payment,
+    meta: {
+      title: 'Оплата',
+      tags: [{
+        name: 'robots',
+        content: 'noindex'
+      }]
+    }
+  },
+  {
+    path: '*',
+    redirect: '/'
+  }
+];
+
+let config: object = {
+  mode: 'history',
+  routes
 };
+
 let router = new Router(config);
 
 router.beforeEach((to, from, next) => {
@@ -151,22 +154,22 @@ router.beforeEach((to, from, next) => {
       });
     }
     if (to.path === '/item') {
-      let item;
+      // let item: object;
       // let item = STORE.find(item => slugify(item.name.toLowerCase()) === to.query.name && slugify(item.type.toLowerCase()) === to.query.type);
-      if (item) {
-        document.title = `${ruTranslate.items[item.type]} ${item.name} ${item.model} - Forfolks`;
-        Array.from(document.querySelectorAll('[programmatic-meta]')).map(el => el.parentNode.removeChild(el));
-        const tag = document.createElement('meta');
-        tag.setAttribute('name', 'Description');
-        tag.setAttribute('content', item.metaDesc || item.shortDesc);
-        tag.setAttribute('programmatic-meta', '');
-        document.head.appendChild(tag);
-        const tag2 = document.createElement('meta');
-        tag2.setAttribute('name', 'og:Description');
-        tag2.setAttribute('content', ˚item.metaDesc || item.shortDesc);
-        tag2.setAttribute('programmatic-meta', '');
-        document.head.appendChild(tag2);
-      }
+      // if (item) {
+      //   document.title = `${ruTranslate.items[item.type]} ${item.name} ${item.model} - Forfolks`;
+      //   Array.from(document.querySelectorAll('[programmatic-meta]')).map(el => el.parentNode.removeChild(el));
+      //   const tag = document.createElement('meta');
+      //   tag.setAttribute('name', 'Description');
+      //   tag.setAttribute('content', item.metaDesc || item.shortDesc);
+      //   tag.setAttribute('programmatic-meta', '');
+      //   document.head.appendChild(tag);
+      //   const tag2 = document.createElement('meta');
+      //   tag2.setAttribute('name', 'og:Description');
+      //   tag2.setAttribute('content', item.metaDesc || item.shortDesc);
+      //   tag2.setAttribute('programmatic-meta', '');
+      //   document.head.appendChild(tag2);
+      // }
     }
   } catch (e) {
     console.warn(e);
