@@ -36,7 +36,9 @@ export default {
     postcard: 'Postcard',
     postcards: 'Postcards',
     giftbox: 'Gift box',
-    giftboxs: 'Gift boxes'
+    giftboxs: 'Gift boxes',
+    bag: 'bag',
+    bags: 'bags'
   },
   links: {
     store: 'Store',
