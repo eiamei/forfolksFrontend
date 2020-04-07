@@ -194,17 +194,22 @@
     font-family: 'Playfair Display', serif;
     position: absolute;
     color: white;
-    width: 100%;
+    width: calc(100% - 4px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: 24px;
+    background: rgba(0,0,0,.1);
+    padding: 0 0 16px;
+    backdrop-filter: blur(2px);
+    bottom: 3px;
     @media screen and (max-width: 800px) {
-      bottom: 16px;
+      padding: 0 0 4px 0;
+      bottom: 0;
     }
-    @media screen and (max-width: 500px) {
-      bottom: 8px;
+    @media screen and (max-width: 400px) {
+      padding: 2px 0 4px 0;
+      bottom: 0;
     }
 
     &__title {

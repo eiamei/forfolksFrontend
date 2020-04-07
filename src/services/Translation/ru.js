@@ -35,7 +35,15 @@ export default {
     giftbox: 'Набор',
     giftboxs: 'Наборы',
     wax: 'Насыпной воск',
-    waxs: 'Насыпной воск'
+    waxs: 'Насыпной воск',
+    concrete: "Бетон",
+    concretes: "Бетон",
+    dryflowers: "Сухоцветы",
+    dryflowerss: "Сухоцветы",
+    cotton: 'Хлопок',
+    cottons: 'Хлопок',
+    bag: 'Сумка',
+    bags: 'Сумки'
   },
   links: {
     store: 'Магазин',
@@ -70,6 +78,7 @@ export default {
   },
   material: {
     concrete: "Бетон",
+    dryflowers: "Сухоцветы",
     brass: "Латунь",
     cotton: 'Хлопок',
     jute: 'Джут',
