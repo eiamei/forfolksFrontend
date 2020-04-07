@@ -3,13 +3,13 @@ import Vue from 'vue';
 
 import ruTranslate from '../Translation/ru';
 
-const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store');
-const Item = () => import(/* webpackChunkName: "item-page" */'../../components/itemCard/ItemCard');
-const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag');
-const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment');
-const About = () => import(/* webpackChunkName: "about-page" */'../../views/About');
-const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../views/Delivery');
-const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/Landing');
+const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store.vue');
+const Item = () => import(/* webpackChunkName: "item-page" */'../../components/itemCard/ItemCard.vue');
+const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag.vue');
+const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment.vue');
+const About = () => import(/* webpackChunkName: "about-page" */'../../views/About.vue');
+const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../views/Delivery.vue');
+const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/Landing.vue');
 
 Vue.use(Router);
 
@@ -163,7 +163,7 @@ router.beforeEach((to, from, next) => {
         document.head.appendChild(tag);
         const tag2 = document.createElement('meta');
         tag2.setAttribute('name', 'og:Description');
-        tag2.setAttribute('content', item.metaDesc || item.shortDesc);
+        tag2.setAttribute('content', ˚item.metaDesc || item.shortDesc);
         tag2.setAttribute('programmatic-meta', '');
         document.head.appendChild(tag2);
       }
