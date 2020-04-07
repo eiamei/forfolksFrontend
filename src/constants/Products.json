@@ -249,6 +249,22 @@
     }]
   },
   {
+    "group": "candlestick-house-swiss",
+    "name":  "Swiss",
+    "selectableProperty": [{
+      "value": "khaki",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "name":  "Swiss",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
     "group": "candlestick-house-denmark",
     "name": "Denmark",
     "selectableProperty": [{
@@ -309,7 +325,7 @@
       "price": "1100"
     },
     "selectableProperty": [{
-      "value": "white",
+      "value": "natural",
       "name": "color"
     }]
   }, {
@@ -322,16 +338,36 @@
     "shortDesc": "",
     "itemProperty": {
       "size": {
-        "height": 70,
-        "width": 30
+        "height": 60,
+        "width": 38
       },
       "material": ["cotton"],
       "price": "2100"
     },
     "selectableProperty": [{
-      "value": "white",
+      "value": "natural",
       "name": "color"
     }]
+  }, {
+  "name": "Stranger",
+  "rootPath": "panno-stranger",
+  "type": "panno",
+  "category": ["panno"],
+  "desc": "На это панно нас вдохновили путешествия. В нем нет никакого конкретного образа, скорее набор разных деталей, ощущений, которые мы собрали в разных поездках. <br><br> Обратите внимание, что веточки могут отличаться.",
+  "metaDesc": "",
+  "shortDesc": "",
+  "itemProperty": {
+    "size": {
+      "height": 85,
+      "width": 35
+    },
+    "material": ["cotton"],
+    "price": "2900"
+  },
+  "selectableProperty": [{
+    "value": "natural",
+    "name": "color"
+  }]
   },
   {
     "group": "tray-tray",
@@ -432,6 +468,13 @@
     }]
   },
   {
+    "group": "vase-mild",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }]
+  },
+  {
     "group": "cup-mild",
     "selectableProperty": [{
       "value": "white",
@@ -507,5 +550,42 @@
       "value": "black-marble",
       "name": "color"
     }]
+  },
+  {
+    "group": "candle-mild",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candle-mild",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candle-mild",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  }, {
+  "name": "Net",
+  "rootPath": "bag-net",
+  "type": "bag",
+  "category": ["bag"],
+  "desc": "Никогда не думали что наша жизнь как то пересечется с авоськой, а в итоге мы сделали ее<br><br>Такая авоська отличный компаньон на кухне - в нее можно положить фрукты и овощи, спрятать бытовую химию или другие кухонные принадлежности. Так же ее можно использовать в ванной для удобного хранения фена и прочей техники.<br><br>Она вместительная, но в то же время легкая за счет мелкого плетения",
+  "metaDesc": "",
+  "shortDesc": "",
+  "itemProperty": {
+    "material": ["cotton"],
+    "price": "1500"
+  },
+  "selectableProperty": [{
+    "value": "natural",
+    "name": "color"
+  }]
   }
 ]
