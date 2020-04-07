@@ -7,8 +7,8 @@ const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Stor
 const Item = () => import(/* webpackChunkName: "item-page" */'../../components/itemCard/ItemCard');
 const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag');
 const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment');
-const About = () => import(/* webpackChunkName: "about-page" */'../../components/Pages/About/About');
-const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../components/Pages/Delivery/Delivery');
+const About = () => import(/* webpackChunkName: "about-page" */'../../views/About');
+const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../views/Delivery');
 const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/Landing');
 
 Vue.use(Router);
@@ -32,7 +32,22 @@ let config = {
       }
     },
     {
-      path: '/store/:type',
+      path: '/store/category/:type',
+      name: 'store',
+      component: Store,
+      meta: {
+        title: 'Магазин',
+        tags: [{
+          name: 'Description',
+          content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
+        }, {
+          name: 'og:Description',
+          content: 'Магазин Forfolks. В нашем магазине вы можете найти бетонные кашпо, бетонные вазы, бетонные подставки и подсвечники, подвесы и панно в технике макраме'
+        }]
+      }
+    },
+    {
+      path: '/store/material/:material',
       name: 'store',
       component: Store,
       meta: {
@@ -111,7 +126,7 @@ let config = {
     },
     {
       path: '*',
-      redirect: 'store/all'
+      redirect: '/'
     }
   ]
 };
@@ -160,6 +175,7 @@ router.beforeEach((to, from, next) => {
 });
 
 router.afterEach(to => {
+  window.scrollTo(0, 0);
   if (process.env.NODE_ENV !== 'production') return;
   if ('ga' in window && 'getAll' in window.ga) {
     let tracker = window.ga.getAll()[0];

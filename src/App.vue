@@ -2,17 +2,20 @@
   <div class="app">
     <AppHeader/>
     <transition name="fade" mode="out-in">
-      <router-view/>
+      <router-view style="min-height: 90vh"/>
     </transition>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/header/AppHeader';
+import Footer from './components/Footer';
 
 export default {
   name: 'app',
   components: {
+    Footer,
     AppHeader
   },
   created () {
@@ -45,5 +48,9 @@ export default {
   .fade-enter,
   .fade-leave-active {
     opacity: 0
+  }
+  .app {
+    display: flex;
+    flex-direction: column;
   }
 </style>
