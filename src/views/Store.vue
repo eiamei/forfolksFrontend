@@ -16,13 +16,15 @@ export default {
     return {
       widesMap: {},
       loadCounter: 0,
-      type: '',
+      type: null,
+      material: null,
       counter: 0,
       containerWidth: 0
     }
   },
   created () {
-    this.type = this.$route.params.type;
+    this.type = this.$route.params.type || null;
+    this.material = this.$route.params.material || null;
   },
   watch: {
     windowWidth () {
@@ -34,6 +36,11 @@ export default {
       this.loadCounter = 0;
       this.counter++;
       this.type = value;
+    },
+    '$route.params.material' (value) {
+      this.loadCounter = 0;
+      this.counter++;
+      this.material = value;
     }
   },
   computed: {
@@ -42,7 +49,13 @@ export default {
     },
     items () {
       return this.shuffle(this.storeItems.map(item => {
-        if (this.type === 'all' || item.category.includes(this.type))
+        if (this.type !== null && (this.type === 'all' || item.category.includes(this.type)))
+          return {
+            ...item,
+            width: 0,
+            height: 0
+          };
+        else if (this.material !== null && item.itemProperty.material.includes(this.material))
           return {
             ...item,
             width: 0,

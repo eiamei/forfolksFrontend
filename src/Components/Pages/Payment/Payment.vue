@@ -24,7 +24,7 @@
     data () {
       return {
         isSuccess: null,
-        isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) || localStorage.getItem('ip')
+        isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) || localStorage.getItem('ip1')
       }
     },
     created () {
@@ -75,12 +75,14 @@
         request.onreadystatechange = () => {
           if (request.responseText) {
             this.isSuccess = JSON.parse(request.responseText).result === 'success';
-            if (this.isSuccess)
+            if (this.isSuccess) {
               this.$store.dispatch('bag/empty');
+            }
           }
           return;
         };
         request.send(encoded);
+        if (localStorage.getItem('ip1')) localStorage.removeItem('ip1');
       }
     }
   };

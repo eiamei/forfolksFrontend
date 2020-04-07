@@ -15,7 +15,15 @@
       </section>
       <nav class="menu-container" v-if="isOpen">
         <ul class="menu-catalogue">
-          <li class="menu-catalogue__item" v-for="link in catalogue" :key="link.to">
+          <li class="menu-catalogue__item">
+            <router-link class="menu-catalogue__text" to="/store/category/all" replace>{{$t('items.alls')}}</router-link>
+          </li>
+          <br>
+          <li class="menu-catalogue__item" v-for="link in byCategory" :key="link.to">
+            <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
+          </li>
+          <br>
+          <li class="menu-catalogue__item" v-for="link in byMaterial" :key="link.to">
             <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
           </li>
         </ul>
@@ -37,33 +45,46 @@
     data () {
       return {
         isOpen: false,
-        catalogue: [{
-          to: '/store/all',
-          text: 'items.alls'
-        }, {
-          to: '/store/cachepot',
+        byCategory: [{
+          to: '/store/category/cachepot',
           text: 'items.cachepots'
         }, {
-          to: '/store/candlestick',
+          to: '/store/category/candlestick',
           text: 'items.candlesticks'
         }, {
-          to: '/store/stand',
+          to: '/store/category/stand',
           text: 'items.stands'
         }, {
-          to: '/store/vase',
+          to: '/store/category/bag',
+          text: 'items.bags'
+        }, {
+          to: '/store/category/vase',
           text: 'items.vases'
         }, {
-          to: '/store/bouquet',
+          to: '/store/category/bouquet',
           text: 'items.bouquets'
         }, {
-          to: '/store/hanging',
+          to: '/store/category/hanging',
           text: 'items.hangings'
         }, {
-          to: '/store/panno',
+          to: '/store/category/panno',
           text: 'items.panno'
         }, {
-          to: '/store/wax',
+          to: '/store/category/candle',
+          text: 'items.candles'
+        }, {
+          to: '/store/category/wax',
           text: 'items.wax'
+        }],
+        byMaterial: [{
+          to: '/store/material/concrete',
+          text: 'material.concrete'
+        }, {
+          to: '/store/material/dryflowers',
+          text: 'material.dryflowers'
+        }, {
+          to: '/store/material/cotton',
+          text: 'material.cotton'
         }],
         links: [{
           to: '/delivery',
@@ -76,8 +97,12 @@
     },
     computed: {
       menuText () {
-        if (this.$route.path.includes('store'))
-          return `items.${this.$route.params.type}s`;
+        if (this.$route.path.includes('store')) {
+          if (this.$route.params.type)
+            return `items.${this.$route.params.type}s`;
+          else if (this.$route.params.material)
+            return `material.${this.$route.params.material}`;
+        }
         return '';
       },
       containerClass () {

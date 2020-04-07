@@ -27,7 +27,7 @@
     name: 'PaymentCart',
     computed: {
       isPromo () {
-        return ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) && localStorage.getItem('ip');
+        return ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) && localStorage.getItem('ip1');
       },
       isConstantDiscount () {
         return (this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL);

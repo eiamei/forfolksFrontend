@@ -31,7 +31,7 @@ export default {
   components: {BagItem},
   data () {
     return {
-      isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL && localStorage.getItem('ip')),
+      isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL && localStorage.getItem('ip1')),
       isTooLate: null,
       isCorrect: null,
       promo: ''
@@ -61,11 +61,11 @@ export default {
   },
   methods: {
     checkPromo () {
-      if (this.promo === PROMO.CODE) {
+      if (typeof this.promo === 'string' && this.promo.toLowerCase() === PROMO.CODE.toLowerCase()) {
         if ((new Date()) > PROMO.PROMO_DISCOUNT_TILL) {
           this.isTooLate = true;
         } else {
-          localStorage.setItem('ip', JSON.stringify(true));
+          localStorage.setItem('ip1', JSON.stringify(true));
           this.isPromo = true;
           this.isCorrect = true;
           this.isTooLate = false;

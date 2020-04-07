@@ -2,7 +2,7 @@
   <main class="landing-page">
     <landing-slideshow/>
     <article class="landing-page-heading">
-      <h1>Дизайн для современной жизни</h1>
+      <h1>Декор для современной жизни</h1>
       <p class="landing-page-heading__hero-text">{{heroText}}</p>
     </article>
     <article class="landing-page-about">
@@ -11,7 +11,7 @@
         <div :class="aboutDescriptionClass(index)">
           <h2>{{item.header}}</h2>
           <p>{{item.text}}</p>
-          <router-link to="store/all">В магазин</router-link>
+          <router-link :to="item.link">В магазин</router-link>
         </div>
       </section>
     </article>
@@ -33,17 +33,20 @@ export default {
       about: [{
         image: require("../assets/images/store/landing-concrete.jpg"),
         header: 'Бетон',
+        link: '/store/material/concrete',
         text: 'Прочный и эффектный. Столь привычный строительный материал сегодня переживает свой ренесанс в ' +
           'совершенно не свойственной, но такой подходящей для него среде. Он способен принять практически любую форму ' +
           'и привнести особый шарм в интерьер.'
       }, {
         image: require("../assets/images/store/landing-dryflower.jpg"),
         header: 'Сухоцветы',
+        link: '/store/material/dryflowers',
         text: 'Красивые на вечность. Мы любим сухоцветы за безграничную нежность их оттенков и безприкословную неприхотливость. ' +
           'Это кусочек дикой природы, навсегда застывший в своем самом прекрасном состоянии.'
       },{
         image: require("../assets/images/store/landing-cotton.jpg"),
         header: 'Хлопок',
+        link: '/store/material/cotton',
         text: 'Нежный и натуральный. Удивительную легкость в интерьер могут привнести изделия из хлопка, наполняя его ' +
           'уютом и теплом. В своих изделях мы используем 100% хлопок.'
       }]
@@ -75,6 +78,7 @@ export default {
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
+    margin-top: 2rem;
     &__hero-text {
       max-width: 900px;
       margin: 1rem;
