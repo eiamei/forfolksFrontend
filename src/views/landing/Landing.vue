@@ -1,10 +1,11 @@
 <template>
   <main class="landing-page">
-    <carousel />
+    <carousel class="landing-page__carousel"/>
     <article>
-      <div></div>
-      <suggestions/>
+      <h1></h1>
+      <p></p>
     </article>
+    <suggestions/>
     <section>
       <article></article>
     </section>
@@ -26,7 +27,9 @@
 
 <style lang="scss">
   .landing-page {
-
+    &__carousel {
+      margin: 3rem 2rem 0 2rem;
+    }
   }
 </style>
 
