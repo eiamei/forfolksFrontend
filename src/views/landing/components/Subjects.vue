@@ -16,12 +16,14 @@
 
 <script lang="ts">
     import Vue from 'vue';
+    import { link } from "@/global";
+    import { LocaleMessage } from "vue-i18n";
 
     interface subject {
-        heading: string,
-        text: string,
-        link: string,
-        href: string,
+        heading: LocaleMessage,
+        text: LocaleMessage,
+        link: LocaleMessage,
+        href: link,
         img: string
     }
 
