@@ -1,14 +1,9 @@
 <template>
   <main class="landing-page">
-    <carousel class="landing-page__carousel"/>
-    <article>
-      <h1></h1>
-      <p></p>
-    </article>
+    <carousel class="landing-page-carousel"/>
+    <heading-article/>
     <suggestions/>
-    <section>
-      <article></article>
-    </section>
+    <subjects/>
     <cat-advise/>
   </main>
 </template>
@@ -18,16 +13,21 @@
   import Carousel from "@/views/landing/components/Carousel.vue";
   import Suggestions from "@/components/Suggestions.vue";
   import CatAdvise from "@/components/CatAdvise.vue";
+  import Subjects from "@/views/landing/components/Subjects.vue";
+  import HeadingArticle from "@/views/landing/components/HeadingArticle.vue";
 
   export default Vue.extend({
       name: 'LandingView',
-      components: { Carousel, Suggestions, CatAdvise }
+      components: {Subjects, Carousel, Suggestions, CatAdvise, HeadingArticle }
   });
 </script>
 
 <style lang="scss">
+  @import "src/assets/styles/vars";
+  @import "src/assets/styles/ui";
+
   .landing-page {
-    &__carousel {
+    .landing-page-carousel {
       margin: 3rem 2rem 0 2rem;
     }
   }
