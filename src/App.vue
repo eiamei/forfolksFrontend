@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
     import Vue from 'vue';
     import AppHeader from './components/header/AppHeader.vue';
     import Footer from './components/Footer.vue'
@@ -19,19 +19,19 @@
             Footer,
             AppHeader
         },
-        created(): void {
+        created() {
             window.addEventListener('resize', this.resizeHandler);
             this.$store.dispatch('store/loadStoreData');
         },
-        mounted(): void {
+        mounted() {
             this.$store.dispatch('global/setNewWindowSize')
         },
         methods: {
-            resizeHandler(): void {
+            resizeHandler() {
                 this.$store.dispatch('global/setNewWindowSize')
             }
         },
-        beforeDestroy(): void {
+        beforeDestroy() {
             window.removeEventListener('resize', this.resizeHandler)
         }
     });

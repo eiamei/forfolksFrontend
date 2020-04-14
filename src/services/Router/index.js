@@ -13,7 +13,7 @@ const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/
 
 Vue.use(Router);
 
-let routes: object[] = [
+let routes = [
   {
     path: '/',
     name: 'landing',
@@ -128,7 +128,7 @@ let routes: object[] = [
   }
 ];
 
-let config: object = {
+let config = {
   mode: 'history',
   routes
 };
@@ -179,16 +179,6 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach(to => {
   window.scrollTo(0, 0);
-  if (process.env.NODE_ENV !== 'production') return;
-  if ('ga' in window && 'getAll' in window.ga) {
-    let tracker = window.ga.getAll()[0];
-    if (tracker) {
-      tracker.set({
-        page: to.fullPath
-      });
-      tracker.send('pageview');
-    }
-  }
 });
 
 export default router;

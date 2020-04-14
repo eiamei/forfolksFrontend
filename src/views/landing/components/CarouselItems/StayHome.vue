@@ -9,25 +9,19 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
     import Vue from 'vue';
-    import { iWindowSize } from "@/services/Store/Global/state";
-
-    interface stayHomeData {
-        horizontalImage: string,
-        verticalImage: string
-    }
 
     export default Vue.extend({
         name: 'StayHome',
-        data(): stayHomeData {
+        data() {
             return {
                 horizontalImage: require('../../../../assets/images/landing/stayhome-horizontal.jpg'),
                 verticalImage: require('../../../../assets/images/landing/stayhome-vertical.jpg')
             }
         },
         computed: {
-            windowSize(): iWindowSize {
+            windowSize() {
                 return this.$store.state.global.windowSize;
             },
             image () {
