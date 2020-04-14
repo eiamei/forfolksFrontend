@@ -4,7 +4,7 @@
     <heading-article/>
     <suggestions/>
     <subjects/>
-    <cat-advise/>
+<!--    <cat-advise/>-->
   </main>
 </template>
 
@@ -28,7 +28,7 @@
 
   .landing-page {
     .landing-page-carousel {
-      margin: 3rem 2rem 0 2rem;
+      margin: 3rem 1rem 0 1rem;
     }
   }
 </style>

@@ -1,14 +1,16 @@
 <template>
-  <div width="100%">
-    <img width="100%" src="../../../assets/images/landing/stayhome-horizontal.jpg"/>
+  <div>
+    <stay-home/>
   </div>
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
+    import StayHome from './CarouselItems/StayHome.vue';
 
     export default Vue.extend({
         name: 'Carousel',
+        components: { StayHome }
     });
 </script>
 

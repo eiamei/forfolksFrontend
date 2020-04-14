@@ -56,3 +56,14 @@
     }
   }
 }
+
+
+.logo {
+  transition: .3s all;
+  &--gray {
+    fill: $light-gray;
+  }
+  &:hover {
+    fill: white;
+  }
+}

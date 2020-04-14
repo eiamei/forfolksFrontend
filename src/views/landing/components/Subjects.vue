@@ -40,19 +40,19 @@
                     text: 'landing.subjects.concreteText',
                     link: 'landing.subjects.concreteLink',
                     href: '/store/material/concrete',
-                    img: require('../../../assets/images/landing/landing-main-horizontal.jpg')
+                    img: require('../../../assets/images/landing/landing-concrete.jpg')
                 }, {
                     heading: 'landing.subjects.dryFlowerHeader',
                     text: 'landing.subjects.dryFlowerText',
                     link: 'landing.subjects.dryFlowerLink',
-                    href: '/store/material/concrete',
-                    img: require('../../../assets/images/landing/landing-main-horizontal.jpg')
+                    href: '/store/material/dryflowers',
+                    img: require('../../../assets/images/landing/landing-dryflower.jpg')
                 }, {
                     heading: 'landing.subjects.cottonHeader',
                     text: 'landing.subjects.cottonText',
                     link: 'landing.subjects.cottonLink',
-                    href: '/store/material/concrete',
-                    img: require('../../../assets/images/landing/landing-main-horizontal.jpg')
+                    href: '/store/material/cotton',
+                    img: require('../../../assets/images/landing/landing-cotton.jpg')
                 }]
             };
         },

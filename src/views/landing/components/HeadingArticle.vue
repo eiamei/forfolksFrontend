@@ -30,6 +30,7 @@
       margin: 0 2rem 0 4.5rem;
       @media screen and (max-width: $mobile) {
         margin: 0;
+        text-align: center;
       }
     }
     &__about {
