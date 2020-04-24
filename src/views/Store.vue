@@ -1,12 +1,11 @@
 <template>
   <section style="min-height: 101vh">
-    <div class="store-loading">
+    <div v-if="!isLoaded" class="store-loading">
       <forfolks-logo class="store-loading__logo"/>
-<!--      <p>Мы совсем скоро загрузим каталог!</p>-->
     </div>
-<!--    <section class="store" :key="counter">-->
-<!--      <store-card v-for="(item, index) in items" :width="item.width" :height="item.height"  :item="item" @isWide="isWide => safeRatio(index, isWide)" :key="createKey(item)"/>-->
-<!--    </section>-->
+    <section class="store" :key="counter">
+      <store-card v-for="(item, index) in items" :width="item.width" :height="item.height"  :item="item" @isWide="isWide => safeRatio(index, isWide)" :key="createKey(item)"/>
+    </section>
   </section>
 </template>
 
