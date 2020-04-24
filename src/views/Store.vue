@@ -1,17 +1,22 @@
 <template>
   <section style="min-height: 101vh">
-    <section class="store" :key="counter">
-      <store-card v-for="(item, index) in items" :width="item.width" :height="item.height"  :item="item" @isWide="isWide => safeRatio(index, isWide)" :key="createKey(item)"/>
-    </section>
+    <div class="store-loading">
+      <forfolks-logo class="store-loading__logo"/>
+<!--      <p>Мы совсем скоро загрузим каталог!</p>-->
+    </div>
+<!--    <section class="store" :key="counter">-->
+<!--      <store-card v-for="(item, index) in items" :width="item.width" :height="item.height"  :item="item" @isWide="isWide => safeRatio(index, isWide)" :key="createKey(item)"/>-->
+<!--    </section>-->
   </section>
 </template>
 
 <script>
 import StoreCard from '../components/storeCard/StoreCard';
+import ForfolksLogo from '../components/Icons/Logo';
 
 export default {
   name: 'Store',
-  components: {StoreCard},
+  components: {ForfolksLogo, StoreCard},
   data () {
     return {
       widesMap: {},
@@ -29,7 +34,7 @@ export default {
   watch: {
     windowWidth () {
       this.containerWidth = this.$el.offsetWidth;
-      if (this.loadCounter === this.items.length)
+      if (this.isLoaded)
         this.createMap();
     },
     '$route.params.type' (value) {
@@ -65,12 +70,15 @@ export default {
     },
     windowWidth () {
       return this.$store.state.global.windowSize.width;
+    },
+    isLoaded () {
+      return this.loadCounter === this.items.length;
     }
   },
   mounted () {
     setTimeout(() => {
       this.containerWidth = this.$el.offsetWidth;
-      if (this.loadCounter === this.items.length)
+      if (this.isLoaded)
         this.createMap();
     }, 1)
   },
@@ -161,10 +169,29 @@ export default {
 </script>
 
 <style lang="scss">
+  .store-loading {
+    position: absolute;
+    width: 10rem;
+    top: 45vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @keyframes bounce {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.9);
+      }
+    }
+    &__logo {
+      animation: bounce 2s ease-in infinite;
+    }
+  }
   .store {
     width: 100%;
     /*min-height: 101vh;*/
     display: flex;
     flex-wrap: wrap;
   }
+
 </style>
