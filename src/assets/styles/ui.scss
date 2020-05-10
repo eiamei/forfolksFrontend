@@ -25,6 +25,17 @@
   }
 }
 
+.small-regular-heading {
+  font-family: $serif-font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2;
+  color: $dark-blue;
+  @media screen and (max-width: $horizontal-tablet) {
+    font-size: 16px;
+  }
+}
+
 .regular-link {
   position: relative;
   width: max-content;
@@ -57,7 +68,6 @@
   }
 }
 
-
 .logo {
   transition: .3s all;
   &--gray {
@@ -66,4 +76,12 @@
   &:hover {
     fill: white;
   }
+}
+
+.clean-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
 }

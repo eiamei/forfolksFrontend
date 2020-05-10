@@ -1,16 +1,16 @@
 <template>
   <div>
-    <stay-home/>
+    <Basic/>
   </div>
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
-    import StayHome from './CarouselItems/StayHome.vue';
+    import Basic from './CarouselItems/Basic.vue';
 
     export default Vue.extend({
         name: 'Carousel',
-        components: { StayHome }
+        components: { Basic }
     });
 </script>
 

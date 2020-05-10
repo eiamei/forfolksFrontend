@@ -1,14 +1,20 @@
 <template>
   <section class="suggestions">
-    <button @click="toLeft">
+    <button class="clean-button suggestions__button" @click="toLeft">
       <ArrowIcon/>
     </button>
-    <hooper ref="carousel" :itemsToShow="3" :wheelControl="false" :mouseDrag="false" :infiniteScroll="true" style="margin: 0 16px; height: auto; width: calc(100% - 152px)">
+    <hooper class="clean-button suggestions__carousel"
+            ref="carousel"
+            :itemsToShow="4"
+            :wheelControl="false"
+            :mouseDrag="false"
+            :infiniteScroll="true"
+    >
       <slide v-for="item in allItems" style="margin: 0 8px" :key="item">
         <item-card :item="item" />
       </slide>
     </hooper>
-    <button @click="toRight">
+    <button class="clean-button suggestions__button" @click="toRight">
       <ArrowIcon style="transform: rotate(180deg)"/>
     </button>
   </section>
@@ -43,13 +49,24 @@
 </script>
 
 <style lang="scss">
+  @import "../assets/styles/ui";
+  @import "../assets/styles/vars";
   .suggestions {
-    display: flex;
-    width: 100%;
-    &__container {
-      position: relative;
-      width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-column-gap: 1rem;
+    &__carousel {
       overflow: hidden;
+      height: auto;
+    }
+    &__button {
+      cursor: pointer;
+      &:focus,
+      &:hover {
+        path {
+          stroke: $orange;
+        }
+      }
     }
   }
 </style>
