@@ -1,19 +1,19 @@
 <template>
-  <section class="item-card">
+  <section class="item-card" :class="{'item-card--wide': isWide}">
     <router-link to="/product/bag-net/natural">
       <div class="item-card__image-link">
-        <img :src="require('@/assets/images/store/bag-net-natural-small.jpg')" />
+        <img ref="image" :src="imageLink" loading="lazy" @load="imageLoaded"/>
         <button class="regular-sans-text item-card__add-to-bag">Добавить в корзину</button>
       </div>
     </router-link>
-    <div class="item-card__text-wrapper">
+    <div v-show="isShowInfo" class="item-card__text-wrapper">
       <router-link class="item-card__text-link" to="/product/bag-net/natural">
-        <p class="small-regular-heading item-card__model">{{item}}NET</p>
-        <p class="regular-sans-text item-card__type">Bag</p>
+        <p class="small-regular-heading item-card__model">{{item.name}}</p>
+        <p class="regular-sans-text item-card__type">{{item.type}}</p>
       </router-link>
-      <p class="regular-sans-text item-card__price">1100Р</p>
+      <p class="regular-sans-text item-card__price">{{item.itemProperty.price}}P</p>
     </div>
-    <div>
+    <div v-show="isShowInfo">
       <button class="clean-button item-card__color-button"></button>
     </div>
   </section>
@@ -21,6 +21,7 @@
 
 <script lang="ts">
     import Vue from 'vue';
+    import slugify from "slugify";
 
     interface Item {
         link: string;
@@ -35,6 +36,29 @@
             //     type: Object as () => Item,
             //     required: true
             // }
+        },
+        data() {
+            return {
+                isShowInfo: false,
+                isWide: false
+            }
+        },
+        computed: {
+            // TODO compute it in the store
+            imageLink () {
+                let path = this.item.rootPath;
+                if (this.item.selectableProperty.length)
+                    this.item.selectableProperty.forEach(property => {
+                        path += `-${slugify(property.value.toLowerCase())}`
+                    });
+                return require(`@/assets/images/store/${path}-small.jpg`);
+            }
+        },
+        methods: {
+            imageLoaded () {
+                this.isShowInfo = true;
+                this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
+            }
         }
     });
 </script>
@@ -44,8 +68,10 @@
   @import "../../assets/styles/vars";
 
   .item-card {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    &--wide {
+      grid-column-end: span 2;
+    }
     &__image-link {
       position: relative;
       display: flex;

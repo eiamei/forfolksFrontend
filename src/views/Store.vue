@@ -1,16 +1,11 @@
 <template>
-  <section style="min-height: 101vh">
-    <div v-if="!isLoaded" class="store-loading">
-      <forfolks-logo class="store-loading__logo"/>
-    </div>
-    <section class="store" :key="counter">
-      <store-card v-for="(item, index) in items" :width="item.width" :height="item.height"  :item="item" @isWide="isWide => safeRatio(index, isWide)" :key="createKey(item)"/>
-    </section>
-  </section>
+  <ul class="store" :key="counter">
+    <store-card v-for="(item) in items" :item="item" :key="createKey(item)"/>
+  </ul>
 </template>
 
 <script>
-import StoreCard from '../components/storeCard/StoreCard';
+import StoreCard from '../components/itemCardV2/ItemCard';
 import ForfolksLogo from '../components/Icons/Logo';
 
 export default {
@@ -70,18 +65,9 @@ export default {
     windowWidth () {
       return this.$store.state.global.windowSize.width;
     },
-    isLoaded () {
-      return this.loadCounter === this.items.length;
-    }
-  },
-  mounted () {
-    setTimeout(() => {
-      this.containerWidth = this.$el.offsetWidth;
-      if (this.isLoaded)
-        this.createMap();
-    }, 1)
   },
   methods: {
+    // TODO move to VUEX getters
     shuffle (array) {
       let currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -100,13 +86,6 @@ export default {
 
       return array;
     },
-    safeRatio (index, value) {
-      this.widesMap[index] = value;
-      this.loadCounter++;
-      // todo catch error (image not loaded)
-      if (this.loadCounter === this.items.length)
-        this.createMap();
-    },
     createKey (item) {
       let key = item.rootPath;
       item.selectableProperty.forEach(property => {
@@ -114,55 +93,6 @@ export default {
       });
       return key;
     },
-    createMap () {
-      let dif = 5;
-      for (let i = 0, len = this.items.length; i < len;) {
-        if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && this.widesMap[i + 2]) {
-          this.items[i].width = this.items[i + 1].width = this.containerWidth / 2 - dif;
-          this.items[i].height = this.items[i + 1].height = this.containerWidth / 4  * 3 - dif;
-          i += 2;
-          continue;
-        }
-        if ((i + 2) < len && !this.widesMap[i] && !this.widesMap[i + 1] && !this.widesMap[i + 2]) {
-          this.items[i].width = this.items[i + 1].width = this.items[i + 2].width = this.containerWidth / 3 - dif;
-          this.items[i].height = this.items[i + 1].height = this.items[i + 2].height = this.containerWidth / 2 - dif;
-          i += 3;
-          continue;
-        }
-        if (this.widesMap[i] && (i + 1) < len && this.widesMap[i + 1]) {
-          this.items[i].width = this.items[i + 1].width = this.containerWidth / 2 - dif;
-          this.items[i].height = this.items[i + 1].height = this.containerWidth / 3 - dif;
-          i += 2;
-          continue;
-        }
-        if (this.widesMap[i] && (i + 1) < len && !this.widesMap[i + 1]) {
-          this.items[i].width = this.containerWidth / 3 * 2 - dif;
-          this.items[i].height = this.containerWidth / 2 - dif;
-          this.items[i + 1].width = this.containerWidth / 3 - dif;
-          this.items[i + 1].height = this.containerWidth / 2 - dif;
-          i += 2;
-          continue;
-        }
-        if (!this.widesMap[i] && (i + 1) < len && this.widesMap[i + 1]) {
-          this.items[i].width = this.containerWidth / 3 - dif;
-          this.items[i].height = this.containerWidth / 2 - dif;
-          this.items[i + 1].width = this.containerWidth / 3 * 2 - dif;
-          this.items[i + 1].height = this.containerWidth / 2 - dif;
-          i += 2;
-          continue;
-        }
-        if (this.widesMap[i]) {
-          this.items[i].width = this.containerWidth - dif;
-          this.items[i].height = this.containerWidth / 3 * 2 - dif;
-        }
-        if (!this.widesMap[i]) {
-          this.items[i].width = this.containerWidth / 3 - dif;
-          this.items[i].height = this.containerWidth / 2 - dif;
-        }
-        i++
-      }
-      this.$forceUpdate();
-    }
   }
 };
 </script>
@@ -187,10 +117,16 @@ export default {
     }
   }
   .store {
-    width: 100%;
-    /*min-height: 101vh;*/
-    display: flex;
-    flex-wrap: wrap;
+    /*min-height: 100vh;*/
+    /*columns: 4 22vw;*/
+    /*column-gap: 1rem;*/
+    /*padding: 0 1rem;*/
+    display: grid;
+    grid-gap: 1.5rem; /* [1] Add some gap between rows and columns */
+    grid-template-columns: repeat( auto-fit, minmax( 20rem, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+    grid-auto-flow: dense;
+    margin: 3.5rem 0 0 0;
+    padding: 0 1rem;
   }
 
 </style>

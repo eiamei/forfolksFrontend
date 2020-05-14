@@ -2,7 +2,7 @@
   <div class="app">
     <AppHeader />
     <transition name="fade" mode="out-in">
-      <router-view style="min-height: 90vh"/>
+      <router-view/>
     </transition>
     <Footer/>
   </div>

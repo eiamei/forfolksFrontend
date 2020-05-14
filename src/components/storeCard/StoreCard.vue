@@ -1,16 +1,17 @@
 <template>
-  <article class="store-card">
-    <router-link :to="getLink()" class="store-card__link">
-      <img ref='image' :src="itemImage" :alt="alt" :width="width" :height="height" @load="load">
-      <section class="store-card-description">
-        <p class="store-card-description__title">{{item.name}}</p>
-        <div class="store-card-description__type-container">
-          <p class="store-card-description__type">{{$t(`items.${item.type.toLowerCase()}`)}}</p>
-          <p class="store-card-description__price">{{item.itemProperty.price}}&thinsp;р</p>
-        </div>
-      </section>
-    </router-link>
-  </article>
+  <li class="store-card">
+    <img ref='image' :src="itemImage" :alt="alt" @load="load">
+<!--    <router-link :to="getLink()" class="store-card__link" :class="{'store-card__link&#45;&#45;wide': isWide}">-->
+<!--      <img ref='image' :src="itemImage" :alt="alt" @load="load">-->
+<!--      <section class="store-card-description">-->
+<!--        <p class="store-card-description__title">{{item.name}}</p>-->
+<!--        <div class="store-card-description__type-container">-->
+<!--          <p class="store-card-description__type">{{$t(`items.${item.type.toLowerCase()}`)}}</p>-->
+<!--          <p class="store-card-description__price">{{item.itemProperty.price}}&thinsp;р</p>-->
+<!--        </div>-->
+<!--      </section>-->
+<!--    </router-link>-->
+  </li>
 </template>
 
 <script>
@@ -34,6 +35,11 @@
       },
       isBig: {
         type: Boolean
+      }
+    },
+    data () {
+      return {
+        isWide: false
       }
     },
     computed: {
@@ -70,6 +76,7 @@
       },
       load () {
         this.$emit('isWide', this.$refs.image.naturalWidth > this.$refs.image.naturalHeight);
+        this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
       }
     }
   };
@@ -78,17 +85,26 @@
 <style lang='scss' scoped>
   @import '../../assets/styles/colors';
   .store-card {
-    display: flex;
-    position: relative;
-    cursor: pointer;
-    padding: 2px;
+    /*display: flex;*/
+    /*position: relative;*/
+    /*cursor: pointer;*/
+    /*padding: 2px;*/
     &:hover {
       .store-card-description-colors {
-        opacity: 1;
+        /*opacity: 1;*/
       }
     }
     &__link {
-      margin-bottom: -5px;
+      /*margin-bottom: -5px;*/
+      &--wide {
+        /*grid-column-end: span 2;*/
+      }
+    }
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+    width: 23.5vw;
+    img {
+      width: 23.5vw;
     }
   }
 
