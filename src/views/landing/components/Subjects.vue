@@ -89,6 +89,7 @@
     }
     &__image {
       width: calc(50% - 5rem);
+      height: 30rem;
       margin: 0 2rem;
       object-fit: cover;
       @media screen and (max-width: $tablet) {
