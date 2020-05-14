@@ -564,28 +564,57 @@
       "value": "graphite",
       "name": "color"
     }]
-  },
-  {
+  }, {
     "group": "candle-mild",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
     }]
   }, {
-  "name": "Net",
-  "rootPath": "bag-net",
-  "type": "bag",
-  "category": ["bag"],
-  "desc": "Никогда не думали что наша жизнь как то пересечется с авоськой, а в итоге мы сделали ее<br><br>Такая авоська отличный компаньон на кухне - в нее можно положить фрукты и овощи, спрятать бытовую химию или другие кухонные принадлежности. Так же ее можно использовать в ванной для удобного хранения фена и прочей техники.<br><br>Она вместительная, но в то же время легкая за счет мелкого плетения",
-  "metaDesc": "",
-  "shortDesc": "",
-  "itemProperty": {
-    "material": ["cotton"],
-    "price": "1500"
-  },
-  "selectableProperty": [{
-    "value": "natural",
-    "name": "color"
-  }]
+    "name": "Net",
+    "rootPath": "bag-net",
+    "type": "bag",
+    "category": ["bag"],
+    "desc": "Никогда не думали что наша жизнь как то пересечется с авоськой, а в итоге мы сделали ее<br><br>Такая авоська отличный компаньон на кухне - в нее можно положить фрукты и овощи, спрятать бытовую химию или другие кухонные принадлежности. Так же ее можно использовать в ванной для удобного хранения фена и прочей техники.<br><br>Она вместительная, но в то же время легкая за счет мелкого плетения",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["cotton"],
+      "price": "1500"
+    },
+    "selectableProperty": [{
+      "value": "natural",
+      "name": "color"
+    }]
+  }, {
+    "group": "basic-incense",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  }, {
+    "group": "basic-incense",
+    "selectableProperty": [{
+      "value": "black",
+      "name": "color"
+    }]
+  }, {
+    "group": "basic-incense",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  }, {
+    "group": "stand-basic",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  }, {
+    "group": "stand-basic",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
   }
 ]

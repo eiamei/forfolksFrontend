@@ -2,8 +2,8 @@
   <section class="landing-slide-show">
     <img class="landing-slide-show__image" :src="image" alt="Stay home">
     <div class="stay-home-text-wrapper">
-      <h1>Оставайтесь дома</h1>
-      <p>До 30 апреля при заказе от 2500р <br>бесплатная доставка по Санкт&nbsp;-&nbsp;Петербургу</p>
+      <h1>New</h1>
+      <p>Подставка для благовоний Basic</p>
       <router-link class="stay-home-button" to="/store/category/all">Перейти в магазин</router-link>
     </div>
   </section>
@@ -14,8 +14,8 @@ export default {
   name: 'LandingSlideshow',
   data () {
     return {
-      horizontalImage: require('../assets/images/landing/stayhome-horizontal.jpg'),
-      verticalImage: require('../assets/images/landing/stayhome-vertical.jpg')
+      horizontalImage: require('../assets/images/landing/landing-basic-horizontal.jpg'),
+      verticalImage: require('../assets/images/landing/landing-basic-vertical.jpg')
     }
   },
   computed: {

@@ -2,7 +2,7 @@
   <main class="landing-page">
     <carousel class="landing-page-carousel"/>
     <heading-article/>
-    <suggestions/>
+    <suggestions class="landing-page-suggestions"/>
     <subjects/>
 <!--    <cat-advise/>-->
   </main>
@@ -28,6 +28,9 @@
 
   .landing-page {
     .landing-page-carousel {
+      margin: 3rem 1rem 0 1rem;
+    }
+    .landing-page-suggestions {
       margin: 3rem 1rem 0 1rem;
     }
   }
