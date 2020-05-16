@@ -39,10 +39,10 @@
         },
         methods: {
             toLeft () {
-                this.$refs.carousel.slidePrev();
+                // this.$refs.carousel.slidePrev();
             },
             toRight () {
-                this.$refs.carousel.slideNext();
+                // this.$refs.carousel.slideNext();
             }
         }
     });
