@@ -1,9 +1,9 @@
 <template>
   <section class="item-card" :class="{'item-card--wide': isWide}">
-    <router-link to="/product/bag-net/natural">
+    <router-link :to="getLink()">
       <div class="item-card__image-link">
         <img ref="image" :src="imageLink" loading="lazy" @load="imageLoaded"/>
-        <button class="regular-sans-text item-card__add-to-bag">Добавить в корзину</button>
+        <button class="regular-sans-text item-card__add-to-bag" @click="addToBag">Добавить в корзину</button>
       </div>
     </router-link>
     <div v-show="isShowInfo" class="item-card__text-wrapper">
@@ -14,7 +14,7 @@
       <p class="regular-sans-text item-card__price">{{item.itemProperty.price}}P</p>
     </div>
     <div v-show="isShowInfo">
-      <button class="clean-button item-card__color-button"></button>
+      <button class="clean-button item-card__color-button" @click="addToBag"></button>
     </div>
   </section>
 </template>
@@ -58,6 +58,18 @@
             imageLoaded () {
                 this.isShowInfo = true;
                 this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
+            },
+            getLink () {
+                let path = this.item.rootPath;
+                if (this.item.selectableProperty.length)
+                    this.item.selectableProperty.forEach(property => {
+                        path += `/${slugify(property.value.toLowerCase())}`
+                    });
+                return `/product/${path}`;
+            },
+            addToBag (event) {
+                event.preventDefault();
+                this.$store.dispatch('bag/add', this.item);
             }
         }
     });
@@ -91,7 +103,7 @@
       width: 100%;
       left: 0;
       bottom: 0;
-      z-index: 1;
+      z-index: 10;
       transition: .3s all;
       text-align: center;
       border: none;

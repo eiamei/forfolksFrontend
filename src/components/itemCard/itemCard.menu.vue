@@ -68,13 +68,7 @@ export default {
       window.scrollTo(0, 10000);
     },
     addToBag () {
-      this.$store.dispatch('bag/add', {
-        rootPath: this.item.rootPath,
-        name: this.item.name,
-        price: this.item.itemProperty.price,
-        type: this.item.type,
-        props: this.item.selectableProperty
-      });
+      this.$store.dispatch('bag/add', this.item);
     },
     changeProduct (name, propertyIndex, index) {
       let value = this.properties[name].values[index];
