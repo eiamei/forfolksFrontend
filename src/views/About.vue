@@ -5,7 +5,7 @@
       <p>hello.forfolks@gmail.com</p>
       <p>+7 (999) 239-66-10</p>
       <h4>Интернет магазин (самовывоз)</h4>
-      <p> Санкт-Петербург, ул. Кораблестроителей 46к1В (время по договоренности)</p>
+      <p>Санкт-Петербург, Артмуза, 13-линия, д. 72 (время по договоренности)</p>
       <nav class="about-contacts__links">
         <a href="https://vk.com/weareforfolks" target="_blank">
           <img class="about-contacts__link" src="../assets/svg/vk-logo.svg" alt="vk"/>
