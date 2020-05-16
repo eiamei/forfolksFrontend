@@ -3,7 +3,7 @@
     <article class="delivery-and-payment__article">
       <h1 class="centered-page__header">Доставка</h1>
       <h5>Самовывоз</h5>
-      <p>Станция метро Приморская, ул. Кораблестроителей 46 (время по договоренности)</p>
+      <p>Санкт-Петербург, Артмуза, 13-линия, д. 72 (время по договоренности)</p>
       <h5>Партнеры</h5>
       <p>Часть товара можно найти у наших партнеров</p>
       <router-link to="about" class="delivery-and-payment__black-link">Партнеры</router-link>

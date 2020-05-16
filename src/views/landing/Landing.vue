@@ -2,7 +2,7 @@
   <main class="landing-page">
     <carousel class="landing-page-carousel"/>
     <heading-article/>
-    <suggestions class="landing-page-suggestions"/>
+<!--    <suggestions class="landing-page-suggestions"/>-->
     <subjects/>
 <!--    <cat-advise/>-->
   </main>
