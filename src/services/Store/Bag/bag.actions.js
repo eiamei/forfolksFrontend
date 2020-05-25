@@ -2,9 +2,16 @@ import slugify from 'slugify';
 
 export default {
   add ({state, commit, dispatch}, item) {
+    let bagItem = {
+      rootPath: item.rootPath,
+      name: item.name,
+      price: item.itemProperty.price,
+      type: item.type,
+      props: item.selectableProperty
+    }
     let id = item.rootPath;
-    if (item.props.length)
-      item.props.forEach(property => {
+    if (bagItem.props.length)
+      bagItem.props.forEach(property => {
         id += `-${slugify(property.value.toLowerCase())}`
       });
     if (item.variant)
@@ -14,7 +21,7 @@ export default {
     else
       commit('bag', {
         [id]: {
-          ...item,
+          ...bagItem,
           qty: 1
         }
       });
