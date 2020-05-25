@@ -38,6 +38,7 @@
           'z-index__top--header': true,
           'header--white': this.$route.name === 'bag' || this.$route.name === 'payment' ||
             this.$route.name === 'about' || this.$route.name === 'delivery' || this.$route.name === 'landing'
+            || this.$route.name === 'store'
         }
       }
     }
