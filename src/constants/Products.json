@@ -4,108 +4,80 @@
     "selectableProperty": [{
       "value": "white",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "pot_modern_m",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "pot_modern_m",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "pot_modern_m",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "pot_modern_m",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-basic-s",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-basic-s",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-basic-s",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-basic-s",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-basic-s",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
-    }]
-  },
-  {
-    "group": "hanging-constellation",
-    "name": "Ursa Major",
-    "desc": "С этим подвесом в дом проникает неиного звездного волшебства. Латунные звезды на хлопковых нитях образуют созвездие \"Большая медведица\"",
-    "metaDesc": "Подвес в форме созвездия большая медведица. Хлопок, латунь, орешник.",
-    "shortDesc": "",
-    "selectableProperty": [{
-      "value": "Ursa Major",
-      "name": "model"
     }],
-    "itemProperty": {
-      "size": {
-        "height": 60,
-        "width": 30
-      },
-      "material": ["cotton", "brass"],
-      "price": "700"
-    }
-  },
-  {
-    "group": "hanging-constellation",
-    "name": "Cassiopeia",
-    "desc": "С этим подвесом в дом проникает неиного звездного волшебства. Латунные звезды на хлопковых нитях образуют созвездие \"Кассиопея\"",
-    "metaDesc": "Подвес в форме созвездия кассиопея. Хлопок, латунь, орешник.",
-    "shortDesc": "",
-    "selectableProperty": [{
-      "value": "Cassiopeia",
-      "name": "model"
-    }],
-    "itemProperty": {
-      "size": {
-        "height": 40,
-        "width": 30
-      },
-      "material": ["cotton", "brass"],
-      "price": "500"
-    }
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -113,7 +85,8 @@
     "selectableProperty": [{
       "value": "1",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -121,7 +94,8 @@
     "selectableProperty": [{
       "value": "2",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -129,7 +103,8 @@
     "selectableProperty": [{
       "value": "3",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -137,7 +112,8 @@
     "selectableProperty": [{
       "value": "4",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -145,7 +121,8 @@
     "selectableProperty": [{
       "value": "5",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -153,7 +130,8 @@
     "selectableProperty": [{
       "value": "6",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -161,7 +139,8 @@
     "selectableProperty": [{
       "value": "7",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "minibouquet-blum",
@@ -169,42 +148,48 @@
     "selectableProperty": [{
       "value": "8",
       "name": "model"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-cone-s",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-cone-s",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-cone-s",
     "selectableProperty": [{
       "value": "gray-fog",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-cone-s",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "stand-cone-s",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "name": "Spole",
@@ -222,7 +207,8 @@
       "weight": 10,
       "price": "450"
     },
-    "selectableProperty": []
+    "selectableProperty": [],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-swiss",
@@ -230,7 +216,8 @@
     "selectableProperty": [{
       "value": "white",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-swiss",
@@ -238,7 +225,8 @@
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-swiss",
@@ -246,7 +234,8 @@
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-swiss",
@@ -254,7 +243,8 @@
     "selectableProperty": [{
       "value": "khaki",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-swiss",
@@ -262,7 +252,8 @@
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-denmark",
@@ -270,7 +261,8 @@
     "selectableProperty": [{
       "value": "white",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-denmark",
@@ -278,7 +270,8 @@
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-denmark",
@@ -286,7 +279,8 @@
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-denmark",
@@ -294,7 +288,8 @@
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "group": "candlestick-house-denmark",
@@ -302,7 +297,8 @@
     "selectableProperty": [{
       "value": "khaki",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   },
   {
     "name": "Leaf",
@@ -327,7 +323,8 @@
     "selectableProperty": [{
       "value": "natural",
       "name": "color"
-    }]
+    }],
+    "layout": "high"
   }, {
     "name": "Wind",
     "rootPath": "panno-wind",

@@ -38,24 +38,6 @@
       "price": 350
     }
   },
-  "hanging-constellation": {
-    "rootPath": "hanging-constellation",
-    "name": "Constellation",
-    "type": "hanging",
-    "category": ["hanging"],
-    "desc": "",
-    "metaDesc": "",
-    "shortDesc": "",
-    "itemProperty": {
-      "size": {
-        "height": "",
-        "externalDiameter": ""
-      },
-      "material": ["cotton", "brass"],
-      "weight": "",
-      "price": "700"
-    }
-  },
   "minibouquet-blum": {
     "rootPath": "minibouquet-blum",
     "name": "Blum",
