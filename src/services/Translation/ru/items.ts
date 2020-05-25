@@ -25,7 +25,7 @@ export const items: LocaleMessageObject = {
     bouquet: 'Букет',
     bouquets: 'Букеты',
     seasons: 'Сезонные',
-    minibouquet: 'Мини букет',
+    miniBouquet: 'Мини букет',
     bowl: 'Чаша',
     toy: 'Игрушка',
     toys: 'Игрушки',
