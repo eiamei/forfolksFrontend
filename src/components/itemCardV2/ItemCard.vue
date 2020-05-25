@@ -1,22 +1,20 @@
 <template>
-  <section class="item-card" :class="{'item-card--wide': isWide}">
-    <router-link :to="getLink()">
-      <div class="item-card__image-link">
-        <img ref="image" :src="imageLink" loading="lazy" @load="imageLoaded"/>
-        <button class="regular-sans-text item-card__add-to-bag" @click="addToBag">Добавить в корзину</button>
-      </div>
+  <li class="item-card" :class="{'item-card--wide': isWide}">
+    <router-link class="item-card__image-link" :to="getLink()">
+      <img ref="image" :src="imageLink" loading="lazy" @load="imageLoaded"/>
+      <button class="regular-sans-text item-card__add-to-bag" @click="addToBag">Добавить в корзину</button>
     </router-link>
     <div v-show="isShowInfo" class="item-card__text-wrapper">
       <router-link class="item-card__text-link" to="/product/bag-net/natural">
         <p class="small-regular-heading item-card__model">{{item.name}}</p>
-        <p class="regular-sans-text item-card__type">{{item.type}}</p>
+        <p class="regular-sans-text item-card__type">{{$t(`items.${item.type}`)}}</p>
       </router-link>
       <p class="regular-sans-text item-card__price">{{item.itemProperty.price}}P</p>
     </div>
-    <div v-show="isShowInfo">
-      <button class="clean-button item-card__color-button" @click="addToBag"></button>
-    </div>
-  </section>
+<!--    <div v-show="isShowInfo">-->
+<!--      <button class="clean-button item-card__color-button" @click="addToBag"></button>-->
+<!--    </div>-->
+  </li>
 </template>
 
 <script lang="ts">
@@ -26,18 +24,24 @@
     interface Item {
         link: string;
         image: string;
+        rootPath: string;
+        selectableProperty: any;
+    }
+
+    interface Data {
+        isShowInfo: boolean;
+        isWide: boolean;
     }
 
     export default Vue.extend({
         name: 'ItemCard',
         props: {
-            item: {}
-            // item: {
-            //     type: Object as () => Item,
-            //     required: true
-            // }
+            item: {
+                type: Object as () => Item,
+                required: true
+            }
         },
-        data() {
+        data(): Data {
             return {
                 isShowInfo: false,
                 isWide: false
@@ -45,7 +49,7 @@
         },
         computed: {
             // TODO compute it in the store
-            imageLink () {
+            imageLink (): void {
                 let path = this.item.rootPath;
                 if (this.item.selectableProperty.length)
                     this.item.selectableProperty.forEach(property => {
@@ -55,11 +59,12 @@
             }
         },
         methods: {
-            imageLoaded () {
+            imageLoaded: function (): void {
                 this.isShowInfo = true;
+                // @ts-ignore
                 this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
             },
-            getLink () {
+            getLink (): string {
                 let path = this.item.rootPath;
                 if (this.item.selectableProperty.length)
                     this.item.selectableProperty.forEach(property => {
@@ -67,7 +72,7 @@
                     });
                 return `/product/${path}`;
             },
-            addToBag (event) {
+            addToBag (event): void {
                 event.preventDefault();
                 this.$store.dispatch('bag/add', this.item);
             }
@@ -81,15 +86,18 @@
 
   .item-card {
     display: inline-block;
+    overflow: hidden;
     &--wide {
       grid-column-end: span 2;
     }
     &__image-link {
       position: relative;
-      display: flex;
       width: 100%;
+      overflow: hidden;
       img {
         width: 100%;
+        height: calc(100% - 2.9rem);
+        object-fit: fill;
       }
       &:hover {
         .regular-sans-text.item-card__add-to-bag {
@@ -125,14 +133,31 @@
     &__text-link {
       display: flex;
       text-decoration: none;
+      overflow-x: hidden;
     }
     .small-regular-heading.item-card__model, .regular-sans-text.item-card__type, .regular-sans-text.item-card__price {
       margin: 0;
       align-self: flex-end;
       line-height: 1;
+      white-space: nowrap;
     }
+
+    .regular-sans-text.item-card__type, .regular-sans-text.item-card__price {
+      @media screen and (max-width: $horizontal-tablet) {
+        font-size: 10px;
+      }
+    }
+
+    .regular-sans-text.item-card__type {
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
     .small-regular-heading.item-card__model {
-      margin-right: 0.5rem
+      margin-right: 0.5rem;
+      @media screen and (max-width: $horizontal-tablet) {
+        font-size: 12px;
+      }
     }
     .clean-button.item-card__color-button {
       width: 1rem;

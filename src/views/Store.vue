@@ -98,6 +98,7 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '../assets/styles/vars';
   .store-loading {
     position: absolute;
     width: 10rem;
@@ -117,16 +118,15 @@ export default {
     }
   }
   .store {
-    /*min-height: 100vh;*/
-    /*columns: 4 22vw;*/
-    /*column-gap: 1rem;*/
-    /*padding: 0 1rem;*/
     display: grid;
     grid-gap: 1.5rem; /* [1] Add some gap between rows and columns */
     grid-template-columns: repeat( auto-fit, minmax( 20rem, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
     grid-auto-flow: dense;
-    margin: 3.5rem 0 0 0;
+    margin: 3.5rem 0 1.5rem 0;
     padding: 0 1rem;
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: repeat( auto-fit, minmax( 17rem, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+    }
   }
 
 </style>
