@@ -55,9 +55,9 @@
           to: '/store/category/stand',
           text: 'items.stands'
         }, {
-          to: '/store/category/bag',
-          text: 'items.bags'
-        }, {
+        //   to: '/store/category/bag',
+        //   text: 'items.bags'
+        // }, {
           to: '/store/category/vase',
           text: 'items.vases'
         }, {
