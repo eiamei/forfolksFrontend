@@ -24,7 +24,7 @@
     data () {
       return {
         isSuccess: null,
-        isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) || localStorage.getItem('ip1')
+        isPromo: ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) || localStorage.getItem('ip1')
       }
     },
     created () {
