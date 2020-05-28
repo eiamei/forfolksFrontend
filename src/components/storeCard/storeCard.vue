@@ -20,13 +20,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import slugify from "slugify";
-
-    interface Item {
-        link: string;
-        image: string;
-        rootPath: string;
-        selectableProperty: any;
-    }
+    import { ItemInterface } from "../../services/Store/Item/item.types";
 
     interface Data {
         isShowInfo: boolean;
@@ -37,7 +31,7 @@
         name: 'ItemCard',
         props: {
             item: {
-                type: Object as () => Item,
+                type: Object as () => ItemInterface,
                 required: true
             }
         },

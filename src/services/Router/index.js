@@ -4,7 +4,7 @@ import Vue from 'vue';
 import ruTranslate from '../Translation/ru';
 
 const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store.vue');
-const Item = () => import(/* webpackChunkName: "item-page" */'../../components/itemCard/ItemCard.vue');
+const Item = () => import(/* webpackChunkName: "item-page" */'../../views/item/Item.vue');
 const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag.vue');
 const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment.vue');
 const About = () => import(/* webpackChunkName: "about-page" */'../../views/About.vue');

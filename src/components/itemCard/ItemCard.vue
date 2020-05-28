@@ -1,10 +1,3 @@
-<template>
-
-</template>
-
-<script lang="ts">
-
-</script>
 <!--<template>-->
 <!--  <div class="item-card">-->
 <!--    <section ref="images" v-if="images">-->
