@@ -11,11 +11,17 @@
     import Vue from 'vue';
     import ItemPhotos from './components/ItemPhotos.vue';
     import ItemSideBar from './components/ItemSideBar.vue';
+    import {ItemStateInterface} from "@/services/Store/Item/item.types";
 
     export default Vue.extend({
         components: {ItemPhotos, ItemSideBar},
         created () {
             this.init();
+        },
+        computed: {
+            item () : ItemStateInterface {
+                return this.$store.item;
+            }
         },
         methods: {
             init () {

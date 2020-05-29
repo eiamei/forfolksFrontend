@@ -1,3 +1,5 @@
+import { link } from "@/global";
+
 export interface ItemInterface {
     link: string;
     image: string;
@@ -6,10 +8,11 @@ export interface ItemInterface {
 }
 
 export interface ItemStateInterface {
-    item: ItemInterface;
+    data?: ItemInterface;
+    images: Array<link>;
 }
 
-export interface  RootPropsInterface {
+export interface  RoutePropsInterface {
     root: string;
     prop1: string;
     prop2: string;
