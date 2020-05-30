@@ -43,10 +43,10 @@ export const itemActions = {
         }
     },
     findImages ({state, commit}, params) {
-        if (state.item) {
-            let path = state.item.rootPath;
-            if (state.item.selectableProperty.length)
-                state.item.selectableProperty.forEach(property => {
+        if (state.data) {
+            let path = state.data.rootPath;
+            if (state.data.selectableProperty.length)
+                state.data.selectableProperty.forEach(property => {
                     path += `-${slugify(property.value.toLowerCase())}`
                 });
             let images = [];

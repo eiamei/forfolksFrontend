@@ -1,7 +1,7 @@
 <template>
   <main class="item-card">
-    <div>
-      <item-photos/>
+    <div style="display:flex;">
+      <item-photos :images="item.images"/>
       <item-side-bar/>
     </div>
   </main>
@@ -20,7 +20,7 @@
         },
         computed: {
             item () : ItemStateInterface {
-                return this.$store.item;
+                return this.$store.state.item;
             }
         },
         methods: {

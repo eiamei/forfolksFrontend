@@ -1,13 +1,19 @@
 <template>
-  <div></div>
+  <div>
+    <img :src="image" v-for="image in images">
+  </div>
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
+    import { link } from "@/global";
 
     export default Vue.extend({
-        computed: {
-
+        props: {
+            images: {
+                type: Array as () => Array<link>,
+                required: true
+            }
         }
     })
 </script>
