@@ -1,18 +1,18 @@
 <template>
-  <li class="item-card" :class="{'item-card--wide': isWide}">
-    <router-link class="item-card__image-link" :to="getLink()">
+  <li class="store-card" :class="{'store-card--wide': isWide}">
+    <router-link class="store-card__image-link" :to="getLink()">
       <img ref="image" :src="imageLink" loading="lazy" @load="imageLoaded"/>
-      <button class="regular-sans-text item-card__add-to-bag" @click="addToBag">Добавить в корзину</button>
+      <button class="regular-sans-text store-card__add-to-bag" @click="addToBag">Добавить в корзину</button>
     </router-link>
-    <div v-show="isShowInfo" class="item-card__text-wrapper">
-      <router-link class="item-card__text-link" to="/product/bag-net/natural">
-        <p class="small-regular-heading item-card__model">{{item.name}}</p>
-        <p class="regular-sans-text item-card__type">{{$t(`items.${item.type}`)}}</p>
+    <div v-show="isShowInfo" class="store-card__text-wrapper">
+      <router-link class="store-card__text-link" to="/product/bag-net/natural">
+        <p class="small-regular-heading store-card__model">{{item.name}}</p>
+        <p class="regular-sans-text store-card__type">{{$t(`items.${item.type}`)}}</p>
       </router-link>
-      <p class="regular-sans-text item-card__price">{{item.itemProperty.price}}P</p>
+      <p class="regular-sans-text store-card__price">{{item.price}}P</p>
     </div>
 <!--    <div v-show="isShowInfo">-->
-<!--      <button class="clean-button item-card__color-button" @click="addToBag"></button>-->
+<!--      <button class="clean-button store-card__color-button" @click="addToBag"></button>-->
 <!--    </div>-->
   </li>
 </template>
@@ -20,7 +20,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import slugify from "slugify";
-    import { ItemInterface } from "../../services/Store/Item/item.types";
+    import { ItemInterface } from "../../services/Store/Shop/shop.types";
 
     interface Data {
         isShowInfo: boolean;
@@ -28,7 +28,7 @@
     }
 
     export default Vue.extend({
-        name: 'ItemCard',
+        name: 'StoreCard',
         props: {
             item: {
                 type: Object as () => ItemInterface,
@@ -78,7 +78,7 @@
   @import "../../assets/styles/ui";
   @import "../../assets/styles/vars";
 
-  .item-card {
+  .store-card {
     display: inline-block;
     overflow: hidden;
     &--wide {
@@ -94,13 +94,13 @@
         object-fit: fill;
       }
       &:hover {
-        .regular-sans-text.item-card__add-to-bag {
+        .regular-sans-text.store-card__add-to-bag {
           background: rgba(white, 0.6);
           color: $dark-blue;
         }
       }
     }
-    .regular-sans-text.item-card__add-to-bag {
+    .regular-sans-text.store-card__add-to-bag {
       position: absolute;
       width: 100%;
       left: 0;
@@ -129,31 +129,31 @@
       text-decoration: none;
       overflow-x: hidden;
     }
-    .small-regular-heading.item-card__model, .regular-sans-text.item-card__type, .regular-sans-text.item-card__price {
+    .small-regular-heading.store-card__model, .regular-sans-text.store-card__type, .regular-sans-text.store-card__price {
       margin: 0;
       align-self: flex-end;
       line-height: 1;
       white-space: nowrap;
     }
 
-    .regular-sans-text.item-card__type, .regular-sans-text.item-card__price {
+    .regular-sans-text.store-card__type, .regular-sans-text.store-card__price {
       @media screen and (max-width: $horizontal-tablet) {
         font-size: 10px;
       }
     }
 
-    .regular-sans-text.item-card__type {
+    .regular-sans-text.store-card__type {
       overflow-x: hidden;
       text-overflow: ellipsis;
     }
 
-    .small-regular-heading.item-card__model {
+    .small-regular-heading.store-card__model {
       margin-right: 0.5rem;
       @media screen and (max-width: $horizontal-tablet) {
         font-size: 12px;
       }
     }
-    .clean-button.item-card__color-button {
+    .clean-button.store-card__color-button {
       width: 1rem;
       height: 1rem;
       border-radius: 1em;
