@@ -6,7 +6,7 @@
     </header>
     <p class="item-side-bar__id">{{item.articul}}</p>
     <p class="item-side-bar__price">{{item.price}}P</p>
-    <color-picker class="item-side-bar__color-picker" :colors="colors" :current="currentColor"/>
+    <color-picker class="item-side-bar__color-picker" :item="item"/>
     <div class="item-side-bar__divider"></div>
     <p class="">{{item.shortDesc}}</p>
     <p class="item-side-bar__id">Детали</p>
@@ -42,14 +42,6 @@
       props: {
           item: {
               type: Object as () => ItemInterface,
-              required: true
-          },
-          colors: {
-              type: Array as () => Array<Color>,
-              required: true
-          },
-          currentColor: {
-              type: String as () => Color,
               required: true
           }
       },

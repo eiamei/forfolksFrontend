@@ -1,22 +1,29 @@
 <template>
   <ul class="color-picker">
-    <li v-for="color in colors" :class="computeClass(color)" :title="color" :key="color"></li>
+    <li v-for="color in colors" :class="computeClass(color)" :title="color" :key="color">
+      <router-link style="display: flex; width: 1rem; height: 1rem;" :to="createLink(color)"></router-link>
+    </li>
   </ul>
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
-    import { Color } from "../global";
+    import { Color, Link } from "../global";
+    import {ItemInterface} from "@/services/Store/Shop/shop.types";
 
     export default Vue.extend({
         props: {
-            colors: {
-                type: Array as () => Array<Color>,
+            item: {
+                type: Object as () => ItemInterface,
                 required: true
+            }
+        },
+        computed: {
+            colors () : Array<Color> {
+                return this.$store.getters['shop/findItemColors'](this.item);
             },
-            current: {
-                type: String as () => Color,
-                required: false
+            current () : Color {
+                return this.$store.getters['shop/findItemCurrentColor'](this.item);
             }
         },
         methods: {
@@ -24,6 +31,15 @@
                 const colors =  ['color-picker__circle', `color-picker__circle--${color}`]
                 if (color === this.current) colors.push('color-picker__circle--selected')
                 return colors;
+            },
+            createLink (color) : Link {
+                let link : Link = `/product/${this.item.rootPath}`;
+                this.item.selectableProperty
+                    .forEach(function (property) : void {
+                        if (property.name === 'color') link += `/${color}`
+                        else link += `/${property.value}`
+                    })
+                return link;
             }
         }
     })

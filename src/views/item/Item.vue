@@ -2,7 +2,7 @@
   <main class="item-card">
     <div style="display:flex;">
       <item-photos :images="images"/>
-      <item-side-bar :item="item" :colors="colors" :currentColor="currentColor"/>
+      <item-side-bar :item="item"/>
     </div>
   </main>
 </template>
@@ -22,12 +22,6 @@
             },
             images () : Array<link> {
                 return this.$store.getters['shop/findItemImages'](this.item);
-            },
-            colors () : Array<Color> {
-                return this.$store.getters['shop/findItemColors'](this.item);
-            },
-            currentColor () : Color {
-                return this.$store.getters['shop/findItemCurrentColor'](this.item);
             }
         }
     })
