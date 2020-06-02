@@ -1,8 +1,8 @@
 <template>
   <main class="item-card">
     <div style="display:flex;">
-      <item-photos :images="item.images"/>
-      <item-side-bar/>
+      <item-photos :images="images"/>
+      <item-side-bar :item="item" :colors="colors" :currentColor="currentColor"/>
     </div>
   </main>
 </template>
@@ -11,21 +11,23 @@
     import Vue from 'vue';
     import ItemPhotos from './components/ItemPhotos.vue';
     import ItemSideBar from './components/ItemSideBar.vue';
-    import {ItemStateInterface} from "@/services/Store/Item/item.types";
+    import { ItemInterface } from "@/services/Store/Shop/Shop.types";
+    import {Color, link} from "@/global";
 
     export default Vue.extend({
         components: {ItemPhotos, ItemSideBar},
-        created () {
-            this.init();
-        },
         computed: {
-            item () : ItemStateInterface {
-                return this.$store.state.item;
-            }
-        },
-        methods: {
-            init () {
-                this.$store.dispatch('item/init', this.$route.params);
+            item () : ItemInterface {
+                return this.$store.getters['shop/findItemByParam'](this.$route.params);
+            },
+            images () : Array<link> {
+                return this.$store.getters['shop/findItemImages'](this.item);
+            },
+            colors () : Array<Color> {
+                return this.$store.getters['shop/findItemColors'](this.item);
+            },
+            currentColor () : Color {
+                return this.$store.getters['shop/findItemCurrentColor'](this.item);
             }
         }
     })

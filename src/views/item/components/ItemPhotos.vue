@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <img :src="image" v-for="image in images">
+  <div class="item-photos">
+    <img width="100%" :src="image" v-for="image in images" :key="image">
   </div>
 </template>
 
@@ -18,6 +18,9 @@
     })
 </script>
 
-<style scoped>
-
+<style lang="scss">
+  .item-photos {
+    width: 100%;
+    margin: 0 2rem 0 2rem;
+  }
 </style>
