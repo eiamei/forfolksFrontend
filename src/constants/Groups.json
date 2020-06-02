@@ -15,9 +15,9 @@
         "innerDiameter": 7
       },
       "material": ["concrete"],
-      "weight": 500,
-      "price": 530
-    }
+      "weight": 500
+    },
+    "price": 530
   },
   "stand-basic-s": {
     "rootPath": "stand-basic-s",
@@ -34,9 +34,9 @@
         "height": 1.5
       },
       "material": ["concrete"],
-      "weight": 150,
-      "price": 350
-    }
+      "weight": 150
+    },
+    "price": 350
   },
   "minibouquet-blum": {
     "rootPath": "minibouquet-blum",
@@ -52,9 +52,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": "400"
-    }
+      "weight": 10
+    },
+    "price": "400"
   },
   "stand-cone-s": {
     "rootPath": "stand-cone-s",
@@ -70,9 +70,9 @@
         "externalDiameter": 2.5
       },
       "material": ["concrete"],
-      "weight": 100,
-      "price": "150"
-    }
+      "weight": 100
+    },
+    "price": "150"
   },
   "candlestick-house-swiss": {
     "rootPath": "candlestick-house-swiss",
@@ -87,9 +87,9 @@
         "height": 6.5
       },
       "material": ["concrete"],
-      "weight": 250,
-      "price": "350"
-    }
+      "weight": 250
+    },
+    "price": "350"
   },
   "candlestick-house-denmark": {
     "rootPath": "candlestick-house-denmark",
@@ -104,9 +104,9 @@
         "height": 7.5
       },
       "material": ["concrete"],
-      "weight": 150,
-      "price": "350"
-    }
+      "weight": 150
+    },
+    "price": "350"
   },
   "tray-tray": {
     "rootPath": "tray-tray",
@@ -124,9 +124,9 @@
         "innerDiameter": 24
       },
       "material": ["concrete"],
-      "weight": 1400,
-      "price": "1000"
-    }
+      "weight": 1400
+    },
+    "price": "1000"
   },
   "candle-wax-drops": {
     "rootPath": "candle-wax-drops",
@@ -138,9 +138,9 @@
     "shortDesc": "",
     "itemProperty": {
       "material": ["coconutWax"],
-      "weight": 200,
-      "price": "100"
-    }
+      "weight": 200
+    },
+    "price": "100"
   },
   "vase-modern": {
     "rootPath": "vase-modern",
@@ -155,9 +155,9 @@
         "height": 19.5
       },
       "material": ["concrete"],
-      "weight": 1200,
-      "price": "990"
-    }
+      "weight": 1200
+    },
+    "price": "990"
   },
   "vase-mild": {
     "rootPath": "vase-mild",
@@ -172,9 +172,9 @@
         "height": 7.5
       },
       "material": ["concrete"],
-      "weight": 170,
-      "price": "350"
-    }
+      "weight": 170
+    },
+    "price": "350"
   },
   "cup-mild": {
     "rootPath": "cup-mild",
@@ -191,9 +191,9 @@
         "externalDiameter": 8
       },
       "material": ["concrete"],
-      "weight": 650,
-      "price": "850"
-    }
+      "weight": 650
+    },
+    "price": "850"
   },
   "bowl-mild": {
     "rootPath": "bowl-mild",
@@ -210,9 +210,9 @@
         "innerDiameter": 6
       },
       "material": ["concrete"],
-      "weight": 130,
-      "price": "250"
-    }
+      "weight": 130
+    },
+    "price": "250"
   },
   "candle-mild": {
     "rootPath": "candle-mild",
@@ -229,9 +229,9 @@
         "innerDiameter": 6
       },
       "material": ["concrete"],
-      "weight": 200,
-      "price": "500"
-    }
+      "weight": 200
+    },
+    "price": "500"
   },
   "basic-incense": {
     "rootPath": "stand-basic-incense",
@@ -248,9 +248,9 @@
         "length": "7"
       },
       "material": ["concrete"],
-      "weight": 220,
-      "price": "600"
-    }
+      "weight": 220
+    },
+    "price": "600"
   },
   "stand-basic": {
     "rootPath": "stand-basic",
@@ -267,8 +267,8 @@
         "length": "7"
       },
       "material": ["concrete"],
-      "weight": 220,
-      "price": "600"
-    }
+      "weight": 220
+    },
+    "price": "600"
   }
 }

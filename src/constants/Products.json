@@ -92,9 +92,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 300
+      "weight": 10
     },
+    "price": 300,
     "layout": "high"
   },
   {
@@ -110,9 +110,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 300
+      "weight": 10
     },
+    "price": 300,
     "layout": "high"
   },
   {
@@ -137,9 +137,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 200
+      "weight": 10
     },
+    "price": 200,
     "layout": "high"
   },
   {
@@ -155,9 +155,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 250
+      "weight": 10
     },
+    "price": 250,
     "layout": "high"
   },
   {
@@ -173,9 +173,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 300
+      "weight": 10
     },
+    "price": 300,
     "layout": "high"
   },
   {
@@ -191,9 +191,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 250
+      "weight": 10
     },
+    "price": 250,
     "layout": "high"
   },
   {
@@ -209,9 +209,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 200
+      "weight": 10
     },
+    "price": 200,
     "layout": "high"
   },
   {
@@ -267,9 +267,9 @@
         "height": 20
       },
       "material": ["cotton"],
-      "weight": 10,
-      "price": "450"
+      "weight": 10
     },
+    "price": "450",
     "selectableProperty": [],
     "layout": "high"
   },
@@ -380,13 +380,13 @@
       },
       "material": [
         "cotton"
-      ],
-      "price": "1100"
+      ]
     },
     "selectableProperty": [{
       "value": "natural",
       "name": "color"
     }],
+    "price": "1100",
     "layout": "high"
   }, {
     "name": "Wind",
@@ -401,33 +401,33 @@
         "height": 60,
         "width": 38
       },
-      "material": ["cotton"],
-      "price": "2100"
+      "material": ["cotton"]
     },
     "selectableProperty": [{
       "value": "natural",
       "name": "color"
-    }]
+    }],
+    "price": "2100"
   }, {
-  "name": "Stranger",
-  "rootPath": "panno-stranger",
-  "type": "panno",
-  "category": ["panno"],
-  "desc": "На это панно нас вдохновили путешествия. В нем нет никакого конкретного образа, скорее набор разных деталей, ощущений, которые мы собрали в разных поездках. <br><br> Обратите внимание, что веточки могут отличаться.",
-  "metaDesc": "",
-  "shortDesc": "",
-  "itemProperty": {
-    "size": {
-      "height": 85,
-      "width": 35
+    "name": "Stranger",
+    "rootPath": "panno-stranger",
+    "type": "panno",
+    "category": ["panno"],
+    "desc": "На это панно нас вдохновили путешествия. В нем нет никакого конкретного образа, скорее набор разных деталей, ощущений, которые мы собрали в разных поездках. <br><br> Обратите внимание, что веточки могут отличаться.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": 85,
+        "width": 35
+      },
+      "material": ["cotton"]
     },
-    "material": ["cotton"],
+    "selectableProperty": [{
+      "value": "natural",
+      "name": "color"
+    }],
     "price": "2900"
-  },
-  "selectableProperty": [{
-    "value": "natural",
-    "name": "color"
-  }]
   },
   {
     "group": "tray-tray",
