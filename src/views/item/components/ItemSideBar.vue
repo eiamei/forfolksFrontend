@@ -11,9 +11,7 @@
     <p class="">{{item.shortDesc}}</p>
     <p class="item-side-bar__id">Детали</p>
     <ul class="item-side-bar__details">
-      <li>В: 4cm, Д: 26cм </li>
-      <li>В: 4cm, Д: 26cм </li>
-      <li>В: 4cm, Д: 26cм </li>
+      <li v-for="property in properties" :key="property">{{ property }}</li>
     </ul>
     <div class="item-side-bar__add-wrapper">
       <button class="item-side-bar__change-button" @click="decrement">
@@ -31,41 +29,60 @@
 <script lang="ts">
   import Vue from 'vue';
   import ColorPicker from '../../../components/ColorPicker.vue';
-  import { Color } from "@/global";
-  import { ItemInterface } from '../../../services/Store/Shop/shop.types';
+  import {ItemInterface} from '../../../services/Store/Shop/shop.types';
   import MinusIcon from "@/components/Icons/Minus.vue";
   import PlusIcon from "@/components/Icons/Plus.vue";
 
-  export default Vue.extend({
-      name: 'ItemSideBar',
-      components: {PlusIcon, MinusIcon, ColorPicker },
-      props: {
-          item: {
-              type: Object as () => ItemInterface,
-              required: true
-          }
-      },
-      data () {
-          return {
-              quantity: 1
-          }
-      },
-      methods: {
-          decrement (): void {
-              if (this.quantity > 1) {
-                  this.quantity--;
-              }
-          },
-          increment (): void {
-              this.quantity++;
-          }
+  interface Data {
+    quantity: number;
+  }
+  interface Methods {
+    decrement(): void;
+    increment(): void;
+  }
+  interface Computed {
+    properties: ItemInterface;
+  }
+  interface Props {
+    item: ItemInterface
+  }
+
+  export default Vue.extend<Data, Methods, Computed, Props>({
+    name: 'ItemSideBar',
+    components: {PlusIcon, MinusIcon, ColorPicker},
+    props: {
+      item: {
+        type: Object as () => ItemInterface,
+        required: true
       }
+    },
+    data() : Data {
+      return {
+        quantity: 1
+      }
+    },
+    computed: {
+      properties () : ItemInterface {
+        return this.$store.getters['shop/findItemProperties'](this.item)
+      }
+    },
+    methods: {
+      decrement(): void {
+        if (this.quantity > 1) {
+          this.quantity--;
+        }
+      },
+      increment(): void {
+        this.quantity++;
+      }
+    }
   })
 </script>
 
 <style lang="scss">
   @import '../../../assets/styles/ui';
   @import '../../../assets/styles/vars';
+
   .item-side-bar {
     max-width: 520px;
     width: 100%;
@@ -73,52 +90,64 @@
     top: 4rem;
     align-self: flex-start;
     padding-right: 2rem;
+
     &__heading {
       display: flex;
       align-items: baseline;
     }
+
     &__heading-name {
       margin: 0 0.75rem 0 0;
     }
+
     &__heading-type {
       margin: 0;
       font-size: 1.25rem;
     }
+
     &__id {
       color: $light-gray;
       margin: 0;
     }
+
     &__price {
       margin: 0.75rem 0 0 0;
       font-size: 1.5rem;
     }
+
     &__color-picker {
       margin-top: 1rem;
     }
+
     &__divider {
       width: 100%;
       height: 1px;
       background-color: $light-gray;
       margin: 1.5rem 0;
     }
+
     &__details {
       padding: 0 0 0 1.5rem;
     }
+
     &__add-wrapper {
       display: flex;
       justify-content: flex-end;
       margin: 3rem 0;
     }
+
     &__change-button {
       background: none;
       border: none;
       cursor: pointer;
     }
+
     &__input {
       width: 50px;
       text-align: center;
       margin: 0 1rem;
     }
+
     &__add-button {
       padding: 1rem 1.5rem;
       color: white;

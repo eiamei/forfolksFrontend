@@ -1,15 +1,16 @@
 export interface ItemInterface {
-    link: string;
-    image: string;
     rootPath: string;
-    selectableProperty: any;
     group: string;
-}
-
-export interface ItemInterface {
+    name: string;
+    type: string;
+    category: Array<string>;
+    desc: string;
+    metaDesc: string;
+    shortDesc: string;
+    itemProperty: Object;
+    price: string;
     link: string;
     image: string;
-    rootPath: string;
     selectableProperty: any;
 }
 
