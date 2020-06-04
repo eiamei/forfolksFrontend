@@ -21,7 +21,7 @@
       <button class="item-side-bar__change-button" @click="increment">
         <plus-icon/>
       </button>
-      <button class="item-side-bar__add-button">Добавить</button>
+      <button class="item-side-bar__add-button" @click="add">Добавить</button>
     </div>
   </section>
 </template>
@@ -37,6 +37,7 @@
     quantity: number;
   }
   interface Methods {
+    add(): void;
     decrement(): void;
     increment(): void;
   }
@@ -67,6 +68,9 @@
       }
     },
     methods: {
+      add(): void {
+        this.$store.dispatch('bag/add', { item: this.item, quantity: this.quantity });
+      },
       decrement(): void {
         if (this.quantity > 1) {
           this.quantity--;
@@ -140,6 +144,13 @@
       background: none;
       border: none;
       cursor: pointer;
+      outline: none;
+      &:focus {
+        line {
+          transition: .3s all;
+          stroke-width: 5px;
+        }
+      }
     }
 
     &__input {
@@ -152,9 +163,23 @@
       padding: 1rem 1.5rem;
       color: white;
       background-color: $dark-blue;
+      border: 1px solid $dark-blue;
       text-transform: uppercase;
       margin-left: 2rem;
       cursor: pointer;
+      transition: .3s all;
+      &:focus {
+        outline: 1px solid black;
+      }
+      &:hover {
+        background: transparent;
+        color: black;
+      }
+      &--sold-out {
+        background: transparent;
+        border: none;
+        color: $red;
+      }
     }
   }
 </style>

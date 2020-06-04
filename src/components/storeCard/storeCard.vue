@@ -68,7 +68,7 @@
             },
             addToBag (event): void {
                 event.preventDefault();
-                this.$store.dispatch('bag/add', this.item);
+                this.$store.dispatch('bag/add', { item: this.item });
             }
         }
     });
