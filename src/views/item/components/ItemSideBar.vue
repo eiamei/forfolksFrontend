@@ -88,7 +88,8 @@
   @import '../../../assets/styles/vars';
 
   .item-side-bar {
-    max-width: 520px;
+    max-width: 25rem;
+    min-width: 25rem;
     width: 100%;
     position: sticky;
     top: 4rem;
