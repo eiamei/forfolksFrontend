@@ -32,13 +32,19 @@
   @import '../../../assets/styles/vars';
   @import '../../../assets/styles/ui';
   .item-more-info {
+    box-sizing: border-box;
     max-width: 25rem;
     min-width: 25rem;
     width: 100%;
     align-self: flex-start;
     list-style: none;
-    margin: 3rem 2rem;
-    padding: 0;
+    padding: 3rem 2rem;
+    margin: 0 1rem 0 0;
+    @media screen and (max-width: $tablet) {
+      padding: 1rem;
+      max-width: unset;
+      min-width: unset;
+    }
     &__link {
       border: none;
       background: none;

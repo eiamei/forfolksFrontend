@@ -8,6 +8,7 @@
       <item-description :item="item"/>
       <item-more-info :item="item"/>
     </div>
+
   </main>
 </template>
 
@@ -40,10 +41,17 @@
   }
   .item-first-row {
     display:flex;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
   .item-second-row {
     display:flex;
     background: $soft-yellow-background;
     margin-top: 2rem;
+    @media screen and (max-width: $tablet) {
+      margin: 0;
+      flex-direction: column;
+    }
   }
 </style>

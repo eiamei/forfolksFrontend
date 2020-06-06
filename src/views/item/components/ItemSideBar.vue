@@ -8,10 +8,12 @@
     <p class="item-side-bar__price">{{item.price}}P</p>
     <color-picker class="item-side-bar__color-picker" :item="item"/>
     <div class="item-side-bar__divider"></div>
-    <p class="">{{item.shortDesc}}</p>
-    <p class="item-side-bar__id">Детали</p>
+    <p class="item-side-bar__short-desc regular-sans-text">{{item.shortDesc}}</p>
+    <p class="item-side-bar__id regular-sans-text">Детали</p>
     <ul class="item-side-bar__details">
-      <li v-for="property in properties" :key="property">{{ property }}</li>
+      <li v-for="property in properties" class="item-side-bar__details-text regular-sans-text" :key="property">
+        {{ property }}
+      </li>
     </ul>
     <div class="item-side-bar__add-wrapper">
       <button class="item-side-bar__change-button" @click="decrement">
@@ -90,11 +92,16 @@
   .item-side-bar {
     max-width: 25rem;
     min-width: 25rem;
-    width: 100%;
     position: sticky;
     top: 4rem;
     align-self: flex-start;
-    padding-right: 2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    @media screen and (max-width: $tablet) {
+      max-width: 100%;
+      min-width: 100%;
+      padding: 1rem;
+    }
 
     &__heading {
       display: flex;
@@ -110,9 +117,10 @@
       font-size: 1.25rem;
     }
 
-    &__id {
+    .regular-sans-text.item-side-bar__id {
       color: $light-gray;
       margin: 0;
+      text-transform: none;
     }
 
     &__price {
@@ -133,6 +141,13 @@
 
     &__details {
       padding: 0 0 0 1.5rem;
+    }
+
+    .regular-sans-text.item-side-bar__details-text {
+      text-transform: none;
+    }
+    .item-side-bar__short-desc.regular-sans-text{
+      text-transform: none;
     }
 
     &__add-wrapper {

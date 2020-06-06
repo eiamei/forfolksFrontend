@@ -19,8 +19,10 @@
 </script>
 
 <style lang="scss">
+  @import '../../../assets/styles/vars';
   .item-photos {
     width: 100%;
-    margin: 0 2rem 0 2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
 </style>
