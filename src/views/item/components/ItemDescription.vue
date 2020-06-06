@@ -25,6 +25,7 @@
   @import '../../../assets/styles/vars';
   @import '../../../assets/styles/ui';
   .item-description {
+    width: 100%;
     padding: 1rem;
     border-right: 1px solid $dark-blue;
     margin: 2rem 0;

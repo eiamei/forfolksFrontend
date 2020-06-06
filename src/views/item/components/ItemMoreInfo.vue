@@ -1,7 +1,7 @@
 <template>
   <ul class="item-more-info">
-    <li class="regular-link">
-      <button class="item-more-info__link regular-sans-text">Подробнее об уходе</button>
+    <li v-if="item.care" class="item-more-info__link-container regular-link">
+      <button class="item-more-info__link regular-sans-text" @click="open">Подробнее об уходе</button>
       <div></div>
     </li>
     <li class="item-more-info__color regular-sans-text">Цвет изделия может незначительно отличаться</li>
@@ -25,6 +25,11 @@
         required: true
       }
     },
+    methods: {
+      open () : void {
+        this.$emit('open', true)
+      }
+    }
   });
 </script>
 
@@ -45,19 +50,23 @@
       max-width: unset;
       min-width: unset;
     }
+    &__link-container.regular-link {
+      margin-bottom: 1rem;
+    }
     &__link {
       border: none;
       background: none;
       padding: 0;
       cursor: pointer;
     }
-    &__color {
-      margin-top: 1rem;
+    &__color.regular-sans-text {
       color: $light-gray;
+      margin-bottom: .5rem;
+      line-height: 1.4;
     }
-    &__design {
-      margin-top: 0.5rem;
+    &__design.regular-sans-text {
       color: $light-gray;
+      line-height: 1.4;
     }
   }
 </style>
