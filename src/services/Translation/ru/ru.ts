@@ -1,12 +1,13 @@
 import { LocaleMessageObject } from "vue-i18n";
-import { landing } from '@/services/Translation/ru/landing';
-import { footer } from "@/services/Translation/ru/footer";
-import { items } from "@/services/Translation/ru/items";
-import { links } from "@/services/Translation/ru/links";
-import { colors } from "@/services/Translation/ru/colors";
-import { material } from "@/services/Translation/ru/material";
-import { size } from "@/services/Translation/ru/size";
-import {common} from "@/services/Translation/ru/common";
+import { landing } from './landing';
+import { footer } from "./footer";
+import { items } from "./items";
+import { links } from "./links";
+import { colors } from "./colors";
+import { material } from "./material";
+import { size } from "./size";
+import { common } from "./common";
+import { care } from './care';
 
 export const ru: LocaleMessageObject = {
     landing,
@@ -16,5 +17,6 @@ export const ru: LocaleMessageObject = {
     colors,
     material,
     size,
-    common
+    common,
+    care
 }

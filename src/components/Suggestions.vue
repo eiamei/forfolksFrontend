@@ -24,7 +24,7 @@
     import Vue from 'vue';
     import { Hooper, Slide } from 'hooper';
     import 'hooper/dist/hooper.css';
-    import ItemCard from "@/components/itemCardV2/ItemCard.vue";
+    import ItemCard from "@/components/storeCard/ItemCard.vue";
     import ArrowIcon from "@/components/Icons/Arrow.vue";
 
     export default Vue.extend({

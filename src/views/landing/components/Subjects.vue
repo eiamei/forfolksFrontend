@@ -1,6 +1,6 @@
 <template>
   <div class="landing-subjects">
-    <article class="landing-subject" v-for="(subject, index) in subjects">
+    <article class="landing-subject" v-for="(subject, index) in subjects" :key="subject.href">
       <img :class="imageStyles(index)" :src="subject.img"/>
       <div :class="textStyles(index)">
         <h2 class="serif-heading">{{$t(subject.heading)}}</h2>

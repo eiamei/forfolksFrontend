@@ -1,0 +1,13 @@
+.centered-page {
+  text-align: center;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 40px;
+  &__header {
+    font-weight: 300;
+  }
+}

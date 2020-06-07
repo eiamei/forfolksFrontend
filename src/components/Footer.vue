@@ -19,9 +19,9 @@
 <script lang="ts">
     import Vue from 'vue';
     import {VueConstructor} from "vue";
-    import VkLogo from '../components/Icons/Vk.vue';
-    import FacebookLogo from '../components/Icons/Facebook.vue';
-    import InstagramLogo from '../components/Icons/Instagram.vue';
+    import VkLogo from './/Icons/Vk.vue';
+    import FacebookLogo from './/Icons/Facebook.vue';
+    import InstagramLogo from './/Icons/Instagram.vue';
     import { link } from "@/global";
     import { LocaleMessage } from "vue-i18n";
 
@@ -43,7 +43,7 @@
     }
 
     export default Vue.extend({
-        name: 'footer',
+        name: 'AppFooter',
         components: { VkLogo, FacebookLogo, InstagramLogo },
         data (): footer {
             return {
