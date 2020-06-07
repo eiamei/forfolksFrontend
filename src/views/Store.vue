@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import StoreCard from '../components/itemCardV2/ItemCard';
+import StoreCard from '../components/storeCard/storeCard';
 import ForfolksLogo from '../components/Icons/Logo';
 
 export default {
   name: 'Store',
-  components: {ForfolksLogo, StoreCard},
+  components: {/*ForfolksLogo,*/ StoreCard},
   data () {
     return {
       widesMap: {},

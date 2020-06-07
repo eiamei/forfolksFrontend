@@ -11,14 +11,14 @@
 <script lang="ts">
   import Vue from 'vue';
   import Carousel from "@/views/landing/components/Carousel.vue";
-  import Suggestions from "@/components/Suggestions.vue";
-  import CatAdvise from "@/components/CatAdvise.vue";
+  // import Suggestions from "@/components/Suggestions.vue";
+  // import CatAdvise from "@/components/CatAdvise.vue";
   import Subjects from "@/views/landing/components/Subjects.vue";
   import HeadingArticle from "@/views/landing/components/HeadingArticle.vue";
 
   export default Vue.extend({
       name: 'LandingView',
-      components: {Subjects, Carousel, Suggestions, CatAdvise, HeadingArticle }
+      components: {Subjects, Carousel, /*Suggestions, CatAdvise,*/ HeadingArticle }
   });
 </script>
 

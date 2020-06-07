@@ -1,6 +1,7 @@
 [
   {
-    "group": "pot_modern_m",
+    "group": "cachepot_modern_m",
+    "id": "031904(10)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -8,7 +9,8 @@
     "layout": "high"
   },
   {
-    "group": "pot_modern_m",
+    "group": "cachepot_modern_m",
+    "id": "031904(2)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -16,7 +18,8 @@
     "layout": "high"
   },
   {
-    "group": "pot_modern_m",
+    "group": "cachepot_modern_m",
+    "id": "031904(9)",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
@@ -24,7 +27,8 @@
     "layout": "high"
   },
   {
-    "group": "pot_modern_m",
+    "group": "cachepot_modern_m",
+    "id": "031904(3)",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
@@ -32,7 +36,8 @@
     "layout": "high"
   },
   {
-    "group": "pot_modern_m",
+    "group": "cachepot_modern_m",
+    "id": "031904(8)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -40,7 +45,32 @@
     "layout": "high"
   },
   {
+    "group": "cachepot_modern_s",
+    "id": "042002(1)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cachepot_modern_s",
+    "id": "042002(2)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cachepot_modern_s",
+    "id": "042002(3)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
     "group": "stand-basic-s",
+    "id": "031908(14)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -49,6 +79,7 @@
   },
   {
     "group": "stand-basic-s",
+    "id": "031908(2)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -57,6 +88,7 @@
   },
   {
     "group": "stand-basic-s",
+    "id": "031908(12)",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
@@ -65,6 +97,7 @@
   },
   {
     "group": "stand-basic-s",
+    "id": "031908(3)",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
@@ -73,15 +106,405 @@
   },
   {
     "group": "stand-basic-s",
+    "id": "031908(11)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
     }],
     "layout": "high"
+  },
+  {
+    "group": "stand-cone-s",
+    "id": "031910(11)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }],
+    "layout": "high"
+  },
+  {
+    "group": "stand-cone-s",
+    "id": "031910(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }],
+    "layout": "high"
+  },
+  {
+    "group": "stand-cone-s",
+    "id": "031910(9)",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }],
+    "layout": "high"
+  },
+  {
+    "group": "stand-cone-s",
+    "id": "031910(10)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }],
+    "layout": "high"
+  },
+  {
+    "group": "stand-cone-s",
+    "id": "031910(12)",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }],
+    "layout": "high"
+  },
+  {
+    "group": "tray-tray",
+    "id": "031912(8)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "tray-tray",
+    "id": "031912(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "tray-tray",
+    "id": "031912(3)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  }, {
+    "group": "basic-incense",
+    "id": "042001(1)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  }, {
+    "group": "basic-incense",
+    "id": "042001(2)",
+    "selectableProperty": [{
+      "value": "black",
+      "name": "color"
+    }]
+  }, {
+    "id": "042001(3)",
+    "group": "basic-incense",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  }, {
+    "group": "stand-basic",
+    "id": "042004(1)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  }, {
+    "group": "stand-basic",
+    "id": "042004(4)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "id": "121901(5)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "id": "121901(2)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "id": "121901(3)",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "id": "121901(6)",
+    "selectableProperty": [{
+      "value": "khaki",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-swiss",
+    "id": "121901(4)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "id": "121902(5)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "id": "121902(2)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "id": "121902(3)",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "id": "121902(4)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candlestick-house-denmark",
+    "id": "121902(6)",
+    "selectableProperty": [{
+      "value": "khaki",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "id": "041901(8)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "id": "041901(6)",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "id": "041901(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "id": "041901(5)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-modern",
+    "id": "041901(1)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "id": "022002(1)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "id": "022002(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "vase-mild",
+    "id": "022002(6)",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "id": "111905(7)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "id": "111905(4)",
+    "selectableProperty": [{
+      "value": "gray-fog",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "id": "111905(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "id": "111905(6)",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "id": "111905(5)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "cup-mild",
+    "id": "111905(3)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "id": "101901(7)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "id": "101901(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "id": "101901(6)",
+    "selectableProperty": [{
+      "value": "moonstone",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "id": "101901(4)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "bowl-mild",
+    "id": "101901(3)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candle-mild",
+    "id": "042003(1)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candle-mild",
+    "id": "042003(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "candle-mild",
+    "id": "042003(3)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "hanging-spole",
+    "id": "101907(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "panno-leaf",
+    "id": "022001(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "panno-wind",
+    "id": "032001(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "panno-stranger",
+    "id": "032002(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "candle-wax-drops",
+    "id": "121903(1)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
   },
   {
     "group": "minibouquet-blum",
     "name": "Blum 1",
+    "id": "072001(1)",
     "selectableProperty": [{
       "value": "1",
       "name": "model"
@@ -92,14 +515,15 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 300
+      "weight": 10
     },
+    "price": 300,
     "layout": "high"
   },
   {
     "group": "minibouquet-blum",
     "name": "Blum 2",
+    "id": "072001(2)",
     "selectableProperty": [{
       "value": "2",
       "name": "model"
@@ -110,14 +534,15 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 300
+      "weight": 10
     },
+    "price": 300,
     "layout": "high"
   },
   {
     "group": "minibouquet-blum",
     "name": "Blum 3",
+    "id": "072001(3)",
     "selectableProperty": [{
       "value": "3",
       "name": "model"
@@ -127,6 +552,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 4",
+    "id": "072001(4)",
     "selectableProperty": [{
       "value": "4",
       "name": "model"
@@ -137,14 +563,15 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 200
+      "weight": 10
     },
+    "price": 200,
     "layout": "high"
   },
   {
     "group": "minibouquet-blum",
     "name": "Blum 5",
+    "id": "072001(5)",
     "selectableProperty": [{
       "value": "5",
       "name": "model"
@@ -155,14 +582,15 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 250
+      "weight": 10
     },
+    "price": 250,
     "layout": "high"
   },
   {
     "group": "minibouquet-blum",
     "name": "Blum 6",
+    "id": "072001(6)",
     "selectableProperty": [{
       "value": "6",
       "name": "model"
@@ -173,14 +601,15 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 300
+      "weight": 10
     },
+    "price": 300,
     "layout": "high"
   },
   {
     "group": "minibouquet-blum",
     "name": "Blum 7",
+    "id": "072001(7)",
     "selectableProperty": [{
       "value": "7",
       "name": "model"
@@ -191,14 +620,15 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 250
+      "weight": 10
     },
+    "price": 250,
     "layout": "high"
   },
   {
     "group": "minibouquet-blum",
     "name": "Blum 8",
+    "id": "072001(8)",
     "selectableProperty": [{
       "value": "8",
       "name": "model"
@@ -209,435 +639,9 @@
         "width": 8
       },
       "material": ["dryflowers"],
-      "weight": 10,
-      "price": 200
+      "weight": 10
     },
+    "price": 200,
     "layout": "high"
-  },
-  {
-    "group": "stand-cone-s",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "stand-cone-s",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "stand-cone-s",
-    "selectableProperty": [{
-      "value": "gray-fog",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "stand-cone-s",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "stand-cone-s",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "name": "Spole",
-    "rootPath": "hanging-spole",
-    "type": "hanging",
-    "category": ["hanging"],
-    "desc": "Подвес из хлопка в технике макраме для небольших горшочков. Hang дополнен удобным деревянным кольцом, которое в комбинации с металлическим крючком позволяет подвесить горшочек практически куда угодно. <br><br> <span>Отлично сочетается с нашим горшочком <a href='/product/pot-modern-m/white' target=\"_blank\">MODERN</a> и кашпо <a href='/product/cup-mild/white' target=\"_blank\">Mild</a>.</span> <br><br> Цвет изделия может отличаться от того, что вы видите на экране. Это связано с тем, что каждый монитор откалиброван по своему и мы не можем гарантировать точное совпадение цветов. <br><br> Цена указана без горшочка. Крючок приобретается отдельно.",
-    "metaDesc": "Подвес в технике макраме для небольших бетонных, пластиковых и терракотовых горшков",
-    "shortDesc": "Когда закончилось место на столе ",
-    "itemProperty": {
-      "size": {
-        "height": 20
-      },
-      "material": ["cotton"],
-      "weight": 10,
-      "price": "450"
-    },
-    "selectableProperty": [],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-swiss",
-    "name": "Swiss",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-swiss",
-    "name":  "Swiss",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-swiss",
-    "name":  "Swiss",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-swiss",
-    "name":  "Swiss",
-    "selectableProperty": [{
-      "value": "khaki",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-swiss",
-    "name":  "Swiss",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-denmark",
-    "name": "Denmark",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-denmark",
-    "name": "Denmark",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-denmark",
-    "name": "Denmark",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-denmark",
-    "name": "Denmark",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "group": "candlestick-house-denmark",
-    "name": "Denmark",
-    "selectableProperty": [{
-      "value": "khaki",
-      "name": "color"
-    }],
-    "layout": "high"
-  },
-  {
-    "name": "Leaf",
-    "rootPath": "panno-leaf",
-    "type": "panno",
-    "category": [
-      "panno"
-    ],
-    "desc": "Милейшее панно с узором в виде листьев, висящих на ветке орешника. <br><br> В каждом панно листья и их длинна могут немного отличаться. Точное воспроизведение невозможно.",
-    "metaDesc": "",
-    "shortDesc": "",
-    "itemProperty": {
-      "size": {
-        "height": 70,
-        "width": 30
-      },
-      "material": [
-        "cotton"
-      ],
-      "price": "1100"
-    },
-    "selectableProperty": [{
-      "value": "natural",
-      "name": "color"
-    }],
-    "layout": "high"
-  }, {
-    "name": "Wind",
-    "rootPath": "panno-wind",
-    "type": "panno",
-    "category": ["panno"],
-    "desc": "Оно легкое, но в тоже время наполненное деталями и как будто рассказывает о себе небольшую историю. <br><br>  После очередного урагана мы отправились в поисках сбитых с деревьев веток для будущих панно. Ветер еще не утих и упорно пытался прогнать нас с берега финского залива. И вот эта стихия, покоренная и успокоенная, была воплощена в этой работе. <br><br> Обратите внимание, что веточки могут отличаться.",
-    "metaDesc": "",
-    "shortDesc": "",
-    "itemProperty": {
-      "size": {
-        "height": 60,
-        "width": 38
-      },
-      "material": ["cotton"],
-      "price": "2100"
-    },
-    "selectableProperty": [{
-      "value": "natural",
-      "name": "color"
-    }]
-  }, {
-  "name": "Stranger",
-  "rootPath": "panno-stranger",
-  "type": "panno",
-  "category": ["panno"],
-  "desc": "На это панно нас вдохновили путешествия. В нем нет никакого конкретного образа, скорее набор разных деталей, ощущений, которые мы собрали в разных поездках. <br><br> Обратите внимание, что веточки могут отличаться.",
-  "metaDesc": "",
-  "shortDesc": "",
-  "itemProperty": {
-    "size": {
-      "height": 85,
-      "width": 35
-    },
-    "material": ["cotton"],
-    "price": "2900"
-  },
-  "selectableProperty": [{
-    "value": "natural",
-    "name": "color"
-  }]
-  },
-  {
-    "group": "tray-tray",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "tray-tray",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "tray-tray",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "candle-wax-drops",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-modern",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-modern",
-    "selectableProperty": [{
-      "value": "gray-fog",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-modern",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-modern",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-modern",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-mild",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-mild",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "vase-mild",
-    "selectableProperty": [{
-      "value": "gray-fog",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "cup-mild",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "cup-mild",
-    "selectableProperty": [{
-      "value": "gray-fog",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "cup-mild",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "cup-mild",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "cup-mild",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "cup-mild",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "bowl-mild",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "bowl-mild",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "bowl-mild",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "bowl-mild",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "bowl-mild",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "candle-mild",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }]
-  },
-  {
-    "group": "candle-mild",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }]
-  }, {
-    "group": "candle-mild",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  }, {
-    "group": "basic-incense",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  }, {
-    "group": "basic-incense",
-    "selectableProperty": [{
-      "value": "black",
-      "name": "color"
-    }]
-  }, {
-    "group": "basic-incense",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }]
-  }, {
-    "group": "stand-basic",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }]
-  }, {
-    "group": "stand-basic",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }]
   }
 ]

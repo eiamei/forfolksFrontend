@@ -35,10 +35,7 @@
       headerClass () {
         return {
           'header': true,
-          'z-index__top--header': true,
-          'header--white': this.$route.name === 'bag' || this.$route.name === 'payment' ||
-            this.$route.name === 'about' || this.$route.name === 'delivery' || this.$route.name === 'landing'
-            || this.$route.name === 'store'
+          'z-index__top--header': true
         }
       }
     }
@@ -56,9 +53,7 @@
     width: calc(100% - 2rem);
     top: 0;
     padding: 0.5rem 1rem;
-    &--white {
-      background: white;
-    }
+    background: white;
   }
 
   .header-menu-container {
