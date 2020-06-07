@@ -43,7 +43,7 @@
     }
 
     export default Vue.extend({
-        name: 'footer',
+        name: 'AppFooter',
         components: { VkLogo, FacebookLogo, InstagramLogo },
         data (): footer {
             return {

@@ -26,11 +26,6 @@
     close(): void;
   }
 
-  interface Texts {
-    header: string;
-    main: string;
-  }
-
   export default Vue.extend<any, Methods, any, Props>({
     name: 'ItemCare',
     components: {PlusIcon},
@@ -91,6 +86,10 @@
       right: 1rem;
       transform: rotate(45deg);
       cursor: pointer;
+      .plus-icon {
+        width: 16px;
+        height: 16px;
+      }
     }
     .item-care-instruction__text.regular-sans-text {
       text-transform: none;

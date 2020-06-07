@@ -30,6 +30,7 @@
     border-right: 1px solid $dark-blue;
     margin: 2rem 0;
     @media screen and (max-width: $tablet) {
+      width: calc(100% - 2rem);
       border-right: none;
       border-bottom: 1px solid $dark-blue;
       padding: 1rem 0;

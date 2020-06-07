@@ -1,5 +1,5 @@
 <template>
-  <ul class="color-picker">
+  <ul v-if="colors.length > 0" class="color-picker">
     <li v-for="color in colors" :class="computeClass(color)" :title="color" :key="color">
       <router-link style="display: flex; width: 1rem; height: 1rem;" :to="createLink(color)"></router-link>
     </li>
@@ -54,21 +54,21 @@
     padding: 0;
     &__circle {
       position: relative;
-      width: 1rem;
-      height: 1rem;
-      margin-right: 0.5rem;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
       border: 1px solid black;
-      border-radius: 1rem;
+      border-radius: 16px;
       cursor: pointer;
       &--selected {
         &::after {
           content: ' ';
           position: absolute;
-          top: 0.5rem;
-          left: 0.5rem;
-          width: 0.35rem;
-          height: 0.35rem;
-          border-radius: 0.5rem;
+          top: 8px;
+          left: 8px;
+          width: 6px;
+          height: 6px;
+          border-radius: 8px;
           transform: translate(-50%, -50%);
           background: white;
           border: 1px solid black;

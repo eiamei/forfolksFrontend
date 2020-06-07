@@ -38,8 +38,8 @@
   @import '../../../assets/styles/ui';
   .item-more-info {
     box-sizing: border-box;
-    max-width: 25rem;
-    min-width: 25rem;
+    max-width: 30rem;
+    min-width: 30rem;
     width: 100%;
     align-self: flex-start;
     list-style: none;

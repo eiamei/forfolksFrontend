@@ -5,7 +5,7 @@
       <button class="regular-sans-text store-card__add-to-bag" @click="addToBag">Добавить в корзину</button>
     </router-link>
     <div v-show="isShowInfo" class="store-card__text-wrapper">
-      <router-link class="store-card__text-link" to="/product/bag-net/natural">
+      <router-link class="store-card__text-link" :to="getLink()">
         <p class="small-regular-heading store-card__model">{{item.name}}</p>
         <p class="regular-sans-text store-card__type">{{$t(`items.${item.type}`)}}</p>
       </router-link>
@@ -127,7 +127,7 @@
     &__text-link {
       display: flex;
       text-decoration: none;
-      overflow-x: hidden;
+      overflow: hidden;
     }
     .small-regular-heading.store-card__model, .regular-sans-text.store-card__type, .regular-sans-text.store-card__price {
       margin: 0;
@@ -143,7 +143,7 @@
     }
 
     .regular-sans-text.store-card__type {
-      overflow-x: hidden;
+      overflow: hidden;
       text-overflow: ellipsis;
     }
 

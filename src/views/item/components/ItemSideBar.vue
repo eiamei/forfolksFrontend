@@ -4,7 +4,7 @@
       <h1 class="serif-heading item-side-bar__heading-name">{{item.name}}</h1>
       <p class="regular-sans-text item-side-bar__heading-type">{{$t(`items.${item.type}`)}}</p>
     </header>
-    <p class="item-side-bar__id">{{item.articul}}</p>
+    <p class="item-side-bar__id regular-sans-text">Артикул: {{item.id}}</p>
     <p class="item-side-bar__price">{{item.price}}P</p>
     <color-picker class="item-side-bar__color-picker" :item="item"/>
     <div class="item-side-bar__divider"></div>
@@ -90,8 +90,8 @@
   @import '../../../assets/styles/vars';
 
   .item-side-bar {
-    max-width: 25rem;
-    min-width: 25rem;
+    max-width: 30rem;
+    min-width: 30rem;
     position: sticky;
     top: 4rem;
     align-self: flex-start;
@@ -124,7 +124,7 @@
     }
 
     &__price {
-      margin: 0.75rem 0 0 0;
+      margin: 0;
       font-size: 1.5rem;
     }
 

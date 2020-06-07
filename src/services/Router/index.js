@@ -31,7 +31,7 @@ let routes = [
   },
   {
     path: '/store/category/:type',
-    name: 'store',
+    name: 'storeByType',
     component: Store,
     meta: {
       title: 'Магазин',
@@ -46,7 +46,7 @@ let routes = [
   },
   {
     path: '/store/material/:material',
-    name: 'store',
+    name: 'storeByMaterial',
     component: Store,
     meta: {
       title: 'Магазин',
