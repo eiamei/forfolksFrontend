@@ -643,5 +643,20 @@
     },
     "price": 200,
     "layout": "high"
+  },
+  {
+    "group": "luffa-whole",
+    "id": "072002(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "luffa-pressed",
+    "id": "072003(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "straw-bamboo",
+    "id": "072008(1)",
+    "selectableProperty": []
   }
 ]

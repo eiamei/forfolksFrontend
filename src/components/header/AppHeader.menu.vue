@@ -46,6 +46,9 @@
       return {
         isOpen: false,
         byCategory: [{
+          to: '/store/category/accessories',
+          text: 'items.accessories'
+        }, {
           to: '/store/category/cachepot',
           text: 'items.cachepots'
         }, {
