@@ -2,23 +2,31 @@
   <main class="landing-page">
     <carousel class="landing-page-carousel"/>
     <heading-article/>
-<!--    <suggestions class="landing-page-suggestions"/>-->
+    <suggestions class="landing-page-suggestions" :items="storeItems"/>
     <subjects/>
-<!--    <cat-advise/>-->
+    <!--    <cat-advise/>-->
   </main>
 </template>
 
 <script lang="ts">
   import Vue from 'vue';
   import Carousel from "@/views/landing/components/Carousel.vue";
-  // import Suggestions from "@/components/Suggestions.vue";
+  import Suggestions from "@/components/Suggestions.vue";
   // import CatAdvise from "@/components/CatAdvise.vue";
   import Subjects from "@/views/landing/components/Subjects.vue";
   import HeadingArticle from "@/views/landing/components/HeadingArticle.vue";
 
   export default Vue.extend({
-      name: 'LandingView',
-      components: {Subjects, Carousel, /*Suggestions, CatAdvise,*/ HeadingArticle }
+    name: 'LandingView',
+    components: {Subjects, Carousel, Suggestions, /* CatAdvise,*/ HeadingArticle},
+    computed: {
+      storeItems () {
+        return (this.$store.state.store.items || [])
+          // .filter(function (item) {
+          //   return item.category.includes('accessories');
+          // });
+      },
+    }
   });
 </script>
 
@@ -30,6 +38,7 @@
     .landing-page-carousel {
       margin: 3rem 1rem 0 1rem;
     }
+
     .landing-page-suggestions {
       margin: 3rem 1rem 0 1rem;
     }

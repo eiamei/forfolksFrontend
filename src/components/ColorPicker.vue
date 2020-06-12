@@ -69,8 +69,8 @@
         &::after {
           content: ' ';
           position: absolute;
-          top: 8px;
-          left: 8px;
+          top: 50%;
+          left: 50%;
           width: 6px;
           height: 6px;
           border-radius: 8px;
