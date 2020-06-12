@@ -15,16 +15,17 @@
   // import CatAdvise from "@/components/CatAdvise.vue";
   import Subjects from "@/views/landing/components/Subjects.vue";
   import HeadingArticle from "@/views/landing/components/HeadingArticle.vue";
+  import {shuffle} from "@/utils/shuffle";
 
   export default Vue.extend({
     name: 'LandingView',
     components: {Subjects, Carousel, Suggestions, /* CatAdvise,*/ HeadingArticle},
     computed: {
       storeItems () {
-        return (this.$store.state.store.items || [])
-          // .filter(function (item) {
-          //   return item.category.includes('accessories');
-          // });
+        return shuffle((this.$store.state.store.items || [])
+          .filter(function (item) {
+            return item.badges.includes('new');
+          }));
       },
     }
   });

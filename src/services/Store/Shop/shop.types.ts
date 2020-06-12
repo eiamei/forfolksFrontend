@@ -12,6 +12,7 @@ export interface ItemInterface {
     link: string;
     image: string;
     selectableProperty: any;
+    badges: string;
 }
 
 export interface ShopInterface {

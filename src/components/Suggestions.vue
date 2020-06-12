@@ -39,7 +39,7 @@
           wheelControl: false,
           mouseDrag: false,
           infiniteScroll: false,
-          trimWhiteSpace: false,
+          trimWhiteSpace: true,
           breakpoints: {
             0: {
               itemsToShow: 1

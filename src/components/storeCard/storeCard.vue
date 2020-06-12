@@ -13,6 +13,7 @@
       </router-link>
       <p class="regular-sans-text store-card__price">{{item.price}}P</p>
     </div>
+    <div v-if="badge.text.length" :class="badge.class">{{badge.text}}</div>
     <color-picker :item="item"/>
   </li>
 </template>
@@ -23,12 +24,32 @@
   import {ItemInterface} from "../../services/Store/Shop/shop.types";
   import ColorPicker from "../ColorPicker.vue";
 
+  interface BadgeInterface {
+    text: string;
+    class: Array<string>
+  }
+
   interface Data {
     isShowInfo: boolean;
     isWide: boolean;
   }
 
-  export default Vue.extend({
+  interface Methods {
+    imageLoaded(): void;
+    getLink(): string;
+    addToBag(event: Event): void;
+  }
+
+  interface Computed {
+    imageLink(): func;
+    badge(): BadgeInterface;
+  }
+
+  interface Props {
+    item: ItemInterface;
+  }
+
+  export default Vue.extend<Data, Methods, Computed, Props>({
     name: 'StoreCard',
     components: { ColorPicker },
     props: {
@@ -44,18 +65,39 @@
       }
     },
     computed: {
-      // TODO compute it in the store
-      imageLink(): void {
+      imageLink(): func {
         let path = this.item.rootPath;
         if (this.item.selectableProperty.length)
           this.item.selectableProperty.forEach(property => {
             path += `-${slugify(property.value.toLowerCase())}`
           });
         return require(`@/assets/images/store/${path}-small.jpg`);
+      },
+      badge(): BadgeInterface {
+        if (this.item.badges.includes('new')) {
+          return {
+            text: 'NEW',
+            class: [
+              'store-card__badge',
+            ]
+          }
+        } else if (this.item.badges.includes('sale')) {
+          return {
+            text: 'SALE',
+            class: [
+              'store-card__badge',
+              'store-card__badge--sale'
+            ]
+          }
+        }
+        return {
+          text: '',
+          class: []
+        }
       }
     },
     methods: {
-      imageLoaded: function (): void {
+      imageLoaded(): void {
         this.isShowInfo = true;
         // @ts-ignore
         this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
@@ -68,7 +110,7 @@
           });
         return `/product/${path}`;
       },
-      addToBag(event): void {
+      addToBag(event: Event): void {
         event.preventDefault();
         this.$store.dispatch('bag/add', {item: this.item});
       }
@@ -83,6 +125,7 @@
   .store-card {
     display: flex;
     flex-direction: column;
+    position: relative;
     overflow: hidden;
 
     &--wide {
@@ -172,6 +215,24 @@
       height: 1rem;
       border-radius: 1em;
       background-color: black;
+    }
+
+    &__badge {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 4rem;
+      background-color: $dark-blue;
+      color: white;
+      font-weight: bold;
+      &--sale {
+        background-color: $sale-red;
+      }
     }
   }
 </style>
