@@ -658,5 +658,56 @@
     "group": "straw-bamboo",
     "id": "072008(1)",
     "selectableProperty": []
+  },
+  {
+    "group": "toothbrush-bamboo",
+    "id": "072006(1)",
+    "selectableProperty": [{
+      "value": "white",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "toothbrush-bamboo",
+    "id": "072006(2)",
+    "selectableProperty": [{
+      "value": "black",
+      "name": "color"
+    }]
+  },
+  {
+    "group": "small-comb",
+    "id": "072012(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "big-comb",
+    "id": "072013(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "small-bamboo-brush",
+    "id": "022009(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "long-cup-brush",
+    "id": "072004(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "long-brush",
+    "id": "072005(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "linen-bag-gray-big",
+    "id": "022011(1)",
+    "selectableProperty": []
+  },
+  {
+    "group": "linen-bag-gray-small",
+    "id": "022010(1)",
+    "selectableProperty": []
   }
 ]

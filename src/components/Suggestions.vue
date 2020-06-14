@@ -1,6 +1,7 @@
+<!--suppress ALL -->
 <template>
   <section class="suggestions">
-    <button class="clean-button suggestions__button" @click="toLeft">
+    <button class="clean-button suggestions__button suggestions__button--left" @click="toLeft">
       <ArrowIcon/>
     </button>
     <hooper class="clean-button suggestions__carousel"
@@ -11,7 +12,7 @@
         <item-card :item="item"/>
       </slide>
     </hooper>
-    <button class="clean-button suggestions__button" @click="toRight">
+    <button class="clean-button suggestions__button suggestions__button--right" @click="toRight">
       <ArrowIcon style="transform: rotate(180deg)"/>
     </button>
   </section>
@@ -62,9 +63,11 @@
     },
     methods: {
       toLeft() {
+        // @ts-ignore
         this.$refs.carousel.slidePrev();
       },
       toRight() {
+        // @ts-ignore
         this.$refs.carousel.slideNext();
       }
     }
@@ -76,9 +79,7 @@
   @import "../assets/styles/vars";
 
   .suggestions {
-    display: grid;
-    grid-template-columns: 2rem 1fr 2rem;
-    grid-column-gap: 1rem;
+    display: flex;
 
     &__carousel {
       overflow: hidden;
@@ -90,6 +91,13 @@
       width: 2rem;
       height: 4rem;
       align-self: center;
+
+      &--left {
+        margin-right: 1rem!important;
+      }
+      &--right {
+        margin-left: 1rem!important;
+      }
 
       &:focus,
       &:hover {

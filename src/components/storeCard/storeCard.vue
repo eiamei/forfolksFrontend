@@ -41,8 +41,8 @@
   }
 
   interface Computed {
-    imageLink(): func;
-    badge(): BadgeInterface;
+    imageLink: Function;
+    badge: BadgeInterface;
   }
 
   interface Props {
@@ -65,7 +65,7 @@
       }
     },
     computed: {
-      imageLink(): func {
+      imageLink(): Function {
         let path = this.item.rootPath;
         if (this.item.selectableProperty.length)
           this.item.selectableProperty.forEach(property => {

@@ -49,6 +49,8 @@ export const items: LocaleMessageObject = {
     accessoriess: 'Аксессуары',
     // materials
     bamboo: 'Бамбуковая',
+    coconut: 'Кокосовая',
+    linen: 'Льняной',
     // states
     whole: 'Цельная',
     pressed: 'Пресованная'
