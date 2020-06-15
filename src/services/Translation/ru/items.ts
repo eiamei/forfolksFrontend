@@ -53,5 +53,5 @@ export const items: LocaleMessageObject = {
     linen: 'Льняной',
     // states
     whole: 'Цельная',
-    pressed: 'Пресованная'
+    pressed: 'Преcсованная'
 }

@@ -15,15 +15,17 @@
         {{ property }}
       </li>
     </ul>
+    <div v-if="isAvailable" class="item-side-bar__availability">В наличии: {{item.availability}} </div>
     <div class="item-side-bar__add-wrapper">
-      <button class="item-side-bar__change-button" @click="decrement">
+      <button v-if="isAvailable" class="item-side-bar__change-button" @click="decrement">
         <minus-icon/>
       </button>
-      <input class="item-side-bar__input" v-model="quantity"/>
-      <button class="item-side-bar__change-button" @click="increment">
+      <input v-if="isAvailable" class="item-side-bar__input" v-model="quantity"/>
+      <button v-if="isAvailable" class="item-side-bar__change-button" @click="increment">
         <plus-icon/>
       </button>
-      <button class="item-side-bar__add-button" @click="add">Добавить</button>
+      <button v-if="isAvailable" class="item-side-bar__add-button" @click="add">Добавить</button>
+      <button v-else class="item-side-bar__add-button item-side-bar__add-button--sold-out">Нет в наличии</button>
     </div>
   </section>
 </template>
@@ -45,6 +47,7 @@
   }
   interface Computed {
     properties: ItemInterface;
+    isAvailable: boolean;
   }
   interface Props {
     item: ItemInterface
@@ -67,6 +70,9 @@
     computed: {
       properties () : ItemInterface {
         return this.$store.getters['shop/findItemProperties'](this.item)
+      },
+      isAvailable () : boolean {
+        return this.item.availability > 0;
       }
     },
     methods: {
@@ -151,10 +157,15 @@
       text-transform: none;
     }
 
+    &__availability {
+      margin: 3rem 0 0.5rem 0;
+      text-align: right;
+    }
+
     &__add-wrapper {
       display: flex;
       justify-content: flex-end;
-      margin: 3rem 0;
+      margin: 0;
     }
 
     &__change-button {

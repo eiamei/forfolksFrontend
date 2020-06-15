@@ -4,7 +4,9 @@
       <router-link :to="getLink()">
         <img class="store-card__image" ref="image" :src="imageLink" loading="lazy" @load="imageLoaded"/>
       </router-link>
-      <button class="regular-sans-text store-card__add-to-bag" @click="addToBag">Добавить в корзину</button>
+      <button v-if="isAvailable" class="regular-sans-text store-card__add-to-bag" @click="addToBag">
+        Добавить в корзину
+      </button>
     </div>
     <div v-show="isShowInfo" class="store-card__text-wrapper">
       <router-link class="store-card__text-link" :to="getLink()">
@@ -43,6 +45,7 @@
   interface Computed {
     imageLink: Function;
     badge: BadgeInterface;
+    isAvailable: boolean;
   }
 
   interface Props {
@@ -65,7 +68,7 @@
       }
     },
     computed: {
-      imageLink(): Function {
+      imageLink() {
         let path = this.item.rootPath;
         if (this.item.selectableProperty.length)
           this.item.selectableProperty.forEach(property => {
@@ -73,7 +76,7 @@
           });
         return require(`@/assets/images/store/${path}-small.jpg`);
       },
-      badge(): BadgeInterface {
+      badge() {
         if (this.item.badges.includes('new')) {
           return {
             text: 'NEW',
@@ -94,6 +97,9 @@
           text: '',
           class: []
         }
+      },
+      isAvailable() {
+        return this.item.availability > 0;
       }
     },
     methods: {
