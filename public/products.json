@@ -84,7 +84,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 7
   },
   {
     "group": "stand-basic-s",
@@ -114,7 +114,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 5
   },
   {
     "group": "stand-basic-s",
@@ -124,7 +124,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 5
   },
   {
     "group": "stand-cone-s",
@@ -134,7 +134,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 4
   },
   {
     "group": "stand-cone-s",
@@ -201,7 +201,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 2
   },
   {
     "group": "basic-incense",
@@ -237,7 +237,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "stand-basic",
@@ -246,7 +246,25 @@
       "value": "powder",
       "name": "color"
     }],
-    "availability": 0
+    "availability": 1
+  },
+  {
+    "group": "stand-basic",
+    "id": "042004(2)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "stand-basic",
+    "id": "042004(5)",
+    "selectableProperty": [{
+      "value": "white-marble",
+      "name": "color"
+    }],
+    "availability": 2
   },
   {
     "group": "candlestick-house-swiss",
@@ -394,6 +412,15 @@
   },
   {
     "group": "vase-mild",
+    "id": "022002(7)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "vase-mild",
     "id": "022002(2)",
     "selectableProperty": [{
       "value": "graphite",
@@ -480,7 +507,7 @@
       "value": "graphite",
       "name": "color"
     }],
-    "availability": 3
+    "availability": 4
   },
   {
     "group": "bowl-mild",
@@ -498,7 +525,7 @@
       "value": "powder",
       "name": "color"
     }],
-    "availability": 0
+    "availability": 2
   },
   {
     "group": "bowl-mild",
@@ -507,7 +534,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 4
+    "availability": 5
   },
   {
     "group": "candle-mild",
@@ -587,7 +614,7 @@
     },
     "price": 300,
     "layout": "high",
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "minibouquet-blum",
@@ -607,7 +634,7 @@
     },
     "price": 300,
     "layout": "high",
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "minibouquet-blum",
@@ -618,7 +645,7 @@
       "name": "model"
     }],
     "layout": "high",
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "minibouquet-blum",
@@ -658,7 +685,7 @@
     },
     "price": 250,
     "layout": "high",
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "minibouquet-blum",
@@ -784,18 +811,19 @@
     "group": "long-brush",
     "id": "072005(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "linen-bag-gray-big",
     "id": "022011(1)",
     "selectableProperty": [],
-    "availability": 5
+    "availability": 4
   },
   {
     "group": "linen-bag-gray-small",
     "id": "022010(1)",
     "selectableProperty": [],
-    "availability": 5
+    "availability": 4
   }
 ]
