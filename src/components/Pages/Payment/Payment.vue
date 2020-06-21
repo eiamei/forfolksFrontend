@@ -40,9 +40,11 @@
             else if (this.isPromo)
               price = Math.round(price * PROMO.DISCOUNT_PERCENT);
             let encoded = encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
-              name: ${this.$store.state.bag.bag[key].name}
-              qty: ${this.$store.state.bag.bag[key].qty}
-              price: ${price}
+              Имя: ${this.$store.state.bag.bag[key].name}
+              Тип: ${this.$store.state.bag.bag[key].type}
+              Артикул: ${this.$store.state.bag.bag[key].id}
+              Количество: ${this.$store.state.bag.bag[key].qty}
+              Стоимость: ${price}
             `);
             if (this.$store.state.bag.bag[key].props.length)
               this.$store.state.bag.bag[key].props.forEach(function (prop) {
