@@ -3,7 +3,6 @@ import Vue from 'vue';
 
 import global from './Global/index';
 import bag from './Bag/index';
-import store from './Store/store';
 import { shop } from './Shop/shop';
 
 Vue.use(Vuex);
@@ -12,7 +11,6 @@ export default new Vuex.Store({
   modules: {
     global,
     bag,
-    store,
     shop
   }
 });

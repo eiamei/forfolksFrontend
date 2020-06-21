@@ -45,7 +45,7 @@ export default {
   },
   computed: {
     storeItems () {
-      return this.$store.state.store.items || [];
+      return this.$store.state.shop.items || [];
     },
     items () {
       return shuffle(this.storeItems.map(item => {
