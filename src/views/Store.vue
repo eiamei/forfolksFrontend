@@ -7,6 +7,7 @@
 <script>
 import StoreCard from '../components/storeCard/storeCard';
 import ForfolksLogo from '../components/Icons/Logo';
+import { shuffle } from '../utils/shuffle';
 
 export default {
   name: 'Store',
@@ -44,10 +45,10 @@ export default {
   },
   computed: {
     storeItems () {
-      return this.$store.state.store.items || [];
+      return this.$store.state.shop.items || [];
     },
     items () {
-      return this.shuffle(this.storeItems.map(item => {
+      return shuffle(this.storeItems.map(item => {
         if (this.type !== null && (this.type === 'all' || item.category.includes(this.type)))
           return {
             ...item,
@@ -67,25 +68,6 @@ export default {
     },
   },
   methods: {
-    // TODO move to VUEX getters
-    shuffle (array) {
-      let currentIndex = array.length, temporaryValue, randomIndex;
-
-      // While there remain elements to shuffle...
-      while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-      }
-
-      return array;
-    },
     createKey (item) {
       let key = item.rootPath;
       item.selectableProperty.forEach(property => {

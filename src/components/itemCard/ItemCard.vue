@@ -18,7 +18,7 @@ export default {
   components: {ItemCardInfo, ItemCardMenu},
   computed: {
     storeItems () {
-      return this.$store.state.store.items;
+      return this.$store.state.shop.items;
     },
     item () {
       if (this.storeItems.length) {

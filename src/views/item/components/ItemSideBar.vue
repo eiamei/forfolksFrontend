@@ -2,7 +2,7 @@
   <section class="item-side-bar">
     <header class="item-side-bar__heading">
       <h1 class="serif-heading item-side-bar__heading-name">{{item.name}}</h1>
-      <p class="regular-sans-text item-side-bar__heading-type">{{$t(`items.${item.type}`)}}</p>
+      <p v-if="item.type" class="regular-sans-text item-side-bar__heading-type">{{$t(`items.${item.type}`)}}</p>
     </header>
     <p class="item-side-bar__id regular-sans-text">Артикул: {{item.id}}</p>
     <p class="item-side-bar__price">{{item.price}}P</p>
@@ -15,15 +15,17 @@
         {{ property }}
       </li>
     </ul>
+    <div v-if="isAvailable" class="item-side-bar__availability">В наличии: {{item.availability}} </div>
     <div class="item-side-bar__add-wrapper">
-      <button class="item-side-bar__change-button" @click="decrement">
+      <button v-if="isAvailable" class="item-side-bar__change-button" @click="decrement">
         <minus-icon/>
       </button>
-      <input class="item-side-bar__input" v-model="quantity"/>
-      <button class="item-side-bar__change-button" @click="increment">
+      <input v-if="isAvailable" class="item-side-bar__input" v-model="quantity"/>
+      <button v-if="isAvailable" class="item-side-bar__change-button" @click="increment">
         <plus-icon/>
       </button>
-      <button class="item-side-bar__add-button" @click="add">Добавить</button>
+      <button v-if="isAvailable" class="item-side-bar__add-button" @click="add">Добавить</button>
+      <button v-else class="item-side-bar__add-button item-side-bar__add-button--sold-out">Нет в наличии</button>
     </div>
   </section>
 </template>
@@ -45,6 +47,7 @@
   }
   interface Computed {
     properties: ItemInterface;
+    isAvailable: boolean;
   }
   interface Props {
     item: ItemInterface
@@ -67,6 +70,9 @@
     computed: {
       properties () : ItemInterface {
         return this.$store.getters['shop/findItemProperties'](this.item)
+      },
+      isAvailable () : boolean {
+        return this.item.availability > 0;
       }
     },
     methods: {
@@ -130,6 +136,7 @@
 
     &__color-picker {
       margin-top: 1rem;
+      height: auto;
     }
 
     &__divider {
@@ -150,10 +157,15 @@
       text-transform: none;
     }
 
+    &__availability {
+      margin: 3rem 0 0.5rem 0;
+      text-align: right;
+    }
+
     &__add-wrapper {
       display: flex;
       justify-content: flex-end;
-      margin: 3rem 0;
+      margin: 0;
     }
 
     &__change-button {

@@ -8,5 +8,13 @@ export const material: LocaleMessageObject = {
     jute: 'Джут',
     carton: 'Картон',
     ceylon: 'Тинторетто цейлон',
-    coconutWax: 'Кокосовый воск'
+    coconutWax: 'Кокосовый воск',
+    luffa: 'Люффа',
+    bamboo: 'Бамбук',
+    nealon: 'Нейлон',
+    birch: 'Береза',
+    wood: 'Дерево',
+    coconut: 'Кокос',
+    metal: 'Метал',
+    linen: 'Лён'
 }

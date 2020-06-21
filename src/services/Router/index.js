@@ -1,9 +1,10 @@
 import Router from 'vue-router';
 import Vue from 'vue';
+import Store from '../Store/index';
 
 import ruTranslate from '../Translation/ru';
 
-const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store.vue');
+const Catalogue = () => import(/* webpackChunkName: "store-page" */'../../views/Store.vue');
 const Item = () => import(/* webpackChunkName: "item-page" */'../../views/item/Item.vue');
 const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag.vue');
 const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment.vue');
@@ -32,7 +33,7 @@ let routes = [
   {
     path: '/store/category/:type',
     name: 'storeByType',
-    component: Store,
+    component: Catalogue,
     meta: {
       title: 'Магазин',
       tags: [{
@@ -47,7 +48,7 @@ let routes = [
   {
     path: '/store/material/:material',
     name: 'storeByMaterial',
-    component: Store,
+    component: Catalogue,
     meta: {
       title: 'Магазин',
       tags: [{
@@ -153,7 +154,9 @@ router.beforeEach((to, from, next) => {
         document.head.appendChild(metaTag);
       });
     }
-    if (to.path === '/item') {
+    if (to.path.includes('/product')) {
+      let item = Store.getters['shop/findItemByParam'](to.params);
+      console.log(to, item);
       // let item: object;
       // let item = STORE.find(item => slugify(item.name.toLowerCase()) === to.query.name && slugify(item.type.toLowerCase()) === to.query.type);
       // if (item) {

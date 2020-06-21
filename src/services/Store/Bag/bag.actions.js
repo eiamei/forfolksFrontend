@@ -4,6 +4,7 @@ export default {
   add ({state, commit, dispatch}, params) {
     let bagItem = {
       rootPath: params.item.rootPath,
+      id: params.item.id,
       name: params.item.name,
       price: params.item.price,
       type: params.item.type,
@@ -22,7 +23,7 @@ export default {
       commit('bag', {
         [id]: {
           ...bagItem,
-          qty: params.quantity
+          qty: params.quantity || 1
         }
       });
     dispatch('save');

@@ -5,7 +5,7 @@
       <div></div>
     </li>
     <li class="item-more-info__color regular-sans-text">Цвет изделия может незначительно отличаться</li>
-    <li class="item-more-info__design regular-sans-text">Дизайн: Forfolks</li>
+    <li class="item-more-info__design regular-sans-text">{{createdBy}}</li>
   </ul>
 </template>
 
@@ -23,6 +23,14 @@
       item: {
         type: Object as () => ItemInterface,
         required: true
+      }
+    },
+    computed: {
+      createdBy () : string {
+        if (this.item.itemProperty.createdBy && this.item.itemProperty.createdBy.manufacture) {
+          return `Производитель: ${this.item.itemProperty.createdBy.manufacture}`
+        }
+        return 'Дизайн: Forfolks'
       }
     },
     methods: {
