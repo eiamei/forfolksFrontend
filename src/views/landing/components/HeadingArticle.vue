@@ -1,7 +1,9 @@
 <template>
   <article class="landing-page-heading">
     <h1 class="big-serif-heading landing-page-heading__header">{{$t('landing.heading.header')}}</h1>
-    <p class="regular-sans-text landing-page-heading__about">{{$t('landing.heading.about')}}</p>
+    <p class="regular-sans-text landing-page-heading__about" v-html="$t('landing.heading.about')"></p>
+    <p class="regular-sans-text landing-page-heading__about">{{$t('landing.heading.about2')}}</p>
+    <p class="regular-sans-text landing-page-heading__about">{{$t('landing.heading.about3')}}</p>
   </article>
 </template>
 
@@ -18,24 +20,22 @@
   @import "src/assets/styles/ui";
 
   .landing-page-heading {
-    margin: 4rem 2rem 0 2rem;
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $mobile) {
-      flex-direction: column;
-      align-items: center;
-    }
+    flex-direction: column;
+    align-items: center;
     &__header {
-      max-width: 600px;
-      margin: 0 2rem 0 4.5rem;
+      /* max-width: 600px; */
+      margin: 2rem 0 3rem;
       @media screen and (max-width: $mobile) {
         margin: 0;
         text-align: center;
       }
     }
     &__about {
-      max-width: 600px;
-      margin: 0 2.5rem 0 2rem;
+      max-width: 1300px;
+      margin: 1rem;
+      text-align: left;
       @media screen and (max-width: $mobile) {
         padding-top: 2rem;
         margin: 0 2rem;
