@@ -241,6 +241,15 @@
   },
   {
     "group": "stand-basic",
+    "id": "042004(1)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "stand-basic",
     "id": "042004(4)",
     "selectableProperty": [{
       "value": "powder",
@@ -751,13 +760,13 @@
     "group": "luffa-whole",
     "id": "072002(1)",
     "selectableProperty": [],
-    "availability": 8
+    "availability": 6
   },
   {
     "group": "luffa-pressed",
     "id": "072003(1)",
     "selectableProperty": [],
-    "availability": 5
+    "availability": 2
   },
   {
     "group": "straw-bamboo",
@@ -799,13 +808,15 @@
     "group": "small-bamboo-brush",
     "id": "022009(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "long-cup-brush",
     "id": "072004(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "long-brush",

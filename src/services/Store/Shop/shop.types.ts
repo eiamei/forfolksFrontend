@@ -18,7 +18,7 @@ export interface ItemInterface {
 
 export interface ShopInterface {
     groups: Object,
-    products: Array<ItemInterface>,
+    products: Object,
     items: Array<ItemInterface>
     itemsByGroup: Object
 }
