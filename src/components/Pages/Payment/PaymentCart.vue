@@ -58,7 +58,7 @@
             item.props.forEach(property => {
               id += `-${slugify(property.value.toLowerCase())}`
             });
-          return require(`@/assets/images/store/${id}-small.jpg`);
+          return require(`../../../assets/images/store/${id}-small.jpg`);
         }
         return '';
       }

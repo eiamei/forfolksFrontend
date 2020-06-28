@@ -34,8 +34,8 @@
   import Vue from 'vue';
   import ColorPicker from '../../../components/ColorPicker.vue';
   import {ItemInterface} from '../../../services/Store/Shop/shop.types';
-  import MinusIcon from "@/components/Icons/Minus.vue";
-  import PlusIcon from "@/components/Icons/Plus.vue";
+  import MinusIcon from "../../../components/Icons/Minus.vue";
+  import PlusIcon from "../../../components/Icons/Plus.vue";
 
   interface Data {
     quantity: number;

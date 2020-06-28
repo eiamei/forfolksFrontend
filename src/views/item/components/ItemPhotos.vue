@@ -6,7 +6,7 @@
 
 <script lang="ts">
     import Vue from 'vue';
-    import { link } from "@/global";
+    import { link } from "../../../global";
 
     export default Vue.extend({
         props: {

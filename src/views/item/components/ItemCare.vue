@@ -14,8 +14,8 @@
 
 <script lang="ts">
   import Vue from "vue";
-  import PlusIcon from "@/components/Icons/Plus.vue";
-  import {ItemInterface} from "@/services/Store/Shop/shop.types";
+  import PlusIcon from "../../../components/Icons/Plus.vue";
+  import {ItemInterface} from "../../../services/Store/Shop/shop.types";
 
   interface Props {
     item: ItemInterface;

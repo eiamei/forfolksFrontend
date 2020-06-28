@@ -16,7 +16,7 @@
 
 <script lang="ts">
     import Vue from 'vue';
-    import { link } from "@/global";
+    import { link } from "../../../global";
     import { LocaleMessage } from "vue-i18n";
 
     interface subject {

@@ -60,7 +60,7 @@ export default {
         let images = [];
         for (let i = 0, len = 10; i < len; i++) {
           try {
-            images.push(require(`@/assets/images/store/${path}${i > 0 ? '(' + i + ')' : ''}.jpg`))
+            images.push(require(`../assets/images/store/${path}${i > 0 ? '(' + i + ')' : ''}.jpg`))
           } catch (e) {
             break;
           }

@@ -1,5 +1,5 @@
-import {ItemInterface} from "@/services/Store/Shop/shop.types";
-import groups from "@/constants/Groups.json";
+import {ItemInterface} from "../../../services/Store/Shop/shop.types";
+import groups from "../../../constants/Groups.json";
 
 export const shopActions = {
   createItemsList({commit, state}, data) {

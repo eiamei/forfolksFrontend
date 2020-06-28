@@ -12,12 +12,12 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import Carousel from "@/views/landing/components/Carousel.vue";
-  import Suggestions from "@/components/Suggestions.vue";
-  // import CatAdvise from "@/components/CatAdvise.vue";
-  // import Subjects from "@/views/landing/components/Subjects.vue";
-  import HeadingArticle from "@/views/landing/components/HeadingArticle.vue";
-  import {shuffle} from "@/utils/shuffle";
+  import Carousel from "../../views/landing/components/Carousel.vue";
+  import Suggestions from "../../components/Suggestions.vue";
+  // import CatAdvise from "../../components/CatAdvise.vue";
+  // import Subjects from "../../views/landing/components/Subjects.vue";
+  import HeadingArticle from "../../views/landing/components/HeadingArticle.vue";
+  import {shuffle} from "../../utils/shuffle";
 
   export default Vue.extend({
     name: 'LandingView',

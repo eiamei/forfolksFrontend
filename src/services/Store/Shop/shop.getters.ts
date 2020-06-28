@@ -1,5 +1,5 @@
-import {ItemInterface} from "@/services/Store/Shop/shop.types";
-import {Color, link} from "@/global";
+import {ItemInterface} from "../../../services/Store/Shop/shop.types";
+import {Color, link} from "../../../global";
 import i18n from '../../Translation/i18n';
 
 interface ParamInterface {
@@ -56,7 +56,7 @@ export const shopGetters = {
           });
         for (let i = 0, len = 10; i < len; i++) {
           try {
-            images.push(require(`@/assets/images/store/${path}${i > 0 ? '(' + i + ')' : ''}.jpg`))
+            images.push(require(`../../../assets/images/store/${path}${i > 0 ? '(' + i + ')' : ''}.jpg`))
           } catch (e) {
             break;
           }

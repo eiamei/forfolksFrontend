@@ -16,8 +16,8 @@
   import Vue from 'vue';
   import ItemPhotos from './components/ItemPhotos.vue';
   import ItemSideBar from './components/ItemSideBar.vue';
-  import {ItemInterface} from "@/services/Store/Shop/Shop.types";
-  import {Color, link} from "@/global";
+  import {ItemInterface} from "../../services/Store/Shop/shop.types";
+  import {Color, link} from "../../global";
   import ItemDescription from "./components/ItemDescription.vue";
   import ItemMoreInfo from "./components/ItemMoreInfo.vue";
   import ItemCare from "./components/ItemCare.vue";

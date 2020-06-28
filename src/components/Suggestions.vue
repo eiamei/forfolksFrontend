@@ -24,7 +24,7 @@
   import 'hooper/dist/hooper.css';
   import ItemCard from "../components/storeCard/storeCard.vue";
   import ArrowIcon from "../components/Icons/Arrow.vue";
-  import {ItemInterface} from "@/services/Store/Shop/shop.types";
+  import {ItemInterface} from "../services/Store/Shop/shop.types";
 
   export default Vue.extend({
     name: 'Suggestions',

@@ -9,7 +9,7 @@
 <script lang="ts">
   import Vue from 'vue';
   import {Color, Link} from "../global";
-  import {ItemInterface} from "@/services/Store/Shop/shop.types";
+  import {ItemInterface} from "../services/Store/Shop/shop.types";
 
   export default Vue.extend({
     name: 'colorPicker',

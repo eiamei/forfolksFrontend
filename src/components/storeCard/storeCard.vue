@@ -74,7 +74,7 @@
           this.item.selectableProperty.forEach(property => {
             path += `-${slugify(property.value.toLowerCase())}`
           });
-        return require(`@/assets/images/store/${path}-small.jpg`);
+        return require(`../../assets/images/store/${path}-small.jpg`);
       },
       badge() {
         if (this.item.badges.includes('new')) {

@@ -33,7 +33,7 @@ export default {
   computed: {
     itemImage () {
       if (this.id)
-        return require(`@/assets/images/store/${this.id}-small.jpg`);
+        return require(`../assets/images/store/${this.id}-small.jpg`);
       return '';
     },
     id () {
