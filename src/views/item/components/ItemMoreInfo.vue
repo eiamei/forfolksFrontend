@@ -29,6 +29,8 @@
       createdBy () : string {
         if (this.item.itemProperty.createdBy && this.item.itemProperty.createdBy.manufacture) {
           return `Производитель: ${this.item.itemProperty.createdBy.manufacture}`
+        } else if (this.item.itemProperty.createdBy && this.item.itemProperty.createdBy.design) {
+          return `Дизайн: ${this.item.itemProperty.createdBy.design}`
         }
         return 'Дизайн: Forfolks'
       }

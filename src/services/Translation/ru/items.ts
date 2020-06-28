@@ -3,8 +3,8 @@ import { LocaleMessageObject } from "vue-i18n";
 export const items: LocaleMessageObject = {
     pot: 'Горшок',
     pots: 'Горшки',
-    'cachepot': 'Кашпо',
-    'cachepots': 'Кашпо',
+    cachepot: 'Кашпо',
+    cachepots: 'Кашпо',
     candle: 'Свеча',
     candles: 'Свечи',
     alls: 'Все модели',
@@ -47,11 +47,16 @@ export const items: LocaleMessageObject = {
     bags: 'Сумки',
     accessories: 'Аксессуары',
     accessoriess: 'Аксессуары',
+    basket: 'Корзина',
+    baskets: 'Корзины',
     // materials
     bamboo: 'Бамбуковая',
     coconut: 'Кокосовая',
     linen: 'Льняной',
+    jute: 'Джутовая',
     // states
     whole: 'Цельная',
-    pressed: 'Преcсованная'
+    pressed: 'Преcсованная',
+    serve: 'Сервировочная',
+    pack: 'Комплект'
 }
