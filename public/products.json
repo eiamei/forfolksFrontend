@@ -836,5 +836,150 @@
     "id": "022010(1)",
     "selectableProperty": [],
     "availability": 4
+  },
+  {
+    "group": "linen-bag-gray-small",
+    "id": "022010(1)",
+    "selectableProperty": [],
+    "availability": 4
+  },
+  {
+    "group": "choli-jute-stand",
+    "id": "062001(1)",
+    "selectableProperty": [],
+    "availability": 8
+  },
+  {
+    "group": "choli-basket-semisphere",
+    "id": "062003(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "choli-cachepot-cylinder",
+    "id": "062005(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "choli-cachepot-pineapple",
+    "id": "062006(1)",
+    "name": "Ананасик S",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "S"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "choli-cachepot-pineapple",
+    "id": "062006(2)",
+    "name": "Ананасик M",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "M"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "choli-cachepot-pineapple",
+    "id": "062006(3)",
+    "name": "Ананасик L",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "L"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "choli-two-cachepot-pack",
+    "id": "062007(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "choli-basket",
+    "id": "062007(1)",
+    "name": "Корзина L",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "L"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "choli-katushka",
+    "id": "062004(1)",
+    "name": "Катушка S",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "S"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "10cm",
+        "height": "12cm"
+      },
+      "material": ["jute"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "availability": 1,
+    "price": "500"
+  },
+  {
+    "group": "choli-katushka",
+    "id": "062004(2)",
+    "name": "Катушка M",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "M"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "15cm",
+        "height": "14cm"
+      },
+      "material": ["jute"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "availability": 2,
+    "price": "700"
+  },
+  {
+    "group": "choli-katushka",
+    "id": "062004(4)",
+    "name": "Катушка XL",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "xl"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "22cm",
+        "height": "19cm"
+      },
+      "material": ["jute"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "availability": 1,
+    "price": "1100"
+  },
+  {
+    "group": "choli-sponge",
+    "id": "062002(1)",
+    "selectableProperty": [],
+    "availability": 5
+  },
+  {
+    "group": "latt-vase-stone",
+    "id": "062008(1)",
+    "selectableProperty": [],
+    "availability": 1
   }
 ]

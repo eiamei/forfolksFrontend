@@ -58,6 +58,9 @@
           to: '/store/category/stand',
           text: 'items.stands'
         }, {
+          to: '/store/category/basket',
+          text: 'items.baskets'
+        }, {
         //   to: '/store/category/bag',
         //   text: 'items.bags'
         // }, {
