@@ -18,5 +18,7 @@ export const material: LocaleMessageObject = {
     metal: 'Метал',
     linen: 'Лён',
     schamot: 'Шамотная глина',
-    glaze: 'Глазурь'
+    glaze: 'Глазурь',
+    clay: 'Глина',
+    acril: 'Акрил'
 }

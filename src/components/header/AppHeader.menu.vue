@@ -52,6 +52,9 @@
           to: '/store/category/cachepot',
           text: 'items.cachepots'
         }, {
+          to: '/store/category/pot',
+          text: 'items.pots'
+        }, {
           to: '/store/category/candlestick',
           text: 'items.candlesticks'
         }, {

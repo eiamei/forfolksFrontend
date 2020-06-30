@@ -981,5 +981,125 @@
     "id": "062008(1)",
     "selectableProperty": [],
     "availability": 1
+  },
+  {
+    "group": "sababa-blueberry-pie",
+    "id": "062010(1)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "d21"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "21cm",
+        "height": "19cm"
+      },
+      "material": ["clay", "acril"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 920
+  },
+  {
+    "group": "sababa-meow",
+    "id": "062012(1)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "d15"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "15cm",
+        "height": "13cm"
+      },
+      "material": ["clay", "acril"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 580
+  },
+  {
+    "group": "sababa-night-ruskeala",
+    "id": "062013(1)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "d11"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "11cm",
+        "height": "10cm"
+      },
+      "material": ["clay", "acril"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 510
+  },
+  {
+    "group": "sababa-simple",
+    "id": "062011(1)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "d9"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "9cm",
+        "height": "8.5cm"
+      },
+      "material": ["clay", "acril"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 430
+  },
+  {
+    "group": "sababa-summer-sunrise",
+    "id": "062009(1)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "d13"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "13cm",
+        "height": "11cm"
+      },
+      "material": ["clay", "acril"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 560
+  },
+  {
+    "group": "sababa-summer-sunrise",
+    "id": "062009(2)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "d23"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "23cm",
+        "height": "20cm"
+      },
+      "material": ["clay", "acril"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 1050
   }
 ]
