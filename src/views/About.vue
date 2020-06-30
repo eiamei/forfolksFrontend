@@ -2,10 +2,11 @@
   <div class="about">
     <article class="about-contacts">
       <h1 class="about__header">Контакты</h1>
-      <p>hello.forfolks@gmail.com</p>
+      <a href="mailto:hello@weareforfolks.com" class="about__mail">hello@weareforfolks.com</a>
       <p>+7 (999) 239-66-10</p>
       <h4>Интернет магазин (самовывоз)</h4>
-      <p>Санкт-Петербург, Артмуза, 13-линия, д. 72 (время по договоренности)</p>
+      <p>Санкт-Петербург, 13-линия В.О., д. 72, "Артмуза", 3 этаж пом. 312</p>
+      <p>График работы можно уточнить в социальных сетях, мессенджерах или по номеру телефона.</p>
       <nav class="about-contacts__links">
         <a href="https://vk.com/weareforfolks" target="_blank">
           <img class="about-contacts__link" src="../assets/svg/vk-logo.svg" alt="vk"/>
@@ -30,7 +31,7 @@
     <article class="about-write-us">
       <h1 class="about__header">Напишите нам</h1>
       <p>Если у вас есть вопросы или комментарии о наших продуктах, пожалуйста, напишите нам.</p>
-      <p>Также, если вы хотели бы видеть forfolks на своих полочках, вы дизайнер интерьеров, или просто заинтересованы в сотрудничестве - смело пишите нам на почту или в любой мессенджер. Мы всегда вам рады. </p>
+      <p>Также, если вы хотели бы быть представленными в нашем магазине или просто заинтересованы в сотрудничестве - смело пишите нам на почту <a href="mailto:join@weareforfolks.com" class="about__mail">join@weareforfolks.com</a> или в любой мессенджер. Мы всегда вам рады. </p>
     </article>
   </div>
 </template>
@@ -50,6 +51,10 @@
     align-self: center;
     &__header {
       font-weight: 300;
+    }
+    &__mail {
+      text-decoration: none;
+      color: black;
     }
     &__instagram, &__vk, &__facebook {
       display: inline-block;

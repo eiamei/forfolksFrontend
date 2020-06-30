@@ -11,14 +11,39 @@
       <span class="user-info__error">{{ parseError(errors.first('phone')) }}</span>
       <div class="user-info__additional-info"> На случай, если возникнет необходимость связаться с вами и уточнить детали заказа или доставки</div>
       <textarea class="user-info__input user-info__input--text-area" v-model="form.comment" name="comment" placeholder="Комментарий"></textarea>
-      <div class="user-info__header">Информация о доставке</div>
-      <div class="user-info__additional-info">В Санкт-Петербурге возможен самовывоз от станции метро Приморская. <br>Если вы хотите оформить доставку, пожалуйста, заполните поля ниже</div>
-      <input class="user-info__input" v-model="form.country" name="country" placeholder="Страна"/>
-      <input class="user-info__input" v-model="form.city" name="city" placeholder="Город"/>
-      <span style="display: flex; justify-content: space-between; width: 100%">
-        <input class="user-info__input user-info__input--postal" v-model="form.postal" name="postal" placeholder="Индекс"/>
-        <input class="user-info__input user-info__input--address" v-model="form.address" name="address" placeholder="Адрес"/>
-      </span>
+      <p class="user-info__additional-info">В Санкт-Петербурге возможен самовывоз от станции метро Василеостровская. <br>Если вы хотите оформить доставку, пожалуйста, выберите пункт "доставка" и заполните поля ниже</p>
+      <div @click="changeDeliveryType">
+        <button
+          class="clean-button user-info__delivery-button"
+          :class="isSelected(DELIVERY_TYPES.SELF)"
+          type="button" 
+          :data-delivery-type="DELIVERY_TYPES.SELF"
+        >
+          Самовывоз
+        </button>
+        <button
+          class="clean-button user-info__delivery-button" 
+          :class="isSelected(DELIVERY_TYPES.SHIPPING)"
+          type="button" 
+          :data-delivery-type="DELIVERY_TYPES.SHIPPING"
+        >
+          Доставка
+        </button>
+      </div>
+      <template v-if="deliveryType === DELIVERY_TYPES.SELF">
+        <p class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа и оплаты мы договоримся об удобном времени для самовывоза.</p>
+        <p class="regular-sans-text user-info__delivery-info-text">Наш шоурум находится по адресу Санкт-Петербург, 13-линия В.О., д. 72, "Артмуза", 3 этаж пом. 312</p>
+      </template>
+      <template v-else>
+        <p class="user-info__header">Информация для доставки</p>
+        <p class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа мы рассчитаем стоимость доставки. Примерную цену и сроки доставки вы можете посмотреть на сайте boxberry.</p>
+        <input class="user-info__input" v-model="form.country" name="country" placeholder="Страна"/>
+        <input class="user-info__input" v-model="form.city" name="city" placeholder="Город"/>
+        <span style="display: flex; justify-content: space-between; width: 100%">
+          <input class="user-info__input user-info__input--postal" v-model="form.postal" name="postal" placeholder="Индекс"/>
+          <input class="user-info__input user-info__input--address" v-model="form.address" name="address" placeholder="Адрес"/>
+        </span>
+      </template>
       <app-button class="user-info__end-order button--end-order" content="Завершить заказ"/>
     </form>
   </div>
@@ -45,7 +70,12 @@ export default {
         city: '',
         zip: '',
         address: ''
-      }
+      },
+      DELIVERY_TYPES: {
+        SELF: 0,
+        SHIPPING: 1
+      },
+      deliveryType: 0
     }
   },
   methods: {
@@ -63,6 +93,15 @@ export default {
           this.$emit('confirmed', encoded);
         }
       });
+    },
+    changeDeliveryType (event) {
+      event.preventDefault;
+      if (event.target.hasAttribute('data-delivery-type')) {
+        this.deliveryType = Number(event.target.getAttribute('data-delivery-type'))
+      }
+    },
+    isSelected (type) {
+      return type === this.deliveryType ? 'user-info__delivery-button--selected' : '';
     }
   }
 };
@@ -70,10 +109,12 @@ export default {
 
 <style lang="scss">
   @import '../../../assets/styles/colors';
+  @import '../../../assets/styles/vars';
+  @import '../../../assets/styles/ui';
   .user-info {
-    /*margin-top: 60px;*/
     width: 100%;
     max-width: 600px;
+    font-family: 'Roboto', 'Open Sans', serif;
     &__form {
       display: flex;
       flex-direction: column;
@@ -81,7 +122,7 @@ export default {
     &__header {
       font-size: 20px;
       font-weight: 500;
-      margin: 24px 0 10px 0;
+      margin: 16px 0 10px 0;
     }
     &__input {
       width: calc(100% - 18px);
@@ -111,6 +152,20 @@ export default {
     &__additional-info {
       font-size: 12px;
       color: $dark-gray2
+    }
+    &__delivery-button.clean-button {
+      margin: 0.5rem 1rem 0.5rem 0;
+      transform: 0.3s all;
+      cursor: pointer;
+    }
+    &__delivery-button--selected {
+      border-bottom: 1px solid $orange;
+    }
+    &__delivery-info-text.regular-sans-text {
+      margin: 0.5rem 0;
+      font-size: 0.85rem;
+      text-transform: none;
+      line-height: 1.4;
     }
     &__end-order {
       margin: 24px 0;
