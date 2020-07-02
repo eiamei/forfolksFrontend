@@ -49,11 +49,15 @@ export const items: LocaleMessageObject = {
     accessoriess: 'Аксессуары',
     basket: 'Корзина',
     baskets: 'Корзины',
+    textile: 'Текстиль',
+    textiles: 'Текстиль',
     // materials
     bamboo: 'Бамбуковая',
     coconut: 'Кокосовая',
     linen: 'Льняной',
     jute: 'Джутовая',
+    woods: 'Деревянные',
+    rami: 'Рами',
     // states
     whole: 'Цельная',
     pressed: 'Преcсованная',

@@ -1101,5 +1101,125 @@
     },
     "availability": 1,
     "price": 1050
+  },
+  {
+    "group": "mori-toys",
+    "id": "0720006(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "mori-pillowcase",
+    "name": "Наволочка большая",
+    "id": "0720004(1)",
+    "selectableProperty": [{
+      "type": "color",
+      "value": "green"
+    }, {
+      "type": "model",
+      "value": "big"
+    }],
+    "itemProperty": {
+      "size": {
+        "width": "50cm",
+        "length": "50cm"
+      },
+      "material": ["rami"],
+      "createdBy": {
+        "design": "Mori"
+      }
+    },
+    "availability": 1,
+    "price": 870
+  },
+  {
+    "group": "mori-pillowcase",
+    "name": "Наволочка маленькая",
+    "id": "0720005(1)",
+    "selectableProperty": [{
+      "type": "color",
+      "value": "brown"
+    }, {
+      "type": "model",
+      "value": "small"
+    }],
+    "itemProperty": {
+      "size": {
+        "width": "40cm",
+        "length": "40cm"
+      },
+      "material": ["rami"],
+      "createdBy": {
+        "design": "Mori"
+      }
+    },
+    "availability": 1,
+    "price": 780
+  },
+  {
+    "group": "mori-hanging",
+    "id": "0720001(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "mori-tablecloth",
+    "id": "0720003(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "mori-bag",
+    "id": "0720009(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "mori-apron-melange",
+    "id": "0720010(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "mori-cover-bag",
+    "name": "Чехол стандартный",
+    "id": "0720008(1)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "small"
+    }],
+    "itemProperty": {
+      "size": {
+        "height": "45cm",
+        "width": "40cm"
+      },
+      "material": ["cotton"],
+      "createdBy": {
+        "design": "!Mori"
+      }
+    },
+    "availability": 1,
+    "price": 880
+  },
+  {
+    "group": "mori-cover-bag",
+    "name": "Чехол большой",
+    "id": "0720007(1)",
+    "selectableProperty": [{
+      "type": "model",
+      "value": "big"
+    }],
+    "itemProperty": {
+      "size": {
+        "height": "55cm",
+        "width": "50cm"
+      },
+      "material": ["cotton"],
+      "createdBy": {
+        "design": "Mori"
+      }
+    },
+    "availability": 1,
+    "price": 990
   }
 ]

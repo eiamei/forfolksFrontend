@@ -64,6 +64,9 @@
           to: '/store/category/basket',
           text: 'items.baskets'
         }, {
+          to: '/store/category/textile',
+          text: 'items.textile'
+        }, {
         //   to: '/store/category/bag',
         //   text: 'items.bags'
         // }, {
@@ -84,6 +87,9 @@
         }, {
           to: '/store/category/wax',
           text: 'items.wax'
+        }, {
+          to: '/store/category/toy',
+          text: 'items.toys'
         }],
         byMaterial: [{
           to: '/store/material/concrete',

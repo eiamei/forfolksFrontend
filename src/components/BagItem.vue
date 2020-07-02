@@ -9,9 +9,9 @@
         </p>
         <section style="display: flex; justify-content: center; align-items: center">
           <p class="bag-item__field">{{item.price}}</p>
-          <button class="bag-item__button" @click="increment">+</button>
-          <p class="bag-item__field">{{item.qty}}</p>
           <button class="bag-item__button" @click="decrement">-</button>
+          <p class="bag-item__field">{{item.qty}}</p>
+          <button class="bag-item__button" @click="increment">+</button>
           <p class="bag-item__field">{{item.price * item.qty}}</p>
         </section>
         <button class="bag-item__button" @click="remove">Удалить</button>

@@ -101,13 +101,13 @@ export default {
   }
   .store {
     display: grid;
-    grid-gap: 1.5rem; /* [1] Add some gap between rows and columns */
-    grid-template-columns: repeat( auto-fit, minmax( 20rem, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat( auto-fit, minmax( 20rem, 0.35fr ) );
     grid-auto-flow: dense;
     margin: 3.5rem 0 1.5rem 0;
     padding: 0 1rem;
     @media screen and (max-width: $tablet) {
-      grid-template-columns: repeat( auto-fit, minmax( 17rem, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+      grid-template-columns: repeat( auto-fit, minmax( 17rem, 1fr ) );
     }
   }
 
