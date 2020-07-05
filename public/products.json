@@ -1,55 +1,5 @@
 [
   {
-    "group": "cachepot_modern_m",
-    "id": "031904(10)",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }],
-    "layout": "high",
-    "availability": 0
-  },
-  {
-    "group": "cachepot_modern_m",
-    "id": "031904(2)",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }],
-    "layout": "high",
-    "availability": 0
-  },
-  {
-    "group": "cachepot_modern_m",
-    "id": "031904(9)",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }],
-    "layout": "high",
-    "availability": 0
-  },
-  {
-    "group": "cachepot_modern_m",
-    "id": "031904(3)",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }],
-    "layout": "high",
-    "availability": 0
-  },
-  {
-    "group": "cachepot_modern_m",
-    "id": "031904(8)",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }],
-    "layout": "high",
-    "availability": 0
-  },
-  {
     "group": "cachepot_modern_s",
     "id": "042002(1)",
     "selectableProperty": [{
@@ -1221,5 +1171,11 @@
     },
     "availability": 1,
     "price": 990
+  },
+  {
+    "group": "mori-tack",
+    "id": "0720002(1)",
+    "selectableProperty": [],
+    "availability": 3
   }
 ]
