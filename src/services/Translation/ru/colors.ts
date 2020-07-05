@@ -24,5 +24,7 @@ export const colors: LocaleMessageObject = {
     pumpkin: 'Тыквенный',
     powder: 'Пудра',
     moonstone: 'Лунный камень',
-    khaki: 'Хаки'
+    khaki: 'Хаки',
+    green: 'Зеленый',
+    brown: 'Коричневый'
 }

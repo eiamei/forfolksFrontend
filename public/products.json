@@ -816,7 +816,7 @@
     "id": "062006(1)",
     "name": "Ананасик S",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "S"
     }],
     "availability": 1
@@ -826,7 +826,7 @@
     "id": "062006(2)",
     "name": "Ананасик M",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "M"
     }],
     "availability": 1
@@ -836,7 +836,7 @@
     "id": "062006(3)",
     "name": "Ананасик L",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "L"
     }],
     "availability": 1
@@ -852,7 +852,7 @@
     "id": "062007(1)",
     "name": "Корзина L",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "L"
     }],
     "availability": 1
@@ -862,7 +862,7 @@
     "id": "062004(1)",
     "name": "Катушка S",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "S"
     }],
     "itemProperty": {
@@ -883,7 +883,7 @@
     "id": "062004(2)",
     "name": "Катушка M",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "M"
     }],
     "itemProperty": {
@@ -904,7 +904,7 @@
     "id": "062004(4)",
     "name": "Катушка XL",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "xl"
     }],
     "itemProperty": {
@@ -936,7 +936,7 @@
     "group": "sababa-blueberry-pie",
     "id": "062010(1)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "d21"
     }],
     "itemProperty": {
@@ -956,7 +956,7 @@
     "group": "sababa-meow",
     "id": "062012(1)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "d15"
     }],
     "itemProperty": {
@@ -976,7 +976,7 @@
     "group": "sababa-night-ruskeala",
     "id": "062013(1)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "d11"
     }],
     "itemProperty": {
@@ -996,7 +996,7 @@
     "group": "sababa-simple",
     "id": "062011(1)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "d9"
     }],
     "itemProperty": {
@@ -1016,7 +1016,7 @@
     "group": "sababa-summer-sunrise",
     "id": "062009(1)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "d13"
     }],
     "itemProperty": {
@@ -1036,7 +1036,7 @@
     "group": "sababa-summer-sunrise",
     "id": "062009(2)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "d23"
     }],
     "itemProperty": {
@@ -1063,10 +1063,10 @@
     "name": "Наволочка большая",
     "id": "0720004(1)",
     "selectableProperty": [{
-      "type": "color",
+      "name": "color",
       "value": "green"
     }, {
-      "type": "model",
+      "name": "model",
       "value": "big"
     }],
     "itemProperty": {
@@ -1087,10 +1087,10 @@
     "name": "Наволочка маленькая",
     "id": "0720005(1)",
     "selectableProperty": [{
-      "type": "color",
+      "name": "color",
       "value": "brown"
     }, {
-      "type": "model",
+      "name": "model",
       "value": "small"
     }],
     "itemProperty": {
@@ -1135,7 +1135,7 @@
     "name": "Чехол стандартный",
     "id": "0720008(1)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "small"
     }],
     "itemProperty": {
@@ -1156,7 +1156,7 @@
     "name": "Чехол большой",
     "id": "0720007(1)",
     "selectableProperty": [{
-      "type": "model",
+      "name": "model",
       "value": "big"
     }],
     "itemProperty": {

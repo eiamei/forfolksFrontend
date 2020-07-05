@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import BagItem from '../components/BagItem';
+import BagItem from '../components/BagItem.vue';
 import {PROMO} from '../constants/Globals';
 export default {
   name: 'Bag',
@@ -127,7 +127,7 @@ export default {
       outline: transparent;
     }
     &__promo-button {
-      width: 80px;
+      width: 88px;
       border: 1px solid black;
       margin-left: 0.5rem;
       padding: 1rem 0.5rem;

@@ -89,7 +89,9 @@ export default {
     checkForm () {
       this.$validator._base.validateAll().then(isNoError => {
         if (isNoError) {
-          let encoded = Object.keys(this.form).map(key => encodeURIComponent(key) + "=" + encodeURIComponent(this.form[key])).join('&');
+          const formData = Object.assign({}, this.form);
+          formData.deliveryType = this.deliveryType === this.DELIVERY_TYPES.SELF ? 'Самовывоз' : 'Доставка';
+          let encoded = Object.keys(formData).map(key => encodeURIComponent(key) + "=" + encodeURIComponent(formData[key])).join('&');
           this.$emit('confirmed', encoded);
         }
       });
