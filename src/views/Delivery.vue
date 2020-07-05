@@ -34,7 +34,7 @@ export default {
     flex-wrap: wrap;
     max-width: 80rem;
     align-self: center;
-    margin: 3rem 1rem 0 1rem;
+    margin: 3rem 1rem;
     justify-content: center;
     &__black-link {
       margin: 1rem 0 0 0;

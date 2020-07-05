@@ -11,6 +11,7 @@ const Payment = () => import(/* webpackChunkName: "payment-page" */'../../compon
 const About = () => import(/* webpackChunkName: "about-page" */'../../views/About.vue');
 const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../views/Delivery.vue');
 const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/landing/Landing.vue');
+const Contract = () => import(/* webpackChunkName: "contract-page" */'../../views/Contract.vue');
 
 Vue.use(Router);
 
@@ -117,6 +118,18 @@ let routes = [
     component: Payment,
     meta: {
       title: 'Оплата',
+      tags: [{
+        name: 'robots',
+        content: 'noindex'
+      }]
+    }
+  },
+  {
+    path: '/contract',
+    name: 'contract',
+    component: Contract,
+    meta: {
+      title: 'Оферта',
       tags: [{
         name: 'robots',
         content: 'noindex'
