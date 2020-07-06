@@ -1177,5 +1177,55 @@
     "id": "0720002(1)",
     "selectableProperty": [],
     "availability": 3
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Birch",
+    "id": "07200015(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "birch"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Fern dava",
+    "id": "07200012(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "fern-dava"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Fern poly",
+    "id": "07200013(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "fern-poly"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Mentol",
+    "id": "07200011(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "mentol"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Rice",
+    "id": "07200014(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "rice"
+    }],
+    "availability": 1
   }
 ]

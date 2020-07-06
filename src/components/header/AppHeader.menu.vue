@@ -100,6 +100,9 @@
         }, {
           to: '/store/material/cotton',
           text: 'material.cotton'
+        }, {
+          to: '/store/material/ceramic',
+          text: 'items.ceramic'
         }],
         links: [{
           to: '/delivery',
