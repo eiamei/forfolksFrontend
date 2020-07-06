@@ -15,7 +15,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "cachepot_modern_s",
@@ -34,7 +34,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 7
+    "availability": 2
   },
   {
     "group": "stand-basic-s",
@@ -64,7 +64,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 5
+    "availability": 3
   },
   {
     "group": "stand-basic-s",
@@ -74,7 +74,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 5
+    "availability": 4
   },
   {
     "group": "stand-cone-s",
@@ -160,7 +160,8 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 0
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "basic-incense",
@@ -169,7 +170,8 @@
       "value": "black",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 0,
+    "badges": ""
   },
   {
     "id": "042001(3)",
@@ -178,7 +180,8 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "stand-basic",
@@ -187,7 +190,8 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "stand-basic",
@@ -196,7 +200,8 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "stand-basic",
@@ -205,7 +210,8 @@
       "value": "powder",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "stand-basic",
@@ -214,7 +220,8 @@
       "value": "graphite",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "stand-basic",
@@ -223,7 +230,8 @@
       "value": "white-marble",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "candlestick-house-swiss",
@@ -232,7 +240,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "candlestick-house-swiss",
@@ -277,7 +285,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 3
   },
   {
     "group": "candlestick-house-denmark",
@@ -322,7 +330,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "vase-modern",
@@ -349,7 +357,7 @@
       "value": "powder",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "vase-modern",
@@ -358,7 +366,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "vase-mild",
@@ -367,7 +375,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "vase-mild",
@@ -385,7 +393,7 @@
       "value": "graphite",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "vase-mild",
@@ -421,7 +429,7 @@
       "value": "graphite",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "cup-mild",
@@ -448,7 +456,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "bowl-mild",
@@ -457,7 +465,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "bowl-mild",
@@ -466,7 +474,7 @@
       "value": "graphite",
       "name": "color"
     }],
-    "availability": 4
+    "availability": 1
   },
   {
     "group": "bowl-mild",
@@ -484,7 +492,7 @@
       "value": "powder",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "bowl-mild",
@@ -493,7 +501,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 5
+    "availability": 4
   },
   {
     "group": "candle-mild",
@@ -710,19 +718,22 @@
     "group": "luffa-whole",
     "id": "072002(1)",
     "selectableProperty": [],
-    "availability": 6
+    "availability": 6,
+    "badges": ""
   },
   {
     "group": "luffa-pressed",
     "id": "072003(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 2,
+    "badges": ""
   },
   {
     "group": "straw-bamboo",
     "id": "072008(1)",
     "selectableProperty": [],
-    "availability": 11
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "toothbrush-bamboo",
@@ -731,7 +742,8 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 9
+    "availability": 7,
+    "badges": ""
   },
   {
     "group": "toothbrush-bamboo",
@@ -740,19 +752,22 @@
       "value": "black",
       "name": "color"
     }],
-    "availability": 10
+    "availability": 7,
+    "badges": ""
   },
   {
     "group": "small-comb",
     "id": "072012(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 2,
+    "badges": ""
   },
   {
     "group": "big-comb",
     "id": "072013(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 2,
+    "badges": ""
   },
   {
     "group": "small-bamboo-brush",
@@ -779,19 +794,22 @@
     "group": "linen-bag-gray-big",
     "id": "022011(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "linen-bag-gray-small",
     "id": "022010(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "linen-bag-gray-small",
     "id": "022010(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "choli-jute-stand",
@@ -924,7 +942,7 @@
     "group": "choli-sponge",
     "id": "062002(1)",
     "selectableProperty": [],
-    "availability": 5
+    "availability": 4
   },
   {
     "group": "latt-vase-stone",
@@ -1227,5 +1245,22 @@
       "value": "rice"
     }],
     "availability": 1
+  },
+  {
+    "group": "hleb-pot",
+    "name": "Шоколадка",
+    "id": "0720010(1)",
+    "selectableProperty": [],
+    "availability": 7
+  },
+  {
+    "group": "hleb-pot",
+    "name": "Горошек",
+    "id": "0720011(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "peas"
+    }],
+    "availability": 3
   }
 ]
