@@ -1,7 +1,7 @@
 import slugify from 'slugify';
 
 export default {
-  add ({state, commit, dispatch}, params) {
+  add ({rootState, state, commit, dispatch}, params) {
     let bagItem = {
       rootPath: params.item.rootPath,
       id: params.item.id,
@@ -17,15 +17,18 @@ export default {
       });
     if (params.item.variant)
       id += params.item.variant;
-    if (state.bag.hasOwnProperty(id))
+    if (state.bag.hasOwnProperty(id) && (state.bag[id].qty + 1) <= params.item.availability)
       commit('increment', id);
-    else
+    else {
+      if (params.quantity + 1 <= params.item.availability) {
+        bagItem.qty = params.quantity;
+      } else {
+        bagItem.qty = 1;
+      }
       commit('bag', {
-        [id]: {
-          ...bagItem,
-          qty: params.quantity || 1
-        }
+        [id]: bagItem
       });
+    }
     dispatch('save');
   },
   increment ({state, commit, dispatch}, id) {

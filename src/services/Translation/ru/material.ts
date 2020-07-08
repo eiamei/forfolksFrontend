@@ -23,5 +23,6 @@ export const material: LocaleMessageObject = {
     acril: 'Акрил',
     linded: 'Липа',
     rami: 'Рами',
-    ceramic: 'Керамика'
+    ceramic: 'Керамика',
+    sesales: 'Сизаль'
 }

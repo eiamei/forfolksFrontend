@@ -45,6 +45,14 @@ export const shopGetters = {
       return item;
     }
   },
+  findItemById (state) : (id) => (ItemInterface | undefined)  {
+    return function (id): (ItemInterface | undefined) {
+        return state.items
+          .find(function (item) {
+            return item.id === id;
+          })
+    }
+  },
   findItemImages () : (ItemInterface) => Array<link> {
     return function (item: ItemInterface): Array<link> {
       let images: Array<link> = [];

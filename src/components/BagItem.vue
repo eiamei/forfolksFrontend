@@ -43,6 +43,9 @@ export default {
           id += `-${slugify(property.value.toLowerCase())}`
         });
       return id;
+    },
+    storeItem () {
+      return this.$store.getters['shop/findItemById'](this.item.id)
     }
   },
   methods: {
@@ -50,6 +53,7 @@ export default {
       this.$store.dispatch('bag/decrement', this.id);
     },
     increment () {
+      if (this.item.qty +  1 <= this.storeItem.availability)
       this.$store.dispatch('bag/increment', this.id);
     },
     remove () {

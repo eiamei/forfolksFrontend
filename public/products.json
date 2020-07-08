@@ -94,7 +94,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "stand-cone-s",
@@ -114,7 +114,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-cone-s",
@@ -504,33 +504,6 @@
     "availability": 4
   },
   {
-    "group": "candle-mild",
-    "id": "042003(1)",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color"
-    }],
-    "availability": 0
-  },
-  {
-    "group": "candle-mild",
-    "id": "042003(2)",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }],
-    "availability": 0
-  },
-  {
-    "group": "candle-mild",
-    "id": "042003(3)",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }],
-    "availability": 0
-  },
-  {
     "group": "hanging-spole",
     "id": "101907(1)",
     "selectableProperty": [],
@@ -718,7 +691,7 @@
     "group": "luffa-whole",
     "id": "072002(1)",
     "selectableProperty": [],
-    "availability": 6,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -742,7 +715,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 7,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -752,7 +725,7 @@
       "value": "black",
       "name": "color"
     }],
-    "availability": 7,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -1233,16 +1206,6 @@
     "selectableProperty": [{
       "name": "model",
       "value": "mentol"
-    }],
-    "availability": 1
-  },
-  {
-    "group": "whiteclay-soap-dish",
-    "name": "Rice",
-    "id": "07200014(1)",
-    "selectableProperty": [{
-      "name": "model",
-      "value": "rice"
     }],
     "availability": 1
   },

@@ -82,9 +82,9 @@
           to: '/store/category/panno',
           text: 'items.panno'
         }, {
-          to: '/store/category/candle',
-          text: 'items.candles'
-        }, {
+        //   to: '/store/category/candle',
+        //   text: 'items.candles'
+        // }, {
           to: '/store/category/wax',
           text: 'items.wax'
         }, {

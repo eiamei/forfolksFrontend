@@ -85,7 +85,9 @@
         }
       },
       increment(): void {
-        this.quantity++;
+        if (this.quantity + 1 <= this.item.availability) {
+          this.quantity++;
+        }
       }
     }
   })
