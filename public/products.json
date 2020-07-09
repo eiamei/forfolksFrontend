@@ -698,7 +698,7 @@
     "group": "luffa-pressed",
     "id": "072003(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -746,14 +746,25 @@
     "group": "small-bamboo-brush",
     "id": "022009(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 5,
     "badges": ""
+  },
+  {
+    "group": "small-bamboo-brush",
+    "id": "022009(2)",
+    "desc": "Компактная и очень эргономичная щетка для мытья посуды. В отличии от щетки со светлой щетиной темный вариант чуть более жесктий, поэтому лучше справляется со сложными загрязнениями, но с такой щеткой стоит проявить особое внимание при мытье посуды с антипригарным покрытием. <br><br> Деревянное основание щетки можно сдать в переработку.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "hard"
+    }],
+    "availability": 4,
+    "badges": "new"
   },
   {
     "group": "long-cup-brush",
     "id": "072004(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
