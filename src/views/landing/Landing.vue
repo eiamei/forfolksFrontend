@@ -40,7 +40,6 @@
   .landing-page {
     text-align: center;
     .landing-page-carousel {
-      margin: 3rem 1rem 0 1rem;
     }
     .landing-page-hero-text {
       margin: 4rem 2rem 2rem 2rem;
