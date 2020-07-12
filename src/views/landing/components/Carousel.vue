@@ -36,6 +36,12 @@
           linkText: 'Как нас найти',
           link: '/about'
         }, {
+          image: require('../../../assets/images/landing/landing-delivery.jpg'),
+          heading: 'Бесплатная доставка',
+          subHeading: 'По Москве и Санкт-Петербургу при заказе от 3000 рублей',
+          linkText: 'Перейти в магазин',
+          link: '/store/category/all'
+        }, {
           image: require('../../../assets/images/landing/landing-accessories.jpg'),
           heading: 'Кухонные аксессуары',
           subHeading: 'Мелочи, которые сделают жизнь удобнее',

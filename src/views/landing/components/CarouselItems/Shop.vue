@@ -67,11 +67,16 @@
     &__heading-text.big-serif-heading {
       font-size: 2.5rem;
       margin: 0;
+      align-self: flex-end;
+      @media screen and (max-width: $tablet) {
+        align-self: center;
+      }
     }
     &__sub-heading-text {
       align-self: flex-end;
       @media screen and (max-width: $tablet) {
         align-self: center;
+        font-size: 10px;
       }
     }
     &__action-button.regular-link {

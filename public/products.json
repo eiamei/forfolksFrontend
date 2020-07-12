@@ -757,7 +757,7 @@
       "name": "model",
       "value": "hard"
     }],
-    "availability": 3,
+    "availability": 2,
     "badges": "new"
   },
   {
@@ -799,7 +799,7 @@
     "group": "choli-jute-stand",
     "id": "062001(1)",
     "selectableProperty": [],
-    "availability": 8
+    "availability": 3
   },
   {
     "group": "choli-basket-semisphere",
