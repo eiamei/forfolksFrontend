@@ -698,14 +698,14 @@
     "group": "luffa-pressed",
     "id": "072003(1)",
     "selectableProperty": [],
-    "availability": 3,
+    "availability": 0,
     "badges": ""
   },
   {
     "group": "straw-bamboo",
     "id": "072008(1)",
     "selectableProperty": [],
-    "availability": 4,
+    "availability": 5,
     "badges": ""
   },
   {
@@ -715,7 +715,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -725,7 +725,7 @@
       "value": "black",
       "name": "color"
     }],
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -739,14 +739,14 @@
     "group": "big-comb",
     "id": "072013(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
     "group": "small-bamboo-brush",
     "id": "022009(1)",
     "selectableProperty": [],
-    "availability": 5,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -757,14 +757,14 @@
       "name": "model",
       "value": "hard"
     }],
-    "availability": 4,
+    "availability": 3,
     "badges": "new"
   },
   {
     "group": "long-cup-brush",
     "id": "072004(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
