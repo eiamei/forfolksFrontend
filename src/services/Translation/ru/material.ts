@@ -15,7 +15,7 @@ export const material: LocaleMessageObject = {
     birch: 'Береза',
     wood: 'Дерево',
     coconut: 'Кокос',
-    metal: 'Метал',
+    metal: 'Металл',
     linen: 'Лён',
     schamot: 'Шамотная глина',
     glaze: 'Глазурь',
@@ -24,5 +24,8 @@ export const material: LocaleMessageObject = {
     linded: 'Липа',
     rami: 'Рами',
     ceramic: 'Керамика',
-    sesales: 'Сизаль'
+    sesales: 'Сизаль',
+    soyWax: 'Соевый воск',
+    aroma: 'Эфирные масла',
+    glass: 'Стекло'
 }

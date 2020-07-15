@@ -50,21 +50,24 @@
                 linkBlock: [[{
                     text: 'footer.allItems',
                     href: '/store/category/all'
-                }, {
-                    text: 'footer.concrete',
-                    href: '/store/material/concrete'
-                }, {
-                    text: 'footer.dryFlower',
-                    href: '/store/material/dryflowers'
-                }, {
-                    text: 'footer.cotton',
-                    href: '/store/material/cotton'
+                // }, {
+                //     text: 'footer.concrete',
+                //     href: '/store/material/concrete'
+                // }, {
+                //     text: 'footer.dryFlower',
+                //     href: '/store/material/dryflowers'
+                // }, {
+                //     text: 'footer.cotton',
+                //     href: '/store/material/cotton'
                 }], [{
                     text: 'footer.aboutUs',
                     href: '/about'
                 }, {
                     text: 'footer.deliveryAndPayment',
                     href: '/delivery'
+                }, {
+                    text: 'Оферта',
+                    href: '/contract'
                 }]],
                 socialLinks: [{
                     href: 'https://facebook.com/weareforfolks',

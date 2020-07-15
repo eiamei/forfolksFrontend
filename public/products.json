@@ -549,7 +549,7 @@
         "height": 22,
         "width": 8
       },
-      "material": ["dryflowers"],
+      "material": ["Сухоцветы"],
       "weight": 10
     },
     "price": 300,
@@ -569,7 +569,7 @@
         "height": 22,
         "width": 8
       },
-      "material": ["dryflowers"],
+      "material": ["Сухоцветы"],
       "weight": 10
     },
     "price": 300,
@@ -600,7 +600,7 @@
         "height": 22,
         "width": 8
       },
-      "material": ["dryflowers"],
+      "material": ["Сухоцветы"],
       "weight": 10
     },
     "price": 200,
@@ -620,7 +620,7 @@
         "height": 22,
         "width": 8
       },
-      "material": ["dryflowers"],
+      "material": ["Сухоцветы"],
       "weight": 10
     },
     "price": 250,
@@ -640,7 +640,7 @@
         "height": 22,
         "width": 8
       },
-      "material": ["dryflowers"],
+      "material": ["Сухоцветы"],
       "weight": 10
     },
     "price": 300,
@@ -660,7 +660,7 @@
         "height": 22,
         "width": 8
       },
-      "material": ["dryflowers"],
+      "material": ["Сухоцветы"],
       "weight": 10
     },
     "price": 250,
@@ -680,7 +680,7 @@
         "height": 22,
         "width": 8
       },
-      "material": ["dryflowers"],
+      "material": ["Сухоцветы"],
       "weight": 10
     },
     "price": 200,
@@ -691,7 +691,7 @@
     "group": "luffa-whole",
     "id": "072002(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -821,6 +821,16 @@
       "name": "model",
       "value": "S"
     }],
+    "itemProperty": {
+      "size": {
+        "diameter": "10cm",
+        "height": "10cm"
+      },
+      "material": ["Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
     "availability": 1
   },
   {
@@ -831,7 +841,18 @@
       "name": "model",
       "value": "M"
     }],
-    "availability": 1
+    "itemProperty": {
+      "size": {
+        "diameter": "12cm",
+        "height": "12cm"
+      },
+      "material": ["Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "availability": 0,
+    "price": 700
   },
   {
     "group": "choli-cachepot-pineapple",
@@ -841,13 +862,24 @@
       "name": "model",
       "value": "L"
     }],
-    "availability": 1
+    "itemProperty": {
+      "size": {
+        "diameter": "14cm",
+        "height": "14cm"
+      },
+      "material": ["Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "availability": 1,
+    "price": 900
   },
   {
     "group": "choli-two-cachepot-pack",
     "id": "062007(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "choli-basket",
@@ -872,7 +904,7 @@
         "diameter": "10cm",
         "height": "12cm"
       },
-      "material": ["jute"],
+      "material": ["Джут"],
       "createdBy": {
         "design": "Choli jute"
       }
@@ -893,7 +925,7 @@
         "diameter": "15cm",
         "height": "14cm"
       },
-      "material": ["jute"],
+      "material": ["Джут"],
       "createdBy": {
         "design": "Choli jute"
       }
@@ -914,7 +946,7 @@
         "diameter": "22cm",
         "height": "19cm"
       },
-      "material": ["jute"],
+      "material": ["Джут"],
       "createdBy": {
         "design": "Choli jute"
       }
@@ -926,13 +958,13 @@
     "group": "choli-sponge",
     "id": "062002(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 2
   },
   {
     "group": "latt-vase-stone",
     "id": "062008(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "sababa-blueberry-pie",
@@ -946,7 +978,7 @@
         "diameter": "21cm",
         "height": "19cm"
       },
-      "material": ["clay", "acril"],
+      "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
@@ -966,7 +998,7 @@
         "diameter": "15cm",
         "height": "13cm"
       },
-      "material": ["clay", "acril"],
+      "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
@@ -986,7 +1018,7 @@
         "diameter": "11cm",
         "height": "10cm"
       },
-      "material": ["clay", "acril"],
+      "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
@@ -1006,7 +1038,7 @@
         "diameter": "9cm",
         "height": "8.5cm"
       },
-      "material": ["clay", "acril"],
+      "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
@@ -1026,7 +1058,7 @@
         "diameter": "13cm",
         "height": "11cm"
       },
-      "material": ["clay", "acril"],
+      "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
@@ -1046,7 +1078,7 @@
         "diameter": "23cm",
         "height": "20cm"
       },
-      "material": ["clay", "acril"],
+      "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
@@ -1076,7 +1108,7 @@
         "width": "50cm",
         "length": "50cm"
       },
-      "material": ["rami"],
+      "material": ["Рами"],
       "createdBy": {
         "design": "Mori"
       }
@@ -1100,7 +1132,7 @@
         "width": "40cm",
         "length": "40cm"
       },
-      "material": ["rami"],
+      "material": ["Рами"],
       "createdBy": {
         "design": "Mori"
       }
@@ -1145,34 +1177,13 @@
         "height": "45cm",
         "width": "40cm"
       },
-      "material": ["cotton"],
+      "material": ["Хлопок"],
       "createdBy": {
         "design": "!Mori"
       }
     },
     "availability": 1,
     "price": 880
-  },
-  {
-    "group": "mori-cover-bag",
-    "name": "Чехол большой",
-    "id": "0720007(1)",
-    "selectableProperty": [{
-      "name": "model",
-      "value": "big"
-    }],
-    "itemProperty": {
-      "size": {
-        "height": "55cm",
-        "width": "50cm"
-      },
-      "material": ["cotton"],
-      "createdBy": {
-        "design": "Mori"
-      }
-    },
-    "availability": 1,
-    "price": 990
   },
   {
     "group": "mori-tack",
@@ -1236,5 +1247,95 @@
       "value": "peas"
     }],
     "availability": 3
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Ежевика & Мята",
+    "id": "0720019(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "blackberry-mint"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Имбирный пряник",
+    "id": "0720017(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "gingerbread"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Жасмин & Мята",
+    "id": "0720018(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "jasmine-mint"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Лаванда & Миндаль",
+    "id": "0720020(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "lavender-almonds"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Апельсин & Корица",
+    "id": "0720016(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "orange-cinnamon"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Ваниль & Банан",
+    "id": "0720021(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "vanilla-banana"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "carrotlab-soap-marseille",
+    "id": "0720004(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "carrotlab-soap-oatmeal",
+    "id": "0720005(1)",
+    "selectableProperty": [],
+    "availability": 2
+  },
+  {
+    "group": "carrotlab-soap-three-clays",
+    "id": "0720008(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "carrotlab-soap-dishes",
+    "id": "0720006(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "carrotlab-soap-laundry",
+    "id": "0720007(1)",
+    "selectableProperty": [],
+    "availability": 2
   }
 ]

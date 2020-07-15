@@ -126,6 +126,7 @@
     display: flex;
     flex-direction: column;
     margin: 3rem auto;
+    padding: 0 1rem;
     max-width: 1000px;
     > ul {
       list-style: none;

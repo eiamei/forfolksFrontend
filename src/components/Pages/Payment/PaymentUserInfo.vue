@@ -46,6 +46,11 @@
           <input class="user-info__input user-info__input--address" v-model="form.address" name="address" placeholder="Адрес"/>
         </span>
       </template>
+      <label class="regular-sans-text user-info__license-agreement">
+        <input v-validate="'required'" name="license" type="checkbox" :value="license"/>
+        <p>Создавая заказ вы подтверждаете согласие с&nbsp;<router-link to="contract"> условием оферты</router-link></p>
+      </label>
+      <span class="user-info__error">{{ parseError(errors.first('license')) }}</span>
       <app-button class="user-info__end-order button--end-order" content="Завершить заказ"/>
     </form>
   </div>
@@ -78,11 +83,14 @@ export default {
         SELF: 0,
         SHIPPING: 1
       },
+      license: false,
       deliveryType: 0
     }
   },
   methods: {
     parseError (error) {
+      if (error && error.match(/license/))
+        return 'Для создания заказа необходимо согласие с условиями сервиса';
       if (error && error.match(/field is required/))
         return 'Необходимо заполнить это поле';
       if (error && error.match(/valid email/))
@@ -152,7 +160,10 @@ export default {
     }
     &__error {
       font-size: 12px;
-      color: $regular-red
+      color: $regular-red;
+      &--license {
+        text-align: right;
+      }
     }
     &__additional-info {
       font-size: 12px;
@@ -171,6 +182,26 @@ export default {
       font-size: 0.85rem;
       text-transform: none;
       line-height: 1.4;
+      @media screen and (max-width: $tablet) {
+        font-size: 12px;
+      }
+    }
+    &__license-agreement {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 0.85rem;
+      text-transform: none;
+      line-height: 1.4;
+      & > input {
+        margin: 0 0.5rem 0 0;
+        @media screen and (max-width: $tablet) {
+          margin: 0 1rem 0 0;
+        }
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 12px;
+      }
     }
     &__end-order {
       margin: 24px 0;

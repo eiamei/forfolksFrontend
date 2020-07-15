@@ -11,7 +11,7 @@
     <div v-show="isShowInfo" class="store-card__text-wrapper">
       <router-link class="store-card__text-link" :to="getLink()">
         <p class="small-regular-heading store-card__model">{{item.name}}</p>
-        <p class="regular-sans-text store-card__type">{{ item.type && $t(`items.${item.type}` )}}</p>
+        <p class="regular-sans-text store-card__type">{{ item.type && $t(`${item.type}` )}}</p>
       </router-link>
       <p class="regular-sans-text store-card__price">{{item.price}}P</p>
     </div>

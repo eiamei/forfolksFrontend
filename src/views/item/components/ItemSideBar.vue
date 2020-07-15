@@ -2,7 +2,7 @@
   <section class="item-side-bar">
     <header class="item-side-bar__heading">
       <h1 class="serif-heading item-side-bar__heading-name">{{item.name}}</h1>
-      <p v-if="item.type" class="regular-sans-text item-side-bar__heading-type">{{$t(`items.${item.type}`)}}</p>
+      <p v-if="item.type" class="regular-sans-text item-side-bar__heading-type">{{$t(`${item.type}`)}}</p>
     </header>
     <p class="item-side-bar__id regular-sans-text">Артикул: {{item.id}}</p>
     <p class="item-side-bar__price">{{item.price}}P</p>
@@ -114,6 +114,7 @@
     &__heading {
       display: flex;
       align-items: baseline;
+      flex-wrap: wrap;
     }
 
     &__heading-name {

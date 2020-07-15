@@ -82,9 +82,9 @@
           to: '/store/category/panno',
           text: 'items.panno'
         }, {
-        //   to: '/store/category/candle',
-        //   text: 'items.candles'
-        // }, {
+          to: '/store/category/candle',
+          text: 'items.candles'
+        }, {
           to: '/store/category/wax',
           text: 'items.wax'
         }, {
@@ -92,17 +92,17 @@
           text: 'items.toys'
         }],
         byMaterial: [{
-          to: '/store/material/concrete',
-          text: 'material.concrete'
-        }, {
-          to: '/store/material/dryflowers',
-          text: 'material.dryflowers'
-        }, {
-          to: '/store/material/cotton',
-          text: 'material.cotton'
-        }, {
-          to: '/store/material/ceramic',
-          text: 'items.ceramic'
+        //   to: '/store/material/concrete',
+        //   text: 'material.concrete'
+        // }, {
+        //   to: '/store/material/dryflowers',
+        //   text: 'material.dryflowers'
+        // }, {
+        //   to: '/store/material/cotton',
+        //   text: 'material.cotton'
+        // }, {
+        //   to: '/store/material/ceramic',
+        //   text: 'items.ceramic'
         }],
         links: [{
           to: '/delivery',

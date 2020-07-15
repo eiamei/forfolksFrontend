@@ -131,7 +131,7 @@ export const shopGetters = {
               item.itemProperty[key]
                 .forEach(function (material : string, index : number) {
                   if (index > 0) materials += ', ';
-                  materials += i18n.t(`material.${material}`)
+                  materials += material
                 })
               properties.push(materials);
               break;
