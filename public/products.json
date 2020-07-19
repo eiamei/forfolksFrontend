@@ -84,7 +84,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 4
+    "availability": 3
   },
   {
     "group": "stand-cone-s",
@@ -151,7 +151,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "basic-incense",
@@ -240,7 +240,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 2
   },
   {
     "group": "candlestick-house-swiss",
@@ -285,7 +285,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "candlestick-house-denmark",
@@ -294,7 +294,7 @@
       "value": "powder",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "candlestick-house-denmark",
@@ -321,7 +321,7 @@
       "value": "khaki",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "vase-modern",
@@ -691,7 +691,7 @@
     "group": "luffa-whole",
     "id": "072002(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -725,21 +725,21 @@
       "value": "black",
       "name": "color"
     }],
-    "availability": 3,
+    "availability": 4,
     "badges": ""
   },
   {
     "group": "small-comb",
     "id": "072012(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
     "group": "big-comb",
     "id": "072013(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -758,7 +758,7 @@
       "value": "hard"
     }],
     "availability": 2,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "long-cup-brush",
@@ -852,7 +852,8 @@
       }
     },
     "availability": 0,
-    "price": 700
+    "price": 700,
+    "badges": ""
   },
   {
     "group": "choli-cachepot-pineapple",
@@ -879,7 +880,8 @@
     "group": "choli-two-cachepot-pack",
     "id": "062007(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "choli-basket",
@@ -930,7 +932,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 2,
+    "availability": 1,
     "price": "700"
   },
   {
@@ -964,7 +966,8 @@
     "group": "latt-vase-stone",
     "id": "062008(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "sababa-blueberry-pie",
@@ -1063,8 +1066,9 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
-    "price": 560
+    "availability": 0,
+    "price": 560,
+    "badges": ""
   },
   {
     "group": "sababa-summer-sunrise",
@@ -1312,7 +1316,8 @@
     "group": "carrotlab-soap-marseille",
     "id": "0720004(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "carrotlab-soap-oatmeal",
@@ -1324,7 +1329,8 @@
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "carrotlab-soap-dishes",
@@ -1336,6 +1342,76 @@
     "group": "carrotlab-soap-laundry",
     "id": "0720007(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 1
+  },
+  {
+    "group": "hey-plants-pot",
+    "id": "0720007(1)",
+    "type": "Серый",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "gray"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "hey-plants-pot",
+    "id": "0720007(2)",
+    "type": "Белый",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "hey-plants-pot",
+    "id": "0720007(3)",
+    "type": "Персик",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "peach"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "hey-plants-pot",
+    "id": "0720007(4)",
+    "type": "Какао",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "cacao"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "hey-plants-pot",
+    "id": "0720007(5)",
+    "type": "Туман",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "fog"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "hey-plants-pot",
+    "id": "0720007(6)",
+    "type": "Юпитер",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "jupiter"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "hey-plants-pot",
+    "id": "0720007(7)",
+    "type": "Нептун",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "neptun"
+    }],
+    "availability": 1
   }
 ]

@@ -84,16 +84,32 @@
         background: $coated;
       }
 
-      &--powder {
+      &--powder, &--peach {
         background: $powder;
+      }
+
+      &--cacao {
+        background: $cacao;
+      }
+
+      &--jupiter {
+        background: $jupiter;
+      }
+
+      &--neptun {
+        background: $neptun;
       }
 
       &--moonstone {
         background: $moonstone;
       }
 
-      &--gray-fog {
+      &--gray-fog, &--fog {
         background: $gray_fog;
+      }
+
+      &--gray {
+        background: $gray;
       }
 
       &--graphite {
