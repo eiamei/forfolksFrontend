@@ -170,7 +170,7 @@
       "value": "black",
       "name": "color"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -200,7 +200,7 @@
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -465,7 +465,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "bowl-mild",
@@ -932,7 +932,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": "700"
   },
   {
@@ -1323,14 +1323,15 @@
     "group": "carrotlab-soap-oatmeal",
     "id": "0720005(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
     "availability": 0,
-    "badges": ""
+    "badges": "",
+    "price": 300
   },
   {
     "group": "carrotlab-soap-dishes",
@@ -1342,7 +1343,7 @@
     "group": "carrotlab-soap-laundry",
     "id": "0720007(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "hey-plants-pot",
@@ -1413,5 +1414,25 @@
       "value": "neptun"
     }],
     "availability": 1
+  },
+  {
+    "group": "basic-incense",
+    "id": "042001(1)",
+    "selectableProperty": [{
+      "value": "powder",
+      "name": "color"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "basic-incense",
+    "id": "042001(1)",
+    "selectableProperty": [{
+      "value": "white-marble",
+      "name": "color"
+    }],
+    "availability": 1,
+    "badges": "new"
   }
 ]

@@ -5,17 +5,16 @@
       <h2>Ваша корзина</h2>
       <bag-item v-for="(item, key) in bag" :item="item" :key="key"/>
       <section class="bag-total">
-        <span v-if="!isPromo && !isConstantDiscount">
+        <span v-if="!isPromo">
           <input class="bag-total__promo-input" placeholder="Промокод" v-model="promo" @keyup.enter="checkPromo"/>
           <button class="bag-total__promo-button" @click="checkPromo" @keyup.enter="checkPromo">Применить</button>
         </span>
-        <p v-else-if="isPromo && !isConstantDiscount" class="bag-total__promo-success">Промокод успешно применен</p>
-        <p v-if="isCorrect === false" class="bag-total__promo-error">Неверный промокод</p>
-        <p v-else-if="isTooLate === true" class="bag-total__promo-error">Промокод истек</p>
+        <p v-else-if="isPromo" class="bag-total__promo-success">Промокод успешно применен</p>
+        <p class="bag-total__promo-error">{{promoResult.message}}</p>
         <span class="bag-total__total-text">
           <p style="margin-right: 8px">Итого:</p>
-          <p v-if="!isPromo && !isConstantDiscount">{{total}} ₽</p>
-          <p v-else><span style="text-decoration: line-through; font-size: 14px; margin: 0 8px">{{total}}</span> {{promoPrice}} ₽</p>
+          <p v-if="!isPromo">{{total.realTotal}} ₽</p>
+          <p v-else><span style="text-decoration: line-through; font-size: 14px; margin: 0 8px">{{total.realTotal}}</span> {{total.discountTotal}} ₽</p>
         </span>
         <router-link class="bag-total__buy-button" to="payment">Оформить заказ</router-link>
       </section>
@@ -31,48 +30,29 @@ export default {
   components: {BagItem},
   data () {
     return {
-      isPromo: ((new Date()) < PROMO.PROMO_DISCOUNT_TILL && localStorage.getItem('ip1')),
       isTooLate: null,
       isCorrect: null,
-      promo: ''
+      promo: '',
+      promoResult: {
+        success: null,
+        message: ''
+      }
     }
   },
   computed: {
-    isConstantDiscount () {
-      return (this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL);
-    },
     bag () {
-      return this.$store.state.bag.bag;
+      return this.$store.getters['bag/bagItems'];
     },
     total () {
-      let total = 0;
-      Object.keys(this.bag).forEach(id => {
-        total += this.bag[id].qty * this.bag[id].price;
-      });
-      return total;
+      return this.$store.getters['bag/total'];
     },
-    promoPrice () {
-      if (PROMO.CONSTANT_DISCOUNT && (new Date()) < PROMO.CONSTANT_DISCOUNT_TILL) {
-        return Math.round(this.total * PROMO.CONSTANT_DISCOUNT);
-      } else {
-        return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
-      }
-    }
+    isPromo () {
+      return this.$store.state.promo.selectedDiscount;
+    },
   },
   methods: {
-    checkPromo () {
-      if (typeof this.promo === 'string' && this.promo.toLowerCase() === PROMO.CODE.toLowerCase()) {
-        if ((new Date()) > PROMO.PROMO_DISCOUNT_TILL) {
-          this.isTooLate = true;
-        } else {
-          localStorage.setItem('ip1', JSON.stringify(true));
-          this.isPromo = true;
-          this.isCorrect = true;
-          this.isTooLate = false;
-        }
-      } else {
-        this.isCorrect = false;
-      }
+    async checkPromo () {
+      this.promoResult = await this.$store.dispatch('promo/checkPromo', this.promo)
     }
   }
 };

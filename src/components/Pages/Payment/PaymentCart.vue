@@ -8,13 +8,13 @@
           <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name !== 'model' ? $t(`${prop.name}s.${prop.value}`) : prop.value}}</template>
         </p>
       </div>
-      <div  class="cart-item__price">{{+item.price * +item.qty}}&thinsp;P</div>
+      <div  class="cart-item__price">{{+item.price * item.qty}}&thinsp;P</div>
       <div class="cart-item__qty">{{item.qty}}</div>
     </div>
     <span class="cart-info__total">
       <p>Итого:</p>
-      <p v-if="!isPromo && !isConstantDiscount">{{total}} ₽</p>
-      <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total}}</span> {{promoPrice}} ₽</p>
+      <p v-if="!isPromo">{{total.realTotal}} ₽</p>
+      <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total.realTotal}}</span> {{total.discountTotal}} ₽</p>
     </span>
   </div>
 </template>
@@ -27,35 +27,21 @@
     name: 'PaymentCart',
     computed: {
       isPromo () {
-        return ((new Date()) < PROMO.PROMO_DISCOUNT_TILL) && localStorage.getItem('ip1');
-      },
-      isConstantDiscount () {
-        return (this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL);
+        return this.$store.state.promo.selectedDiscount;
       },
       bag () {
-        return this.$store.state.bag.bag;
+        return this.$store.getters['bag/bagItems'];
       },
       total () {
-        let total = 0;
-        Object.keys(this.bag).forEach(id => {
-          total += this.bag[id].qty * this.bag[id].price;
-        });
-        return total;
+        return this.$store.getters['bag/total'];
       },
-      promoPrice () {
-        if (this.isConstantDiscount)
-          return Math.round(this.total * PROMO.CONSTANT_DISCOUNT);
-        else if (this.isPromo)
-          return Math.round(this.total * PROMO.DISCOUNT_PERCENT);
-        return this.total;
-      }
     },
     methods: {
       itemImage (item) {
         if (item) {
           let id = item.rootPath;
-          if (item.props.length)
-            item.props.forEach(property => {
+          if (item.selectableProperty.length)
+            item.selectableProperty.forEach(property => {
               id += `-${slugify(property.value.toLowerCase())}`
             });
           return require(`../../../assets/images/store/${id}-small.jpg`);

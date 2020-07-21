@@ -23,7 +23,8 @@
             window.addEventListener('resize', this.resizeHandler);
         },
         mounted() {
-            this.$store.dispatch('global/setNewWindowSize')
+            this.$store.dispatch('global/setNewWindowSize');
+            this.$store.dispatch('promo/checkPromoExistence');
         },
         methods: {
             resizeHandler() {

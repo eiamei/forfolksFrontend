@@ -38,8 +38,8 @@ export default {
     },
     id () {
       let id = this.item.rootPath;
-      if (this.item.props.length)
-        this.item.props.forEach(property => {
+      if (this.item.selectableProperty.length)
+        this.item.selectableProperty.forEach(property => {
           id += `-${slugify(property.value.toLowerCase())}`
         });
       return id;
