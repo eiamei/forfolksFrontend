@@ -19,11 +19,13 @@ export const promoActions = {
           message: ''
         };
       }
+      dispatch('erasePromo');
       return {
         success: false,
         message: 'Кажется, промокод истек :('
       };
     }
+    dispatch('erasePromo');
     return {
       success: false,
       message: 'Такой промокод не найден :('
@@ -33,6 +35,12 @@ export const promoActions = {
     commit('selectedDiscount', promo.data);
     setCookie('promo', promo.name, {
       'max-age': 86400 
+    });
+  },
+  erasePromo ({commit}) {
+    commit('selectedDiscount', {});
+    setCookie('promo', '', {
+      'max-age': 0 
     });
   }
 }

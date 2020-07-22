@@ -85,9 +85,9 @@
           to: '/store/category/candle',
           text: 'items.candles'
         }, {
-          to: '/store/category/wax',
-          text: 'items.wax'
-        }, {
+        //   to: '/store/category/wax',
+        //   text: 'items.wax'
+        // }, {
           to: '/store/category/toy',
           text: 'items.toys'
         }],

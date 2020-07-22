@@ -1,7 +1,7 @@
 [
   {
     "group": "cachepot_modern_s",
-    "id": "042002(1)",
+    "id": "0720041(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -10,16 +10,16 @@
   },
   {
     "group": "cachepot_modern_s",
-    "id": "042002(2)",
+    "id": "0720041(2)",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 3
   },
   {
     "group": "cachepot_modern_s",
-    "id": "042002(3)",
+    "id": "0720041(3)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -28,17 +28,17 @@
   },
   {
     "group": "stand-basic-s",
-    "id": "031908(14)",
+    "id": "0720040(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 3
   },
   {
     "group": "stand-basic-s",
-    "id": "031908(2)",
+    "id": "0720040(3)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -48,17 +48,7 @@
   },
   {
     "group": "stand-basic-s",
-    "id": "031908(12)",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }],
-    "layout": "high",
-    "availability": 0
-  },
-  {
-    "group": "stand-basic-s",
-    "id": "031908(3)",
+    "id": "0720040(2)",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
@@ -68,7 +58,7 @@
   },
   {
     "group": "stand-basic-s",
-    "id": "031908(11)",
+    "id": "0720040(4)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -78,17 +68,17 @@
   },
   {
     "group": "stand-cone-s",
-    "id": "031910(11)",
+    "id": "0720039(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "stand-cone-s",
-    "id": "031910(2)",
+    "id": "0720039(2)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -98,7 +88,7 @@
   },
   {
     "group": "stand-cone-s",
-    "id": "031910(9)",
+    "id": "0720039(3)",
     "selectableProperty": [{
       "value": "gray-fog",
       "name": "color"
@@ -108,7 +98,7 @@
   },
   {
     "group": "stand-cone-s",
-    "id": "031910(10)",
+    "id": "0720039(4)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -118,7 +108,7 @@
   },
   {
     "group": "stand-cone-s",
-    "id": "031910(12)",
+    "id": "0720039(6)",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
@@ -128,34 +118,34 @@
   },
   {
     "group": "tray-tray",
-    "id": "031912(8)",
+    "id": "0720036(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
-    }],
-    "availability": 2
-  },
-  {
-    "group": "tray-tray",
-    "id": "031912(2)",
-    "selectableProperty": [{
-      "value": "graphite",
-      "name": "color"
-    }],
-    "availability": 0
-  },
-  {
-    "group": "tray-tray",
-    "id": "031912(3)",
-    "selectableProperty": [{
-      "value": "black-marble",
       "name": "color"
     }],
     "availability": 1
   },
   {
+    "group": "tray-tray",
+    "id": "0720036(4)",
+    "selectableProperty": [{
+      "value": "graphite",
+      "name": "color"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "tray-tray",
+    "id": "0720036(2)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }],
+    "availability": 2
+  },
+  {
     "group": "basic-incense",
-    "id": "042001(1)",
+    "id": "0720038(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -165,16 +155,16 @@
   },
   {
     "group": "basic-incense",
-    "id": "042001(2)",
+    "id": "0720038(4)",
     "selectableProperty": [{
-      "value": "black",
+      "value": "graphite",
       "name": "color"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
-    "id": "042001(3)",
+    "id": "0720038(2)",
     "group": "basic-incense",
     "selectableProperty": [{
       "value": "black-marble",
@@ -184,20 +174,30 @@
     "badges": ""
   },
   {
-    "group": "stand-basic",
-    "id": "042004(1)",
+    "group": "basic-incense",
+    "id": "0720038(5)",
     "selectableProperty": [{
-      "value": "white",
+      "value": "powder",
       "name": "color"
     }],
-    "availability": 0,
-    "badges": ""
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "basic-incense",
+    "id": "0720038(3)",
+    "selectableProperty": [{
+      "value": "white-marble",
+      "name": "color"
+    }],
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "stand-basic",
-    "id": "042004(1)",
+    "id": "0720037(1)",
     "selectableProperty": [{
-      "value": "black-marble",
+      "value": "white",
       "name": "color"
     }],
     "availability": 1,
@@ -205,7 +205,17 @@
   },
   {
     "group": "stand-basic",
-    "id": "042004(4)",
+    "id": "0720037(2)",
+    "selectableProperty": [{
+      "value": "black-marble",
+      "name": "color"
+    }],
+    "availability": 0,
+    "badges": ""
+  },
+  {
+    "group": "stand-basic",
+    "id": "0720037(5)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -215,7 +225,7 @@
   },
   {
     "group": "stand-basic",
-    "id": "042004(2)",
+    "id": "0720037(4)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -225,7 +235,7 @@
   },
   {
     "group": "stand-basic",
-    "id": "042004(5)",
+    "id": "0720037(3)",
     "selectableProperty": [{
       "value": "white-marble",
       "name": "color"
@@ -235,7 +245,7 @@
   },
   {
     "group": "candlestick-house-swiss",
-    "id": "121901(5)",
+    "id": "0720042(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -244,7 +254,7 @@
   },
   {
     "group": "candlestick-house-swiss",
-    "id": "121901(2)",
+    "id": "0720042(3)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -253,7 +263,7 @@
   },
   {
     "group": "candlestick-house-swiss",
-    "id": "121901(3)",
+    "id": "0720042(4)",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
@@ -262,7 +272,7 @@
   },
   {
     "group": "candlestick-house-swiss",
-    "id": "121901(6)",
+    "id": "0720042(5)",
     "selectableProperty": [{
       "value": "khaki",
       "name": "color"
@@ -271,7 +281,7 @@
   },
   {
     "group": "candlestick-house-swiss",
-    "id": "121901(4)",
+    "id": "0720042(2)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -280,7 +290,7 @@
   },
   {
     "group": "candlestick-house-denmark",
-    "id": "121902(5)",
+    "id": "0720043(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -289,7 +299,7 @@
   },
   {
     "group": "candlestick-house-denmark",
-    "id": "121902(2)",
+    "id": "0720043(3)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -298,7 +308,7 @@
   },
   {
     "group": "candlestick-house-denmark",
-    "id": "121902(3)",
+    "id": "0720043(4)",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
@@ -307,7 +317,7 @@
   },
   {
     "group": "candlestick-house-denmark",
-    "id": "121902(4)",
+    "id": "0720043(2)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -316,7 +326,7 @@
   },
   {
     "group": "candlestick-house-denmark",
-    "id": "121902(6)",
+    "id": "0720043(5)",
     "selectableProperty": [{
       "value": "khaki",
       "name": "color"
@@ -325,7 +335,7 @@
   },
   {
     "group": "vase-modern",
-    "id": "041901(8)",
+    "id": "0720001(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -334,7 +344,7 @@
   },
   {
     "group": "vase-modern",
-    "id": "041901(6)",
+    "id": "0720001(4)",
     "selectableProperty": [{
       "value": "gray-fog",
       "name": "color"
@@ -343,7 +353,7 @@
   },
   {
     "group": "vase-modern",
-    "id": "041901(2)",
+    "id": "0720001(3)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -352,7 +362,7 @@
   },
   {
     "group": "vase-modern",
-    "id": "041901(5)",
+    "id": "0720001(5)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -361,7 +371,7 @@
   },
   {
     "group": "vase-modern",
-    "id": "041901(1)",
+    "id": "0720001(2)",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
@@ -370,7 +380,7 @@
   },
   {
     "group": "vase-mild",
-    "id": "022002(1)",
+    "id": "0720002(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -379,7 +389,7 @@
   },
   {
     "group": "vase-mild",
-    "id": "022002(7)",
+    "id": "0720002(5)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -388,16 +398,16 @@
   },
   {
     "group": "vase-mild",
-    "id": "022002(2)",
+    "id": "0720002(3)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 2
   },
   {
     "group": "vase-mild",
-    "id": "022002(6)",
+    "id": "0720002(4)",
     "selectableProperty": [{
       "value": "gray-fog",
       "name": "color"
@@ -406,7 +416,7 @@
   },
   {
     "group": "cup-mild",
-    "id": "111905(7)",
+    "id": "0720003(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -415,16 +425,16 @@
   },
   {
     "group": "cup-mild",
-    "id": "111905(4)",
+    "id": "0720003(4)",
     "selectableProperty": [{
       "value": "gray-fog",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "cup-mild",
-    "id": "111905(2)",
+    "id": "0720003(3)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
@@ -433,7 +443,7 @@
   },
   {
     "group": "cup-mild",
-    "id": "111905(6)",
+    "id": "0720003(6)",
     "selectableProperty": [{
       "value": "moonstone",
       "name": "color"
@@ -442,7 +452,7 @@
   },
   {
     "group": "cup-mild",
-    "id": "111905(5)",
+    "id": "0720003(5)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -451,7 +461,7 @@
   },
   {
     "group": "cup-mild",
-    "id": "111905(3)",
+    "id": "0720003(2)",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
@@ -460,7 +470,7 @@
   },
   {
     "group": "bowl-mild",
-    "id": "101901(7)",
+    "id": "0720035(1)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -469,25 +479,16 @@
   },
   {
     "group": "bowl-mild",
-    "id": "101901(2)",
+    "id": "0720035(3)",
     "selectableProperty": [{
       "value": "graphite",
       "name": "color"
     }],
-    "availability": 1
+    "availability": 2
   },
   {
     "group": "bowl-mild",
-    "id": "101901(6)",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color"
-    }],
-    "availability": 0
-  },
-  {
-    "group": "bowl-mild",
-    "id": "101901(4)",
+    "id": "0720035(4)",
     "selectableProperty": [{
       "value": "powder",
       "name": "color"
@@ -496,28 +497,22 @@
   },
   {
     "group": "bowl-mild",
-    "id": "101901(3)",
+    "id": "0720035(2)",
     "selectableProperty": [{
       "value": "black-marble",
       "name": "color"
     }],
-    "availability": 4
-  },
-  {
-    "group": "hanging-spole",
-    "id": "101907(1)",
-    "selectableProperty": [],
-    "availability": 1
+    "availability": 5
   },
   {
     "group": "panno-leaf",
-    "id": "022001(1)",
+    "id": "0220001(1)",
     "selectableProperty": [],
     "availability": 0
   },
   {
     "group": "panno-wind",
-    "id": "032001(1)",
+    "id": "0320001(1)",
     "selectableProperty": [],
     "availability": 1
   },
@@ -528,18 +523,9 @@
     "availability": 1
   },
   {
-    "group": "candle-wax-drops",
-    "id": "121903(1)",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color"
-    }],
-    "availability": 4
-  },
-  {
     "group": "minibouquet-blum",
     "name": "Blum 1",
-    "id": "072001(1)",
+    "id": "0720064(1)",
     "selectableProperty": [{
       "value": "1",
       "name": "model"
@@ -559,7 +545,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 2",
-    "id": "072001(2)",
+    "id": "0720065(1)",
     "selectableProperty": [{
       "value": "2",
       "name": "model"
@@ -579,7 +565,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 3",
-    "id": "072001(3)",
+    "id": "0720066(1)",
     "selectableProperty": [{
       "value": "3",
       "name": "model"
@@ -590,7 +576,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 4",
-    "id": "072001(4)",
+    "id": "0720067(1)",
     "selectableProperty": [{
       "value": "4",
       "name": "model"
@@ -610,7 +596,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 5",
-    "id": "072001(5)",
+    "id": "0720068(1)",
     "selectableProperty": [{
       "value": "5",
       "name": "model"
@@ -630,7 +616,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 6",
-    "id": "072001(6)",
+    "id": "0720069(1)",
     "selectableProperty": [{
       "value": "6",
       "name": "model"
@@ -650,7 +636,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 7",
-    "id": "072001(7)",
+    "id": "0720070(1)",
     "selectableProperty": [{
       "value": "7",
       "name": "model"
@@ -670,7 +656,7 @@
   {
     "group": "minibouquet-blum",
     "name": "Blum 8",
-    "id": "072001(8)",
+    "id": "0720071(1)",
     "selectableProperty": [{
       "value": "8",
       "name": "model"
@@ -689,28 +675,21 @@
   },
   {
     "group": "luffa-whole",
-    "id": "072002(1)",
-    "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
-  },
-  {
-    "group": "luffa-pressed",
-    "id": "072003(1)",
+    "id": "0720062(1)",
     "selectableProperty": [],
     "availability": 0,
     "badges": ""
   },
   {
     "group": "straw-bamboo",
-    "id": "072008(1)",
+    "id": "0720052(1)",
     "selectableProperty": [],
     "availability": 5,
     "badges": ""
   },
   {
     "group": "toothbrush-bamboo",
-    "id": "072006(1)",
+    "id": "0720055(2)",
     "selectableProperty": [{
       "value": "white",
       "name": "color"
@@ -720,7 +699,7 @@
   },
   {
     "group": "toothbrush-bamboo",
-    "id": "072006(2)",
+    "id": "0720055(1)",
     "selectableProperty": [{
       "value": "black",
       "name": "color"
@@ -730,28 +709,28 @@
   },
   {
     "group": "small-comb",
-    "id": "072012(1)",
+    "id": "0720060(1)",
     "selectableProperty": [],
     "availability": 1,
     "badges": ""
   },
   {
     "group": "big-comb",
-    "id": "072013(1)",
+    "id": "0720060(2)",
     "selectableProperty": [],
     "availability": 0,
     "badges": ""
   },
   {
     "group": "small-bamboo-brush",
-    "id": "022009(1)",
+    "id": "0720059(1)",
     "selectableProperty": [],
     "availability": 4,
     "badges": ""
   },
   {
     "group": "small-bamboo-brush",
-    "id": "022009(2)",
+    "id": "0720058(1)",
     "desc": "Компактная и очень эргономичная щетка для мытья посуды. В отличии от щетки со светлой щетиной темный вариант чуть более жесктий, поэтому лучше справляется со сложными загрязнениями, но с такой щеткой стоит проявить особое внимание при мытье посуды с антипригарным покрытием. <br><br> Деревянное основание щетки можно сдать в переработку.",
     "selectableProperty": [{
       "name": "model",
@@ -762,60 +741,53 @@
   },
   {
     "group": "long-cup-brush",
-    "id": "072004(1)",
+    "id": "0720057(1)",
     "selectableProperty": [],
     "availability": 0,
     "badges": ""
   },
   {
     "group": "long-brush",
-    "id": "072005(1)",
+    "id": "0720056(1)",
     "selectableProperty": [],
     "availability": 0,
     "badges": ""
   },
   {
     "group": "linen-bag-gray-big",
-    "id": "022011(1)",
+    "id": "0720061(2)",
     "selectableProperty": [],
     "availability": 4,
     "badges": ""
   },
   {
     "group": "linen-bag-gray-small",
-    "id": "022010(1)",
-    "selectableProperty": [],
-    "availability": 4,
-    "badges": ""
-  },
-  {
-    "group": "linen-bag-gray-small",
-    "id": "022010(1)",
+    "id": "0720061(1)",
     "selectableProperty": [],
     "availability": 4,
     "badges": ""
   },
   {
     "group": "choli-jute-stand",
-    "id": "062001(1)",
+    "id": "0720015(1)",
     "selectableProperty": [],
     "availability": 3
   },
   {
     "group": "choli-basket-semisphere",
-    "id": "062003(1)",
+    "id": "0720009(1)",
     "selectableProperty": [],
     "availability": 1
   },
   {
     "group": "choli-cachepot-cylinder",
-    "id": "062005(1)",
+    "id": "0720010(1)",
     "selectableProperty": [],
     "availability": 1
   },
   {
     "group": "choli-cachepot-pineapple",
-    "id": "062006(1)",
+    "id": "0720012(1)",
     "name": "Ананасик S",
     "selectableProperty": [{
       "name": "model",
@@ -835,7 +807,7 @@
   },
   {
     "group": "choli-cachepot-pineapple",
-    "id": "062006(2)",
+    "id": "0720012(2)",
     "name": "Ананасик M",
     "selectableProperty": [{
       "name": "model",
@@ -857,7 +829,7 @@
   },
   {
     "group": "choli-cachepot-pineapple",
-    "id": "062006(3)",
+    "id": "0720012(3)",
     "name": "Ананасик L",
     "selectableProperty": [{
       "name": "model",
@@ -878,14 +850,14 @@
   },
   {
     "group": "choli-two-cachepot-pack",
-    "id": "062007(1)",
+    "id": "0720013(1)",
     "selectableProperty": [],
     "availability": 0,
     "badges": ""
   },
   {
     "group": "choli-basket",
-    "id": "062007(1)",
+    "id": "0720014(1)",
     "name": "Корзина L",
     "selectableProperty": [{
       "name": "model",
@@ -895,7 +867,7 @@
   },
   {
     "group": "choli-katushka",
-    "id": "062004(1)",
+    "id": "0720011(2)",
     "name": "Катушка S",
     "selectableProperty": [{
       "name": "model",
@@ -916,7 +888,7 @@
   },
   {
     "group": "choli-katushka",
-    "id": "062004(2)",
+    "id": "0720011(3)",
     "name": "Катушка M",
     "selectableProperty": [{
       "name": "model",
@@ -937,7 +909,7 @@
   },
   {
     "group": "choli-katushka",
-    "id": "062004(4)",
+    "id": "0720011(1)",
     "name": "Катушка XL",
     "selectableProperty": [{
       "name": "model",
@@ -958,20 +930,20 @@
   },
   {
     "group": "choli-sponge",
-    "id": "062002(1)",
+    "id": "0720016(1)",
     "selectableProperty": [],
     "availability": 2
   },
   {
     "group": "latt-vase-stone",
-    "id": "062008(1)",
+    "id": "0720017(1)",
     "selectableProperty": [],
     "availability": 0,
     "badges": ""
   },
   {
     "group": "sababa-blueberry-pie",
-    "id": "062010(1)",
+    "id": "0720019(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "d21"
@@ -991,7 +963,7 @@
   },
   {
     "group": "sababa-meow",
-    "id": "062012(1)",
+    "id": "0720021(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "d15"
@@ -1011,7 +983,7 @@
   },
   {
     "group": "sababa-night-ruskeala",
-    "id": "062013(1)",
+    "id": "0720022(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "d11"
@@ -1031,7 +1003,7 @@
   },
   {
     "group": "sababa-simple",
-    "id": "062011(1)",
+    "id": "0720020(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "d9"
@@ -1051,7 +1023,7 @@
   },
   {
     "group": "sababa-summer-sunrise",
-    "id": "062009(1)",
+    "id": "0720018(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "d13"
@@ -1072,7 +1044,7 @@
   },
   {
     "group": "sababa-summer-sunrise",
-    "id": "062009(2)",
+    "id": "0720018(2)",
     "selectableProperty": [{
       "name": "model",
       "value": "d23"
@@ -1092,14 +1064,14 @@
   },
   {
     "group": "mori-toys",
-    "id": "0720006(1)",
+    "id": "0720030(1)",
     "selectableProperty": [],
     "availability": 1
   },
   {
     "group": "mori-pillowcase",
-    "name": "Наволочка большая",
-    "id": "0720004(1)",
+    "name": "Чехол большой",
+    "id": "0720034(1)",
     "selectableProperty": [{
       "name": "color",
       "value": "green"
@@ -1122,8 +1094,8 @@
   },
   {
     "group": "mori-pillowcase",
-    "name": "Наволочка маленькая",
-    "id": "0720005(1)",
+    "name": "Чехол маленький",
+    "id": "0720033(1)",
     "selectableProperty": [{
       "name": "color",
       "value": "brown"
@@ -1146,32 +1118,32 @@
   },
   {
     "group": "mori-hanging",
-    "id": "0720001(1)",
+    "id": "0720029(1)",
     "selectableProperty": [],
     "availability": 1
   },
   {
     "group": "mori-tablecloth",
-    "id": "0720003(1)",
+    "id": "0720032(1)",
     "selectableProperty": [],
     "availability": 1
   },
   {
     "group": "mori-bag",
-    "id": "0720009(1)",
+    "id": "0720027(1)",
     "selectableProperty": [],
     "availability": 1
   },
   {
     "group": "mori-apron-melange",
-    "id": "0720010(1)",
+    "id": "0720031(1)",
     "selectableProperty": [],
     "availability": 1
   },
   {
     "group": "mori-cover-bag",
     "name": "Чехол стандартный",
-    "id": "0720008(1)",
+    "id": "0720028(2)",
     "selectableProperty": [{
       "name": "model",
       "value": "small"
@@ -1191,14 +1163,14 @@
   },
   {
     "group": "mori-tack",
-    "id": "0720002(1)",
+    "id": "0720026(1)",
     "selectableProperty": [],
     "availability": 3
   },
   {
     "group": "whiteclay-soap-dish",
     "name": "Birch",
-    "id": "07200015(1)",
+    "id": "0720025(5)",
     "selectableProperty": [{
       "name": "model",
       "value": "birch"
@@ -1208,7 +1180,7 @@
   {
     "group": "whiteclay-soap-dish",
     "name": "Fern dava",
-    "id": "07200012(1)",
+    "id": "0720025(2)",
     "selectableProperty": [{
       "name": "model",
       "value": "fern-dava"
@@ -1218,7 +1190,7 @@
   {
     "group": "whiteclay-soap-dish",
     "name": "Fern poly",
-    "id": "07200013(1)",
+    "id": "0720025(3)",
     "selectableProperty": [{
       "name": "model",
       "value": "fern-poly"
@@ -1228,7 +1200,7 @@
   {
     "group": "whiteclay-soap-dish",
     "name": "Mentol",
-    "id": "07200011(1)",
+    "id": "0720025(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "mentol"
@@ -1238,14 +1210,14 @@
   {
     "group": "hleb-pot",
     "name": "Шоколадка",
-    "id": "0720010(1)",
+    "id": "0720024(2)",
     "selectableProperty": [],
     "availability": 7
   },
   {
     "group": "hleb-pot",
     "name": "Горошек",
-    "id": "0720011(1)",
+    "id": "0720024(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "peas"
@@ -1255,7 +1227,7 @@
   {
     "group": "candle-freedom",
     "type": "Ежевика & Мята",
-    "id": "0720019(1)",
+    "id": "0720047(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "blackberry-mint"
@@ -1265,7 +1237,7 @@
   {
     "group": "candle-freedom",
     "type": "Имбирный пряник",
-    "id": "0720017(1)",
+    "id": "0720045(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "gingerbread"
@@ -1275,7 +1247,7 @@
   {
     "group": "candle-freedom",
     "type": "Жасмин & Мята",
-    "id": "0720018(1)",
+    "id": "0720046(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "jasmine-mint"
@@ -1285,7 +1257,7 @@
   {
     "group": "candle-freedom",
     "type": "Лаванда & Миндаль",
-    "id": "0720020(1)",
+    "id": "0720048(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "lavender-almonds"
@@ -1295,7 +1267,7 @@
   {
     "group": "candle-freedom",
     "type": "Апельсин & Корица",
-    "id": "0720016(1)",
+    "id": "0720044(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "orange-cinnamon"
@@ -1305,7 +1277,7 @@
   {
     "group": "candle-freedom",
     "type": "Ваниль & Банан",
-    "id": "0720021(1)",
+    "id": "0720049(1)",
     "selectableProperty": [{
       "name": "model",
       "value": "vanilla-banana"
@@ -1329,7 +1301,7 @@
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 1,
     "badges": "",
     "price": 300
   },
@@ -1414,25 +1386,5 @@
       "value": "neptun"
     }],
     "availability": 1
-  },
-  {
-    "group": "basic-incense",
-    "id": "042001(1)",
-    "selectableProperty": [{
-      "value": "powder",
-      "name": "color"
-    }],
-    "availability": 1,
-    "badges": "new"
-  },
-  {
-    "group": "basic-incense",
-    "id": "042001(1)",
-    "selectableProperty": [{
-      "value": "white-marble",
-      "name": "color"
-    }],
-    "availability": 1,
-    "badges": "new"
   }
 ]

@@ -22,9 +22,10 @@
     computed: {
       bagQty () {
         let total = 0;
-        if (this.$store.state.bag.bag) {
-          Object.keys(this.$store.state.bag.bag).map(bag => {
-            total += this.$store.state.bag.bag[bag].qty;
+        const items = this.$store.getters['bag/bagItems'];
+        if (items) {
+          Object.keys(items).map(bag => {
+            total += items[bag].qty;
           });
         }
         return total;

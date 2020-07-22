@@ -33,21 +33,18 @@
     },
     computed: {
       bag () {
-        return Object.keys(this.$store.state.bag.bag).map((key, index) => {
-            let price = this.$store.state.bag.bag[key].qty * this.$store.state.bag.bag[key].price;
-            if ((this.total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL))
-              price = Math.round(price * PROMO.CONSTANT_DISCOUNT);
-            else if (this.isPromo)
-              price = Math.round(price * PROMO.DISCOUNT_PERCENT);
+        const items = this.$store.getters['bag/bagItems'];
+        return Object.keys(items).map((key, index) => {
+            let price = items[key].qty * items[key].price;
             let encoded = encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
-              Имя: ${this.$store.state.bag.bag[key].name}
-              Тип: ${this.$store.state.bag.bag[key].type}
-              Артикул: ${this.$store.state.bag.bag[key].id}
-              Количество: ${this.$store.state.bag.bag[key].qty}
+              Имя: ${items[key].name}
+              Тип: ${items[key].type}
+              Артикул: ${items[key].id}
+              Количество: ${items[key].qty}
               Стоимость: ${price}
             `);
-            if (this.$store.state.bag.bag[key].props.length)
-              this.$store.state.bag.bag[key].props.forEach(function (prop) {
+            if (items[key].selectableProperty.length)
+              items[key].selectableProperty.forEach(function (prop) {
                 encoded += encodeURIComponent(`${prop.name}: ${prop.value}`)
               });
           return encoded;
@@ -55,16 +52,7 @@
         ).join('&');
       },
       total () {
-        let total = 0;
-        let bag = this.$store.state.bag.bag;
-        Object.keys(bag).forEach(id => {
-          total += bag[id].qty * bag[id].price;
-        });
-        if ((total >= PROMO.CONSTANT_DISCOUNT_PRICE_CASE) && ((new Date()) < PROMO.CONSTANT_DISCOUNT_TILL))
-          total = Math.round(total * PROMO.CONSTANT_DISCOUNT);
-        else if (this.isPromo)
-          total = Math.round(total * PROMO.DISCOUNT_PERCENT);
-        return total;
+        return this.$store.getters['bag/total'].discountTotal;
       }
     },
     methods: {
@@ -84,6 +72,7 @@
           return;
         };
         request.send(encoded);
+        this.$store.dispatch('promo/checkPromo', '');
         if (localStorage.getItem('ip1')) localStorage.removeItem('ip1');
       }
     }

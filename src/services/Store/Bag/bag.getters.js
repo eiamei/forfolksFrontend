@@ -4,18 +4,26 @@ export const bagGetters = {
     if (rootState.promo.selectedDiscount) {
       discountByGroup = rootState.promo.selectedDiscount.discountByGroup
     }
-    return Object.keys(state.bag).map(function (name) {
-      const item = rootGetters['shop/findItemById'](state.bag[name].id);
-      const group = item.discountGroup;
-      item.qty = state.bag[name].qty;
-      item.promoPrice = item.price;
+    return Object
+      .keys(state.bag)
+      .map(function (name) {
+        const item = rootGetters['shop/findItemById'](state.bag[name].id);
 
-      if (group && group in discountByGroup) {
-        item.promoPrice = item.price * Number(discountByGroup[group])
-      }
+        if (!item) return;
 
-      return item;
-    })
+        const group = item.discountGroup;
+        item.qty = state.bag[name].qty;
+        item.promoPrice = item.price;
+
+        if (group && group in discountByGroup) {
+          item.promoPrice = item.price * Number(discountByGroup[group])
+        }
+
+        return item;
+      })
+      .filter(function (item) {
+        return item;
+      })
   },
   total (state, getters, rootState, rootGetters) {
     let realTotal = 0;
@@ -27,6 +35,10 @@ export const bagGetters = {
     Object.keys(state.bag).forEach(name => {
       const qty = state.bag[name].qty;
       const item = rootGetters['shop/findItemById'](state.bag[name].id);
+
+      if (!item) return;
+
+      
       const group = item.discountGroup;
       let price = Number(item.price);
 
