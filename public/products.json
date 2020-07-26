@@ -54,7 +54,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "stand-basic-s",
@@ -64,7 +64,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 4
+    "availability": 3
   },
   {
     "group": "stand-cone-s",
@@ -74,7 +74,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "stand-cone-s",
@@ -94,7 +94,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "stand-cone-s",
@@ -114,7 +114,7 @@
       "name": "color"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "tray-tray",
@@ -200,7 +200,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -385,7 +385,7 @@
       "value": "white",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "vase-mild",
@@ -412,7 +412,7 @@
       "value": "gray-fog",
       "name": "color"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "cup-mild",
@@ -514,7 +514,7 @@
     "group": "panno-wind",
     "id": "0320001(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "panno-stranger",
@@ -771,7 +771,7 @@
     "group": "choli-jute-stand",
     "id": "0720015(1)",
     "selectableProperty": [],
-    "availability": 3
+    "availability": 8
   },
   {
     "group": "choli-basket-semisphere",
@@ -823,7 +823,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "price": 700,
     "badges": ""
   },
@@ -852,7 +852,7 @@
     "group": "choli-two-cachepot-pack",
     "id": "0720013(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -904,8 +904,31 @@
         "design": "Choli jute"
       }
     },
-    "availability": 0,
-    "price": "700"
+    "availability": 2,
+    "price": "700",
+    "badges": ""
+  },
+  {
+    "group": "choli-katushka",
+    "id": "0720011(4)",
+    "name": "Катушка L",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "L"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "17cm",
+        "height": "16cm"
+      },
+      "material": ["Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "availability": 2,
+    "price": "700",
+    "badges": ""
   },
   {
     "group": "choli-katushka",
@@ -959,7 +982,8 @@
       }
     },
     "availability": 1,
-    "price": 920
+    "price": 920,
+    "badges": ""
   },
   {
     "group": "sababa-meow",
@@ -978,8 +1002,9 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
-    "price": 580
+    "availability": 0,
+    "price": 580,
+    "badges": ""
   },
   {
     "group": "sababa-night-ruskeala",
@@ -999,7 +1024,8 @@
       }
     },
     "availability": 1,
-    "price": 510
+    "price": 510,
+    "badges": ""
   },
   {
     "group": "sababa-simple",
@@ -1019,7 +1045,8 @@
       }
     },
     "availability": 1,
-    "price": 430
+    "price": 430,
+    "badges": ""
   },
   {
     "group": "sababa-summer-sunrise",
@@ -1060,7 +1087,8 @@
       }
     },
     "availability": 1,
-    "price": 1050
+    "price": 1050,
+    "badges": ""
   },
   {
     "group": "mori-toys",
@@ -1155,7 +1183,7 @@
       },
       "material": ["Хлопок"],
       "createdBy": {
-        "design": "!Mori"
+        "design": "Space of mori"
       }
     },
     "availability": 1,
@@ -1212,7 +1240,8 @@
     "name": "Шоколадка",
     "id": "0720024(2)",
     "selectableProperty": [],
-    "availability": 7
+    "availability": 7,
+    "badges": ""
   },
   {
     "group": "hleb-pot",
@@ -1222,7 +1251,8 @@
       "name": "model",
       "value": "peas"
     }],
-    "availability": 3
+    "availability": 3,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1272,7 +1302,7 @@
       "name": "model",
       "value": "orange-cinnamon"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "candle-freedom",
@@ -1281,6 +1311,36 @@
     "selectableProperty": [{
       "name": "model",
       "value": "vanilla-banana"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Шоколад & Грецкий орех & Корица",
+    "id": "0720083(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "chocolate-walnut-ginger"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Кофе & Корица",
+    "id": "0720050(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "coffee-cinnamon"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "candle-freedom",
+    "type": "Пачули & Имбирь",
+    "id": "0720082(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "pachuli-ginger"
     }],
     "availability": 1
   },
@@ -1301,8 +1361,8 @@
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": "",
+    "availability": 0,
+    "badges": "new",
     "price": 300
   },
   {
@@ -1315,7 +1375,8 @@
     "group": "carrotlab-soap-laundry",
     "id": "0720007(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1386,5 +1447,71 @@
       "value": "neptun"
     }],
     "availability": 1
+  },
+  {
+    "group": "hot-bowl-milk-choco",
+    "id": "0720075(1)",
+    "selectableProperty": [],
+    "availability": 4
+  },
+  {
+    "group": "hot-plate-milk-choco",
+    "id": "0720074(1)",
+    "selectableProperty": [],
+    "availability": 4
+  },
+  {
+    "group": "hot-plate-cinnamon-d19",
+    "id": "0720076(1)",
+    "selectableProperty": [],
+    "availability": 3
+  },
+  {
+    "group": "hot-plate-cinnamon",
+    "id": "0720073(1)",
+    "selectableProperty": [],
+    "availability": 4
+  },
+  {
+    "group": "hot-cup-cinnamon",
+    "id": "0720077(1)",
+    "selectableProperty": [],
+    "availability": 4
+  },
+  {
+    "group": "eco-sponge-luffa",
+    "id": "0720072(1)",
+    "selectableProperty": [],
+    "availability": 49
+  },
+  {
+    "group": "freedom-antiseptic",
+    "id": "0720081(1)",
+    "type": "Мята & Банан",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "mint"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "freedom-antiseptic",
+    "id": "0720081(2)",
+    "type": "Бергамот & Жасмин",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "bergamot"
+    }],
+    "availability": 3
+  },
+  {
+    "group": "freedom-difusser",
+    "id": "0720080(2)",
+    "type": "Дары востока",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "eastern"
+    }],
+    "availability": 5
   }
 ]

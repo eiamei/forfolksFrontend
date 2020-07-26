@@ -16,6 +16,7 @@
 <script>
   import PaymentUserInfo from './PaymentUserInfo';
   import PaymentCart from './PaymentCart';
+  import { getCookie } from '../../../utils/cookie';
   import {PROMO} from '../../../constants/Globals';
 
   export default {
@@ -53,6 +54,9 @@
       },
       total () {
         return this.$store.getters['bag/total'].discountTotal;
+      },
+      promo () {
+        return this.$store.state.promo.selectedDiscount ;
       }
     },
     methods: {
@@ -60,6 +64,9 @@
         const url = 'https://script.google.com/macros/s/AKfycbyCFXoKNRwDAFxoWjnTOgLnRd_5WTc9nLptKzzHJZ7l3oDJPdM_/exec';
         let request = new XMLHttpRequest();
         let encoded = form.concat('&', this.bag, '&', `total=${this.total}`);
+        if (this.promo && this.promo.name) {
+          encoded = encoded.concat('&', `promo=${this.promo.name}`);
+        }
         request.open('POST', url);
         request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         request.onreadystatechange = () => {
@@ -85,6 +92,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
+    min-height: 80vh;
     @media screen and (max-width: 770px) {
       padding: 0 16px;
     }

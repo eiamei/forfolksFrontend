@@ -23,9 +23,9 @@
             <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
           </li>
           <br>
-          <li class="menu-catalogue__item" v-for="link in byMaterial" :key="link.to">
+          <!-- <li class="menu-catalogue__item" v-for="link in byMaterial" :key="link.to">
             <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
-          </li>
+          </li> -->
         </ul>
         <ul class="menu-links">
           <li class="menu-links__item" v-for="link in links" :key="link.to">
@@ -63,6 +63,12 @@
         }, {
           to: '/store/category/basket',
           text: 'items.baskets'
+        }, {
+          to: '/store/category/dish',
+          text: 'items.dish'
+        }, {
+          to: '/store/category/aroma',
+          text: 'Ароматы'
         }, {
           to: '/store/category/textile',
           text: 'items.textile'

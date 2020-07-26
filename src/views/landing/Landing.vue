@@ -39,6 +39,7 @@
 
   .landing-page {
     text-align: center;
+    min-height: 80vh;
     .landing-page-carousel {
     }
     .landing-page-hero-text {

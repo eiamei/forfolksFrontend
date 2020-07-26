@@ -52,6 +52,10 @@ export const items: LocaleMessageObject = {
     textile: 'Текстиль',
     textiles: 'Текстиль',
     soapDish: 'Мыльница',
+    dish: 'Посуда',
+    dishs: 'Посуда',
+    aroma: 'Ароматы',
+    aromas: 'Ароматы',
     // materials
     bamboo: 'Бамбуковая',
     coconut: 'Кокосовая',

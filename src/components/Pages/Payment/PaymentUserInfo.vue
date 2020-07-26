@@ -2,6 +2,10 @@
   <div class="user-info">
     <form class="user-info__form" @submit.prevent="checkForm">
       <div class="user-info__header">Контактная информация</div>
+      <input v-validate="'required'" v-model="form.name" type="text" class="user-info__input" name="name" placeholder="Имя"/>
+      <span class="user-info__error">{{ parseError(errors.first('name')) }}</span>
+      <input v-validate="'required'" v-model="form.surname" type="text" class="user-info__input" name="surname" placeholder="Фамилия"/>
+      <span class="user-info__error">{{ parseError(errors.first('surname')) }}</span>
       <input v-validate="'required'" v-model="form.email" type="email" class="user-info__input" name="email" placeholder="Email"/>
       <span class="user-info__error">{{ parseError(errors.first('email')) }}</span>
       <div class="user-info__additional-info"> Мы не будем спамить, просто вышлем вам информацию о заказе и реквизиты для оплаты</div>
@@ -35,10 +39,6 @@
       <template v-else>
         <p class="user-info__header">Информация для доставки</p>
         <p class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа мы рассчитаем стоимость доставки. Примерную цену и сроки доставки вы можете посмотреть на сайте boxberry.</p>
-        <input v-validate="'required'" v-model="form.name" type="text" class="user-info__input" name="name" placeholder="Имя"/>
-        <span class="user-info__error">{{ parseError(errors.first('name')) }}</span>
-        <input v-validate="'required'" v-model="form.surname" type="text" class="user-info__input" name="surname" placeholder="Фамилия"/>
-        <span class="user-info__error">{{ parseError(errors.first('surname')) }}</span>
         <input class="user-info__input" v-model="form.country" name="country" placeholder="Страна"/>
         <input class="user-info__input" v-model="form.city" name="city" placeholder="Город"/>
         <span style="display: flex; justify-content: space-between; width: 100%">

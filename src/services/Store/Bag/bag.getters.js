@@ -7,7 +7,7 @@ export const bagGetters = {
     return Object
       .keys(state.bag)
       .map(function (name) {
-        const item = rootGetters['shop/findItemById'](state.bag[name].id);
+        const item = Object.assign({}, rootGetters['shop/findItemById'](state.bag[name].id));
 
         if (!item) return;
 

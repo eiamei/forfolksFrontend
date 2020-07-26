@@ -106,6 +106,7 @@ export default {
     grid-auto-flow: dense;
     margin: 3.5rem 0 1.5rem 0;
     padding: 0 1rem;
+    min-height: 80vh;
     @media screen and (max-width: $tablet) {
       grid-template-columns: repeat( auto-fit, minmax( 17rem, 1fr ) );
     }

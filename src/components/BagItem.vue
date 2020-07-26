@@ -5,7 +5,7 @@
       <h3 class="bag-item__header">{{item.name}}</h3>
       <section class="bag-item__row">
         <p class="bag-item__field" style="width: 50%; margin: 0; padding: 0">
-          <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name === 'color' ? $t(`colors.${prop.value}`) : prop.value}}</template>
+          <template v-for="(prop, index) in item.selectableProperty">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name === 'color' ? $t(`colors.${prop.value}`) : prop.value}}</template>
         </p>
         <section style="display: flex; justify-content: center; align-items: center">
           <p class="bag-item__field">{{item.price}}</p>
@@ -43,9 +43,6 @@ export default {
           id += `-${slugify(property.value.toLowerCase())}`
         });
       return id;
-    },
-    storeItem () {
-      return this.$store.getters['shop/findItemById'](this.item.id)
     }
   },
   methods: {
@@ -53,8 +50,8 @@ export default {
       this.$store.dispatch('bag/decrement', this.id);
     },
     increment () {
-      if (this.item.qty +  1 <= this.storeItem.availability)
-      this.$store.dispatch('bag/increment', this.id);
+      if (this.item.qty + 1 <= this.item.availability)
+        this.$store.dispatch('bag/increment', this.id);
     },
     remove () {
       this.$store.dispatch('bag/remove', this.id);

@@ -14,5 +14,6 @@ export const size: LocaleMessageObject = {
     externalDiameter: 'Внешний диаметр',
     innerDiameter: "Внутренний диаметр",
     weight: 'Вес',
-    burningTime: 'Время горения'
+    burningTime: 'Время горения',
+    volume: 'Объем'
 }
