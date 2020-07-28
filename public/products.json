@@ -4,7 +4,8 @@
     "id": "0720041(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 3
   },
@@ -13,7 +14,8 @@
     "id": "0720041(2)",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "availability": 3
   },
@@ -22,7 +24,8 @@
     "id": "0720041(3)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 4
   },
@@ -31,7 +34,8 @@
     "id": "0720040(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "layout": "high",
     "availability": 3
@@ -41,7 +45,8 @@
     "id": "0720040(3)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "layout": "high",
     "availability": 0
@@ -51,7 +56,8 @@
     "id": "0720040(2)",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "layout": "high",
     "availability": 1
@@ -61,7 +67,8 @@
     "id": "0720040(4)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "layout": "high",
     "availability": 3
@@ -71,7 +78,8 @@
     "id": "0720039(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "layout": "high",
     "availability": 1
@@ -81,7 +89,8 @@
     "id": "0720039(2)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "layout": "high",
     "availability": 1
@@ -91,7 +100,8 @@
     "id": "0720039(3)",
     "selectableProperty": [{
       "value": "gray-fog",
-      "name": "color"
+      "name": "color",
+      "text": "Серый туман"
     }],
     "layout": "high",
     "availability": 1
@@ -101,7 +111,8 @@
     "id": "0720039(4)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "layout": "high",
     "availability": 0
@@ -111,7 +122,8 @@
     "id": "0720039(6)",
     "selectableProperty": [{
       "value": "moonstone",
-      "name": "color"
+      "name": "color",
+      "text": "Голубой"
     }],
     "layout": "high",
     "availability": 1
@@ -121,7 +133,8 @@
     "id": "0720036(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 1
   },
@@ -130,7 +143,8 @@
     "id": "0720036(4)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 1
   },
@@ -139,7 +153,8 @@
     "id": "0720036(2)",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "availability": 2
   },
@@ -148,7 +163,8 @@
     "id": "0720038(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 0,
     "badges": ""
@@ -158,7 +174,8 @@
     "id": "0720038(4)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 0,
     "badges": ""
@@ -168,7 +185,8 @@
     "group": "basic-incense",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "availability": 0,
     "badges": ""
@@ -178,7 +196,8 @@
     "id": "0720038(5)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 1,
     "badges": "new"
@@ -188,7 +207,8 @@
     "id": "0720038(3)",
     "selectableProperty": [{
       "value": "white-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Белый мрамор"
     }],
     "availability": 1,
     "badges": "new"
@@ -198,7 +218,8 @@
     "id": "0720037(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 0,
     "badges": ""
@@ -208,7 +229,8 @@
     "id": "0720037(2)",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "availability": 0,
     "badges": ""
@@ -218,7 +240,8 @@
     "id": "0720037(5)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 1,
     "badges": ""
@@ -228,7 +251,8 @@
     "id": "0720037(4)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 1,
     "badges": ""
@@ -238,7 +262,8 @@
     "id": "0720037(3)",
     "selectableProperty": [{
       "value": "white-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Белый мрамор"
     }],
     "availability": 1,
     "badges": ""
@@ -248,7 +273,8 @@
     "id": "0720042(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 2
   },
@@ -257,7 +283,8 @@
     "id": "0720042(3)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 1
   },
@@ -266,7 +293,8 @@
     "id": "0720042(4)",
     "selectableProperty": [{
       "value": "moonstone",
-      "name": "color"
+      "name": "color",
+      "text": "Лунный камень"
     }],
     "availability": 1
   },
@@ -275,7 +303,8 @@
     "id": "0720042(5)",
     "selectableProperty": [{
       "value": "khaki",
-      "name": "color"
+      "name": "color",
+      "text": "Хаки"
     }],
     "availability": 1
   },
@@ -284,7 +313,8 @@
     "id": "0720042(2)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 1
   },
@@ -293,7 +323,8 @@
     "id": "0720043(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 1
   },
@@ -302,7 +333,8 @@
     "id": "0720043(3)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 0
   },
@@ -311,7 +343,8 @@
     "id": "0720043(4)",
     "selectableProperty": [{
       "value": "moonstone",
-      "name": "color"
+      "name": "color",
+      "text": "Лунный камень"
     }],
     "availability": 1
   },
@@ -320,7 +353,8 @@
     "id": "0720043(2)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 0
   },
@@ -329,7 +363,8 @@
     "id": "0720043(5)",
     "selectableProperty": [{
       "value": "khaki",
-      "name": "color"
+      "name": "color",
+      "text": "Хаки"
     }],
     "availability": 0
   },
@@ -338,7 +373,8 @@
     "id": "0720001(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 0
   },
@@ -347,7 +383,8 @@
     "id": "0720001(4)",
     "selectableProperty": [{
       "value": "gray-fog",
-      "name": "color"
+      "name": "color",
+      "text": "Серый туман"
     }],
     "availability": 1
   },
@@ -356,7 +393,8 @@
     "id": "0720001(3)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 1
   },
@@ -365,7 +403,8 @@
     "id": "0720001(5)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 0
   },
@@ -374,7 +413,8 @@
     "id": "0720001(2)",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "availability": 2
   },
@@ -383,7 +423,8 @@
     "id": "0720002(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 1
   },
@@ -392,7 +433,8 @@
     "id": "0720002(5)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 2
   },
@@ -401,7 +443,8 @@
     "id": "0720002(3)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 2
   },
@@ -410,7 +453,8 @@
     "id": "0720002(4)",
     "selectableProperty": [{
       "value": "gray-fog",
-      "name": "color"
+      "name": "color",
+      "text": "Серый туман"
     }],
     "availability": 1
   },
@@ -419,7 +463,8 @@
     "id": "0720003(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 1
   },
@@ -428,7 +473,8 @@
     "id": "0720003(4)",
     "selectableProperty": [{
       "value": "gray-fog",
-      "name": "color"
+      "name": "color",
+      "text": "Серый туман"
     }],
     "availability": 0
   },
@@ -437,7 +483,8 @@
     "id": "0720003(3)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 1
   },
@@ -446,7 +493,8 @@
     "id": "0720003(6)",
     "selectableProperty": [{
       "value": "moonstone",
-      "name": "color"
+      "name": "color",
+      "text": "Лунный камень"
     }],
     "availability": 1
   },
@@ -455,7 +503,8 @@
     "id": "0720003(5)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 2
   },
@@ -464,7 +513,8 @@
     "id": "0720003(2)",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "availability": 1
   },
@@ -473,7 +523,8 @@
     "id": "0720035(1)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 0
   },
@@ -482,7 +533,8 @@
     "id": "0720035(3)",
     "selectableProperty": [{
       "value": "graphite",
-      "name": "color"
+      "name": "color",
+      "text": "Графит"
     }],
     "availability": 2
   },
@@ -491,7 +543,8 @@
     "id": "0720035(4)",
     "selectableProperty": [{
       "value": "powder",
-      "name": "color"
+      "name": "color",
+      "text": "Пудра"
     }],
     "availability": 1
   },
@@ -500,7 +553,8 @@
     "id": "0720035(2)",
     "selectableProperty": [{
       "value": "black-marble",
-      "name": "color"
+      "name": "color",
+      "text": "Черный мрамор"
     }],
     "availability": 5
   },
@@ -528,7 +582,8 @@
     "id": "0720064(1)",
     "selectableProperty": [{
       "value": "1",
-      "name": "model"
+      "name": "model",
+      "text": "1"
     }],
     "itemProperty": {
       "size": {
@@ -548,7 +603,8 @@
     "id": "0720065(1)",
     "selectableProperty": [{
       "value": "2",
-      "name": "model"
+      "name": "model",
+      "text": "2"
     }],
     "itemProperty": {
       "size": {
@@ -568,7 +624,8 @@
     "id": "0720066(1)",
     "selectableProperty": [{
       "value": "3",
-      "name": "model"
+      "name": "model",
+      "text": "3"
     }],
     "layout": "high",
     "availability": 1
@@ -579,7 +636,8 @@
     "id": "0720067(1)",
     "selectableProperty": [{
       "value": "4",
-      "name": "model"
+      "name": "model",
+      "text": "4"
     }],
     "itemProperty": {
       "size": {
@@ -599,7 +657,8 @@
     "id": "0720068(1)",
     "selectableProperty": [{
       "value": "5",
-      "name": "model"
+      "name": "model",
+      "text": "5"
     }],
     "itemProperty": {
       "size": {
@@ -619,7 +678,8 @@
     "id": "0720069(1)",
     "selectableProperty": [{
       "value": "6",
-      "name": "model"
+      "name": "model",
+      "text": "6"
     }],
     "itemProperty": {
       "size": {
@@ -639,7 +699,8 @@
     "id": "0720070(1)",
     "selectableProperty": [{
       "value": "7",
-      "name": "model"
+      "name": "model",
+      "text": "7"
     }],
     "itemProperty": {
       "size": {
@@ -659,7 +720,8 @@
     "id": "0720071(1)",
     "selectableProperty": [{
       "value": "8",
-      "name": "model"
+      "name": "model",
+      "text": "8"
     }],
     "itemProperty": {
       "size": {
@@ -692,7 +754,8 @@
     "id": "0720055(2)",
     "selectableProperty": [{
       "value": "white",
-      "name": "color"
+      "name": "color",
+      "text": "Белый"
     }],
     "availability": 3,
     "badges": ""
@@ -702,7 +765,8 @@
     "id": "0720055(1)",
     "selectableProperty": [{
       "value": "black",
-      "name": "color"
+      "name": "color",
+      "text": "Черный"
     }],
     "availability": 4,
     "badges": ""
@@ -734,7 +798,8 @@
     "desc": "Компактная и очень эргономичная щетка для мытья посуды. В отличии от щетки со светлой щетиной темный вариант чуть более жесктий, поэтому лучше справляется со сложными загрязнениями, но с такой щеткой стоит проявить особое внимание при мытье посуды с антипригарным покрытием. <br><br> Деревянное основание щетки можно сдать в переработку.",
     "selectableProperty": [{
       "name": "model",
-      "value": "hard"
+      "value": "hard",
+      "text": "Темная"
     }],
     "availability": 2,
     "badges": ""
@@ -791,7 +856,8 @@
     "name": "Ананасик S",
     "selectableProperty": [{
       "name": "model",
-      "value": "S"
+      "value": "S",
+      "text": "S"
     }],
     "itemProperty": {
       "size": {
@@ -811,7 +877,8 @@
     "name": "Ананасик M",
     "selectableProperty": [{
       "name": "model",
-      "value": "M"
+      "value": "M",
+      "text": "M"
     }],
     "itemProperty": {
       "size": {
@@ -833,7 +900,8 @@
     "name": "Ананасик L",
     "selectableProperty": [{
       "name": "model",
-      "value": "L"
+      "value": "L",
+      "text": "L"
     }],
     "itemProperty": {
       "size": {
@@ -861,7 +929,8 @@
     "name": "Корзина L",
     "selectableProperty": [{
       "name": "model",
-      "value": "L"
+      "value": "L",
+      "text": "L"
     }],
     "availability": 1
   },
@@ -871,7 +940,8 @@
     "name": "Катушка S",
     "selectableProperty": [{
       "name": "model",
-      "value": "S"
+      "value": "S",
+      "text": "S"
     }],
     "itemProperty": {
       "size": {
@@ -892,7 +962,8 @@
     "name": "Катушка M",
     "selectableProperty": [{
       "name": "model",
-      "value": "M"
+      "value": "M",
+      "text": "M"
     }],
     "itemProperty": {
       "size": {
@@ -914,7 +985,8 @@
     "name": "Катушка L",
     "selectableProperty": [{
       "name": "model",
-      "value": "L"
+      "value": "L",
+      "text": "L"
     }],
     "itemProperty": {
       "size": {
@@ -936,7 +1008,8 @@
     "name": "Катушка XL",
     "selectableProperty": [{
       "name": "model",
-      "value": "xl"
+      "value": "xl",
+      "text": "XL"
     }],
     "itemProperty": {
       "size": {
@@ -969,7 +1042,8 @@
     "id": "0720019(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "d21"
+      "value": "d21",
+      "text": "d21"
     }],
     "itemProperty": {
       "size": {
@@ -990,7 +1064,8 @@
     "id": "0720021(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "d15"
+      "value": "d15",
+      "text": "d15"
     }],
     "itemProperty": {
       "size": {
@@ -1011,7 +1086,8 @@
     "id": "0720022(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "d11"
+      "value": "d11",
+      "text": "d11"
     }],
     "itemProperty": {
       "size": {
@@ -1032,7 +1108,8 @@
     "id": "0720020(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "d9"
+      "value": "d9",
+      "text": "d9"
     }],
     "itemProperty": {
       "size": {
@@ -1053,7 +1130,8 @@
     "id": "0720018(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "d13"
+      "value": "d13",
+      "text": "d13"
     }],
     "itemProperty": {
       "size": {
@@ -1074,7 +1152,8 @@
     "id": "0720018(2)",
     "selectableProperty": [{
       "name": "model",
-      "value": "d23"
+      "value": "d23",
+      "text": "d23"
     }],
     "itemProperty": {
       "size": {
@@ -1102,10 +1181,12 @@
     "id": "0720034(1)",
     "selectableProperty": [{
       "name": "color",
-      "value": "green"
+      "value": "green",
+      "text": "Зеленый"
     }, {
       "name": "model",
-      "value": "big"
+      "value": "big",
+      "text": "Большой"
     }],
     "itemProperty": {
       "size": {
@@ -1126,10 +1207,12 @@
     "id": "0720033(1)",
     "selectableProperty": [{
       "name": "color",
-      "value": "brown"
+      "value": "brown",
+      "text": "Коричневый"
     }, {
       "name": "model",
-      "value": "small"
+      "value": "small",
+      "text": "Стандартный"
     }],
     "itemProperty": {
       "size": {
@@ -1174,7 +1257,8 @@
     "id": "0720028(2)",
     "selectableProperty": [{
       "name": "model",
-      "value": "small"
+      "value": "small",
+      "text": "Стандартный"
     }],
     "itemProperty": {
       "size": {
@@ -1201,7 +1285,8 @@
     "id": "0720025(5)",
     "selectableProperty": [{
       "name": "model",
-      "value": "birch"
+      "value": "birch",
+      "text": "birch"
     }],
     "availability": 1
   },
@@ -1211,7 +1296,8 @@
     "id": "0720025(2)",
     "selectableProperty": [{
       "name": "model",
-      "value": "fern-dava"
+      "value": "fern-dava",
+      "text": "Fern dava"
     }],
     "availability": 1
   },
@@ -1221,7 +1307,8 @@
     "id": "0720025(3)",
     "selectableProperty": [{
       "name": "model",
-      "value": "fern-poly"
+      "value": "fern-poly",
+      "text": "Fern poly"
     }],
     "availability": 1
   },
@@ -1231,7 +1318,8 @@
     "id": "0720025(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "mentol"
+      "value": "mentol",
+      "text": "Mentol"
     }],
     "availability": 1
   },
@@ -1249,7 +1337,8 @@
     "id": "0720024(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "peas"
+      "value": "peas",
+      "text": "Горошек"
     }],
     "availability": 3,
     "badges": ""
@@ -1260,7 +1349,8 @@
     "id": "0720047(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "blackberry-mint"
+      "value": "blackberry-mint",
+      "text": "Ежевика & Мята"
     }],
     "availability": 1
   },
@@ -1270,7 +1360,8 @@
     "id": "0720045(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "gingerbread"
+      "value": "gingerbread",
+      "text": "Имбирный пряник"
     }],
     "availability": 1
   },
@@ -1280,7 +1371,8 @@
     "id": "0720046(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "jasmine-mint"
+      "value": "jasmine-mint",
+      "text": "Жасмин & Мята"
     }],
     "availability": 1
   },
@@ -1290,7 +1382,8 @@
     "id": "0720048(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "lavender-almonds"
+      "value": "lavender-almonds",
+      "text": "Лаванда & Миндаль"
     }],
     "availability": 1
   },
@@ -1300,7 +1393,8 @@
     "id": "0720044(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "orange-cinnamon"
+      "value": "orange-cinnamon",
+      "text": "Апельсин & Корица"
     }],
     "availability": 0
   },
@@ -1310,7 +1404,8 @@
     "id": "0720049(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "vanilla-banana"
+      "value": "vanilla-banana",
+      "text": "Ваниль & Банан"
     }],
     "availability": 1
   },
@@ -1320,7 +1415,8 @@
     "id": "0720083(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "chocolate-walnut-ginger"
+      "value": "chocolate-walnut-ginger",
+      "text": "Шоколад & Грецкий орех & Корица"
     }],
     "availability": 1
   },
@@ -1330,7 +1426,8 @@
     "id": "0720050(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "coffee-cinnamon"
+      "value": "coffee-cinnamon",
+      "text": "Кофе & Корица"
     }],
     "availability": 1
   },
@@ -1340,7 +1437,8 @@
     "id": "0720082(1)",
     "selectableProperty": [{
       "name": "model",
-      "value": "pachuli-ginger"
+      "value": "pachuli-ginger",
+      "text": "Пачули & Имбирь"
     }],
     "availability": 1
   },
@@ -1384,7 +1482,8 @@
     "type": "Серый",
     "selectableProperty": [{
       "name": "color",
-      "value": "gray"
+      "value": "gray",
+      "text": "Серый"
     }],
     "availability": 1
   },
@@ -1394,7 +1493,8 @@
     "type": "Белый",
     "selectableProperty": [{
       "name": "color",
-      "value": "white"
+      "value": "white",
+      "text": "Белый"
     }],
     "availability": 1
   },
@@ -1404,7 +1504,8 @@
     "type": "Персик",
     "selectableProperty": [{
       "name": "color",
-      "value": "peach"
+      "value": "peach",
+      "text": "Персик"
     }],
     "availability": 1
   },
@@ -1414,7 +1515,8 @@
     "type": "Какао",
     "selectableProperty": [{
       "name": "color",
-      "value": "cacao"
+      "value": "cacao",
+      "text": "Какао"
     }],
     "availability": 1
   },
@@ -1424,7 +1526,8 @@
     "type": "Туман",
     "selectableProperty": [{
       "name": "color",
-      "value": "fog"
+      "value": "fog",
+      "text": "Туман"
     }],
     "availability": 1
   },
@@ -1434,7 +1537,8 @@
     "type": "Юпитер",
     "selectableProperty": [{
       "name": "color",
-      "value": "jupiter"
+      "value": "jupiter",
+      "text": "Юпитер"
     }],
     "availability": 1
   },
@@ -1444,7 +1548,8 @@
     "type": "Нептун",
     "selectableProperty": [{
       "name": "color",
-      "value": "neptun"
+      "value": "neptun",
+      "text": "Нептун"
     }],
     "availability": 1
   },
@@ -1490,7 +1595,8 @@
     "type": "Мята & Банан",
     "selectableProperty": [{
       "name": "model",
-      "value": "mint"
+      "value": "mint",
+      "text": "Мята & Банан"
     }],
     "availability": 2
   },
@@ -1500,17 +1606,19 @@
     "type": "Бергамот & Жасмин",
     "selectableProperty": [{
       "name": "model",
-      "value": "bergamot"
+      "value": "bergamot",
+      "text": "Бергамот & Жасмин"
     }],
     "availability": 3
   },
   {
     "group": "freedom-difusser",
     "id": "0720080(2)",
-    "type": "Дары востока",
+    "name": "Дары востока",
     "selectableProperty": [{
       "name": "model",
-      "value": "eastern"
+      "value": "eastern",
+      "text": "Дары востока"
     }],
     "availability": 5
   }

@@ -3,9 +3,10 @@
     <img class="bag-item-image" :src="itemImage"/>
     <div class="bag-item">
       <h3 class="bag-item__header">{{item.name}}</h3>
+      <h5 class="bag-item__type">{{item.type}}</h5>
       <section class="bag-item__row">
         <p class="bag-item__field" style="width: 50%; margin: 0; padding: 0">
-          <template v-for="(prop, index) in item.selectableProperty">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name === 'color' ? $t(`colors.${prop.value}`) : prop.value}}</template>
+          <template v-for="(prop, index) in item.selectableProperty">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.text}}</template>
         </p>
         <section style="display: flex; justify-content: center; align-items: center">
           <p class="bag-item__field">{{item.price}}</p>
@@ -101,9 +102,14 @@ export default {
     width: 100%;
     padding: 0 0 0 16px;
     &__header {
-      @media screen and (max-width: 900px) {
-        margin: 8px 0;
+      margin: 4px 0;
+      @media screen and (max-width: 600px) {
+        margin: 0 0 4px 0;
       }
+    }
+    &__type {
+      font-weight: 400;
+      margin: 4px 0 8px 0;
       @media screen and (max-width: 600px) {
         margin: 0 0 4px 0;
       }
