@@ -56,6 +56,8 @@ export const items: LocaleMessageObject = {
     dishs: 'Посуда',
     aroma: 'Ароматы',
     aromas: 'Ароматы',
+    soap: 'Мыло',
+    soaps: 'Мыло',
     // materials
     bamboo: 'Бамбуковая',
     coconut: 'Кокосовая',

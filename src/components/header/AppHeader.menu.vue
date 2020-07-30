@@ -67,33 +67,24 @@
           to: '/store/category/dish',
           text: 'items.dish'
         }, {
+          to: '/store/category/soap',
+          text: 'Мыло'
+        }, {
           to: '/store/category/aroma',
           text: 'Ароматы'
         }, {
           to: '/store/category/textile',
           text: 'items.textile'
         }, {
-        //   to: '/store/category/bag',
-        //   text: 'items.bags'
-        // }, {
           to: '/store/category/vase',
           text: 'items.vases'
         }, {
           to: '/store/category/bouquet',
           text: 'items.bouquets'
         }, {
-          to: '/store/category/hanging',
-          text: 'items.hangings'
-        }, {
           to: '/store/category/panno',
           text: 'items.panno'
         }, {
-          to: '/store/category/candle',
-          text: 'items.candles'
-        }, {
-        //   to: '/store/category/wax',
-        //   text: 'items.wax'
-        // }, {
           to: '/store/category/toy',
           text: 'items.toys'
         }],
