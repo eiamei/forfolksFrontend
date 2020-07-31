@@ -65,8 +65,7 @@
     top: 0.5rem;
     left: calc(50% - 51px);
     .forfolks-logo {
-      width: 6rem;
-      height: 2rem;
+      height: 1rem;
     }
   }
   .header-bag {

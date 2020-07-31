@@ -4,9 +4,11 @@
       <h1 class="about__header">Контакты</h1>
       <a href="mailto:hello@weareforfolks.com" class="about__mail">hello@weareforfolks.com</a>
       <p>+7 (999) 239-66-10</p>
-      <h4>Интернет магазин (самовывоз)</h4>
+      <h4>Шоурум</h4>
       <p>Санкт-Петербург, 13-линия В.О., д. 72, "Артмуза", 3 этаж пом. 312</p>
-      <p>График работы можно уточнить в социальных сетях, мессенджерах или по номеру телефона.</p>
+      <ul class="about__timetable">
+        <li v-for="time in timetable" :key="time.name">{{time.name}}: {{time.time}}</li>
+      </ul>
       <nav class="about-contacts__links">
         <a href="https://vk.com/weareforfolks" target="_blank">
           <img class="about-contacts__link" src="../assets/svg/vk-logo.svg" alt="vk"/>
@@ -27,10 +29,24 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'aboutPage'
-  };
+<script type="ts">
+  import Vue from 'vue';
+  export default Vue.extend({
+    name: 'aboutPage',
+    data () {
+      return {
+        timetable: {}
+      }
+    },
+    async created () {
+      try {
+        const result = await fetch('/timetable.json');
+        this.timetable = await result.json() || [];
+      } catch (e) {
+        this.timetable = []
+      }
+    }
+  });
 </script>
 
 <style lang="scss">
@@ -46,6 +62,14 @@
     &__mail {
       text-decoration: none;
       color: black;
+    }
+    &__timetable {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 0 0 0.25rem 0;
+      }
     }
     &__instagram, &__vk, &__facebook {
       display: inline-block;

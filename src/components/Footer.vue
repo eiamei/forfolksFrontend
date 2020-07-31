@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <img class="footer__icon" src="../assets/svg/ForfolksLogo.svg"/>
+    <forfolks-logo class="footer__icon"/>
     <nav class="footer__linking-block">
       <div class="footer__links" v-for="(links, index) in linkBlock" :key="`links:${index}`">
         <router-link class="regular-sans-text footer__link" v-for="link in links" :to="link.href" :key="link.text">
@@ -33,6 +33,7 @@
     import VisaLogo from './/Icons/VisaLogo.vue';
     import MasterLogo from './/Icons/MasterLogo.vue';
     import MirLogo from './/Icons/MirLogo.vue';
+    import ForfolksLogo from './/Icons/Logo.vue';
     import { link } from "../global";
     import { LocaleMessage } from "vue-i18n";
 
@@ -61,7 +62,7 @@
 
     export default Vue.extend({
         name: 'AppFooter',
-        components: { VkLogo, FacebookLogo, InstagramLogo, AlphaLogo },
+        components: { VkLogo, FacebookLogo, InstagramLogo, AlphaLogo, ForfolksLogo },
         data (): footer {
             return {
                 linkBlock: [[{
@@ -124,7 +125,10 @@
     padding: 5rem 2rem 2rem 2rem;
     background-color: $dark-blue;
     &__icon {
-      width: 12.5rem;
+      width: 19rem;
+        path {
+          fill: white;
+        }
     }
     &__linking-block {
       display: flex;

@@ -166,9 +166,10 @@
     &__text {
       position: fixed;
       left: 4.5rem;
-      top: 0;
+      top: 0.6rem;
       color: black;
       cursor: pointer;
+      margin: 0;
     }
   }
 
