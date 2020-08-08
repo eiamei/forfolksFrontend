@@ -84,7 +84,27 @@
         background: $coated;
       }
 
-      &--powder, &--peach {
+      &--pearl {
+        background: $pearl;
+      }
+
+      &--sand {
+        background: $sand;
+      }
+
+      &--darkblue {
+        background: $darkblue;
+      }
+
+      &--olive, &--green {
+        background: $olive;
+      }
+
+      &--terracotta, &--brown {
+        background: $terracotta;
+      }
+
+      &--powder, &--peach, &--figs {
         background: $powder;
       }
 

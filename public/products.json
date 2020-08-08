@@ -136,7 +136,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "tray-tray",
@@ -210,8 +210,8 @@
       "name": "color",
       "text": "Белый мрамор"
     }],
-    "availability": 1,
-    "badges": "new"
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "stand-basic",
@@ -276,7 +276,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "candlestick-house-swiss",
@@ -346,7 +346,7 @@
       "name": "color",
       "text": "Лунный камень"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "candlestick-house-denmark",
@@ -376,7 +376,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "vase-modern",
@@ -416,7 +416,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "vase-mild",
@@ -526,7 +526,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "bowl-mild",
@@ -757,7 +757,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 3,
+    "availability": 24,
     "badges": ""
   },
   {
@@ -768,8 +768,41 @@
       "name": "color",
       "text": "Черный"
     }],
-    "availability": 4,
+    "availability": 29,
     "badges": ""
+  },
+  {
+    "group": "toothbrush-bamboo",
+    "id": "0720055(4)",
+    "selectableProperty": [{
+      "value": "pearl",
+      "name": "color",
+      "text": "Жемчужный"
+    }],
+    "availability": 26,
+    "badges": "new"
+  },
+  {
+    "group": "toothbrush-bamboo",
+    "id": "0720055(3)",
+    "selectableProperty": [{
+      "value": "cacao",
+      "name": "color",
+      "text": "Какао"
+    }],
+    "availability": 12,
+    "badges": "new"
+  },
+  {
+    "group": "toothbrush-bamboo",
+    "id": "0720055(5)",
+    "selectableProperty": [{
+      "value": "sand",
+      "name": "color",
+      "text": "Песочный"
+    }],
+    "availability": 16,
+    "badges": "new"
   },
   {
     "group": "small-comb",
@@ -789,7 +822,7 @@
     "group": "small-bamboo-brush",
     "id": "0720059(1)",
     "selectableProperty": [],
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -808,14 +841,14 @@
     "group": "long-cup-brush",
     "id": "0720057(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 4,
     "badges": ""
   },
   {
     "group": "long-brush",
     "id": "0720056(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 8,
     "badges": ""
   },
   {
@@ -836,19 +869,22 @@
     "group": "choli-jute-stand",
     "id": "0720015(1)",
     "selectableProperty": [],
-    "availability": 8
+    "availability": 8,
+    "badges": ""
   },
   {
     "group": "choli-basket-semisphere",
     "id": "0720009(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "choli-cachepot-cylinder",
     "id": "0720010(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "choli-cachepot-pineapple",
@@ -869,7 +905,8 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "choli-cachepot-pineapple",
@@ -914,7 +951,8 @@
       }
     },
     "availability": 1,
-    "price": 900
+    "price": 900,
+    "badges": ""
   },
   {
     "group": "choli-two-cachepot-pack",
@@ -932,7 +970,8 @@
       "value": "L",
       "text": "L"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "choli-katushka",
@@ -954,7 +993,8 @@
       }
     },
     "availability": 1,
-    "price": "500"
+    "price": "500",
+    "badges": ""
   },
   {
     "group": "choli-katushka",
@@ -1028,13 +1068,29 @@
     "group": "choli-sponge",
     "id": "0720016(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "latt-vase-stone",
     "id": "0720017(1)",
-    "selectableProperty": [],
-    "availability": 0,
+    "selectableProperty": [{
+      "name": "model",
+      "value": "1",
+      "text": "Вариант 1"
+    }],
+    "availability": 1,
+    "badges": ""
+  },
+  {
+    "group": "latt-vase-stone",
+    "id": "0720017(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "2",
+      "text": "Вариант 2"
+    }],
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1173,7 +1229,8 @@
     "group": "mori-toys",
     "id": "0720030(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "mori-pillowcase",
@@ -1199,7 +1256,8 @@
       }
     },
     "availability": 1,
-    "price": 870
+    "price": 870,
+    "badges": ""
   },
   {
     "group": "mori-pillowcase",
@@ -1225,31 +1283,36 @@
       }
     },
     "availability": 1,
-    "price": 780
+    "price": 780,
+    "badges": ""
   },
   {
     "group": "mori-hanging",
     "id": "0720029(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "mori-tablecloth",
     "id": "0720032(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "mori-bag",
     "id": "0720027(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "mori-apron-melange",
     "id": "0720031(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "mori-cover-bag",
@@ -1271,13 +1334,15 @@
       }
     },
     "availability": 1,
-    "price": 880
+    "price": 880,
+    "badges": ""
   },
   {
     "group": "mori-tack",
     "id": "0720026(1)",
     "selectableProperty": [],
-    "availability": 3
+    "availability": 2,
+    "badges": ""
   },
   {
     "group": "whiteclay-soap-dish",
@@ -1288,7 +1353,8 @@
       "value": "birch",
       "text": "birch"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "whiteclay-soap-dish",
@@ -1299,7 +1365,8 @@
       "value": "fern-dava",
       "text": "Fern dava"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "whiteclay-soap-dish",
@@ -1310,7 +1377,8 @@
       "value": "fern-poly",
       "text": "Fern poly"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "whiteclay-soap-dish",
@@ -1321,7 +1389,8 @@
       "value": "mentol",
       "text": "Mentol"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "hleb-pot",
@@ -1352,7 +1421,8 @@
       "value": "blackberry-mint",
       "text": "Ежевика & Мята"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1363,7 +1433,8 @@
       "value": "gingerbread",
       "text": "Имбирный пряник"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1374,7 +1445,8 @@
       "value": "jasmine-mint",
       "text": "Жасмин & Мята"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1385,7 +1457,8 @@
       "value": "lavender-almonds",
       "text": "Лаванда & Миндаль"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1396,7 +1469,8 @@
       "value": "orange-cinnamon",
       "text": "Апельсин & Корица"
     }],
-    "availability": 0
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1407,7 +1481,8 @@
       "value": "vanilla-banana",
       "text": "Ваниль & Банан"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1418,7 +1493,8 @@
       "value": "chocolate-walnut-ginger",
       "text": "Шоколад & Грецкий орех & Корица"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1429,7 +1505,8 @@
       "value": "coffee-cinnamon",
       "text": "Кофе & Корица"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1440,7 +1517,8 @@
       "value": "pachuli-ginger",
       "text": "Пачули & Имбирь"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "carrotlab-soap-marseille",
@@ -1453,14 +1531,14 @@
     "group": "carrotlab-soap-oatmeal",
     "id": "0720005(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 0
   },
   {
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
     "availability": 3,
-    "badges": "new",
+    "badges": "",
     "price": 300
   },
   {
@@ -1473,14 +1551,14 @@
     "group": "carrotlab-soap-laundry",
     "id": "0720007(1)",
     "selectableProperty": [],
-    "availability": 3,
+    "availability": 1,
     "badges": ""
   },
   {
     "group": "carrotlab-soap-castilla",
     "id": "0720086(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": "new"
   },
   {
@@ -1553,8 +1631,8 @@
     "group": "carrotlab-soap-salt",
     "id": "0720094(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": "new"
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1565,7 +1643,8 @@
       "value": "gray",
       "text": "Серый"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1576,7 +1655,8 @@
       "value": "white",
       "text": "Белый"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1587,7 +1667,8 @@
       "value": "peach",
       "text": "Персик"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1598,7 +1679,8 @@
       "value": "cacao",
       "text": "Какао"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1609,7 +1691,8 @@
       "value": "fog",
       "text": "Туман"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1620,7 +1703,8 @@
       "value": "jupiter",
       "text": "Юпитер"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "hey-plants-pot",
@@ -1631,43 +1715,50 @@
       "value": "neptun",
       "text": "Нептун"
     }],
-    "availability": 1
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "hot-bowl-milk-choco",
     "id": "0720075(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 3,
+    "badges": ""
   },
   {
     "group": "hot-plate-milk-choco",
     "id": "0720074(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "hot-plate-cinnamon-d19",
     "id": "0720076(1)",
     "selectableProperty": [],
-    "availability": 3
+    "availability": 3,
+    "badges": ""
   },
   {
     "group": "hot-plate-cinnamon",
     "id": "0720073(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "hot-cup-cinnamon",
     "id": "0720077(1)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 3,
+    "badges": ""
   },
   {
     "group": "eco-sponge-luffa",
     "id": "0720072(1)",
     "selectableProperty": [],
-    "availability": 49
+    "availability": 44,
+    "badges": ""
   },
   {
     "group": "freedom-antiseptic",
@@ -1678,7 +1769,8 @@
       "value": "mint",
       "text": "Мята & Банан"
     }],
-    "availability": 2
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "freedom-antiseptic",
@@ -1689,7 +1781,8 @@
       "value": "bergamot",
       "text": "Бергамот & Жасмин"
     }],
-    "availability": 3
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "freedom-difusser",
@@ -1700,6 +1793,211 @@
       "value": "eastern",
       "text": "Дары востока"
     }],
-    "availability": 5
+    "availability": 4,
+    "badges": ""
+  },
+  {
+    "group": "apron-buon-adult",
+    "id": "0720095(1)",
+    "type": "Фартук Взрослый",
+    "desc": "Универсальный фартук для женщин и мужчин. Регулируемая лямка для того, чтобы каждый мог «настроить» фартук под себя. Держатель для полотенец. Длинные завязки, которые позволяют завязать фартук как сзади, так и спереди. Удобная петелька на обратной стороне. Можно подвернуть и надевать как передник.",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "90см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "selectableProperty": [{
+      "name": "color",
+      "value": "darkblue",
+      "text": "Темной синий"
+    }],
+    "availability": 1,
+    "price": 1800
+  },
+  {
+    "group": "apron-buon-child",
+    "id": "0720096(1)",
+    "type": "Фартук Детский",
+    "desc": "Универсальный фартук для девочек и мальчиков. Регулируемая лямка для того, чтобы каждый мог «настроить» фартук под себя. Держатель для полотенец. Длинные завязки, которые позволяют завязать фартук как сзади, так и спереди. Удобная петелька на обратной стороне. Можно подвернуть и надевать как передник.",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "60см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "selectableProperty": [{
+      "name": "color",
+      "value": "darkblue",
+      "text": "Темно-синий"
+    }],
+    "availability": 1,
+    "price": 1600
+  },
+  {
+    "group": "towel-buon",
+    "id": "0720099(1)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "olive",
+      "text": "Олива"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "towel-buon",
+    "id": "0720099(2)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "figs",
+      "text": "Пыльно-лиловый"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "towel-buon",
+    "id": "0720099(3)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "terracotta",
+      "text": "Терракотовый"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "bag-buon-adult",
+    "id": "0720098(1)",
+    "type": "Шопер Взрослый",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "37см",
+        "width": "42см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "selectableProperty": [{
+      "name": "color",
+      "value": "figs",
+      "text": "Пыльно-лиловый"
+    }],
+    "availability": 1,
+    "price": 2500
+  },
+  {
+    "group": "bag-buon-adult",
+    "id": "0720098(2)",
+    "type": "Шопер Взрослый",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "37см",
+        "width": "42см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "selectableProperty": [{
+      "name": "color",
+      "value": "graphite",
+      "text": "Темное-серый"
+    }],
+    "availability": 1,
+    "price": 2500
+  },
+  {
+    "group": "bag-buon-child",
+    "id": "0720097(1)",
+    "type": "Шопер Детский",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "25см",
+        "width": "30см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "selectableProperty": [{
+      "name": "color",
+      "value": "figs",
+      "text": "Пыльно-лиловый"
+    }],
+    "availability": 1,
+    "price": 1900
+  },
+  {
+    "group": "bag-buon-child",
+    "id": "0720097(2)",
+    "type": "Шопер Детский",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "25см",
+        "width": "30см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "selectableProperty": [{
+      "name": "color",
+      "value": "graphite",
+      "text": "Темное-серый"
+    }],
+    "availability": 1,
+    "price": 1900
+  },
+  {
+    "group": "lorbeer-soap-ribbon",
+    "id": "0820002(1)",
+    "selectableProperty": [],
+    "availability": 10
+  },
+  {
+    "group": "lorbeer-soap-olive",
+    "id": "0820007(1)",
+    "selectableProperty": [],
+    "availability": 6
+  },
+  {
+    "group": "lorbeer-soap-5",
+    "id": "0820003(1)",
+    "selectableProperty": [],
+    "availability": 6
+  },
+  {
+    "group": "lorbeer-soap-12",
+    "id": "0820003(2)",
+    "selectableProperty": [],
+    "availability": 6
+  },
+  {
+    "group": "lorbeer-soap-20",
+    "id": "0820003(3)",
+    "selectableProperty": [],
+    "availability": 4
+  },
+  {
+    "group": "lorbeer-soap-coniferous",
+    "id": "0820006(1)",
+    "selectableProperty": [],
+    "availability": 6
+  },
+  {
+    "group": "lorbeer-washcloth",
+    "id": "0820004(1)",
+    "selectableProperty": [],
+    "availability": 1
   }
 ]

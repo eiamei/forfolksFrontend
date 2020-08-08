@@ -17,7 +17,7 @@
       <div @click="changeDeliveryType">
         <button
           class="clean-button user-info__delivery-button"
-          :class="isSelected(DELIVERY_TYPES.SELF)"
+          :class="isSelected(deliveryType, DELIVERY_TYPES.SELF)"
           type="button" 
           :data-delivery-type="DELIVERY_TYPES.SELF"
         >
@@ -25,7 +25,7 @@
         </button>
         <button
           class="clean-button user-info__delivery-button" 
-          :class="isSelected(DELIVERY_TYPES.SHIPPING)"
+          :class="isSelected(deliveryType, DELIVERY_TYPES.SHIPPING)"
           type="button" 
           :data-delivery-type="DELIVERY_TYPES.SHIPPING"
         >
@@ -33,7 +33,27 @@
         </button>
       </div>
       <template v-if="deliveryType === DELIVERY_TYPES.SELF">
-        <p class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа и оплаты мы договоримся об удобном времени для самовывоза.</p>
+        <p class="regular-sans-text user-info__delivery-info-text">Вы можете выбрать удобный способ оплаты:</p>
+        <div @click="changePaymentType">
+          <button
+            class="clean-button user-info__delivery-button" 
+            :class="isSelected(paymentType, PAYMENT_TYPES.SHOWROOM)"
+            type="button" 
+            :data-payment-type="PAYMENT_TYPES.SHOWROOM"
+          >
+            Оплата в шоуруме
+          </button>
+          <button
+            class="clean-button user-info__delivery-button"
+            :class="isSelected(paymentType, PAYMENT_TYPES.ONLINE)"
+            type="button" 
+            :data-payment-type="PAYMENT_TYPES.ONLINE"
+          >
+            Оплата онлайн
+          </button>
+        </div>
+        <p v-if="paymentType === PAYMENT_TYPES.SHOWROOM" class="regular-sans-text user-info__delivery-info-text">Без оплаты заказ резервируется на три дня. Мы принимаем наличные и банковские карты.</p>
+        <p v-if="paymentType === PAYMENT_TYPES.ONLINE" class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа мы вышлем вам ссылку на оплату. Заказ резервируется бессрочно.</p>
         <p class="regular-sans-text user-info__delivery-info-text">Наш шоурум находится по адресу Санкт-Петербург, 13-линия В.О., д. 72, "Артмуза", 3 этаж пом. 312</p>
       </template>
       <template v-else>
@@ -83,8 +103,13 @@ export default {
         SELF: 0,
         SHIPPING: 1
       },
+      PAYMENT_TYPES: {
+        SHOWROOM: 0,
+        ONLINE: 1
+      },
       license: false,
-      deliveryType: 0
+      deliveryType: 0,
+      paymentType: 0
     }
   },
   methods: {
@@ -102,6 +127,7 @@ export default {
         if (isNoError) {
           const formData = Object.assign({}, this.form);
           formData.deliveryType = this.deliveryType === this.DELIVERY_TYPES.SELF ? 'Самовывоз' : 'Доставка';
+          formData.toPay = this.paymentType === this.PAYMENT_TYPES.SHOWROOM ? 'Шоурум' : 'Онлайн';
           let encoded = Object.keys(formData).map(key => encodeURIComponent(key) + "=" + encodeURIComponent(formData[key])).join('&');
           this.$emit('confirmed', encoded);
         }
@@ -113,8 +139,14 @@ export default {
         this.deliveryType = Number(event.target.getAttribute('data-delivery-type'))
       }
     },
-    isSelected (type) {
-      return type === this.deliveryType ? 'user-info__delivery-button--selected' : '';
+    changePaymentType (event) {
+      event.preventDefault;
+      if (event.target.hasAttribute('data-payment-type')) {
+        this.paymentType = Number(event.target.getAttribute('data-payment-type'))
+      }
+    },
+    isSelected (property, type) {
+      return property === type ? 'user-info__delivery-button--selected' : '';
     }
   }
 };

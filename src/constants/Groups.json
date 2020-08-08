@@ -1935,5 +1935,329 @@
     "badges": "new",
     "discountGroup": "suplier",
     "price": 900
+  },
+  "apron-buon-adult": {
+    "rootPath": "apron-buon-adult",
+    "name": "Solo",
+    "type": "Фартук",
+    "category": ["textile"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "90см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "care": {
+      "header": "Уход за Фартуком",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 0
+  },
+  "apron-buon-child": {
+    "rootPath": "apron-buon-child",
+    "name": "Solo",
+    "type": "Фартук",
+    "category": ["textile"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "90см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "care": {
+      "header": "Уход за Фартуком",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 0
+  },
+  "towel-buon": {
+    "rootPath": "towel-buon",
+    "name": "Comfort",
+    "type": "Вафельное полотенце",
+    "category": ["textile"],
+    "desc": "Универсальные вафельные полотенца, которые идеально подходят как для ванной, так и для кухни. Отлично впитывают влагу, быстро высыхают. С каждой стиркой становятся только мягче.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Хлопок", "Лён"],
+      "size": {
+        "width": "45см",
+        "length": "65см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "care": {
+      "header": "Уход за полотенцем",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 500
+  },
+  "bag-buon-bonjour": {
+    "rootPath": "bag-buno-bonjour",
+    "name": "Bonjour",
+    "category": ["textile"],
+    "desc": "Универсальный мешочек из натурального льна для хранения продуктов и вещей. Удобные завязки с двусторонней затяжкой. Все мешочки с классическими бельевыми швами, что делает изделие прочным и долговечным.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {},
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "care": {
+      "header": "Уход за мешочком",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 0
+  },
+  "bag-buon-adult": {
+    "rootPath": "bag-buon-adult",
+    "name": "Scandi",
+    "category": ["textile"],
+    "desc": "Двойная сумка-шоппер из мягкого плотного льна, который не дает усадку.  Два вида ручек позволяют удобно носить сумку на плече и в руках.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "30см",
+        "width": "25см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "care": {
+      "header": "Уход за мешочком",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 1900
+  },
+  "bag-buon-child": {
+    "rootPath": "bag-buon-child",
+    "name": "Scandi",
+    "category": ["textile"],
+    "desc": "Двойная сумка-шоппер для деток из мягкого плотного льна, который не дает усадку. Удобный аксессуар на все случаи жизни — в сад и школу, в парк и на пляж, для города и деревни. ",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "length": "30см",
+        "width": "25см"
+      },
+      "createdBy": {
+        "design": "BUON TESSUTO"
+      }
+    },
+    "care": {
+      "header": "Уход за мешочком",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 1900
+  },
+  "lorbeer-soap-ribbon": {
+    "rootPath": "lorbeer-soap-ribbon",
+    "name": "Мыло",
+    "type": "Алепское",
+    "category": ["soap"],
+    "desc": "Это оливковое масло в мыльной форме, чьи легендарные свойства по уходу за кожей остаются непревзойденными. Подходит для всех типов кожи, для ежедневного ухода и очищения. Оливковое масло обеспечивает компонентами которые глубоко очищают, увлажняют, питают и смягчают кожу, делают ее гладкой.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Оливковое масло, Каустическая сода, Вода"],
+      "size": {
+        "weight": "180г"
+      },
+      "createdBy": {
+        "design": "Lorbeer"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 400
+  },
+  "lorbeer-soap-olive": {
+    "rootPath": "lorbeer-soap-olive",
+    "name": "Мыло",
+    "type": "Оливковое",
+    "category": ["soap"],
+    "desc": "Это оливковое масло в мыльной форме, чьи легендарные свойства по уходу за кожей остаются непревзойденными. Подходит для всех типов кожи, для ежедневного ухода и очищения. Оливковое масло обеспечивает компонентами которые глубоко очищают, увлажняют, питают и смягчают кожу, делают ее гладкой.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Оливковое масло, Каустическая сода, Вода"],
+      "size": {
+        "weight": "125г"
+      },
+      "createdBy": {
+        "design": "Lorbeer"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 490
+  },
+  "lorbeer-soap-5": {
+    "rootPath": "lorbeer-soap-5",
+    "name": "Мыло",
+    "type": "Оливковое c Лавром 5%",
+    "category": ["soap"],
+    "desc": "Оливковое мыло с добавлением лаврового масла 5%, рекомендуется для ежедневного ухода и очищения, подходит для всех типов кожи. Оно защищает, питает, стимулирует, увлажняет и смягчает кожу. Масло лавра славится своими антибактериальными и дезинфицирующими свойствами",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["95% Оливковое масло, 5% Лавровое масло, Каустическая сода, Вода"],
+      "size": {
+        "weight": "180г"
+      },
+      "createdBy": {
+        "design": "Lorbeer"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 450
+  },
+  "lorbeer-soap-12": {
+    "rootPath": "lorbeer-soap-12",
+    "name": "Мыло",
+    "type": "Оливковое c Лавром 12%",
+    "category": ["soap"],
+    "desc": "Классическое для алеппского мыла соотношение оливкового и лаврового масла. Подходит для ежедневного применения для всех типов кожи и волос. Рекомендуется тем, кто пробует традиционное мыло впервые.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["88% Оливковое масло, 12% Лавровое масло, Каустическая сода, Вода"],
+      "size": {
+        "weight": "180г"
+      },
+      "createdBy": {
+        "design": "Lorbeer"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 490
+  },
+  "lorbeer-soap-20": {
+    "rootPath": "lorbeer-soap-20",
+    "name": "Мыло",
+    "type": "Оливковое c Лавром 20%",
+    "category": ["soap"],
+    "desc": "Оливковое мыло с высоким содержанием лечебного лаврового масла. Обладает увлажняющими, успокаивающими и антиоксидантными свойствами оливкового масла в сочетании с антибактериальными, антисептическими, противогрибковыми и смягчающими свойствами лаврового масла, этот продукт подходит для гигиены проблемной, раздраженной кожи, угревой сыпи, псориаза или экземы,против перхоти. Стимулироет рост волос и укрепляет их.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["80% Оливковое масло, 20% Лавровое масло, Каустическая сода, Вода"],
+      "size": {
+        "weight": "170г"
+      },
+      "createdBy": {
+        "design": "Lorbeer"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 590
+  },
+  "lorbeer-soap-coniferous": {
+    "rootPath": "lorbeer-soap-coniferous",
+    "name": "Мыло",
+    "type": "Оливковое c хвойным маслом",
+    "category": ["soap"],
+    "desc": "Оливковое масло – омолаживает, смягчает, увлажняет и питает кожу и волосы, идеально подходит для всех типов кожи и волос. <br><br> Сосновое масло содержит терпеновые углеводороды, простые и сложные эфиры, обладает антисептическим, дезинфицирующим, противовоспалительным, общестимулирующим, восстанавливающим действием.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Оливковое масло, Хвойное эфирное масло, Каустическая сода, Вода"],
+      "size": {
+        "weight": "125г"
+      },
+      "createdBy": {
+        "design": "Lorbeer"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 490
+  },
+  "lorbeer-washcloth": {
+    "rootPath": "lorbeer-washcloth",
+    "name": "Мочалка-варежка",
+    "type": "Из Люффы",
+    "category": ["accessories"],
+    "desc": "Мочалка-варежка, выполненная из двух разных материалов. С одной стороны слой из люффы, с другой стороны слой сшитый из конопляных нитей.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Люффа, Конопляные нити"],
+      "size": {
+        "width": "8 см",
+        "length": "15 см"
+      },
+      "createdBy": {
+        "design": "Lorbeer"
+      }
+    },
+    "care": {
+      "header": "Уход за мочалкой",
+      "text": "Мочалку следует сушить вертикально."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 450
   }
 }
