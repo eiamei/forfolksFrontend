@@ -84,6 +84,18 @@
         background: $coated;
       }
 
+      &--light-gray {
+        background: $light-gray-cloth;
+      }
+
+      &--natural-linen {
+        background: $natural-linen;
+      }
+
+      &--blue-line {
+        background: $blue-line;
+      }
+
       &--pearl {
         background: $pearl;
       }

@@ -15,6 +15,8 @@ $horizontal-tablet: 764px;
 
 // Materials colors
 $coated: #FFFDF6;
+$light-gray-cloth: #d3d8da;
+$natural-linen: #ddd8cd;
 $pearl: #eee5d2;
 $sand: #e2cd9e;
 $powder: #e9d8d8;
@@ -27,6 +29,7 @@ $gray: #7B7A7A;
 $graphite: #554d4f;
 
 $gray_fog: linear-gradient(180deg, #FFFFFF 34.31%, #7B7A7A 76.92%);
+$blue-line: linear-gradient(145deg, #FFF 35%, rgb(199, 200, 235) 51.56%, #FFF 65%);
 $fog: linear-gradient(180deg, #FFFFFF 34.31%, #7B7A7A 76.92%);
 $jupiter: linear-gradient(180deg, #d4c0af 35%, #FFF 51.56%, #d4c0af 65%);
 $neptun: linear-gradient(180deg, #afc2d4 35%, #FFF 51.56%, #afc2d4 65%);
