@@ -84,6 +84,14 @@
         background: $coated;
       }
 
+      &--silver {
+        background: $silver;
+      }
+
+      &--cream {
+        background: $cream;
+      }
+
       &--light-gray {
         background: $light-gray-cloth;
       }

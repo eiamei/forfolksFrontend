@@ -50,6 +50,9 @@ export const bagGetters = {
 
       discountTotal += qty * price;
     });
-    return {realTotal, discountTotal};
+    return {
+      realTotal: realTotal.toFixed(2),
+      discountTotal: discountTotal.toFixed(2)
+    };
   }
 }

@@ -22,6 +22,14 @@ export const promoState = {
       discountByGroup: {
         forfolks: 0.8,
       }
+    },
+    summer: {
+      name: 'summer',
+      untill: 1597586400000, // august 16, 17:00, MSK
+      discountByGroup: {
+        forfolks: 0.9,
+        suplier: 0.97
+      }
     }
   },
   selectedDiscount: null,

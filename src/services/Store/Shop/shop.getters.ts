@@ -123,7 +123,7 @@ export const shopGetters = {
                   if (index > 0) sizes += ', ';
                   sizes += `${i18n.t('size.' + sizeKey)} ${item.itemProperty[key][sizeKey]}`
                 })
-              properties.push(sizes);
+              properties.push(`Размер: ${sizes}`);
               break;
             }
             case 'material' : {
@@ -133,11 +133,15 @@ export const shopGetters = {
                   if (index > 0) materials += ', ';
                   materials += material
                 })
-              properties.push(materials);
+              properties.push(`Материал: ${materials}`);
               break;
             }
             case 'weight' : {
-              properties.push(`${item.itemProperty[key]} г`);
+              properties.push(`Вес: ${item.itemProperty[key]} г`);
+              break;
+            }
+            case 'color' : {
+              properties.push(`Цвет: ${item.itemProperty[key]}`);
               break;
             }
           }
