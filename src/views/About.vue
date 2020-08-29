@@ -6,6 +6,8 @@
       <p>+7 (999) 239-66-10</p>
       <h4>Шоурум</h4>
       <p>Санкт-Петербург, 13-линия В.О., д. 72, "Артмуза", 3 этаж пом. 312</p>
+      <h4>График работы ({{dateDecorator(mondayDate)}}-{{dateDecorator(sundayDate)}})</h4>
+      <p>Каждую неделю мы немного меняем наш график, пожалуйста, следите за ним на нашем сайте или в instagram</p>
       <ul class="about__timetable">
         <li v-for="time in timetable" :key="time.name">{{time.name}}: {{time.time}}</li>
       </ul>
@@ -44,6 +46,31 @@
         this.timetable = await result.json() || [];
       } catch (e) {
         this.timetable = []
+      }
+    },
+    computed: {
+      mondayDate () {
+        const current = new Date();
+        const currentDay = current.getDay();
+        const diff = current.getDate() - currentDay + (currentDay == 0 ? -6:1); // adjust when day is sunday
+        return new Date(current.setDate(diff));
+      },
+      sundayDate () {
+        const monday = new Date(this.mondayDate);
+        return new Date(monday.setDate(monday.getDate() + 6));
+      },
+    },
+    methods: {
+      dateDecorator (date) {
+        let day = String(date.getDate());
+        let month = String(date.getMonth() + 1);
+        function dateToTwoNumber (dt) {
+          if (dt.length === 1) {
+            return `0${dt}`;
+          }
+          return dt;
+        }
+        return `${dateToTwoNumber(day)}.${dateToTwoNumber(month)}`;
       }
     }
   });

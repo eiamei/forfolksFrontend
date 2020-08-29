@@ -104,7 +104,7 @@
         background: $blue-line;
       }
 
-      &--pearl {
+      &--pearl, &--milk {
         background: $pearl;
       }
 

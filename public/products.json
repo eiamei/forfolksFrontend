@@ -38,7 +38,7 @@
       "text": "Белый"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "stand-basic-s",
@@ -49,7 +49,7 @@
       "text": "Графит"
     }],
     "layout": "high",
-    "availability": 0
+    "availability": 2
   },
   {
     "group": "stand-basic-s",
@@ -60,7 +60,7 @@
       "text": "Черный мрамор"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 3
   },
   {
     "group": "stand-basic-s",
@@ -71,7 +71,7 @@
       "text": "Пудра"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "stand-cone-s",
@@ -82,7 +82,7 @@
       "text": "Белый"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 0
   },
   {
     "group": "stand-cone-s",
@@ -93,7 +93,7 @@
       "text": "Графит"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-cone-s",
@@ -104,7 +104,7 @@
       "text": "Серый туман"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-cone-s",
@@ -115,7 +115,7 @@
       "text": "Пудра"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-cone-s",
@@ -126,7 +126,7 @@
       "text": "Голубой"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "tray-tray",
@@ -136,7 +136,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "tray-tray",
@@ -156,7 +156,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "basic-incense",
@@ -199,7 +199,7 @@
       "name": "color",
       "text": "Пудра"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -210,7 +210,7 @@
       "name": "color",
       "text": "Белый мрамор"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -426,7 +426,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "vase-mild",
@@ -446,7 +446,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 0
+    "availability": 2
   },
   {
     "group": "vase-mild",
@@ -456,7 +456,7 @@
       "name": "color",
       "text": "Серый туман"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "cup-mild",
@@ -486,7 +486,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 0
+    "availability": 2
   },
   {
     "group": "cup-mild",
@@ -563,7 +563,7 @@
     "id": "0220001(1)",
     "selectableProperty": [],
     "price": 1300,
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "panno-wind",
@@ -770,7 +770,7 @@
       "name": "color",
       "text": "Черный"
     }],
-    "availability": 29,
+    "availability": 28,
     "badges": ""
   },
   {
@@ -792,7 +792,7 @@
       "name": "color",
       "text": "Какао"
     }],
-    "availability": 12,
+    "availability": 10,
     "badges": "new"
   },
   {
@@ -803,7 +803,7 @@
       "name": "color",
       "text": "Песочный"
     }],
-    "availability": 16,
+    "availability": 15,
     "badges": "new"
   },
   {
@@ -824,7 +824,7 @@
     "group": "small-bamboo-brush",
     "id": "0720059(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -856,13 +856,6 @@
   {
     "group": "linen-bag-gray-big",
     "id": "0720061(2)",
-    "selectableProperty": [],
-    "availability": 4,
-    "badges": ""
-  },
-  {
-    "group": "linen-bag-gray-small",
-    "id": "0720061(1)",
     "selectableProperty": [],
     "availability": 4,
     "badges": ""
@@ -929,7 +922,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": 700,
     "badges": ""
   },
@@ -1355,7 +1348,7 @@
       "value": "birch",
       "text": "birch"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1367,7 +1360,7 @@
       "value": "fern-dava",
       "text": "Fern dava"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1435,7 +1428,7 @@
       "value": "gingerbread",
       "text": "Имбирный пряник"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1471,7 +1464,7 @@
       "value": "orange-cinnamon",
       "text": "Апельсин & Корица"
     }],
-    "availability": 1,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1483,7 +1476,7 @@
       "value": "vanilla-banana",
       "text": "Ваниль & Банан"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1495,7 +1488,7 @@
       "value": "chocolate-walnut-ginger",
       "text": "Шоколад & Грецкий орех & Корица"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1507,7 +1500,7 @@
       "value": "coffee-cinnamon",
       "text": "Кофе & Корица"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1532,7 +1525,7 @@
       "text": "Барбарис & Жасмин"
     }],
     "availability": 1,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1555,8 +1548,8 @@
       "value": "lavander-verbera",
       "text": "Лаванда & Вербера"
     }],
-    "availability": 1,
-    "badges": "new"
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1567,8 +1560,8 @@
       "value": "lemongrass-cloves-ginger",
       "text": "Лемонграсс & Гвоздика & Имбирь"
     }],
-    "availability": 1,
-    "badges": "new"
+    "availability": 2,
+    "badges": ""
   },
   {
     "group": "candle-freedom",
@@ -1579,8 +1572,8 @@
       "value": "needles-almonds",
       "text": "Хвоя & Миндаль"
     }],
-    "availability": 1,
-    "badges": "new"
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "carrotlab-soap-marseille",
@@ -1593,13 +1586,14 @@
     "group": "carrotlab-soap-oatmeal",
     "id": "0720005(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 0,
     "badges": "",
     "price": 300
   },
@@ -1607,7 +1601,8 @@
     "group": "carrotlab-soap-dishes",
     "id": "0720006(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 2,
+    "badges": ""
   },
   {
     "group": "carrotlab-soap-laundry",
@@ -1659,7 +1654,7 @@
     "type": "Грейпфрутовое",
     "id": "0720091(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1673,14 +1668,14 @@
     "group": "carrotlab-soap-flower",
     "id": "0720087(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
     "group": "carrotlab-soap-honey",
     "id": "0720088(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1857,7 +1852,7 @@
       "value": "eastern",
       "text": "Дары востока"
     }],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1871,7 +1866,7 @@
       "text": "Йеллоустон"
     }],
     "availability": 2,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "freedom-difusser",
@@ -1883,8 +1878,8 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 1,
-    "badges": "new"
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "freedom-difusser",
@@ -1897,7 +1892,7 @@
       "text": "Летний сад"
     }],
     "availability": 2,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "freedom-difusser",
@@ -1922,8 +1917,8 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 2,
-    "badges": "new"
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "freedom-difusser",
@@ -1935,8 +1930,8 @@
       "value": "tibet",
       "text": "Тибет"
     }],
-    "availability": 2,
-    "badges": "new"
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "apron-buon-adult",
@@ -1958,7 +1953,8 @@
       "text": "Темной синий"
     }],
     "availability": 1,
-    "price": 1800
+    "price": 1800,
+    "badges": ""
   },
   {
     "group": "apron-buon-child",
@@ -1980,7 +1976,8 @@
       "text": "Темно-синий"
     }],
     "availability": 1,
-    "price": 1600
+    "price": 1600,
+    "badges": ""
   },
   {
     "group": "towel-buon",
@@ -1990,7 +1987,8 @@
       "value": "olive",
       "text": "Олива"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "towel-buon",
@@ -2000,7 +1998,8 @@
       "value": "figs",
       "text": "Пыльно-лиловый"
     }],
-    "availability": 2
+    "availability": 2,
+    "badges": ""
   },
   {
     "group": "towel-buon",
@@ -2010,7 +2009,8 @@
       "value": "terracotta",
       "text": "Терракотовый"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "sack-buon-tessuto",
@@ -2035,8 +2035,9 @@
       "value": "figs",
       "text": "Пыльно-лиловый"
     }],
-    "availability": 2,
-    "price": 300
+    "availability": 0,
+    "price": 300,
+    "badges": ""
   },
   {
     "group": "sack-buon-tessuto",
@@ -2062,7 +2063,8 @@
       "text": "Графит"
     }],
     "availability": 2,
-    "price": 350
+    "price": 350,
+    "badges": ""
   },
   {
     "group": "sack-buon-tessuto",
@@ -2088,7 +2090,8 @@
       "text": "Натуральный"
     }],
     "availability": 2,
-    "price": 350
+    "price": 350,
+    "badges": ""
   },
   {
     "group": "bag-buon-adult",
@@ -2110,7 +2113,8 @@
       "text": "Пыльно-лиловый"
     }],
     "availability": 1,
-    "price": 2500
+    "price": 2500,
+    "badges": ""
   },
   {
     "group": "bag-buon-adult",
@@ -2132,7 +2136,8 @@
       "text": "Темное-серый"
     }],
     "availability": 1,
-    "price": 2500
+    "price": 2500,
+    "badges": ""
   },
   {
     "group": "bag-buon-child",
@@ -2154,7 +2159,8 @@
       "text": "Пыльно-лиловый"
     }],
     "availability": 1,
-    "price": 1900
+    "price": 1900,
+    "badges": ""
   },
   {
     "group": "bag-buon-child",
@@ -2176,49 +2182,57 @@
       "text": "Темное-серый"
     }],
     "availability": 1,
-    "price": 1900
+    "price": 1900,
+    "badges": ""
   },
   {
     "group": "lorbeer-soap-ribbon",
     "id": "0820002(1)",
     "selectableProperty": [],
-    "availability": 7
+    "availability": 6,
+    "badges": ""
   },
   {
     "group": "lorbeer-soap-olive",
     "id": "0820007(1)",
     "selectableProperty": [],
-    "availability": 6
+    "availability": 6,
+    "badges": ""
   },
   {
     "group": "lorbeer-soap-5",
     "id": "0820003(1)",
     "selectableProperty": [],
-    "availability": 6
+    "availability": 6,
+    "badges": ""
   },
   {
     "group": "lorbeer-soap-12",
     "id": "0820003(2)",
     "selectableProperty": [],
-    "availability": 6
+    "availability": 6,
+    "badges": ""
   },
   {
     "group": "lorbeer-soap-20",
     "id": "0820003(3)",
     "selectableProperty": [],
-    "availability": 4
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "lorbeer-soap-coniferous",
     "id": "0820006(1)",
     "selectableProperty": [],
-    "availability": 6
+    "availability": 6,
+    "badges": ""
   },
   {
     "group": "lorbeer-washcloth",
     "id": "0820004(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "enlin-sheet",
@@ -2244,7 +2258,8 @@
       "value": "peach",
       "text": "Персиковый"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "enlin-sheet",
@@ -2270,7 +2285,8 @@
       "value": "light-gray",
       "text": "Светло-Серая"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": ""
   },
   {
     "group": "enlin-duvon-cover",
@@ -2298,7 +2314,8 @@
       "text": "Светло-Серый"
     }],
     "availability": 1,
-    "price": 6990
+    "price": 6990,
+    "badges": ""
   },
   {
     "group": "enlin-duvon-cover",
@@ -2326,7 +2343,8 @@
       "text": "Персиковый"
     }],
     "availability": 1,
-    "price": 7290
+    "price": 7290,
+    "badges": ""
   },
   {
     "group": "enlin-pillowcase",
@@ -2354,7 +2372,8 @@
       "text": "Персиковый"
     }],
     "availability": 2,
-    "price": 2990
+    "price": 2990,
+    "badges": ""
   },
   {
     "group": "enlin-pillowcase",
@@ -2382,7 +2401,8 @@
       "text": "Светло-Серый"
     }],
     "availability": 2,
-    "price": 2790
+    "price": 2790,
+    "badges": ""
   },
   {
     "group": "enlin-tablecloth-150-250",
@@ -2405,7 +2425,8 @@
       "text": "Белый"
     }],
     "availability": 1,
-    "price": 3490
+    "price": 3490,
+    "badges": ""
   },
   {
     "group": "enlin-tablecloth-150-150",
@@ -2428,7 +2449,8 @@
       "text": "Белый"
     }],
     "availability": 1,
-    "price": 2490
+    "price": 2490,
+    "badges": ""
   },
   {
     "group": "enlin-tablecloth-150-250",
@@ -2451,7 +2473,8 @@
       "text": "Натуральный"
     }],
     "availability": 1,
-    "price": 3490
+    "price": 3490,
+    "badges": ""
   },
   {
     "group": "enlin-tablecloth-150-150",
@@ -2474,7 +2497,8 @@
       "text": "Натуральный"
     }],
     "availability": 1,
-    "price": 2490
+    "price": 2490,
+    "badges": ""
   },
   {
     "group": "enlin-tablecloth-150-250",
@@ -2497,7 +2521,8 @@
       "text": "Белый в синюю полоску"
     }],
     "availability": 1,
-    "price": 3490
+    "price": 3490,
+    "badges": ""
   },
   {
     "group": "enlin-tablecloth-150-150",
@@ -2520,7 +2545,8 @@
       "text": "Белый в синюю полоску"
     }],
     "availability": 1,
-    "price": 2490
+    "price": 2490,
+    "badges": ""
   },
   {
     "group": "enlin-napkin-4",
@@ -2543,7 +2569,8 @@
       "text": "Белый"
     }],
     "availability": 2,
-    "price": 1890
+    "price": 1890,
+    "badges": ""
   },
   {
     "group": "enlin-napkin-6",
@@ -2566,7 +2593,8 @@
       "text": "Белый"
     }],
     "availability": 2,
-    "price": 2790
+    "price": 2790,
+    "badges": ""
   },
   {
     "group": "enlin-napkin-4",
@@ -2589,7 +2617,8 @@
       "text": "Натуральный"
     }],
     "availability": 1,
-    "price": 1890
+    "price": 1890,
+    "badges": ""
   },
   {
     "group": "enlin-napkin-6",
@@ -2612,7 +2641,8 @@
       "text": "Натуральный"
     }],
     "availability": 1,
-    "price": 2790
+    "price": 2790,
+    "badges": ""
   },
   {
     "group": "enlin-napkin-4",
@@ -2635,7 +2665,8 @@
       "text": "Белый в синюю полоску"
     }],
     "availability": 1,
-    "price": 1890
+    "price": 1890,
+    "badges": ""
   },
   {
     "group": "enlin-napkin-6",
@@ -2658,7 +2689,8 @@
       "text": "Белый в синюю полоску"
     }],
     "availability": 1,
-    "price": 2790
+    "price": 2790,
+    "badges": ""
   },
   {
     "group": "enlin-towel-38-55",
@@ -2737,7 +2769,7 @@
       "value": "black",
       "text": "Черный"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "enlin-bag",
@@ -2925,6 +2957,123 @@
     "group": "madera-boardsmall",
     "id": "0820051(1)",
     "selectableProperty": [],
+    "availability": 0
+  },
+  {
+    "group": "tabula-tallrik-fero",
+    "id": "0820052(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-tallrik-flumen",
+    "id": "0820055(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-tallrik-retic",
+    "id": "0820057(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-tallrik-retic-black",
+    "id": "0820057(2)",
+    "selectableProperty": [],
+    "availability": 0
+  },
+  {
+    "group": "tabula-tallrik-swell",
+    "id": "0820056(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-tallrik-swell-black",
+    "id": "0820056(2)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-tallrik-whiskey",
+    "id": "0820058(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "linav-basket",
+    "id": "0820093(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "s",
+      "text": "S"
+    }],
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "height": "18см",
+        "length": "17см",
+        "width": "13см"
+      },
+      "createdBy": {
+        "design": "Linav"
+      }
+    },
+    "availability": 2,
+    "price": 790
+  },
+  {
+    "group": "linav-basket",
+    "id": "0820094(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "m",
+      "text": "M"
+    }],
+    "itemProperty": {
+      "material": ["Лён"],
+      "size": {
+        "height": "32см",
+        "length": "28см",
+        "width": "17см"
+      },
+      "createdBy": {
+        "design": "Linav"
+      }
+    },
+    "availability": 2,
+    "price": 990
+  },
+  {
+    "group": "linav-towel-small",
+    "id": "0820095(1)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "brown",
+      "text": "Коричневое"
+    }],
+    "availability": 1,
+    "price": 390
+  },
+  {
+    "group": "linav-towel-big",
+    "id": "0820096(1)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "green",
+      "text": "Зеленое"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "linav-towel-big",
+    "id": "0820096(2)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "milk",
+      "text": "Молочное"
+    }],
     "availability": 1
   }
 ]
