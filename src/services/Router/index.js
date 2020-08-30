@@ -47,7 +47,7 @@ let routes = [
     }
   },
   {
-    path: '/store/room/:material',
+    path: '/store/room/:room',
     name: 'storeByRoom',
     component: Catalogue,
     meta: {

@@ -15,32 +15,27 @@ export default {
   data () {
     return {
       widesMap: {},
-      loadCounter: 0,
       type: null,
-      material: null,
+      room: null,
       counter: 0,
       containerWidth: 0
     }
   },
   created () {
     this.type = this.$route.params.type || null;
-    this.material = this.$route.params.room || null;
+    this.room = this.$route.params.room || null;
   },
   watch: {
     windowWidth () {
       this.containerWidth = this.$el.offsetWidth;
-      if (this.isLoaded)
-        this.createMap();
     },
     '$route.params.type' (value) {
-      this.loadCounter = 0;
       this.counter++;
       this.type = value;
     },
-    '$route.params.material' (value) {
-      this.loadCounter = 0;
+    '$route.params.room' (value) {
       this.counter++;
-      this.material = value;
+      this.room = value;
     }
   },
   computed: {
@@ -55,7 +50,7 @@ export default {
             width: 0,
             height: 0
           };
-        else if (this.room !== null && item.itemProperty.room.includes(this.room))
+        else if (this.room !== null && item.room.includes(this.room))
           return {
             ...item,
             width: 0,

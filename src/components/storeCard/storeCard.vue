@@ -105,8 +105,9 @@
     methods: {
       imageLoaded(): void {
         this.isShowInfo = true;
-        // @ts-ignore
-        this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
+        if (this.$refs.image)
+          // @ts-ignore
+          this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
       },
       getLink(): string {
         let path = this.item.rootPath;

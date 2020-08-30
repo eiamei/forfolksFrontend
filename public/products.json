@@ -972,6 +972,7 @@
     "group": "choli-katushka",
     "id": "0720011(2)",
     "name": "Катушка S",
+    "category": ["cachepot"],
     "selectableProperty": [{
       "name": "model",
       "value": "S",
@@ -995,6 +996,7 @@
     "group": "choli-katushka",
     "id": "0720011(3)",
     "name": "Катушка M",
+    "category": ["cachepot"],
     "selectableProperty": [{
       "name": "model",
       "value": "M",
@@ -1018,6 +1020,7 @@
     "group": "choli-katushka",
     "id": "0720011(4)",
     "name": "Катушка L",
+    "category": ["cachepot", "basket"],
     "selectableProperty": [{
       "name": "model",
       "value": "L",
@@ -1041,6 +1044,7 @@
     "group": "choli-katushka",
     "id": "0720011(1)",
     "name": "Катушка XL",
+    "category": ["cachepot", "basket"],
     "selectableProperty": [{
       "name": "model",
       "value": "xl",

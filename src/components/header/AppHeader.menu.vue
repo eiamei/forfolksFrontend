@@ -53,10 +53,10 @@
           to: '/store/category/board',
           text: 'Разделочные доски'
         }, {
-          to: '/store/category/candles',
+          to: '/store/category/candle',
           text: 'Свечи'
         }, {
-          to: '/store/category/diffusers',
+          to: '/store/category/diffuser',
           text: 'Диффузоры'
         }, {
           to: '/store/category/soap',
@@ -68,10 +68,10 @@
           to: '/store/category/plate',
           text: 'Подставки'
         }, {
-          to: '/store/category/badsheets',
+          to: '/store/category/bedsheet',
           text: 'Постельное белье'
         }, {
-          to: '/store/category/bags',
+          to: '/store/category/bag',
           text: 'Сумки'
         }, {
           to: '/store/category/kitchentextile',
@@ -80,8 +80,11 @@
           to: '/store/category/macrame',
           text: 'Макраме'
         }, {
-          to: '/store/category/driedflowers',
+          to: '/store/category/driedflower',
           text: 'Сухоцветы'
+        }, {
+          to: '/store/category/toy',
+          text: 'Игрушки'
         }],
         byRoom: [{
           to: '/store/room/kitchen',
@@ -90,11 +93,17 @@
           to: '/store/room/dinning',
           text: 'Столовая'
         }, {
+          to: '/store/room/guest',
+          text: 'Гостинная'
+        }, {
           to: '/store/room/bed',
           text: 'Спальня'
         }, {
           to: '/store/room/bath',
           text: 'Ванная'
+        }, {
+          to: '/store/room/child',
+          text: 'Дети'
         }, {
           to: '/store/room/aroma',
           text: 'Ароматы'
