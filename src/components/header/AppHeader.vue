@@ -1,17 +1,19 @@
 <template>
-  <nav :class="headerClass">
-    <button :class="menuButtonClass" @click="toogleMenu" title="Открыть меню">
-      <hamburger></hamburger>
-    </button>
-    <router-link to="/" class="header-logo">
-      <forfolks-logo/>
-    </router-link>
-    <router-link class="header-bag" to="/bag">
-      <p class="header-bag__qty" v-if="this.bagQty">{{this.bagQty}}</p>
-      <component class="header-bag__icon" :is="bagType" />
-    </router-link>
+  <header class="header-container">
+    <nav :class="headerClass">
+      <button :class="menuButtonClass" @click="toogleMenu" title="Открыть меню">
+        <hamburger></hamburger>
+      </button>
+      <router-link to="/" class="header-logo">
+        <forfolks-logo/>
+      </router-link>
+      <router-link class="header-bag" to="/bag">
+        <p class="header-bag__qty" v-if="this.bagQty">{{this.bagQty}}</p>
+        <component class="header-bag__icon" :is="bagType" />
+      </router-link>
+    </nav>
     <app-header-menu class="header-menu-container" :isOpen="isMenuOpen" @close="toogleMenu"/>
-  </nav>
+  </header>
 </template>
 
 <script>
@@ -68,6 +70,9 @@
   @import '../../assets/styles/vars';
   @import '../../assets/styles/colors';
   @import 'src/assets/styles/z-index';
+  .header-container {
+    position: relative;
+  }
   .header {
     position: fixed;
     display: flex;

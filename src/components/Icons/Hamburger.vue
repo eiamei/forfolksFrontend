@@ -14,8 +14,8 @@
 
 <style lang="scss">
   .hamburger-icon {
-    width: 32px;
-    height: 12px;
+    width: 2rem;
+    height: 0.75rem;
     &__first-line, &__second-line {
         transition: transform 0.3s, fill 0.3s;
         transform-origin: 50% 50%;

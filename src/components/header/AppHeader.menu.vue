@@ -1,5 +1,5 @@
 <template>
-  <nav :class="containerClass" @click="close">
+  <nav :class="containerClass" @click="close" @scroll="scroll">
     <ul class="menu-catalogue">
       <li class="menu-catalogue__item" v-for="link in byCategory" :key="link.to">
         <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
@@ -143,6 +143,10 @@
     methods: {
       close () {
         this.$emit('close');
+      },
+      scroll (event) {
+        event.preventDefault();
+        event.stopPropagation();
       }
     }
   };
@@ -151,10 +155,11 @@
 <style lang="scss">
   @import '../../assets/styles/vars';
   .menu-container {
-    position: absolute;
-      display: flex;
+    position: fixed;
+    z-index: 1;
+    display: flex;
     left: 0;
-    top: 0;
+    top: 20px;
     width: 100%;
     height: 100vh;
     padding: 2.5rem 0.5rem;
@@ -168,6 +173,9 @@
                 backdrop-filter 0.8s cubic-bezier(0.22, 0.61, 0.41, 1.08),
                 opacity 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08),
                 visibility 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08) 0s;
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
     &--shown {
       background-color: rgba(255, 255, 255, .8);
       backdrop-filter: blur(12px);
@@ -175,9 +183,8 @@
       visibility: visible;
     }
     .menu-catalogue, .menu-links {
-      width: 14rem;
       padding: 0;
-      margin: 0.25rem 0 0 0;
+      margin: 1rem 4rem 2rem 0.5rem;
       white-space: nowrap;
       &__item {
         list-style: none;
@@ -188,19 +195,10 @@
         font-size: 1.5rem;
         color: black;
         text-decoration: none;
-        &:hover {
-          color: $dark-blue;
+        @media screen and (max-width: $mobile) {
+          flex-direction: column;
+          font-size: 2.5rem;
         }
-      }
-    }
-    .menu-catalogue {
-      margin-left: 0.5rem;
-      margin-right: 4rem;
-    }
-    .menu-links {
-      width: 300px;
-      &__text {
-        font-weight: 400;
         &:hover {
           color: $dark-blue;
         }

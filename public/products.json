@@ -1882,7 +1882,7 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1908,7 +1908,7 @@
       "value": "provence",
       "text": "Поля прованса"
     }],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1921,7 +1921,7 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 1,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -2002,7 +2002,7 @@
       "value": "figs",
       "text": "Пыльно-лиловый"
     }],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -2066,7 +2066,7 @@
       "value": "graphite",
       "text": "Графит"
     }],
-    "availability": 2,
+    "availability": 0,
     "price": 350,
     "badges": ""
   },
