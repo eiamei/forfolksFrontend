@@ -24,7 +24,7 @@ export default {
   },
   created () {
     this.type = this.$route.params.type || null;
-    this.material = this.$route.params.material || null;
+    this.material = this.$route.params.room || null;
   },
   watch: {
     windowWidth () {
@@ -55,7 +55,7 @@ export default {
             width: 0,
             height: 0
           };
-        else if (this.material !== null && item.itemProperty.material.includes(this.material))
+        else if (this.room !== null && item.itemProperty.room.includes(this.room))
           return {
             ...item,
             width: 0,

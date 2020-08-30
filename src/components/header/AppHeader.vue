@@ -1,13 +1,16 @@
 <template>
   <nav :class="headerClass">
-    <app-header-menu class="header-menu-container"/>
+    <button :class="menuButtonClass" @click="toogleMenu" title="Открыть меню">
+      <hamburger></hamburger>
+    </button>
     <router-link to="/" class="header-logo">
       <forfolks-logo/>
     </router-link>
     <router-link class="header-bag" to="/bag">
-      <component class="header-bag__icon" :is="bagType" />
       <p class="header-bag__qty" v-if="this.bagQty">{{this.bagQty}}</p>
+      <component class="header-bag__icon" :is="bagType" />
     </router-link>
+    <app-header-menu class="header-menu-container" :isOpen="isMenuOpen" @close="toogleMenu"/>
   </nav>
 </template>
 
@@ -16,9 +19,15 @@
   import ForfolksLogo from '../Icons/Logo';
   import Bag from '../Icons/Bag';
   import BagFull from '../Icons/BagFull';
+  import Hamburger from '../Icons/Hamburger';
   export default {
     name: 'app-header',
-    components: {BagFull, Bag, ForfolksLogo, AppHeaderMenu},
+    components: {BagFull, Bag, ForfolksLogo, AppHeaderMenu, Hamburger},
+    data () {
+      return {
+        isMenuOpen: false
+      }
+    },
     computed: {
       bagQty () {
         let total = 0;
@@ -38,12 +47,25 @@
           'header': true,
           'z-index__top--header': true
         }
+      },
+      menuButtonClass () {
+        return {
+          'clean-button': true,
+          'header__menu-button': true,
+          'hamburger-icon--cross': this.isMenuOpen
+        }
+      }
+    },
+    methods: {
+      toogleMenu () {
+        this.isMenuOpen = !this.isMenuOpen;
       }
     }
   };
 </script>
 
 <style lang="scss">
+  @import '../../assets/styles/vars';
   @import '../../assets/styles/colors';
   @import 'src/assets/styles/z-index';
   .header {
@@ -51,10 +73,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 2rem);
+    width: 100%;
     top: 0;
     padding: 0.5rem 1rem;
     background: white;
+    box-sizing: border-box;
+    &__menu-button {
+      z-index: 1;
+    }
   }
 
   .header-menu-container {
@@ -64,6 +90,7 @@
   .header-logo {
     top: 0.5rem;
     left: calc(50% - 51px);
+    z-index: 1;
     .forfolks-logo {
       height: 1rem;
     }
@@ -73,11 +100,11 @@
     top: 0.75rem;
     right: 1rem;
     text-decoration: none;
+    z-index: 1;
     &__icon {
       position: relative;
       width: 1.75rem;
       height: 1.75rem;
-      transition: all .3s;
       &--empty {
         background: url("../../assets/svg/bag-empty.svg") no-repeat;
       }

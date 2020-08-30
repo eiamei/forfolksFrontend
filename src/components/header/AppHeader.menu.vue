@@ -1,39 +1,21 @@
 <template>
-    <section :class="containerClass" @click="toggleState">
-      <section style="display: flex">
-        <template v-if="!isOpen">
-          <app-button class="header-menu__button">
-            <div class="header-menu__circle"></div>
-            <div class="header-menu__circle"></div>
-            <div class="header-menu__circle"></div>
-          </app-button>
-          <p class="header-menu__text">{{$t(menuText)}}</p>
-        </template>
-        <app-button class="header-menu__close-button" v-if="isOpen">
-          <img src="../../assets/svg/closeIcon.svg" alt="close icon" width="100%" height="100%"/>
-        </app-button>
-      </section>
-      <nav class="menu-container" v-if="isOpen">
-        <ul class="menu-catalogue">
-          <li class="menu-catalogue__item">
-            <router-link class="menu-catalogue__text" to="/store/category/all" replace>{{$t('items.alls')}}</router-link>
-          </li>
-          <br>
-          <li class="menu-catalogue__item" v-for="link in byCategory" :key="link.to">
-            <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
-          </li>
-          <br>
-          <!-- <li class="menu-catalogue__item" v-for="link in byMaterial" :key="link.to">
-            <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
-          </li> -->
-        </ul>
-        <ul class="menu-links">
-          <li class="menu-links__item" v-for="link in links" :key="link.to">
-            <router-link class="menu-links__text" :to="link.to">{{$t(link.text)}}</router-link>
-          </li>
-        </ul>
-      </nav>
-    </section>
+  <nav :class="containerClass" @click="close">
+    <ul class="menu-catalogue">
+      <li class="menu-catalogue__item" v-for="link in byCategory" :key="link.to">
+        <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
+      </li>
+    </ul>
+    <ul class="menu-catalogue">
+      <li class="menu-catalogue__item" v-for="link in byRoom" :key="link.to">
+        <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
+      </li>
+    </ul>
+    <ul class="menu-links">
+      <li class="menu-links__item" v-for="link in links" :key="link.to">
+        <router-link class="menu-links__text" :to="link.to">{{$t(link.text)}}</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
@@ -41,72 +23,94 @@
 
   export default {
     name: 'appHeaderMenu',
-    components: {AppButton},
+    props: {
+      isOpen: {
+        type: Boolean,
+        required: true
+      }
+    },
     data () {
       return {
-        isOpen: false,
         byCategory: [{
           to: '/store/category/accessories',
-          text: 'items.accessories'
+          text: 'Аксессуары'
         }, {
           to: '/store/category/cachepot',
-          text: 'items.cachepots'
+          text: 'Кашпо'
         }, {
           to: '/store/category/pot',
-          text: 'items.pots'
-        }, {
-          to: '/store/category/candlestick',
-          text: 'items.candlesticks'
-        }, {
-          to: '/store/category/stand',
-          text: 'items.stands'
-        }, {
-          to: '/store/category/basket',
-          text: 'items.baskets'
+          text: 'Горшки'
         }, {
           to: '/store/category/dish',
-          text: 'items.dish'
+          text: 'Посуда'
+        }, {
+          to: '/store/category/basket',
+          text: 'Корзины'
+        }, {
+          to: '/store/category/linen',
+          text: 'Полотенца'
+        }, {
+          to: '/store/category/board',
+          text: 'Разделочные доски'
+        }, {
+          to: '/store/category/candles',
+          text: 'Свечи'
+        }, {
+          to: '/store/category/diffusers',
+          text: 'Диффузоры'
         }, {
           to: '/store/category/soap',
           text: 'Мыло'
         }, {
-          to: '/store/category/aroma',
+          to: '/store/category/vase',
+          text: 'Вазы'
+        }, {
+          to: '/store/category/plate',
+          text: 'Подставки'
+        }, {
+          to: '/store/category/badsheets',
+          text: 'Постельное белье'
+        }, {
+          to: '/store/category/bags',
+          text: 'Сумки'
+        }, {
+          to: '/store/category/kitchentextile',
+          text: 'Кухонный текстиль'
+        }, {
+          to: '/store/category/macrame',
+          text: 'Макраме'
+        }, {
+          to: '/store/category/driedflowers',
+          text: 'Сухоцветы'
+        }],
+        byRoom: [{
+          to: '/store/room/kitchen',
+          text: 'Кухня'
+        }, {
+          to: '/store/room/dinning',
+          text: 'Столовая'
+        }, {
+          to: '/store/room/bed',
+          text: 'Спальня'
+        }, {
+          to: '/store/room/bath',
+          text: 'Ванная'
+        }, {
+          to: '/store/room/aroma',
           text: 'Ароматы'
         }, {
-          to: '/store/category/textile',
-          text: 'items.textile'
-        }, {
-          to: '/store/category/vase',
-          text: 'items.vases'
-        }, {
-          to: '/store/category/bouquet',
-          text: 'items.bouquets'
-        }, {
-          to: '/store/category/panno',
-          text: 'items.panno'
-        }, {
-          to: '/store/category/toy',
-          text: 'items.toys'
-        }],
-        byMaterial: [{
-        //   to: '/store/material/concrete',
-        //   text: 'material.concrete'
-        // }, {
-        //   to: '/store/material/dryflowers',
-        //   text: 'material.dryflowers'
-        // }, {
-        //   to: '/store/material/cotton',
-        //   text: 'material.cotton'
-        // }, {
-        //   to: '/store/material/ceramic',
-        //   text: 'items.ceramic'
+          to: '/store/room/outside',
+          text: 'Вне дома'
         }],
         links: [{
+          to: '/store/category/all',
+          text: 'Весь каталог'
+        }, {
           to: '/delivery',
-          text: 'links.delivery'
+          text: 'Доставка и оплата'
         }, {
           to: '/about',
-          text: 'links.about'
+          text: 'О нас'
         }]
       };
     },
@@ -122,95 +126,74 @@
       },
       containerClass () {
         return {
-          'header-menu': true,
-          'header-menu--open': this.isOpen
+          'menu-container': true,
+          'menu-container--shown': this.isOpen
         }
       }
     },
     methods: {
-      toggleState () {
-        this.isOpen = !this.isOpen;
+      close () {
+        this.$emit('close');
       }
     }
   };
 </script>
 
 <style lang="scss">
-
-  .header-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    &__button {
-      display: flex;
-      background-color: transparent;
-      border: none;
-      padding: 0;
-    }
-    &__close-button {
-      background-color: transparent;
-      border: none;
-      padding: 0;
-      z-index: 9999;
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-    &__circle {
-      width: 0.75rem;
-      height: 0.75rem;
-      background-color: black;
-      border-radius: 4rem;
-      margin-right: 0.25rem;
-    }
-    &__text {
-      position: fixed;
-      left: 4.5rem;
-      top: 0.6rem;
-      color: black;
-      cursor: pointer;
-      margin: 0;
-    }
-  }
-
+  @import '../../assets/styles/vars';
   .menu-container {
-    position: fixed;
-    display: flex;
-    background-color: rgba(0, 0, 0, .8);
-    backdrop-filter: blur(4px);
+    position: absolute;
+      display: flex;
     left: 0;
     top: 0;
-    width: 200vw;
-    height: 200vh;
+    width: 100%;
+    height: 100vh;
     padding: 2.5rem 0.5rem;
+    overflow: scroll;
+    box-sizing: border-box;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0);
+    visibility: hidden;
+    transition: background-color 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08),
+                backdrop-filter 0.8s cubic-bezier(0.22, 0.61, 0.41, 1.08),
+                opacity 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08),
+                visibility 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08) 0s;
+    &--shown {
+      background-color: rgba(255, 255, 255, .8);
+      backdrop-filter: blur(12px);
+      opacity: 1;
+      visibility: visible;
+    }
     .menu-catalogue, .menu-links {
       width: 14rem;
       padding: 0;
       margin: 0.25rem 0 0 0;
+      white-space: nowrap;
       &__item {
         list-style: none;
         margin-top: 0.25rem;
       }
       &__text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.5rem;
-        color: white;
+        color: black;
         text-decoration: none;
         &:hover {
-          font-weight: 400;
+          color: $dark-blue;
         }
       }
     }
     .menu-catalogue {
       margin-left: 0.5rem;
+      margin-right: 4rem;
     }
     .menu-links {
       width: 300px;
       &__text {
-        font-weight: 700;
+        font-weight: 400;
         &:hover {
-          font-weight: 700;
-          font-size: 1.5rem;
+          color: $dark-blue;
         }
       }
     }
