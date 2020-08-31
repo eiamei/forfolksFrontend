@@ -1093,33 +1093,81 @@
     "badges": ""
   },
   {
-    "group": "sababa-blueberry-pie",
-    "id": "0720019(1)",
+    "group": "sababa-black",
+    "id": "0820087(1)",
+    "type": "Горшок 17см",
     "selectableProperty": [{
       "name": "model",
-      "value": "d21",
-      "text": "d21"
+      "value": "D17",
+      "text": "d17"
     }],
     "itemProperty": {
       "size": {
-        "diameter": "21cm",
-        "height": "19cm"
+        "diameter": "17cm",
+        "height": "16cm"
       },
       "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
     },
-    "availability": 0,
-    "price": 920,
-    "badges": ""
+    "availability": 1,
+    "price": 800,
+    "badges": "new"
   },
   {
-    "group": "sababa-meow",
-    "id": "0720021(1)",
+    "group": "sababa-blueberry-pie",
+    "id": "0720019(3)",
+    "type": "Горшок 15см",
     "selectableProperty": [{
       "name": "model",
-      "value": "d15",
+      "value": "D15",
+      "text": "d15"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "15cm",
+        "height": "14cm"
+      },
+      "material": ["Глина", "Акрил"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 750,
+    "badges": "new"
+  },
+  {
+    "group": "sababa-blueberry-pie",
+    "id": "0720019(2)",
+    "type": "Горшок 23см",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "D23",
+      "text": "d23"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "23cm",
+        "height": "22cm"
+      },
+      "material": ["Глина", "Акрил"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 1500,
+    "badges": "new"
+  },
+  {
+    "group": "sababa-dino",
+    "id": "0920086(1)",
+    "type": "Горшок 15см",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "D15",
       "text": "d15"
     }],
     "itemProperty": {
@@ -1132,13 +1180,106 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 0,
-    "price": 580,
-    "badges": ""
+    "availability": 1,
+    "price": 750,
+    "badges": "new"
+  },
+  {
+    "group": "sababa-dino",
+    "id": "0920086(2)",
+    "type": "Горшок 23см",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "D23",
+      "text": "d23"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "23cm",
+        "height": "21cm"
+      },
+      "material": ["Глина", "Акрил"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 1500,
+    "badges": "new"
+  },
+  {
+    "group": "sababa-face",
+    "id": "0920085(1)",
+    "type": "Горшок 15см",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "D15",
+      "text": "d15"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "15cm",
+        "height": "13cm"
+      },
+      "material": ["Глина", "Акрил"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 750,
+    "badges": "new"
+  },
+  {
+    "group": "sababa-strawberry",
+    "id": "0920083(1)",
+    "type": "Горшок 19см",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "D19",
+      "text": "d19"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "19cm",
+        "height": "17cm"
+      },
+      "material": ["Глина", "Акрил"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 1000,
+    "badges": "new"
+  },
+  {
+    "group": "sababa-strawberry",
+    "id": "0920083(2)",
+    "type": "Горшок 23см",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "D23",
+      "text": "d23"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "23cm",
+        "height": "21cm"
+      },
+      "material": ["Глина", "Акрил"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 1500,
+    "badges": "new"
   },
   {
     "group": "sababa-night-ruskeala",
     "id": "0720022(1)",
+    "type": "Горшок 11см",
     "selectableProperty": [{
       "name": "model",
       "value": "d11",
@@ -1161,6 +1302,7 @@
   {
     "group": "sababa-simple",
     "id": "0720020(1)",
+    "type": "Горшок 9см",
     "selectableProperty": [{
       "name": "model",
       "value": "d9",
@@ -1182,47 +1324,72 @@
   },
   {
     "group": "sababa-summer-sunrise",
-    "id": "0720018(1)",
+    "id": "0720018(3)",
+    "type": "Горшок 15см",
     "selectableProperty": [{
       "name": "model",
-      "value": "d13",
-      "text": "d13"
+      "value": "D15",
+      "text": "d15"
     }],
     "itemProperty": {
       "size": {
-        "diameter": "13cm",
-        "height": "11cm"
+        "diameter": "15cm",
+        "height": "13cm"
       },
       "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
     },
-    "availability": 0,
-    "price": 560,
-    "badges": ""
+    "availability": 1,
+    "price": 750,
+    "badges": "new"
   },
   {
     "group": "sababa-summer-sunrise",
-    "id": "0720018(2)",
+    "id": "0720018(4)",
+    "type": "Горшок 19см",
     "selectableProperty": [{
       "name": "model",
-      "value": "d23",
-      "text": "d23"
+      "value": "D19",
+      "text": "d19"
     }],
     "itemProperty": {
       "size": {
-        "diameter": "23cm",
-        "height": "20cm"
+        "diameter": "19cm",
+        "height": "17cm"
       },
       "material": ["Глина", "Акрил"],
       "createdBy": {
         "design": "!Sababa pots"
       }
     },
-    "availability": 0,
-    "price": 1050,
-    "badges": ""
+    "availability": 1,
+    "price": 1000,
+    "badges": "new"
+  },
+  {
+    "group": "sababa-urban-jungle",
+    "id": "0820084(2)",
+    "type": "Горшок 17см",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "D17",
+      "text": "d17"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "17cm",
+        "height": "16cm"
+      },
+      "material": ["Глина", "Акрил"],
+      "createdBy": {
+        "design": "!Sababa pots"
+      }
+    },
+    "availability": 1,
+    "price": 850,
+    "badges": "new"
   },
   {
     "group": "mori-toys",
@@ -3079,5 +3246,65 @@
       "text": "Молочное"
     }],
     "availability": 1
+  },
+  {
+    "group": "freedom-auto",
+    "type": "Леса азии",
+    "id": "0820066(1)",
+    "desc": "Аромат тика и сандалового дерева. <br><br> Просто извлеките пробку и повесть его в машине.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "asia-forests",
+      "text": "Леса азии"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "freedom-auto",
+    "type": "Сибирь",
+    "id": "0820065(1)",
+    "desc": "Аромат бузины и мяты. <br><br> Просто извлеките пробку и повесть его в машине.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "siberia",
+      "text": "Сибирь"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "freedom-auto",
+    "type": "Летний сад",
+    "id": "0820068(1)",
+    "desc": "Аромат розы и сладкой вишни. <br><br> Просто извлеките пробку и повесть его в машине.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "summer-garden",
+      "text": "Летний сад"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "freedom-auto",
+    "type": "Тибет",
+    "id": "0820067(1)",
+    "desc": "Аромат сирени и иланг-иланг. <br><br> Просто извлеките пробку и повесть его в машине.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "tibet",
+      "text": "Тибет"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "freedom-auto",
+    "type": "Йеллоустоун",
+    "id": "0820069(1)",
+    "desc": "Аромат хвои и бергамота. <br><br> Просто извлеките пробку и повесть его в машине.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "yellowstone",
+      "text": "Йеллоустоун"
+    }],
+    "availability": 2
   }
 ]
