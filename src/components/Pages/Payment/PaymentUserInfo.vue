@@ -203,7 +203,6 @@ export default {
     }
     &__delivery-button.clean-button {
       margin: 0.5rem 1rem 0.5rem 0;
-      transform: 0.3s all;
       cursor: pointer;
     }
     &__delivery-button--selected {

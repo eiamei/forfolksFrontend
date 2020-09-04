@@ -130,7 +130,6 @@ export default {
       margin: 8px 0 0 16px;
       background: transparent;
       border: none;
-      transition: .3s all;
       outline: transparent;
       cursor: pointer;
       @media screen and (max-width: 900px) {

@@ -1,6 +1,6 @@
 <template>
   <section class="bag-item-container">
-    <img class="bag-item-image" :src="itemImage"/>
+    <img :class="imageClass" :src="itemImage"/>
     <div class="bag-item">
       <h3 class="bag-item__header">{{item.name}}</h3>
       <h5 class="bag-item__type">{{item.type}}</h5>
@@ -8,14 +8,15 @@
         <p class="bag-item__field" style="width: 50%; margin: 0; padding: 0">
           <template v-for="(prop, index) in item.selectableProperty">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.text}}</template>
         </p>
-        <section style="display: flex; justify-content: center; align-items: center">
+        <section v-if="isAvailable" style="display: flex; justify-content: center; align-items: center">
           <p class="bag-item__field">{{item.price}}</p>
-          <button class="bag-item__button" @click="decrement">-</button>
+          <button class="clean-button bag-item__button" @click="decrement">-</button>
           <p class="bag-item__field">{{item.qty}}</p>
-          <button class="bag-item__button" @click="increment">+</button>
+          <button class="clean-button bag-item__button" @click="increment">+</button>
           <p class="bag-item__field">{{item.price * item.qty}}</p>
         </section>
-        <button class="bag-item__button" @click="remove">Удалить</button>
+        <p class="bag-item__not-available" v-else>Нет в наличии</p>
+        <button class="clean-button bag-item__button" @click="remove">Удалить</button>
       </section>
     </div>
   </section>
@@ -44,6 +45,15 @@ export default {
           id += `-${slugify(property.value.toLowerCase())}`
         });
       return id;
+    },
+    isAvailable () {
+      return this.item.qty > 0;
+    },
+    imageClass () {
+      return {
+        'bag-item-image': true,
+        'bag-item-image--hidden': !this.isAvailable
+      }
     }
   },
   methods: {
@@ -62,6 +72,8 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '../assets/styles/ui.scss';
+  @import '../assets/styles/vars.scss';
   .bag-item-container {
     display: flex;
     text-align: left;
@@ -75,6 +87,9 @@ export default {
     width: 180px;
     object-fit: cover;
     object-position: 50% 100%;
+    &--hidden {
+      filter: blur(2px);
+    }
     @media screen and (max-width: 1100px) {
       height: 140px;
       width: 140px;
@@ -134,7 +149,7 @@ export default {
         font-size: 10px;
       }
     }
-    &__button {
+    &__button.clean-button {
       color: black;
       font-size: 16px;
       border: 1px solid black;
@@ -149,6 +164,10 @@ export default {
       @media screen and (max-width: 400px) {
         font-size: 10px;
       }
+    }
+    &__not-available {
+      margin: 0;
+      color: $sale-red;
     }
   }
 </style>

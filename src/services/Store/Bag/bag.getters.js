@@ -10,9 +10,15 @@ export const bagGetters = {
         const item = Object.assign({}, rootGetters['shop/findItemById'](state.bag[name].id));
 
         if (!item) return;
+        // hide if item object is empty
+        if (Object.keys(item).length === 0 && item.constructor === Object) return;
 
         const group = item.discountGroup;
+
         item.qty = state.bag[name].qty;
+        // qty in bag shouldn't be more than available
+        if (item.qty > Number(item.availability)) item.qty = item.availability;
+
         item.promoPrice = item.price;
 
         if (group && group in discountByGroup) {
@@ -33,13 +39,18 @@ export const bagGetters = {
       discountByGroup = rootState.promo.selectedDiscount.discountByGroup
     }
     Object.keys(state.bag).forEach(name => {
-      const qty = state.bag[name].qty;
+      let qty = state.bag[name].qty;
       const item = rootGetters['shop/findItemById'](state.bag[name].id);
 
       if (!item) return;
-
+      // hide if item object is empty
+      if (Object.keys(item).length === 0 && item.constructor === Object) return;
       
       const group = item.discountGroup;
+      
+      // qty in bag shouldn't be more than available
+      if (qty > Number(item.availability)) qty = item.availability;
+
       let price = Number(item.price);
 
       realTotal += qty * price;

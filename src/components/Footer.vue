@@ -151,7 +151,7 @@
     .regular-sans-text.footer__link {
       color: $light-gray;
       text-decoration: none;
-      transition: 0.3s all;
+      transition: color 0.3s;
       &:hover {
         color: white;
       }

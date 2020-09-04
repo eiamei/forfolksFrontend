@@ -94,7 +94,7 @@
           text: 'Столовая'
         }, {
           to: '/store/room/guest',
-          text: 'Гостинная'
+          text: 'Гостиная'
         }, {
           to: '/store/room/bed',
           text: 'Спальня'
@@ -156,7 +156,7 @@
   @import '../../assets/styles/vars';
   .menu-container {
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     display: flex;
     left: 0;
     top: 20px;

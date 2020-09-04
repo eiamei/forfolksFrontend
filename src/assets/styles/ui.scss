@@ -45,7 +45,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $dark-blue;
-    transition: .3s all;
+    transition: color .3s;
   }
   @supports (width: max-content) {
     div {
@@ -55,7 +55,7 @@
       width: 100%;
       height: 2px;
       background-color: $orange;
-      transition: .3s all;
+      transition: width .3s;
     }
   }
   &:hover {
@@ -69,7 +69,7 @@
 }
 
 .logo {
-  transition: .3s all;
+  transition: fill .3s;
   &--gray {
     fill: $light-gray;
   }

@@ -178,7 +178,7 @@
       outline: none;
       &:focus {
         line {
-          transition: .3s all;
+          transition: stroke-width .3s;
           stroke-width: 5px;
         }
       }
@@ -198,7 +198,9 @@
       text-transform: uppercase;
       margin-left: 2rem;
       cursor: pointer;
-      transition: .3s all;
+      transition: outline .3s,
+                  background .3s,
+                  color .3s;
       &:focus {
         outline: 1px solid black;
       }

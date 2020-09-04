@@ -69,13 +69,12 @@ export default {
       color: black;
       font-size: 16px;
       margin-right: 8px;
-      transition: .5s all;
+      transition: background-color .5s, color .5s;
       outline: transparent;
     }
     &--increment-decrement {
       background-color: transparent;
       &:hover {
-        transition: .5s all;
         background-color: $light-green;
         color: black;
       }
@@ -83,7 +82,6 @@ export default {
     &--bag-item-remove {
       background-color: $lightest-gray;
       &:hover {
-        transition: .5s all;
         background-color: $light-red;
         color: black;
       }

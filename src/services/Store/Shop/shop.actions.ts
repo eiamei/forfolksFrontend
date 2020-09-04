@@ -2,8 +2,11 @@ import {ItemInterface} from "../../../services/Store/Shop/shop.types";
 import groups from "../../../constants/Groups.json";
 
 export const shopActions = {
-  createItemsList({commit, state}, data) {
-    commit('products', data);
+  async createItemsList({commit, state}) {
+    const response = await fetch('/products.json');
+    const products = await response.json();
+    commit('products', products);
+
     let items = state.products
       .map(function (item: ItemInterface) {
         try {

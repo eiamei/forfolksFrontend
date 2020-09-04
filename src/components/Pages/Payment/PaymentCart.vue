@@ -30,7 +30,11 @@
         return this.$store.state.promo.selectedDiscount;
       },
       bag () {
-        return this.$store.getters['bag/bagItems'];
+        return this.$store.getters['bag/bagItems']
+          // only ones with qty > 0
+          .filter(function (item) {
+            return item.qty > 0;
+          });
       },
       total () {
         return this.$store.getters['bag/total'];

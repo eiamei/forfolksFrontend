@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div id="app">
     <AppHeader />
     <transition name="fade" mode="out-in">
       <router-view/>
@@ -9,32 +9,37 @@
 </template>
 
 <script>
-    import Vue from 'vue';
-    import AppHeader from './components/header/AppHeader.vue';
-    import Footer from './components/Footer.vue'
+  import Vue from 'vue';
+  import AppHeader from './components/header/AppHeader.vue';
+  import Footer from './components/Footer.vue'
 
-    export default Vue.extend({
-        name: 'app',
-        components: {
-            Footer,
-            AppHeader
-        },
-        created() {
-            window.addEventListener('resize', this.resizeHandler);
-        },
-        mounted() {
-            this.$store.dispatch('global/setNewWindowSize');
-            this.$store.dispatch('promo/checkPromoExistence');
-        },
-        methods: {
-            resizeHandler() {
-                this.$store.dispatch('global/setNewWindowSize')
-            }
-        },
-        beforeDestroy() {
-            window.removeEventListener('resize', this.resizeHandler)
-        }
-    });
+  export default Vue.extend({
+    name: 'app',
+    components: {
+      Footer,
+      AppHeader
+    },
+    created() {
+      window.addEventListener('resize', this.resizeHandler);
+      window.addEventListener('storage', this.onStorageUpdate);
+      this.$store.dispatch('shop/createItemsList');
+    },
+    mounted() {
+      this.$store.dispatch('global/setNewWindowSize');
+      this.$store.dispatch('promo/checkPromoExistence');
+    },
+    methods: {
+      resizeHandler() {
+        this.$store.dispatch('global/setNewWindowSize')
+      },
+      onStorageUpdate () {
+        this.$store.dispatch('bag/get');
+      }
+    },
+    beforeDestroy() {
+      window.removeEventListener('resize', this.resizeHandler)
+    }
+  });
 </script>
 
 <style lang="scss">
@@ -50,7 +55,7 @@
   .fade-leave-active {
     opacity: 0
   }
-  .app {
+  #app {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

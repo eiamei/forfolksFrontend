@@ -1537,6 +1537,33 @@
     "discountGroup": "suplier",
     "price": 1000
   },
+  "freedom-bigcandle": {
+    "rootPath": "freedom-bigcandle",
+    "name": "Свеча",
+    "type": "",
+    "category": ["candle"],
+    "room": ["aroma"],
+    "desc": "В свечах от Freedom используется натуральнй соевый воск. Он не имеет собственного запаха и прекрасно взаимодействует с эфирными маслами, помогая им раскрыться. Поэтому такие свечи отдают свой аромат даже во время горения, а не только после того как будут потушены. <br><br> Деревянный фитиль приятно потрескивает, напоминая то ли костер в ночной тишине, то ли звук виниловой пластинки ",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Соевый воск", "эфирные масла", "стекло", "металл", "дерево"],
+      "size": {
+        "weight": "300г",
+        "burningTime": "55-60ч"
+      },
+      "createdBy": {
+        "design": "Freedom aroma"
+      }
+    },
+    "care": {
+      "header": "Уход за соевой свечой",
+      "text": "При первом зажжении свечи дайте верхнему слою воска полностью расплавиться. Так не будет образовываться воронка вокруг фитиля и свеча будет гореть дольше. <br><br> Не задувайте свечу, что бы потушить, просто накройте ее крышкой. Это поможет избежать неприятного запаха и дыма. <br><br> Так как свеча сделана из натуральных материалов и без химических добавок после горения воск может застывать неоднородно. Это никак не скажется на ее дальнейшем горении."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 1600
+  },
   "carrotlab-soap-marseille": {
     "rootPath": "carrotlab-soap-marseille",
     "name": "Мыло Марселькое",
@@ -2945,7 +2972,7 @@
     },
     "badges": "new",
     "discountGroup": "supliers",
-    "price": 1450
+    "price": 900
   },
   "madera-board": {
     "rootPath": "madera-board",
@@ -3292,5 +3319,136 @@
     "badges": "new",
     "discountGroup": "supliers",
     "price": 450
+  },
+  "fonar-spoon": {
+    "rootPath": "fonar-spoon",
+    "name": "Ложка",
+    "type": "Керамическая",
+    "category": ["dish"],
+    "room": ["kitchen", "dinning"],
+    "desc": "Кухонная ложечка с секретом - она целиком выполнена из керамики!",
+    "metaDesc": "",
+    "shortDesc": "Волшебная ложка",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+        "length": "21см",
+        "width": "4.7см"
+      },
+      "createdBy": {
+        "design": "Фонарь"
+      }
+    },
+    "care": {
+      "header": "Уход за ложкой",
+      "text": "Не рекомендуем мыть в посудомоечной машине"
+    },
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 450
+  },
+  "fonar-milkman": {
+    "rootPath": "fonar-milkman",
+    "name": "Молочник",
+    "type": "Керамический",
+    "category": ["dish"],
+    "room": ["kitchen", "dinning"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+        "volume": "270мл"
+      },
+      "createdBy": {
+        "design": "Фонарь"
+      }
+    },
+    "care": {
+      "header": "Уход за молочником",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 950
+  },
+  "fonar-cup": {
+    "rootPath": "fonar-cup",
+    "name": "Стакан",
+    "type": "Кофе",
+    "category": ["dish"],
+    "room": ["kitchen", "dinning"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+        "volume": "200мл"
+      },
+      "createdBy": {
+        "design": "Фонарь"
+      }
+    },
+    "care": {
+      "header": "Уход за стаканом",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 950
+  },
+  "fonar-soap": {
+    "rootPath": "fonar-soap",
+    "name": "Мыльница",
+    "type": "Керамическая",
+    "category": ["accessories"],
+    "room": ["kitchen", "bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+        "diameter": "10см"
+      },
+      "createdBy": {
+        "design": "Фонарь"
+      }
+    },
+    "care": {
+      "header": "Уход за мыльницей",
+      "text": "Специального ухода не требуется"
+    },
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 650
+  },
+  "tabula-bowl": {
+    "rootPath": "tabula-bowl",
+    "name": "Crater",
+    "type": "Деревянный боул",
+    "category": ["dish"],
+    "room": ["kitchen", "dinning"],
+    "desc": "Он отлично подходит для подачи каши на завтрак, фруктов, салатов или вторых блюд <br><br> Боул выполнен из массива дуба.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Дуб"],
+      "size": {
+        "diameter": "17.5см"
+      },
+      "createdBy": {
+        "design": "Фонарь"
+      }
+    },
+    "care": {
+      "header": "Уход за боулом",
+      "text": "Деревянная посуда не любит долгого замачивания в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
+    },
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 2000
   }
 }

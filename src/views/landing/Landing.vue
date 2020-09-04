@@ -53,7 +53,9 @@
       cursor: pointer;
       color: black;
       text-decoration: none;
-      transition: .2s all ease-in-out;
+      transition: background-color .2s ease-in-out,
+                  border .2s ease-in-out,
+                  color .2s ease-in-out;
       &:hover {
         background-color: $dark-blue;
         border: 1px solid $dark-blue;

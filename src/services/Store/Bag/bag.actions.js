@@ -54,6 +54,10 @@ export default {
     commit('empty');
     dispatch('save');
   },
+  get ({commit}) {
+    const bag = JSON.parse(localStorage.getItem('bag')) || {};
+    commit('bag', bag);
+  },
   save ({state}) {
     localStorage.setItem('bag', JSON.stringify(state.bag));
   }

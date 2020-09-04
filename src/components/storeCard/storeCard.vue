@@ -165,17 +165,18 @@
       left: 0;
       bottom: 0;
       z-index: 10;
-      transition: .3s all;
       text-align: center;
       border: none;
       outline: none;
       padding: 1rem 0;
       margin: 0;
-      background: rgba(white, 0);
+      background-color: rgba(white, 0);
       color: transparent;
+      transition: color .3s,
+                  background-color .3s;
 
       &:hover {
-        background: rgba($dark-blue, 1);
+        background-color: rgba($dark-blue, 1);
         color: white;
       }
     }

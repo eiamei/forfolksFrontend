@@ -83,16 +83,16 @@ export default {
       background: white;
       box-shadow: 5px 5px 10px rgba(20, 20, 27, 0.44);
       min-width: 5rem;
-      transition: all .3s ease;
+      transition: opacity .3s ease;
       bottom: 40px;
       list-style: none;
       margin: 0;
       padding: 0;
       li {
         padding: 8px;
-        background: white;
+        background-color: white;
+        transition: background-color .3s ease;
         &:hover {
-          transition: .3s background-color;
           background-color: $dusty-rose;
         }
       }

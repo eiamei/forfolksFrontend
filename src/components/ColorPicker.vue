@@ -128,7 +128,7 @@
         background: $powder;
       }
 
-      &--cacao {
+      &--cacao, &--coffee {
         background: $cacao;
       }
 
