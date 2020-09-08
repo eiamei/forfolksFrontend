@@ -5,15 +5,15 @@ const products = require('./public/products.json');
 const slugify = require('slugify');
 const routes = ['/', '/about', '/delivery'];
 
-// products.forEach(function (item, index) {
-//   let path = `/product/${item.group}`;
-//   if (item.selectableProperty.length) {
-//     item.selectableProperty.forEach(property => {
-//       path += `/${slugify(property.value.toLowerCase())}`
-//     });
-//   }
-//   routes.push(path);
-// })
+products.forEach(function (item, index) {
+  let path = `/product/${item.group}`;
+  if (item.selectableProperty.length) {
+    item.selectableProperty.forEach(property => {
+      path += `/${slugify(property.value.toLowerCase())}`
+    });
+  }
+  routes.push(path);
+})
 
 console.log(routes);
 
