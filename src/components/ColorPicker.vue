@@ -88,7 +88,7 @@
         background: $silver;
       }
 
-      &--cream {
+      &--cream, &--unbleached {
         background: $cream;
       }
 
@@ -152,7 +152,7 @@
         background: $gray;
       }
 
-      &--graphite {
+      &--graphite, &--dark-gray {
         background: $graphite;
       }
 

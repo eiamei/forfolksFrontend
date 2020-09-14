@@ -1,3 +1,4 @@
+
 [
   {
     "group": "cachepot_modern_s",
@@ -17,7 +18,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "cachepot_modern_s",
@@ -27,7 +28,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "stand-basic-s",
@@ -136,7 +137,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "tray-tray",
@@ -199,7 +200,7 @@
       "name": "color",
       "text": "Пудра"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -326,7 +327,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 2
+    "availability": 0
   },
   {
     "group": "candlestick-house-denmark",
@@ -396,7 +397,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "vase-modern",
@@ -426,7 +427,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 1,
+    "availability": 0,
     "price":400
   },
   {
@@ -448,7 +449,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 2,
+    "availability": 0,
     "price":400
   },
   {
@@ -480,7 +481,7 @@
       "name": "color",
       "text": "Серый туман"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "cup-mild",
@@ -489,16 +490,6 @@
       "value": "graphite",
       "name": "color",
       "text": "Графит"
-    }],
-    "availability": 2
-  },
-  {
-    "group": "cup-mild",
-    "id": "0720003(6)",
-    "selectableProperty": [{
-      "value": "moonstone",
-      "name": "color",
-      "text": "Лунный камень"
     }],
     "availability": 1
   },
@@ -520,7 +511,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 1
+    "availability": 2
   },
   {
     "group": "bowl-mild",
@@ -541,7 +532,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 2,
+    "availability": 0,
     "price":300
   },
   {
@@ -552,7 +543,7 @@
       "name": "color",
       "text": "Пудра"
     }],
-    "availability": 3,
+    "availability": 2,
     "price":300
   },
   {
@@ -563,7 +554,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 5,
+    "availability": 3,
     "price":300
   },
   {
@@ -749,7 +740,7 @@
     "group": "luffa-whole",
     "id": "0720062(1)",
     "selectableProperty": [],
-    "availability": 15,
+    "availability": 13,
     "badges": ""
   },
   {
@@ -844,7 +835,7 @@
       "value": "hard",
       "text": "Темная"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1044,8 +1035,8 @@
         "design": "Choli jute"
       }
     },
-    "availability": 2,
-    "price": "700",
+    "availability": 0,
+    "price": "900",
     "badges": ""
   },
   {
@@ -1085,17 +1076,6 @@
       "name": "model",
       "value": "1",
       "text": "Вариант 1"
-    }],
-    "availability": 1,
-    "badges": ""
-  },
-  {
-    "group": "latt-vase-stone",
-    "id": "0720017(1)",
-    "selectableProperty": [{
-      "name": "model",
-      "value": "2",
-      "text": "Вариант 2"
     }],
     "availability": 1,
     "badges": ""
@@ -1188,9 +1168,9 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": 750,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-dino",
@@ -1520,58 +1500,58 @@
   },
   {
     "group": "whiteclay-soap-dish",
-    "name": "Birch",
-    "id": "0720025(5)",
+    "name": "Rice",
+    "id": "0720025(4)",
     "selectableProperty": [{
       "name": "model",
-      "value": "birch",
-      "text": "birch"
+      "value": "rice",
+      "text": "rice"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Sage",
+    "id": "0720025(7)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "sage1",
+      "text": "sage"
     }],
     "availability": 0,
     "badges": ""
   },
   {
     "group": "whiteclay-soap-dish",
-    "name": "Fern dava",
-    "id": "0720025(2)",
+    "name": "Sage",
+    "id": "0720025(8)",
     "selectableProperty": [{
       "name": "model",
-      "value": "fern-dava",
-      "text": "Fern dava"
+      "value": "sage2",
+      "text": "sage"
     }],
-    "availability": 0,
-    "badges": ""
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "whiteclay-soap-dish",
-    "name": "Fern poly",
-    "id": "0720025(3)",
+    "name": "Sweet herb",
+    "id": "0720025(6)",
     "selectableProperty": [{
       "name": "model",
-      "value": "fern-poly",
-      "text": "Fern poly"
+      "value": "sweet-herb",
+      "text": "sweet-herb"
     }],
-    "availability": 0,
-    "badges": ""
-  },
-  {
-    "group": "whiteclay-soap-dish",
-    "name": "Mentol",
-    "id": "0720025(1)",
-    "selectableProperty": [{
-      "name": "model",
-      "value": "mentol",
-      "text": "Mentol"
-    }],
-    "availability": 0,
-    "badges": ""
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "hleb-pot",
     "name": "Шоколадка",
     "id": "0720024(2)",
     "selectableProperty": [],
-    "availability": 7,
+    "availability": 6,
     "badges": ""
   },
   {
@@ -1595,7 +1575,7 @@
       "value": "blackberry-mint",
       "text": "Ежевика & Мята"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1607,7 +1587,7 @@
       "value": "gingerbread",
       "text": "Имбирный пряник"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1643,7 +1623,7 @@
       "value": "orange-cinnamon",
       "text": "Апельсин & Корица"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1679,7 +1659,7 @@
       "value": "coffee-cinnamon",
       "text": "Кофе & Корица"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1785,7 +1765,7 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 2
+    "availability": 0
   },
   {
     "group": "freedom-bigcandle",
@@ -1813,7 +1793,7 @@
     "group": "carrotlab-soap-marseille",
     "id": "0720004(1)",
     "selectableProperty": [],
-    "availability": 3,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1849,7 +1829,7 @@
     "group": "carrotlab-soap-castilla",
     "id": "0720086(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1916,7 +1896,7 @@
     "group": "carrotlab-soap-salt",
     "id": "0720094(1)",
     "selectableProperty": [],
-    "availability": 3,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1928,7 +1908,7 @@
       "value": "gray",
       "text": "Серый"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2042,7 +2022,7 @@
     "group": "eco-sponge-luffa",
     "id": "0720072(1)",
     "selectableProperty": [],
-    "availability": 24,
+    "availability": 23,
     "badges": ""
   },
   {
@@ -2094,7 +2074,7 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -2108,7 +2088,7 @@
       "value": "provence",
       "text": "Поля прованса"
     }],
-    "availability": 1,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -2122,7 +2102,7 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3125,13 +3105,13 @@
       "value": "dark",
       "text": "Темная"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "tunturi-board-ash-long-dark",
     "id": "0820045(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "tunturi-board-oak",
@@ -3150,7 +3130,7 @@
     "group": "madera-board",
     "id": "0820050(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "madera-boardsmall",
@@ -3162,13 +3142,13 @@
     "group": "tabula-tallrik-fero",
     "id": "0820052(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "tabula-tallrik-flumen",
     "id": "0820055(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "tabula-tallrik-retic",
@@ -3285,7 +3265,7 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "freedom-auto",
@@ -3333,7 +3313,7 @@
       "value": "yellowstone",
       "text": "Йеллоустоун"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "fonar-spoon",
@@ -3378,6 +3358,111 @@
   {
     "group": "tabula-bowl",
     "id": "0820054(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "otrubi-bag-l",
+    "id": "0920018(1)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "unbleached",
+      "text": "Небелёный лен"
+    }],
+    "availability": 3
+  },
+  {
+    "group": "otrubi-bag-l",
+    "id": "0920018(2)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "dark-gray",
+      "text": "Тёмно-серый"
+    }],
+    "availability": 3
+  },
+  {
+    "group": "otrubi-bag-m",
+    "id": "0920017(1)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "unbleached",
+      "text": "Небелёный лен"
+    }],
+    "itemProperty": {
+      "material": ["Лен", "Хлопок"],
+      "size": {
+        "length": "25см",
+        "width": "20см"
+      },
+      "createdBy": {
+        "design": "От руби"
+      }
+    },
+    "availability": 3,
+    "price": 350
+  },
+  {
+    "group": "otrubi-bag-s",
+    "id": "0920016(1)",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "unbleached",
+      "text": "Небелёный лен"
+    }],
+    "availability": 3
+  },
+  {
+    "group": "otrubi-tablecloth-natural",
+    "id": "0920020(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "otrubi-bag-fruit",
+    "id": "0920019(1)",
+    "selectableProperty": [],
+    "availability": 3
+  },
+  {
+    "group": "tabula-canoe",
+    "id": "0820053(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "maria-picture-flower",
+    "id": "0920027(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "choli-jute-sponge",
+    "id": "0920025(1)",
+    "selectableProperty": [],
+    "availability": 10
+  },
+  {
+    "group": "choli-cotton-pads",
+    "id": "0920024(1)",
+    "selectableProperty": [],
+    "availability": 8
+  },
+  {
+    "group": "mif-remodelista",
+    "id": "0920021(1)",
+    "selectableProperty": [],
+    "availability": 2
+  },
+  {
+    "group": "mif-fine-home",
+    "id": "0920022(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "mif-home-body",
+    "id": "0920023(2)",
     "selectableProperty": [],
     "availability": 1
   }

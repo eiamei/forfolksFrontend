@@ -56,6 +56,12 @@
           to: '/store/category/candle',
           text: 'Свечи'
         }, {
+          to: '/store/category/pictures',
+          text: 'Картины'
+        }, {
+          to: '/store/category/book',
+          text: 'Книгы'
+        }, {
           to: '/store/category/diffuser',
           text: 'Диффузоры'
         }, {

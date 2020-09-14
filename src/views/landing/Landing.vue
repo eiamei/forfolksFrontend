@@ -26,7 +26,7 @@
       storeItems () {
         return shuffle((this.$store.state.shop.items || [])
           .filter(function (item) {
-            return item.badges.includes('new');
+            return item.badges.includes('new') && item.availability > 0;
           }));
       },
     }
@@ -40,8 +40,6 @@
   .landing-page {
     text-align: center;
     min-height: 80vh;
-    .landing-page-carousel {
-    }
     .landing-page-hero-text {
       margin: 4rem 2rem 2rem 2rem;
     }

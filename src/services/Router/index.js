@@ -255,7 +255,7 @@ function setProgramaticTags (to) {
   to.meta.tags.forEach(tag => {
     const metaTag = document.createElement('meta');
     metaTag.setAttribute('name', tag.name);
-    metaTag.setAttribute('content', tag.content);
+    metaTag.setAttribute('property', tag.content);
     metaTag.setAttribute('programmatic-meta', "");
     document.head.appendChild(metaTag);
   });
@@ -293,7 +293,7 @@ router.beforeEach((to, from, next) => {
         document.title = title
 
         const ogTitle = document.createElement('meta');
-        ogTitle.setAttribute('name', 'og:title');
+        ogTitle.setAttribute('property', 'og:title');
         ogTitle.setAttribute('content', title);
         ogTitle.setAttribute('programmatic-meta', "");
         document.head.appendChild(ogTitle);
@@ -306,7 +306,7 @@ router.beforeEach((to, from, next) => {
 
         const ogDescription = document.createElement('meta');
         ogDescription.setAttribute('name', 'og:description');
-        ogDescription.setAttribute('content', `${title}. ${item.metaDesc || item.shortDesc}`);
+        ogDescription.setAttribute('property', `${title}. ${item.metaDesc || item.shortDesc}`);
         ogDescription.setAttribute('programmatic-meta', "");
         document.head.appendChild(ogDescription);
 
@@ -319,7 +319,7 @@ router.beforeEach((to, from, next) => {
 
         const ogImage = document.createElement('meta');
         ogImage.setAttribute('name', 'og:image');
-        ogImage.setAttribute('content', `${image}`);
+        ogImage.setAttribute('property', `${image}`);
         ogImage.setAttribute('programmatic-meta', "");
         document.head.appendChild(ogImage);
       }

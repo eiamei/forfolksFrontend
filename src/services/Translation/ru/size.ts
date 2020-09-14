@@ -18,5 +18,6 @@ export const size: LocaleMessageObject = {
     volume: 'Объем',
     sheet: 'Размер простыни',
     duvon: 'Размер пододеяльника',
-    pillowcase: 'Размер наволочки'
+    pillowcase: 'Размер наволочки',
+    pages: 'Количество страниц'
 }
