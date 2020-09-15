@@ -50,7 +50,7 @@
       "text": "Графит"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "stand-basic-s",
@@ -61,7 +61,7 @@
       "text": "Черный мрамор"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "stand-basic-s",
@@ -83,7 +83,7 @@
       "text": "Белый"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-cone-s",
@@ -157,18 +157,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 1
-  },
-  {
-    "group": "basic-incense",
-    "id": "0720038(1)",
-    "selectableProperty": [{
-      "value": "white",
-      "name": "color",
-      "text": "Белый"
-    }],
-    "availability": 0,
-    "badges": ""
+    "availability": 0
   },
   {
     "group": "basic-incense",
@@ -177,17 +166,6 @@
       "value": "graphite",
       "name": "color",
       "text": "Графит"
-    }],
-    "availability": 0,
-    "badges": ""
-  },
-  {
-    "id": "0720038(2)",
-    "group": "basic-incense",
-    "selectableProperty": [{
-      "value": "black-marble",
-      "name": "color",
-      "text": "Черный мрамор"
     }],
     "availability": 0,
     "badges": ""
@@ -3462,7 +3440,61 @@
   },
   {
     "group": "mif-home-body",
-    "id": "0920023(2)",
+    "id": "0920023(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-gipsophila-circle",
+    "id": "0920037(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-gipsophila-rhombus-small",
+    "id": "0920033(2)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-gipsophila-square",
+    "id": "0920038(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-gipsophila-stand",
+    "id": "0920029(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-lagurus-square",
+    "id": "0920031(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-lavande-grass-square",
+    "id": "0920041(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-lavande-rectangle",
+    "id": "0920035(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-lavande-rhombus",
+    "id": "0920040(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-leaf",
+    "id": "0920030(1)",
     "selectableProperty": [],
     "availability": 1
   }

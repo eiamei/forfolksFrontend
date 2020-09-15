@@ -60,7 +60,7 @@
           text: 'Картины'
         }, {
           to: '/store/category/book',
-          text: 'Книгы'
+          text: 'Книги'
         }, {
           to: '/store/category/diffuser',
           text: 'Диффузоры'
