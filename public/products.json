@@ -1577,7 +1577,7 @@
       "value": "jasmine-mint",
       "text": "Жасмин & Мята"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3108,13 +3108,15 @@
     "group": "madera-board",
     "id": "0820050(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 1,
+    "price": 1200
   },
   {
     "group": "madera-boardsmall",
     "id": "0820051(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 1,
+    "price": 1100
   },
   {
     "group": "tabula-tallrik-fero",
@@ -3243,7 +3245,7 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "freedom-auto",
@@ -3388,7 +3390,7 @@
       "value": "unbleached",
       "text": "Небелёный лен"
     }],
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "otrubi-tablecloth-natural",
@@ -3457,6 +3459,12 @@
     "availability": 1
   },
   {
+    "group": "flowertree-gipsophila-rhombus",
+    "id": "0920033(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
     "group": "flowertree-gipsophila-square",
     "id": "0920038(1)",
     "selectableProperty": [],
@@ -3495,6 +3503,18 @@
   {
     "group": "flowertree-leaf",
     "id": "0920030(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-sage-rhombus",
+    "id": "0920034(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "flowertree-yarrow-rhombus",
+    "id": "0920032(1)",
     "selectableProperty": [],
     "availability": 1
   }
