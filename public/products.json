@@ -50,7 +50,7 @@
       "text": "Графит"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-basic-s",
@@ -200,7 +200,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -877,7 +877,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1044,7 +1044,7 @@
     "group": "choli-sponge",
     "id": "0720016(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -1054,6 +1054,17 @@
       "name": "model",
       "value": "1",
       "text": "Вариант 1"
+    }],
+    "availability": 1,
+    "badges": ""
+  },
+  {
+    "group": "latt-vase-stone",
+    "id": "0720017(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "3",
+      "text": "Вариант 3"
     }],
     "availability": 1,
     "badges": ""
@@ -1079,7 +1090,7 @@
     },
     "availability": 1,
     "price": 800,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-blueberry-pie",
@@ -1102,7 +1113,7 @@
     },
     "availability": 1,
     "price": 750,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-blueberry-pie",
@@ -1125,7 +1136,7 @@
     },
     "availability": 1,
     "price": 1500,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-dino",
@@ -1192,9 +1203,9 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
-    "price": 750,
-    "badges": "new"
+    "availability": 0,
+    "price": 700,
+    "badges": ""
   },
   {
     "group": "sababa-strawberry",
@@ -1217,7 +1228,7 @@
     },
     "availability": 1,
     "price": 1000,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-strawberry",
@@ -1240,7 +1251,7 @@
     },
     "availability": 1,
     "price": 1500,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-night-ruskeala",
@@ -1285,7 +1296,7 @@
       }
     },
     "availability": 1,
-    "price": 430,
+    "price": 450,
     "badges": ""
   },
   {
@@ -1309,7 +1320,7 @@
     },
     "availability": 1,
     "price": 750,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-summer-sunrise",
@@ -1332,7 +1343,7 @@
     },
     "availability": 1,
     "price": 1000,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "sababa-urban-jungle",
@@ -1353,9 +1364,9 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": 850,
-    "badges": "new"
+    "badges": ""
   },
   {
     "group": "mori-toys",
@@ -1601,7 +1612,7 @@
       "value": "orange-cinnamon",
       "text": "Апельсин & Корица"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1637,7 +1648,7 @@
       "value": "coffee-cinnamon",
       "text": "Кофе & Корица"
     }],
-    "availability": 1,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1649,7 +1660,7 @@
       "value": "pachuli-ginger",
       "text": "Пачули & Имбирь"
     }],
-    "availability": 1,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1661,7 +1672,7 @@
       "value": "barberry-jasmine",
       "text": "Барбарис & Жасмин"
     }],
-    "availability": 1,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1673,7 +1684,7 @@
       "value": "lavander-herb",
       "text": "Лаванда & Скошенная трава"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -2038,7 +2049,7 @@
       "value": "eastern",
       "text": "Дары востока"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -2052,7 +2063,7 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2080,7 +2091,7 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 0,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -3134,13 +3145,13 @@
     "group": "tabula-tallrik-retic",
     "id": "0820057(1)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 2
   },
   {
     "group": "tabula-tallrik-retic-black",
     "id": "0820057(2)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 2
   },
   {
     "group": "tabula-tallrik-swell",
@@ -3152,11 +3163,29 @@
     "group": "tabula-tallrik-swell-black",
     "id": "0820056(2)",
     "selectableProperty": [],
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "tabula-tallrik-whiskey",
     "id": "0820058(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-lava",
+    "id": "0920045(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-spoon-long",
+    "id": "0920047(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "tabula-spoon-small",
+    "id": "0920048(1)",
     "selectableProperty": [],
     "availability": 1
   },
@@ -3420,13 +3449,13 @@
     "group": "choli-jute-sponge",
     "id": "0920025(1)",
     "selectableProperty": [],
-    "availability": 10
+    "availability": 9
   },
   {
     "group": "choli-cotton-pads",
     "id": "0920024(1)",
     "selectableProperty": [],
-    "availability": 8
+    "availability": 5
   },
   {
     "group": "mif-remodelista",
@@ -3515,6 +3544,36 @@
   {
     "group": "flowertree-yarrow-rhombus",
     "id": "0920032(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "latt-plate-big",
+    "id": "0920042(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "latt-plate-small",
+    "id": "0920042(2)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "latt-cup",
+    "id": "0920044(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "latt-boul-small",
+    "id": "0920043(2)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "latt-boul-big",
+    "id": "0920043(1)",
     "selectableProperty": [],
     "availability": 1
   }
