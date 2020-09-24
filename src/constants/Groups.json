@@ -3296,6 +3296,58 @@
     "discountGroup": "supliers",
     "price": 500
   },
+  "tabula-tallrik-esca": {
+    "rootPath": "tabula-tallrik-esca",
+    "name": "Esca",
+    "type": "Тарелка",
+    "category": ["dish"],
+    "room": ["kitchen", "dinning"],
+    "desc": "Тарелка, выполненная из массива дуба и вывареная в льняном масле. Благодаря этой технологии тарелка защищена от рассыхания и распространения бактерий.",
+    "metaDesc": "Выполнена из массива дуба и выварена в льняном масле. Благодаря этой технологии тарелка защищена от рассыхания и распространения бактерий.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Дуб"],
+      "size": {
+        "diameter": "25см"
+      },
+      "createdBy": {
+        "design": "Tabula"
+      }
+    },
+    "care": {
+      "header": "Уход за тарелкой",
+      "text": "Деревянные тарелкой не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
+    },
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1810
+  },
+  "tabula-caseo": {
+    "rootPath": "tabula-caseo",
+    "name": "Caseo",
+    "type": "Разделочная доска",
+    "category": ["board"],
+    "room": ["kitchen", "dinning"],
+    "desc": "Сервировочно-разделочная доска, выполненная из массива дуба и вывареная в льняном масле. Благодаря этой технологии доска защищена от рассыхания и распространения бактерий.",
+    "metaDesc": "Выполнена из массива дуба и выварена в льняном масле. Благодаря этой технологии разделочная доска защищена от рассыхания и распространения бактерий.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Дуб"],
+      "size": {
+        "diameter": "25см"
+      },
+      "createdBy": {
+        "design": "Tabula"
+      }
+    },
+    "care": {
+      "header": "Уход за доской",
+      "text": "Деревянные доски не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
+    },
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1810
+  },
   "linav-basket": {
     "rootPath": "linav-basket",
     "name": "Корзинка",
@@ -4258,5 +4310,226 @@
     "badges": "new",
     "discountGroup": "supliers",
     "price": 1000
+  },
+  "laboratorium-gel": {
+    "rootPath": "laboratorium-gel",
+    "name": "Гель для душа",
+    "type": "",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "volume": "550мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 600
+  },
+  "laboratorium-micellar": {
+    "rootPath": "laboratorium-micellar",
+    "name": "Мицелярная вода",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "Это мицеллярная вода Laboratorium, разработанная на основе яблочного протеола (экологичного ПАВ) и витаминного комплекса. Мицеллы - сферические структуры ПАВ, диаметром около 0,00001 мм. За счет размера и структуры сфер мицеллярная вода обеспечивает удаление с поверхности кожи и водорастворимых, и жирных загрязнений; уменьшает раздражающее действие, свойственное всем поверхностно-активным веществам, и подходит даже людям с очень чувствительной кожей. <br><br> Витаминный комплекс, содержащий провитамины В5, никотиновую, гиалуроновую, аскорбиновую и фруктовую кислоты, увеличивает метаболическую активность клеток кожи, повышает сопротивляемость кожи к внешним воздействиям, улучшает цвет и эластичность кожи. <br><br> встряхните флакон, смочите мицеллярной водой спонж или ватный диск и протрите кожу лица, включая веки и губы. При необходимости повторите процедуру. Обязательно смойте мицеллярную воду после применения.",
+    "metaDesc": "Купить мицеллярная вода на основе яблочного протеола Forfolks. Уменьшает раздражающее действие, свойственное всем поверхностно-активным веществам, и подходит даже людям с очень чувствительной кожей. Витаминный комплекс, содержащий провитамины В5, никотиновую, гиалуроновую, аскорбиновую и фруктовую кислоты, увеличивает метаболическую активность клеток кожи, повышает сопротивляемость кожи к внешним воздействиям, улучшает цвет и эластичность кожи.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "volume": "250мл",
+        "material": "Вода, глицерин, каприлил/каприл глюкозид, яблочный протеол, пентиленгликоль, кокамидопропилбетаин, морская соль, молочная кислота, пантенол, этилпантенол, никотинамид, аскорбиновая кислота, аскорбат натрия, салицилат натрия, лимонная кислота, гликолевая кислота, гиалуронат натрия."
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 300
+  },
+  "laboratorium-shampoo": {
+    "rootPath": "laboratorium-shampoo",
+    "name": "Шампунь",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "75г"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 500
+  },
+  "laboratorium-lip": {
+    "rootPath": "laboratorium-lip",
+    "name": "Бальзам для губ",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "10г"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 270
+  },
+  "laboraturium-soap": {
+    "rootPath": "laboraturium-soap",
+    "name": "Мыло",
+    "type": "",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "110г"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 300
+  },
+  "laboratorium-deodorant": {
+    "rootPath": "laboratorium-deodorant",
+    "name": "Дезодорант",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "14мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 350
+  },
+  "laboratorium-mask": {
+    "rootPath": "laboratorium-mask",
+    "name": "Маска",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "30мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 350
+  },
+  "laboratorium-milk": {
+    "rootPath": "laboratorium-milk",
+    "name": "Молочко для ванны",
+    "type": "Мятное",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "250мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 325
+  },
+  "laboratorium-mix": {
+    "rootPath": "laboratorium-mix",
+    "name": "Микс для ванны",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "250мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 325
+  },
+  "laboratorium-ubtan": {
+    "rootPath": "laboratorium-ubtan",
+    "name": "Убтан",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "100мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 450
   }
 }

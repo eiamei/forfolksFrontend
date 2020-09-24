@@ -68,6 +68,9 @@
           to: '/store/category/soap',
           text: 'Мыло'
         }, {
+          to: '/store/category/cosmetic',
+          text: 'Косметика'
+        }, {
           to: '/store/category/vase',
           text: 'Вазы'
         }, {
