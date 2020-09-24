@@ -10,7 +10,8 @@
   import Vue from 'vue';
   import {Color, Link} from "../global";
   import {ItemInterface} from "../services/Store/Shop/shop.types";
-
+  import { productLinkBuilder } from '../utils/linkBuilder';
+  
   export default Vue.extend({
     name: 'colorPicker',
     props: {

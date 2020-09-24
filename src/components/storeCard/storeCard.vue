@@ -25,6 +25,7 @@
   import slugify from "slugify";
   import {ItemInterface} from "../../services/Store/Shop/shop.types";
   import ColorPicker from "../ColorPicker.vue";
+  import { productLinkBuilder } from '../../utils/linkBuilder';
 
   interface BadgeInterface {
     text: string;
@@ -110,12 +111,7 @@
           this.isWide = this.$refs.image.naturalWidth > this.$refs.image.naturalHeight;
       },
       getLink(): string {
-        let path = this.item.rootPath;
-        if (this.item.selectableProperty.length)
-          this.item.selectableProperty.forEach(property => {
-            path += `/${slugify(property.value.toLowerCase())}`
-          });
-        return `/product/${path}`;
+        return productLinkBuilder(this.item);
       },
       addToBag(event: Event): void {
         event.preventDefault();

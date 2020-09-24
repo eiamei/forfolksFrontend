@@ -1,6 +1,8 @@
 <template>
   <section class="bag-item-container">
-    <img :class="imageClass" :src="itemImage"/>
+    <router-link :to="link">
+      <img :class="imageClass" :src="itemImage"/>
+    </router-link>
     <div class="bag-item">
       <h3 class="bag-item__header">{{item.name}}</h3>
       <h5 class="bag-item__type">{{item.type}}</h5>
@@ -23,52 +25,56 @@
 </template>
 
 <script>
-import slugify from 'slugify';
+  import slugify from 'slugify';
+  import { productLinkBuilder } from '../utils/linkBuilder';
 
-export default {
-  name: 'bagItem',
-  props: {
-    item: {
-      required: true
-    }
-  },
-  computed: {
-    itemImage () {
-      if (this.id)
-        return require(`../assets/images/store/${this.id}-small.jpg`);
-      return '';
+  export default {
+    name: 'bagItem',
+    props: {
+      item: {
+        required: true
+      }
     },
-    id () {
-      let id = this.item.rootPath;
-      if (this.item.selectableProperty.length)
-        this.item.selectableProperty.forEach(property => {
-          id += `-${slugify(property.value.toLowerCase())}`
-        });
-      return id;
+    computed: {
+      itemImage () {
+        if (this.id)
+          return require(`../assets/images/store/${this.id}-small.jpg`);
+        return '';
+      },
+      id () {
+        let id = this.item.rootPath;
+        if (this.item.selectableProperty.length)
+          this.item.selectableProperty.forEach(property => {
+            id += `-${slugify(property.value.toLowerCase())}`
+          });
+        return id;
+      },
+      isAvailable () {
+        return this.item.qty > 0;
+      },
+      imageClass () {
+        return {
+          'bag-item-image': true,
+          'bag-item-image--hidden': !this.isAvailable
+        }
+      },
+      link () {
+        return productLinkBuilder(this.item);
+      }
     },
-    isAvailable () {
-      return this.item.qty > 0;
-    },
-    imageClass () {
-      return {
-        'bag-item-image': true,
-        'bag-item-image--hidden': !this.isAvailable
+    methods: {
+      decrement () {
+        this.$store.dispatch('bag/decrement', this.id);
+      },
+      increment () {
+        if (this.item.qty + 1 <= this.item.availability)
+          this.$store.dispatch('bag/increment', this.id);
+      },
+      remove () {
+        this.$store.dispatch('bag/remove', this.id);
       }
     }
-  },
-  methods: {
-    decrement () {
-      this.$store.dispatch('bag/decrement', this.id);
-    },
-    increment () {
-      if (this.item.qty + 1 <= this.item.availability)
-        this.$store.dispatch('bag/increment', this.id);
-    },
-    remove () {
-      this.$store.dispatch('bag/remove', this.id);
-    }
-  }
-};
+  };
 </script>
 
 <style lang="scss">
