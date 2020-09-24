@@ -43,20 +43,27 @@ export default {
       return this.$store.state.shop.items || [];
     },
     items () {
-      return shuffle(this.storeItems.map(item => {
-        if (this.type !== null && (this.type === 'all' || item.category.includes(this.type)))
-          return {
-            ...item,
-            width: 0,
-            height: 0
-          };
-        else if (this.room !== null && item.room.includes(this.room))
-          return {
-            ...item,
-            width: 0,
-            height: 0
-          };
-      }).filter(function (item) { return item }));
+      return shuffle(
+        this.storeItems
+          .map(item => {
+            if (this.type !== null && (this.type === 'all' || item.category.includes(this.type)))
+              return {
+                ...item,
+                width: 0,
+                height: 0
+              };
+            else if (this.room !== null && item.room.includes(this.room))
+              return {
+                ...item,
+                width: 0,
+                height: 0
+              };
+          })
+          // show only items that are in stock
+          .filter(function (item) {
+            return item && item.availability > 0;
+          })
+      );
     },
     windowWidth () {
       return this.$store.state.global.windowSize.width;

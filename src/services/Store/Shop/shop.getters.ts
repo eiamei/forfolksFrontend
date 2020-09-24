@@ -78,8 +78,9 @@ export const shopGetters = {
       const colors: Array<Color> = [];
       if (item) {
         state.items
+        // also show only the availabele ones
           .filter(function (filteredItem) {
-            return filteredItem.rootPath === item.rootPath
+            return filteredItem.rootPath === item.rootPath && filteredItem.availability > 0
           })
           .map(function (filteredItem) {
             return filteredItem.selectableProperty
