@@ -1,6 +1,6 @@
 <template>
   <ul class="item-more-info">
-    <li v-if="item.care" class="item-more-info__link-container regular-link">
+    <li v-if="isShowcare" class="item-more-info__link-container regular-link">
       <button class="item-more-info__link regular-sans-text" @click="open">Подробнее об уходе</button>
       <div></div>
     </li>
@@ -33,6 +33,9 @@
           return `Дизайн: ${this.item.itemProperty.createdBy.design}`
         }
         return 'Дизайн: Forfolks'
+      },
+      isShowcare () : boolean {
+        return Boolean(this.item.care) && Object.keys(this.item.care).length > 0
       }
     },
     methods: {
