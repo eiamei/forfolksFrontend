@@ -39,7 +39,7 @@
       "text": "Белый"
     }],
     "layout": "high",
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "stand-basic-s",
@@ -211,7 +211,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 2,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -427,7 +427,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 0,
+    "availability": 1,
     "price":400
   },
   {
@@ -469,7 +469,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 1
+    "availability": 2
   },
   {
     "group": "cup-mild",
@@ -489,7 +489,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 2
+    "availability": 3
   },
   {
     "group": "bowl-mild",
@@ -499,7 +499,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 0,
+    "availability": 1,
     "price":300
   },
   {
@@ -1134,7 +1134,7 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": 1500,
     "badges": ""
   },
@@ -1369,125 +1369,6 @@
     "badges": ""
   },
   {
-    "group": "mori-toys",
-    "id": "0720030(1)",
-    "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
-  },
-  {
-    "group": "mori-pillowcase",
-    "name": "Чехол большой",
-    "id": "0720034(1)",
-    "selectableProperty": [{
-      "name": "color",
-      "value": "green",
-      "text": "Зеленый"
-    }, {
-      "name": "model",
-      "value": "big",
-      "text": "Большой"
-    }],
-    "itemProperty": {
-      "size": {
-        "width": "50cm",
-        "length": "50cm"
-      },
-      "material": ["Рами"],
-      "createdBy": {
-        "design": "Mori"
-      }
-    },
-    "availability": 1,
-    "price": 870,
-    "badges": ""
-  },
-  {
-    "group": "mori-pillowcase",
-    "name": "Чехол маленький",
-    "id": "0720033(1)",
-    "selectableProperty": [{
-      "name": "color",
-      "value": "brown",
-      "text": "Коричневый"
-    }, {
-      "name": "model",
-      "value": "small",
-      "text": "Стандартный"
-    }],
-    "itemProperty": {
-      "size": {
-        "width": "40cm",
-        "length": "40cm"
-      },
-      "material": ["Рами"],
-      "createdBy": {
-        "design": "Mori"
-      }
-    },
-    "availability": 1,
-    "price": 780,
-    "badges": ""
-  },
-  {
-    "group": "mori-hanging",
-    "id": "0720029(1)",
-    "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
-  },
-  {
-    "group": "mori-tablecloth",
-    "id": "0720032(1)",
-    "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
-  },
-  {
-    "group": "mori-bag",
-    "id": "0720027(1)",
-    "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
-  },
-  {
-    "group": "mori-apron-melange",
-    "id": "0720031(1)",
-    "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
-  },
-  {
-    "group": "mori-cover-bag",
-    "name": "Чехол стандартный",
-    "id": "0720028(2)",
-    "selectableProperty": [{
-      "name": "model",
-      "value": "small",
-      "text": "Стандартный"
-    }],
-    "itemProperty": {
-      "size": {
-        "height": "45cm",
-        "width": "40cm"
-      },
-      "material": ["Хлопок"],
-      "createdBy": {
-        "design": "Space of mori"
-      }
-    },
-    "availability": 1,
-    "price": 880,
-    "badges": ""
-  },
-  {
-    "group": "mori-tack",
-    "id": "0720026(1)",
-    "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
-  },
-  {
     "group": "whiteclay-soap-dish",
     "name": "Rice",
     "id": "0720025(4)",
@@ -1496,8 +1377,8 @@
       "value": "rice",
       "text": "rice"
     }],
-    "availability": 1,
-    "badges": "new"
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "whiteclay-soap-dish",
@@ -1521,7 +1402,8 @@
       "text": "sage"
     }],
     "availability": 1,
-    "badges": "new"
+    "badges": "",
+    "price": 750
   },
   {
     "group": "whiteclay-soap-dish",
@@ -1533,7 +1415,8 @@
       "text": "sweet-herb"
     }],
     "availability": 1,
-    "badges": "new"
+    "badges": "",
+    "price": 750
   },
   {
     "group": "hleb-pot",
@@ -1564,7 +1447,7 @@
       "value": "blackberry-mint",
       "text": "Ежевика & Мята"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1588,7 +1471,7 @@
       "value": "jasmine-mint",
       "text": "Жасмин & Мята"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1624,7 +1507,7 @@
       "value": "vanilla-banana",
       "text": "Ваниль & Банан"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1648,7 +1531,7 @@
       "value": "coffee-cinnamon",
       "text": "Кофе & Корица"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1684,7 +1567,7 @@
       "value": "lavander-herb",
       "text": "Лаванда & Скошенная трава"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1796,7 +1679,7 @@
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": "",
     "price": 300
   },
@@ -1804,7 +1687,7 @@
     "group": "carrotlab-soap-dishes",
     "id": "0720006(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1864,14 +1747,14 @@
     "group": "carrotlab-soap-flower",
     "id": "0720087(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
     "group": "carrotlab-soap-honey",
     "id": "0720088(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -1885,7 +1768,7 @@
     "group": "carrotlab-soap-salt",
     "id": "0720094(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2004,7 +1887,7 @@
     "group": "hot-cup-cinnamon",
     "id": "0720077(1)",
     "selectableProperty": [],
-    "availability": 3,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -2148,7 +2031,7 @@
       "value": "olive",
       "text": "Олива"
     }],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -2170,7 +2053,7 @@
       "value": "terracotta",
       "text": "Терракотовый"
     }],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -2196,7 +2079,7 @@
       "value": "figs",
       "text": "Пыльно-лиловый"
     }],
-    "availability": 0,
+    "availability": 2,
     "price": 300,
     "badges": ""
   },
@@ -2223,7 +2106,7 @@
       "value": "graphite",
       "text": "Графит"
     }],
-    "availability": 0,
+    "availability": 2,
     "price": 350,
     "badges": ""
   },
@@ -2350,14 +2233,14 @@
     "group": "lorbeer-soap-ribbon",
     "id": "0820002(1)",
     "selectableProperty": [],
-    "availability": 6,
+    "availability": 4,
     "badges": ""
   },
   {
     "group": "lorbeer-soap-olive",
     "id": "0820007(1)",
     "selectableProperty": [],
-    "availability": 6,
+    "availability": 5,
     "badges": ""
   },
   {
@@ -2378,14 +2261,14 @@
     "group": "lorbeer-soap-20",
     "id": "0820003(3)",
     "selectableProperty": [],
-    "availability": 4,
+    "availability": 2,
     "badges": ""
   },
   {
     "group": "lorbeer-soap-coniferous",
     "id": "0820006(1)",
     "selectableProperty": [],
-    "availability": 5,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -3242,7 +3125,7 @@
         "design": "Linav"
       }
     },
-    "availability": 2,
+    "availability": 1,
     "price": 990
   },
   {
@@ -3473,7 +3356,7 @@
     "group": "mif-remodelista",
     "id": "0920021(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "mif-fine-home",
@@ -3892,7 +3775,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "laboraturium-soap",
@@ -4168,7 +4051,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "laboratorium-mix",
@@ -4191,7 +4074,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "laboratorium-ubtan",
@@ -4237,6 +4120,30 @@
         "design": "Laboratorium"
       }
     },
+    "availability": 1
+  },
+  {
+    "group": "mori-towel-cage",
+    "id": "1020001(1)",
+    "selectableProperty": [],
+    "availability": 2
+  },
+  {
+    "group": "mori-towel-strip",
+    "id": "1020002(1)",
+    "selectableProperty": [],
+    "availability": 2
+  },
+  {
+    "group": "mori-garland-colored",
+    "id": "1020005(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "mori-hanging",
+    "id": "0720029(1)",
+    "selectableProperty": [],
     "availability": 1
   }
 ]

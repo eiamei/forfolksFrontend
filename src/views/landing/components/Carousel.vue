@@ -30,6 +30,12 @@
           infiniteScroll: true
         },
         slideData: [{
+          image: require('../../../assets/images/landing/landing-market-3.jpg'),
+          heading: '10-11 октября',
+          subHeading: 'На маркете в Василеостровском рынке',
+          linkText: 'В магазин',
+          link: '/store/category/all'
+        }, {
           image: require('../../../assets/images/landing/landing-shop.jpg'),
           heading: 'Встретимся в шоуруме',
           subHeading: '',
