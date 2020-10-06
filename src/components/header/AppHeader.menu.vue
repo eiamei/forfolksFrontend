@@ -62,6 +62,9 @@
           to: '/store/category/book',
           text: 'Книги'
         }, {
+          to: '/store/category/postcard',
+          text: 'Открытки'
+        }, {
           to: '/store/category/diffuser',
           text: 'Диффузоры'
         }, {

@@ -1003,6 +1003,56 @@
     "discountGroup": "suplier",
     "price": 200
   },
+  "choli-samara": {
+    "rootPath": "choli-samara",
+    "name": "Самара",
+    "type": "Корзинка",
+    "category": ["accessories", "basket"],
+    "room": ["bath"],
+    "desc": "Джутовая корзинка со сменным хлопковым чехлом.",
+    "metaDesc": "Купить джутовую корзинку со сменным хлопковым чехлом в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Джут, Хлопок"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "care": {
+      "header": "Уход за джутовым кашпо",
+      "text": "Сухая чистка щеткой. <br><br> При необходимости можно использовать мыльный раствор. <br><br> В случае попадания большого количества влаги промокнуть сухой тканью <br><br> Стирка в стиральной машине запрещена."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 1300
+  },
+  "choli-samara-pens": {
+    "rootPath": "choli-samara-pens",
+    "name": "Самара",
+    "type": "Корзинка с ручками",
+    "category": ["accessories", "basket"],
+    "room": ["bath", "dinner"],
+    "desc": "Джутовая корзинка с ручками. В комплекте с корзинкой идет хлопковая салфетка.",
+    "metaDesc": "Купить джутовую корзинку с ручками в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "care": {
+      "header": "Уход за джутовым кашпо",
+      "text": "Сухая чистка щеткой. <br><br> При необходимости можно использовать мыльный раствор. <br><br> В случае попадания большого количества влаги промокнуть сухой тканью <br><br> Стирка в стиральной машине запрещена."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 1400
+  },
   "latt-vase-stone": {
     "rootPath": "latt-vase-stone",
     "name": "Stone",
@@ -4426,5 +4476,29 @@
     "badges": "new",
     "discountGroup": "supliers",
     "price": 750
+  },
+  "diko": {
+    "rootPath": "diko",
+    "name": "Открытка",
+    "type": "Лес",
+    "category": ["postcard"],
+    "room": ["outdoor"],
+    "desc": "Тканевая гирлянда – оригинальное и уютное решение для декорации дома. Набор оттенков, который успокаивает и не надоедает. <br><br> За ней легко ухаживать и она универсальна: подойдет и для праздников и для постоянного украшения дома.",
+    "metaDesc": "Купить монотонную хлопковую гирлянду в зеленых тонах в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "width": "10см",
+        "height": "15см"
+      },
+      "material": ["Картон"],
+      "createdBy": {
+        "design": "Дико"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 100
   }
 }

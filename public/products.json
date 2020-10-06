@@ -189,7 +189,7 @@
       "name": "color",
       "text": "Белый мрамор"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -355,7 +355,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "vase-modern",
@@ -385,7 +385,7 @@
       "name": "color",
       "text": "Пудра"
     }],
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "vase-modern",
@@ -747,7 +747,7 @@
       "name": "color",
       "text": "Черный"
     }],
-    "availability": 28,
+    "availability": 27,
     "badges": ""
   },
   {
@@ -758,8 +758,8 @@
       "name": "color",
       "text": "Жемчужный"
     }],
-    "availability": 26,
-    "badges": "new"
+    "availability": 24,
+    "badges": ""
   },
   {
     "group": "toothbrush-bamboo",
@@ -769,7 +769,7 @@
       "name": "color",
       "text": "Какао"
     }],
-    "availability": 9,
+    "availability": 6,
     "badges": ""
   },
   {
@@ -780,8 +780,8 @@
       "name": "color",
       "text": "Песочный"
     }],
-    "availability": 15,
-    "badges": "new"
+    "availability": 12,
+    "badges": ""
   },
   {
     "group": "small-comb",
@@ -827,14 +827,14 @@
     "group": "long-brush",
     "id": "0720056(1)",
     "selectableProperty": [],
-    "availability": 7,
+    "availability": 6,
     "badges": ""
   },
   {
     "group": "linen-bag-gray-big",
     "id": "0720061(2)",
     "selectableProperty": [],
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -1048,6 +1048,34 @@
     "badges": ""
   },
   {
+    "group": "choli-samara",
+    "id": "1020013(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
+    "group": "choli-samara-pens",
+    "id": "1020012(2)",
+    "name": "Самара M",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "big",
+      "text": "M"
+    }],
+    "itemProperty": {
+      "size": {
+        "diameter": "28cm"
+      },
+      "material": ["Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "availability": 1,
+    "price": 1400,
+    "badges": ""
+  },
+  {
     "group": "latt-vase-stone",
     "id": "0720017(1)",
     "selectableProperty": [{
@@ -1157,7 +1185,7 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "price": 750,
     "badges": ""
   },
@@ -1203,7 +1231,7 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "price": 700,
     "badges": ""
   },
@@ -1364,7 +1392,7 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "price": 850,
     "badges": ""
   },
@@ -1401,7 +1429,7 @@
       "value": "sage2",
       "text": "sage"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": "",
     "price": 750
   },
@@ -1414,7 +1442,7 @@
       "value": "sweet-herb",
       "text": "sweet-herb"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": "",
     "price": 750
   },
@@ -1679,7 +1707,7 @@
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": "",
     "price": 300
   },
@@ -2261,7 +2289,7 @@
     "group": "lorbeer-soap-20",
     "id": "0820003(3)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -3169,7 +3197,7 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "freedom-auto",
@@ -3181,7 +3209,7 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 2
+    "availability": 0
   },
   {
     "group": "freedom-auto",
@@ -3193,7 +3221,7 @@
       "value": "summer-garden",
       "text": "Летний сад"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "freedom-auto",
@@ -3217,13 +3245,13 @@
       "value": "yellowstone",
       "text": "Йеллоустоун"
     }],
-    "availability": 0
+    "availability": 2
   },
   {
     "group": "fonar-spoon",
     "id": "0820072(1)",
     "selectableProperty": [],
-    "availability": 5
+    "availability": 3
   },
   {
     "group": "fonar-soap",
@@ -3283,7 +3311,7 @@
       "value": "dark-gray",
       "text": "Тёмно-серый"
     }],
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "otrubi-bag-m",
@@ -4145,5 +4173,173 @@
     "id": "0720029(1)",
     "selectableProperty": [],
     "availability": 1
+  },
+  {
+    "group": "diko",
+    "id": "1020014(1)",
+    "type": "Папоротник черный",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с папоротником черным в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "fern-black",
+      "text": "Папоротник черный"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020014(2)",
+    "type": "Папоротник белый",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с папоротником на белом фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "fern-black",
+      "text": "Папоротник белый"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020015(1)",
+    "type": "Монстера черная",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с монстерой на черном фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "monstera-black",
+      "text": "Монстера черная"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020015(2)",
+    "type": "Монстера белая",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с монстерой на белом фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "monstera-white",
+      "text": "Монстера белая"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020015(3)",
+    "type": "Монстера розовая",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с монстерой на розовом фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "monstera-pink",
+      "text": "Монстера розовая"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020016(1)",
+    "type": "Эхеверия черная",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с эхеверией на черном фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "echeveria-black",
+      "text": "Эхеверия черная"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020017(1)",
+    "type": "Гортензия черная",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с гортензией на черном фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "hydrantea-black",
+      "text": "Гортензия черная"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020017(2)",
+    "type": "Гортензия белая",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с гортензией на белом фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "hydrantea-white",
+      "text": "Гортензия белая"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020018(1)",
+    "type": "Подсолнух белый",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с подсолнухом на белом фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "sunflower-white",
+      "text": "Подсолнух белый"
+    }],
+    "availability": 8
+  },
+  {
+    "group": "diko",
+    "id": "1020019(1)",
+    "type": "Фикус черный",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с фикусом на черном фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "ficus-black",
+      "text": "Фикус черный"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020019(2)",
+    "type": "Фикус белый",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с фикусом на белом фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "ficus-white",
+      "text": "Фикус белый"
+    }],
+    "availability": 10
+  },
+  {
+    "group": "diko",
+    "id": "1020020(1)",
+    "type": "Протея белая",
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с протеей на белом фоне в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "protea-white",
+      "text": "Протея белая"
+    }],
+    "availability": 10
   }
 ]
