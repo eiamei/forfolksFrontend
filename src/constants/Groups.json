@@ -1938,6 +1938,58 @@
     "discountGroup": "suplier",
     "price": 1400
   },
+  "hot-cup-tiramisu": {
+    "rootPath": "hot-cup-tiramisu",
+    "name": "Кружка",
+    "type": "Тирамису",
+    "category": ["dish"],
+    "room": ["dinner"],
+    "desc": "Колекция ’Тирамису’ - это три нежных пастельных оттенка расположенные друг над другом прямом как в тирамису <br><br> Каждое изделие сделано вручную, потому имеет уникальную форму и фактуру.",
+    "metaDesc": "Купить керамическую кружку Тирамису в Forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+        "volume": "300мл"
+      },
+      "createdBy": {
+        "design": "Hot Hot Ceramics"
+      }
+    },
+    "care": {
+      "header": "Уход за керамической кружкой",
+      "text": "Пригодна для использования в микроволновой печи. <br><br> Не подходит для использования в посудомоечной машине"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 1400
+  },
+  "hot-tallrik-tiramisu-small": {
+    "rootPath": "hot-tallrik-tiramisu-small",
+    "name": "Тарелка",
+    "type": "Тирамису маленькая",
+    "category": ["dish"],
+    "room": ["dinner"],
+    "desc": "Колекция ’Тирамису’ - это три нежных пастельных оттенка расположенные друг над другом прямом как в тирамису <br><br> Каждое изделие сделано вручную, потому имеет уникальную форму и фактуру.",
+    "metaDesc": "Купить керамическую тарелку Тирамису в Forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+        "diameter": "15.5см"
+      },
+      "createdBy": {
+        "design": "Hot Hot Ceramics"
+      }
+    },
+    "care": {
+      "header": "Уход за керамической кружкой",
+      "text": "Пригодна для использования в микроволновой печи. <br><br> Не подходит для использования в посудомоечной машине"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "price": 1100
+  },
   "eco-sponge-luffa": {
     "rootPath": "eco-sponge-luffa",
     "name": "Губка",
@@ -4162,6 +4214,102 @@
     "discountGroup": "supliers",
     "price": 1000
   },
+  "latt-bowl-pine-forest": {
+    "rootPath": "latt-bowl-pine-forest",
+    "name": "Боул",
+    "type": "Сосновый лес",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "6см",
+        "width": "15.5см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "Lätt ceramics"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1000
+  },
+  "latt-saucer-pine-forest": {
+    "rootPath": "latt-saucer-pine-forest",
+    "name": "Блюдце",
+    "type": "Сосновый лес",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "width": "18см",
+        "height": "2.5см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "Lätt ceramics"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 950
+  },
+  "latt-tallrik-pine-forest": {
+    "rootPath": "latt-tallrik-pine-forest",
+    "name": "Тарелка",
+    "type": "Сосновый лес",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "width": "21см",
+        "height": "4см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "Lätt ceramics"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1250
+  },
+  "latt-tallrik-northern-forest": {
+    "rootPath": "latt-tallrik-northern-forest",
+    "name": "Тарелка",
+    "type": "Северный лес",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "width": "21см",
+        "height": "1.5см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "Lätt ceramics"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1100
+  },
   "laboratorium-gel": {
     "rootPath": "laboratorium-gel",
     "name": "Гель для душа",
@@ -4383,6 +4531,50 @@
     "discountGroup": "supliers",
     "price": 450
   },
+  "laboratorium-tonic": {
+    "rootPath": "laboratorium-tonic",
+    "name": "Тоник",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "250мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 450
+  },
+  "scrub": {
+    "rootPath": "scrub",
+    "name": "Скраб",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": "250мл"
+      },
+      "createdBy": {
+        "design": "Laboratorium"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 550
+  },
   "mori-towel-strip": {
     "rootPath": "mori-towel-strip",
     "name": "Полотенце",
@@ -4477,6 +4669,78 @@
     "discountGroup": "supliers",
     "price": 750
   },
+  "mori-bag-grid": {
+    "rootPath": "mori-bag-grid",
+    "name": "Мешочек-фруктовка",
+    "type": "",
+    "category": ["accessories"],
+    "room": ["bed", "guest", "child"],
+    "desc": "Сетчатый мешочек подойдет для хранения фруктов и овощей, чтобы они оставались свежими дольше, а также для небольших предметов. Сшит морибэг из натурального хлопка -  прочный и легкий в уходе материал. ",
+    "metaDesc": "Купить сетчатый мешочек-фруктовку в forfolks. Размер фруктовки 24 на 26 см.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "length": "24см",
+        "width": "26см"
+      },
+      "material": ["Хлопок"],
+      "createdBy": {
+        "design": "Space of mori"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 270
+  },
+  "mori-string-bag": {
+    "rootPath": "mori-string-bag",
+    "name": "Авоська",
+    "type": "",
+    "category": ["accessories"],
+    "room": ["kitchen", "dinning"],
+    "desc": "Эта сумка-авоська - экологичная альтернатива полиэтиленовым пакетам. Она сшита  из натуральной хлопковой нити, прочной и легкой в уходе. Авоська не занимает много места в сумке, а благодаря удлиненными ручками ее удобно носить на плече. Она подойдет для похода на рынок за овощами или в супермаркет.",
+    "metaDesc": "Купить сетчатую сумку авоську в forfolks. Размер авоськи 65 на 33 см.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "65см",
+        "width": "33см"
+      },
+      "material": ["Хлопок"],
+      "createdBy": {
+        "design": "Space of mori"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 600
+  },
+  "mori-tack-colored": {
+    "rootPath": "mori-tack-colored",
+    "name": "Прихватка",
+    "type": "",
+    "category": ["accessories"],
+    "room": ["kitchen"],
+    "desc": "Удобная прихватка с плотной подкладкой и кармашком для пальчиков. Простой рисунок, оттенки зеленого и натуральная ткань добавят на кухню атмосферу свежести. ",
+    "metaDesc": "Купить хлопковую прихватку в forfolks. Размер прихватки 22 на 16 см.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "22см",
+        "width": "16см"
+      },
+      "material": ["Хлопок"],
+      "createdBy": {
+        "design": "Space of mori"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 320
+  },
   "diko": {
     "rootPath": "diko",
     "name": "Открытка",
@@ -4500,5 +4764,144 @@
     "badges": "new",
     "discountGroup": "supliers",
     "price": 100
+  },
+  "bemyclay-spoon-circle": {
+    "rootPath": "bemyclay-spoon-circle",
+    "name": "Ложка",
+    "type": "",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "width": "3см",
+        "height": "10см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "bemyclay"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 750
+  },
+  "bemyclay-tallrik-wavy": {
+    "rootPath": "bemyclay-tallrik-wavy",
+    "name": "Тарелка",
+    "type": "Волнистая",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "diameter": "12см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "bemyclay"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1400
+  },
+  "bemyclay-tallrik-white": {
+    "rootPath": "bemyclay-tallrik-white",
+    "name": "Тарелка",
+    "type": "Белая",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "diameter": "12см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "bemyclay"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1200
+  },
+  "fonar-cup-dusk": {
+    "rootPath": "fonar-cup-dusk",
+    "name": "Кружка",
+    "type": "Темная",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "volume": "250мл"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "bemyclay"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1050
+  },
+  "fonar-cup-sand": {
+    "rootPath": "fonar-cup-sand",
+    "name": "Кружка",
+    "type": "Песочная",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "volume": "250мл"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "bemyclay"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 1050
+  },
+  "fonar-saucer": {
+    "rootPath": "fonar-saucer",
+    "name": "Блюдце",
+    "type": "Керамическое",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "volume": "10см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "bemyclay"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 500
   }
 }

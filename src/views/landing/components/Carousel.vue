@@ -30,10 +30,10 @@
           infiniteScroll: true
         },
         slideData: [{
-          image: require('../../../assets/images/landing/landing-market-3.jpg'),
-          heading: '10-11 октября',
-          subHeading: 'На маркете в Василеостровском рынке',
-          linkText: 'В магазин',
+          image: require('../../../assets/images/landing/landing-delivery.jpg'),
+          heading: 'Бесплатная доставка',
+          subHeading: 'По Москве и Санкт-Петербургу при заказе от 3000 рублей',
+          linkText: 'Перейти в магазин',
           link: '/store/category/all'
         }, {
           image: require('../../../assets/images/landing/landing-shop.jpg'),
@@ -41,12 +41,6 @@
           subHeading: '',
           linkText: 'Как нас найти',
           link: '/about'
-        }, {
-          image: require('../../../assets/images/landing/landing-delivery.jpg'),
-          heading: 'Бесплатная доставка',
-          subHeading: 'По Москве и Санкт-Петербургу при заказе от 3000 рублей',
-          linkText: 'Перейти в магазин',
-          link: '/store/category/all'
         }, {
           image: require('../../../assets/images/landing/landing-accessories.jpg'),
           heading: 'Кухонные аксессуары',
