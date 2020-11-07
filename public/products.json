@@ -167,7 +167,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -521,7 +521,7 @@
       "name": "color",
       "text": "Пудра"
     }],
-    "availability": 2,
+    "availability": 0,
     "price":300
   },
   {
@@ -769,7 +769,7 @@
       "name": "color",
       "text": "Какао"
     }],
-    "availability": 6,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -841,7 +841,7 @@
     "group": "choli-jute-stand",
     "id": "0720015(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 5,
     "badges": ""
   },
   {
@@ -877,7 +877,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -899,7 +899,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "price": 700,
     "badges": ""
   },
@@ -922,7 +922,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "price": 900,
     "badges": ""
   },
@@ -965,7 +965,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 0,
+    "availability": 1,
     "price": "500",
     "badges": ""
   },
@@ -1060,7 +1060,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "choli-samara-pens",
@@ -1080,7 +1080,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": 1400,
     "badges": ""
   },
@@ -1218,7 +1218,7 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": 500,
     "badges": ""
   },
@@ -1519,7 +1519,7 @@
       "value": "peas",
       "text": "Горошек"
     }],
-    "availability": 3,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1711,7 +1711,7 @@
       "value": "provence",
       "text": "Прованс"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1761,14 +1761,14 @@
     "group": "carrotlab-soap-oatmeal",
     "id": "0720005(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 6,
     "badges": ""
   },
   {
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 4,
     "badges": "",
     "price": 300,
     "badges": ""
@@ -1803,7 +1803,7 @@
       "value": "stone",
       "text": "Камешек"
     }],
-    "availability": 0,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -1837,14 +1837,14 @@
     "group": "carrotlab-soap-flower",
     "id": "0720087(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
     "group": "carrotlab-soap-honey",
     "id": "0720088(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1858,7 +1858,7 @@
     "group": "carrotlab-soap-salt",
     "id": "0720094(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -1978,6 +1978,20 @@
     "id": "0720077(1)",
     "selectableProperty": [],
     "availability": 3,
+    "badges": ""
+  },
+  {
+    "group": "hot-cup-tiramisu",
+    "id": "0720077(2)",
+    "selectableProperty": [],
+    "availability": 2,
+    "badges": ""
+  },
+  {
+    "group": "hot-tallrik-tiramisu-small",
+    "id": "1020021(1)",
+    "selectableProperty": [],
+    "availability": 2,
     "badges": ""
   },
   {
@@ -2121,7 +2135,7 @@
       "value": "olive",
       "text": "Олива"
     }],
-    "availability": 2,
+    "availability": 5,
     "badges": ""
   },
   {
@@ -2143,7 +2157,7 @@
       "value": "terracotta",
       "text": "Терракотовый"
     }],
-    "availability": 2,
+    "availability": 5,
     "badges": ""
   },
   {
@@ -2246,7 +2260,7 @@
       "value": "figs",
       "text": "Пыльно-лиловый"
     }],
-    "availability": 1,
+    "availability": 0,
     "price": 2100,
     "badges": ""
   },
@@ -3045,7 +3059,7 @@
       "value": "silver",
       "text": "Серебрянный"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3154,7 +3168,7 @@
     "group": "tabula-tallrik-retic-black",
     "id": "0820057(2)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3182,7 +3196,7 @@
     "group": "tabula-lava",
     "id": "0920045(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3210,7 +3224,7 @@
     "group": "tabula-caseo",
     "id": "0920046(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3362,7 +3376,7 @@
     "group": "fonar-spoon",
     "id": "0820072(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -3407,7 +3421,7 @@
     "group": "tabula-bowl",
     "id": "0820054(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3588,14 +3602,14 @@
     "group": "flowertree-lavande-rhombus",
     "id": "0920040(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
     "group": "flowertree-leaf",
     "id": "0920030(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3685,7 +3699,7 @@
     "group": "latt-tallrik-pine-forest",
     "id": "1020060(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "latt-tallrik-northern-forest",
@@ -3714,7 +3728,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3913,7 +3927,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -4081,7 +4095,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -4177,7 +4191,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4393,8 +4407,8 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 5,
-    "badges": "new"
+    "availability": 4,
+    "badges": ""
   },
   {
     "group": "laboratorium-ubtan",
@@ -4539,8 +4553,8 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
-    "badges": "new"
+    "availability": 0,
+    "badges": ""
   },
   {
     "group": "scrub",
