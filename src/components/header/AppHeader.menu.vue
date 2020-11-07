@@ -94,9 +94,6 @@
         }, {
           to: '/store/category/driedflower',
           text: 'Сухоцветы'
-        }, {
-          to: '/store/category/toy',
-          text: 'Игрушки'
         }],
         byRoom: [{
           to: '/store/room/kitchen',
