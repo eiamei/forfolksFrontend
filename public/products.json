@@ -1454,15 +1454,111 @@
   },
   {
     "group": "whiteclay-soap-dish",
-    "name": "Rice",
-    "id": "0720025(4)",
+    "name": "Fern",
+    "id": "1120003(9)",
     "selectableProperty": [{
       "name": "model",
-      "value": "rice",
-      "text": "rice"
+      "value": "fern1",
+      "text": "fern"
     }],
-    "availability": 0,
-    "badges": ""
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Fern",
+    "id": "1120003(10)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "fern2",
+      "text": "fern"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Fir",
+    "id": "1120003(2)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "fir1",
+      "text": "fir"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Fir",
+    "id": "1120003(4)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "fir2",
+      "text": "fir"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Geranium",
+    "id": "1120003(5)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "geranium",
+      "text": "geranium"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Hogweed",
+    "id": "1120003(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "hogweed",
+      "text": "hogweed"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Maral",
+    "id": "1120003(7)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "maral1",
+      "text": "maral"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Maral",
+    "id": "1120003(8)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "maral2",
+      "text": "maral"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "whiteclay-soap-dish",
+    "name": "Oak",
+    "id": "1120003(6)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "oak",
+      "text": "oak"
+    }],
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "whiteclay-soap-dish",
@@ -1473,34 +1569,8 @@
       "value": "sage1",
       "text": "sage"
     }],
-    "availability": 0,
-    "badges": ""
-  },
-  {
-    "group": "whiteclay-soap-dish",
-    "name": "Sage",
-    "id": "0720025(8)",
-    "selectableProperty": [{
-      "name": "model",
-      "value": "sage2",
-      "text": "sage"
-    }],
-    "availability": 0,
-    "badges": "",
-    "price": 750
-  },
-  {
-    "group": "whiteclay-soap-dish",
-    "name": "Sweet herb",
-    "id": "0720025(6)",
-    "selectableProperty": [{
-      "name": "model",
-      "value": "sweet-herb",
-      "text": "sweet-herb"
-    }],
-    "availability": 0,
-    "badges": "",
-    "price": 750
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "hleb-pot",
