@@ -2407,7 +2407,7 @@
     "group": "lorbeer-soap-ribbon",
     "id": "0820002(1)",
     "selectableProperty": [],
-    "availability": 3,
+    "availability": 0,
     "price": 450,
     "badges": ""
   },
@@ -3201,7 +3201,7 @@
     "group": "madera-board",
     "id": "0820050(1)",
     "selectableProperty": [],
-    "availability": 0,
+    "availability": 1,
     "price": 1200,
     "badges": ""
   },
@@ -3209,9 +3209,15 @@
     "group": "madera-boardsmall",
     "id": "0820051(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 2,
     "price": 1100,
     "badges": ""
+  },
+  {
+    "group": "madera-suspension-oak",
+    "id": "1120005(1)",
+    "selectableProperty": [],
+    "availability": 3
   },
   {
     "group": "tabula-tallrik-fero",
@@ -3763,7 +3769,7 @@
     "group": "latt-saucer-pine-forest",
     "id": "1020059(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "latt-tallrik-pine-forest",
@@ -5030,6 +5036,12 @@
     "availability": 1
   },
   {
+    "group": "bemyclay-scoop",
+    "id": "1020040(1)",
+    "selectableProperty": [],
+    "availability": 0
+  },
+  {
     "group": "fonar-cup-dusk",
     "id": "1020024(2)",
     "selectableProperty": [],
@@ -5045,6 +5057,171 @@
     "group": "fonar-saucer",
     "id": "1020027(1)",
     "selectableProperty": [],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Бродяги дхармы",
+    "id": "1120002(13)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "dharma",
+      "text": "Бродяги дхармы"
+    }],
+    "availability": 0
+  },
+  {
+    "group": "aromat",
+    "type": "Бузина и чайный лист",
+    "id": "1120002(5)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "elderberry-tea",
+      "text": "Бузина и чайный лист"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "aromat",
+    "type": "Гранатовый браслет",
+    "id": "1120002(2)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "garnet-bracelet",
+      "text": "Гранатовый браслет"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Елисейские поля",
+    "id": "1120002(6)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "champs-elysees",
+      "text": "Елисейские поля"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Красный кедр",
+    "id": "1120002(4)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "cedar",
+      "text": "Красный кедр"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Морская соль и орхидея",
+    "id": "1120002(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "salt-orchid",
+      "text": "Морская соль и орхидея"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Белый мускус и амбра",
+    "id": "1120002(10)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "musk-amber",
+      "text": "Белый мускус и амбра"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "aromat",
+    "type": "Печеное яблоко",
+    "id": "1120002(12)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "apple",
+      "text": "Печеное яблоко"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Петербург",
+    "id": "1120002(14)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "petersburg",
+      "text": "Петербург"
+    }],
+    "availability": 1
+  },
+  {
+    "group": "aromat",
+    "type": "Резной полисад",
+    "id": "1120002(3)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "carved-polisad",
+      "text": "Резной полисад"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Скандинавия",
+    "id": "1120002(8)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "scandinavia",
+      "text": "Скандинавия"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Табак и ваниль",
+    "id": "1120002(11)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "tabacco-vanilla",
+      "text": "Табак и ваниль"
+    }],
+    "availability": 0
+  },
+  {
+    "group": "aromat",
+    "type": "Дерево и сандал",
+    "id": "1120002(7)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "teak-sandalwood",
+      "text": "Дерево и сандал"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Цитрусовый апероль",
+    "id": "1120002(9)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "aperol",
+      "text": "Цитрусовый апероль"
+    }],
+    "availability": 2
+  },
+  {
+    "group": "aromat",
+    "type": "Пион и розовая замша",
+    "id": "1120002(15)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "peony-suede",
+      "text": "Пион и розовая замша"
+    }],
     "availability": 2
   }
 ]

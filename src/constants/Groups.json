@@ -1359,7 +1359,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "price": 700
+    "price": 750
   },
   "hleb-pot": {
     "rootPath": "hleb-pot",
@@ -2902,7 +2902,7 @@
     },
     "badges": "new",
     "discountGroup": "supliers",
-    "price": 1000
+    "price": 1200
   },
   "madera-boardsmall": {
     "rootPath": "madera-boardsmall",
@@ -2928,7 +2928,31 @@
     },
     "badges": "new",
     "discountGroup": "supliers",
-    "price": 1000
+    "price": 1100
+  },
+  "madera-suspension-oak": {
+    "rootPath": "madera-suspension-oak",
+    "name": "Кронштейн",
+    "type": "Дубовый",
+    "category": ["accessories"],
+    "room": ["bed", "guest"],
+    "desc": "Надежный и прочный кронштейн из массива дуба. Дополнен углублением для подвешивания.",
+    "metaDesc": "Надежный и прочный кронштейн из массива дуба. Дополнен углублением для подвешивания.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Дуб"],
+      "size": {
+        "height": "20см",
+        "width": "20см"
+      },
+      "createdBy": {
+        "design": "Madera mood"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 800
   },
   "tabula-tallrik-fero": {
     "rootPath": "tabula-tallrik-fero",
@@ -4835,6 +4859,30 @@
     "discountGroup": "supliers",
     "price": 1200
   },
+  "bemyclay-scoop": {
+    "rootPath": "bemyclay-scoop",
+    "name": "Совочек",
+    "type": "керамический",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "В отличие от ложек, из которых все так и норовит высыпаться, высокие бортики совочка помогают избежать нежелательных последствий. Они равно подойдут как для специй, муки, так и для круп или даже сухого корма для животных.",
+    "metaDesc": "В отличие от ложек, из которых все так и норовит высыпаться, высокие бортики совочка помогают избежать нежелательных последствий. Они равно подойдут как для специй, муки, так и для круп или даже сухого корма для животных.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "width": "4см",
+        "length": "12см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "bemyclay"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 600
+  },
   "fonar-cup-dusk": {
     "rootPath": "fonar-cup-dusk",
     "name": "Кружка",
@@ -4850,7 +4898,7 @@
       },
       "material": ["Керамика"],
       "createdBy": {
-        "design": "bemyclay"
+        "design": "Fonar"
       }
     },
     "care": {},
@@ -4873,7 +4921,7 @@
       },
       "material": ["Керамика"],
       "createdBy": {
-        "design": "bemyclay"
+        "design": "Fonar"
       }
     },
     "care": {},
@@ -4892,16 +4940,39 @@
     "shortDesc": "",
     "itemProperty": {
       "size": {
-        "volume": "10см"
+        "length": "10см"
       },
       "material": ["Керамика"],
       "createdBy": {
-        "design": "bemyclay"
+        "design": "Fonar"
       }
     },
     "care": {},
     "badges": "new",
     "discountGroup": "supliers",
     "price": 500
+  },
+  "aromat": {
+    "rootPath": "aromat",
+    "name": "Твердые духи",
+    "type": "",
+    "category": ["cosmetic"],
+    "room": ["bath"],
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу",
+    "metaDesc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "volume": "10мл"
+      },
+      "material": ["Масло ши, масло кокоса, соевый воск, витамин Е, парфюмерная композиция"],
+      "createdBy": {
+        "design": "Aromat"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 350
   }
 }
