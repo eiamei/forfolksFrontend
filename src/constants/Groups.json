@@ -4765,6 +4765,54 @@
     "discountGroup": "supliers",
     "price": 320
   },
+  "mori-shopper": {
+    "rootPath": "mori-shopper",
+    "name": "Шоппер",
+    "type": "",
+    "category": ["bag"],
+    "room": ["outdoor"],
+    "desc": "Хлопковая сумка - шопер пастельного цвета с объемным дном. Идеальна для легкой прогулки или похода за продуктами.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "40см",
+        "width": "35см"
+      },
+      "material": ["Хлопок"],
+      "createdBy": {
+        "design": "Space of mori"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 820
+  },
+  "mori-shopper-strings": {
+    "rootPath": "mori-shopper-strings",
+    "name": "Шоппер",
+    "type": "С завязками",
+    "category": ["bag"],
+    "room": ["outdoor"],
+    "desc": "Сумка из плотного хлопка подойдет для прогулок и походов в магазин. Благодаря завязкам - при необходимости можно спрятать содержание сумки от чужих глаз или дождя.",
+    "metaDesc": "Сумка из плотного хлопка подойдет для прогулок и походов в магазин. Благодаря завязкам - при необходимости можно спрятать содержание сумки от чужих глаз или дождя.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "39см",
+        "width": "35см"
+      },
+      "material": ["Хлопок"],
+      "createdBy": {
+        "design": "Space of mori"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "supliers",
+    "price": 820
+  },
   "diko": {
     "rootPath": "diko",
     "name": "Открытка",

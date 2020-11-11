@@ -97,6 +97,10 @@
         background: $light-gray-cloth;
       }
 
+      &--mint {
+        background: $mint;
+      }
+
       &--natural-linen {
         background: $natural-linen;
       }
@@ -131,6 +135,10 @@
 
       &--cacao, &--coffee {
         background: $cacao;
+      }
+
+      &--chestnut {
+        background: $chestnut;
       }
 
       &--jupiter {

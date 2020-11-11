@@ -4820,6 +4820,36 @@
     "availability": 2
   },
   {
+    "group": "mori-shopper",
+    "id": "1020022(2)",
+    "type": "Мятный",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "mint",
+      "text": "шоппер мятный"
+    }],
+    "availability": 1,
+    "price": 710
+  },
+  {
+    "group": "mori-shopper",
+    "id": "1020022(1)",
+    "type": "Каштановый",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "chestnut",
+      "text": "шоппер каштановый"
+    }],
+    "availability": 1,
+    "price": 820
+  },
+  {
+    "group": "mori-shopper-strings",
+    "id": "1020023(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
     "group": "diko",
     "id": "1020014(1)",
     "type": "Папоротник черный",
