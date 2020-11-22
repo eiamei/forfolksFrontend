@@ -24,6 +24,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": 350
   },
   "stand-basic-s": {
@@ -50,6 +52,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": 350
   },
   "stand-cone-s": {
@@ -75,6 +79,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "150"
   },
   "tray-tray": {
@@ -102,6 +108,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "1000"
   },
   "stand-basic": {
@@ -128,6 +136,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "600"
   },
   "basic-incense": {
@@ -154,6 +164,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "600"
   },
   "candlestick-house-swiss": {
@@ -178,6 +190,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "350"
   },
   "candlestick-house-denmark": {
@@ -202,6 +216,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "350"
   },
   "vase-modern": {
@@ -226,6 +242,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "990"
   },
   "vase-mild": {
@@ -250,6 +268,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "350"
   },
   "cup-mild": {
@@ -276,6 +296,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "850"
   },
   "bowl-mild": {
@@ -302,6 +324,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 30,
+    "isSale": true,
     "price": "250"
   },
   "hanging-spole": {
@@ -322,6 +346,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 10,
+    "isSale": false,
     "price": "450"
   },
   "panno-leaf": {
@@ -346,6 +372,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 10,
+    "isSale": false,
     "price": "1100"
   },
   "panno-wind": {
@@ -370,6 +398,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 10,
+    "isSale": false,
     "price": "2100"
   },
   "panno-stranger": {
@@ -394,6 +424,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 10,
+    "isSale": false,
     "price": "2900"
   },
   "candle-wax-drops": {
@@ -411,6 +443,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 10,
+    "isSale": false,
     "price": "100"
   },
   "minibouquet-blum": {
@@ -436,6 +470,8 @@
     },
     "badges": "",
     "discountGroup": "forfolks",
+    "salePercent": 10,
+    "isSale": false,
     "price": "400"
   },
   "luffa-whole": {
@@ -463,6 +499,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 20,
+    "isSale": true,
     "price": "110"
   },
   "luffa-pressed": {
@@ -490,6 +528,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "140"
   },
   "straw-bamboo": {
@@ -518,6 +558,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "100"
   },
   "toothbrush-bamboo": {
@@ -544,6 +586,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "160"
   },
   "small-comb": {
@@ -571,6 +615,8 @@
       "text": "Специального ухода не требуется. Есть два способа отчистки щетки: влажный и сухой. <br><br> В случае с влажным способом приготовьте мыльный раствор, две-три минуты мойте гребешок в этом растворе и затем насухо вытерите сухой тканью. Важно не оставлять гребешок отмокать в воде, так как он может разбухнуть и после высыхания начать трескаться. <br><br> Для сухого способа понадобится сухая ткань и спиртосодержащий растовор. Смочите ткань в растворе и протрите каждый зубчик гребешка. По мере загрязнения ткани ее следует менять. Гребешок можно считать чистым после того как ткань перестанет пачкаться."},
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "100"
   },
   "big-comb": {
@@ -598,6 +644,8 @@
       "text": "Специального ухода не требуется. Есть два способа отчистки щетки: влажный и сухой. <br><br> В случае с влажным способом приготовьте мыльный раствор, две-три минуты мойте гребешок в этом растворе и затем насухо вытерите сухой тканью. Важно не оставлять гребешок отмокать в воде, так как он может разбухнуть и после высыхания начать трескаться. <br><br> Для сухого способа понадобится сухая ткань и спиртосодержащий растовор. Смочите ткань в растворе и протрите каждый зубчик гребешка. По мере загрязнения ткани ее следует менять. Гребешок можно считать чистым после того как ткань перестанет пачкаться."},
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "200"
   },
   "small-bamboo-brush": {
@@ -625,6 +673,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "450"
   },
   "long-cup-brush": {
@@ -652,6 +702,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "350"
   },
   "long-brush": {
@@ -679,6 +731,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "300"
   },
   "linen-bag-gray-small": {
@@ -706,6 +760,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "250"
   },
   "linen-bag-gray-big": {
@@ -733,6 +789,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0,
+    "isSale": false,
     "price": "300"
   },
   "choli-jute-stand": {
@@ -759,6 +817,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "500"
   },
   "choli-basket-semisphere": {
@@ -786,6 +846,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "2500"
   },
   "choli-cachepot-cylinder": {
@@ -813,6 +875,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "2900"
   },
   "choli-cachepot-pineapple": {
@@ -840,6 +904,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "500"
   },
   "choli-two-cachepot-pack": {
@@ -867,6 +933,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "1200"
   },
   "choli-basket": {
@@ -894,6 +962,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "6500"
   },
   "choli-katushka": {
@@ -921,6 +991,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "choli-sponge": {
@@ -948,6 +1020,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "350"
   },
   "choli-cotton-pads": {
@@ -975,6 +1049,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 200
   },
   "choli-jute-sponge": {
@@ -1001,6 +1077,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 200
   },
   "choli-samara": {
@@ -1026,6 +1104,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1300
   },
   "choli-samara-pens": {
@@ -1051,7 +1131,121 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1400
+  },
+  "choli-basket-jute-hb": {
+    "rootPath": "choli-basket-jute-hb",
+    "name": "Корзина",
+    "type": "Большая",
+    "category": ["basket"],
+    "room": ["bath", "bed"],
+    "desc": "Джутовая корзинка с ручками сплетеная из двух канатов: джутового и хлопкового",
+    "metaDesc": "Купить джутовую корзинку из двух канатов с ручками в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "35см",
+        "width": "25см"
+      },
+      "material": ["Хлопок", "Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "care": {
+      "header": "Уход за джутовым кашпо",
+      "text": "Сухая чистка щеткой. <br><br> При необходимости можно использовать мыльный раствор. <br><br> В случае попадания большого количества влаги промокнуть сухой тканью <br><br> Стирка в стиральной машине запрещена."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 3700
+  },
+  "choli-joy": {
+    "rootPath": "choli-joy",
+    "name": "Корзина",
+    "type": "Joy",
+    "category": ["basket"],
+    "room": ["bath", "kitchen"],
+    "desc": "Джутовая корзинка связанна крючком и доволнительно проклееная для придания ей особенной прочности",
+    "metaDesc": "Купить джутовую корзинку связанную крючком и доволнительно проклееная для придания ей особенной прочности в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "14.5см",
+        "width": "13см"
+      },
+      "material": ["Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "care": {
+      "header": "Уход за джутовым кашпо",
+      "text": "Сухая чистка щеткой. <br><br> При необходимости можно использовать мыльный раствор. <br><br> В случае попадания большого количества влаги промокнуть сухой тканью <br><br> Стирка в стиральной машине запрещена."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 350
+  },
+  "choli-basket-gray": {
+    "rootPath": "choli-basket-gray",
+    "name": "Корзина хлопковая",
+    "type": "",
+    "category": ["basket"],
+    "room": ["bath", "kitchen"],
+    "desc": "Корзинка сплетенная из двух хлопковых канатов: серого и белого",
+    "metaDesc": "Купить корзинку сплетенную из двух хлопковых канатов: серого и белого в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Хлопок"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "care": {
+      "header": "Уход за хлопковой корзинкой",
+      "text": "Сухая чистка щеткой. <br><br> При необходимости можно использовать мыльный раствор. <br><br> В случае попадания большого количества влаги промокнуть сухой тканью <br><br> Стирка в стиральной машине запрещена."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 700
+  },
+  "choli-basket-small-jute-hb": {
+    "rootPath": "choli-basket-small-jute-hb",
+    "name": "Корзина",
+    "type": "Маленькая",
+    "category": ["basket"],
+    "room": ["bath", "bed"],
+    "desc": "Джутовая корзинка с ручками сплетеная из двух канатов: джутового и хлопкового",
+    "metaDesc": "Купить джутовую корзинку из двух канатов с ручками в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Хлопок", "Джут"],
+      "createdBy": {
+        "design": "Choli jute"
+      }
+    },
+    "care": {
+      "header": "Уход за джутовым кашпо",
+      "text": "Сухая чистка щеткой. <br><br> При необходимости можно использовать мыльный раствор. <br><br> В случае попадания большого количества влаги промокнуть сухой тканью <br><br> Стирка в стиральной машине запрещена."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 1590
   },
   "latt-vase-stone": {
     "rootPath": "latt-vase-stone",
@@ -1079,6 +1273,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": "2200"
   },
   "sababa-black": {
@@ -1104,6 +1300,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-blueberry-pie": {
@@ -1130,6 +1328,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-dino": {
@@ -1155,6 +1355,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-face": {
@@ -1180,6 +1382,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-strawberry": {
@@ -1205,6 +1409,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-meow": {
@@ -1231,6 +1437,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-night-ruskeala": {
@@ -1257,6 +1465,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-simple": {
@@ -1283,6 +1493,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-summer-sunrise": {
@@ -1306,6 +1518,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "sababa-urban-jungle": {
@@ -1332,6 +1546,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": ""
   },
   "whiteclay-soap-dish": {
@@ -1359,6 +1575,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 750
   },
   "hleb-pot": {
@@ -1386,6 +1604,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 500
   },
   "candle-freedom": {
@@ -1413,6 +1633,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1000
   },
   "freedom-bigcandle": {
@@ -1440,6 +1662,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1600
   },
   "carrotlab-soap-marseille": {
@@ -1466,6 +1690,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "carrotlab-soap-oatmeal": {
@@ -1492,6 +1718,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 250
   },
   "carrotlab-soap-three-clays": {
@@ -1518,6 +1746,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "carrotlab-soap-dishes": {
@@ -1544,6 +1774,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 450
   },
   "carrotlab-soap-laundry": {
@@ -1570,6 +1802,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 200
   },
   "carrotlab-soap-castilla": {
@@ -1596,6 +1830,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 350
   },
   "carrotlab-soap-coal": {
@@ -1622,6 +1858,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "carrotlab-soap-grapefruit": {
@@ -1648,6 +1886,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 250
   },
   "carrotlab-soap-daisy": {
@@ -1674,6 +1914,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "carrotlab-soap-flower": {
@@ -1700,6 +1942,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "carrotlab-soap-honey": {
@@ -1726,6 +1970,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "carrotlab-soap-sea": {
@@ -1752,6 +1998,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 250
   },
   "carrotlab-soap-salt": {
@@ -1778,7 +2026,233 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
+  },
+  "carrotlab-soap-avocado": {
+    "rootPath": "carrotlab-soap-avocado",
+    "name": "Мыло",
+    "type": "Авокадо и мята",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "Супер увлажняющее мыло со свежей мякотью авокадо и бодрящими эфирными маслами перечной мяты.",
+    "metaDesc": "Купить мыло на мякоти авкодо и масле перечной мяты в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["омыленные масла кокоса, пальмы, оливы, касторки, авокадо, зеленая глина, спирулина, пюре авокадо, эфирное масло мяты."],
+      "size": {
+        "weight": "140г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 350
+  },
+  "carrotlab-soap-beehive": {
+    "rootPath": "carrotlab-soap-beehive",
+    "name": "Мыло",
+    "type": "Медовый улей",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "Мыло обладает приятным ароматом акациевого мёда и свежести алоэ, интенсивно увлажняет и обеззараживает",
+    "metaDesc": "Купить мыло с ароматом меда и алое в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Омыленные масла пальмы, кокоса, касторки, оливы, кунжута, миндаля, гель Алоэ-Вера, мёд, витамин Е"],
+      "size": {
+        "weight": "120г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 300
+  },
+  "carrotlab-soap-chocolate": {
+    "rootPath": "carrotlab-soap-chocolate",
+    "name": "Мыло",
+    "type": "Шоколадное с пчелиным воском",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "По настоящему твёрдое натуральное мыло, даёт обильную пену и качественное увлажнение. Благодаря воску предотвращает излишнюю потерю влаги с рук.",
+    "metaDesc": "Купить мыло с пчелиным воском и тертым какао в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Омыленные масла какао, кокоса, пальмы, оливы, касторки, тёртое какао, воск пчелиный, аромамасло «шоколадная любовь»"],
+      "size": {
+        "weight": "140г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 300
+  },
+  "carrotlab-soap-coffee": {
+    "rootPath": "carrotlab-soap-coffee",
+    "name": "Мыло-скраб",
+    "type": "Кофейное",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "Это натуральное мыло содержит специально подготовленные скрабирующие частички кофе, они не повреждают поверхность кожи, а очень мягко и деликатно полируют, убирая все несовершенства.",
+    "metaDesc": "Купить мыло-скраб с добавлением молотого кофе в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Омыленные масла пальмы, касторки, кокоса, оливы, молотый кофе, аромамасло «стручковая ваниль»"],
+      "size": {
+        "weight": "120г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 300
+  },
+  "carrotlab-soap-orange": {
+    "rootPath": "carrotlab-soap-orange",
+    "name": "Мыло",
+    "type": "Апельсиновое",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "Очень ароматное, бодрящее мыло с густой пеной, благодаря богатой композиции масел мягко ухаживает за кожей, оставляя ее увлажнённой и благоухающей. Мыло сваренное горячим способом на свежевыжатом соке апельсина и облепихи. ",
+    "metaDesc": "Купить мыло с ароматом апельсина в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["омыленные масла ши, кокоса, оливы, касторовое, миндальное и облепиховое масло, масла апельсина, лемонграсса, пачули, мандарина"],
+      "size": {
+        "weight": "170г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 350
+  },
+  "carrotlab-soap-zest": {
+    "rootPath": "carrotlab-soap-zest",
+    "name": "Мыло",
+    "type": "С цедрой лимона",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "Благодаря тертой цедре лимона оказывает массажное тонизирующее и скрабирующее действие. Даёт обильную пену, интенсивно очищает и увлажняет кожу.",
+    "metaDesc": "Купить мыло с цедрой лимона в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["омыленные масла пальмы, касторки, кокоса, оливы, цедра лимона, эфирное масло лимона"],
+      "size": {
+        "weight": "120г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 300
+  },
+  "carrotlab-soap-juice": {
+    "rootPath": "carrotlab-soap-juice",
+    "name": "Мыло",
+    "type": "На соке имбиря и лимона",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "Смягчающий кожу мёд, увлажняет и кондиционирует кожу, а сочетание имбиря и лимона повышает настроение и бодрит.",
+    "metaDesc": "Купить мыло на соке имбиря и лимона в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["омыленные масла пальмовое, кокосовое, оливковое, касторовое, миндальное, кунжутное; мёд акации, сок имбиря, сок лимона, имбирь молотый, желтая глина, какао"],
+      "size": {
+        "weight": "150г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 300
+  },
+  "carrotlab-soap-milk": {
+    "rootPath": "carrotlab-soap-milk",
+    "name": "Мыло",
+    "type": "С кокосовым молоком",
+    "category": ["soap"],
+    "room": ["bath"],
+    "desc": "Нежное и деликатное мыло, мягкая и нежная увлажняющая пена.",
+    "metaDesc": "Купить мыло с кокосовым молоком в forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["омыленные масла оливки, кокоса, пальмы, оливки, касторовое, авокадо и какао; белая глина, кокосовое молоко"],
+      "size": {
+        "weight": "120г"
+      },
+      "createdBy": {
+        "design": "Carrot Lab"
+      }
+    },
+    "care": {
+      "header": "Уход за мылом",
+      "text": "Рекомендуется хранить в сухой мыльнице"
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 350
   },
   "hey-plants-pot": {
     "rootPath": "hey-plants-pot",
@@ -1806,6 +2280,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 900
   },
   "hot-bowl-milk-choco": {
@@ -1832,6 +2308,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 900
   },
   "hot-plate-milk-choco": {
@@ -1858,6 +2336,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1100
   },
   "hot-plate-cinnamon-d19": {
@@ -1884,6 +2364,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1200
   },
   "hot-plate-cinnamon": {
@@ -1910,6 +2392,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1200
   },
   "hot-cup-cinnamon": {
@@ -1936,6 +2420,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1400
   },
   "hot-cup-tiramisu": {
@@ -1962,6 +2448,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1400
   },
   "hot-tallrik-tiramisu-small": {
@@ -1988,6 +2476,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1100
   },
   "eco-sponge-luffa": {
@@ -2015,6 +2505,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 130
   },
   "freedom-antiseptic": {
@@ -2041,6 +2533,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 250
   },
   "freedom-difusser": {
@@ -2067,6 +2561,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 900
   },
   "apron-buon-adult": {
@@ -2093,6 +2589,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "apron-buon-child": {
@@ -2119,6 +2617,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "towel-buon": {
@@ -2146,6 +2646,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 500
   },
   "sack-buon-tessuto": {
@@ -2169,6 +2671,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "bag-buon-adult": {
@@ -2195,6 +2699,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1900
   },
   "bag-buon-child": {
@@ -2221,6 +2727,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1900
   },
   "lorbeer-soap-ribbon": {
@@ -2247,6 +2755,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 400
   },
   "lorbeer-soap-olive": {
@@ -2273,6 +2783,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 490
   },
   "lorbeer-soap-5": {
@@ -2299,6 +2811,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 450
   },
   "lorbeer-soap-12": {
@@ -2325,6 +2839,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 490
   },
   "lorbeer-soap-20": {
@@ -2351,6 +2867,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 590
   },
   "lorbeer-soap-coniferous": {
@@ -2404,6 +2922,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 450
   },
   "enlin-sheet": {
@@ -2432,6 +2952,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3290
   },
   "enlin-duvon-cover": {
@@ -2457,6 +2979,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-pillowcase": {
@@ -2482,6 +3006,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-tablecloth-150-150": {
@@ -2507,6 +3033,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-tablecloth-150-250": {
@@ -2532,6 +3060,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-napkin-4": {
@@ -2557,6 +3087,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-napkin-6": {
@@ -2582,6 +3114,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-towel-38-55": {
@@ -2607,6 +3141,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-towel-38-110": {
@@ -2632,6 +3168,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "enlin-bag": {
@@ -2659,6 +3197,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1390
   },
   "enlin-travel-bag": {
@@ -2687,6 +3227,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1490
   },
   "enlin-pack": {
@@ -2715,6 +3257,8 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "jar-bamboo": {
@@ -2768,7 +3312,9 @@
       "text": "Машинная или ручная стирка при температуре до 40 градусов. <br><br> Без отжима в стиральной машине, при ручном отжиме не выкручивать."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1300
   },
   "tunturi-board-ash": {
@@ -2795,7 +3341,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 2200
   },
   "tunturi-board-ash-long-dark": {
@@ -2822,7 +3370,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 2200
   },
   "tunturi-board-oak": {
@@ -2849,7 +3399,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 2100
   },
   "tunturi-salt-shaker": {
@@ -2875,7 +3427,9 @@
       "text": "Изделия из натуральной древечины не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 900
   },
   "madera-board": {
@@ -2901,7 +3455,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1200
   },
   "madera-boardsmall": {
@@ -2927,7 +3483,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1100
   },
   "madera-suspension-oak": {
@@ -2951,7 +3509,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 800
   },
   "tabula-tallrik-fero": {
@@ -2977,7 +3537,9 @@
       "text": "Тарелки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1810
   },
   "tabula-tallrik-flumen": {
@@ -3004,7 +3566,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 2140
   },
   "tabula-tallrik-retic": {
@@ -3031,7 +3595,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1950
   },
   "tabula-tallrik-retic-black": {
@@ -3058,7 +3624,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1950
   },
   "tabula-tallrik-swell": {
@@ -3085,7 +3653,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1750
   },
   "tabula-tallrik-swell-black": {
@@ -3112,7 +3682,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1750
   },
   "tabula-tallrik-whiskey": {
@@ -3139,7 +3711,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1580
   },
   "tabula-lava": {
@@ -3166,7 +3740,9 @@
       "text": "Досочки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1760
   },
   "tabula-spoon-long": {
@@ -3193,7 +3769,9 @@
       "text": "Деревянный ложки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 600
   },
   "tabula-spoon-small": {
@@ -3220,7 +3798,9 @@
       "text": "Деревянный ложки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 500
   },
   "tabula-tallrik-esca": {
@@ -3246,7 +3826,9 @@
       "text": "Деревянные тарелкой не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1810
   },
   "tabula-caseo": {
@@ -3272,7 +3854,9 @@
       "text": "Деревянные доски не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1810
   },
   "linav-basket": {
@@ -3299,7 +3883,9 @@
       "text": "Стирать вручную, либо в стиральной машине в режиме 'ручная стирка' при температуре 40 градусов. <br><br> Рекомендуем использовать гель."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 0
   },
   "linav-towel-small": {
@@ -3326,7 +3912,9 @@
       "text": "Стирать вручную, либо в стиральной машине в режиме 'ручная стирка' при температуре 40 градусов. <br><br> Рекомендуем использовать гель."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 390
   },
   "linav-towel-big": {
@@ -3353,7 +3941,9 @@
       "text": "Стирать вручную, либо в стиральной машине в режиме 'ручная стирка' при температуре 40 градусов. <br><br> Рекомендуем использовать гель."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 590
   },
   "freedom-auto": {
@@ -3378,7 +3968,9 @@
       "text": "Специального ухода не требуется"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 450
   },
   "fonar-spoon": {
@@ -3405,7 +3997,9 @@
       "text": "Не рекомендуем мыть в посудомоечной машине"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 450
   },
   "fonar-milkman": {
@@ -3431,7 +4025,9 @@
       "text": "Специального ухода не требуется"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 950
   },
   "fonar-cup": {
@@ -3457,7 +4053,9 @@
       "text": "Специального ухода не требуется"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 950
   },
   "fonar-soap": {
@@ -3483,7 +4081,9 @@
       "text": "Специального ухода не требуется"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 650
   },
   "tabula-bowl": {
@@ -3509,7 +4109,9 @@
       "text": "Деревянная посуда не любит долгого замачивания в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 2000
   },
   "otrubi-bag-l": {
@@ -3536,7 +4138,9 @@
       "text": "Стирать при температуре 30◦-40◦С, отжим можно производить на скорости до 800 оборотов в минуту. <br><br> Можно сушить в сушильной машине, предварительно дать отлежаться, аккуратно сложив. <br><br> Сушить не до полного высыхания, чтобы легче было гладить."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 400
   },
   "otrubi-bag-m": {
@@ -3563,7 +4167,9 @@
       "text": "Стирать при температуре 30◦-40◦С, отжим можно производить на скорости до 800 оборотов в минуту. <br><br> Можно сушить в сушильной машине, предварительно дать отлежаться, аккуратно сложив. <br><br> Сушить не до полного высыхания, чтобы легче было гладить."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 350
   },
   "otrubi-bag-s": {
@@ -3590,7 +4196,9 @@
       "text": "Стирать при температуре 30◦-40◦С, отжим можно производить на скорости до 800 оборотов в минуту. <br><br> Можно сушить в сушильной машине, предварительно дать отлежаться, аккуратно сложив. <br><br> Сушить не до полного высыхания, чтобы легче было гладить."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 200
   },
   "otrubi-tablecloth-natural": {
@@ -3617,7 +4225,9 @@
       "text": "Стирать при температуре 30◦-40◦С, отжим можно производить на скорости до 800 оборотов в минуту. <br><br> Можно сушить в сушильной машине, предварительно дать отлежаться, аккуратно сложив. <br><br> Сушить не до полного высыхания, чтобы легче было гладить."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3000
   },
   "otrubi-bag-fruit": {
@@ -3644,7 +4254,9 @@
       "text": "Стирать при температуре не более 30◦С, отжим можно производить на скорости до 600 оборотов в минуту. <br><br> Сушить не до полного высыхания, чтобы легче было гладить."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 200
   },
   "tabula-canoe": {
@@ -3671,7 +4283,9 @@
       "text": "Тарелки не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца. <br><br> Рекомендуем раз в 1-2 месяца пропитывать минеральным маслом."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 2100
   },
   "maria-picture-flower": {
@@ -3698,7 +4312,9 @@
       "text": "Специального ухода не требуется."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1000
   },
   "remodelista": {
@@ -3723,7 +4339,9 @@
       "text": "Специального ухода не требуется."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1000
   },
   "mif-remodelista": {
@@ -3748,7 +4366,9 @@
       "text": "Специального ухода не требуется."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1200
   },
   "mif-fine-home": {
@@ -3773,7 +4393,9 @@
       "text": "Специального ухода не требуется."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1000
   },
   "mif-home-body": {
@@ -3798,7 +4420,9 @@
       "text": "Специального ухода не требуется."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1500
   },
   "flowertree-gipsophila-circle": {
@@ -3823,7 +4447,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3300
   },
   "flowertree-gipsophila-rhombus-small": {
@@ -3849,7 +4475,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1300
   },
   "flowertree-gipsophila-rhombus": {
@@ -3875,7 +4503,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3200
   },
   "flowertree-gipsophila-square": {
@@ -3901,7 +4531,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1300
   },
   "flowertree-gipsophila-stand": {
@@ -3927,7 +4559,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3800
   },
   "flowertree-lagurus-square": {
@@ -3953,7 +4587,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3200
   },
   "flowertree-lavande-grass-square": {
@@ -3979,7 +4615,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1500
   },
   "flowertree-lavande-rectangle": {
@@ -4005,7 +4643,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 2600
   },
   "flowertree-lavande-rhombus": {
@@ -4031,7 +4671,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1500
   },
   "flowertree-leaf": {
@@ -4057,7 +4699,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1500
   },
   "flowertree-sage-rhombus": {
@@ -4083,7 +4727,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3200
   },
   "flowertree-yarrow-rhombus": {
@@ -4109,7 +4755,9 @@
       "text": "Прямые солнечные лучи и избыточная влажность могут быть опасны для гербария, растения могут выгорать и менять цвет. <br><br> Также надо помнить, что даже при усиленной прочности в виде двойного стекла, при сильном ударе материал может дать трещину или разбиться."
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 3200
   },
   "latt-plate-small": {
@@ -4134,7 +4782,9 @@
       "text": "Не рекомендуем мыть тарелку в посудомоечной машине"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 900
   },
   "latt-plate-big": {
@@ -4159,7 +4809,9 @@
       "text": "Не рекомендуем мыть тарелку в посудомоечной машине"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1100
   },
   "latt-cup": {
@@ -4185,7 +4837,9 @@
       "text": "Не рекомендуем мыть стакан в посудомоечной машине"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 850
   },
   "latt-boul-small": {
@@ -4210,7 +4864,9 @@
       "text": "Не рекомендуем мыть боул в посудомоечной машине"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 900
   },
   "latt-boul-big": {
@@ -4235,7 +4891,9 @@
       "text": "Не рекомендуем мыть боул в посудомоечной машине"
     },
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1000
   },
   "latt-bowl-pine-forest": {
@@ -4259,7 +4917,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1000
   },
   "latt-saucer-pine-forest": {
@@ -4283,7 +4943,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 950
   },
   "latt-tallrik-pine-forest": {
@@ -4307,7 +4969,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1250
   },
   "latt-tallrik-northern-forest": {
@@ -4331,7 +4995,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1100
   },
   "laboratorium-gel": {
@@ -4353,7 +5019,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 600
   },
   "laboratorium-micellar": {
@@ -4376,7 +5044,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "laboratorium-shampoo": {
@@ -4398,7 +5068,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 500
   },
   "laboratorium-lip": {
@@ -4420,7 +5092,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 270
   },
   "laboraturium-soap": {
@@ -4442,7 +5116,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 300
   },
   "laboratorium-deodorant": {
@@ -4464,7 +5140,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 350
   },
   "laboratorium-mask": {
@@ -4486,7 +5164,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 350
   },
   "laboratorium-milk": {
@@ -4508,7 +5188,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 325
   },
   "laboratorium-mix": {
@@ -4530,7 +5212,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 325
   },
   "laboratorium-ubtan": {
@@ -4552,7 +5236,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 450
   },
   "laboratorium-tonic": {
@@ -4574,7 +5260,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 450
   },
   "scrub": {
@@ -4596,7 +5284,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 550
   },
   "mori-towel-strip": {
@@ -4620,7 +5310,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 350
   },
   "mori-towel-cage": {
@@ -4644,7 +5336,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 350
   },
   "mori-garland-colored": {
@@ -4667,7 +5361,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 900
   },
   "mori-hanging": {
@@ -4690,7 +5386,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 750
   },
   "mori-bag-grid": {
@@ -4714,7 +5412,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 270
   },
   "mori-string-bag": {
@@ -4738,7 +5438,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 600
   },
   "mori-tack-colored": {
@@ -4762,7 +5464,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 320
   },
   "mori-shopper": {
@@ -4786,7 +5490,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 820
   },
   "mori-shopper-strings": {
@@ -4810,7 +5516,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 820
   },
   "diko": {
@@ -4834,7 +5542,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 100
   },
   "bemyclay-spoon-circle": {
@@ -4858,7 +5568,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 750
   },
   "bemyclay-tallrik-wavy": {
@@ -4881,7 +5593,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1400
   },
   "bemyclay-tallrik-white": {
@@ -4904,7 +5618,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1200
   },
   "bemyclay-scoop": {
@@ -4928,7 +5644,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 600
   },
   "fonar-cup-dusk": {
@@ -4951,7 +5669,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1050
   },
   "fonar-cup-sand": {
@@ -4974,7 +5694,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 1050
   },
   "fonar-saucer": {
@@ -4997,7 +5719,9 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 500
   },
   "aromat": {
@@ -5020,7 +5744,155 @@
     },
     "care": {},
     "badges": "new",
-    "discountGroup": "supliers",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
     "price": 350
+  },
+  "zvezdochet-apron": {
+    "rootPath": "zvezdochet-apron",
+    "name": "Фартук",
+    "type": "",
+    "category": ["kitchentextile"],
+    "room": ["kitchen"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Лен"],
+      "createdBy": {
+        "design": "Дом звездочета"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 1300
+  },
+  "zvezdochet-tack-big": {
+    "rootPath": "zvezdochet-tack-big",
+    "name": "Прихватка большая",
+    "type": "",
+    "category": ["kitchentextile"],
+    "room": ["kitchen"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Лен"],
+      "createdBy": {
+        "design": "Дом звездочета"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 400
+  },
+  "zvezdochet-tack-small": {
+    "rootPath": "zvezdochet-tack-small",
+    "name": "Прихватка маленькая",
+    "type": "",
+    "category": ["kitchentextile"],
+    "room": ["kitchen"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Лен"],
+      "createdBy": {
+        "design": "Дом звездочета"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 350
+  },
+  "zvezdochet-toy": {
+    "rootPath": "zvezdochet-toy",
+    "name": "Игрушка",
+    "type": "",
+    "category": ["toy"],
+    "room": ["guest", "child"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Лен"],
+      "createdBy": {
+        "design": "Дом звездочета"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 200
+  },
+  "an-pillow": {
+    "rootPath": "an-pillow",
+    "name": "Подушка",
+    "type": "",
+    "category": ["accessories"],
+    "room": ["guest", "bed"],
+    "desc": "Помимо более простых вещей в скандинавском стиле нам нравятся нежные вкрапления бохо. Интересная интерьерная деталь в этом стиле — мягкая подушечка, связанная из хлопкового шнура. В комплекте с подушкой идет удобный хлопковый чехол для хранения.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Хлопок", "Холлофайбер"],
+      "createdBy": {
+        "design": "An"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "salePercent": 10,
+    "price": 1800
+  },
+  "north-card": {
+    "rootPath": "north-card",
+    "name": "Открытка",
+    "type": "",
+    "category": ["postcard"],
+    "room": ["outdoor"],
+    "desc": "Открытки с маленькими зарисовками, уйютными как пометки на полях в собственных блокнотах.",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+      },
+      "material": ["Картон"],
+      "createdBy": {
+        "design": "North bird"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "salePercent": 10,
+    "price": 100
   }
 }

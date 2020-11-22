@@ -89,6 +89,9 @@
           to: '/store/category/kitchentextile',
           text: 'Кухонный текстиль'
         }, {
+          to: '/store/category/toy',
+          text: 'Игрушки'
+        }, {
           to: '/store/category/macrame',
           text: 'Макраме'
         }, {

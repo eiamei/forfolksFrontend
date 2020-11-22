@@ -133,7 +133,7 @@
         background: $powder;
       }
 
-      &--cacao, &--coffee {
+      &--cacao, &--cocoa, &--coffee {
         background: $cacao;
       }
 
