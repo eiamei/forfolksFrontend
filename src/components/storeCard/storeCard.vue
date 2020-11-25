@@ -13,7 +13,11 @@
         <p class="small-regular-heading store-card__model">{{item.name}}</p>
         <p class="regular-sans-text store-card__type">{{ item.type && $t(`${item.type}` )}}</p>
       </router-link>
-      <p class="regular-sans-text store-card__price">{{item.price}}P</p>
+      <p v-if="item.isSale" class="regular-sans-text store-card__price">
+        <span class="store-card__sale-price-old">{{item.price}}</span>
+        <span class="store-card__sale-price">{{salePrice}}P</span>
+      </p>
+      <p v-else class="regular-sans-text store-card__price">{{item.price}}P</p>
     </div>
     <div v-if="badge.text.length" :class="badge.class">{{badge.text}}</div>
     <color-picker :item="item"/>
@@ -47,6 +51,7 @@
     imageLink: Function;
     badge: BadgeInterface;
     isAvailable: boolean;
+    salePrice: number;
   }
 
   interface Props {
@@ -78,19 +83,19 @@
         return require(`../../assets/images/store/${path}-small.jpg`);
       },
       badge() {
-        if (this.item.badges.includes('new')) {
-          return {
-            text: 'NEW',
-            class: [
-              'store-card__badge',
-            ]
-          }
-        } else if (this.item.badges.includes('sale')) {
+        if (this.item.isSale || this.item.badges.includes('sale')) {
           return {
             text: 'SALE',
             class: [
               'store-card__badge',
               'store-card__badge--sale'
+            ]
+          }
+        } else if (this.item.badges.includes('new')) {
+          return {
+            text: 'NEW',
+            class: [
+              'store-card__badge',
             ]
           }
         }
@@ -101,6 +106,9 @@
       },
       isAvailable() {
         return this.item.availability > 0;
+      },
+      salePrice() {
+        return this.item.price - this.item.price * this.item.salePercent;
       }
     },
     methods: {
@@ -187,6 +195,15 @@
       display: flex;
       text-decoration: none;
       overflow: hidden;
+    }
+
+    .store-card__sale-price {
+      color: $red;
+    }
+
+    .store-card__sale-price-old {
+      margin-right: 4px;
+      text-decoration: line-through;
     }
 
     .small-regular-heading.store-card__model, .regular-sans-text.store-card__type, .regular-sans-text.store-card__price {

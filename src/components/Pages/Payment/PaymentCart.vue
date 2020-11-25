@@ -27,7 +27,7 @@
     name: 'PaymentCart',
     computed: {
       isPromo () {
-        return this.$store.state.promo.selectedDiscount;
+        return this.$store.state.promo.selectedDiscount || this.total.isSale;
       },
       bag () {
         return this.$store.getters['bag/bagItems']

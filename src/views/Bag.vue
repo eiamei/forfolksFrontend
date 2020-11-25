@@ -13,8 +13,11 @@
         <p class="bag-total__promo-error">{{promoResult.message}}</p>
         <span class="bag-total__total-text">
           <p style="margin-right: 8px">Итого:</p>
-          <p v-if="!isPromo">{{total.realTotal}} ₽</p>
-          <p v-else><span style="text-decoration: line-through; font-size: 14px; margin: 0 8px">{{total.realTotal}}</span> {{total.discountTotal}} ₽</p>
+          <p v-if="!isSomeDiscount">{{total.realTotal}} ₽</p>
+          <p v-else>
+            <span class="bag-total__old-price">{{total.realTotal}}</span> 
+            <span class="bag-total__discount-price">{{total.discountTotal}}P</span>
+          </p>
         </span>
         <router-link class="bag-total__buy-button" to="payment">Оформить заказ</router-link>
       </section>
@@ -46,9 +49,15 @@ export default {
     total () {
       return this.$store.getters['bag/total'];
     },
+    isSale () {
+      return this.total.isSale;
+    },
     isPromo () {
       return this.$store.state.promo.selectedDiscount;
     },
+    isSomeDiscount () {
+      return this.total.isSale || this.isPromo;
+    }
   },
   methods: {
     async checkPromo () {
@@ -60,6 +69,7 @@ export default {
 
 <style lang="scss">
   @import 'src/assets/styles/colors';
+  @import 'src/assets/styles/vars';
   .bag-container {
     margin: 40px 0 0 0;
     width: 100%;
@@ -98,6 +108,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    &__old-price {
+      text-decoration: line-through;
+      margin: 0 8px;
+    }
+    &__discount-price {
+      color: $red;
+    }
     &__total-text {
       display: flex;
     }
