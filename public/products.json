@@ -335,7 +335,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "candlestick-house-denmark",
@@ -405,7 +405,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 1,
+    "availability": 0,
     "price":400
   },
   {
@@ -416,7 +416,7 @@
       "name": "color",
       "text": "Пудра"
     }],
-    "availability": 2,
+    "availability": 1,
     "price":400
   },
   {
@@ -3859,7 +3859,7 @@
     "group": "latt-boul-big",
     "id": "0920043(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -5106,7 +5106,7 @@
       "value": "sunflower-white",
       "text": "Подсолнух белый"
     }],
-    "availability": 7,
+    "availability": 6,
     "badges": ""
   },
   {
@@ -5421,7 +5421,7 @@
       "value": "light-gray",
       "text": "Светло-серая"
     }],
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "zvezdochet-tack-big",
@@ -5443,7 +5443,7 @@
       "value": "terracotta",
       "text": "Терракотовая"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "zvezdochet-tack-small",
