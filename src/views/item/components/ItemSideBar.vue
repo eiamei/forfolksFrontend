@@ -5,7 +5,11 @@
       <p v-if="item.type" class="regular-sans-text item-side-bar__heading-type">{{$t(`${item.type}`)}}</p>
     </header>
     <p class="item-side-bar__id regular-sans-text">Артикул: {{item.id}}</p>
-    <p class="item-side-bar__price">{{item.price}}P</p>
+    <p v-if="item.isSale" class="item-side-bar__price">
+      <span class="item-side-bar__sale-price-old">{{item.price}}</span>
+      <span class="item-side-bar__sale-price">{{salePrice}}P</span>
+    </p>
+    <p v-else class="item-side-bar__price">{{item.price}}P</p>
     <color-picker class="item-side-bar__color-picker" :item="item"/>
     <div class="item-side-bar__divider"></div>
     <p class="item-side-bar__short-desc regular-sans-text">{{item.shortDesc}}</p>
@@ -48,6 +52,7 @@
   interface Computed {
     properties: ItemInterface;
     isAvailable: boolean;
+    salePrice: number;
   }
   interface Props {
     item: ItemInterface
@@ -73,6 +78,9 @@
       },
       isAvailable () : boolean {
         return this.item.availability > 0;
+      },
+      salePrice() {
+        return this.item.price - this.item.price * this.item.salePercent;
       }
     },
     methods: {
@@ -135,6 +143,15 @@
     &__price {
       margin: 0;
       font-size: 1.5rem;
+    }
+
+    &__sale-price {
+      color: $red;
+    }
+
+    &__sale-price-old {
+      margin-right: 4px;
+      text-decoration: line-through;
     }
 
     &__color-picker {

@@ -8,12 +8,14 @@ export interface ItemInterface {
     metaDesc: string;
     shortDesc: string;
     itemProperty: Object;
-    price: string;
+    price: number;
     link: string;
     image: string;
     selectableProperty: any;
     badges: string;
     availability: number;
+    salePercent: number;
+    isSale: boolean;
 }
 
 export interface ShopInterface {

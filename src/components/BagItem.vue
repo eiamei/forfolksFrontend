@@ -11,11 +11,16 @@
           <template v-for="(prop, index) in item.selectableProperty">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.text}}</template>
         </p>
         <section v-if="isAvailable" style="display: flex; justify-content: center; align-items: center">
-          <p class="bag-item__field">{{item.price}}</p>
+          <p v-if="!item.isSale" class="bag-item__field">{{item.price}}</p>
+          <p v-else class="bag-item__field">
+            <span class="bag-item__field-old-price">{{item.price}}</span> 
+            <span class="bag-item__field-discount-price">{{item.promoPrice}}</span>
+          </p>
           <button class="clean-button bag-item__button" @click="decrement">-</button>
           <p class="bag-item__field">{{item.qty}}</p>
           <button class="clean-button bag-item__button" @click="increment">+</button>
-          <p class="bag-item__field">{{item.price * item.qty}}</p>
+          <p v-if="!item.isSale" class="bag-item__field">{{item.price * item.qty}}</p>
+          <p v-else class="bag-item__field bag-item__field-discount-price">{{item.promoPrice * item.qty}}</p>
         </section>
         <p class="bag-item__not-available" v-else>Нет в наличии</p>
         <button class="clean-button bag-item__button" @click="remove">Удалить</button>
@@ -154,6 +159,13 @@
         padding: 0 4px;
         font-size: 10px;
       }
+    }
+    &__field-old-price {
+      text-decoration: line-through;
+      margin: 0 8px;
+    }
+    &__field-discount-price {
+      color: $red;
     }
     &__button.clean-button {
       color: black;

@@ -21,7 +21,9 @@ export const bagGetters = {
 
         item.promoPrice = item.price;
 
-        if (group && group in discountByGroup) {
+        if (item.isSale) {
+          item.promoPrice = item.price - item.price * item.salePercent;
+        } else if (group && group in discountByGroup) {
           item.promoPrice = item.price * Number(discountByGroup[group])
         }
 
@@ -35,6 +37,7 @@ export const bagGetters = {
     let realTotal = 0;
     let discountTotal = 0;
     let discountByGroup = {};
+    let isSale = false;
     if (rootState.promo.selectedDiscount) {
       discountByGroup = rootState.promo.selectedDiscount.discountByGroup
     }
@@ -55,7 +58,10 @@ export const bagGetters = {
 
       realTotal += qty * price;
 
-      if (group && group in discountByGroup) {
+      if (item.isSale) {
+        price = price - price * item.salePercent;
+        isSale = true;
+      } else if (group && group in discountByGroup) {
         price = price * Number(discountByGroup[group])
       }
 
@@ -63,7 +69,8 @@ export const bagGetters = {
     });
     return {
       realTotal: realTotal.toFixed(2),
-      discountTotal: discountTotal.toFixed(2)
+      discountTotal: discountTotal.toFixed(2),
+      isSale
     };
   }
 }
