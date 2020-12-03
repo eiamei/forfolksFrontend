@@ -36,16 +36,22 @@
       bag () {
         const items = this.$store.getters['bag/bagItems'];
         return Object.keys(items).map((key, index) => {
-            let price = items[key].qty * items[key].price;
+            const item = items[key];
+            let price = 0;
+            if (item.isSale) {
+              price = item.qty * (item.price - item.price * item.salePercent);
+            } else {
+              price = item.qty * item.price;
+            }
             let encoded = encodeURIComponent(`item ${index}`) + "=" + encodeURIComponent(`
-              Имя: ${items[key].name}
-              Тип: ${items[key].type}
-              Артикул: ${items[key].id}
-              Количество: ${items[key].qty}
+              Имя: ${item.name}
+              Тип: ${item.type}
+              Артикул: ${item.id}
+              Количество: ${item.qty}
               Стоимость: ${price}
             `);
-            if (items[key].selectableProperty.length)
-              items[key].selectableProperty.forEach(function (prop) {
+            if (item.selectableProperty.length)
+              item.selectableProperty.forEach(function (prop) {
                 encoded += encodeURIComponent(`${prop.name}: ${prop.value}`)
               });
           return encoded;

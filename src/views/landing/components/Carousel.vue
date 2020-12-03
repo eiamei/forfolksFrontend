@@ -30,12 +30,6 @@
           infiniteScroll: true
         },
         slideData: [{
-          image: require('../../../assets/images/landing/landing-BF2020.jpg'),
-          heading: '27-29 Ноября',
-          subHeading: 'Скидки онлайн и в шоуруме до 30%',
-          linkText: 'Перейти в магазин',
-          link: '/store/category/all'
-        }, {
           image: require('../../../assets/images/landing/landing-delivery.jpg'),
           heading: 'Бесплатная доставка',
           subHeading: 'По Москве и Санкт-Петербургу при заказе от 3000 рублей',

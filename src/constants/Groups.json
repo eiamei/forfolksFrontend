@@ -500,7 +500,7 @@
     "badges": "new",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": true,
+    "isSale": false,
     "price": "110"
   },
   "luffa-pressed": {
@@ -760,7 +760,7 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "250"
   },
@@ -789,7 +789,7 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "300"
   },
@@ -817,7 +817,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "500"
   },
@@ -846,7 +846,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "2500"
   },
@@ -875,7 +875,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "2900"
   },
@@ -904,7 +904,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "500"
   },
@@ -933,7 +933,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "1200"
   },
@@ -962,7 +962,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": "6500"
   },
@@ -991,7 +991,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1104,7 +1104,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1300
   },
@@ -1131,7 +1131,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1400
   },
@@ -1160,7 +1160,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3700
   },
@@ -1189,7 +1189,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 350
   },
@@ -1216,7 +1216,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 700
   },
@@ -1243,7 +1243,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1590
   },
@@ -1300,7 +1300,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1328,7 +1328,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1355,7 +1355,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1382,7 +1382,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1409,7 +1409,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1437,7 +1437,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1465,7 +1465,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1493,7 +1493,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1518,7 +1518,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1546,7 +1546,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": ""
   },
@@ -1604,7 +1604,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 500
   },
@@ -1633,7 +1633,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1000
   },
@@ -1662,7 +1662,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1600
   },
@@ -2280,7 +2280,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 900
   },
@@ -2308,7 +2308,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 900
   },
@@ -2336,7 +2336,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1100
   },
@@ -2364,7 +2364,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1200
   },
@@ -2392,7 +2392,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1200
   },
@@ -2420,7 +2420,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1400
   },
@@ -2448,7 +2448,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1400
   },
@@ -2476,7 +2476,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1100
   },
@@ -2533,7 +2533,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 250
   },
@@ -2561,7 +2561,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 900
   },
@@ -2646,7 +2646,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 500
   },
@@ -2671,7 +2671,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 0
   },
@@ -2699,7 +2699,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1900
   },
@@ -2727,7 +2727,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1900
   },
@@ -2755,7 +2755,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 400
   },
@@ -2783,7 +2783,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 490
   },
@@ -2811,7 +2811,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 450
   },
@@ -2839,7 +2839,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 490
   },
@@ -2893,8 +2893,10 @@
       "header": "Уход за мылом",
       "text": "Специального ухода не требуется"
     },
-    "badges": "new",
+    "badges": "",
     "discountGroup": "suplier",
+    "salePercent": 0.2,
+    "isSale": false,
     "price": 490
   },
   "lorbeer-washcloth": {
@@ -2920,7 +2922,7 @@
       "header": "Уход за мочалкой",
       "text": "Мочалку следует сушить вертикально."
     },
-    "badges": "new",
+    "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0,
     "isSale": false,
@@ -3287,6 +3289,8 @@
     },
     "badges": "new",
     "discountGroup": "forfolks",
+    "salePercent": 0.1,
+    "isSale": false,
     "price": 400
   },
   "mob-string-bag": {
@@ -3313,7 +3317,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1300
   },
@@ -3424,13 +3428,40 @@
     },
     "care": {
       "header": "Уход за комплектом",
-      "text": "Изделия из натуральной древечины не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца."
+      "text": "Изделия из натуральной древеcины не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца."
     },
     "badges": "new",
     "discountGroup": "suplier",
     "salePercent": 0,
     "isSale": false,
     "price": 900
+  },
+  "tunturi-tray-rectangular": {
+    "rootPath": "tunturi-tray-rectangular",
+    "name": "Поднос",
+    "type": "Квадратный",
+    "category": ["accessories"],
+    "room": ["kitchen", "dinning"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Дуб"],
+      "size": {
+      },
+      "createdBy": {
+        "design": "Tunturi"
+      }
+    },
+    "care": {
+      "header": "Уход за комплектом",
+      "text": "Изделия из натуральной древеcины не любят долгое замачивание в воде и мойку в посудомоечной машине. Рекомендуется мыть под струей воды, при необходимости с моющим средством. <br><br> После мытья рекомендуем вытереть сухой тканью, поставить вертикально и просушить до конца."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": false,
+    "price": 2450
   },
   "madera-board": {
     "rootPath": "madera-board",
@@ -3484,7 +3515,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1100
   },
@@ -3510,7 +3541,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 800
   },
@@ -3538,7 +3569,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1810
   },
@@ -3567,7 +3598,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 2140
   },
@@ -3596,7 +3627,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1950
   },
@@ -3625,7 +3656,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1950
   },
@@ -3654,7 +3685,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1750
   },
@@ -3683,7 +3714,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1750
   },
@@ -3712,7 +3743,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1580
   },
@@ -3741,7 +3772,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1760
   },
@@ -3827,7 +3858,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1810
   },
@@ -3855,7 +3886,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1810
   },
@@ -3884,7 +3915,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 0
   },
@@ -3913,7 +3944,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 390
   },
@@ -3942,7 +3973,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 590
   },
@@ -3969,7 +4000,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 450
   },
@@ -3998,7 +4029,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 450
   },
@@ -4026,7 +4057,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 950
   },
@@ -4054,7 +4085,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 950
   },
@@ -4110,7 +4141,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 2000
   },
@@ -4139,7 +4170,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 400
   },
@@ -4168,7 +4199,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 350
   },
@@ -4197,7 +4228,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 200
   },
@@ -4226,7 +4257,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3000
   },
@@ -4255,9 +4286,36 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 200
+  },
+  "otrubi-plaid": {
+    "rootPath": "otrubi-plaid",
+    "name": "Плед",
+    "type": "",
+    "category": ["accessories"],
+    "room": ["guest", "bed"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Шерсть альпакаи и овцы"],
+      "size": {
+      },
+      "createdBy": {
+        "design": "От руби"
+      }
+    },
+    "care": {
+      "header": "Уход за пледом",
+      "text": "Стирать при температуре не более 30◦С, отжим можно производить на скорости до 600 оборотов в минуту. <br><br> Сушить не до полного высыхания, чтобы легче было гладить."
+    },
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": false,
+    "price": 10000
   },
   "tabula-canoe": {
     "rootPath": "tabula-canoe",
@@ -4313,7 +4371,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1000
   },
@@ -4448,7 +4506,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3300
   },
@@ -4476,7 +4534,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1300
   },
@@ -4504,7 +4562,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3200
   },
@@ -4532,7 +4590,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1300
   },
@@ -4560,7 +4618,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3800
   },
@@ -4588,7 +4646,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3200
   },
@@ -4616,7 +4674,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1500
   },
@@ -4644,7 +4702,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 2600
   },
@@ -4672,7 +4730,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1500
   },
@@ -4700,7 +4758,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1500
   },
@@ -4728,7 +4786,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3200
   },
@@ -4756,7 +4814,7 @@
     },
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 3200
   },
@@ -5000,6 +5058,32 @@
     "isSale": false,
     "price": 1100
   },
+  "latt-cup-gingerbread": {
+    "rootPath": "latt-cup-gingerbread",
+    "name": "Чашка",
+    "type": "Пряня",
+    "category": ["dish"],
+    "room": ["kitchen", "dinner"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "width": "21см",
+        "height": "1.5см"
+      },
+      "material": ["Керамика"],
+      "createdBy": {
+        "design": "Lätt ceramics"
+      }
+    },
+    "care": {},
+    "badges": "new",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 550
+  },
   "laboratorium-gel": {
     "rootPath": "laboratorium-gel",
     "name": "Гель для душа",
@@ -5020,7 +5104,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 600
   },
@@ -5045,7 +5129,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 300
   },
@@ -5069,7 +5153,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 500
   },
@@ -5093,7 +5177,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 270
   },
@@ -5117,7 +5201,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 300
   },
@@ -5141,7 +5225,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 350
   },
@@ -5165,7 +5249,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 350
   },
@@ -5189,7 +5273,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 325
   },
@@ -5213,7 +5297,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 325
   },
@@ -5237,7 +5321,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 450
   },
@@ -5261,7 +5345,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 450
   },
@@ -5285,7 +5369,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.2,
     "isSale": false,
     "price": 550
   },
@@ -5569,7 +5653,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 750
   },
@@ -5594,7 +5678,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1400
   },
@@ -5619,7 +5703,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1200
   },
@@ -5645,7 +5729,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 600
   },
@@ -5670,7 +5754,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1050
   },
@@ -5695,7 +5779,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1050
   },
@@ -5720,7 +5804,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 500
   },
@@ -5769,7 +5853,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 1300
   },
@@ -5793,7 +5877,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 400
   },
@@ -5817,7 +5901,7 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
     "price": 350
   },
@@ -5865,9 +5949,8 @@
     "care": {},
     "badges": "new",
     "discountGroup": "suplier",
-    "salePercent": 0,
+    "salePercent": 0.1,
     "isSale": false,
-    "salePercent": 10,
     "price": 1800
   },
   "north-card": {
@@ -5892,7 +5975,6 @@
     "discountGroup": "suplier",
     "salePercent": 0,
     "isSale": false,
-    "salePercent": 10,
     "price": 100
   }
 }

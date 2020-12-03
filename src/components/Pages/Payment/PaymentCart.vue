@@ -8,13 +8,14 @@
           <template v-for="(prop, index) in item.props">{{index > 0 ? ', ' : ''}}{{$t(`common.${prop.name}`)}}: {{prop.name !== 'model' ? $t(`${prop.name}s.${prop.value}`) : prop.value}}</template>
         </p>
       </div>
-      <div  class="cart-item__price">{{+item.price * item.qty}}&thinsp;P</div>
+      <div v-if="item.isSale" class="cart-item__price cart-item__price--sale">{{(+item.price - +item.price * item.salePercent) * item.qty}}&thinsp;P</div>
+      <div v-else class="cart-item__price">{{+item.price * item.qty}}&thinsp;P</div>
       <div class="cart-item__qty">{{item.qty}}</div>
     </div>
     <span class="cart-info__total">
       <p>Итого:</p>
       <p v-if="!isPromo">{{total.realTotal}} ₽</p>
-      <p v-else><span style="text-decoration: line-through; font-size: 14px; margin-right: 8px">{{total.realTotal}}</span> {{total.discountTotal}} ₽</p>
+      <p v-else><span class="cart-info__total-old">{{total.realTotal}}</span> <span class="cart-info__total-new">{{total.discountTotal}}&thinsp;P</span></p>
     </span>
   </div>
 </template>
@@ -58,11 +59,20 @@
 
 <style lang="scss">
   @import '../../../assets/styles/colors';
+  @import '../../../assets/styles/vars';
   .cart-info {
     padding-top: 64px;
     &__total {
       display: flex;
       justify-content: space-between;
+    }
+    &__total-old {
+      text-decoration: line-through;
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    &__total-new {
+        color: $red;
     }
   }
   .cart-item {
@@ -111,6 +121,9 @@
       margin-left: 40px;
       flex-basis: 50%;
       text-align: right;
+      &--sale {
+        color: $red;
+      }
     }
   }
 </style>

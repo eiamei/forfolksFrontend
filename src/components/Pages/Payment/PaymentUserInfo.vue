@@ -52,7 +52,7 @@
             Оплата онлайн
           </button>
         </div>
-        <p v-if="paymentType === PAYMENT_TYPES.SHOWROOM" class="regular-sans-text user-info__delivery-info-text">Без оплаты заказ резервируется на три дня. Мы принимаем наличные и банковские карты.</p>
+        <p v-if="paymentType === PAYMENT_TYPES.SHOWROOM" class="regular-sans-text user-info__delivery-info-text">Без оплаты заказ резервируется на три дня. В дни проведения акций заказ без оплаты резервируется на один день. Мы принимаем наличные и банковские карты.</p>
         <p v-if="paymentType === PAYMENT_TYPES.ONLINE" class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа мы вышлем вам ссылку на оплату. Заказ резервируется бессрочно.</p>
         <p class="regular-sans-text user-info__delivery-info-text">Наш шоурум находится по адресу Санкт-Петербург, 13-линия В.О., д. 72, "Артмуза", 3 этаж пом. 312</p>
       </template>
