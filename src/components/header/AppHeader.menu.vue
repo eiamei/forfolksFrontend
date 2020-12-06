@@ -2,7 +2,7 @@
   <nav :class="containerClass" @click="close" @scroll="scroll">
     <ul class="menu-catalogue">
       <li class="menu-catalogue__item" v-for="link in byCategory" :key="link.to">
-        <router-link class="menu-catalogue__text" :to="link.to" replace>{{$t(link.text)}}</router-link>
+        <router-link :class="getLinkClass(link.to)" :to="link.to" replace>{{$t(link.text)}}</router-link>
       </li>
     </ul>
     <ul class="menu-catalogue">
@@ -32,6 +32,9 @@
     data () {
       return {
         byCategory: [{
+          to: '/store/category/newYear',
+          text: 'Новый год'
+        },{
           to: '/store/category/accessories',
           text: 'Аксессуары'
         }, {
@@ -159,6 +162,13 @@
       scroll (event) {
         event.preventDefault();
         event.stopPropagation();
+      },
+      getLinkClass (to) {
+        console.log(to);
+        return {
+          'menu-catalogue__text': true,
+          'menu-catalogue__text--red': to === "/store/category/newYear"
+        }
       }
     }
   };
@@ -210,6 +220,9 @@
         @media screen and (max-width: $mobile) {
           flex-direction: column;
           font-size: 2.5rem;
+        }
+        &--red {
+          color: $red;
         }
         &:hover {
           color: $dark-blue;

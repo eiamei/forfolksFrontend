@@ -3070,6 +3070,30 @@
     "badges": ""
   },
   {
+    "group": "enlin-towel-38-72",
+    "id": "1220006(2)",
+    "type": "Графит/натуральный 38х72",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "graphite-natural",
+      "text": "Графит/натуральный"
+    }],
+    "availability": 2,
+    "badges": "new"
+  },
+  {
+    "group": "enlin-towel-38-72",
+    "id": "1220006(1)",
+    "type": "Белый/синяя полоска 38х72",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white-strip",
+      "text": "Белый/синяя полоска"
+    }],
+    "availability": 2,
+    "badges": "new"
+  },
+  {
     "group": "enlin-towel-38-110",
     "id": "0820026(1)",
     "type": "Синяя полоска 38x110",
@@ -3089,9 +3113,45 @@
       "value": "blue-line",
       "text": "Белый в синюю полоску"
     }],
-    "availability": 0,
-    "price": 800,
+    "availability": 1,
+    "price": 990,
     "badges": ""
+  },
+  {
+    "group": "enlin-towel-bath",
+    "id": "1220008(1)",
+    "type": "Графит/натуральный",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "graphite-natural",
+      "text": "Графит/натуральный"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "enlin-towel-bath",
+    "id": "1220008(2)",
+    "type": "Белый/синяя полоска",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white-strip",
+      "text": "Белый/синяя полоска"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "enlin-towel-hair",
+    "id": "1220007(1)",
+    "type": "Белый/синяя полоска",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white-strip",
+      "text": "Белый/синяя полоска"
+    }],
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "enlin-bag",
@@ -3101,8 +3161,7 @@
       "value": "black",
       "text": "Черный"
     }],
-    "availability": 0,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "enlin-bag",
@@ -3112,8 +3171,7 @@
       "value": "white",
       "text": "Белый"
     }],
-    "availability": 2,
-    "badges": ""
+    "availability": 2
   },
   {
     "group": "enlin-travel-bag",
@@ -3780,64 +3838,94 @@
     "group": "flowertree-gipsophila-square",
     "id": "0920038(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-gipsophila-stand",
     "id": "0920029(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-lagurus-square",
     "id": "0920031(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-lavande-grass-square",
     "id": "0920041(1)",
     "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
+    "availability": 0
   },
   {
     "group": "flowertree-lavande-rectangle",
     "id": "0920035(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-lavande-rhombus",
     "id": "0920040(1)",
     "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
+    "availability": 0
   },
   {
     "group": "flowertree-leaf",
     "id": "0920030(1)",
     "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
+    "availability": 0
   },
   {
     "group": "flowertree-sage-rhombus",
     "id": "0920034(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-yarrow-rhombus",
     "id": "0920032(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
+  },
+  {
+    "group": "flowertree-toy",
+    "type": "Вариант 1",
+    "id": "1220011(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "1",
+      "text": "Вариант 1"
+    }],
+    "availability": 15,
+    "price": 690,
+    "badges": "new"
+  },
+  {
+    "group": "flowertree-toy",
+    "type": "Вариант 3",
+    "id": "1220013(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "3",
+      "text": "Вариант 3"
+    }],
+    "availability": 5,
+    "price": 1040,
+    "badges": "new"
+  },
+  {
+    "group": "flowertree-toy",
+    "type": "Вариант 4",
+    "id": "1220014(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "4",
+      "text": "Вариант 4"
+    }],
+    "availability": 2,
+    "price": 1170,
+    "badges": "new"
   },
   {
     "group": "latt-plate-big",
@@ -4701,8 +4789,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
-    "badges": "new"
+    "availability": 1
   },
   {
     "group": "laboratorium-tonic",
@@ -4725,8 +4812,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2,
-    "badges": "new"
+    "availability": 2
   },
   {
     "group": "laboratorium-tonic",
@@ -4749,8 +4835,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
-    "badges": "new"
+    "availability": 1
   },
   {
     "group": "scrub",
@@ -5577,7 +5662,8 @@
       "value": "gray",
       "text": "серо-голубой"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "an-pillow",
@@ -5588,7 +5674,8 @@
       "value": "cocoa",
       "text": "Какао"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5599,7 +5686,8 @@
       "value": "bull-color",
       "text": "Бык цветной"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5610,7 +5698,8 @@
       "value": "bull",
       "text": "Бык чб"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5622,7 +5711,8 @@
       "text": "Рябинник"
     }],
     "availability": 6,
-    "price": 70
+    "price": 70,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5634,7 +5724,8 @@
       "text": "Чекан"
     }],
     "availability": 6,
-    "price": 70
+    "price": 70,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5645,7 +5736,8 @@
       "value": "twig",
       "text": "Веточки"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5656,18 +5748,21 @@
       "value": "urban-jungle",
       "text": "Urban Jungle"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "oforme-candlestick-square",
     "id": "1120002(1)",
     "selectableProperty": [],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "oforme-candlestick-speck",
     "id": "1120003(1)",
     "selectableProperty": [],
-    "availability": 3
+    "availability": 3,
+    "badges": "new"
   }
 ]
