@@ -18,7 +18,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "cachepot_modern_s",
@@ -61,7 +61,7 @@
       "text": "Черный мрамор"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-basic-s",
@@ -255,7 +255,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "candlestick-house-swiss",
@@ -395,7 +395,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "vase-mild",
@@ -532,7 +532,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 2,
+    "availability": 1,
     "price":300
   },
   {
@@ -989,7 +989,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": "700",
     "badges": ""
   },
@@ -1013,7 +1013,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": "900",
     "badges": ""
   },
@@ -1479,7 +1479,7 @@
       "value": "fern1",
       "text": "fern"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1631,7 +1631,7 @@
       "value": "gingerbread",
       "text": "Имбирный пряник"
     }],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1643,7 +1643,7 @@
       "value": "jasmine-mint",
       "text": "Жасмин & Мята"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1655,7 +1655,7 @@
       "value": "lavender-almonds",
       "text": "Лаванда & Миндаль"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1775,7 +1775,7 @@
       "value": "needles-almonds",
       "text": "Хвоя & Миндаль"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2193,7 +2193,7 @@
       "value": "provence",
       "text": "Поля прованса"
     }],
-    "availability": 5,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -2207,7 +2207,7 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -2221,7 +2221,7 @@
       "value": "tibet",
       "text": "Тибет"
     }],
-    "availability": 4,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -3539,7 +3539,7 @@
       "value": "tibet",
       "text": "Тибет"
     }],
-    "availability": 3,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -4991,7 +4991,7 @@
     "group": "mori-shopper-strings",
     "id": "1020023(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "diko",
@@ -5657,5 +5657,17 @@
       "text": "Urban Jungle"
     }],
     "availability": 7
+  },
+  {
+    "group": "oforme-candlestick-square",
+    "id": "1120002(1)",
+    "selectableProperty": [],
+    "availability": 7
+  },
+  {
+    "group": "oforme-candlestick-speck",
+    "id": "1120003(1)",
+    "selectableProperty": [],
+    "availability": 3
   }
 ]
