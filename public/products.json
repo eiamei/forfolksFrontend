@@ -3225,7 +3225,7 @@
     "group": "jar-bamboo",
     "id": "0820011(2)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3324,6 +3324,13 @@
     "badges": ""
   },
   {
+    "group": "tunturi-board-narrow-beech",
+    "id": "1220020(1)",
+    "selectableProperty": [],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
     "group": "tunturi-board-ash",
     "id": "0820046(2)",
     "selectableProperty": [{
@@ -3331,7 +3338,7 @@
       "value": "dark",
       "text": "Темная"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -3355,6 +3362,13 @@
     "availability": 0,
     "price": 900,
     "badges": ""
+  },
+  {
+    "group": "tunturi-shaker-ash",
+    "id": "1220023(1)",
+    "selectableProperty": [],
+    "availability": 3,
+    "badges": "new"
   },
   {
     "group": "tunturi-tray-rectangular",
@@ -3614,6 +3628,54 @@
     "badges": ""
   },
   {
+    "group": "freedom-candle",
+    "type": "Медовый взвар",
+    "id": "1220016(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "honey-broth",
+      "text": "Медовый взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "freedom-candle",
+    "type": "Мандариновый взвар",
+    "id": "1220016(2)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "tangerine-broth",
+      "text": "Мандариновый взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "freedom-candle",
+    "type": "Можжевельный взвар",
+    "id": "1220016(3)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "juniper-broth",
+      "text": "Можжевельный взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "freedom-candle",
+    "type": "Малиновый взвар",
+    "id": "1220016(4)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "crimson-broth",
+      "text": "Малиновый взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
     "group": "fonar-spoon",
     "id": "0820072(1)",
     "selectableProperty": [],
@@ -3791,6 +3853,12 @@
     }],
     "availability": 1,
     "price": 900
+  },
+  {
+    "group": "choli-wreath-jute",
+    "id": "1120029(1)",
+    "selectableProperty": [],
+    "availability": 1
   },
   {
     "group": "mif-remodelista",
@@ -5583,7 +5651,7 @@
     "metaDesc": "Купить твердые духи целлофановая ночь в Forfolks. Аромат османтуса, мандарина, лилии, жасмина, гвоздики, мускуса.",
     "selectableProperty": [{
       "name": "model",
-      "value": "cellophane",
+      "value": "cellophane-night",
       "text": "Целлофановая ночь"
     }],
     "availability": 3,
