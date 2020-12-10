@@ -5724,8 +5724,8 @@
     "type": "Лес",
     "category": ["postcard"],
     "room": ["outdoor"],
-    "desc": "Тканевая гирлянда – оригинальное и уютное решение для декорации дома. Набор оттенков, который успокаивает и не надоедает. <br><br> За ней легко ухаживать и она универсальна: подойдет и для праздников и для постоянного украшения дома.",
-    "metaDesc": "Купить монотонную хлопковую гирлянду в зеленых тонах в forfolks.",
+    "desc": "",
+    "metaDesc": ".",
     "shortDesc": "",
     "itemProperty": {
       "size": {
@@ -5926,7 +5926,7 @@
     "name": "Твердые духи",
     "type": "",
     "category": ["cosmetic"],
-    "room": ["bath"],
+    "room": ["aroma"],
     "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу",
     "metaDesc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу",
     "shortDesc": "",
@@ -6094,7 +6094,7 @@
     "rootPath": "oforme-candlestick-speck",
     "name": "Подсвечник",
     "type": "",
-    "category": ["candle"],
+    "category": ["newYear", "candle"],
     "room": ["guest", "bed", "dinning"],
     "desc": "",
     "metaDesc": "",
@@ -6119,7 +6119,7 @@
     "rootPath": "oforme-candlestick-square",
     "name": "Подсвечник",
     "type": "",
-    "category": ["candle"],
+    "category": ["newYear", "candle"],
     "room": ["guest", "bed", "dinning"],
     "desc": "",
     "metaDesc": "",
@@ -6139,5 +6139,30 @@
     "salePercent": 0,
     "isSale": false,
     "price": 550
+  },
+  "natures-candle": {
+    "rootPath": "natures-candle",
+    "name": "Свеча",
+    "type": "",
+    "category": ["newYear", "candle"],
+    "room": ["guest", "bed", "dinning"],
+    "desc": "",
+    "metaDesc": "",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "height": "42см"
+      },
+      "material": ["Композиция восков"],
+      "createdBy": {
+        "design": "Natures"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0,
+    "isSale": false,
+    "price": 220
   }
 }

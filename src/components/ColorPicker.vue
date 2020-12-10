@@ -81,7 +81,7 @@
         }
       }
 
-      &--white {
+      &--white, &--white42cm {
         background: $coated;
       }
 
@@ -89,7 +89,7 @@
         background: $silver;
       }
 
-      &--cream, &--unbleached {
+      &--cream, &--unbleached, &--beige42cm {
         background: $cream;
       }
 
@@ -125,11 +125,11 @@
         background: $olive;
       }
 
-      &--terracotta, &--brown {
+      &--terracotta, &--brown, &--bordeaux42cm {
         background: $terracotta;
       }
 
-      &--powder, &--peach, &--figs {
+      &--powder, &--peach, &--figs, &--powder42cm {
         background: $powder;
       }
 
