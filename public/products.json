@@ -18,7 +18,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "cachepot_modern_s",
@@ -39,7 +39,7 @@
       "text": "Белый"
     }],
     "layout": "high",
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "stand-basic-s",
@@ -50,7 +50,7 @@
       "text": "Графит"
     }],
     "layout": "high",
-    "availability": 0
+    "availability": 1
   },
   {
     "group": "stand-basic-s",
@@ -61,7 +61,7 @@
       "text": "Черный мрамор"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 0
   },
   {
     "group": "stand-basic-s",
@@ -105,7 +105,7 @@
       "text": "Серый туман"
     }],
     "layout": "high",
-    "availability": 2
+    "availability": 0
   },
   {
     "group": "stand-cone-s",
@@ -116,7 +116,7 @@
       "text": "Пудра"
     }],
     "layout": "high",
-    "availability": 3
+    "availability": 1
   },
   {
     "group": "stand-cone-s",
@@ -200,7 +200,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -305,7 +305,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 0
+    "availability": 3
   },
   {
     "group": "candlestick-house-denmark",
@@ -315,7 +315,7 @@
       "name": "color",
       "text": "Пудра"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "candlestick-house-denmark",
@@ -427,7 +427,7 @@
       "name": "color",
       "text": "Графит"
     }],
-    "availability": 0,
+    "availability": 1,
     "price":400
   },
   {
@@ -438,7 +438,7 @@
       "name": "color",
       "text": "Серый туман"
     }],
-    "availability": 2,
+    "availability": 1,
     "price":400
   },
   {
@@ -499,7 +499,7 @@
       "name": "color",
       "text": "Белый"
     }],
-    "availability": 1,
+    "availability": 0,
     "price":300
   },
   {
@@ -532,7 +532,7 @@
       "name": "color",
       "text": "Черный мрамор"
     }],
-    "availability": 2,
+    "availability": 1,
     "price":300
   },
   {
@@ -553,7 +553,7 @@
     "group": "panno-stranger",
     "id": "032002(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "minibouquet-blum",
@@ -718,14 +718,14 @@
     "group": "luffa-whole",
     "id": "0720062(1)",
     "selectableProperty": [],
-    "availability": 13,
+    "availability": 12,
     "badges": ""
   },
   {
     "group": "straw-bamboo",
     "id": "0720052(1)",
     "selectableProperty": [],
-    "availability": 5,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -989,7 +989,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": "700",
     "badges": ""
   },
@@ -1013,7 +1013,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": "900",
     "badges": ""
   },
@@ -1060,7 +1060,7 @@
         "design": "Choli jute"
       }
     },
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "choli-samara-pens",
@@ -1466,7 +1466,7 @@
         "design": "!Sababa pots"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "price": 850,
     "badges": ""
   },
@@ -1479,7 +1479,7 @@
       "value": "fern1",
       "text": "fern"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1491,7 +1491,7 @@
       "value": "fern2",
       "text": "fern"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1551,7 +1551,7 @@
       "value": "maral1",
       "text": "maral"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1631,7 +1631,7 @@
       "value": "gingerbread",
       "text": "Имбирный пряник"
     }],
-    "availability": 0,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -1643,7 +1643,7 @@
       "value": "jasmine-mint",
       "text": "Жасмин & Мята"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1655,7 +1655,7 @@
       "value": "lavender-almonds",
       "text": "Лаванда & Миндаль"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1775,7 +1775,7 @@
       "value": "needles-almonds",
       "text": "Хвоя & Миндаль"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -1856,7 +1856,7 @@
     "group": "carrotlab-soap-three-clays",
     "id": "0720008(1)",
     "selectableProperty": [],
-    "availability": 3,
+    "availability": 2,
     "badges": "",
     "price": 300
   },
@@ -1976,7 +1976,7 @@
     "group": "carrotlab-soap-zest",
     "id": "1020048(1)",
     "selectableProperty": [],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "carrotlab-soap-juice",
@@ -2035,7 +2035,7 @@
       "value": "cacao",
       "text": "Какао"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2047,7 +2047,7 @@
       "value": "fog",
       "text": "Туман"
     }],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2099,7 +2099,7 @@
     "group": "hot-plate-cinnamon",
     "id": "0720073(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2165,7 +2165,7 @@
       "value": "eastern",
       "text": "Дары востока"
     }],
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -2193,7 +2193,7 @@
       "value": "provence",
       "text": "Поля прованса"
     }],
-    "availability": 5,
+    "availability": 4,
     "badges": ""
   },
   {
@@ -2207,7 +2207,7 @@
       "value": "siberia",
       "text": "Сибирь"
     }],
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -2221,7 +2221,7 @@
       "value": "tibet",
       "text": "Тибет"
     }],
-    "availability": 4,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -2235,7 +2235,7 @@
       "value": "yellowstone",
       "text": "Йеллоустон"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2249,7 +2249,7 @@
       "value": "summer-garden",
       "text": "Летний сад"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -2408,7 +2408,7 @@
       "value": "natural-linen",
       "text": "Натуральный"
     }],
-    "availability": 1,
+    "availability": 0,
     "price": 350,
     "badges": ""
   },
@@ -2524,7 +2524,7 @@
     "group": "lorbeer-soap-5",
     "id": "0820003(1)",
     "selectableProperty": [],
-    "availability": 6,
+    "availability": 5,
     "price": 490,
     "badges": ""
   },
@@ -2548,7 +2548,7 @@
     "group": "lorbeer-soap-coniferous",
     "id": "0820006(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "price": 530,
     "badges": ""
   },
@@ -3070,6 +3070,30 @@
     "badges": ""
   },
   {
+    "group": "enlin-towel-38-72",
+    "id": "1220006(2)",
+    "type": "Графит/натуральный 38х72",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "graphite-natural",
+      "text": "Графит/натуральный"
+    }],
+    "availability": 2,
+    "badges": "new"
+  },
+  {
+    "group": "enlin-towel-38-72",
+    "id": "1220006(1)",
+    "type": "Белый/синяя полоска 38х72",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white-strip",
+      "text": "Белый/синяя полоска"
+    }],
+    "availability": 2,
+    "badges": "new"
+  },
+  {
     "group": "enlin-towel-38-110",
     "id": "0820026(1)",
     "type": "Синяя полоска 38x110",
@@ -3089,9 +3113,45 @@
       "value": "blue-line",
       "text": "Белый в синюю полоску"
     }],
-    "availability": 0,
-    "price": 800,
+    "availability": 1,
+    "price": 990,
     "badges": ""
+  },
+  {
+    "group": "enlin-towel-bath",
+    "id": "1220008(1)",
+    "type": "Графит/натуральный",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "graphite-natural",
+      "text": "Графит/натуральный"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "enlin-towel-bath",
+    "id": "1220008(2)",
+    "type": "Белый/синяя полоска",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white-strip",
+      "text": "Белый/синяя полоска"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "enlin-towel-hair",
+    "id": "1220007(1)",
+    "type": "Белый/синяя полоска",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white-strip",
+      "text": "Белый/синяя полоска"
+    }],
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "enlin-bag",
@@ -3101,8 +3161,7 @@
       "value": "black",
       "text": "Черный"
     }],
-    "availability": 0,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "enlin-bag",
@@ -3112,8 +3171,7 @@
       "value": "white",
       "text": "Белый"
     }],
-    "availability": 2,
-    "badges": ""
+    "availability": 2
   },
   {
     "group": "enlin-travel-bag",
@@ -3167,7 +3225,7 @@
     "group": "jar-bamboo",
     "id": "0820011(2)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3266,6 +3324,13 @@
     "badges": ""
   },
   {
+    "group": "tunturi-board-narrow-beech",
+    "id": "1220020(1)",
+    "selectableProperty": [],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
     "group": "tunturi-board-ash",
     "id": "0820046(2)",
     "selectableProperty": [{
@@ -3273,7 +3338,7 @@
       "value": "dark",
       "text": "Темная"
     }],
-    "availability": 0,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -3299,10 +3364,23 @@
     "badges": ""
   },
   {
+    "group": "tunturi-shaker-ash",
+    "id": "1220023(1)",
+    "selectableProperty": [],
+    "availability": 3,
+    "badges": "new"
+  },
+  {
+    "group": "tunturi-tray-rectangular",
+    "id": "1120016(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
     "group": "madera-board",
     "id": "0820050(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "price": 1200,
     "badges": ""
   },
@@ -3310,7 +3388,7 @@
     "group": "madera-boardsmall",
     "id": "0820051(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 1,
     "price": 1100,
     "badges": ""
   },
@@ -3324,7 +3402,7 @@
     "group": "tabula-tallrik-fero",
     "id": "0820052(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3359,7 +3437,7 @@
     "group": "tabula-tallrik-swell-black",
     "id": "0820056(2)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3373,7 +3451,7 @@
     "group": "tabula-lava",
     "id": "0920045(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3494,7 +3572,7 @@
       "value": "asia-forests",
       "text": "Леса азии"
     }],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3533,7 +3611,7 @@
       "value": "tibet",
       "text": "Тибет"
     }],
-    "availability": 3,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -3550,10 +3628,58 @@
     "badges": ""
   },
   {
+    "group": "freedom-candle",
+    "type": "Медовый взвар",
+    "id": "1220016(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "honey-broth",
+      "text": "Медовый взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "freedom-candle",
+    "type": "Мандариновый взвар",
+    "id": "1220016(2)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "tangerine-broth",
+      "text": "Мандариновый взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "freedom-candle",
+    "type": "Можжевельный взвар",
+    "id": "1220016(3)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "juniper-broth",
+      "text": "Можжевельный взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "freedom-candle",
+    "type": "Малиновый взвар",
+    "id": "1220016(4)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "crimson-broth",
+      "text": "Малиновый взвар"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
     "group": "fonar-spoon",
     "id": "0820072(1)",
     "selectableProperty": [],
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -3671,6 +3797,12 @@
     "badges": ""
   },
   {
+    "group": "otrubi-plaid",
+    "id": "1120030(1)",
+    "selectableProperty": [],
+    "availability": 1
+  },
+  {
     "group": "tabula-canoe",
     "id": "0820053(1)",
     "selectableProperty": [],
@@ -3695,7 +3827,7 @@
     "group": "choli-cotton-pads",
     "id": "0920025(1)",
     "selectableProperty": [],
-    "availability": 14,
+    "availability": 11,
     "badges": ""
   },
   {
@@ -3721,6 +3853,12 @@
     }],
     "availability": 1,
     "price": 900
+  },
+  {
+    "group": "choli-wreath-jute",
+    "id": "1120029(1)",
+    "selectableProperty": [],
+    "availability": 1
   },
   {
     "group": "mif-remodelista",
@@ -3768,64 +3906,94 @@
     "group": "flowertree-gipsophila-square",
     "id": "0920038(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-gipsophila-stand",
     "id": "0920029(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-lagurus-square",
     "id": "0920031(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-lavande-grass-square",
     "id": "0920041(1)",
     "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
+    "availability": 0
   },
   {
     "group": "flowertree-lavande-rectangle",
     "id": "0920035(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-lavande-rhombus",
     "id": "0920040(1)",
     "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
+    "availability": 0
   },
   {
     "group": "flowertree-leaf",
     "id": "0920030(1)",
     "selectableProperty": [],
-    "availability": 0,
-    "badges": ""
+    "availability": 0
   },
   {
     "group": "flowertree-sage-rhombus",
     "id": "0920034(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
   },
   {
     "group": "flowertree-yarrow-rhombus",
     "id": "0920032(1)",
     "selectableProperty": [],
-    "availability": 1,
-    "badges": ""
+    "availability": 1
+  },
+  {
+    "group": "flowertree-toy",
+    "type": "Вариант 1",
+    "id": "1220011(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "1",
+      "text": "Вариант 1"
+    }],
+    "availability": 15,
+    "price": 690,
+    "badges": "new"
+  },
+  {
+    "group": "flowertree-toy",
+    "type": "Вариант 3",
+    "id": "1220013(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "3",
+      "text": "Вариант 3"
+    }],
+    "availability": 5,
+    "price": 1040,
+    "badges": "new"
+  },
+  {
+    "group": "flowertree-toy",
+    "type": "Вариант 4",
+    "id": "1220014(1)",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "4",
+      "text": "Вариант 4"
+    }],
+    "availability": 2,
+    "price": 1170,
+    "badges": "new"
   },
   {
     "group": "latt-plate-big",
@@ -3846,6 +4014,13 @@
     "id": "0920044(1)",
     "selectableProperty": [],
     "availability": 3,
+    "badges": ""
+  },
+  {
+    "group": "latt-cup-gingerbread",
+    "id": "0920044(1)",
+    "selectableProperty": [],
+    "availability": 1,
     "badges": ""
   },
   {
@@ -3953,7 +4128,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 3,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -3984,7 +4159,7 @@
     "group": "laboratorium-micellar",
     "id": "0920058(1)",
     "selectableProperty": [],
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4008,7 +4183,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2,
+    "availability": 1,
     "badges": ""
   },
   {
@@ -4104,7 +4279,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 3,
+    "availability": 2,
     "badges": ""
   },
   {
@@ -4224,7 +4399,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -4296,7 +4471,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4320,7 +4495,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4464,7 +4639,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4488,7 +4663,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4608,7 +4783,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 4,
+    "availability": 3,
     "badges": ""
   },
   {
@@ -4682,8 +4857,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
-    "badges": "new"
+    "availability": 1
   },
   {
     "group": "laboratorium-tonic",
@@ -4706,8 +4880,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 2,
-    "badges": "new"
+    "availability": 2
   },
   {
     "group": "laboratorium-tonic",
@@ -4730,8 +4903,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
-    "badges": "new"
+    "availability": 1
   },
   {
     "group": "scrub",
@@ -4778,7 +4950,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4802,7 +4974,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4898,7 +5070,7 @@
         "design": "Laboratorium"
       }
     },
-    "availability": 1,
+    "availability": 0,
     "badges": ""
   },
   {
@@ -4911,7 +5083,7 @@
     "group": "mori-towel-strip",
     "id": "1020001(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "mori-garland-colored",
@@ -4972,7 +5144,7 @@
     "group": "mori-shopper-strings",
     "id": "1020023(1)",
     "selectableProperty": [],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "diko",
@@ -5155,6 +5327,54 @@
     "badges": ""
   },
   {
+    "group": "diko",
+    "id": "1220027(1)",
+    "type": "Маленькие елочки",
+    "category": ["newYear", "postcard"],
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с маленькими елочками в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "mini-tree",
+      "text": "Маленькие елочки"
+    }],
+    "availability": 1,
+    "badges": "new"
+  },
+  {
+    "group": "diko",
+    "id": "1220026(1)",
+    "type": "Елочка сбоку",
+    "category": ["newYear", "postcard"],
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с елочкой справа в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "spruce-side",
+      "text": "Елочка сбоку"
+    }],
+    "availability": 5,
+    "badges": "new"
+  },
+  {
+    "group": "diko",
+    "id": "1220025(1)",
+    "type": "Елочка",
+    "category": ["newYear", "postcard"],
+    "desc": "Открытки Дико выполнены на плотном картоне с неповторимыми авторскими рисунками.",
+    "metaDesc": "Купить открытку Дико с елочкой в Forfolks",
+    "shortDesc": "",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "tree-center",
+      "text": "Елочка"
+    }],
+    "availability": 5,
+    "badges": "new"
+  },
+  {
     "group": "bemyclay-spoon-circle",
     "id": "1020036(1)",
     "type": "Керамическая коричневая",
@@ -5176,7 +5396,7 @@
       "value": "gray",
       "text": "Серая"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "bemyclay-tallrik-white",
@@ -5218,6 +5438,8 @@
     "group": "aromat",
     "type": "Бродяги дхармы",
     "id": "1120002(13)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат бергамот, лимон, хвоя, кедр, мускус.",
+    "metaDesc": "Купить твердые духи бродяги дхармы в Forfolks. Аромат бергамот, лимон, хвоя, кедр, мускус.",
     "selectableProperty": [{
       "name": "model",
       "value": "dharma",
@@ -5229,72 +5451,86 @@
     "group": "aromat",
     "type": "Бузина и чайный лист",
     "id": "1120002(5)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат бузины, чайного листа, розы, фиалки.",
+    "metaDesc": "Купить твердые духи бузина и чайный лист в Forfolks. Аромат бузины, чайного листа, розы, фиалки.",
     "selectableProperty": [{
       "name": "model",
       "value": "elderberry-tea",
       "text": "Бузина и чайный лист"
     }],
-    "availability": 4
+    "availability": 0
   },
   {
     "group": "aromat",
     "type": "Гранатовый браслет",
     "id": "1120002(2)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат гранатовое зерно, яблоко, персик, черная смородина, малина.",
+    "metaDesc": "Купить твердые духи гранатовый браслет в Forfolks. Аромат гранатовое зерно, яблоко, персик, черная смородина, малина.",
     "selectableProperty": [{
       "name": "model",
       "value": "garnet-bracelet",
       "text": "Гранатовый браслет"
     }],
-    "availability": 5
+    "availability": 4
   },
   {
     "group": "aromat",
     "type": "Елисейские поля",
     "id": "1120002(6)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат луговых трав, липы, яблоневого цвета, ириса, бузины.",
+    "metaDesc": "Купить твердые духи елисейаские поля в Forfolks. Аромат луговых трав, липы, яблоневого цвета, ириса, бузины.",
     "selectableProperty": [{
       "name": "model",
       "value": "champs-elysees",
       "text": "Елисейские поля"
     }],
-    "availability": 3
+    "availability": 2
   },
   {
     "group": "aromat",
     "type": "Красный кедр",
     "id": "1120002(4)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат красная смородина, дуб, кедр, роза.",
+    "metaDesc": "Купить твердые духи красный кедр в Forfolks. Аромат красная смородина, дуб, кедр, роза.",
     "selectableProperty": [{
       "name": "model",
       "value": "cedar",
       "text": "Красный кедр"
     }],
-    "availability": 0
+    "availability": 4
   },
   {
     "group": "aromat",
     "type": "Морская соль и орхидея",
     "id": "1120002(1)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат орхидея, фиалка, ирис.",
+    "metaDesc": "Купить твердые духи морская соль и орхидея в Forfolks. Аромат орхидея, фиалка, ирис.",
     "selectableProperty": [{
       "name": "model",
       "value": "salt-orchid",
       "text": "Морская соль и орхидея"
     }],
-    "availability": 2
+    "availability": 1
   },
   {
     "group": "aromat",
     "type": "Белый мускус и амбра",
     "id": "1120002(10)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат мускус, коньяк, табак, роза, сандал.",
+    "metaDesc": "Купить твердые духи белый мускус и амбра в Forfolks. Аромат мускус, коньяк, табак, роза, сандал.",
     "selectableProperty": [{
       "name": "model",
       "value": "musk-amber",
       "text": "Белый мускус и амбра"
     }],
-    "availability": 0
+    "availability": 4
   },
   {
     "group": "aromat",
     "type": "Печеное яблоко",
     "id": "1120002(12)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат имбирный пряник, яблоко, корица, ваниль, грецкий орех.",
+    "metaDesc": "Купить твердые духи печеное яблоко в Forfolks. Аромат имбирный пряник, яблоко, корица, ваниль, грецкий орех.",
     "selectableProperty": [{
       "name": "model",
       "value": "apple",
@@ -5306,61 +5542,73 @@
     "group": "aromat",
     "type": "Петербург",
     "id": "1120002(14)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат ежевики, грейпфрута, лавра, бамбука.",
+    "metaDesc": "Купить твердые духи Петербург в Forfolks. Аромат ежевики, грейпфрута, лавра, бамбука.",
     "selectableProperty": [{
       "name": "model",
       "value": "petersburg",
       "text": "Петербург"
     }],
-    "availability": 9
+    "availability": 2
   },
   {
     "group": "aromat",
     "type": "Резной полисад",
     "id": "1120002(3)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат яблока, сирени, груши, белого чая.",
+    "metaDesc": "Купить твердые духи резной полисад в Forfolks. Аромат яблока, сирени, груши, белого чая.",
     "selectableProperty": [{
       "name": "model",
       "value": "carved-polisad",
       "text": "Резной полисад"
     }],
-    "availability": 5
+    "availability": 4
   },
   {
     "group": "aromat",
     "type": "Скандинавия",
     "id": "1120002(8)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат белого чая, клюквы, морошки, черники, мох.",
+    "metaDesc": "Купить твердые духи скандинавия в Forfolks. Аромат белого чая, клюквы, морошки, черники, мох.",
     "selectableProperty": [{
       "name": "model",
       "value": "scandinavia",
       "text": "Скандинавия"
     }],
-    "availability": 5
+    "availability": 1
   },
   {
     "group": "aromat",
     "type": "Табак и ваниль",
     "id": "1120002(11)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат табачного листа, пряностей, бобов тонка, какао.",
+    "metaDesc": "Купить твердые духи табак и ваниль в Forfolks. Аромат табачного листа, пряностей, бобов тонка, какао.",
     "selectableProperty": [{
       "name": "model",
       "value": "tabacco-vanilla",
       "text": "Табак и ваниль"
     }],
-    "availability": 4
+    "availability": 2
   },
   {
     "group": "aromat",
-    "type": "Дерево и сандал",
+    "type": "Тиковое дерево и сандал",
     "id": "1120002(7)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат тика, сандала, бергамота, амбра.",
+    "metaDesc": "Купить твердые духи тиковое дерево и сандал в Forfolks. Аромат тика, сандала, бергамота, амбра.",
     "selectableProperty": [{
       "name": "model",
       "value": "teak-sandalwood",
-      "text": "Дерево и сандал"
+      "text": "Тиковое дерево и сандал"
     }],
-    "availability": 6
+    "availability": 4
   },
   {
     "group": "aromat",
     "type": "Цитрусовый апероль",
     "id": "1120002(9)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат грейпфрута, лимона, мяты, апельсина, бергамота.",
+    "metaDesc": "Купить твердые духи цитрусовый апероль в Forfolks. Аромат грейпфрута, лимона, мяты, апельсина, бергамота.",
     "selectableProperty": [{
       "name": "model",
       "value": "aperol",
@@ -5372,12 +5620,140 @@
     "group": "aromat",
     "type": "Пион и розовая замша",
     "id": "1120002(15)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат пиона, замши, яблока, розы.",
+    "metaDesc": "Купить твердые духи пион и розовая замша в Forfolks. Аромат пиона, замши, яблока, розы.",
     "selectableProperty": [{
       "name": "model",
       "value": "peony-suede",
       "text": "Пион и розовая замша"
     }],
-    "availability": 4
+    "availability": 3
+  },
+  {
+    "group": "aromat",
+    "type": "1984",
+    "id": "1220017(8)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат имбирь, табачный лист, слива, бобы тонка, кедр.",
+    "metaDesc": "Купить твердые духи 1984 в Forfolks. Аромат имбирь, табачный лист, слива, бобы тонка, кедр.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "1984",
+      "text": "1984"
+    }],
+    "availability": 4,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Целлофановая ночь",
+    "id": "1220017(4)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат османтуса, мандарина, лилии, жасмина, гвоздики, мускуса.",
+    "metaDesc": "Купить твердые духи целлофановая ночь в Forfolks. Аромат османтуса, мандарина, лилии, жасмина, гвоздики, мускуса.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "cellophane-night",
+      "text": "Целлофановая ночь"
+    }],
+    "availability": 3,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Декаданс",
+    "id": "1220017(6)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат кедра, ландыша, пачули, жасмина, амбра, кожи, сандала.",
+    "metaDesc": "Купить твердые духи декаданс в Forfolks. Аромат кедра, ландыша, пачули, жасмина, амбра, кожи, сандала.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "decadex",
+      "text": "Декаданс"
+    }],
+    "availability": 3,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Восточный ветер",
+    "id": "1220017(2)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат мед, табак, ирис, сандал, ладан.",
+    "metaDesc": "Купить твердые духи восточный ветер в Forfolks. Аромат мед, табак, ирис, сандал, ладан.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "eastern-wind",
+      "text": "Восточный ветер"
+    }],
+    "availability": 4,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Мириады",
+    "id": "1220017(5)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат бергамот, черная смородина, кардамон, инжир, тиаре, кедр.",
+    "metaDesc": "Купить твердые духи мириады в Forfolks. Аромат бергамот, черная смородина, кардамон, инжир, тиаре, кедр.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "myriad",
+      "text": "Мириады"
+    }],
+    "availability": 4,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Перламутр",
+    "id": "1220017(1)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат мандарин, танжерин, грейпфрут, розовый перец, персик, мускус.",
+    "metaDesc": "Купить твердые духи перламутр в Forfolks. Аромат мандарин, танжерин, грейпфрут, розовый перец, персик, мускус.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "nacre",
+      "text": "Перламутр"
+    }],
+    "availability": 4,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Нуар",
+    "id": "1220017(7)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат лаванда, миндаль, мирра, ваниль.",
+    "metaDesc": "Купить твердые духи нуар в Forfolks. Аромат лаванда, миндаль, мирра, ваниль.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "noir",
+      "text": "Нуар"
+    }],
+    "availability": 3,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Русский код",
+    "id": "1220017(9)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат кокоса, туберозы, бобы тонка, миндаль, лимон, мускус.",
+    "metaDesc": "Купить твердые духи русский код в Forfolks. Аромат кокоса, туберозы, бобы тонка, миндаль, лимон, мускус.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "russian-code",
+      "text": "Русский код"
+    }],
+    "availability": 4,
+    "badges": "new"
+  },
+  {
+    "group": "aromat",
+    "type": "Белый плен",
+    "id": "1220017(3)",
+    "desc": "В твердых духах парфюмерная композиция попадает на кожу благодаря маслам и соевому воску, которые не оказывают раздражающего действия на кожу. <br><br> Аромат клементин, петитгрейн, подснежник, нероли, бобы тонка, амбра.",
+    "metaDesc": "Купить твердые духи белый плен в Forfolks. Аромат клементин, петитгрейн, подснежник, нероли, бобы тонка, амбра.",
+    "selectableProperty": [{
+      "name": "model",
+      "value": "white-captivity",
+      "text": "Белый плен"
+    }],
+    "availability": 3,
+    "badges": "new"
   },
   {
     "group": "zvezdochet-apron",
@@ -5388,7 +5764,7 @@
       "value": "terracotta",
       "text": "Терракотовый"
     }],
-    "availability": 1
+    "availability": 0
   },
   {
     "group": "zvezdochet-apron",
@@ -5558,7 +5934,8 @@
       "value": "gray",
       "text": "серо-голубой"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "an-pillow",
@@ -5569,29 +5946,34 @@
       "value": "cocoa",
       "text": "Какао"
     }],
-    "availability": 1
+    "availability": 1,
+    "badges": "new"
   },
   {
     "group": "north-card",
     "type": "Бык цветной",
     "id": "1120017(1)",
+    "category": ["newYear", "postcard"],
     "selectableProperty": [{
       "name": "model",
       "value": "bull-color",
       "text": "Бык цветной"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "north-card",
     "type": "Бык чб",
     "id": "1120017(1)",
+    "category": ["newYear", "postcard"],
     "selectableProperty": [{
       "name": "model",
       "value": "bull",
       "text": "Бык чб"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5603,7 +5985,8 @@
       "text": "Рябинник"
     }],
     "availability": 6,
-    "price": 70
+    "price": 70,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5615,7 +5998,8 @@
       "text": "Чекан"
     }],
     "availability": 6,
-    "price": 70
+    "price": 70,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5626,7 +6010,8 @@
       "value": "twig",
       "text": "Веточки"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
   },
   {
     "group": "north-card",
@@ -5637,6 +6022,69 @@
       "value": "urban-jungle",
       "text": "Urban Jungle"
     }],
-    "availability": 7
+    "availability": 7,
+    "badges": "new"
+  },
+  {
+    "group": "oforme-candlestick-square",
+    "id": "1120002(1)",
+    "selectableProperty": [],
+    "availability": 7,
+    "badges": "new"
+  },
+  {
+    "group": "oforme-candlestick-speck",
+    "id": "1120003(1)",
+    "selectableProperty": [],
+    "availability": 3,
+    "badges": "new"
+  },
+  {
+    "group": "natures-candle",
+    "id": "1220001(1)",
+    "type": "Белая",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "white42cm",
+      "text": "Белая"
+    }],
+    "availability": 6,
+    "badges": "new"
+  },
+  {
+    "group": "natures-candle",
+    "id": "1220001(2)",
+    "type": "Сакура",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "powder42cm",
+      "text": "Сакура"
+    }],
+    "availability": 6,
+    "badges": "new"
+  },
+  {
+    "group": "natures-candle",
+    "id": "1220001(3)",
+    "type": "Бежевая",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "beige42cm",
+      "text": "Бежевая"
+    }],
+    "availability": 6,
+    "badges": "new"
+  },
+  {
+    "group": "natures-candle",
+    "id": "1220001(4)",
+    "type": "Бордо",
+    "selectableProperty": [{
+      "name": "color",
+      "value": "bordeaux42cm",
+      "text": "Бордо"
+    }],
+    "availability": 6,
+    "badges": "new"
   }
 ]
