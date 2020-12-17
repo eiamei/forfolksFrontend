@@ -71,16 +71,14 @@
         <p>Создавая заказ вы подтверждаете согласие с&nbsp;<router-link to="contract"> условием оферты</router-link></p>
       </label>
       <span class="user-info__error">{{ parseError(errors.first('license')) }}</span>
-      <app-button class="user-info__end-order button--end-order" content="Завершить заказ"/>
+      <button class="user-info__end-order button--end-order">Завершить заказ</button>
     </form>
   </div>
 </template>
 
 <script>
-import AppButton from '../../AppButton';
 export default {
   name: 'PaymentUserInfo',
-  components: {AppButton},
   data () {
     return {
       rules: {
@@ -152,78 +150,88 @@ export default {
 };
 </script>
 
-<style lang="scss">
-  @import '../../../assets/styles/colors';
-  @import '../../../assets/styles/vars';
-  @import '../../../assets/styles/ui';
+<style>
   .user-info {
     width: 100%;
     max-width: 600px;
-    font-family: 'Roboto', 'Open Sans', serif;
-    &__form {
-      display: flex;
-      flex-direction: column;
+  }
+  .user-info__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-info__header {
+    font-weight: 500;
+    margin: 16px 0 10px 0;
+  }
+  .user-info__input {
+    width: calc(100% - 18px);
+    max-width: calc(600px - 18px);
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--dark-gray);
+    margin-top: 8px;
+    padding: 0 8px;
+  }
+  .user-info__input--postal {
+    width: 10%;
+    min-width: 40px;
+    margin-right: 8px;
+  }
+  .user-info__input--address {
+    width: 88%;
+  }
+  .user-info__input--text-area {
+    max-width: calc(600px - 18px);
+    padding: 16px 8px;
+  }
+  .user-info__error {
+    color: var(--red);
+  }
+  .user-info__error--license {
+    text-align: right;
+  }
+  .user-info__additional-info {
+    color: var(--dark-gray) 2;
+  }
+  .user-info__delivery-button.clean-button {
+    margin: 0.5rem 1rem 0.5rem 0;
+    cursor: pointer;
+  }
+  .user-info__delivery-button--selected {
+    border-bottom: 1px solid var(--orange);
+  }
+  .user-info__delivery-info-text.regular-sans-text {
+    margin: 0.5rem 0;
+    text-transform: none;
+  }
+  .user-info__license-agreement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: none;
+  }
+  .user-info__license-agreement > input {
+    margin: 0 0.5rem 0 0;
+  }
+  @media screen and (max-width: var(--tablet)) {
+    .user-info__license-agreement > input {
+      margin: 0 1rem 0 0;
     }
-    &__header {
-      font-weight: 500;
-      margin: 16px 0 10px 0;
-    }
-    &__input {
-      width: calc(100% - 18px);
-      max-width: calc(600px - 18px);
-      height: 40px;
-      border-radius: 4px;
-      border: 1px solid $dark-gray;
-      margin-top: 8px;
-      padding: 0 8px;
-      &--postal {
-        width: 10%;
-        min-width: 40px;
-        margin-right: 8px;
-      }
-      &--address {
-        width: 88%;
-      }
-      &--text-area {
-        max-width: calc(600px - 18px);
-        padding: 16px 8px;
-      }
-    }
-    &__error {
-      color: $regular-red;
-      &--license {
-        text-align: right;
-      }
-    }
-    &__additional-info {
-      color: $dark-gray2
-    }
-    &__delivery-button.clean-button {
-      margin: 0.5rem 1rem 0.5rem 0;
-      cursor: pointer;
-    }
-    &__delivery-button--selected {
-      border-bottom: 1px solid $orange;
-    }
-    &__delivery-info-text.regular-sans-text {
-      margin: 0.5rem 0;
-      text-transform: none;
-    }
-    &__license-agreement {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      text-transform: none;
-      & > input {
-        margin: 0 0.5rem 0 0;
-        @media screen and (max-width: $tablet) {
-          margin: 0 1rem 0 0;
-        }
-      }
-    }
-    &__end-order {
-      margin: 24px 0;
-      align-self: flex-end;
-    }
+  }
+  .user-info__end-order {
+    margin: 24px 0;
+    align-self: flex-end;
+    background: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 48px;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    font-weight: 700;
+  }
+  .user-info__end-order:hover {
+    background: var(--dark-blue);
   }
 </style>

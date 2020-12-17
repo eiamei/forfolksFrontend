@@ -46,9 +46,7 @@
   });
 </script>
 
-<style lang="scss">
-  @import '../../../assets/styles/vars';
-  @import '../../../assets/styles/ui';
+<style>
   .item-more-info {
     box-sizing: border-box;
     max-width: 30rem;
@@ -58,26 +56,28 @@
     list-style: none;
     padding: 3rem 2rem;
     margin: 0 1rem 0 0;
-    @media screen and (max-width: $tablet) {
+  }
+  @media screen and (max-width: var(--tablet)) {
+    .item-more-info {
       padding: 1rem;
       max-width: unset;
       min-width: unset;
     }
-    &__link-container.regular-link {
-      margin-bottom: 1rem;
-    }
-    &__link {
-      border: none;
-      background: none;
-      padding: 0;
-      cursor: pointer;
-    }
-    &__color.regular-sans-text {
-      color: $light-gray;
-      margin-bottom: .5rem;
-    }
-    &__design.regular-sans-text {
-      color: $light-gray;
-    }
+  }
+  .item-more-info__link-container.regular-link {
+    margin-bottom: 1rem;
+  }
+  .item-more-info__link {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .item-more-info__color.regular-sans-text {
+    color: var(--light-gray);
+    margin-bottom: 0.5rem;
+  }
+  .item-more-info__design.regular-sans-text {
+    color: var(--light-gray);
   }
 </style>

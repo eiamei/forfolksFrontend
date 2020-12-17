@@ -47,22 +47,22 @@
   });
 </script>
 
-<style lang="scss">
+<style>
   .landing-carousel {
-    height: 90vh!important;
-    .hooper-indicator {
-      width: 10px;
-      height: 10px;
-      border: 1px solid black;
-      border-radius: 10px;
-      background-color: black;
-    }
-    .hooper-indicator.is-active {
-      background-color: white!important;
-    }
-    &__slide {
-      display: flex;
-      justify-content: center;
-    }
+    height: 90vh !important;
+  }
+  .landing-carousel .hooper-indicator {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+  }
+  .landing-carousel .hooper-indicator.is-active {
+    background-color: white !important;
+  }
+  .landing-carousel__slide {
+    display: flex;
+    justify-content: center;
   }
 </style>

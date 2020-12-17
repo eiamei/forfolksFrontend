@@ -10,8 +10,5 @@
   };
 </script>
 
-<style lang="scss">
-  .forfolks-logo {
-    /* transition: .3s all; */
-  }
+<style>
 </style>

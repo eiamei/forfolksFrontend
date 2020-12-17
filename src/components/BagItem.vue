@@ -82,9 +82,7 @@
   };
 </script>
 
-<style lang="scss">
-  @import '../assets/styles/ui.scss';
-  @import '../assets/styles/vars.scss';
+<style>
   .bag-item-container {
     display: flex;
     text-align: left;
@@ -98,26 +96,36 @@
     width: 180px;
     object-fit: cover;
     object-position: 50% 100%;
-    &--hidden {
-      filter: blur(2px);
-    }
-    @media screen and (max-width: 1100px) {
+  }
+  .bag-item-image--hidden {
+    filter: blur(2px);
+  }
+  @media screen and (max-width: 1100px) {
+    .bag-item-image {
       height: 140px;
       width: 140px;
     }
-    @media screen and (max-width: 800px) {
+  }
+  @media screen and (max-width: 800px) {
+    .bag-item-image {
       height: 120px;
       width: 120px;
     }
-    @media screen and (max-width: 600px) {
+  }
+  @media screen and (max-width: 600px) {
+    .bag-item-image {
       height: 80px;
       width: 80px;
     }
-    @media screen and (max-width: 500px) {
+  }
+  @media screen and (max-width: 500px) {
+    .bag-item-image {
       height: 70px;
       width: 70px;
     }
-    @media screen and (max-width: 400px) {
+  }
+  @media screen and (max-width: 400px) {
+    .bag-item-image {
       height: 60px;
       width: 60px;
     }
@@ -127,51 +135,59 @@
     flex-direction: column;
     width: 100%;
     padding: 0 0 0 16px;
-    &__header {
-      margin: 4px 0;
-      @media screen and (max-width: 600px) {
-        margin: 0 0 4px 0;
-      }
+  }
+  .bag-item__header {
+    margin: 4px 0;
+  }
+  @media screen and (max-width: 600px) {
+    .bag-item__header {
+      margin: 0 0 4px 0;
     }
-    &__type {
-      font-weight: 400;
-      margin: 4px 0 8px 0;
-      @media screen and (max-width: 600px) {
-        margin: 0 0 4px 0;
-      }
+  }
+  .bag-item__type {
+    font-weight: 400;
+    margin: 4px 0 8px 0;
+  }
+  @media screen and (max-width: 600px) {
+    .bag-item__type {
+      margin: 0 0 4px 0;
     }
-    &__row {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+  }
+  .bag-item__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .bag-item__field {
+    padding: 0 16px;
+    margin: 0.5rem 0;
+    cursor: default;
+  }
+  @media screen and (max-width: 900px) {
+    .bag-item__field {
+      padding: 0 8px;
     }
-    &__field {
-      padding: 0 16px;
-      margin: 0.5rem 0;
-      cursor: default;
-      @media screen and (max-width: 900px) {
-        padding: 0 8px;
-      }
-      @media screen and (max-width: 400px) {
-        padding: 0 4px;
-      }
+  }
+  @media screen and (max-width: 400px) {
+    .bag-item__field {
+      padding: 0 4px;
     }
-    &__field-old-price {
-      text-decoration: line-through;
-      margin: 0 8px;
-    }
-    &__field-discount-price {
-      color: $red;
-    }
-    &__button.clean-button {
-      color: black;
-      border: 1px solid black;
-      padding: 1px 8px 4px 8px;
-      cursor: pointer;
-    }
-    &__not-available {
-      margin: 0;
-      color: $sale-red;
-    }
+  }
+  .bag-item__field-old-price {
+    text-decoration: line-through;
+    margin: 0 8px;
+  }
+  .bag-item__field-discount-price {
+    color: var(--red);
+  }
+  .bag-item__button.clean-button {
+    color: black;
+    border: 1px solid black;
+    padding: 1px 8px 4px 8px;
+    cursor: pointer;
+  }
+  .bag-item__not-available {
+    margin: 0;
+    color: var(--sale-red);
   }
 </style>

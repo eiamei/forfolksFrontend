@@ -1191,7 +1191,7 @@
     "discountGroup": "suplier",
     "salePercent": 0.1,
     "isSale": false,
-    "price": 350
+    "price": 500
   },
   "choli-basket-gray": {
     "rootPath": "choli-basket-gray",

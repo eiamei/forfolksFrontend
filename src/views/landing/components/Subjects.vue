@@ -73,58 +73,62 @@
     });
 </script>
 
-<style lang="scss">
-  @import "src/assets/styles/ui";
-  @import "../../../assets/styles/vars";
+<style>
   .landing-subjects {
     margin-top: 4.5rem;
     padding: 2rem 0;
-    background-color: $soft-yellow-background;
+    background-color: var(--soft-yellow-background);
   }
   .landing-subject {
     display: flex;
     padding: 2.5rem 0;
-    @media screen and (max-width: $tablet) {
+  }
+  @media screen and (max-width: var(--tablet)) {
+    .landing-subject {
       flex-direction: column;
     }
-    &__image {
-      width: calc(50% - 5rem);
-      height: 30rem;
-      margin: 0 2rem;
-      object-fit: cover;
-      @media screen and (max-width: $tablet) {
-        width: calc(100% - 5rem);
-      }
-      &--left {
-        @media screen and (min-width: $tablet) {
-          margin-right: 0;
-          order: 0;
-        }
-      }
-      &--right {
-        @media screen and (min-width: $tablet) {
-          margin-left: 0;
-          order: 1;
-        }
-      }
+  }
+  .landing-subject__image {
+    width: calc(50% - 5rem);
+    height: 30rem;
+    margin: 0 2rem;
+    object-fit: cover;
+  }
+  @media screen and (max-width: var(--tablet)) {
+    .landing-subject__image {
+      width: calc(100% - 5rem);
     }
-    &__text-wrapper {
-      margin: 0 2rem;
-      @media screen and (min-width: $tablet) {
-        margin: 0 6rem;
-      }
-      &--left {
-        @media screen and (min-width: $tablet) {
-          margin-right: 6rem;
-          order: 0;
-        }
-      }
-      &--right {
-        @media screen and (min-width: $tablet) {
-          margin-left: 6rem;
-          order: 1;
-        }
-      }
+  }
+  @media screen and (min-width: var(--tablet)) {
+    .landing-subject__image--left {
+      margin-right: 0;
+      order: 0;
+    }
+  }
+  @media screen and (min-width: var(--tablet)) {
+    .landing-subject__image--right {
+      margin-left: 0;
+      order: 1;
+    }
+  }
+  .landing-subject__text-wrapper {
+    margin: 0 2rem;
+  }
+  @media screen and (min-width: var(--tablet)) {
+    .landing-subject__text-wrapper {
+      margin: 0 6rem;
+    }
+  }
+  @media screen and (min-width: var(--tablet)) {
+    .landing-subject__text-wrapper--left {
+      margin-right: 6rem;
+      order: 0;
+    }
+  }
+  @media screen and (min-width: var(--tablet)) {
+    .landing-subject__text-wrapper--right {
+      margin-left: 6rem;
+      order: 1;
     }
   }
 </style>

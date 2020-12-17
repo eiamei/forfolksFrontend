@@ -21,18 +21,16 @@
   });
 </script>
 
-<style lang="scss">
-  @import '../../../assets/styles/vars';
-  @import '../../../assets/styles/ui';
+<style>
   .item-description {
     width: 100%;
     padding: 1rem;
-    border-right: 1px solid $dark-blue;
+    border-right: 1px solid var(--dark-blue);
     margin: 2rem 0;
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: var(--tablet)) {
       width: calc(100% - 2rem);
       border-right: none;
-      border-bottom: 1px solid $dark-blue;
+      border-bottom: 1px solid var(--dark-blue);
       padding: 1rem 0;
       margin: 1rem 1rem 0 1rem;
     }

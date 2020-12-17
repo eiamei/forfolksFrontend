@@ -47,131 +47,103 @@
   })
 </script>
 
-<style lang="scss">
-  @import '../assets/styles/vars';
-
+<style>
   .color-picker {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     height: 20px;
-
-    &__circle {
-      position: relative;
-      width: 16px;
-      height: 16px;
-      margin-right: 8px;
-      border: 1px solid black;
-      border-radius: 16px;
-      cursor: pointer;
-
-      &--selected {
-        &::after {
-          content: ' ';
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 6px;
-          height: 6px;
-          border-radius: 8px;
-          transform: translate(-50%, -50%);
-          background: white;
-          border: 1px solid black;
-        }
-      }
-
-      &--white, &--white42cm {
-        background: $coated;
-      }
-
-      &--silver {
-        background: $silver;
-      }
-
-      &--cream, &--unbleached, &--beige42cm {
-        background: $cream;
-      }
-
-      &--light-gray {
-        background: $light-gray-cloth;
-      }
-
-      &--mint {
-        background: $mint;
-      }
-
-      &--natural-linen {
-        background: $natural-linen;
-      }
-
-      &--blue-line {
-        background: $blue-line;
-      }
-
-      &--pearl, &--milk {
-        background: $pearl;
-      }
-
-      &--sand {
-        background: $sand;
-      }
-
-      &--darkblue {
-        background: $darkblue;
-      }
-
-      &--olive, &--green {
-        background: $olive;
-      }
-
-      &--terracotta, &--brown, &--bordeaux42cm {
-        background: $terracotta;
-      }
-
-      &--powder, &--peach, &--figs, &--powder42cm {
-        background: $powder;
-      }
-
-      &--cacao, &--cocoa, &--coffee {
-        background: $cacao;
-      }
-
-      &--chestnut {
-        background: $chestnut;
-      }
-
-      &--jupiter {
-        background: $jupiter;
-      }
-
-      &--neptun {
-        background: $neptun;
-      }
-
-      &--moonstone {
-        background: $moonstone;
-      }
-
-      &--gray-fog, &--fog {
-        background: $gray_fog;
-      }
-
-      &--gray {
-        background: $gray;
-      }
-
-      &--graphite, &--dark-gray {
-        background: $graphite;
-      }
-
-      &--black-marble {
-        background: $black-marble;
-      }
-
-      &--black {
-        background: $black;
-      }
-    }
   }
+  .color-picker__circle {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  .color-picker__circle--selected::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid black;
+  }
+  .color-picker__circle--white, .color-picker__circle--white42cm {
+    background: #FFFDF6;
+  }
+  .color-picker__circle--silver {
+    background: #e3e9ee;
+  }
+  .color-picker__circle--cream, .color-picker__circle--unbleached, .color-picker__circle--beige42cm {
+    background: #fcedce;
+  }
+  .color-picker__circle--light-gray {
+    background: var(--light-gray)-cloth;
+  }
+  .color-picker__circle--mint {
+    background: #d5e4dd;
+  }
+  .color-picker__circle--natural-linen {
+    background: #ddd8cd;
+  }
+  .color-picker__circle--blue-line {
+    background: linear-gradient(145deg, #FFF 35%, #c7c8eb 51.56%, #FFF 65%);
+  }
+  .color-picker__circle--pearl, .color-picker__circle--milk {
+    background: #eee5d2;
+  }
+  .color-picker__circle--sand {
+    background: #e2cd9e;
+  }
+  .color-picker__circle--darkblue {
+    background: #3d5566;
+  }
+  .color-picker__circle--olive, .color-picker__circle--green {
+    background: #677e65;
+  }
+  .color-picker__circle--terracotta, .color-picker__circle--brown, .color-picker__circle--bordeaux42cm {
+    background: #d36438;
+  }
+  .color-picker__circle--powder, .color-picker__circle--peach, .color-picker__circle--figs, .color-picker__circle--powder42cm {
+    background: #e9d8d8;
+  }
+  .color-picker__circle--cacao, .color-picker__circle--cocoa, .color-picker__circle--coffee {
+    background: #d4c0af;
+  }
+  .color-picker__circle--chestnut {
+    background: #f0bc84;
+  }
+  .color-picker__circle--jupiter {
+    background: linear-gradient(180deg, #d4c0af 35%, #FFF 51.56%, #d4c0af 65%);
+  }
+  .color-picker__circle--neptun {
+    background: linear-gradient(180deg, #afc2d4 35%, #FFF 51.56%, #afc2d4 65%);
+  }
+  .color-picker__circle--moonstone {
+    background: #d1e0eb;
+  }
+  .color-picker__circle--gray-fog, .color-picker__circle--fog {
+    background: linear-gradient(180deg, #FFFFFF 34.31%, #7B7A7A 76.92%);
+  }
+  .color-picker__circle--gray {
+    background: #7B7A7A;
+  }
+  .color-picker__circle--graphite, .color-picker__circle--dark-gray {
+    background: #554d4f;
+  }
+  .color-picker__circle--black-marble {
+    background: linear-gradient(145deg, #FFF 35%, #000 51.56%, #FFF 65%);
+  }
+  .color-picker__circle--black {
+    background: black;
+  }
+
 </style>

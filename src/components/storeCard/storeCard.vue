@@ -129,120 +129,99 @@
   });
 </script>
 
-<style lang="scss">
-  @import "../../assets/styles/ui";
-  @import "../../assets/styles/vars";
-
+<style>
   .store-card {
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-
-    &--wide {
-      grid-column-end: span 2;
-    }
-
-    &__image-link {
-      display: flex;
-      position: relative;
-      height: 100%;
-      overflow: hidden;
-
-      &:hover {
-        .regular-sans-text.store-card__add-to-bag {
-          background: rgba(white, 0.6);
-          color: $dark-blue;
-        }
-      }
-    }
-
-    &__image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .regular-sans-text.store-card__add-to-bag {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      bottom: 0;
-      z-index: 10;
-      text-align: center;
-      border: none;
-      padding: 1rem 0;
-      margin: 0;
-      background-color: rgba(white, 0);
-      color: transparent;
-      transition: color .3s,
-                  background-color .3s;
-
-      &:hover {
-        background-color: rgba($dark-blue, 1);
-        color: white;
-      }
-    }
-
-    &__text-wrapper {
-      display: flex;
-      justify-content: space-between;
-      margin: 0.5rem 0;
-    }
-
-    &__text-link {
-      display: flex;
-      text-decoration: none;
-      overflow: hidden;
-    }
-
-    .store-card__sale-price {
-      color: $red;
-    }
-
-    .store-card__sale-price-old {
-      margin-right: 4px;
-      text-decoration: line-through;
-    }
-
-    .small-regular-heading.store-card__model, .regular-sans-text.store-card__type, .regular-sans-text.store-card__price {
-      margin: 0;
-      align-self: flex-end;
-      white-space: nowrap;
-    }
-
-    .regular-sans-text.store-card__type {
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .small-regular-heading.store-card__model {
-      margin-right: 0.5rem;
-    }
-
-    .clean-button.store-card__color-button {
-      width: 1rem;
-      height: 1rem;
-      border-radius: 1em;
-      background-color: black;
-    }
-
-    &__badge {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      top: 1rem;
-      right: 1rem;
-      width: 4rem;
-      height: 4rem;
-      border-radius: 4rem;
-      background-color: $dark-blue;
-      color: white;
-      font-weight: bold;
-      &--sale {
-        background-color: $sale-red;
-      }
-    }
+  }
+  .store-card--wide {
+    grid-column-end: span 2;
+  }
+  .store-card__image-link {
+    display: flex;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .store-card__image-link:hover .regular-sans-text.store-card__add-to-bag {
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--dark-blue);
+  }
+  .store-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .store-card .regular-sans-text.store-card__add-to-bag {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    text-align: center;
+    border: none;
+    padding: 1rem 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: transparent;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  .store-card .regular-sans-text.store-card__add-to-bag:hover {
+    background-color: var(--dark-blue);
+    color: white;
+  }
+  .store-card__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+  }
+  .store-card__text-link {
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .store-card .store-card__sale-price {
+    color: var(--red);
+  }
+  .store-card .store-card__sale-price-old {
+    margin-right: 4px;
+    text-decoration: line-through;
+  }
+  .store-card .small-regular-heading.store-card__model, .store-card .regular-sans-text.store-card__type, .store-card .regular-sans-text.store-card__price {
+    margin: 0;
+    align-self: flex-end;
+    white-space: nowrap;
+  }
+  .store-card .regular-sans-text.store-card__type {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .store-card .small-regular-heading.store-card__model {
+    margin-right: 0.5rem;
+  }
+  .store-card .clean-button.store-card__color-button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1em;
+    background-color: black;
+  }
+  .store-card__badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    background-color: var(--dark-blue);
+    color: white;
+    font-weight: bold;
+  }
+  .store-card__badge--sale {
+    background-color: var(--sale-red);
   }
 </style>

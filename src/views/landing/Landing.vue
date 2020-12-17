@@ -32,39 +32,34 @@
   });
 </script>
 
-<style lang="scss">
-  @import "src/assets/styles/vars";
-  @import "src/assets/styles/ui";
-
+<style>
   .landing-page {
     text-align: center;
     min-height: 80vh;
-    .landing-page-hero-text {
-      margin: 4rem 2rem 2rem 2rem;
-    }
-    .to-shop-button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      border: 1px solid black;
-      margin: 0 0 4rem 0;
-      cursor: pointer;
-      color: black;
-      text-decoration: none;
-      transition: background-color .2s ease-in-out,
-                  border .2s ease-in-out,
-                  color .2s ease-in-out;
-      &:hover {
-        background-color: $dark-blue;
-        border: 1px solid $dark-blue;
-        color: white;
-      }
-    }
-    .landing-page-recomendasion {
-      text-align: center;
-      margin-bottom: 0;
-    }
-    .landing-page-suggestions {
-      margin: 2rem 1rem 3rem 1rem;
-    }
+  }
+  .landing-page .landing-page-hero-text {
+    margin: 4rem 2rem 2rem 2rem;
+  }
+  .landing-page .to-shop-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid black;
+    margin: 0 0 4rem 0;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  .landing-page .to-shop-button:hover {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    color: white;
+  }
+  .landing-page .landing-page-recomendasion {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .landing-page .landing-page-suggestions {
+    margin: 2rem 1rem 3rem 1rem;
   }
 </style>

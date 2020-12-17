@@ -11,7 +11,7 @@
   };
 </script>
 
-<style lang="scss">
+<style>
   .minus-icon {
     width: 1rem;
     height: 1rem;

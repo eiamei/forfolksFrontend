@@ -15,21 +15,18 @@
     });
 </script>
 
-<style lang="scss">
-  @import "src/assets/styles/vars";
-  @import "src/assets/styles/ui";
-
+<style>
   .landing-page-heading {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    &__header {
-      margin: 2rem 0;
-    }
-    &__about {
-      max-width: 1300px;
-      text-align: left;
-    }
+  }
+  .landing-page-heading__header {
+    margin: 2rem 0;
+  }
+  .landing-page-heading__about {
+    max-width: 1300px;
+    text-align: left;
   }
 </style>

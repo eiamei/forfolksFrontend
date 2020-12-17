@@ -18,8 +18,7 @@
     })
 </script>
 
-<style lang="scss">
-  @import '../../../assets/styles/vars';
+<style>
   .item-photos {
     display: flex;
     flex-direction: column;

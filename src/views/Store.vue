@@ -77,29 +77,33 @@ export default {
 };
 </script>
 
-<style lang="scss">
-  @import '../assets/styles/vars';
+<style>
   .store {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat( auto-fit, minmax( 350px, 1fr ) );
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-flow: dense;
     margin: 3.5rem 1rem 1.5rem 1rem;
     padding: 0;
-    // sorry
-    // for the good flexing of massonry on small devices
-    @media screen and (max-width: 700px) {
-      grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
-    }
-    @media screen and (max-width: 550px) {
-      grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
-    }
-    @media screen and (max-width: 450px) {
-      grid-template-columns: repeat( auto-fit, minmax( 150px, 1fr ) );
-    }
-    @media screen and (max-width: 330px) {
-      grid-template-columns: repeat( auto-fit, minmax( 100px, 1fr ) );
+  }
+  @media screen and (max-width: 700px) {
+    .store {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
   }
-
+  @media screen and (max-width: 550px) {
+    .store {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .store {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  @media screen and (max-width: 330px) {
+    .store {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
 </style>

@@ -67,9 +67,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-  @import 'src/assets/styles/colors';
-  @import 'src/assets/styles/vars';
+<style>
   .bag-container {
     margin: 40px 0 0 0;
     width: 100%;
@@ -86,16 +84,22 @@ export default {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    @media screen and (max-width: 1264px) {
+  }
+  @media screen and (max-width: 1264px) {
+    .bag {
       width: calc(100% - 64px);
       padding: 0 32px;
     }
-    @media screen and (max-width: 600px) {
+  }
+  @media screen and (max-width: 600px) {
+    .bag {
       width: calc(100% - 32px);
       padding: 0 16px;
       margin-bottom: 8px;
     }
-    @media screen and (max-width: 400px) {
+  }
+  @media screen and (max-width: 400px) {
+    .bag {
       width: calc(100% - 16px);
       padding: 0 8px;
       margin-bottom: 0;
@@ -107,53 +111,55 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    &__old-price {
-      text-decoration: line-through;
-      margin: 0 8px;
-    }
-    &__discount-price {
-      color: $red;
-    }
-    &__total-text {
-      display: flex;
-    }
-    &__promo-input {
-      width: 190px;
-      border: 1px solid black;
-      padding: 1rem 0.5rem;
-    }
-    &__promo-button {
-      width: 88px;
-      border: 1px solid black;
-      margin-left: 0.5rem;
-      padding: 1rem 0.5rem;
-      background: black;
-      color: white;
-      cursor: pointer;
-      &:hover {
-        background: rgb(50, 50, 50);
-      }
-    }
-    &__promo-error {
-      color: $regular-red;
-    }
-    &__buy-button {
-      width: 296px;
-      background: black;
-      border: 1px solid black;
-      box-sizing: border-box;
-      padding: 1rem 0;
-      text-decoration: none;
-      text-align: center;
-      color: white;
-      font-weight: 700;
-      &:hover {
-        background: rgb(50, 50, 50);
-      }
-      @media screen and (max-width: 600px) {
-        width: 100%;
-        margin-bottom: 1rem;
-      }
+  }
+  .bag-total__old-price {
+    text-decoration: line-through;
+    margin: 0 8px;
+  }
+  .bag-total__discount-price {
+    color: var(--red);
+  }
+  .bag-total__total-text {
+    display: flex;
+  }
+  .bag-total__promo-input {
+    width: 190px;
+    border: 1px solid black;
+    padding: 1rem 0.5rem;
+  }
+  .bag-total__promo-button {
+    width: 88px;
+    border: 1px solid black;
+    margin-left: 0.5rem;
+    padding: 1rem 0.5rem;
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+  .bag-total__promo-button:hover {
+    background: #323232;
+  }
+  .bag-total__promo-error {
+    color: var(--red);
+  }
+  .bag-total__buy-button {
+    width: 296px;
+    background: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+  }
+  .bag-total__buy-button:hover {
+    background: #323232;
+  }
+  @media screen and (max-width: 600px) {
+    .bag-total__buy-button {
+      width: 100%;
+      margin-bottom: 1rem;
     }
   }
 </style>

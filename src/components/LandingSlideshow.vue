@@ -29,19 +29,19 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
   .landing-slide-show {
     position: relative;
     margin: 3rem 1rem 0 1rem;
     display: flex;
     justify-content: center;
-    &__image {
-      width: 100%;
-      height: 100%;
-    }
+  }
+  .landing-slide-show__image {
+    width: 100%;
+    height: 100%;
   }
   .stay-home-text-wrapper {
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -49,9 +49,9 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    p {
-      text-align: center;
-    }
+  }
+  .stay-home-text-wrapper p {
+    text-align: center;
   }
   .stay-home-button {
     padding: 8px 16px;
@@ -60,13 +60,11 @@ export default {
     cursor: pointer;
     color: black;
     text-decoration: none;
-    transition: background-color .2s ease-in-out,
-                border .2s ease-in-out,
-                color .2s ease-in-out;
-    &:hover {
-      background-color: #7B6469;
-      border: 1px solid #7B6469;
-      color: white;
-    }
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  .stay-home-button:hover {
+    background-color: #7B6469;
+    border: 1px solid #7B6469;
+    color: white;
   }
 </style>

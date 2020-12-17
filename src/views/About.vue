@@ -76,58 +76,56 @@
   });
 </script>
 
-<style lang="scss">
+<style>
   .about {
     display: flex;
     flex-wrap: wrap;
     margin: 3rem 1rem;
     max-width: 80rem;
     align-self: center;
-    &__header {
-      font-weight: 300;
-    }
-    &__mail {
-      text-decoration: none;
-      color: black;
-    }
-    &__timetable {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      li {
-        margin: 0 0 0.25rem 0;
-      }
-    }
-    &__instagram, &__vk, &__facebook {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin: 0 8px;
-    }
-    &__store {
-      margin: 1rem 0 0 0;
-    }
-    &__address {
-      margin: 8px 0 0 0;
-    }
+  }
+  .about__header {
+    font-weight: 300;
+  }
+  .about__mail {
+    text-decoration: none;
+    color: black;
+  }
+  .about__timetable {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .about__timetable li {
+    margin: 0 0 0.25rem 0;
+  }
+  .about__instagram, .about__vk, .about__facebook {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+  }
+  .about__store {
+    margin: 1rem 0 0 0;
+  }
+  .about__address {
+    margin: 8px 0 0 0;
   }
   .about-contacts, .about-partners, .about-write-us {
     margin: 0 2rem 0 0;
     min-width: 30%;
     max-width: 36rem;
   }
-  .about-contacts {
-    &__links {
-      display: flex;
-      padding: 1rem 0 0 0;
-    }
-    &__link {
-      width: 4rem;
-      height: 4rem;
-      padding: 0 2rem 0 0;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+  .about-contacts__links {
+    display: flex;
+    padding: 1rem 0 0 0;
+  }
+  .about-contacts__link {
+    width: 4rem;
+    height: 4rem;
+    padding: 0 2rem 0 0;
+  }
+  .about-contacts__link:hover {
+    transform: scale(1.1);
   }
 </style>
