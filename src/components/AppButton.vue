@@ -20,23 +20,16 @@ export default {
 <style lang="scss">
   @import '../assets/styles/colors';
   .button {
-    cursor: pointer;
-    outline: transparent;
     &--menu {
       padding: 8px 16px;
       border-radius: 4px;
       border: 1px solid black;
-      font-size: 16px;
     }
     &--item-selection {
       padding: 2px 4px;
       border-radius: 4px;
       border: 1px solid black;
-      font-size: 12px;
       background: transparent;
-      @media screen and (max-width: 600px) {
-        font-size: 12px!important;
-      }
     }
     &--add-to-cart, &--end-order {
       background: $blue1;
@@ -44,7 +37,6 @@ export default {
       box-sizing: border-box;
       border-radius: 4px;
       padding: 8px 48px;
-      font-size: 20px;
       color: white;
       width: 300px;
       font-weight: 700;
@@ -53,7 +45,6 @@ export default {
       }
       @media screen and (max-width: 600px) {
         width: 100%;
-        font-size: 12px;
       }
     }
     &--increment-decrement, &--bag-item-remove {
@@ -67,10 +58,8 @@ export default {
       align-items: center;
       font-weight: 700;
       color: black;
-      font-size: 16px;
       margin-right: 8px;
       transition: background-color .5s, color .5s;
-      outline: transparent;
     }
     &--increment-decrement {
       background-color: transparent;

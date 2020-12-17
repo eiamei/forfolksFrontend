@@ -2536,6 +2536,31 @@
     "isSale": false,
     "price": 1100
   },
+  "hot-vase": {
+    "rootPath": "hot-vase",
+    "name": "Керамическая ваза ",
+    "type": "",
+    "category": ["vase"],
+    "room": ["guest", "bed"],
+    "desc": "Колекция ’Корица’ - это классический белый цвет с легкими игривыми крапинками. <br><br> Каждое изделие сделано вручную, потому имеет уникальную форму и фактуру.",
+    "metaDesc": "Купить керамическую вазу Корица в Forfolks.",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+        "height": "21см"
+      },
+      "createdBy": {
+        "design": "Hot Hot Ceramics"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": false,
+    "price": 2000
+  },
   "eco-sponge-luffa": {
     "rootPath": "eco-sponge-luffa",
     "name": "Губка",

@@ -36,11 +36,10 @@ export default {
     &__black-link {
       margin: 1rem 0 0 0;
       padding: 0.5rem 1rem;
-      max-width: 6rem; // fallback
+      max-width: 7rem; // fallback
       width: max-content;
       background-color: black;
       border: 1px solid black;
-      outline: transparent;
       cursor: pointer;
       font-weight: bold;
       color: white;

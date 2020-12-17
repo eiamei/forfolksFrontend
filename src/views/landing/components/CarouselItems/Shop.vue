@@ -52,7 +52,7 @@
       object-fit: cover;
       @media screen and (max-width: $tablet) {
         width: 100%;
-        max-height: 70%;
+        max-height: 55%;
       }
     }
     &__heading {
@@ -65,7 +65,6 @@
       }
     }
     &__heading-text.big-serif-heading {
-      font-size: 2.5rem;
       margin: 0;
       align-self: flex-end;
       @media screen and (max-width: $tablet) {
@@ -76,7 +75,6 @@
       align-self: flex-end;
       @media screen and (max-width: $tablet) {
         align-self: center;
-        font-size: 10px;
       }
     }
     &__action-button.regular-link {
@@ -85,7 +83,6 @@
       margin-top: 1rem;
       border: 1px solid $dark-blue;
       color: $dark-blue;
-      line-height: 1;
       cursor: pointer;
       transition: background-color .2s ease-in-out, color .2s ease-in-out;
       text-decoration: none;

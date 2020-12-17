@@ -214,12 +214,10 @@
       }
       &__text {
         font-weight: 400;
-        font-size: 1.5rem;
         color: black;
         text-decoration: none;
         @media screen and (max-width: $mobile) {
           flex-direction: column;
-          font-size: 2.5rem;
         }
         &--red {
           color: $red;

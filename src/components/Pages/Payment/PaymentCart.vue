@@ -68,7 +68,6 @@
     }
     &__total-old {
       text-decoration: line-through;
-      font-size: 14px;
       margin-right: 8px;
     }
     &__total-new {
@@ -98,21 +97,17 @@
       margin: 0;
     }
     &__name {
-      font-size: 14px;
     }
     &__color {
-      font-size: 12px;
       color: $dark-gray2;
     }
     &__qty {
-      width: 24px;
-      height: 19px;
+      width: 1.5rem;
+      height: 1.5rem;
       position: absolute;
       border-radius: 50%;
       background-color: $sandy;
       text-align: center;
-      padding-top: 5px;
-      font-size: 12px;
       left: 52px;
       top: -8px;
     }

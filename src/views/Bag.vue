@@ -102,7 +102,6 @@ export default {
     }
   }
   .bag-total {
-    font-size: 1.5rem;
     margin: 1rem 0 0 0;
     width: 100%;
     display: flex;
@@ -122,7 +121,6 @@ export default {
       width: 190px;
       border: 1px solid black;
       padding: 1rem 0.5rem;
-      outline: transparent;
     }
     &__promo-button {
       width: 88px;
@@ -136,9 +134,6 @@ export default {
         background: rgb(50, 50, 50);
       }
     }
-    &__promo-success, &__promo-error {
-      font-size: 0.75rem;
-    }
     &__promo-error {
       color: $regular-red;
     }
@@ -148,7 +143,6 @@ export default {
       border: 1px solid black;
       box-sizing: border-box;
       padding: 1rem 0;
-      font-size: 1.25rem;
       text-decoration: none;
       text-align: center;
       color: white;

@@ -75,11 +75,9 @@
     &__color.regular-sans-text {
       color: $light-gray;
       margin-bottom: .5rem;
-      line-height: 1.4;
     }
     &__design.regular-sans-text {
       color: $light-gray;
-      line-height: 1.4;
     }
   }
 </style>

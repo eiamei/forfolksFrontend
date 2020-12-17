@@ -108,7 +108,6 @@
       margin: 1rem 0 0 0;
     }
     &__address {
-      font-size: 1rem;
       margin: 8px 0 0 0;
     }
   }
@@ -119,11 +118,12 @@
   }
   .about-contacts {
     &__links {
+      display: flex;
       padding: 1rem 0 0 0;
     }
     &__link {
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
       padding: 0 2rem 0 0;
       &:hover {
         transform: scale(1.1);

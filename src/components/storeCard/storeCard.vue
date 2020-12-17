@@ -171,7 +171,6 @@
       z-index: 10;
       text-align: center;
       border: none;
-      outline: none;
       padding: 1rem 0;
       margin: 0;
       background-color: rgba(white, 0);
@@ -209,14 +208,7 @@
     .small-regular-heading.store-card__model, .regular-sans-text.store-card__type, .regular-sans-text.store-card__price {
       margin: 0;
       align-self: flex-end;
-      line-height: 1;
       white-space: nowrap;
-    }
-
-    .regular-sans-text.store-card__type, .regular-sans-text.store-card__price {
-      @media screen and (max-width: $horizontal-tablet) {
-        font-size: 10px;
-      }
     }
 
     .regular-sans-text.store-card__type {
@@ -226,9 +218,6 @@
 
     .small-regular-heading.store-card__model {
       margin-right: 0.5rem;
-      @media screen and (max-width: $horizontal-tablet) {
-        font-size: 12px;
-      }
     }
 
     .clean-button.store-card__color-button {
@@ -243,8 +232,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 1.5rem;
-      right: 1.5rem;
+      top: 1rem;
+      right: 1rem;
       width: 4rem;
       height: 4rem;
       border-radius: 4rem;

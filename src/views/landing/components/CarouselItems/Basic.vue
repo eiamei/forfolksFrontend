@@ -2,7 +2,7 @@
   <div class="stay-home">
     <img class="stay-home__image" :src="image" alt="Stay home"/>
     <div class="stay-home-text-wrapper">
-      <h1 class="serif-heading" style="color: black; font-size: 3rem; margin-bottom: 0">Красивое хранение</h1>
+      <h1 class="serif-heading" style="color: black; margin-bottom: 0">Красивое хранение</h1>
       <router-link class="stay-home-button" to="/store/category/stand">Перейти в магазин</router-link>
     </div>
   </div>

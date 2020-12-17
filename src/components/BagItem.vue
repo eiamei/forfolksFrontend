@@ -143,21 +143,17 @@
     &__row {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     &__field {
       padding: 0 16px;
-      margin: 0;
+      margin: 0.5rem 0;
       cursor: default;
       @media screen and (max-width: 900px) {
         padding: 0 8px;
-        font-size: 14px;
-      }
-      @media screen and (max-width: 600px) {
-        font-size: 12px;
       }
       @media screen and (max-width: 400px) {
         padding: 0 4px;
-        font-size: 10px;
       }
     }
     &__field-old-price {
@@ -169,19 +165,9 @@
     }
     &__button.clean-button {
       color: black;
-      font-size: 16px;
       border: 1px solid black;
       padding: 1px 8px 4px 8px;
       cursor: pointer;
-      @media screen and (max-width: 900px) {
-        font-size: 14px;
-      }
-      @media screen and (max-width: 600px) {
-        font-size: 12px;
-      }
-      @media screen and (max-width: 400px) {
-        font-size: 10px;
-      }
     }
     &__not-available {
       margin: 0;

@@ -93,7 +93,6 @@
     }
     .item-care-instruction__text.regular-sans-text {
       text-transform: none;
-      line-height: 1.4;
     }
   }
 </style>

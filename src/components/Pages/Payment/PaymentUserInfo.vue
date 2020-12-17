@@ -165,7 +165,6 @@ export default {
       flex-direction: column;
     }
     &__header {
-      font-size: 20px;
       font-weight: 500;
       margin: 16px 0 10px 0;
     }
@@ -191,14 +190,12 @@ export default {
       }
     }
     &__error {
-      font-size: 12px;
       color: $regular-red;
       &--license {
         text-align: right;
       }
     }
     &__additional-info {
-      font-size: 12px;
       color: $dark-gray2
     }
     &__delivery-button.clean-button {
@@ -210,28 +207,18 @@ export default {
     }
     &__delivery-info-text.regular-sans-text {
       margin: 0.5rem 0;
-      font-size: 0.85rem;
       text-transform: none;
-      line-height: 1.4;
-      @media screen and (max-width: $tablet) {
-        font-size: 12px;
-      }
     }
     &__license-agreement {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      font-size: 0.85rem;
       text-transform: none;
-      line-height: 1.4;
       & > input {
         margin: 0 0.5rem 0 0;
         @media screen and (max-width: $tablet) {
           margin: 0 1rem 0 0;
         }
-      }
-      @media screen and (max-width: $tablet) {
-        font-size: 12px;
       }
     }
     &__end-order {

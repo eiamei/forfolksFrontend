@@ -6,12 +6,10 @@
 
 <script>
 import StoreCard from '../components/storeCard/storeCard';
-import ForfolksLogo from '../components/Icons/Logo';
-import { shuffle } from '../utils/shuffle';
 
 export default {
   name: 'Store',
-  components: {/*ForfolksLogo,*/ StoreCard},
+  components: {StoreCard},
   data () {
     return {
       widesMap: {},
@@ -43,8 +41,7 @@ export default {
       return this.$store.state.shop.items || [];
     },
     items () {
-      return shuffle(
-        this.storeItems
+      return this.storeItems
           .map(item => {
             if (this.type !== null && (this.type === 'all' || item.category.includes(this.type)))
               return {
@@ -63,7 +60,6 @@ export default {
           .filter(function (item) {
             return item && item.availability > 0;
           })
-      );
     },
     windowWidth () {
       return this.$store.state.global.windowSize.width;
@@ -83,34 +79,26 @@ export default {
 
 <style lang="scss">
   @import '../assets/styles/vars';
-  .store-loading {
-    position: absolute;
-    width: 10rem;
-    top: 45vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @keyframes bounce {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(0.9);
-      }
-    }
-    &__logo {
-      animation: bounce 2s ease-in infinite;
-    }
-  }
   .store {
     display: grid;
-    grid-gap: 1.5rem;
-    grid-template-columns: repeat( auto-fit, minmax( 20rem, 0.35fr ) );
+    grid-gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax( 350px, 1fr ) );
     grid-auto-flow: dense;
-    margin: 3.5rem 0 1.5rem 0;
-    padding: 0 1rem;
-    min-height: 80vh;
-    @media screen and (max-width: $tablet) {
-      grid-template-columns: repeat( auto-fit, minmax( 17rem, 1fr ) );
+    margin: 3.5rem 1rem 1.5rem 1rem;
+    padding: 0;
+    // sorry
+    // for the good flexing of massonry on small devices
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
+    }
+    @media screen and (max-width: 550px) {
+      grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+    }
+    @media screen and (max-width: 450px) {
+      grid-template-columns: repeat( auto-fit, minmax( 150px, 1fr ) );
+    }
+    @media screen and (max-width: 330px) {
+      grid-template-columns: repeat( auto-fit, minmax( 100px, 1fr ) );
     }
   }
 

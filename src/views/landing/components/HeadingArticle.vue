@@ -25,22 +25,11 @@
     flex-direction: column;
     align-items: center;
     &__header {
-      /* max-width: 600px; */
-      margin: 2rem 0 3rem;
-      @media screen and (max-width: $mobile) {
-        margin: 0;
-        text-align: center;
-      }
+      margin: 2rem 0;
     }
     &__about {
       max-width: 1300px;
-      margin: 1rem;
       text-align: left;
-      @media screen and (max-width: $mobile) {
-        padding-top: 2rem;
-        margin: 0 2rem;
-        text-align: center;
-      }
     }
   }
 </style>

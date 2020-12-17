@@ -68,12 +68,10 @@ export default {
       margin: 0 8px 0 12px;
       color: white;
       background: none;
-      outline: transparent;
       border: none;
       cursor: pointer;
       padding: 0;
       &__text {
-        font-size: 24px;
         margin: 0;
       }
     }

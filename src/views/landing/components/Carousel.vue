@@ -1,5 +1,5 @@
 <template>
-  <hooper class="landing-carousel" style="height: 90vh" :settings="hooperConfig">
+  <hooper class="landing-carousel" :settings="hooperConfig">
     <Slide class="landing-carousel__slide" v-for="slide in slideData" :key="slide.heading">
       <Shop :image="slide.image"
             :heading="slide.heading"
@@ -41,18 +41,6 @@
           subHeading: '',
           linkText: 'Как нас найти',
           link: '/about'
-        }, {
-          image: require('../../../assets/images/landing/landing-accessories.jpg'),
-          heading: 'Кухонные аксессуары',
-          subHeading: 'Мелочи, которые сделают жизнь удобнее',
-          linkText: 'Перейти в магазин',
-          link: '/store/category/accessories'
-        }, {
-          image: require('../../../assets/images/landing/landing-textile.jpg'),
-          heading: 'Текстиль для дома',
-          subHeading: 'Как быстро сделать дом уютнее',
-          linkText: 'Перейти в магазин',
-          link: '/store/category/textile'
         }]
       }
     }
@@ -61,7 +49,7 @@
 
 <style lang="scss">
   .landing-carousel {
-    outline: none;
+    height: 90vh!important;
     .hooper-indicator {
       width: 10px;
       height: 10px;

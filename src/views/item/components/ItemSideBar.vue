@@ -131,7 +131,6 @@
 
     &__heading-type {
       margin: 0;
-      font-size: 1.25rem;
     }
 
     .regular-sans-text.item-side-bar__id {
@@ -142,7 +141,6 @@
 
     &__price {
       margin: 0;
-      font-size: 1.5rem;
     }
 
     &__sale-price {
@@ -192,7 +190,6 @@
       background: none;
       border: none;
       cursor: pointer;
-      outline: none;
       &:focus {
         line {
           transition: stroke-width .3s;
