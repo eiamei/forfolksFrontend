@@ -3689,6 +3689,30 @@
     "isSale": false,
     "price": 2450
   },
+  "tunturi-ceramics": {
+    "rootPath": "tunturi-ceramics",
+    "name": "Игрушки",
+    "type": "Керамические",
+    "category": ["newYear"],
+    "room": ["guest"],
+    "desc": " В этом наборе три игрушки из не глазурированной керамики: они белые, слегка шершавые, приятные на ощупь и очень легкие <br><br> Очень хорошо подходят к скандинавскому стилю украшения елочек, в котором используются игрушки светлых, натуральных оттенков.",
+    "metaDesc": "Купить керамический набор елочных игрушек в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "material": ["Керамика"],
+      "size": {
+      },
+      "createdBy": {
+        "design": "Tunturi"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": false,
+    "price": 1200
+  },
   "madera-board": {
     "rootPath": "madera-board",
     "name": "Доска",
