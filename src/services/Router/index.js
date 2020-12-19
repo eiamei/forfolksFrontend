@@ -4,7 +4,8 @@ import products from '../../../public/products.json';
 import groups from "../../constants/Groups.json";
 import slugify from 'slugify';
 
-const Catalogue = () => import(/* webpackChunkName: "store-page" */'../../views/Store.vue');
+const Store = () => import(/* webpackChunkName: "store-page" */'../../views/Store.vue');
+const Catalogue = () => import(/* webpackChunkName: "store-page" */'../../views/Catalogue.vue');
 const Item = () => import(/* webpackChunkName: "item-page" */'../../views/item/Item.vue');
 const Bag = () => import(/* webpackChunkName: "bag-page" */'../../views/Bag.vue');
 const Payment = () => import(/* webpackChunkName: "payment-page" */'../../components/Pages/Payment/Payment.vue');
@@ -108,9 +109,30 @@ let routes = [
     }
   },
   {
+    path: '/catalogue',
+    name: 'catalogue',
+    component: Catalogue,
+    meta: {
+      title: 'Каталог',
+      tags: [{
+        name: 'og:title',
+        content: 'Каталог'
+      }, {
+        name: 'description',
+        content: 'Интернет магазин Forfolks. Каталог'
+      }, {
+        name: 'og:description',
+        content: 'Интернет магазин Forfolks. Каталог'
+      }, {
+        name: 'og:image',
+        content: require('../../assets/images/landing/landing-shop.jpg')
+      }]
+    }
+  },
+  {
     path: '/store/category/:type',
     name: 'storeByType',
-    component: Catalogue,
+    component: Store,
     meta: {
       title: 'Магазин',
       tags: [{
@@ -131,7 +153,7 @@ let routes = [
   {
     path: '/store/room/:room',
     name: 'storeByRoom',
-    component: Catalogue,
+    component: Store,
     meta: {
       title: 'Магазин',
       tags: [{

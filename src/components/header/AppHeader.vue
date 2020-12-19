@@ -1,9 +1,9 @@
 <template>
   <header class="header-container">
     <nav class="header">
-      <button :class="menuButtonClass" @click="toogleMenu" title="Открыть меню">
+      <router-link to="/catalogue" class="header-logo">
         <hamburger></hamburger>
-      </button>
+      </router-link>
       <router-link to="/" class="header-logo">
         <forfolks-logo/>
       </router-link>
