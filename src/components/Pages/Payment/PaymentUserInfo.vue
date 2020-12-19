@@ -213,7 +213,7 @@ export default {
   .user-info__license-agreement > input {
     margin: 0 0.5rem 0 0;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .user-info__license-agreement > input {
       margin: 0 1rem 0 0;
     }
