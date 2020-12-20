@@ -2365,7 +2365,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 900
   },
   "hot-plate-milk-choco": {
@@ -2393,7 +2393,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1100
   },
   "hot-plate-cinnamon-d19": {
@@ -4757,7 +4757,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3300
   },
   "flowertree-gipsophila-rhombus-small": {
@@ -4869,7 +4869,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3800
   },
   "flowertree-lagurus-square": {
@@ -4897,7 +4897,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3200
   },
   "flowertree-lavande-grass-square": {
@@ -5037,7 +5037,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3200
   },
   "flowertree-yarrow-rhombus": {
@@ -5065,7 +5065,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3200
   },
   "flowertree-toy": {

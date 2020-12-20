@@ -32,7 +32,7 @@
         byCategory: [{
           to: '/store/category/newYear',
           text: 'Новый год'
-        },{
+        }, {
           to: '/store/category/accessories',
           text: 'Аксессуары'
         }, {
