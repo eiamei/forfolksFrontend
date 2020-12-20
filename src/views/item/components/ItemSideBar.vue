@@ -111,7 +111,7 @@
     padding: 0 1rem;
     box-sizing: border-box;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .item-side-bar {
       max-width: 100%;
       min-width: 100%;

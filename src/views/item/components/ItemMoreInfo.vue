@@ -57,7 +57,7 @@
     padding: 3rem 2rem;
     margin: 0 1rem 0 0;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .item-more-info {
       padding: 1rem;
       max-width: unset;

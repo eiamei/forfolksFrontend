@@ -27,7 +27,7 @@
     padding: 1rem;
     border-right: 1px solid var(--dark-blue);
     margin: 2rem 0;
-    @media screen and (max-width: var(--tablet)) {
+    @media screen and (max-width: 764px) {
       width: calc(100% - 2rem);
       border-right: none;
       border-bottom: 1px solid var(--dark-blue);

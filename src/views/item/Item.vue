@@ -58,7 +58,7 @@
   .item-first-row {
     display: flex;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .item-first-row {
       flex-direction: column;
     }
@@ -68,7 +68,7 @@
     background: var(--soft-yellow-background);
     margin-top: 2rem;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .item-second-row {
       margin: 0;
       flex-direction: column;

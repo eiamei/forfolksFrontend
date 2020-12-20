@@ -42,7 +42,7 @@
     max-width: 1300px;
     padding: 0 16px;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .basic-carousel-item {
       flex-direction: column;
       justify-content: start;
@@ -52,7 +52,7 @@
     width: 50%;
     object-fit: cover;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .basic-carousel-item__image {
       width: 100%;
       max-height: 55%;
@@ -63,7 +63,7 @@
     flex-direction: column;
     align-self: center;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .basic-carousel-item__heading {
       margin-top: 16px;
       align-content: center;
@@ -73,7 +73,7 @@
     margin: 0;
     align-self: flex-end;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .basic-carousel-item__heading-text.big-serif-heading {
       align-self: center;
     }
@@ -81,7 +81,7 @@
   .basic-carousel-item__sub-heading-text {
     align-self: flex-end;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .basic-carousel-item__sub-heading-text {
       align-self: center;
     }
@@ -97,7 +97,7 @@
     text-decoration: none;
     text-transform: none;
   }
-  @media screen and (max-width: var(--tablet)) {
+  @media screen and (max-width: 764px) {
     .basic-carousel-item__action-button.regular-link {
       align-self: center;
     }

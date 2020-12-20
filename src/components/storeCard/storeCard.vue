@@ -10,8 +10,7 @@
     </div>
     <div v-show="isShowInfo" class="store-card__text-wrapper">
       <router-link class="store-card__text-link" :to="getLink()">
-        <p class="small-regular-heading store-card__model">{{item.name}}</p>
-        <p class="regular-sans-text store-card__type">{{ item.type && $t(`${item.type}` )}}</p>
+        <p class="regular-sans-text store-card__type">{{item.name}} {{ item.type && $t(`${item.type}` )}}</p>
       </router-link>
       <p v-if="item.isSale" class="regular-sans-text store-card__price">
         <span class="store-card__sale-price-old">{{item.price}}</span>
@@ -151,7 +150,7 @@
   }
   .store-card__image {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
   }
   .store-card .regular-sans-text.store-card__add-to-bag {
@@ -184,19 +183,23 @@
   }
   .store-card .store-card__sale-price {
     color: var(--red);
+    font-size: small;
   }
   .store-card .store-card__sale-price-old {
     margin-right: 4px;
     text-decoration: line-through;
+    font-size: small;
   }
   .store-card .small-regular-heading.store-card__model, .store-card .regular-sans-text.store-card__type, .store-card .regular-sans-text.store-card__price {
     margin: 0;
     align-self: flex-end;
     white-space: nowrap;
+    font-size: small;
   }
   .store-card .regular-sans-text.store-card__type {
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: small;
   }
   .store-card .small-regular-heading.store-card__model {
     margin-right: 0.5rem;
