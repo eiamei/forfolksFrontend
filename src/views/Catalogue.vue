@@ -153,10 +153,11 @@
   .catalogue-list__link {
     color: black;
     text-decoration: none;
-    transition: color 2s;
+    transition: color 0.6s;
   }
   .catalogue-list__link:hover,.catalogue-list__link:active {
     color: var(--dark-blue);
+    transition-duration: 0s;
   }
   .catalogue-list__link:focus {
     text-decoration: underline;

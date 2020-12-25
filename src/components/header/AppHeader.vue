@@ -1,5 +1,4 @@
 <template>
-  <header class="header-container">
     <nav class="header">
       <router-link to="/catalogue" class="header-logo">
         <hamburger></hamburger>
@@ -12,8 +11,6 @@
         <component class="header-bag__icon" :is="bagType" />
       </router-link>
     </nav>
-    <app-header-menu class="header-menu-container" :isOpen="isMenuOpen" @close="toogleMenu"/>
-  </header>
 </template>
 
 <script>
@@ -61,20 +58,16 @@
 </script>
 
 <style>
-  .header-container {
-    position: relative;
-  }
   .header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    top: 0;
     padding: 0.5rem 1rem;
-    background: white;
+    background-color: white;
     box-sizing: border-box;
-    z-index: 1000;
   }
   .header__menu-button {
     z-index: 1;
