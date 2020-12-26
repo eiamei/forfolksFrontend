@@ -58,7 +58,7 @@
       </template>
       <template v-else>
         <p class="user-info__header">Информация для доставки</p>
-        <p class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа мы рассчитаем стоимость доставки. Примерную цену и сроки доставки вы можете посмотреть на сайте boxberry.</p>
+        <p class="regular-sans-text user-info__delivery-info-text">После подтверждения заказа мы рассчитаем стоимость доставки.</p>
         <input class="user-info__input" v-model="form.country" name="country" placeholder="Страна"/>
         <input class="user-info__input" v-model="form.city" name="city" placeholder="Город"/>
         <span style="display: flex; justify-content: space-between; width: 100%">
