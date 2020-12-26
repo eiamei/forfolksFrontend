@@ -25,7 +25,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": 350
   },
   "stand-basic-s": {
@@ -53,7 +53,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": 350
   },
   "stand-cone-s": {
@@ -80,7 +80,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "150"
   },
   "tray-tray": {
@@ -109,7 +109,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "1000"
   },
   "stand-basic": {
@@ -137,7 +137,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "600"
   },
   "basic-incense": {
@@ -165,7 +165,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "600"
   },
   "candlestick-house-swiss": {
@@ -191,7 +191,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "350"
   },
   "candlestick-house-denmark": {
@@ -217,7 +217,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "350"
   },
   "vase-modern": {
@@ -243,7 +243,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "990"
   },
   "vase-mild": {
@@ -269,7 +269,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "350"
   },
   "cup-mild": {
@@ -297,7 +297,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "850"
   },
   "bowl-mild": {
@@ -325,7 +325,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.3,
-    "isSale": false,
+    "isSale": true,
     "price": "250"
   },
   "hanging-spole": {
@@ -347,7 +347,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "450"
   },
   "panno-leaf": {
@@ -373,7 +373,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "1100"
   },
   "panno-wind": {
@@ -399,7 +399,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "2100"
   },
   "panno-stranger": {
@@ -425,7 +425,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "2900"
   },
   "candle-wax-drops": {
@@ -444,7 +444,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "100"
   },
   "minibouquet-blum": {
@@ -471,7 +471,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "400"
   },
   "luffa-whole": {
@@ -500,7 +500,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "110"
   },
   "luffa-pressed": {
@@ -761,7 +761,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "250"
   },
   "linen-bag-gray-big": {
@@ -790,7 +790,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "300"
   },
   "choli-jute-stand": {
@@ -818,7 +818,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "500"
   },
   "choli-basket-semisphere": {
@@ -847,7 +847,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "2500"
   },
   "choli-cachepot-cylinder": {
@@ -876,7 +876,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "2900"
   },
   "choli-cachepot-pineapple": {
@@ -905,7 +905,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "500"
   },
   "choli-two-cachepot-pack": {
@@ -934,7 +934,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "1200"
   },
   "choli-basket": {
@@ -963,7 +963,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": "6500"
   },
   "choli-katushka": {
@@ -992,7 +992,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "choli-sponge": {
@@ -1105,7 +1105,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1300
   },
   "choli-samara-pens": {
@@ -1132,7 +1132,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1400
   },
   "choli-basket-jute-hb": {
@@ -1161,7 +1161,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3700
   },
   "choli-joy": {
@@ -1190,7 +1190,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 500
   },
   "choli-basket-gray": {
@@ -1217,7 +1217,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 700
   },
   "choli-basket-small-jute-hb": {
@@ -1244,7 +1244,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1590
   },
   "choli-wreath-jute": {
@@ -1271,7 +1271,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1000
   },
   "latt-vase-stone": {
@@ -1328,7 +1328,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-blueberry-pie": {
@@ -1356,7 +1356,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-dino": {
@@ -1383,7 +1383,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-face": {
@@ -1410,7 +1410,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-strawberry": {
@@ -1437,7 +1437,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-meow": {
@@ -1465,7 +1465,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-night-ruskeala": {
@@ -1493,7 +1493,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-simple": {
@@ -1521,7 +1521,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-summer-sunrise": {
@@ -1546,7 +1546,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "sababa-urban-jungle": {
@@ -1574,7 +1574,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": ""
   },
   "whiteclay-soap-dish": {
@@ -1632,7 +1632,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 500
   },
   "candle-freedom": {
@@ -1661,7 +1661,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1000
   },
   "freedom-candle": {
@@ -1690,7 +1690,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1200
   },
   "freedom-bigcandle": {
@@ -1719,7 +1719,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1600
   },
   "carrotlab-soap-marseille": {
@@ -2337,7 +2337,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 900
   },
   "hot-bowl-milk-choco": {
@@ -2421,7 +2421,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1200
   },
   "hot-plate-cinnamon": {
@@ -2449,7 +2449,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1200
   },
   "hot-cup-cinnamon": {
@@ -2477,7 +2477,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1400
   },
   "hot-cup-tiramisu": {
@@ -2505,7 +2505,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1400
   },
   "hot-tallrik-tiramisu-small": {
@@ -2533,7 +2533,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1100
   },
   "hot-vase": {
@@ -2558,7 +2558,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 2000
   },
   "eco-sponge-luffa": {
@@ -2615,7 +2615,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 250
   },
   "freedom-difusser": {
@@ -2643,7 +2643,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 900
   },
   "apron-buon-adult": {
@@ -2728,7 +2728,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 500
   },
   "sack-buon-tessuto": {
@@ -2753,7 +2753,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 0
   },
   "bag-buon-adult": {
@@ -2781,7 +2781,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1900
   },
   "bag-buon-child": {
@@ -2809,7 +2809,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1900
   },
   "lorbeer-soap-ribbon": {
@@ -2837,7 +2837,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 400
   },
   "lorbeer-soap-olive": {
@@ -2865,7 +2865,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 490
   },
   "lorbeer-soap-5": {
@@ -2893,7 +2893,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 450
   },
   "lorbeer-soap-12": {
@@ -2921,7 +2921,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 490
   },
   "lorbeer-soap-20": {
@@ -2977,7 +2977,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 490
   },
   "lorbeer-washcloth": {
@@ -3035,8 +3035,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 3290
   },
   "enlin-duvon-cover": {
@@ -3062,8 +3062,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-pillowcase": {
@@ -3089,8 +3089,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-tablecloth-150-150": {
@@ -3116,8 +3116,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-tablecloth-150-250": {
@@ -3143,8 +3143,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-napkin-4": {
@@ -3170,8 +3170,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-napkin-6": {
@@ -3197,8 +3197,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-towel-38-55": {
@@ -3224,8 +3224,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-towel-38-72": {
@@ -3254,8 +3254,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 1790
   },
   "enlin-towel-38-110": {
@@ -3281,8 +3281,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "enlin-towel-hair": {
@@ -3310,8 +3310,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 3290
   },
   "enlin-towel-bath": {
@@ -3339,8 +3339,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 4290
   },
   "enlin-bag": {
@@ -3368,8 +3368,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 1690
   },
   "enlin-travel-bag": {
@@ -3398,8 +3398,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 1490
   },
   "enlin-pack": {
@@ -3428,8 +3428,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 0
   },
   "jar-bamboo": {
@@ -3459,7 +3459,7 @@
     "badges": "",
     "discountGroup": "forfolks",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 400
   },
   "mob-string-bag": {
@@ -3487,7 +3487,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1300
   },
   "tunturi-board-ash": {
@@ -3515,8 +3515,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 2200
   },
   "tunturi-board-narrow-beech": {
@@ -3544,8 +3544,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 2200
   },
   "tunturi-board-ash-long-dark": {
@@ -3573,8 +3573,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 2200
   },
   "tunturi-board-oak": {
@@ -3602,8 +3602,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 2100
   },
   "tunturi-salt-shaker": {
@@ -3630,8 +3630,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 900
   },
   "tunturi-shaker-ash": {
@@ -3658,8 +3658,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 900
   },
   "tunturi-tray-rectangular": {
@@ -3686,7 +3686,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 2450
   },
   "tunturi-ceramics": {
@@ -3710,7 +3710,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1200
   },
   "madera-board": {
@@ -3737,8 +3737,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 1200
   },
   "madera-boardsmall": {
@@ -3766,7 +3766,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1100
   },
   "madera-suspension-oak": {
@@ -3792,7 +3792,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 800
   },
   "tabula-tallrik-fero": {
@@ -3820,7 +3820,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1810
   },
   "tabula-tallrik-flumen": {
@@ -3849,7 +3849,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 2140
   },
   "tabula-tallrik-retic": {
@@ -3878,7 +3878,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1950
   },
   "tabula-tallrik-retic-black": {
@@ -3907,7 +3907,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1950
   },
   "tabula-tallrik-swell": {
@@ -3936,7 +3936,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1750
   },
   "tabula-tallrik-swell-black": {
@@ -3965,7 +3965,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1750
   },
   "tabula-tallrik-whiskey": {
@@ -3994,7 +3994,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1580
   },
   "tabula-lava": {
@@ -4023,7 +4023,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1760
   },
   "tabula-spoon-long": {
@@ -4080,8 +4080,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 500
   },
   "tabula-tallrik-esca": {
@@ -4109,7 +4109,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1810
   },
   "tabula-caseo": {
@@ -4137,7 +4137,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1810
   },
   "linav-basket": {
@@ -4166,7 +4166,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 0
   },
   "linav-towel-small": {
@@ -4195,7 +4195,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 390
   },
   "linav-towel-big": {
@@ -4224,7 +4224,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 590
   },
   "freedom-auto": {
@@ -4251,7 +4251,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 450
   },
   "fonar-spoon": {
@@ -4280,7 +4280,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 450
   },
   "fonar-milkman": {
@@ -4308,7 +4308,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 950
   },
   "fonar-cup": {
@@ -4336,7 +4336,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 950
   },
   "fonar-soap": {
@@ -4392,7 +4392,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 2000
   },
   "otrubi-bag-l": {
@@ -4421,7 +4421,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 400
   },
   "otrubi-bag-m": {
@@ -4450,7 +4450,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 350
   },
   "otrubi-bag-s": {
@@ -4479,7 +4479,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 200
   },
   "otrubi-tablecloth-natural": {
@@ -4508,7 +4508,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3000
   },
   "otrubi-bag-fruit": {
@@ -4537,7 +4537,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 200
   },
   "otrubi-plaid": {
@@ -4564,7 +4564,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 10000
   },
   "tabula-canoe": {
@@ -4592,8 +4592,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 2100
   },
   "maria-picture-flower": {
@@ -4622,7 +4622,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1000
   },
   "remodelista": {
@@ -4785,7 +4785,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1300
   },
   "flowertree-gipsophila-rhombus": {
@@ -4813,7 +4813,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 3200
   },
   "flowertree-gipsophila-square": {
@@ -4841,7 +4841,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1300
   },
   "flowertree-gipsophila-stand": {
@@ -4925,7 +4925,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1500
   },
   "flowertree-lavande-rectangle": {
@@ -4953,7 +4953,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 2600
   },
   "flowertree-lavande-rhombus": {
@@ -4981,7 +4981,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1500
   },
   "flowertree-leaf": {
@@ -5009,7 +5009,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1500
   },
   "flowertree-sage-rhombus": {
@@ -5090,7 +5090,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 0
   },
   "latt-plate-small": {
@@ -5380,7 +5380,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 600
   },
   "laboratorium-micellar": {
@@ -5405,7 +5405,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 300
   },
   "laboratorium-shampoo": {
@@ -5429,7 +5429,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 500
   },
   "laboratorium-lip": {
@@ -5453,7 +5453,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 270
   },
   "laboraturium-soap": {
@@ -5477,7 +5477,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 300
   },
   "laboratorium-deodorant": {
@@ -5501,7 +5501,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 350
   },
   "laboratorium-mask": {
@@ -5525,7 +5525,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 350
   },
   "laboratorium-milk": {
@@ -5549,7 +5549,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 325
   },
   "laboratorium-mix": {
@@ -5573,7 +5573,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 325
   },
   "laboratorium-ubtan": {
@@ -5597,7 +5597,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 450
   },
   "laboratorium-tonic": {
@@ -5621,7 +5621,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 450
   },
   "scrub": {
@@ -5645,7 +5645,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.2,
-    "isSale": false,
+    "isSale": true,
     "price": 550
   },
   "mori-towel-strip": {
@@ -5929,7 +5929,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 750
   },
   "bemyclay-tallrik-wavy": {
@@ -5954,7 +5954,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1400
   },
   "bemyclay-tallrik-white": {
@@ -5979,7 +5979,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1200
   },
   "bemyclay-scoop": {
@@ -6005,7 +6005,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 600
   },
   "fonar-cup-dusk": {
@@ -6030,7 +6030,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1050
   },
   "fonar-cup-sand": {
@@ -6055,7 +6055,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1050
   },
   "fonar-saucer": {
@@ -6080,7 +6080,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 500
   },
   "aromat": {
@@ -6129,7 +6129,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1300
   },
   "zvezdochet-tack-big": {
@@ -6153,7 +6153,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 400
   },
   "zvezdochet-tack-small": {
@@ -6177,7 +6177,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 350
   },
   "zvezdochet-toy": {
@@ -6225,7 +6225,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1800
   },
   "north-card": {
