@@ -30,12 +30,6 @@
           infiniteScroll: true
         },
         slideData: [{
-          image: require('../../../assets/images/landing/ny2020-story.jpg'),
-          heading: 'Новогодние скидки',
-          subHeading: 'При заказе и оплате онлайн',
-          linkText: 'Перейти в магазин',
-          link: '/store/category/all'
-        }, {
           image: require('../../../assets/images/landing/landing-delivery.jpg'),
           heading: 'Бесплатная доставка',
           subHeading: 'По Москве и Санкт-Петербургу при заказе от 3000 рублей',
