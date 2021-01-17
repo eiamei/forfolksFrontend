@@ -83,7 +83,7 @@ export default {
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-flow: dense;
-    margin: 3.5rem 1rem 1.5rem 1rem;
+    margin: 0 1rem 1.5rem 1rem;
     padding: 0;
   }
   @media screen and (max-width: 700px) {

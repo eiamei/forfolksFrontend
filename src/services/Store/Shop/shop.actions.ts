@@ -21,18 +21,23 @@ export const shopActions = {
 
     commit('products', orderedProducts);
 
-    // commit('products', []);
-
     let items = state.products
       .map(function (item: ItemInterface) {
         try {
           if (groups[item.group])
-            return Object.assign({}, groups[item.group], item);
+            item = Object.assign({}, groups[item.group], item);
           else
-            return Object.assign({}, item)
+            item =  Object.assign({}, item)
         } catch (e) {
           return undefined;
         }
+
+        if (item.isSale) {
+          item.category.push('sale')
+          console.log(item)
+        }
+
+        return item;
       })
       .filter(function (item) {
         return item !== undefined

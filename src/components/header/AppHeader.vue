@@ -14,14 +14,13 @@
 </template>
 
 <script>
-  import AppHeaderMenu from './AppHeader.menu';
   import ForfolksLogo from '../Icons/Logo';
   import Bag from '../Icons/Bag';
   import BagFull from '../Icons/BagFull';
   import Hamburger from '../Icons/Hamburger';
   export default {
     name: 'app-header',
-    components: {BagFull, Bag, ForfolksLogo, AppHeaderMenu, Hamburger},
+    components: {BagFull, Bag, ForfolksLogo, Hamburger},
     data () {
       return {
         isMenuOpen: false
