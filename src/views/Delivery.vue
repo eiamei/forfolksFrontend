@@ -1,5 +1,5 @@
 <template>
-  <div class="delivery-and-payment">
+  <main class="delivery-and-payment">
     <article class="delivery-and-payment__article">
       <h1 class="centered-page__header">Доставка</h1>
       <h5 style="margin-top: 0">Самовывоз из шоурума</h5>
@@ -15,7 +15,7 @@
       <h1 class="centered-page__header">Оплата</h1>
       <p>После создания заказа мы подтвердим наличие и вышлем вам ссылку для оплаты. После успешной оплаты мы вышлем вам электронный чек. Обратите внимание, что резерв заказа без оплаты три дня, далее мы не гарантируем наличие товара</p>
     </article>
-  </div>
+  </main>
 </template>
 
 <script>

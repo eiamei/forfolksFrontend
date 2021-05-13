@@ -13,7 +13,7 @@
       <span class="user-info__error">{{ parseError(errors.first('phone')) }}</span>
       <div class="user-info__additional-info"> На случай, если возникнет необходимость связаться с вами и уточнить детали заказа или доставки</div>
       <textarea class="user-info__input user-info__input--text-area" v-model="form.comment" name="comment" placeholder="Комментарий"></textarea>
-      <p class="user-info__additional-info">В Санкт-Петербурге возможен самовывоз от станции метро Василеостровская. <br>Если вы хотите оформить доставку, пожалуйста, выберите пункт "доставка" и заполните поля ниже</p>
+      <p class="user-info__additional-info">В Санкт-Петербурге возможен самовывоз из шоурума. Подробнее смотрите в разделе самовывоз <br>Если вы хотите оформить доставку, пожалуйста, выберите пункт "доставка" и заполните поля ниже</p>
       <div @click="changeDeliveryType">
         <button
           class="clean-button user-info__delivery-button"

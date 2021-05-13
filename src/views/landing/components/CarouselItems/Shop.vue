@@ -4,7 +4,7 @@
     <div class="basic-carousel-item__heading">
       <h1 class="basic-carousel-item__heading-text big-serif-heading">{{heading}}</h1>
       <p class="basic-carousel-item__sub-heading-text">{{subHeading}}</p>
-      <router-link class="regular-link regular-sans-text basic-carousel-item__action-button" :to="link">
+      <router-link v-if="link" class="regular-link regular-sans-text basic-carousel-item__action-button" :to="link">
         {{linkText}}
       </router-link>
     </div>

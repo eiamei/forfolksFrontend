@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <main class="about">
     <article class="about-contacts">
       <h1 class="about__header">Контакты</h1>
       <a href="mailto:hello@weareforfolks.com" class="about__mail">hello@weareforfolks.com</a>
@@ -28,7 +28,7 @@
       <p>Если у вас есть вопросы или комментарии о наших продуктах, пожалуйста, напишите нам.</p>
       <p>Также, если вы хотели бы быть представленными в нашем магазине или просто заинтересованы в сотрудничестве - смело пишите нам на почту <a href="mailto:join@weareforfolks.com" class="about__mail">join@weareforfolks.com</a> или в любой мессенджер. Мы всегда вам рады. </p>
     </article>
-  </div>
+  </main>
 </template>
 
 <script type="ts">

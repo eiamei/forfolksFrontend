@@ -13,6 +13,7 @@ const About = () => import(/* webpackChunkName: "about-page" */'../../views/Abou
 const Delivery = () => import(/* webpackChunkName: "delivery-page" */'../../views/Delivery.vue');
 const Landing = () => import(/* webpackChunkName: "landing-page" */'../../views/landing/Landing.vue');
 const Contract = () => import(/* webpackChunkName: "contract-page" */'../../views/Contract.vue');
+const Rent = () => import(/* webpackChunkName: "rent-page" */'../../views/Rent.vue');
 
 Vue.use(Router);
 
@@ -197,16 +198,16 @@ let routes = [
     name: 'delivery',
     component: Delivery,
     meta: {
-      title: 'Оплата и доставка',
+      title: 'Оплата и доставка в интернет-магазине  Ащкащдлы',
       tags: [{
         name: 'og:title',
-        content: 'Оплата и доставка'
+        content: 'Оплата и доставка в интернет-магазине  Ащкащдлы'
       }, {
         name: 'description',
-        content: 'Интернет магазин Forfolks. Информацию об оплате и доставке.'
+        content: 'Интернет магазин Forfolks. Информация об оплате и доставке.'
       }, {
         name: 'og:description',
-        content: 'Интернет магазин Forfolks. Информацию об оплате и доставке.'
+        content: 'Интернет магазин Forfolks. Информация об оплате и доставке.'
       }, {
         name: 'og:image',
         content: require('../../assets/images/landing/landing-shop.jpg')
@@ -230,7 +231,7 @@ let routes = [
       title: 'Корзина',
       tags: [{
         name: 'robots',
-        content: 'noindex'
+        content: 'noindex, nofollow'
       }]
     }
   },
@@ -242,7 +243,7 @@ let routes = [
       title: 'Оплата',
       tags: [{
         name: 'robots',
-        content: 'noindex'
+        content: 'noindex, nofollow'
       }]
     }
   },
@@ -251,10 +252,40 @@ let routes = [
     name: 'contract',
     component: Contract,
     meta: {
-      title: 'Оферта',
+      title: 'Оферта - Forfolks',
       tags: [{
-        name: 'robots',
-        content: 'noindex'
+        name: 'og:title',
+        content: 'Оферта - Forfolks'
+      }, {
+        name: 'description',
+        content: 'Оферта интернет магазина Forfolks.'
+      }, {
+        name: 'og:description',
+        content: 'Оферта интернет магазина Forfolks.'
+      }, {
+        name: 'og:image',
+        content: require('../../assets/images/landing/landing-shop.jpg')
+      }]
+    }
+  },
+  {
+    path: '/rent',
+    name: 'rent',
+    component: Rent,
+    meta: {
+      title: 'Аренда пространства Forfolks',
+      tags: [{
+        name: 'og:title',
+        content: 'Аренда простанства Forfolks'
+      }, {
+        name: 'description',
+        content: 'Детали, фото и условия аренды пространства Forfolks.'
+      }, {
+        name: 'og:description',
+        content: 'Детали, фото и условия аренды пространства Forfolks.'
+      }, {
+        name: 'og:image',
+        content: require('../../assets/images/landing/landing-shop.jpg')
       }]
     }
   },

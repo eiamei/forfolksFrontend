@@ -14,25 +14,9 @@
 
 <style>
   .hamburger-icon {
-    width: 2rem;
-    height: 0.75rem;
-    &__first-line, &__second-line {
-        transition: transform 0.3s, fill 0.3s;
-        transform-origin: 50% 50%;
-        transform: rotate(0);
-        &:focus {
-          fill:red;
-        }
-    }
-    &--cross {
-      .hamburger-icon__first-line {
-        animation: rotate45 0.4s;
-        transform: rotate(45deg);
-      }
-      .hamburger-icon__second-line {
-        animation: rotateminus45 0.4s;
-        transform: rotate(-45deg);
-      }
-    }
+    height: 0.5rem;
+  }
+  .hamburger-icon__first-line:focus, .hamburger-icon__second-line:focus {
+    fill:red;
   }
 </style>

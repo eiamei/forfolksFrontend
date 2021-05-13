@@ -49,3 +49,88 @@ textarea {
 [hidden] {
   display: none;
 }
+
+.serif {
+  font-family: Times, 'Times New Roman', serif;
+}
+
+
+/* Variables */
+
+:root {
+  --soft-yellow-background: #FAF8F7;
+
+  --dark-blue: #333F48;
+  --orange: #CE982E;
+  --light-gray: #A2AAAD;
+  --red: #f56c72;
+  --sale-red: #B33D25;
+  --dark-gray: #8c8e8f;
+
+  --tablet: 764px;
+
+  --background-color: #FFF;
+  --background-accent-color: #FAF8F7;
+  --foreground-color: #000;
+}
+
+/* Containers */
+
+body {
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+
+.callout {
+  background: var(--background-accent-color);
+  padding: 1rem 2rem;
+  margin: 2rem -2rem;
+}
+
+/* Elements */
+
+.ol,
+.ul {
+    padding: 0;
+}
+
+.ol {
+    counter-reset: ol;
+}
+
+.ol > li,
+.ul > li {
+  margin-bottom: 0.75rem;
+}
+
+.ol > li {
+    counter-increment: ol;
+}
+
+.ol > li::marker {
+    content: counters(ol, ".") ". ";
+}
+
+.ol > li::marker,
+.ul > li::marker {
+    color: var(--orange);
+}
+
+.ol > li > .ol,
+.ul > li > .ol,
+.ol > li > .ul,
+.ul > li > .ul {
+    margin-top: 1rem;
+    padding-left: 0rem;
+}
+
+.ol > li + .ol > li,
+.ul > li + .ul > li {
+    margin-top: 1rem;
+}

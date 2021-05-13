@@ -1,7 +1,9 @@
 <template>
-  <ul class="store" :key="counter">
-    <store-card v-for="(item) in items" :item="item" :key="createKey(item)"/>
-  </ul>
+  <main>
+    <ul class="store" :key="counter">
+      <store-card v-for="(item) in items" :item="item" :key="createKey(item)"/>
+    </ul>
+  </main>
 </template>
 
 <script>

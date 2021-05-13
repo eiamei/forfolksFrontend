@@ -6,7 +6,7 @@ const shuffle = require('./src/utils/shuffle');
 const slugify = require('slugify');
 const products = require('./public/products.json');
 
-const routes = ['/', '/about', '/delivery'];
+const routes = ['/', '/about', '/delivery', '/contract', '/rent'];
 
 const IDS = 0;
 const LIST = 1;
@@ -64,8 +64,8 @@ module.exports = {
   productionSourceMap: false,
   configureWebpack: (config) => {
     config.plugins.push(...plugins);
-    if (process.env.NODE_ENV === 'production') {
-      config.plugins.push(...productionPlugins);
-    }
+    // if (process.env.NODE_ENV === 'production') {
+    //   config.plugins.push(...productionPlugins);
+    // }
   }
 };

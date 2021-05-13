@@ -25,23 +25,11 @@
       return {
         hooperConfig: {
           wheelControl: false,
-          autoPlay: true,
+          autoPlay: false,
           playSpeed: 4000,
           infiniteScroll: true
         },
         slideData: [{
-          image: require('../../../assets/images/landing/jan-sale-poster-web.jpg'),
-          heading: 'Зимняя распродажа',
-          subHeading: 'Скидки до 30% при покупке онлайн.',
-          linkText: 'Перейти к скидкам',
-          link: '/store/category/sale'
-        }, {
-        //   image: require('../../../assets/images/landing/landing-delivery.jpg'),
-        //   heading: 'Бесплатная доставка',
-        //   subHeading: 'По Москве и Санкт-Петербургу при заказе от 3000 рублей',
-        //   linkText: 'Перейти в магазин',
-        //   link: '/store/category/all'
-        // }, {
           image: require('../../../assets/images/landing/landing-shop.jpg'),
           heading: 'Встретимся в шоуруме',
           subHeading: '',

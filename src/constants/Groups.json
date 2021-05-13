@@ -4698,8 +4698,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.2,
+    "isSale": true,
     "price": 1000
   },
   "mif-remodelista": {
@@ -4725,8 +4725,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.2,
+    "isSale": true,
     "price": 1200
   },
   "mif-fine-home": {
@@ -4752,8 +4752,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.2,
+    "isSale": true,
     "price": 1000
   },
   "mif-home-body": {
@@ -4779,8 +4779,8 @@
     },
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.2,
+    "isSale": true,
     "price": 1500
   },
   "flowertree-gipsophila-circle": {
@@ -6204,7 +6204,7 @@
     "badges": "",
     "discountGroup": "suplier",
     "salePercent": 0.1,
-    "isSale": false,
+    "isSale": true,
     "price": 1300
   },
   "zvezdochet-apron": {
@@ -6299,8 +6299,8 @@
     "care": {},
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 200
   },
   "an-pillow": {
@@ -6372,8 +6372,8 @@
     "care": {},
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 770
   },
   "oforme-candlestick-square": {
@@ -6397,8 +6397,8 @@
     "care": {},
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 550
   },
   "natures-candle": {
@@ -6422,8 +6422,8 @@
     "care": {},
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 220
   },
   "trudmakers-knife": {
@@ -6445,31 +6445,8 @@
     "care": {},
     "badges": "",
     "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
-    "price": 750
-  },
-  "trudmakers-knife": {
-    "rootPath": "trudmakers-knife",
-    "name": "Нож для масла",
-    "type": "",
-    "category": ["accessories"],
-    "room": ["guest", "bed", "dinning"],
-    "desc": "Небольшой нож для масла, мягкого сыра или нутеллы из массива дерева.",
-    "metaDesc": "Купить деревянный нож для масла в Forfolks",
-    "shortDesc": "",
-    "itemProperty": {
-      "size": {},
-      "material": [],
-      "createdBy": {
-        "design": "Trudmakers"
-      }
-    },
-    "care": {},
-    "badges": "",
-    "discountGroup": "suplier",
-    "salePercent": 0,
-    "isSale": false,
+    "salePercent": 0.1,
+    "isSale": true,
     "price": 750
   },
   "dixon-soap": {
@@ -6519,5 +6496,205 @@
     "salePercent": 0.1,
     "isSale": true,
     "price": 800
+  },
+  "andrey-poster-arch": {
+    "rootPath": "andrey-poster-arch",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
+  },
+  "andrey-poster-asphalt": {
+    "rootPath": "andrey-poster-asphalt",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
+  },
+  "andrey-poster-dog": {
+    "rootPath": "andrey-poster-dog",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
+  },
+  "andrey-poster-door": {
+    "rootPath": "andrey-poster-door",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
+  },
+  "andrey-poster-lane": {
+    "rootPath": "andrey-poster-lane",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
+  },
+  "andrey-poster-motorcycle": {
+    "rootPath": "andrey-poster-motorcycle",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
+  },
+  "andrey-poster-redwall": {
+    "rootPath": "andrey-poster-redwall",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
+  },
+  "andrey-poster-yard": {
+    "rootPath": "andrey-poster-yard",
+    "name": "Постер",
+    "type": "",
+    "category": ["pictures"],
+    "room": ["guest", "bed"],
+    "desc": "Постеры с фотографиями Андрея Луковникова",
+    "metaDesc": "Купить постеры Андрея Луковникова в Forfolks",
+    "shortDesc": "",
+    "itemProperty": {
+      "size": {
+        "weight": ""
+      },
+      "material": [""],
+      "createdBy": {
+        "design": "Андрей Луковников"
+      }
+    },
+    "care": {},
+    "badges": "",
+    "discountGroup": "suplier",
+    "salePercent": 0.1,
+    "isSale": true,
+    "price": 100
   }
 }

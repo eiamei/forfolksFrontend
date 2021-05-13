@@ -1,24 +1,14 @@
-:root {
-  --soft-yellow-background: #FAF8F7;
 
-  --dark-blue: #333F48;
-  --orange: #CE982E;
-  --light-gray: #A2AAAD;
-  --red: #f56c72;
-  --sale-red: #B33D25;
-  --dark-gray: #8c8e8f;
-
-  --tablet: 764px;
-}
+/* Am i sure i need this?*/
 
 .big-serif-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: Times, 'Times New Roman', serif;
   font-weight: bold;
   color: var(--dark-blue);
 }
 
 .serif-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: Times, 'Times New Roman', serif;
   font-weight: bold;
   color: var(--dark-blue);
 }
@@ -29,7 +19,7 @@
 }
 
 .small-regular-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: Times, 'Times New Roman', serif;
   text-transform: uppercase;
   color: var(--dark-blue);
 }

@@ -1,5 +1,5 @@
 <template>
-  <article class="bag-container">
+  <main class="bag-container">
     <h2 style="text-align: center" v-if="Object.keys(bag).length === 0">Корзина пуста</h2>
     <section class="bag" v-else>
       <h2>Ваша корзина</h2>
@@ -22,7 +22,7 @@
         <router-link class="bag-total__buy-button" to="payment">Оформить заказ</router-link>
       </section>
     </section>
-  </article>
+  </main>
 </template>
 
 <script>
