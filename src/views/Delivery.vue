@@ -24,8 +24,20 @@ export default {
 };
 </script>
 
-<style lang="scss">
-  @import '../components/Pages/CenteredPage';
+<style>
+  .centered-page {
+    text-align: center;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+  .centered-page__header {
+    font-weight: 300;
+  }
   .delivery-and-payment {
     display: flex;
     flex-wrap: wrap;
@@ -33,31 +45,30 @@ export default {
     align-self: center;
     margin: 3rem 1rem;
     justify-content: center;
-    &__black-link {
-      margin: 1rem 0 0 0;
-      padding: 0.5rem 1rem;
-      max-width: 6rem; // fallback
-      width: max-content;
-      background-color: black;
-      border: 1px solid black;
-      outline: transparent;
-      cursor: pointer;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-    }
-    &__article {
-      display: flex;
-      flex-direction: column;
-      max-width: 35rem;
-      min-width: 5rem;
-      p {
-        margin: 0;
-      }
-      &:first-child {
-        max-width: 40rem;
-        margin-right: 2rem;
-      }
-    }
+  }
+  .delivery-and-payment__black-link {
+    margin: 1rem 0 0 0;
+    padding: 0.5rem 1rem;
+    max-width: 7rem;
+    width: max-content;
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  .delivery-and-payment__article {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    min-width: 5rem;
+  }
+  .delivery-and-payment__article p {
+    margin: 0;
+  }
+  .delivery-and-payment__article:first-child {
+    max-width: 40rem;
+    margin-right: 2rem;
   }
 </style>

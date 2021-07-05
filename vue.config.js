@@ -1,45 +1,27 @@
 // vue.config.js
-// const path = require('path');
-// const PrerenderSpaPlugin = require('prerender-spa-plugin');
-// const products = require('./public/products.json');
-// const slugify = require('slugify');
-// const routes = ['/', '/about', '/delivery'];
+const products = require('./public/products.json');
+const CreateFileWebpack = require('create-file-webpack')
+const shuffle = require('./src/utils/shuffle');
 
-// products.forEach(function (item, index) {
-//   let path = `/product/${item.group}`;
-//   if (item.selectableProperty.length) {
-//     item.selectableProperty.forEach(property => {
-//       path += `/${slugify(property.value.toLowerCase())}`
-//     });
-//   }
-//   routes.push(path);
-// })
+const idList = products[1].map(function (item) {
+  return item.id;
+});
 
-// console.log(routes);
+// update the items order
+products[0] = shuffle(idList);
 
-// const productionPlugins = [
-//   new PrerenderSpaPlugin({
-//     staticDir: path.join(__dirname, 'dist'),
-//     routes: routes,
-//     renderer: new PrerenderSpaPlugin.PuppeteerRenderer({
-//       // We need to inject a value so we're able to
-//       // detect if the page is currently pre-rendered.
-//       timeout: 6000000,
-//       maxConcurrentRoutes: 6,
-//       inject: {
-//         foo: 'bar'
-//       },
-//       headless: true,
-//       renderAfterDocumentEvent: 'x-app-rendered'
-//     }),
-//   }),
-// ];
+const productsJson = JSON.stringify(products, null, 2);
 
 module.exports = {
   productionSourceMap: false,
-  // configureWebpack: (config) => {
-    // if (process.env.NODE_ENV === 'production') {
-    //   config.plugins.push(...productionPlugins);
-    // }
-  // },
+  configureWebpack: {
+    plugins: [
+      // update an order of items on every build
+      new CreateFileWebpack({
+        path: './dist',
+        fileName: 'products.json',
+        content: productsJson
+      })
+    ]
+  }
 };

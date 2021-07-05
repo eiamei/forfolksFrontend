@@ -42,8 +42,9 @@
   });
 </script>
 
-<style lang="scss">
-  @import "assets/styles/globals";
+<style>
+  @import "assets/styles/globals.css";
+  @import 'assets/styles/ui.css';
   .fade-enter-active,
   .fade-leave-active {
     transition-duration: 0.3s;

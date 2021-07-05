@@ -101,10 +101,7 @@
   })
 </script>
 
-<style lang="scss">
-  @import '../../../assets/styles/ui';
-  @import '../../../assets/styles/vars';
-
+<style>
   .item-side-bar {
     max-width: 30rem;
     min-width: 30rem;
@@ -113,123 +110,102 @@
     align-self: flex-start;
     padding: 0 1rem;
     box-sizing: border-box;
-    @media screen and (max-width: $tablet) {
+  }
+  @media screen and (max-width: 764px) {
+    .item-side-bar {
       max-width: 100%;
       min-width: 100%;
       padding: 1rem;
     }
-
-    &__heading {
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
-    }
-
-    &__heading-name {
-      margin: 0 0.75rem 0 0;
-    }
-
-    &__heading-type {
-      margin: 0;
-      font-size: 1.25rem;
-    }
-
-    .regular-sans-text.item-side-bar__id {
-      color: $light-gray;
-      margin: 0;
-      text-transform: none;
-    }
-
-    &__price {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-
-    &__sale-price {
-      color: $red;
-    }
-
-    &__sale-price-old {
-      margin-right: 4px;
-      text-decoration: line-through;
-    }
-
-    &__color-picker {
-      margin-top: 1rem;
-      height: auto;
-    }
-
-    &__divider {
-      width: 100%;
-      height: 1px;
-      background-color: $light-gray;
-      margin: 1.5rem 0;
-    }
-
-    &__details {
-      padding: 0 0 0 1.5rem;
-    }
-
-    .regular-sans-text.item-side-bar__details-text {
-      text-transform: none;
-    }
-    .item-side-bar__short-desc.regular-sans-text{
-      text-transform: none;
-    }
-
-    &__availability {
-      margin: 3rem 0 0.5rem 0;
-      text-align: right;
-    }
-
-    &__add-wrapper {
-      display: flex;
-      justify-content: flex-end;
-      margin: 0;
-    }
-
-    &__change-button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      &:focus {
-        line {
-          transition: stroke-width .3s;
-          stroke-width: 5px;
-        }
-      }
-    }
-
-    &__input {
-      width: 50px;
-      text-align: center;
-      margin: 0 1rem;
-    }
-
-    &__add-button {
-      padding: 1rem 1.5rem;
-      color: white;
-      background-color: $dark-blue;
-      border: 1px solid $dark-blue;
-      text-transform: uppercase;
-      margin-left: 2rem;
-      cursor: pointer;
-      transition: outline .3s,
-                  background .3s,
-                  color .3s;
-      &:focus {
-        outline: 1px solid black;
-      }
-      &:hover {
-        background: transparent;
-        color: black;
-      }
-      &--sold-out {
-        background: transparent;
-        border: none;
-        color: $red;
-      }
-    }
+  }
+  .item-side-bar__heading {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .item-side-bar__heading-name {
+    margin: 0 0.75rem 0 0;
+  }
+  .item-side-bar__heading-type {
+    margin: 0;
+  }
+  .item-side-bar .regular-sans-text.item-side-bar__id {
+    color: var(--light-gray);
+    margin: 0;
+    text-transform: none;
+  }
+  .item-side-bar__price {
+    margin: 0;
+  }
+  .item-side-bar__sale-price {
+    color: var(--red);
+  }
+  .item-side-bar__sale-price-old {
+    margin-right: 4px;
+    text-decoration: line-through;
+  }
+  .item-side-bar__color-picker {
+    margin-top: 1rem;
+    height: auto;
+  }
+  .item-side-bar__divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin: 1.5rem 0;
+  }
+  .item-side-bar__details {
+    padding: 0 0 0 1.5rem;
+  }
+  .item-side-bar .regular-sans-text.item-side-bar__details-text {
+    text-transform: none;
+  }
+  .item-side-bar .item-side-bar__short-desc.regular-sans-text {
+    text-transform: none;
+  }
+  .item-side-bar__availability {
+    margin: 3rem 0 0.5rem 0;
+    text-align: right;
+  }
+  .item-side-bar__add-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  .item-side-bar__change-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .item-side-bar__change-button:focus line {
+    transition: stroke-width 0.3s;
+    stroke-width: 5px;
+  }
+  .item-side-bar__input {
+    width: 50px;
+    text-align: center;
+    margin: 0 1rem;
+  }
+  .item-side-bar__add-button {
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    text-transform: uppercase;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: outline 0.3s, background 0.3s, color 0.3s;
+  }
+  .item-side-bar__add-button:focus {
+    outline: 1px solid black;
+  }
+  .item-side-bar__add-button:hover {
+    background: transparent;
+    color: black;
+  }
+  .item-side-bar__add-button--sold-out {
+    background: transparent;
+    border: none;
+    color: var(--red);
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <header class="header-container">
-    <nav :class="headerClass">
+    <nav class="header">
       <button :class="menuButtonClass" @click="toogleMenu" title="Открыть меню">
         <hamburger></hamburger>
       </button>
@@ -44,12 +44,6 @@
       bagType () {
         return this.bagQty ? 'bag-full' : 'bag';
       },
-      headerClass () {
-        return {
-          'header': true,
-          'z-index__top--header': true
-        }
-      },
       menuButtonClass () {
         return {
           'clean-button': true,
@@ -66,10 +60,7 @@
   };
 </script>
 
-<style lang="scss">
-  @import '../../assets/styles/vars';
-  @import '../../assets/styles/colors';
-  @import 'src/assets/styles/z-index';
+<style>
   .header-container {
     position: relative;
   }
@@ -83,11 +74,11 @@
     padding: 0.5rem 1rem;
     background: white;
     box-sizing: border-box;
-    &__menu-button {
-      z-index: 1;
-    }
+    z-index: 1000;
   }
-
+  .header__menu-button {
+    z-index: 1;
+  }
   .header-menu-container {
     top: 0;
     left: 0;
@@ -96,9 +87,9 @@
     top: 0.5rem;
     left: calc(50% - 51px);
     z-index: 1;
-    .forfolks-logo {
-      height: 1rem;
-    }
+  }
+  .header-logo .forfolks-logo {
+    height: 1rem;
   }
   .header-bag {
     display: flex;
@@ -106,20 +97,20 @@
     right: 1rem;
     text-decoration: none;
     z-index: 1;
-    &__icon {
-      position: relative;
-      width: 1.75rem;
-      height: 1.75rem;
-      &--empty {
-        background: url("../../assets/svg/bag-empty.svg") no-repeat;
-      }
-      &--filled {
-        background: url("../../assets/svg/bag-filled.svg") no-repeat;
-      }
-    }
-    &__qty {
-      margin: 0.25rem 0 0 0;
-      color: black;
-    }
+  }
+  .header-bag__icon {
+    position: relative;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .header-bag__icon--empty {
+    background: url("../../assets/svg/bag-empty.svg") no-repeat;
+  }
+  .header-bag__icon--filled {
+    background: url("../../assets/svg/bag-filled.svg") no-repeat;
+  }
+  .header-bag__qty {
+    margin: 0.25rem 0 0 0;
+    color: black;
   }
 </style>

@@ -19,8 +19,6 @@
 </template>
 
 <script>
-  import AppButton from '../AppButton';
-
   export default {
     name: 'appHeaderMenu',
     props: {
@@ -174,12 +172,12 @@
   };
 </script>
 
-<style lang="scss">
-  @import '../../assets/styles/vars';
+<style>
   .menu-container {
     position: fixed;
     z-index: 11;
     display: flex;
+    flex-wrap: wrap;
     left: 0;
     top: 20px;
     width: 100%;
@@ -191,43 +189,32 @@
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(0);
     visibility: hidden;
-    transition: background-color 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08),
-                backdrop-filter 0.8s cubic-bezier(0.22, 0.61, 0.41, 1.08),
-                opacity 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08),
-                visibility 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08) 0s;
-    @media screen and (max-width: $mobile) {
-      flex-direction: column;
-    }
-    &--shown {
-      background-color: rgba(255, 255, 255, .8);
-      backdrop-filter: blur(12px);
-      opacity: 1;
-      visibility: visible;
-    }
-    .menu-catalogue, .menu-links {
-      padding: 0;
-      margin: 1rem 4rem 2rem 0.5rem;
-      white-space: nowrap;
-      &__item {
-        list-style: none;
-        margin-top: 0.25rem;
-      }
-      &__text {
-        font-weight: 400;
-        font-size: 1.5rem;
-        color: black;
-        text-decoration: none;
-        @media screen and (max-width: $mobile) {
-          flex-direction: column;
-          font-size: 2.5rem;
-        }
-        &--red {
-          color: $red;
-        }
-        &:hover {
-          color: $dark-blue;
-        }
-      }
-    }
+    transition: background-color 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08), backdrop-filter 0.8s cubic-bezier(0.22, 0.61, 0.41, 1.08), opacity 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08), visibility 0.4s cubic-bezier(0.22, 0.61, 0.41, 1.08) 0s;
+  }
+  .menu-container--shown {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-container .menu-catalogue, .menu-container .menu-links {
+    padding: 0;
+    margin: 1rem 4rem 2rem 0.5rem;
+    white-space: nowrap;
+  }
+  .menu-container .menu-catalogue__item, .menu-container .menu-links__item {
+    list-style: none;
+    margin-top: 0.25rem;
+  }
+  .menu-container .menu-catalogue__text, .menu-container .menu-links__text {
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+  }
+  .menu-container .menu-catalogue__text--red, .menu-container .menu-links__text--red {
+    color: var(--red);
+  }
+  .menu-container .menu-catalogue__text:hover, .menu-container .menu-links__text:hover {
+    color: var(--dark-blue);
   }
 </style>

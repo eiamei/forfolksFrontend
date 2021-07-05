@@ -115,46 +115,43 @@
     });
 </script>
 
-<style lang="scss">
-  @import "src/assets/styles/vars";
-  @import "src/assets/styles/ui";
-
+<style>
   .footer {
     display: flex;
     flex-direction: column;
     padding: 5rem 2rem 2rem 2rem;
-    background-color: $dark-blue;
-    &__icon {
-      width: 19rem;
-        path {
-          fill: white;
-        }
-    }
-    &__linking-block {
-      display: flex;
-      margin: 3rem 0 0 0;
-      flex-wrap: wrap;
-    }
-    &__links {
-      display: flex;
-      flex-direction: column;
-      margin-right: 3rem;
-    }
-    &__icon-link {
-      height: 2em;
-      margin-right: 1em;
-      &--payment {
-        height: 1.5rem;
-        width: auto;
-      }
-    }
-    .regular-sans-text.footer__link {
-      color: $light-gray;
-      text-decoration: none;
-      transition: color 0.3s;
-      &:hover {
-        color: white;
-      }
-    }
+    background-color: var(--dark-blue);
+  }
+  .footer__icon {
+    width: 19rem;
+  }
+  .footer__icon path {
+    fill: white;
+  }
+  .footer__linking-block {
+    display: flex;
+    margin: 3rem 0 0 0;
+    flex-wrap: wrap;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+  }
+  .footer__icon-link {
+    height: 2em;
+    margin-right: 1em;
+  }
+  .footer__icon-link--payment {
+    height: 1.5rem;
+    width: auto;
+  }
+  .footer .regular-sans-text.footer__link {
+    color: var(--light-gray);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer .regular-sans-text.footer__link:hover {
+    color: white;
   }
 </style>

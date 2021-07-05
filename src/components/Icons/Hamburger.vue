@@ -12,7 +12,7 @@
   })
 </script>
 
-<style lang="scss">
+<style>
   .hamburger-icon {
     width: 2rem;
     height: 0.75rem;

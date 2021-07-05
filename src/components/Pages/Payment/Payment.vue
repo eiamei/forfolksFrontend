@@ -92,35 +92,41 @@
   };
 </script>
 
-<style lang="scss">
+<style>
   .payment-page {
     margin-top: 48px;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
     min-height: 80vh;
-    @media screen and (max-width: 770px) {
+  }
+  @media screen and (max-width: 770px) {
+    .payment-page {
       padding: 0 16px;
     }
-    @media screen and (max-width: 500px) {
+  }
+  @media screen and (max-width: 500px) {
+    .payment-page {
       padding: 0 8px;
     }
-    &__cart {
-      width: 30%;
-      min-width: 300px;
-      margin-left: 16px;
-      @media screen and (max-width: 740px) {
-        display: none;
-      }
+  }
+  .payment-page__cart {
+    width: 30%;
+    min-width: 300px;
+    margin-left: 16px;
+  }
+  @media screen and (max-width: 740px) {
+    .payment-page__cart {
+      display: none;
     }
-    &__success, &__error {
-      width: 100%;
-      margin-top: 10vh;
-      text-align: center;
-      padding: 8px 16px;
-      h1 {
-        font-weight: 200;
-      }
-    }
+  }
+  .payment-page__success, .payment-page__error {
+    width: 100%;
+    margin-top: 10vh;
+    text-align: center;
+    padding: 8px 16px;
+  }
+  .payment-page__success h1, .payment-page__error h1 {
+    font-weight: 200;
   }
 </style>

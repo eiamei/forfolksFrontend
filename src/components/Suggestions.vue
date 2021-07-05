@@ -74,43 +74,33 @@
   });
 </script>
 
-<style lang="scss">
-  @import "../assets/styles/ui";
-  @import "../assets/styles/vars";
-
+<style>
   .suggestions {
     display: flex;
-
-    &__carousel {
-      overflow: hidden;
-      height: auto;
-    }
-
-    &__button {
-      cursor: pointer;
-      width: 2rem;
-      height: 4rem;
-      align-self: center;
-
-      &--left {
-        margin-right: 1rem!important;
-      }
-      &--right {
-        margin-left: 1rem!important;
-      }
-
-      &:focus,
-      &:hover {
-        path {
-          stroke: $orange;
-        }
-      }
-    }
-    .hooper-slide {
-      display: flex;
-      height: auto;
-      margin: 0!important;
-      padding: 0 8px;
-    }
+  }
+  .suggestions__carousel {
+    overflow: hidden;
+    height: auto;
+  }
+  .suggestions__button {
+    cursor: pointer;
+    width: 2rem;
+    height: 4rem;
+    align-self: center;
+  }
+  .suggestions__button--left {
+    margin-right: 1rem !important;
+  }
+  .suggestions__button--right {
+    margin-left: 1rem !important;
+  }
+  .suggestions__button:focus path, .suggestions__button:hover path {
+    stroke: var(--orange);
+  }
+  .suggestions .hooper-slide {
+    display: flex;
+    height: auto;
+    margin: 0 !important;
+    padding: 0 8px;
   }
 </style>

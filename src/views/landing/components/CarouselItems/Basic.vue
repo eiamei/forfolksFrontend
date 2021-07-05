@@ -2,7 +2,7 @@
   <div class="stay-home">
     <img class="stay-home__image" :src="image" alt="Stay home"/>
     <div class="stay-home-text-wrapper">
-      <h1 class="serif-heading" style="color: black; font-size: 3rem; margin-bottom: 0">Красивое хранение</h1>
+      <h1 class="serif-heading" style="color: black; margin-bottom: 0">Красивое хранение</h1>
       <router-link class="stay-home-button" to="/store/category/stand">Перейти в магазин</router-link>
     </div>
   </div>
@@ -30,16 +30,15 @@
   });
 </script>
 
-<style lang="scss">
-  @import '../../../../assets/styles/ui';
+<style>
   .stay-home {
     position: relative;
     display: flex;
     justify-content: center;
-    &__image {
-      width: 100%;
-      height: 100%;
-    }
+  }
+  .stay-home__image {
+    width: 100%;
+    height: 100%;
   }
   .stay-home-text-wrapper {
     position:absolute;
@@ -50,24 +49,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    p {
-      text-align: center;
-    }
   }
-  .stay-home-button {
-    padding: 0.75rem 1.5rem;
-    border: 1px solid black;
-    margin-top: 1.5rem;
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
-    transition: background-color .2s ease-in-out,
-                border .2s ease-in-out,
-                color .2s ease-in-out;
-    &:hover {
-      background-color: #7B6469;
-      border: 1px solid #7B6469;
-      color: white;
-    }
+  .stay-home-text-wrapper p {
+    text-align: center;
+  }
+  .stay-home-button:hover {
+    background-color: #7B6469;
+    border: 1px solid #7B6469;
+    color: white;
   }
 </style>

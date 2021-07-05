@@ -1,5 +1,5 @@
 <template>
-  <hooper class="landing-carousel" style="height: 90vh" :settings="hooperConfig">
+  <hooper class="landing-carousel" :settings="hooperConfig">
     <Slide class="landing-carousel__slide" v-for="slide in slideData" :key="slide.heading">
       <Shop :image="slide.image"
             :heading="slide.heading"
@@ -41,40 +41,28 @@
           subHeading: '',
           linkText: 'Как нас найти',
           link: '/about'
-        }, {
-          image: require('../../../assets/images/landing/landing-accessories.jpg'),
-          heading: 'Кухонные аксессуары',
-          subHeading: 'Мелочи, которые сделают жизнь удобнее',
-          linkText: 'Перейти в магазин',
-          link: '/store/category/accessories'
-        }, {
-          image: require('../../../assets/images/landing/landing-textile.jpg'),
-          heading: 'Текстиль для дома',
-          subHeading: 'Как быстро сделать дом уютнее',
-          linkText: 'Перейти в магазин',
-          link: '/store/category/textile'
         }]
       }
     }
   });
 </script>
 
-<style lang="scss">
+<style>
   .landing-carousel {
-    outline: none;
-    .hooper-indicator {
-      width: 10px;
-      height: 10px;
-      border: 1px solid black;
-      border-radius: 10px;
-      background-color: black;
-    }
-    .hooper-indicator.is-active {
-      background-color: white!important;
-    }
-    &__slide {
-      display: flex;
-      justify-content: center;
-    }
+    height: 90vh !important;
+  }
+  .landing-carousel .hooper-indicator {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+  }
+  .landing-carousel .hooper-indicator.is-active {
+    background-color: white !important;
+  }
+  .landing-carousel__slide {
+    display: flex;
+    justify-content: center;
   }
 </style>

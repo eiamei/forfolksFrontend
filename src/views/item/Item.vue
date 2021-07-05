@@ -50,26 +50,26 @@
   })
 </script>
 
-<style lang="scss">
-  @import '../../assets/styles/vars';
-
+<style>
   .item-card {
     margin-top: 3rem;
     position: relative;
   }
-
   .item-first-row {
     display: flex;
-    @media screen and (max-width: $tablet) {
+  }
+  @media screen and (max-width: 764px) {
+    .item-first-row {
       flex-direction: column;
     }
   }
-
   .item-second-row {
     display: flex;
-    background: $soft-yellow-background;
+    background: var(--soft-yellow-background);
     margin-top: 2rem;
-    @media screen and (max-width: $tablet) {
+  }
+  @media screen and (max-width: 764px) {
+    .item-second-row {
       margin: 0;
       flex-direction: column;
     }

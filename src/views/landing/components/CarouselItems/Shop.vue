@@ -35,68 +35,75 @@
   });
 </script>
 
-<style lang="scss">
-  @import '../../../../assets/styles/ui';
-  @import '../../../../assets/styles/vars';
+<style>
   .basic-carousel-item {
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
     padding: 0 16px;
-    @media screen and (max-width: $tablet) {
+  }
+  @media screen and (max-width: 764px) {
+    .basic-carousel-item {
       flex-direction: column;
       justify-content: start;
     }
-    &__image {
-      width: 50%;
-      object-fit: cover;
-      @media screen and (max-width: $tablet) {
-        width: 100%;
-        max-height: 70%;
-      }
+  }
+  .basic-carousel-item__image {
+    width: 50%;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 764px) {
+    .basic-carousel-item__image {
+      width: 100%;
+      max-height: 55%;
     }
-    &__heading {
-      display: flex;
-      flex-direction: column;
+  }
+  .basic-carousel-item__heading {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  @media screen and (max-width: 764px) {
+    .basic-carousel-item__heading {
+      margin-top: 16px;
+      align-content: center;
+    }
+  }
+  .basic-carousel-item__heading-text.big-serif-heading {
+    margin: 0;
+    align-self: flex-end;
+  }
+  @media screen and (max-width: 764px) {
+    .basic-carousel-item__heading-text.big-serif-heading {
       align-self: center;
-      @media screen and (max-width: $tablet) {
-        margin-top: 16px;
-        align-content: center;
-      }
     }
-    &__heading-text.big-serif-heading {
-      font-size: 2.5rem;
-      margin: 0;
-      align-self: flex-end;
-      @media screen and (max-width: $tablet) {
-        align-self: center;
-      }
+  }
+  .basic-carousel-item__sub-heading-text {
+    align-self: flex-end;
+  }
+  @media screen and (max-width: 764px) {
+    .basic-carousel-item__sub-heading-text {
+      align-self: center;
     }
-    &__sub-heading-text {
-      align-self: flex-end;
-      @media screen and (max-width: $tablet) {
-        align-self: center;
-        font-size: 10px;
-      }
+  }
+  .basic-carousel-item__action-button.regular-link {
+    align-self: flex-end;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    text-decoration: none;
+    text-transform: none;
+  }
+  @media screen and (max-width: 764px) {
+    .basic-carousel-item__action-button.regular-link {
+      align-self: center;
     }
-    &__action-button.regular-link {
-      align-self: flex-end;
-      padding: 1rem;
-      margin-top: 1rem;
-      border: 1px solid $dark-blue;
-      color: $dark-blue;
-      line-height: 1;
-      cursor: pointer;
-      transition: background-color .2s ease-in-out, color .2s ease-in-out;
-      text-decoration: none;
-      text-transform: none;
-      @media screen and (max-width: $tablet) {
-        align-self: center;
-      }
-      &:hover {
-        background-color: $dark-blue;
-        color: white;
-      }
-    }
+  }
+  .basic-carousel-item__action-button.regular-link:hover {
+    background-color: var(--dark-blue);
+    color: white;
   }
 </style>

@@ -121,24 +121,19 @@
   });
 </script>
 
-<style lang="scss">
-  @import "src/assets/styles/vars";
-  @import "src/assets/styles/ui";
-
+<style>
   .contract-page {
     display: flex;
     flex-direction: column;
     margin: 3rem auto;
     padding: 0 1rem;
     max-width: 1000px;
-    > ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul {
-      li {
-        margin-bottom: 0.5rem;
-      }
-    }
+  }
+  .contract-page > ul {
+    list-style: none;
+    padding: 0;
+  }
+  .contract-page ul li {
+     margin-bottom: 0.5rem;
   }
 </style>

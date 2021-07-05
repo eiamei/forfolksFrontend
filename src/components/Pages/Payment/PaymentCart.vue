@@ -57,23 +57,20 @@
   };
 </script>
 
-<style lang="scss">
-  @import '../../../assets/styles/colors';
-  @import '../../../assets/styles/vars';
+<style>
   .cart-info {
     padding-top: 64px;
-    &__total {
-      display: flex;
-      justify-content: space-between;
-    }
-    &__total-old {
-      text-decoration: line-through;
-      font-size: 14px;
-      margin-right: 8px;
-    }
-    &__total-new {
-        color: $red;
-    }
+  }
+  .cart-info__total {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart-info__total-old {
+    text-decoration: line-through;
+    margin-right: 8px;
+  }
+  .cart-info__total-new {
+    color: var(--red);
   }
   .cart-item {
     display: flex;
@@ -84,46 +81,40 @@
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
     padding-bottom: 8px;
-    &__image {
-      width: 64px;
-      height: 64px;
-      border-radius: 4px;
-    }
-    &__info {
-      margin-left: 16px;
-      align-self: center;
-      flex-basis: 30%;
-    }
-    &__name, &__color {
-      margin: 0;
-    }
-    &__name {
-      font-size: 14px;
-    }
-    &__color {
-      font-size: 12px;
-      color: $dark-gray2;
-    }
-    &__qty {
-      width: 24px;
-      height: 19px;
-      position: absolute;
-      border-radius: 50%;
-      background-color: $sandy;
-      text-align: center;
-      padding-top: 5px;
-      font-size: 12px;
-      left: 52px;
-      top: -8px;
-    }
-    &__price {
-      align-self: center;
-      margin-left: 40px;
-      flex-basis: 50%;
-      text-align: right;
-      &--sale {
-        color: $red;
-      }
-    }
+  }
+  .cart-item__image {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+  }
+  .cart-item__info {
+    margin-left: 16px;
+    align-self: center;
+    flex-basis: 30%;
+  }
+  .cart-item__name, .cart-item__color {
+    margin: 0;
+  }
+  .cart-item__color {
+    color: var(--dark-gray) 2;
+  }
+  .cart-item__qty {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--soft-yellow-background);
+    text-align: center;
+    left: 52px;
+    top: -8px;
+  }
+  .cart-item__price {
+    align-self: center;
+    margin-left: 40px;
+    flex-basis: 50%;
+    text-align: right;
+  }
+  .cart-item__price--sale {
+    color: var(--red);
   }
 </style>
